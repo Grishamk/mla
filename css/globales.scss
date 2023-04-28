@@ -1,0 +1,23 @@
+$letraPrincipal: 'Montserrat', sans-serif;
+$colorLetra1: #212529;
+$colorLetra2: white;
+$colorPrincipal: #F7F7F7;
+$colorSecundario: white;
+$colorTerciario: #042F62;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $letraPrincipal;
+    color: $colorLetra1;
+}
+

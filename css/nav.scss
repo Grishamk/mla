@@ -1,0 +1,29 @@
+/*navegación*/
+.nav-container {
+    width: 100%;
+    height: 57px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+
+    picture {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        
+        img {
+            width: 140px;
+            height: 33px;
+            margin-left: 30px;
+        }
+    }
+
+    &__menu {
+        
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}

@@ -1,0 +1,37 @@
+mixin respaldo(imagen,titulo,contenido)
+    div.main-container__item
+        img(src="./img/"+imagen)
+        h2=titulo
+        p=contenido
+
+mixin socio(imagen,nombre,cargo)
+    article.capital-humano__item
+        img(src="./img/"+imagen)
+        h2=nombre
+        p=cargo
+
+mixin contactoP(icono,contenido)
+    article.contacto__small
+        picture: img(src="./img/"+icono)
+        p=contenido
+
+mixin contactoG(icono,titulo,contenido)
+    article.contacto__grande
+        picture: img(src="./img/"+icono)
+        div  
+            p=titulo
+            p=contenido
+
+doctype html
+html(lang="es")
+    include head.pug
+    body
+        //Barra de navegación
+        header 
+            nav.nav-container
+                picture: img(src="../img/logo2.png")
+
+                div.nav-container__menu
+                    a(href=""): img(src="../img/menu.svg", alt="")
+
+        block contenido
