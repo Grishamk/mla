@@ -1,22 +1,44 @@
-.main-container {
-    width: 100%;
+@import "./globales.scss";
 
-    //carrusel principal
-    &__carrusel{
-        width: 100%;
-        height: 480px;
-        background-color: $colorTerciario;
-        h1 {
-            color: white;
+.nav-container {
+    width: 100%;
+    height: 80px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+
+    picture {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        
+        img {
+            width: 200px;
+            height: 50px;
+            margin-left: 30px;
         }
     }
 
-    //seccion de respaldo
+    &__menu {
+        margin-left: 60px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}
+
+.main-container {
+    width: 100%;
+
+    //RESPALDO
     &__respaldo {
         width: 100%;
-        height: 1200px;
+        height: 1000px;
         background-color: $colorPrincipal;
-        padding-top: 52px;
+        padding: 0 64px;
+        padding-top: 64px;
         //mixin de pug
         .main-container__item {
             color: $colorLetra1;
@@ -31,7 +53,6 @@
                 width: 200px;
                 height: 120px;
                 margin-bottom: 24px;
-                border-radius: 4px;
             }
             h2 {
                 font-weight: 400;
@@ -48,29 +69,6 @@
         }
     }
 
-    //Carrusel de clientes
-    &__clientes {
-        width: 100%;
-        height: 390px;
-        background-color: $colorSecundario;
-        
-        div {
-            display: flex;
-            height: 100%;
-            flex-direction: column;
-            text-align: center;
-            margin-top: 64px;
-
-            h2 {
-            font-size: 48px;
-            font-weight: 300;
-            margin-bottom: 50px;
-            }
-        
-        }
-        
-    }
-
     //Capital Humano
     &__capital-humano {
         width: 100%;
@@ -83,11 +81,7 @@
         justify-content: center;
 
         .capital-humano__container {
-            width: 90%;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
             padding-top: 48px;
             margin-bottom: 80px;
            
@@ -100,57 +94,59 @@
             p {
                 font-size: 1.4rem;
                 font-weight: 200;
-                margin-bottom: 24px;
+                margin-bottom: 48px;
                 line-height: 2.2rem;
             }
 
-            .capital-humano__item {
-                margin-bottom: 24px;
+            .capital-humano__socios{
+                max-width: 690px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 60px;
+                justify-content: center;
                 
-                img {
-                    width: 160px;
-                    height: 240px;
-                    border-radius: 4px;
-                    box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
-                    -webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
-                    -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
-                    margin-bottom: 12px;
-                }
-                h2 {
-                    font-size: 1.8rem;
-                    font-weight: 300;
+                
+                .capital-humano__item {
                     margin-bottom: 0;
-                }
-                p {
-                    font-size: 1.3rem;
-                    font-weight: 300;
-                    margin: 0;
+                    
+                    img {
+                        width: 160px;
+                        height: 240px;
+                        border-radius: 4px;
+                        box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
+                        -webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
+                        -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
+                        margin-bottom: 12px;
+                    }
+                    h2 {
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        margin-bottom: 0;
+                    }
+                    p {
+                        font-size: 1.3rem;
+                        font-weight: 300;
+                        margin: 0;
+                    }
                 }
             }
             a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 164px;
-                height: 40px;
-                border: 1px solid #089de8;
-                text-decoration: none;
-                color: $colorLetra2;
-                font-weight: 300;
-                border-radius: 4px;
-                font-size: 1.4rem;
-            }
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 200px;
+                    height: 50px;
+                    border: 1px solid #089de8;
+                    text-decoration: none;
+                    color: $colorLetra2;
+                    font-weight: 300;
+                    border-radius: 4px;
+                    font-size: 1.6rem;
+                    margin-top: 48px;
+                }
         }
     }
-
-    //Noticias
-    &__noticias {
-        width: 100%;
-        height: 500px;
-        background-color: $colorSecundario;
-    }
     
-    //Contacto
     &__contacto {
         width: 100%;
         background-color: $colorPrincipal;
@@ -158,12 +154,12 @@
         h2 {
             font-size: 2.4rem;
             font-weight: 400;
-            padding: 0 14px;
+            padding: 0 48px;
             margin-bottom: 20px;
             padding-top: 48px;
         }
         section{
-            padding: 0 14px;
+            padding: 0 48px;
             display: flex;
             flex-direction: column;
             
@@ -218,7 +214,7 @@
 
             .contacto__social{
                 display: flex;
-                gap: 42px;
+                gap: 64px;
                 padding-top: 24px;
                 
 
@@ -230,11 +226,19 @@
         }
     
     }
+}
 
-    //mapa
-    &__mapa {
-        width: 100%;
-        height: 350px;
-        background-color: black;
+.footer-container {
+    .footer-movil__container{
+        flex-direction: row;
+        gap: 60px;
+        picture img {
+            width: 150px;
+            height: 90px;
+            margin-top: 8px;
+        }
+        p {
+            font-size: 1.6rem;
+        }
     }
 }
