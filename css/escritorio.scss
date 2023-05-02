@@ -1,5 +1,79 @@
 @import "./globales.scss";
 
-body {
-    background-color: red;
+.nav-container {
+    max-width: 1300px;
+    height: 108px;
+   
+    picture {
+        justify-self: flex-start;
+        align-self: flex-start;
+        justify-content: flex-start;
+        width: 30%;
+        
+        img {
+            width: 230px;
+            height:60px;
+            margin-top: 16px;
+        }
+    } 
+
+     &__navbar {
+         width: 70%;
+ 
+         ul {
+                        
+             li a {
+                font-size: 1.6rem;
+            }
+         }
+     }
+ 
+     .boton{
+         width: 130px;
+         height: 40px;
+    }
+}
+
+.main-container {
+    width: 100%;
+
+    //Contacto
+    &__contacto {
+        width: 100%;
+        background-color: $colorPrincipal;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin-left: 195px;
+            font-size: 4.4rem;
+            font-weight: 300;
+            padding: 0 14px;
+            margin-bottom: 20px;
+            padding-top: 48px;
+        }
+        section{
+            margin-left: 195px;
+            padding: 0 14px;
+            display: flex;
+            flex-direction: column;
+        }
+    
+    }
+
+    //mapa
+    &__mapa {
+        width: 100%;
+        height: 350px;
+        background-color: black;
+    }
+}
+
+.footer-container {
+    justify-content: center;
+    
+    &__navbar {
+        width: 40%;
+    }
 }

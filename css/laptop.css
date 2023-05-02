@@ -26,7 +26,7 @@ header {
 }
 
 .nav-container {
-  max-width: 1440px;
+  max-width: 1300px;
   height: 94px;
 }
 .nav-container picture {
@@ -99,8 +99,15 @@ header {
   height: 448px;
   padding: 0;
   padding-top: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .main-container__respaldo section {
+  width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
