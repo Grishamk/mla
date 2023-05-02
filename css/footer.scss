@@ -10,6 +10,10 @@
     display: flex;
     flex-direction: column;
     
+    &__navbar {
+        display: none;
+    }
+    
     .footer-movil__container{
         height: 100%;
         display: flex;

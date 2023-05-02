@@ -17,16 +17,20 @@ body {
 }
 
 /*navegación*/
+header {
+  background-color: #F7F7F7;
+}
+
 .nav-container {
   width: 100%;
   height: 57px;
-  background-color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #F7F7F7;
 }
 .nav-container picture {
   width: 85%;
@@ -45,6 +49,12 @@ body {
 .nav-container__menu img {
   width: 30px;
   height: 30px;
+}
+.nav-container__navbar {
+  display: none;
+}
+.nav-container button {
+  display: none;
 }
 
 .main-container {
@@ -321,6 +331,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.footer-container__navbar {
+  display: none;
 }
 .footer-container .footer-movil__container {
   height: 100%;

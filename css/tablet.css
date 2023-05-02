@@ -18,7 +18,6 @@ body {
 .nav-container {
   width: 100%;
   height: 80px;
-  background-color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
