@@ -53,7 +53,7 @@ header {
 .nav-container__navbar {
   display: none;
 }
-.nav-container button {
+.nav-container .boton {
   display: none;
 }
 

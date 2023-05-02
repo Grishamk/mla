@@ -26,7 +26,7 @@ header {
 }
 
 .nav-container {
-  max-width: 1024px;
+  max-width: 1440px;
   height: 94px;
 }
 .nav-container picture {
@@ -183,8 +183,10 @@ header {
   line-height: 2.2rem;
 }
 .main-container__capital-humano .capital-humano__container .capital-humano__socios {
-  max-width: 950px;
-  gap: 24px;
+  max-width: 1200px;
+  gap: 32px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .main-container__capital-humano .capital-humano__container a {
   width: 164px;
@@ -249,8 +251,4 @@ header {
 .footer-container .footer-movil__container picture img {
   width: 140px;
   height: 77px;
-}
-.footer-container .footer-movil__container p {
-  font-size: 1.3rem;
-  font-weight: 300;
 }

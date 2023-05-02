@@ -7,7 +7,7 @@ header{
 }
 
 .nav-container {
-   max-width: 1024px;
+   max-width: 1440px;
    height: 94px;
 
     picture {
@@ -156,8 +156,9 @@ header{
             }
 
             .capital-humano__socios{
-                max-width: 950px;
-                gap: 24px;
+                max-width: 1200px;
+                gap: 32px;
+                flex-wrap: nowrap;
                                            
             }
             a {
@@ -213,10 +214,6 @@ header{
         picture img {
             width: 140px;
             height: 77px;
-        }
-        p {
-            font-size: 1.3rem;
-            font-weight: 300;
         }
     }
 }
