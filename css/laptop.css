@@ -15,18 +15,7 @@ body {
   color: #212529;
 }
 
-header {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .nav-container {
-  max-width: 1300px;
   height: 94px;
 }
 .nav-container picture {
@@ -89,12 +78,6 @@ header {
           align-items: center;
 }
 
-.main-container {
-  width: 100%;
-}
-.main-container__carrusel {
-  width: 100%;
-}
 .main-container__respaldo {
   height: 448px;
   padding: 0;
@@ -116,78 +99,15 @@ header {
           justify-content: center;
   gap: 8px;
 }
-.main-container__respaldo .main-container__item {
+.main-container__respaldo section .main-container__item {
   margin-bottom: 0px;
   width: 33%;
 }
-.main-container__respaldo .main-container__item h2 {
+.main-container__respaldo section .main-container__item h2 {
   padding: 0;
 }
-.main-container__respaldo .main-container__item p {
+.main-container__respaldo section .main-container__item p {
   padding: 0 8px;
-}
-.main-container__clientes {
-  width: 100%;
-  height: 390px;
-  background-color: white;
-}
-.main-container__clientes div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  margin-top: 64px;
-}
-.main-container__clientes div h2 {
-  font-size: 48px;
-  font-weight: 300;
-  margin-bottom: 50px;
-}
-.main-container__capital-humano {
-  width: 100%;
-  background-image: url(../img/bg-section.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.main-container__capital-humano .capital-humano__container {
-  width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding-top: 48px;
-  margin-bottom: 80px;
-}
-.main-container__capital-humano .capital-humano__container h2 {
-  font-size: 3rem;
-  font-weight: 200;
-  margin-bottom: 8px;
-}
-.main-container__capital-humano .capital-humano__container p {
-  font-size: 1.4rem;
-  font-weight: 200;
-  margin-bottom: 24px;
-  line-height: 2.2rem;
 }
 .main-container__capital-humano .capital-humano__container .capital-humano__socios {
   max-width: 1200px;
@@ -196,20 +116,12 @@ header {
       flex-wrap: nowrap;
 }
 .main-container__capital-humano .capital-humano__container a {
-  width: 164px;
-  height: 40px;
-  font-size: 1.4rem;
+  width: 180px;
+  height: 50px;
+  font-size: 1.6rem;
 }
 
 .footer-container {
-  width: 100%;
-  height: 197px;
-  background-image: url(../img/bg-section.jpg);
-  background-position: center;
-  background-size: cover;
-  background-position-x: right;
-  background-repeat: no-repeat;
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,9 +129,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 64px;
 }
 .footer-container__navbar {
-  width: 60%;
+  width: 50%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,7 +146,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 32px;
+  gap: 20px;
   padding-left: 20px;
 }
 .footer-container__navbar ul li a {
@@ -242,8 +155,6 @@ header {
   font-weight: 300;
 }
 .footer-container .footer-movil__container {
-  height: 100%;
-  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,8 +165,5 @@ header {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
-}
-.footer-container .footer-movil__container picture img {
-  width: 140px;
-  height: 77px;
+  margin-right: 20px;
 }

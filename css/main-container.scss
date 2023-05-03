@@ -1,23 +1,27 @@
+//Esto es un modulo que está conectado a main.scss, hacer referencia a este si se modifica el archivo main.
+
 .main-container {
     width: 100%;
 
-    //carrusel principal
+    //CARRUSEL PRINCIPAL
     &__carrusel{
         width: 100%;
         height: 480px;
         background-color: $colorTerciario;
+        
         h1 {
             color: white;
         }
     }
 
-    //seccion de respaldo
+    //SECCION RESPALDO
     &__respaldo {
         width: 100%;
         height: 1200px;
         background-color: $colorPrincipal;
         padding-top: 52px;
-        //mixin de pug
+        
+        //MIXIN ITEMS DE RESPALDO
         .main-container__item {
             color: $colorLetra1;
             display: flex;
@@ -33,6 +37,7 @@
                 margin-bottom: 24px;
                 border-radius: 4px;
             }
+
             h2 {
                 font-weight: 400;
                 font-size: 2.6rem;
@@ -40,6 +45,7 @@
                 margin-bottom: 8px;
                 line-height: 30px;
             }
+
             p {
                 margin: 0 14px;
                 font-size: 1.4rem;
@@ -48,7 +54,7 @@
         }
     }
 
-    //Carrusel de clientes
+    //CARRUSEL DE CLIENTES
     &__clientes {
         width: 100%;
         height: 390px;
@@ -66,12 +72,10 @@
             font-weight: 300;
             margin-bottom: 50px;
             }
-        
-        }
-        
+        } 
     }
 
-    //Capital Humano
+    //CAPITAL HUMANO
     &__capital-humano {
         width: 100%;
         background-image: url(../img/bg-section.jpg);
@@ -104,6 +108,7 @@
                 line-height: 2.2rem;
             }
 
+            //MIXIN ITEMS DE CAPITAL HUMANO
             .capital-humano__item {
                 margin-bottom: 24px;
                 
@@ -116,17 +121,21 @@
                     -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
                     margin-bottom: 12px;
                 }
+
                 h2 {
                     font-size: 1.8rem;
                     font-weight: 300;
                     margin-bottom: 0;
                 }
+
                 p {
                     font-size: 1.3rem;
                     font-weight: 300;
                     margin: 0;
                 }
             }
+            
+            //BOTON DE CAPITAL HUMANO
             a {
                 display: flex;
                 align-items: center;
@@ -143,18 +152,20 @@
         }
     }
 
-    //Noticias
+    //NOTICIAS
     &__noticias {
         width: 100%;
         height: 500px;
         background-color: $colorSecundario;
     }
     
-    //Contacto
+    //CONTACTO
     &__contacto {
         width: 100%;
         background-color: $colorPrincipal;
         font-weight: 400;
+        
+        //TITULO DE CONTACTO
         h2 {
             font-size: 2.4rem;
             font-weight: 400;
@@ -162,11 +173,14 @@
             margin-bottom: 20px;
             padding-top: 48px;
         }
+        
+        //SECCION DE CONTACTO
         section{
             padding: 0 14px;
             display: flex;
             flex-direction: column;
             
+            //MIXIN DE ITEMS DE 1 LINEA
             .contacto__small{
                 display: flex;
                 gap: 18px;
@@ -186,6 +200,8 @@
                     align-self: center;
                 }
             }
+
+            //MIXIN DE ITEMS DE 3 LINEAS
             .contacto__grande{
                 display: flex;
                 gap: 18px;
@@ -216,11 +232,11 @@
                 }
             }
 
+            //LOGOS Y ENLACES A REDES SOCIALES
             .contacto__social{
                 display: flex;
                 gap: 42px;
                 padding-top: 24px;
-                
 
                 img {
                     width: 36px;
@@ -228,10 +244,9 @@
                 }
             }
         }
-    
     }
 
-    //mapa
+    //MAPA
     &__mapa {
         width: 100%;
         height: 350px;

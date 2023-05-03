@@ -1,23 +1,20 @@
 @import "./globales.scss";
 
+//BARRA DE NAVEGACION
 .nav-container {
-    width: 100%;
     height: 80px;
-    display: flex;
-    align-items: center;
 
-    picture {
-        width: 85%;
-        display: flex;
-        justify-content: center;
+    //LOGO MLA
+    picture {       
         
         img {
-            width: 200px;
-            height: 50px;
+            width: 250px;
+            height: 54px;
             margin-left: 30px;
         }
     }
 
+    //MENU DESPLEGABLE
     &__menu {
         margin-left: 60px;
         img {
@@ -25,217 +22,85 @@
             height: 30px;
         }
     }
-
 }
 
+//CONTENEDOR PRINCIPAL
 .main-container {
-    width: 100%;
-
+    
     //RESPALDO
     &__respaldo {
-        width: 100%;
         height: 1000px;
-        background-color: $colorPrincipal;
         padding: 0 64px;
         padding-top: 64px;
-        //mixin de pug
-        .main-container__item {
-            color: $colorLetra1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            font-size: 1.4rem;
-            margin-bottom: 48px;
-
-            img{
-                width: 200px;
-                height: 120px;
-                margin-bottom: 24px;
-            }
-            h2 {
-                font-weight: 400;
-                font-size: 2.6rem;
-                padding: 0 20px;
-                margin-bottom: 8px;
-                line-height: 30px;
-            }
-            p {
-                margin: 0 14px;
-                font-size: 1.4rem;
-                line-height: 24px;
-            }
-        }
     }
 
-    //Capital Humano
+    //CAPITAL HUMANO
     &__capital-humano {
-        width: 100%;
-        background-image: url(../img/bg-section.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        color: $colorLetra2;
-        display: flex;
-        justify-content: center;
 
         .capital-humano__container {
-            display: flex;
-            padding-top: 48px;
-            margin-bottom: 80px;
-           
-            h2 {
-                font-size: 3rem;
-                font-weight: 200;
-                margin-bottom: 8px;
-            }
     
             p {
-                font-size: 1.4rem;
-                font-weight: 200;
                 margin-bottom: 48px;
-                line-height: 2.2rem;
             }
 
+            //Separacion de los contenedores y distribucion wrap añadida
             .capital-humano__socios{
                 max-width: 690px;
                 display: flex;
                 flex-wrap: wrap;
                 gap: 60px;
                 justify-content: center;
-                
-                
+
                 .capital-humano__item {
-                    margin-bottom: 0;
-                    
-                    img {
-                        width: 160px;
-                        height: 240px;
-                        border-radius: 4px;
-                        box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
-                        -webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
-                        -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
-                        margin-bottom: 12px;
-                    }
-                    h2 {
-                        font-size: 1.8rem;
-                        font-weight: 300;
-                        margin-bottom: 0;
-                    }
-                    p {
-                        font-size: 1.3rem;
-                        font-weight: 300;
-                        margin: 0;
-                    }
+                    margin-bottom: 0;                
                 }
             }
+            
+            //Boton de la sección agrandado para mejor visibilidad en tablet
             a {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 200px;
-                    height: 50px;
-                    border: 1px solid #089de8;
-                    text-decoration: none;
-                    color: $colorLetra2;
-                    font-weight: 300;
-                    border-radius: 4px;
-                    font-size: 1.6rem;
-                    margin-top: 48px;
-                }
+                width: 200px;
+                height: 50px;
+                font-size: 1.6rem;
+                margin-top: 48px;
+            }
         }
     }
     
+    //SECION DE CONTACTO
     &__contacto {
-        width: 100%;
-        background-color: $colorPrincipal;
-        font-weight: 400;
+        
+        //Espaciado ajustado
         h2 {
-            font-size: 2.4rem;
-            font-weight: 400;
             padding: 0 48px;
-            margin-bottom: 20px;
+            margin-bottom: 28px;
             padding-top: 48px;
         }
+
         section{
             padding: 0 48px;
-            display: flex;
-            flex-direction: column;
-            
-            .contacto__small{
-                display: flex;
-                gap: 18px;
-                margin-bottom: 24px;
-                
-                picture{
-                    justify-self: center;
-                    align-self: center;
-                    
-                    img{
-                        width: 30px;
-                        height: 30px; 
-                    }
-                }
-                
-                p {
-                    align-self: center;
-                }
-            }
-            .contacto__grande{
-                display: flex;
-                gap: 18px;
-                margin-bottom: 24px;
-                
-                picture{
-                    justify-self: center;
-                    align-self: center;
-                    
-                    img{
-                        width: 30px;
-                        height: 30px;
-                    }
-                }
-                
-                div {
-                    display: flex;
-                    flex-direction: column;
-                   
-                    h2 {
-                        justify-self: center;
-                    }
-                    
-                    p {
-                        justify-self: center;
-                        line-height: 24px;
-                    }
-                }
-            }
-
+    
             .contacto__social{
-                display: flex;
                 gap: 64px;
-                padding-top: 24px;
-                
-
-                img {
-                    width: 36px;
-                    height: 36px;
-                }
             }
         }
-    
     }
 }
 
+//FOOTER
 .footer-container {
+
+    //Logo y letras del footer alineados en horizontal.
     .footer-movil__container{
         flex-direction: row;
         gap: 60px;
+       
+        //tamaño de la imagén y el texto aumentados.
         picture img {
             width: 150px;
             height: 90px;
             margin-top: 8px;
         }
+        
         p {
             font-size: 1.6rem;
         }

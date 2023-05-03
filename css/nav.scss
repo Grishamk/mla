@@ -1,5 +1,6 @@
-/*navegación*/
+//Modulo de main.scss
 
+//NAVEGACION
 header {
     background-color: $colorPrincipal;
 }
@@ -11,18 +12,20 @@ header {
     align-items: center;
     background-color: $colorPrincipal;
 
+    //LOGO MLA
     picture {
         width: 85%;
         display: flex;
         justify-content: center;
         
         img {
-            width: 160px;
-            height: 40px;
+            width: 150px;
+            height: 37px;
             margin-left: 20px;
         }
     }
 
+    //MENU DESPLEGABLE
     &__menu {
         
         img {
@@ -31,6 +34,7 @@ header {
         }
     }
 
+    //ESTO SOLO ES VISIBLE EN PANTALLAS GRANDES, IGNORAR EN ESTA HOJA DE ESTILOS. CUIDADO, NO BORRAR.
     &__navbar {
         display: none;
     }

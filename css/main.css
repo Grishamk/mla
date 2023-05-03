@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -16,7 +15,6 @@ body {
   color: #212529;
 }
 
-/*navegación*/
 header {
   background-color: #F7F7F7;
 }
@@ -42,8 +40,8 @@ header {
           justify-content: center;
 }
 .nav-container picture img {
-  width: 160px;
-  height: 40px;
+  width: 150px;
+  height: 37px;
   margin-left: 20px;
 }
 .nav-container__menu img {

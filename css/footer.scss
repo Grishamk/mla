@@ -1,3 +1,6 @@
+//Esto es un modulo de main.scss
+
+//FOOTER
 .footer-container {
     width: 100%;
     height: 197px;
@@ -10,10 +13,12 @@
     display: flex;
     flex-direction: column;
     
+    //BARRA DE NAVEGACION. ESTO SOLO ES VISIBLE EN PANTALLAS MAS GRANDES. NO BORRAR.
     &__navbar {
         display: none;
     }
     
+    //CONTENEDOR DE LA IMÁGEN Y EL TEXTO DE COPIRYGHT
     .footer-movil__container{
         height: 100%;
         display: flex;
@@ -25,6 +30,7 @@
             width: 120px;
             height: 66px;
         }
+        
         p {
             font-size: 1.3rem;
             font-weight: 300;

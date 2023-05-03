@@ -1,13 +1,7 @@
 @import "globales.scss";
 
-header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
 .nav-container {
-   max-width: 1300px;
    height: 94px;
 
     picture {
@@ -25,7 +19,6 @@ header{
 
     &__menu {
         display: none;
-    
     }
 
     &__navbar {
@@ -63,14 +56,8 @@ header{
     }
 }
 
+//CONTENEDOR PRINCIPAL
 .main-container {
-    width: 100%;
-
-    //carrusel principal
-    &__carrusel{
-        width: 100%;
-
-    }
 
     //seccion de respaldo
     &__respaldo {
@@ -80,122 +67,67 @@ header{
         display: flex;
         justify-content: center;
 
-
-        //mixin de pug
         section {
             width: 1300px;
             display: flex;
             justify-content: center;
             gap: 8px;
-        }
-        .main-container__item {
-            margin-bottom: 0px;
-            width: 33%;
 
-            h2 {
-                padding: 0;
-                
+            //MIXIN ITEM RESPALDO
+            .main-container__item {
+                margin-bottom: 0px;
+                width: 33%;
+
+                h2 {
+                    padding: 0;  
+                }
+
+                p {
+                    padding: 0 8px;
+                }
             }
-            p {
-                padding: 0 8px;
-            }
-        }
+        } 
     }
 
-    //Carrusel de clientes
-    &__clientes {
-        width: 100%;
-        height: 390px;
-        background-color: $colorSecundario;
-        
-        div {
-            display: flex;
-            height: 100%;
-            flex-direction: column;
-            text-align: center;
-            margin-top: 64px;
-
-            h2 {
-            font-size: 48px;
-            font-weight: 300;
-            margin-bottom: 50px;
-            }
-        
-        }
-        
-    }
-
-    //Capital Humano
+    //CAPITAL HUMANO
     &__capital-humano {
-        width: 100%;
-        background-image: url(../img/bg-section.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        color: $colorLetra2;
-        display: flex;
-        justify-content: center;
-
+        
         .capital-humano__container {
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding-top: 48px;
-            margin-bottom: 80px;
-           
-            h2 {
-                font-size: 3rem;
-                font-weight: 200;
-                margin-bottom: 8px;
-            }
-    
-            p {
-                font-size: 1.4rem;
-                font-weight: 200;
-                margin-bottom: 24px;
-                line-height: 2.2rem;
-            }
-
+            
+            //MIXIN SOCIOS | Puesto en horizontal y con espaciado.
             .capital-humano__socios{
                 max-width: 1200px;
                 gap: 32px;
-                flex-wrap: nowrap;
-                                           
+                flex-wrap: nowrap;                         
             }
+
+            //BOTON AL FINAL DE LA SECCION | Tamaño aumentado un poco.
             a {
-                width: 164px;
-                height: 40px;
-                font-size: 1.4rem;
+                width: 180px;
+                height: 50px;
+                font-size: 1.6rem;
             }
         }
     }
 }
 
+//FOOTER
 .footer-container {
-    width: 100%;
-    height: 197px;
-    background-image: url(../img/bg-section.jpg);
-    background-position: center;
-    background-size: cover;
-    background-position-x: right;
-    background-repeat: no-repeat;
-    color: $colorLetra2;
     display: flex;
     flex-direction: row;
-    
+    gap: 64px;
+
+    //BARRA DE NAVEGACIÓN
     &__navbar {
-        width: 60%;
+        width: 50%;
         height: 100%;
         display: flex;
         align-items: center;
         
-
         ul {
             list-style: none;
             display: flex;
-            gap: 32px;
+            gap: 20px;
             padding-left: 20px;
 
             li a {
@@ -206,17 +138,12 @@ header{
         }
     }
 
+    //CONTENEDOR DEL LOGO
     .footer-movil__container{
-        height: 100%;
-        width: 40%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
-
-        picture img {
-            width: 140px;
-            height: 77px;
-        }
+        margin-right: 20px;
     }
 }

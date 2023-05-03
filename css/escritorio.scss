@@ -1,9 +1,11 @@
 @import "./globales.scss";
 
+//BARRA DE NAVEGACION
 .nav-container {
     max-width: 1300px;
     height: 108px;
    
+    //LOGO MLA
     picture {
         justify-self: flex-start;
         align-self: flex-start;
@@ -17,27 +19,29 @@
         }
     } 
 
-     &__navbar {
+    //LOGO DE NAVEGACION
+    &__navbar {
          width: 70%;
  
          ul {
-                        
-             li a {
+
+            li a {
                 font-size: 1.6rem;
             }
-         }
-     }
+        }
+    }
  
-     .boton{
-         width: 130px;
-         height: 40px;
+    .boton{
+        width: 130px;
+        height: 40px;
     }
 }
 
+//CONTENEDOR PRINCIPAL
 .main-container {
     width: 100%;
 
-    //Contacto
+    // SECCION DE CONTACTO
     &__contacto {
         width: 100%;
         background-color: $colorPrincipal;
@@ -59,7 +63,6 @@
             display: flex;
             flex-direction: column;
         }
-    
     }
 
     //mapa
@@ -70,9 +73,11 @@
     }
 }
 
+//FOOTER
 .footer-container {
     justify-content: center;
     
+    //NAVEGACION
     &__navbar {
         width: 40%;
     }
