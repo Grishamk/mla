@@ -12,11 +12,20 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
-  color: #212529;
+  color: #333;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav-container {
-  max-width: 1300px;
+  max-width: 1200px;
   height: 108px;
 }
 .nav-container picture {
@@ -31,6 +40,7 @@ body {
 .nav-container picture img {
   width: 230px;
   height: 60px;
+  margin: 0;
   margin-top: 16px;
 }
 .nav-container__navbar {
@@ -88,6 +98,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 240px;
 }
 .footer-container__navbar {
   width: 40%;

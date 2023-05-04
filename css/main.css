@@ -12,7 +12,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
-  color: #212529;
+  color: #333;
 }
 
 header {
@@ -61,7 +61,7 @@ header {
 .main-container__carrusel {
   width: 100%;
   height: 480px;
-  background-color: #042F62;
+  background-color: #043877;
 }
 .main-container__carrusel h1 {
   color: white;
@@ -73,7 +73,7 @@ header {
   padding-top: 52px;
 }
 .main-container__respaldo .main-container__item {
-  color: #212529;
+  color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,8 +89,8 @@ header {
   margin-bottom: 48px;
 }
 .main-container__respaldo .main-container__item img {
-  width: 200px;
-  height: 120px;
+  width: 219px;
+  height: 125px;
   margin-bottom: 24px;
   border-radius: 4px;
 }

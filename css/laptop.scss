@@ -1,9 +1,10 @@
 @import "globales.scss";
 
-
+//NAVEGACIÓN
 .nav-container {
    height: 94px;
 
+    //LOGO
     picture {
         justify-self: flex-start;
         align-self: flex-start;
@@ -13,14 +14,17 @@
         img {
             width: 200px;
             height: 50px;
+            margin-left: 32px;
             margin-top: 16px;
         }
     }
 
+    //Este es el menu de la version movil, no borrar
     &__menu {
         display: none;
     }
 
+    //BARRA DE NAVEGACIÓN
     &__navbar {
         display: flex;
         justify-content: flex-end;
@@ -36,19 +40,25 @@
                 text-decoration: none;
                 font-size: 1.4rem;
                 color: $colorLetra1;
+                padding-bottom: 4px;
+            }
+
+            li a:hover {
+                border-bottom: 1px solid #333;
             }
         }
     }
 
+    //BOTON DE CAMBIO DE IDIOMAS
     .boton{
         display: block;
         width: 120px;
         height: 30px;
         font-size: 1.1rem;
         text-decoration: none;
-        border: 1px solid #043877;
+        border: 1px solid $colorTerciario;
         font-weight: 500;
-        color: #043877;
+        color: $colorTerciario;
         margin-left: 16px;
         display: flex;
         justify-content: center;

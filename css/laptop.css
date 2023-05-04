@@ -12,7 +12,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
-  color: #212529;
+  color: #333;
 }
 
 .nav-container {
@@ -30,6 +30,7 @@ body {
 .nav-container picture img {
   width: 200px;
   height: 50px;
+  margin-left: 32px;
   margin-top: 16px;
 }
 .nav-container__menu {
@@ -55,7 +56,11 @@ body {
 .nav-container__navbar ul li a {
   text-decoration: none;
   font-size: 1.4rem;
-  color: #212529;
+  color: #333;
+  padding-bottom: 4px;
+}
+.nav-container__navbar ul li a:hover {
+  border-bottom: 1px solid #333;
 }
 .nav-container .boton {
   display: block;
