@@ -1,5 +1,6 @@
 //Esto es un modulo que está conectado a main.scss, hacer referencia a este si se modifica el archivo main.
 
+/*PÁGINA DE INICIO*/
 .main-container {
     width: 100%;
 
@@ -251,5 +252,24 @@
         width: 100%;
         height: 350px;
         background-color: black;
+    }
+}
+
+/*SOBRE NOSOTROS*/
+
+main {
+    .nosotros{
+        width: 100%;
+        background-image: url(../img/bg-section.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: $colorLetra2;
+        display: flex;
+        justify-content: center;
+
+        &__text-container{
+            
+        }
     }
 }
