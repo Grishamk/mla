@@ -22,6 +22,12 @@ mixin contactoG(icono,alterno,titulo,contenido)
             p=titulo
             p=contenido
 
+mixin valores(imagen,alterno,titulo,texto)
+    article.nosotrosValores__item
+        picture: img(src="./icon/"+imagen alt=alterno)
+        h2=titulo
+        p=texto
+
 doctype html
 html(lang="es")
     include head.pug

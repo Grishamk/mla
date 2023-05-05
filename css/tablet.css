@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -15,6 +16,7 @@ body {
   color: #333;
 }
 
+/*PÁGINA DE INICIO*/
 .nav-container {
   height: 80px;
 }
@@ -86,4 +88,174 @@ body {
 }
 .footer-container .footer-movil__container p {
   font-size: 1.6rem;
+}
+
+/*SOBRE NOSOTROS*/
+main .nosotros__text-container {
+  width: 85%;
+}
+main .nosotros__text-container p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+main .nosotrosVideo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 48px;
+}
+main .nosotrosVideo .nosotrosVideo__text {
+  padding: 64px 40px;
+}
+main .nosotrosVideo .nosotrosVideo__text h2 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+main .nosotrosVideo .nosotrosVideo__text p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+main .nosotrosMV {
+  background-color: #089de8;
+  color: white;
+  padding: 48px 0 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .nosotrosMV .nosotrosMV__text {
+  width: 90%;
+}
+main .nosotrosMV .nosotrosMV__text h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+main .nosotrosMV .nosotrosMV__text p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+main .nosotrosValores {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 48px 0;
+  background-color: white;
+}
+main .nosotrosValores .nosotrosValores__container {
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+main .nosotrosValores .nosotrosValores__container .nosotrosValores--titulo {
+  font-size: 3.5rem;
+  margin-bottom: 8px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+main .nosotrosValores .nosotrosValores__container .nosotrosValores__item {
+  height: 400px;
+}
+main .nosotrosValores .nosotrosValores__container .nosotrosValores__item picture img {
+  width: 260px;
+  height: 166px;
+}
+main .nosotrosValores .nosotrosValores__container .nosotrosValores__item h2 {
+  font-size: 2rem;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+main .nosotrosValores .nosotrosValores__container .nosotrosValores__item p {
+  font-size: 1.4rem;
+}
+main .nosotrosValores .nosotrosValores__container .nosotrosValores__calidad {
+  padding-top: 48px;
+  margin-bottom: 16px;
+}
+main .nosotrosValores .nosotrosValores__container .nosotrosValores__calidad h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+main .nosotrosValores .nosotrosValores__container .nosotrosValores__calidad p {
+  font-weight: 400;
+}
+main .nosotrosExp {
+  width: 100%;
+  background-color: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .nosotrosExp .nosotrosExp__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 90%;
+  padding-top: 48px;
+}
+main .nosotrosExp .nosotrosExp__container h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #001F41;
+  margin-bottom: 8px;
+}
+main .nosotrosExp .nosotrosExp__container p {
+  font-size: 1.9rem;
+  margin: 0 12px;
+  margin-bottom: 28px;
+}
+main .nosotrosExp .nosotrosExp__container .nosotrosExp__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+main .nosotrosExp .nosotrosExp__container .nosotrosExp__list ul {
+  list-style: none;
+}
+main .nosotrosExp .nosotrosExp__container .nosotrosExp__list ul li {
+  width: 150px;
+  height: 40px;
+  font-size: 1.4rem;
+  margin-bottom: 4px;
 }

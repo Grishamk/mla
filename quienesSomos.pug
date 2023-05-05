@@ -24,12 +24,12 @@ block contenido
             
             section.nosotrosValores
                 .nosotrosValores__container
-                    h2 Valores
-                    //+valores()
-                    //+valores()
-                    //+valores()
-                    //+valores()
-                    //+valores()
+                    h2.nosotrosValores--titulo Valores
+                    +valores("integro.svg","escudo azul","Integridad","Brindamos nuestros servicios actuando en todo momento con un compromiso excepcional con la honestidad.")
+                    +valores("responsabilidad.svg","logo manos saludandose","Responsabilidad y Compromiso","Asumimos la responsabilidad y el cumplimiento de las obligaciones contraídas con nuestros clientes y partes interesadas.")
+                    +valores("servicio.svg","logo de Servicio al Cliente","Servicio al Cliente","Es la suma total de lo que hacemos para satisfacer las expectativas de nuestros clientes y alcanzar su satisfacción.")
+                    +valores("calidad.svg","logo con una diana","Calidad","Aportamos valor a nuestros clientes, cumpliendo con sus requisitos y satisfaciendo sus expectativas.")
+                    +valores("mejoras.svg","Grafica de crecimiento","Mejora Continua","Estamos comprometidos a mejorar continuamente en todo lo que hacemos, a través del entendimiento de las expectativas de nuestros clientes y la mejora continua de nuestros servicios y procesos")
 
                     article.nosotrosValores__calidad
                         h2 Política de la Calidad
@@ -39,30 +39,32 @@ block contenido
                 .nosotrosExp__container
                     h2 Nuestra Experiencia
                     p Contamos con una amplia cartera de clientes los cuales operan los siguientes sectores:
-                    ul
-                        li Salud
-                        li Seguridad Social
-                        li Combustibles
-                        li Transporte
-                        li Vinos y Licores
-                        li Seguridad
-                        li Inmobiliaria
-                        li Restaurantes
-                        li Call Center
-                        li Financiero
-                        li Publicidad
-                        li Software / IT
-                        li Educación
-                        li Turismo
-                        li Vehículos
-                        li Supermercados
-                        li Importadores y Retail
-                        li Construcción
-                        li Hoteles
-                        li Farmacéutica
-                        li Duty Free
-                        li Organizaciones sin Fines de Lucro
-                        li Periódicos y Medios
-                        li Agropecuario
+                    .nosotrosExp__list
+                        ul
+                            li Salud
+                            li Seguridad Social
+                            li Combustibles
+                            li Transporte
+                            li Vinos y Licores
+                            li Seguridad
+                            li Inmobiliaria
+                            li Restaurantes
+                            li Call Center
+                            li Financiero
+                            li Publicidad
+                            li Software / IT
+                        ul
+                            li Educación
+                            li Turismo
+                            li Vehículos
+                            li Supermercados
+                            li Importadores y Retail
+                            li Construcción
+                            li Hoteles
+                            li Farmacéutica
+                            li Duty Free
+                            li Organizaciones sin Fines de Lucro
+                            li Periódicos y Medios
+                            li Agropecuario
             
         include ./componentes/footer.pug
