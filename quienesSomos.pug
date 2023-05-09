@@ -17,19 +17,22 @@ block contenido
 
             section.nosotrosMV
                 .nosotrosMV__text
-                    h2 Misión
-                    p Satisfacer las necesidades y expectativas de nuestros clientes, siendo sus asesores estratégicos de soluciones que contribuyan al desarrollo empresarial y/o personal, mediante el compromiso de brindar servicios personalizados de auditoria, consultoría, impuestos y outsourcing basados en la innovación y la excelencia.
-                    h2 Visión 
-                    p Distinguirnos entre las firmas de mayor reconocimiento nacional e internacional por el nivel de compromiso y calidad de los servicios brindados y la generación de valor para nuestros clientes, asociados, empleados y la sociedad.
+                    .nosotrosMV__text--1
+                        h2 Misión
+                        p Satisfacer las necesidades y expectativas de nuestros clientes, siendo sus asesores estratégicos de soluciones que contribuyan al desarrollo empresarial y/o personal, mediante el compromiso de brindar servicios personalizados de auditoria, consultoría, impuestos y outsourcing basados en la innovación y la excelencia.
+                    .nosotrosMV__text--2
+                        h2 Visión 
+                        p Distinguirnos entre las firmas de mayor reconocimiento nacional e internacional por el nivel de compromiso y calidad de los servicios brindados y la generación de valor para nuestros clientes, asociados, empleados y la sociedad.
             
             section.nosotrosValores
                 .nosotrosValores__container
                     h2.nosotrosValores--titulo Valores
-                    +valores("integro.svg","escudo azul","Integridad","Brindamos nuestros servicios actuando en todo momento con un compromiso excepcional con la honestidad.")
-                    +valores("responsabilidad.svg","logo manos saludandose","Responsabilidad y Compromiso","Asumimos la responsabilidad y el cumplimiento de las obligaciones contraídas con nuestros clientes y partes interesadas.")
-                    +valores("servicio.svg","logo de Servicio al Cliente","Servicio al Cliente","Es la suma total de lo que hacemos para satisfacer las expectativas de nuestros clientes y alcanzar su satisfacción.")
-                    +valores("calidad.svg","logo con una diana","Calidad","Aportamos valor a nuestros clientes, cumpliendo con sus requisitos y satisfaciendo sus expectativas.")
-                    +valores("mejoras.svg","Grafica de crecimiento","Mejora Continua","Estamos comprometidos a mejorar continuamente en todo lo que hacemos, a través del entendimiento de las expectativas de nuestros clientes y la mejora continua de nuestros servicios y procesos")
+                    .nosotrosValores__item-container
+                        +valores("integro.svg","escudo azul","Integridad","Brindamos nuestros servicios actuando en todo momento con un compromiso excepcional con la honestidad.","organizador")
+                        +valores("responsabilidad.svg","logo manos saludandose","Responsabilidad y Compromiso","Asumimos la responsabilidad y el cumplimiento de las obligaciones contraídas con nuestros clientes y partes interesadas.")
+                        +valores("servicio.svg","logo de Servicio al Cliente","Servicio al Cliente","Es la suma total de lo que hacemos para satisfacer las expectativas de nuestros clientes y alcanzar su satisfacción.","organizador")
+                        +valores("calidad.svg","logo con una diana","Calidad","Aportamos valor a nuestros clientes, cumpliendo con sus requisitos y satisfaciendo sus expectativas.")
+                        +valores("mejoras.svg","Grafica de crecimiento","Mejora Continua","Estamos comprometidos a mejorar continuamente en todo lo que hacemos, a través del entendimiento de las expectativas de nuestros clientes y la mejora continua de nuestros servicios y procesos")
 
                     article.nosotrosValores__calidad
                         h2 Política de la Calidad
@@ -66,5 +69,3 @@ block contenido
                             li Organizaciones sin Fines de Lucro
                             li Periódicos y Medios
                             li Agropecuario
-            
-        include ./componentes/footer.pug

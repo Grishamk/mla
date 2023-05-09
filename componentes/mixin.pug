@@ -1,0 +1,38 @@
+mixin respaldo(imagen,alterno,titulo,contenido)
+    div.main-container__item
+        img(src="./img/"+imagen alt=alterno)
+        h2=titulo
+        p=contenido
+
+mixin socio(imagen,alterno,nombre,cargo)
+    article.capital-humano__item
+        img(src="./img/"+imagen alt=alterno)
+        h2=nombre
+        p=cargo
+
+mixin contactoP(icono,alterno,contenido)
+    article.contacto__small
+        picture: img(src="./img/"+icono alt=alterno)
+        p=contenido
+
+mixin contactoG(icono,alterno,titulo,contenido)
+    article.contacto__grande
+        picture: img(src="./img/"+icono alt=alterno)
+        div  
+            p=titulo
+            p=contenido
+
+mixin valores(imagen,alterno,titulo,texto,clase)
+    article.nosotrosValores__item
+        picture: img(src="./icon/"+imagen alt=alterno class=clase)
+        h2=titulo
+        p=texto
+
+mixin membresia(imagen,alterno,texto)
+    article.membresia__item
+        picture: img(src="../img/miembros/"+imagen alt=alterno)
+        h2=texto
+
+mixin registro(texto)
+    article.registro__item
+        h2=texto

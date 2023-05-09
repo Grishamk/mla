@@ -1,41 +1,12 @@
-mixin respaldo(imagen,alterno,titulo,contenido)
-    div.main-container__item
-        img(src="./img/"+imagen alt=alterno)
-        h2=titulo
-        p=contenido
-
-mixin socio(imagen,alterno,nombre,cargo)
-    article.capital-humano__item
-        img(src="./img/"+imagen alt=alterno)
-        h2=nombre
-        p=cargo
-
-mixin contactoP(icono,alterno,contenido)
-    article.contacto__small
-        picture: img(src="./img/"+icono alt=alterno)
-        p=contenido
-
-mixin contactoG(icono,alterno,titulo,contenido)
-    article.contacto__grande
-        picture: img(src="./img/"+icono alt=alterno)
-        div  
-            p=titulo
-            p=contenido
-
-mixin valores(imagen,alterno,titulo,texto)
-    article.nosotrosValores__item
-        picture: img(src="./icon/"+imagen alt=alterno)
-        h2=titulo
-        p=texto
-
+include mixin.pug
 doctype html
 html(lang="es")
-    include head.pug
+    include _head.pug
     body
         //Barra de navegación
         header 
             nav.nav-container
-                picture: img(src="../img/logo2.png" alt="Logo Mejía Lora y Asociados")
+                picture: img(src="../img/logo2.webp" alt="Logo Mejía Lora y Asociados")
 
                 div.nav-container__menu
                     a(href=""): img(src="../img/menu.svg", alt="")
@@ -58,4 +29,4 @@ html(lang="es")
                 a(href="").boton  ENGLISH VERSION
 
         block contenido
-        block nosotros
+        include footer.pug

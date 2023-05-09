@@ -76,18 +76,170 @@ header{
     //MAPA
     &__mapa {
         width: 100%;
-        height: 350px;
-        background-color: black;
+        height: 500px;
+        
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
 //FOOTER
 .footer-container {
     justify-content: center;
-    gap: 240px;
+    gap: 120px;
     
     //NAVEGACION
     &__navbar {
+        max-width: 1300px;
         width: 40%;
+    }
+}
+
+/*SOBRE NOSOTROS*/
+
+main {
+    .nosotros{
+        
+        &__text-container{
+            width: 70%;
+
+            h2{
+                font-size: 4rem;
+                font-weight: 400;
+                margin-bottom: 16px;
+            }
+            p{
+                font-size: 2rem;
+                font-weight: 400;
+                line-height: 32px;
+            }
+        }
+    }
+
+    .nosotrosVideo {
+        max-width: 1400px;
+        margin: 0 auto;
+
+        .nosotrosVideo__text {
+            padding: 64px 32px;
+            
+            h2 {
+                font-size: 2.1rem;
+                margin-bottom: 20px;
+                line-height: 2.4rem;
+            }
+
+            p{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+            }
+        }
+    }
+
+    .nosotrosMV {
+                
+        .nosotrosMV__text{
+            width: 100%;
+            max-width: 1400px;
+            justify-content: center;
+            
+            .nosotrosMV__text--1 {
+                width: 575px;
+                                
+                p {
+                    font-weight: 400;
+                }
+            }
+            
+
+            .nosotrosMV__text--2 {
+                width: 566px;
+               
+                
+                p {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .nosotrosValores {
+
+        .nosotrosValores__container{
+
+            .nosotrosValores__item-container{
+                flex-wrap: nowrap;
+                gap: 40px;
+                max-width: 1400px;
+                
+                .nosotrosValores__item{
+                    width: 220px;
+                    height: 350px;
+                    
+                    picture{
+                        
+                        img{
+                            width: 168px;
+                            height: 108px; 
+                        }
+
+                        .organizador{
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .nosotrosValores__calidad{
+            max-width: 1400px;
+        }
+    }
+
+    .nosotrosExp{
+        width: 100%;
+        background-color: $colorPrincipal;
+        display: flex;
+        justify-content: center;
+
+        .nosotrosExp__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+            padding-top: 48px;
+
+            h2{
+                font-size: 3.5rem;
+                font-weight: 400;
+                color: #001F41;
+                margin-bottom: 8px;
+            }
+
+            p{
+                font-size: 1.9rem;
+                margin: 0 12px;
+                margin-bottom: 28px;
+            }
+
+            .nosotrosExp__list{
+                display: flex;
+                gap: 10px;
+                margin-bottom: 48px;
+                ul {
+                    list-style: none;
+
+                    li{
+                        width: 150px;
+                        height: 40px;
+                        font-size: 1.4rem;
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+        }
     }
 }

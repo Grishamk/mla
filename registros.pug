@@ -1,0 +1,31 @@
+extend ./componentes/_plantilla.pug
+block contenido
+
+        main
+            section.RMtitular
+                .RMtitular__text-container
+                    h2 Registros y Membresías
+                    p MLA cuenta con más de 20 membresías y/o registros, tanto en organismos reguladores nacionales como internacionales y diferentes instituciones relativas al sector financiero.
+            
+            section.membresia
+                h2.membresia__titular Membresías
+                .membresia__item-container
+                    +membresia('instituto.jpg','logo ICPARD', 'El Instituto de Contadores Públicos Autorizados de la República Dominicana (ICPARD)') 
+                    +membresia('anje.jpg','logo ANJE','Asociación Nacional de Jóvenes Empresarios (ANJE)')
+                    +membresia('ifa.jpg','logo IFA','International Fiscal Association')
+                    +membresia('asonahores.jpg','logo ASONAHORES','Asociación Nacional de Hoteles y Restaurantes')
+                    +membresia('afcpard.jpg','logo AFCPARD','Asociación de Firmas de Contadores Públicos Autorizados de la República Dominicana (AFCPARD)')
+                    +membresia('asociacion.jpg','Logo asociacion','Asociación Interamericana  de Contabilidad')
+                    +membresia('atri.jpg','logo ATRI','Asociación Tributaria de la  República Dominicana')
+                    +membresia('bkr.jpg','Logo BKR','BKR International')
+            
+            section.registro
+                h2.registro__titular Registros
+                .registro__item-container
+                    +registro('Auditores Externos de la  Superintendencia de Bancos  de la República Dominicana.')
+                    +registro('Auditores Externos de la  Superintendencia de Valores  de la República Dominicana.')
+                    +registro('Auditores Externos de la  Superintendencia de Pensiones.')
+                    +registro('Auditores Independiente del  Banco Interamericano de  Desarrollo (BID).')
+                    +registro('Auditores Externos de la  Superintendencia de Seguros.')
+                    +registro('Auditores Externos del Instituto de  Desarrollo y Crédito Cooperativo.')
+                    +registro('Auditores Externos de la Dirección  General de Contrataciones Públicas')

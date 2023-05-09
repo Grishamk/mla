@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Firma de contadores públicos autorizados con más de 35 años de experiencia, ofreciendo servicios de auditoría, impuestos, consultoría administrativa y financiera, al igual que servicios de contabilidad y Desarrollo Organizacional."/>
-    <link rel="stylesheet" href="./css/main.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firma de contadores públicos autorizados con más de 35 años de experiencia, ofreciendo servicios de auditoría, impuestos, consultoría administrativa y financiera, al igual que servicios de contabilidad y Desarrollo Organizacional.">
+    <link rel="stylesheet" href="../css/main.css"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" media="(min-width: 700px)" href="../css/tablet.css">
     <link rel="stylesheet" media="(min-width: 1000px)" href="../css/laptop.css">
     <link rel="stylesheet" media="(min-width: 1600px)" href="../css/escritorio.css">
@@ -16,7 +18,7 @@
     <!--Barra de navegación-->
     <header> 
       <nav class="nav-container">
-        <picture><img src="../img/logo2.png" alt="Logo Mejía Lora y Asociados"></picture>
+        <picture><img src="../img/logo2.webp" alt="Logo Mejía Lora y Asociados"></picture>
         <div class="nav-container__menu"><a href=""><img src="../img/menu.svg" alt=""></a></div>
         <div class="nav-container__navbar">
           <ul>
@@ -33,7 +35,18 @@
     <!--Sección principal-->
     <main class="main-container">
       <section class="main-container__carrusel">
-        <h1>Aqui va el carrusel de imagenes</h1>
+        <div class="slide_group">
+          <div class="slide"><img src="./img/slide/slide.jpg"></div>
+          <div class="slide"><img src="./img/slide/slide01.jpg"></div>
+          <div class="slide"><img src="./img/slide/slide2.jpg"></div>
+          <div class="slide"><img src="./img/slide/slide3.jpg"></div>
+          <div class="slide"><img src="./img/slide/slide4.jpg"></div>
+          <div class="slide"><img src="./img/slide/slide5.jpg"></div>
+        </div>
+        <div class="slide_buttons">
+          <button class="previous_btn">Previous</button>
+          <button class="next_btn">Next</button>
+        </div>
       </section>
       <section class="main-container__respaldo">
         <section>
@@ -124,9 +137,10 @@
           <h2>FORMULARIO DE CONTACTO</h2>
         </section>
       </section>
-      <section class="main-container__mapa"></section>
+      <section class="main-container__mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d473.09774136335295!2d-69.9549795556712!3d18.44820775376078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea5621e1e54cfff%3A0x70cbf5dd68314e49!2sMLA-%20Mejia%20Lora%20%26%20Asociados%20-%20Auditores!5e0!3m2!1ses-419!2sdo!4v1683561275739!5m2!1ses-419!2sdo" tittle="ubicacion" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Ubicacion</iframe></section>
     </main>
     <!--Pie de página-->
+    <script src="./js/slider.js"></script>
     <footer class="footer-container">
       <div class="footer-container__navbar">
         <ul>
@@ -138,9 +152,21 @@
         </ul>
       </div>
       <div class="footer-movil__container">
-        <picture><img src="./img/40Aniv.png" alt="Logo del 40 aniversario"></picture>
+        <picture><img src="./img/40Aniv.webp" alt="Logo del 40 aniversario"></picture>
         <p>Mejia Lora & Asociados © 2023</p>
       </div>
     </footer>
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{};
+      var Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5bcdc8e9460a125f2657111c/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
   </body>
 </html>

@@ -91,6 +91,9 @@ body {
 }
 
 /*SOBRE NOSOTROS*/
+main .nosotros {
+  background-attachment: fixed;
+}
 main .nosotros__text-container {
   width: 85%;
 }
@@ -122,82 +125,43 @@ main .nosotrosVideo .nosotrosVideo__text p {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
-main .nosotrosMV {
-  background-color: #089de8;
-  color: white;
-  padding: 48px 0 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 main .nosotrosMV .nosotrosMV__text {
   width: 90%;
 }
 main .nosotrosMV .nosotrosMV__text h2 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
 }
 main .nosotrosMV .nosotrosMV__text p {
-  font-size: 1.4rem;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+  line-height: 2.4rem;
 }
-main .nosotrosValores {
-  width: 100%;
+main .nosotrosValores .nosotrosValores__container .nosotrosValores__item-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 48px 0;
-  background-color: white;
+  gap: 32px;
+  margin-bottom: 50px;
 }
-main .nosotrosValores .nosotrosValores__container {
-  padding: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+main .nosotrosValores .nosotrosValores__container .nosotrosValores__item-container .nosotrosValores__item {
+  width: 200px;
+  height: 350px;
 }
-main .nosotrosValores .nosotrosValores__container .nosotrosValores--titulo {
-  font-size: 3.5rem;
-  margin-bottom: 8px;
-  margin-bottom: 30px;
-  font-weight: 400;
+main .nosotrosValores .nosotrosValores__container .nosotrosValores__item-container .nosotrosValores__item picture img {
+  width: 200px;
+  height: 128px;
 }
-main .nosotrosValores .nosotrosValores__container .nosotrosValores__item {
-  height: 400px;
-}
-main .nosotrosValores .nosotrosValores__container .nosotrosValores__item picture img {
-  width: 260px;
-  height: 166px;
-}
-main .nosotrosValores .nosotrosValores__container .nosotrosValores__item h2 {
-  font-size: 2rem;
-  padding-top: 20px;
-  margin-bottom: 10px;
-  font-weight: 400;
-}
-main .nosotrosValores .nosotrosValores__container .nosotrosValores__item p {
-  font-size: 1.4rem;
+main .nosotrosValores .nosotrosValores__container .nosotrosValores__item-container .nosotrosValores__item picture .organizador {
+  margin-bottom: 16px;
 }
 main .nosotrosValores .nosotrosValores__container .nosotrosValores__calidad {
-  padding-top: 48px;
-  margin-bottom: 16px;
+  width: 90%;
 }
 main .nosotrosValores .nosotrosValores__container .nosotrosValores__calidad h2 {
   font-size: 2.8rem;
@@ -206,6 +170,8 @@ main .nosotrosValores .nosotrosValores__container .nosotrosValores__calidad h2 {
 }
 main .nosotrosValores .nosotrosValores__container .nosotrosValores__calidad p {
   font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 main .nosotrosExp {
   width: 100%;
@@ -258,4 +224,64 @@ main .nosotrosExp .nosotrosExp__container .nosotrosExp__list ul li {
   height: 40px;
   font-size: 1.4rem;
   margin-bottom: 4px;
+}
+
+.RMtitular {
+  height: 400px;
+}
+.RMtitular__text-container {
+  width: 85%;
+}
+.RMtitular__text-container h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.RMtitular__text-container p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.membresia__item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.membresia__item-container .membresia__item {
+  width: 340px;
+}
+.registro__item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.registro__item-container .registro__item {
+  width: 290px;
+  height: 168px;
+  padding: 20px;
+  border: solid 1px #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.registro__item-container .registro__item h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
 }

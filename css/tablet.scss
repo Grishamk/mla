@@ -1,6 +1,8 @@
 @import "./globales.scss";
 
-/*PÁGINA DE INICIO*/
+//|---------------------------------------------------------|//
+                    /*PÁGINA DE INICIO*/
+//|---------------------------------------------------------|//
 //BARRA DE NAVEGACION
 .nav-container {
     height: 80px;
@@ -108,10 +110,12 @@
     }
 }
 
-/*SOBRE NOSOTROS*/
+//----------------------------------------------------------//
+                    /*SOBRE NOSOTROS*/
+//---------------------------------------------------------//
 main {
     .nosotros{
-
+        background-attachment:fixed;
         &__text-container{
             width: 85%;
 
@@ -144,75 +148,54 @@ main {
     }
 
     .nosotrosMV {
-        background-color: #089de8;
-        color: $colorLetra2;
-        padding: 48px 0 32px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
+
         .nosotrosMV__text{
             width: 90%;
             
             h2 {
-                font-size: 2.8rem;
+                font-size: 3.5rem;
                 margin-bottom: 20px;
             }
             
             p {
-                font-size: 1.4rem;
-                margin-bottom: 20px;
+                font-size: 1.6rem;
+                margin-bottom: 40px;
+                line-height: 2.4rem;
             }
         }
     }
 
     .nosotrosValores {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 48px 0;
-        background-color: white;
 
         .nosotrosValores__container{
-            padding: 0 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            
-            
-            .nosotrosValores--titulo{
-                font-size: 3.5rem;
-                margin-bottom: 8px;
-                margin-bottom: 30px;
-                font-weight: 400;
-            }
 
-            .nosotrosValores__item{
-                height: 400px;
-                picture{
-                    img{
-                        width: 260px;
-                        height: 166px;
-                    }
-                }
+            .nosotrosValores__item-container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 32px;
+                margin-bottom: 50px;
                 
-                h2 {
-                    font-size: 2rem;
-                    padding-top: 20px;
-                    margin-bottom: 10px;
-                    font-weight: 400;
-                }
+                .nosotrosValores__item{
+                    width: 200px;
+                    height: 350px;
+                    
+                    picture{
+                        
+                        img{
+                            width: 200px;
+                            height: 128px; 
+                        }
 
-                p{
-                    font-size: 1.4rem;
+                        .organizador{
+                            margin-bottom: 16px;
+                        }
+                    }
                 }
             }
 
             .nosotrosValores__calidad{
-                padding-top: 48px;
-                margin-bottom: 16px;
-                
+                width: 90%;
                 h2{
                     font-size: 2.8rem;
                     font-weight: 400;
@@ -221,10 +204,17 @@ main {
 
                 p{
                     font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
                 }
             }
         }
     }
+
+
+
+            //CONOCIMIENTO DE GRID NECESARIO
+//---------------------------------------------------------//
     .nosotrosExp{
         width: 100%;
         background-color: $colorPrincipal;
@@ -266,6 +256,79 @@ main {
                         margin-bottom: 4px;
                     }
                 }
+            }
+        }
+    }
+}
+
+//-----------------------------------------------------------------//
+//REGISTROS Y MEMBRESIAS
+//-----------------------------------------------------------------//
+
+.RMtitular{
+    height: 400px;
+    &__text-container{
+        width: 85%;
+
+        h2{
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 8px;
+        }
+        p{
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 28px;
+        }
+    }
+}
+
+.membresia{
+  
+    &__titular {
+    }
+
+    &__item-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .membresia__item{
+            width: 340px;
+    
+            picture{
+                img {
+                }
+            }
+    
+            h2{
+            }
+        }
+    }
+}
+
+.registro {
+    &__titular {
+    }
+
+    &__item-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        .registro__item {
+            width: 290px;
+            height: 168px;
+            padding: 20px;
+            border: solid 1px #eeeeee;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 48px;
+    
+            h2{
+                font-size: 1.5rem;
+                font-weight: 400;
             }
         }
     }
