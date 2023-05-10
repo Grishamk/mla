@@ -36,3 +36,8 @@ mixin membresia(imagen,alterno,texto)
 mixin registro(texto)
     article.registro__item
         h2=texto
+
+mixin actoresIn(icono,alterno,texto)
+    article
+        i(src='../icon/'+icono alt=alterno)
+        p=texto

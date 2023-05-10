@@ -229,3 +229,52 @@ main .nosotrosExp .nosotrosExp__container .nosotrosExp__list ul li {
   font-size: 1.4rem;
   margin-bottom: 4px;
 }
+
+.RMtitular__text-container {
+  max-width: 1000px;
+}
+.RMtitular__text-container h2 {
+  font-size: 4rem;
+}
+.RMtitular__text-container p {
+  font-size: 2rem;
+  line-height: 30px;
+}
+
+.membresia {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.membresia__item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.membresia__item-container .membresia__item {
+  width: 280px;
+  margin: 0 10px 40px;
+}
+.membresia__item-container .membresia__item picture img {
+  width: 250px;
+  height: 150px;
+}
+.registro {
+  margin-bottom: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.registro__item-container {
+  gap: 20px;
+}
+.registro__item-container .registro__item {
+  width: 280px;
+}
+.registro__item-container .registro__item h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}

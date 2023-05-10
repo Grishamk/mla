@@ -243,3 +243,68 @@ main {
         }
     }
 }
+
+//-----------------------------------------------------------------//
+//REGISTROS Y MEMBRESIAS
+//-----------------------------------------------------------------//
+
+.RMtitular{
+    
+    &__text-container{
+        max-width: 1000px;
+        h2{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 2rem;
+            line-height: 30px;
+        }
+    }
+}
+
+.membresia{
+    max-width: 1300px;
+    margin: 0 auto;
+    &__titular {
+    }
+
+    &__item-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .membresia__item{
+            width: 280px;
+            margin: 0 10px 40px;
+    
+            picture{
+                img {
+                    width: 250px;
+                    height: 150px;
+                }
+            }
+    
+            h2{
+            }
+        }
+    }
+}
+
+.registro{
+    margin-bottom: 60px;
+    max-width: 1300px;
+    margin: 0 auto;
+    &__titular {
+    }
+
+    &__item-container{
+        gap: 20px;
+        .registro__item {
+            width: 280px;
+    
+            h2{
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
