@@ -285,3 +285,66 @@ main .nosotrosExp .nosotrosExp__container .nosotrosExp__list ul li {
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+.RStitular__text-container {
+  padding: 0 16px;
+}
+.RStitular__text-container h2 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+.RStitular__text-container p {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+.RS__container .RS__text-container {
+  padding: 48px 32px 24px;
+}
+.RS__container .RS__text-container .RS__main-text {
+  font-size: 16px;
+  margin-top: 16px;
+  line-height: 2.4rem;
+  margin-bottom: 20px;
+}
+.RS__container .RS__text-container .RS__externos {
+  margin-bottom: 48px;
+}
+.RS__container .RS__text-container .RS__externos picture {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 24px;
+}
+.RS__container .RS__text-container .RS__externos picture img {
+  width: 216px;
+  height: 216px;
+}
+.RS__container .RS__internos {
+  background-color: #F7F7F7;
+  padding: 0 32px 40px;
+}
+.RS__container .RS__internos h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  padding-top: 48px;
+}
+.RS__container .RS__internos article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 16px;
+  line-height: 2.8rem;
+  margin-bottom: 16px;
+}
+.RS__container .RS__internos article img {
+  margin-top: 4px;
+}
