@@ -334,7 +334,7 @@ main .nosotrosExp .nosotrosExp__container .nosotrosExp__list ul li {
   margin-bottom: 16px;
   padding-top: 48px;
 }
-.RS__container .RS__internos article {
+.RS__container .RS__internos .RS__internos--item article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,6 +345,6 @@ main .nosotrosExp .nosotrosExp__container .nosotrosExp__list ul li {
   line-height: 2.8rem;
   margin-bottom: 16px;
 }
-.RS__container .RS__internos article img {
+.RS__container .RS__internos .RS__internos--item article img {
   margin-top: 4px;
 }

@@ -383,6 +383,7 @@ main {
     .RS__internos {
         background-color: $colorPrincipal;
         padding: 0 32px 40px;
+        
 
         h2{
             font-size: 2rem;
@@ -392,15 +393,19 @@ main {
             
         }
 
-        article {
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            line-height: 2.8rem;
-            margin-bottom: 16px;
-
-            img {
-                margin-top: 4px;
+        .RS__internos--item{
+            
+            article {
+              
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+                line-height: 2.8rem;
+                margin-bottom: 16px;
+    
+                img {
+                    margin-top: 4px;
+                }
             }
         }
     }

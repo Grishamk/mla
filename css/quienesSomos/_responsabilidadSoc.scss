@@ -1,0 +1,107 @@
+//-------------------------------------------------------------//
+                    //RESPONSABILIDAD SOCIAL
+//-------------------------------------------------------------//
+.RStitular{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/bg-section.webp);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    color: $colorLetra2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text-container{
+        width: 95%;
+
+        h2{
+            font-size: 2.8rem;
+            font-weight: 300;
+            margin-bottom: 8px;
+        }
+        p{
+            font-size: 1.4rem;
+            font-weight: 300;
+            line-height: 22px;
+        }
+    }
+}
+.RS__container{
+    
+
+    .RS__text-container{
+        padding: 48px 20px 24px;
+        margin-bottom: 16px;
+    
+        strong {
+            font-size: 2rem;
+            line-height: 2.8rem;
+            
+        }
+    
+        .RS__main-text{
+            font-size: 16px;
+            margin-top: 16px;
+            line-height: 2.4rem;
+            margin-bottom: 20px;
+        }
+
+        .RS__externos {
+            margin-bottom: 48px;
+
+            h2{
+                font-size: 2rem;
+                font-weight: 400;
+                margin-bottom: 16px;
+            }
+            article {
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+                line-height: 2.8rem;
+
+                img {
+                    margin-top: 4px;
+                }
+            }
+            picture {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 260px;
+                    height: 260px;
+                }
+            }
+        }
+    }
+    .RS__internos {
+        background-color: $colorPrincipal;
+        padding: 0 20px 40px;
+
+        h2{
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+            padding-top: 48px;
+            
+        }
+
+        article {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            line-height: 2.8rem;
+            margin-bottom: 16px;
+
+            img {
+                margin-top: 4px;
+            }
+        }
+    }
+}

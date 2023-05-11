@@ -308,3 +308,93 @@ main {
         }
     }
 }
+
+//-------------------------------------------------------------//
+                    //RESPONSABILIDAD SOCIAL
+//-------------------------------------------------------------//
+.RStitular{
+    
+    &__text-container{
+        padding: 0 16px;
+
+        h2{
+            font-size: 3rem;
+            margin-bottom: 8px;
+        }
+        p{
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+        }
+    }
+}
+.RS__container{
+    
+
+    .RS__text-container{
+        padding: 48px 32px 24px;
+        max-width: 1300px;
+        margin: 0 auto;
+    
+        .RS__main-text{
+            font-size: 16px;
+            margin-top: 16px;
+            line-height: 2.4rem;
+            margin-bottom: 40px;
+        }
+
+        .RS__externos {
+            margin-bottom: 48px;
+
+            h2{
+                text-align: center;
+            }
+
+            picture {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 4px;
+                margin-top: 24px;
+                margin-bottom: 24px;
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+    .RS__internos {
+        background-color: $colorPrincipal;
+        padding: 0 32px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            text-align: center;
+            
+        }
+
+        .RS__internos--item{
+            max-width: 1300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            article {
+                width: 600px;
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+                line-height: 2.8rem;
+                margin-bottom: 16px;
+    
+                img {
+                    margin-top: 4px;
+                }
+            }
+            .diferenciador {
+                width: 1224px;
+            }
+        }
+    }
+}

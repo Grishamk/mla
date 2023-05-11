@@ -37,7 +37,7 @@ mixin registro(texto)
     article.registro__item
         h2=texto
 
-mixin actoresIn(icono,alterno,texto)
-    article
+mixin actoresIn(icono,alterno,texto,diferenciador)
+    article(class=diferenciador)
         img(src='../icon/'+icono alt=alterno)
         p=texto
