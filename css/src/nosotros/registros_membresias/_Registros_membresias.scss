@@ -1,0 +1,12 @@
+//REGISTROS Y MEMBRESÍAS
+
+main{
+    //TITULAR PRINCIPAL
+    @import "./rm_titular";
+
+    //MEMBRESIAS
+    @import "./membresias";
+
+    //REGISTROS
+    @import "./registros";
+}

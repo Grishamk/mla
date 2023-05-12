@@ -1,6 +1,8 @@
 //Modulo de main.scss
 
 //NAVEGACION
+
+
 header {
     background-color: $colorPrincipal;
 }
@@ -41,5 +43,146 @@ header {
 
     .boton {
         display: none;
+    }
+}
+
+
+//TABLET
+@media (min-width: $breakpoint-tablet) {
+    .nav-container {
+        height: 80px;
+    
+        //LOGO MLA
+        picture {       
+            
+            img {
+                width: 215px;
+                height: 54px;
+                margin-left: 120px;
+            }
+        }
+    
+        //MENU DESPLEGABLE
+        &__menu {
+            margin-left: 60px;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+//LAPTOP
+@media (min-width: $breakpoint-laptop) {
+    .nav-container {
+        height: 94px;
+     
+         //LOGO
+         picture {
+             justify-self: flex-start;
+             align-self: flex-start;
+             justify-content: flex-start;
+             width: 30%;
+             
+             img {
+                 width: 200px;
+                 height: 50px;
+                 margin-left: 32px;
+                 margin-top: 16px;
+             }
+         }
+     
+         //Este es el menu de la version movil, no borrar
+         &__menu {
+             display: none;
+         }
+     
+         //BARRA DE NAVEGACIÓN
+         &__navbar {
+             display: flex;
+             justify-content: flex-end;
+             margin: 0;
+             width: 55%;
+     
+             ul {
+                 display: flex;
+                 list-style: none;
+                 gap: 16px;
+                 
+                 li a {
+                     text-decoration: none;
+                     font-size: 1.4rem;
+                     color: $colorLetra1;
+                     padding-bottom: 4px;
+                 }
+     
+                 li a:hover {
+                     border-bottom: 1px solid #333;
+                 }
+             }
+         }
+     
+         //BOTON DE CAMBIO DE IDIOMAS
+         .boton{
+             display: block;
+             width: 120px;
+             height: 30px;
+             font-size: 1.1rem;
+             text-decoration: none;
+             border: 1px solid $colorTerciario;
+             font-weight: 500;
+             color: $colorTerciario;
+             margin-left: 16px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+    }
+}
+
+//DESKTOP
+@media (min-width: $breakpoint-desktop) {
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-container {
+        max-width: 1200px;
+        height: 108px;
+        
+       
+        //LOGO MLA
+        picture {
+            justify-self: flex-start;
+            align-self: flex-start;
+            justify-content: flex-start;
+            width: 30%;
+            
+            img {
+                width: 230px;
+                height:60px;
+                margin: 0;
+                margin-top: 16px;
+            }
+        } 
+    
+        //LOGO DE NAVEGACION
+        &__navbar {
+             width: 70%;
+     
+             ul {
+    
+                li a {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+     
+        .boton{
+            width: 130px;
+            height: 40px;
+        }
     }
 }

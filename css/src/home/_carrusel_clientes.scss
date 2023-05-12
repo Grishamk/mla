@@ -1,0 +1,19 @@
+.main-container__clientes {
+    width: 100%;
+    height: 390px;
+    background-color: $colorSecundario;
+    
+    div {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 64px;
+
+        h2 {
+        font-size: 48px;
+        font-weight: 300;
+        margin-bottom: 50px;
+        }
+    } 
+}

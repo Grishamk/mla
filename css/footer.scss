@@ -37,3 +37,85 @@
         }
     }
 }
+
+//TABLET
+@media (min-width: $breakpoint-tablet) {
+    .footer-container {
+
+        //Logo y letras del footer alineados en horizontal.
+        .footer-movil__container{
+            flex-direction: row;
+            gap: 60px;
+           
+            //tamaño de la imagén y el texto aumentados.
+            picture img {
+                width: 150px;
+                height: 90px;
+                margin-top: 8px;
+            }
+            
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+//LAPTOP
+@media(min-width: $breakpoint-laptop){
+    .footer-container {
+        height: 173px;
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+        justify-content: center;
+    
+        //BARRA DE NAVEGACIÓN
+        &__navbar {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            
+            ul {
+                list-style: none;
+                display: flex;
+                gap: 20px;
+                padding-left: 20px;
+    
+                li a {
+                    text-decoration: none;
+                    color: $colorLetra2;
+                    font-weight: 300;
+                }
+            }
+        }
+    
+        //CONTENEDOR DEL LOGO
+        .footer-movil__container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-right: 20px;
+    
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+//DESKTOP
+@media(min-width: $breakpoint-desktop){
+    .footer-container {
+        justify-content: center;
+        gap: 120px;
+        
+        //NAVEGACION
+        &__navbar {
+            max-width: 1300px;
+            width: 40%;
+        }
+    }
+}

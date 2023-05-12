@@ -1,0 +1,105 @@
+.registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__titular {
+        font-size: 3.6rem;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+
+    &__item-container{
+
+        .registro__item {
+            width: 290px;
+            height: 168px;
+            padding: 20px;
+            border: solid 1px #eeeeee;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 60px;
+    
+            h2{
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+//TABLET
+@media(min-width: $breakpoint-tablet){
+    .registro {
+        &__titular {
+        }
+    
+        &__item-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            .registro__item {
+                width: 290px;
+                height: 168px;
+                padding: 20px;
+                border: solid 1px #eeeeee;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 48px;
+        
+                h2{
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+//LAPTOP
+@media(min-width: $breakpoint-laptop){
+    .registro {
+        margin-bottom: 60px;
+    
+        &__titular {
+        }
+    
+        &__item-container{
+            gap: 20px;
+            .registro__item {
+                width: 220px;
+        
+                h2{
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+//DESKTOP
+@media(min-width: $breakpoint-desktop){
+    .registro{
+        margin-bottom: 60px;
+        max-width: 1300px;
+        margin: 0 auto;
+        &__titular {
+        }
+    
+        &__item-container{
+            gap: 20px;
+            .registro__item {
+                width: 280px;
+        
+                h2{
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

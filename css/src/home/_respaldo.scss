@@ -1,0 +1,84 @@
+.main-container__respaldo {
+    width: 100%;
+    height: 1200px;
+    background-color: $colorPrincipal;
+    padding-top: 52px;
+    
+    //MIXIN ITEMS DE RESPALDO
+    .main-container__item {
+        color: $colorLetra1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 48px;
+
+        img{
+            width: 250px;
+            height: 125px;
+            margin-bottom: 24px;
+            border-radius: 4px;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 2.6rem;
+            padding: 0 20px;
+            margin-bottom: 8px;
+            line-height: 30px;
+        }
+
+        p {
+            margin: 0 14px;
+            font-size: 1.4rem;
+            line-height: 24px;
+        }
+    }
+}
+
+//TABLET
+@media(min-width: $breakpoint-tablet){
+    .main-container__respaldo {
+        height: 1000px;
+        padding: 0 64px;
+        padding-top: 64px;
+    }
+}
+
+//LAPTOP
+@media(min-width: $breakpoint-laptop){
+    .main-container__respaldo {
+        height: 448px;
+        padding: 0;
+        padding-top: 58px;
+        display: flex;
+        justify-content: center;
+
+        section {
+            width: 1300px;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+
+            //MIXIN ITEM RESPALDO
+            .main-container__item {
+                margin-bottom: 0px;
+                width: 33%;
+
+                h2 {
+                    padding: 0;  
+                }
+
+                p {
+                    padding: 0 8px;
+                }
+            }
+        } 
+    }
+}
+
+//DESKTOP
+@media(min-width: $breakpoint-desktop){
+    //version de laptop le queda bien. Aun así, dejo este bloque para futuros cambios.
+}

@@ -8,6 +8,10 @@ $colorPrincipal: #F7F7F7;
 $colorSecundario: white;
 $colorTerciario: #043877;
 
+$breakpoint-tablet: 750px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1500px;
+
 //FORMATO GLOBAL
 * {
     box-sizing: border-box;

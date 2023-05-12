@@ -1,0 +1,10 @@
+main {
+    //TITULAR PRINCIPAL
+    @import "./rs_titular";
+    
+    //CONTENEDOR DE TEXTO y ACTORES EXTERNOS
+    @import "./rs_text-container";
+
+    //ACTORES EXTERNOS
+    @import "./actores_internos";
+}

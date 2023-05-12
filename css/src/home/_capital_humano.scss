@@ -1,0 +1,137 @@
+.main-container__capital-humano {
+    width: 100%;
+    background-image: url(../img/bg-section.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $colorLetra2;
+    display: flex;
+    justify-content: center;
+
+    .capital-humano__container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 48px;
+        margin-bottom: 80px;
+       
+        h2 {
+            font-size: 3rem;
+            font-weight: 200;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 1.4rem;
+            font-weight: 200;
+            margin-bottom: 24px;
+            line-height: 2.2rem;
+        }
+
+        //MIXIN ITEMS DE CAPITAL HUMANO
+        .capital-humano__item {
+            margin-bottom: 24px;
+            
+            img {
+                width: 160px;
+                height: 240px;
+                border-radius: 4px;
+                box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
+                -webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
+                -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
+                margin-bottom: 12px;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+                font-weight: 300;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 1.3rem;
+                font-weight: 300;
+                margin: 0;
+            }
+        }
+        
+        //BOTON DE CAPITAL HUMANO
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 164px;
+            height: 40px;
+            border: 1px solid #089de8;
+            text-decoration: none;
+            color: $colorLetra2;
+            font-weight: 300;
+            border-radius: 4px;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+//TABLET
+@media(min-width: $breakpoint-tablet){
+    .main-container__capital-humano {
+
+        .capital-humano__container {
+    
+            p {
+                margin-bottom: 48px;
+            }
+
+            //Separacion de los contenedores y distribucion wrap añadida
+            .capital-humano__socios{
+                max-width: 690px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 60px;
+                justify-content: center;
+
+                .capital-humano__item {
+                    margin-bottom: 0;                
+                }
+            }
+            
+            //Boton de la sección agrandado para mejor visibilidad en tablet
+            a {
+                width: 200px;
+                height: 50px;
+                font-size: 1.6rem;
+                margin-top: 48px;
+            }
+        }
+    }
+}
+
+//LAPTOP
+@media(min-width: $breakpoint-laptop){
+    .main-container__capital-humano {
+        
+        .capital-humano__container {
+            
+            //MIXIN SOCIOS | Puesto en horizontal y con espaciado.
+            .capital-humano__socios{
+                max-width: 1200px;
+                gap: 32px;
+                flex-wrap: nowrap;                         
+            }
+
+            //BOTON AL FINAL DE LA SECCION | Tamaño aumentado un poco.
+            a {
+                width: 180px;
+                height: 50px;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+//DESKTOP
+@media(min-width: $breakpoint-desktop){
+    //version de laptop le queda bien. Aun así, dejo este bloque para futuros cambios.
+}
