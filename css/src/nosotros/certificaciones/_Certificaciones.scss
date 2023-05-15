@@ -1,0 +1,11 @@
+.cert-container{
+    
+    //Encabezado
+    @import "./titular";
+
+    //Seccion Principal
+    @import "./principal";
+
+    //Seccion de contacto
+    @import "./contacto";
+}
