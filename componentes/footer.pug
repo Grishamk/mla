@@ -1,20 +1,21 @@
 footer.footer-container
-            .footer-container__navbar
-                ul
-                    li
-                        a(href="") Inicio 
-                    li
-                        a(href="") Nosotros 
-                    li
-                        a(href="") Avisos
-                    li
-                        a(href="") Capital Humano 
-                    li
-                        a(href="") Contacto
+    .footer-container__navbar
+        ul
+            li
+                a(href="") Inicio 
+            li
+                a(href="") Nosotros 
+            li
+                a(href="") Avisos
+            li
+                a(href="") Capital Humano 
+            li
+                a(href="") Contacto
 
-            .footer-movil__container
-                picture: img(src="./img/40Aniv.webp" alt="Logo del 40 aniversario")
-                p Mejia Lora & Asociados © 2023
+    .footer-movil__container
+        block logoFooter
+                
+        p Mejia Lora & Asociados © 2023
 
 script(type='text/javascript').
   var Tawk_API=Tawk_API||{};

@@ -24,13 +24,13 @@ mixin contactoG(icono,alterno,titulo,contenido)
 
 mixin valores(imagen,alterno,titulo,texto,clase)
     article.nosotrosValores__item
-        picture: img(src="./icon/"+imagen alt=alterno class=clase)
+        picture: img(src="../../icon/"+imagen alt=alterno class=clase)
         h2=titulo
         p=texto
 
 mixin membresia(imagen,alterno,texto)
     article.membresia__item
-        picture: img(src="../img/miembros/"+imagen alt=alterno)
+        picture: img(src="../../img/miembros/"+imagen alt=alterno)
         h2=texto
 
 mixin registro(texto)
@@ -39,5 +39,5 @@ mixin registro(texto)
 
 mixin actoresIn(icono,alterno,texto,diferenciador)
     article(class=diferenciador)
-        img(src='../icon/'+icono alt=alterno)
+        img(src='../../icon/'+icono alt=alterno)
         p=texto

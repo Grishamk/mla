@@ -6,10 +6,13 @@ html(lang="es")
         //Barra de navegación
         header 
             nav.nav-container
-                picture: img(src="../img/logo2.webp" alt="Logo Mejía Lora y Asociados")
+                picture
+                    block img
+            
 
                 div.nav-container__menu
-                    a(href=""): img(src="../img/menu.svg", alt="")
+                    block menu
+                    
                 
                 .nav-container__navbar
                     ul

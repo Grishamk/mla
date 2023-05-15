@@ -49,8 +49,8 @@
            
             //tamaño de la imagén y el texto aumentados.
             picture img {
-                width: 150px;
-                height: 90px;
+                width: 140px;
+                height: 77px;
                 margin-top: 8px;
             }
             
@@ -117,5 +117,13 @@
             max-width: 1300px;
             width: 40%;
         }
+    }
+    .footer-movil__container{
+        
+        picture img {
+            width: 140px;
+            height: 77px;
+        }
+        
     }
 }
