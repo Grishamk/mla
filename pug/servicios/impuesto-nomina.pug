@@ -1,0 +1,41 @@
+extend ../../componentes/_plantilla.pug
+block logo
+    link(rel="shortcut icon", href="../../img/favicon.ico")
+block stylesheet
+    link(rel="stylesheet", href="../../css/main.css")
+block img
+    img(src="../../img/logo2.webp" alt="Logo Mejía Lora y Asociados")
+block menu
+    a(href=""): img(src="../../img/menu.svg", alt="menu hamburguesa")
+block logoFooter
+    picture: img(src="../../img/40Aniv.webp" alt="Logo del 40 aniversario")
+block contenido 
+ 
+        main
+            section.encabezado
+                section.imp__encabezado
+                    div
+                        h2 Impuestos - Nómina - Contabilidad
+                    
+            
+                section.imp__enfoque
+                    picture
+                        img(src="../../img/servicios/auditoria.webp", alt="Imagende una lupa revisando documentos")
+                    article 
+                        p Nuestro objetivo está orientado a prestar servicios de Outsourcing (tercerización) de procesos financieros, contables y tributarios, permitiendo que nuestros clientes puedan concentrar sus esfuerzos en incrementar la comercialización de sus productos o servicios, la eficiencia de sus procesos y el logro de las metas establecidas.
+                        p Mediante la base de nuestra especialización en materia contable y fiscal en los diferentes sectores económicos del país, brindamos servicios que garanticen la calidad, confiabilidad y oportunidad de las informaciones financieras, contables y el cumplimiento fiscal de su organización, usando una metodología bajo las mejores prácticas internacionales.
+
+            section.imp__servicios
+                strong Efectuamos nuestro trabajo de acuerdo con las Normas Internacionales de Información Financiera y de Contabilidad aplicables. Los servicios de TPA abarcan:
+                h3 Asesoramiento y revisión de registros contables y fiscales:
+                p Su finalidad es mantener un registro ordenado y sistemático de todas las transacciones comerciales que realicen nuestros clientes, validando la razonabilidad de las cifras a través de los soportes suministrados y elaboración de análisis y cruces fiscales.
+                h3 Informes y compilación de estados financieros:
+                p Tiene como propósito reunir, clasificar y resumir en forma de Estados Financieros la información que surge del sistema contable de la empresa, así como la elaboración de la Declaración Jurada Anual de Sociedades y evaluación de riesgos fiscales sobre las operaciones realizadas.
+                h3 Outsourcing Contable:
+                p Consiste en el proceso de registrar, clasificar y resumir la información de cada una de las transacciones efectuadas por la empresa.
+                h3 Impuestos y nóminas:
+                p Abarcan la elaboración y/o revisión de los impuestos y nóminas mensuales, actualizaciones de cambios en el portal del SuirPlus en la Tesorería de la Seguridad Social (TSS).
+
+            section.auditoria__contacto
+                p Para obtener mas información y solicitar nuestros servicios
+                a(href="") Contáctenos ahora

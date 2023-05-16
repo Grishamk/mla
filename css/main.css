@@ -1908,6 +1908,273 @@ main .auditoria__contacto a {
   }
 }
 
+main .encabezado {
+  background-color: #F7F7F7;
+}
+main .encabezado .asesoria__encabezado div {
+  width: 100%;
+  height: 100px;
+  background-image: url(../img/bg-section.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .encabezado .asesoria__encabezado div h2 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  padding: 15px;
+}
+main .encabezado .asesoria__enfoque picture {
+  width: 320px;
+}
+main .encabezado .asesoria__enfoque picture img {
+  width: 100%;
+}
+main .encabezado .asesoria__enfoque article {
+  padding: 48px 20px;
+}
+main .encabezado .asesoria__enfoque article strong {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 480;
+  margin-bottom: 20px;
+}
+main .encabezado .asesoria__enfoque article p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+@media (min-width: 750px) {
+  main .encabezado .asesoria__enfoque article {
+    padding: 48px 40px;
+  }
+  main .encabezado .asesoria__enfoque article strong {
+    display: block;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  main .encabezado .asesoria__enfoque article p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .encabezado .asesoria__encabezado div {
+    height: 170px;
+  }
+  main .encabezado .asesoria__encabezado div h2 {
+    font-size: 4rem;
+  }
+  main .encabezado .asesoria__enfoque {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .encabezado .asesoria__enfoque picture {
+    width: 50%;
+  }
+  main .encabezado .asesoria__enfoque picture img {
+    width: 100%;
+    height: 100%;
+  }
+  main .encabezado .asesoria__enfoque article {
+    width: 50%;
+    padding: 48px 80px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+main .asesoria__servicios {
+  padding: 48px 20px;
+  background-color: white;
+}
+main .asesoria__servicios strong {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  margin-bottom: 15px;
+}
+main .asesoria__servicios h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #00066e;
+  margin: 38px 0 24px;
+}
+main .asesoria__servicios .espacio {
+  margin-bottom: 70px;
+}
+main .asesoria__servicios p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+main .asesoria__servicios ul p {
+  margin-bottom: 16px;
+}
+main .asesoria__servicios ul li {
+  margin-left: 24px;
+  line-height: 2.4rem;
+}
+@media (min-width: 750px) {
+  main .asesoria__servicios {
+    padding: 48px 40px;
+  }
+}
+@media (min-width: 1500px) {
+  main .asesoria__servicios {
+    padding: 48px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+main .encabezado {
+  background-color: #F7F7F7;
+}
+main .encabezado .imp__encabezado div {
+  width: 100%;
+  height: 100px;
+  background-image: url(../img/bg-section.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .encabezado .imp__encabezado div h2 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  padding: 15px;
+}
+main .encabezado .imp__enfoque picture {
+  width: 320px;
+}
+main .encabezado .imp__enfoque picture img {
+  width: 100%;
+}
+main .encabezado .imp__enfoque article {
+  padding: 48px 20px;
+}
+main .encabezado .imp__enfoque article strong {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 480;
+  margin-bottom: 20px;
+}
+main .encabezado .imp__enfoque article p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+@media (min-width: 750px) {
+  main .encabezado .imp__enfoque article {
+    padding: 48px 40px;
+  }
+  main .encabezado .imp__enfoque article strong {
+    display: block;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  main .encabezado .imp__enfoque article p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .encabezado .imp__encabezado div {
+    height: 170px;
+  }
+  main .encabezado .imp__encabezado div h2 {
+    font-size: 4rem;
+  }
+  main .encabezado .imp__enfoque {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .encabezado .imp__enfoque picture {
+    width: 50%;
+  }
+  main .encabezado .imp__enfoque picture img {
+    width: 100%;
+    height: 100%;
+  }
+  main .encabezado .imp__enfoque article {
+    width: 50%;
+    padding: 48px 80px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+main .imp__servicios {
+  padding: 48px 20px;
+  background-color: white;
+  margin-bottom: 60px;
+}
+main .imp__servicios strong {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  margin-bottom: 15px;
+}
+main .imp__servicios h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #00066e;
+  margin: 38px 0 24px;
+}
+main .imp__servicios p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+@media (min-width: 750px) {
+  main .imp__servicios {
+    padding: 48px 40px;
+  }
+}
+@media (min-width: 1500px) {
+  main .imp__servicios {
+    padding: 48px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 .footer-container {
   width: 100%;
   height: 197px;
