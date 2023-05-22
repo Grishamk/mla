@@ -41,3 +41,13 @@ mixin actoresIn(icono,alterno,texto,diferenciador)
     article(class=diferenciador)
         img(src='../../icon/'+icono alt=alterno)
         p=texto
+
+mixin staffElement(imagen,alterno,titulo,text1,text2,text3)
+    article.staff__item
+        picture
+            img(src="../../img/"+imagen alt=alterno)
+        div.staff__text-container
+            h2=titulo
+            p=text1
+            p=text2
+            p=text3
