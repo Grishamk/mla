@@ -42,7 +42,7 @@ mixin actoresIn(icono,alterno,texto,diferenciador)
         img(src='../../icon/'+icono alt=alterno)
         p=texto
 
-mixin staffElement(imagen,alterno,titulo,text1,text2,text3)
+mixin staffElement(imagen,alterno,titulo,text1,text2,text3,clase)
     article.staff__item
         picture
             img(src="../../img/"+imagen alt=alterno)
@@ -50,4 +50,4 @@ mixin staffElement(imagen,alterno,titulo,text1,text2,text3)
             h2=titulo
             p=text1
             p=text2
-            p=text3
+            p(class=clase)=text3
