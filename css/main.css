@@ -534,14 +534,15 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0 auto;
   }
   .main-container .main-container__contacto h2 {
-    margin-left: 195px;
     font-size: 4.4rem;
     font-weight: 300;
-    padding: 0 14px;
+    padding: 0;
     margin-bottom: 20px;
     padding-top: 48px;
+    text-align: center;
   }
   .main-container .main-container__contacto section {
     margin-left: 195px;
@@ -3214,6 +3215,12 @@ main .desarrollo__servicios ul li {
     width: 100%;
     margin-bottom: 20px;
     display: inline-block;
+  }
+  .contacto__informacion {
+    padding: 48px 88px 0px;
+  }
+  .contacto__redes {
+    margin-bottom: 32px;
   }
 }
 @media (min-width: 1024px) {
