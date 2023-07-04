@@ -1,5 +1,67 @@
 .main-container__noticias {
     width: 100%;
-    height: 500px;
     background-color: $colorSecundario;
+    color: white;
+    margin-bottom: 24px;
+    h1{
+        color: black;
+        padding: 40px 24px 16px;
+    }
+    .noticias__container{
+        width: 100%;
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .noticia__item{
+            background-color: $colorTerciario;
+            width: 272px;
+            height: 532px;
+            
+            picture{
+                width: 100%;
+                padding: 15px;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 250px;
+                }
+            }
+            .noticia__contenido{
+                padding: 15px;
+                h2{
+                    font-size: 2rem;
+                    margin-bottom: 24px;
+                }
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+            .noticia__enlace{
+                padding: 15px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                a{
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+
+                    span{
+                        width: 32px;
+                        height: 32px;
+                        margin-left: 14px;
+                    }
+                }
+            }
+        }
+    }
 }

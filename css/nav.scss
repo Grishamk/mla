@@ -108,7 +108,7 @@ header {
              ul {
                  display: flex;
                  list-style: none;
-                 gap: 16px;
+                 gap: 20px;
                  
                  li a {
                      text-decoration: none;
@@ -128,7 +128,7 @@ header {
              display: block;
              width: 120px;
              height: 30px;
-             font-size: 1.1rem;
+             font-size: 1.4rem;
              text-decoration: none;
              border: 1px solid $colorTerciario;
              font-weight: 500;

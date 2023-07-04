@@ -7,22 +7,24 @@ block logoFooter
     picture: img(src="./img/40Aniv.webp" alt="Logo del 40 aniversario")
 block contenido
 
-        //Sección principal
+        //SECCIÓN PRINCIPAL
         main.main-container
             section.main-container__carrusel
                             
-
+            //SECCIÓN DE BKR
             section.main-container__respaldo
                 section
                     +respaldo("bkr.jpg","Logo BKR International","Respaldo Internacional", "MLA es miembro de BKR International, una asociación de firmas auditoras y consultoras de negocios localizadas en 81 paises y más de 588 oficinas en el mundo.")
                     +respaldo("servicio.svg","Logo de personas Staff","Staff Especializado", "De forma permanente preparamos cursos y seminarios de actualización para nuestros profesionales, con el fin de prestar servicios eficientes con los más altos estándares de calidad.")
                     +respaldo("calidad.svg","Logo de una diana con un dardo","Expertos en su sector","Desarrollamos metodologías personalizadas que aseguran procesos eficientes para cada sector empresarial. Basados en la experiencia y el conocimiento adquirido con la participación en diversos proyectos.")
 
+            //CARRUSEL DE CLIENTES
             section.main-container__clientes
                 div 
                     h2 Nuestros Clientes
                     h3 carrusel de clientes aqui
 
+            //CAPITAL HUMANO
             section.main-container__capital-humano
                 section.capital-humano__container
                     h2 Capital Humano
@@ -35,9 +37,14 @@ block contenido
                         +socio("Adelaida-Ortega-1.webp","Foto Adelaida Ortega","Adelaida Ortega","Gerente Fundador")
                     a(href="") Ver todos 
 
+            //NOTICIAS
             section.main-container__noticias
                 h1 Noticias
+                .noticias__container
+                    +noticia("MicrosoftTeams-image.png","Reunion de BKR Internacional","BRK Regional Meeting","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
+                    +noticia("MicrosoftTeams-image-1.png","letras iguales al texto de abajo","Elevamos nuestro compromiso","Elevamos nuestro compromiso con Sistema de Gestión de Calidad Certificado por INTECO","#")
 
+            //CONTACTO
             section.main-container__contacto
                 h2 Contáctenos
                 section
@@ -54,6 +61,7 @@ block contenido
                         a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/"): img(src="./img/367593_linkedin_business_network_social_icon.svg" alt="Icono de Linkedin") 
                     h2 FORMULARIO DE CONTACTO
 
+            //MAPA
             section.main-container__mapa
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d473.09774136335295!2d-69.9549795556712!3d18.44820775376078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea5621e1e54cfff%3A0x70cbf5dd68314e49!2sMLA-%20Mejia%20Lora%20%26%20Asociados%20-%20Auditores!5e0!3m2!1ses-419!2sdo!4v1683561275739!5m2!1ses-419!2sdo" title="ubicacion" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Ubicacion</iframe>
 
