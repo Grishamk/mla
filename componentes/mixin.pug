@@ -23,8 +23,8 @@ mixin contactoG(icono,alterno,titulo,contenido)
             p=titulo
             p=contenido
 
-mixin noticia(imagen,alterno,titulo,texto,enlace)
-    article.noticia__item
+mixin noticia(imagen,alterno,titulo,texto,enlace,clase)
+    article.noticia__item(class=clase)
         picture
             img(src="./img/"+imagen, alt=alterno)
         .noticia__contenido
