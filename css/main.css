@@ -114,6 +114,17 @@ header {
     display: flex;
     list-style: none;
     gap: 20px;
+    height: 100%;
+  }
+  .nav-container__navbar ul li {
+    height: 100%;
+    position: relative;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    /*MENU DESPLEGABLE*/
+    /*NOSOTROS*/
+    /*SERVICIOS*/
+    /*NOVEDADES*/
   }
   .nav-container__navbar ul li a {
     text-decoration: none;
@@ -128,7 +139,162 @@ header {
     display: -ms-flexbox;
     display: flex;
   }
-  .nav-container__navbar ul li a:hover {
+  .nav-container__navbar ul li .toggle__nosotros {
+    width: 300px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    -webkit-box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 50px;
+    z-index: 10;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  .nav-container__navbar ul li .toggle__nosotros li {
+    margin: 0;
+    height: 100%;
+    padding: 0 15px;
+  }
+  .nav-container__navbar ul li .toggle__nosotros li a {
+    border: none !important;
+    -webkit-transition: none;
+    transition: none;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-container__navbar ul li .toggle__nosotros li a:hover {
+    -webkit-transform: none;
+            transform: none;
+    color: white;
+  }
+  .nav-container__navbar ul li .toggle__nosotros li:hover {
+    background-color: #043877;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .nav-container__navbar ul li .toggle__servicios {
+    width: 300px;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    -webkit-box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 50px;
+    z-index: 10;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  .nav-container__navbar ul li .toggle__servicios li {
+    margin: 0;
+    height: 100%;
+    padding: 0 15px;
+  }
+  .nav-container__navbar ul li .toggle__servicios li a {
+    border: none !important;
+    -webkit-transition: none;
+    transition: none;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-container__navbar ul li .toggle__servicios li a:hover {
+    -webkit-transform: none;
+            transform: none;
+    color: white;
+  }
+  .nav-container__navbar ul li .toggle__servicios li:hover {
+    background-color: #043877;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .nav-container__navbar ul li .toggle__novedades {
+    width: 300px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    -webkit-box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 50px;
+    z-index: 10;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  .nav-container__navbar ul li .toggle__novedades li {
+    margin: 0;
+    height: 100%;
+    padding: 0 15px;
+  }
+  .nav-container__navbar ul li .toggle__novedades li a {
+    border: none !important;
+    -webkit-transition: none;
+    transition: none;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-container__navbar ul li .toggle__novedades li a:hover {
+    -webkit-transform: none;
+            transform: none;
+    color: white;
+  }
+  .nav-container__navbar ul li .toggle__novedades li:hover {
+    background-color: #043877;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .nav-container__navbar ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 40px;
+  }
+  .nav-container__navbar li a:hover {
     border-bottom: 1px solid #333;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
@@ -176,8 +342,8 @@ header {
     width: 30%;
   }
   .nav-container picture img {
-    width: 200px;
-    height: 50px;
+    width: 250px;
+    height: 75px;
     margin: 0;
     margin-top: 16px;
   }
