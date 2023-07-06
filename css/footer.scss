@@ -3,7 +3,7 @@
 //FOOTER
 .footer-container {
     width: 100%;
-    height: 197px;
+    //height: 197px;
     background-image: url(../img/bg-section.webp);
     background-position: center;
     background-size: cover;
@@ -23,17 +23,36 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        padding: 40px 20px;
+        //justify-content: center;
         align-items: center;
 
         picture img {
-            width: 120px;
-            height: 66px;
+            width: 200px;
+            height: 53px;
         }
         
-        p {
-            font-size: 1.3rem;
+        .derechosAutor{
+            font-size: 1.6rem;
             font-weight: 300;
+            margin-bottom: 36px;
+        }
+
+        .contacto{
+            text-align: center;
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 12px;
+            }
+            p {
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 20px;
+                margin-bottom: 8px;
+                span{
+                    font-weight: 400;
+                }
+            }
         }
     }
 }
