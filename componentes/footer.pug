@@ -1,22 +1,19 @@
 footer.footer-container
-    .footer-container__navbar
-        ul
-            li
-                a(href="") Inicio 
-            li
-                a(href="") Nosotros 
-            li
-                a(href="") Avisos
-            li
-                a(href="") Capital Humano 
-            li
-                a(href="") Contacto
-
     .footer-movil__container
-        block logoFooter
-                
-        p.derechosAutor Mejia Lora & Asociados © 2023
-
+        .footer-movil__logo
+            block logoFooter
+                    
+            p.derechosAutor Mejia Lora & Asociados © 2023
+            .redes1
+                a(href="") 
+                    img(src="../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+                a(href="") 
+                    img(src="../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+                a(href="") 
+                    img(src="../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+                //Posiblemente será eliminado
+                a(href="") 
+                    img(src="../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter") 
         .contacto
             h3 Contáctenos
 
@@ -30,6 +27,17 @@ footer.footer-container
                 span (809) 482-0838
             p Email: 
                 span info@mejialora.com
+        .redes
+            a(href="") 
+                img(src="../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+            a(href="") 
+                img(src="../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+            a(href="") 
+                img(src="../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+            //Posiblemente será eliminado
+            a(href="") 
+                img(src="../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter") 
+        
 
 script(type='text/javascript').
   var Tawk_API=Tawk_API||{};

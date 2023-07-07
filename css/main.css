@@ -3570,7 +3570,7 @@ main .desarrollo__servicios ul li {
   background-image: url(../img/bg-section.webp);
   background-position: center;
   background-size: cover;
-  background-position-x: right;
+  background-position-x: left;
   background-repeat: no-repeat;
   color: white;
   display: -webkit-box;
@@ -3580,9 +3580,6 @@ main .desarrollo__servicios ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.footer-container__navbar {
-  display: none;
 }
 .footer-container .footer-movil__container {
   height: 100%;
@@ -3597,15 +3594,33 @@ main .desarrollo__servicios ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.footer-container .footer-movil__container picture img {
+.footer-container .footer-movil__container .footer-movil__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-container .footer-movil__container .footer-movil__logo picture img {
   width: 200px;
   height: 53px;
 }
-.footer-container .footer-movil__container .derechosAutor {
+.footer-container .footer-movil__container .footer-movil__logo .derechosAutor {
   font-size: 1.6rem;
   font-weight: 300;
   margin-bottom: 36px;
+}
+.footer-container .footer-movil__container .footer-movil__logo .redes1 {
+  display: none;
 }
 .footer-container .footer-movil__container .contacto {
   text-align: center;
@@ -3623,77 +3638,82 @@ main .desarrollo__servicios ul li {
 .footer-container .footer-movil__container .contacto p span {
   font-weight: 400;
 }
-
-@media (min-width: 750px) {
-  .footer-container .footer-movil__container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 60px;
-  }
-  .footer-container .footer-movil__container picture img {
-    width: 140px;
-    height: 77px;
-    margin-top: 8px;
-  }
-  .footer-container .footer-movil__container p {
-    font-size: 1.6rem;
-  }
+.footer-container .footer-movil__container .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 32px;
+  gap: 16px;
 }
+.footer-container .footer-movil__container .redes img {
+  width: 35px;
+}
+.footer-container .footer-movil__container .footer-movil__logo, .footer-container .footer-movil__container .redes, .footer-container .footer-movil__container .contacto {
+  width: 100%;
+}
+
 @media (min-width: 1024px) {
   .footer-container {
-    height: 173px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 300px;
+    width: 100%;
+  }
+  .footer-container .footer-movil__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 64px;
+  }
+  .footer-container .footer-movil__container .footer-movil__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 28%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer-container .footer-movil__container .footer-movil__logo .derechosAutor {
+    margin-bottom: 0;
+  }
+  .footer-container .footer-movil__container .footer-movil__logo .redes1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 20px;
+    gap: 16px;
   }
-  .footer-container__navbar {
+  .footer-container .footer-movil__container .footer-movil__logo .redes1 img {
+    width: 35px;
+  }
+  .footer-container .footer-movil__container .contacto {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
     width: 50%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  .footer-container__navbar ul {
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-    padding-left: 20px;
-  }
-  .footer-container__navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 300;
-  }
-  .footer-container .footer-movil__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 20px;
-    margin-right: 20px;
-  }
-  .footer-container .footer-movil__container p {
-    font-size: 1.4rem;
+  .footer-container .footer-movil__container .redes {
+    display: none;
   }
 }
 @media (min-width: 1500px) {
@@ -3701,13 +3721,16 @@ main .desarrollo__servicios ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 120px;
   }
-  .footer-container__navbar {
+  .footer-container .footer-movil__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     max-width: 1300px;
-    width: 40%;
+    width: 100%;
+    margin: 0 auto;
   }
-  .footer-movil__container picture img {
+  .footer-container .footer-movil__container picture img {
     width: 140px;
     height: 77px;
   }
