@@ -11,9 +11,65 @@ html(lang="es")
             
 
                 div.nav-container__menu
-                    block menu
-                     
-                
+                    label(for="menu").nav-label 
+                        img(src="./img/menu.svg", alt="menu hamburguesa")                
+                    input(type="checkbox" id="menu").nav-input
+                    
+                    div.nav-movil
+                        ul
+                            li
+                                a(href="./index.html") Inicio
+                        
+                            li
+                                a(href="") Nosotros
+                                ul
+                                    li
+                                        a(href="./html/nosotros/quienesSomos.html") Quienes Somos
+                                    li
+                                        a(href="./html/nosotros/registros.html") Registros y Membresías
+                                    li
+                                        a(href="./html/nosotros/responsabilidadSoc.html") Responsabilidad Social 
+                                    li 
+                                        a(href="./html/nosotros/certificaciones.html") Certificaciones 
+
+                            //SERVICIOS
+                            li
+                                a(href="") Servicios
+                                ul
+                                    li
+                                        a(href="./html/servicios/auditoria.html") Auditoría
+                                    li
+                                        a(href="./html/servicios/asesoria.html") Asesoría Fiscal
+                                    li
+                                        a(href="./html/servicios/impuesto-nomina.html") Impuesto - Nómina - Contabilidad
+                                    li 
+                                        a(href="./html/servicios/consultorias-negocios.html") Consultoría de Negocios y Financiera
+                                    li 
+                                        a(href="./html/servicios/desarrolloOrg.html") Desarrollo Organizacional
+                                    li 
+                                        a(href="./html/servicios/proteccion.html") Protección Patrimonial 
+                            
+                            //NOVEDADES
+                            li
+                                a(href="") Novedades
+                                ul
+                                    li
+                                        a(href="") Avisos
+                                    li
+                                        a(href="") Noticias y Boletines
+
+                            //CAPITAL HUMANO    
+                            li
+                                a(href="./html/capital-humano/capital-humano.html") Capital Humano
+                            
+                            //CONTACTO
+                            li
+                                a(href="./html/contacto/contacto.html") Contacto
+                        
+                        a(href="").boton  ENGLISH
+
+
+                //BARRA DE NAVEGACION
                 .nav-container__navbar
                     ul
                         li 

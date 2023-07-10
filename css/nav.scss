@@ -33,12 +33,93 @@ header {
 
     //MENU DESPLEGABLE
     &__menu {
-        
-        img {
-            width: 30px;
-            height: 30px;
+        label{
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        input{
+            display: none;
+        }
+        input:checked +.nav-movil{
+            visibility: visible;
+            transition: all 300ms ease;
+        }
+        .nav-movil{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            position: fixed;
+            top: 57px;
+            right: 0;
+            width: 90vw;
+            height: 100%;
+            overflow: auto;
+            visibility: hidden;
+            
+            
+            .nav-movil__cerrar{
+                padding: 15px;
+                img{
+                    width: 36px;
+                }
+            }
+            ul{
+                list-style: none;
+                width: 100%;
+                li{
+                    margin-bottom: 1px;
+                    width: 100%;
+    
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-weight: bold;
+                        background-color:#043877;
+                        display: block;
+                        padding: 20px;
+                    }
+                    ul{
+                        padding: 0;
+                        padding: 0 20px;
+                        margin-bottom: 20px;
+                        margin-top: 10px;
+                        li{
+                            margin-bottom: 24px;
+                            background-color: #fff;
+                            a{
+                                font-weight: 400;
+                                color: black;
+                                background-color: #fff;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .boton{
+                display: inline-block;
+                width: 120px;
+                height: 60px;
+                font-size: 1.4rem;
+                text-decoration: none;
+                border: 1px solid $colorTerciario;
+                font-weight: 500;
+                color: $colorTerciario;
+                margin-left: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 8px;
+            }
         }
     }
+
+    
+    
 
     //ESTO SOLO ES VISIBLE EN PANTALLAS GRANDES, IGNORAR EN ESTA HOJA DE ESTILOS. CUIDADO, NO BORRAR.
     &__navbar {
