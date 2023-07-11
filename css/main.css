@@ -565,9 +565,7 @@ header {
   overflow: hidden;
 }
 .main-container .main-container__clientes div .slider .slider-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-flex;
   width: 300%; /* Ajusta el ancho según el número de imágenes */
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;

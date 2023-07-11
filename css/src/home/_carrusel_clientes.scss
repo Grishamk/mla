@@ -21,7 +21,7 @@
             overflow: hidden;
           
             .slider-container {
-              display: flex;
+              display: -webkit-flex;
 
               width: 300%; /* Ajusta el ancho según el número de imágenes */
               transition: transform 0.3s ease-in-out;
