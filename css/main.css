@@ -545,11 +545,14 @@ header {
   }
 }
 .main-container .main-container__clientes {
-  width: 90%;
+  max-width: 90%;
   height: 250px;
   margin: 0 auto;
   background-color: white;
   padding: 10px;
+}
+.main-container .main-container__clientes div {
+  width: 100%;
 }
 .main-container .main-container__clientes div h2 {
   font-size: 28px;
@@ -565,15 +568,17 @@ header {
   overflow: hidden;
 }
 .main-container .main-container__clientes div .slider .slider-container {
-  display: -webkit-flex;
-  width: 300%; /* Ajusta el ancho según el número de imágenes */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; /* Ajusta el ancho según el número de imágenes */
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .main-container .main-container__clientes div .slider .slider-container img {
-  width: 33.3%; /* Ajusta el ancho según el número de imágenes */
+  width: 100%; /* Ajusta el ancho según el número de imágenes */
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -598,6 +603,21 @@ header {
   .main-container .main-container__clientes {
     height: 400px;
   }
+  .main-container .main-container__clientes div .slider {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+  }
+  .main-container .main-container__clientes div .slider .slider-container {
+    width: 100%;
+  }
+  .main-container .main-container__clientes div .slider .slider-container img {
+    width: 100%; /* Ajusta el ancho según el número de imágenes */
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media (min-width: 1500px) {
   .main-container .main-container__clientes {
@@ -607,6 +627,23 @@ header {
   .main-container .main-container__clientes div h2 {
     font-size: 3.2rem;
     font-weight: 500;
+  }
+  .main-container .main-container__clientes div .slider {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+  }
+  .main-container .main-container__clientes div .slider .slider-container {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-container .main-container__clientes div .slider .slider-container img {
+    width: 100%; /* Ajusta el ancho según el número de imágenes */
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .main-container .main-container__capital-humano {

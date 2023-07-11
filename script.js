@@ -11,7 +11,7 @@ prevButton.addEventListener('click', () => {
 });
 
 nextButton.addEventListener('click', () => {
-  slideIndex = (slideIndex + 1) % 15;
+  slideIndex = (slideIndex + 1) % 32;
   updateSlider();
 });
 
@@ -27,8 +27,9 @@ function stopAutoSlide() {
 }
 
 function updateSlider() {
-  const translateX = slideIndex * -33.333;
+  const translateX = slideIndex * -100;
   sliderContainer.style.transform = `translateX(${translateX}%)`;
 }
+
 
 startAutoSlide(); // Iniciar el slider automático al cargar la página

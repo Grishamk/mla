@@ -1,49 +1,49 @@
 .main-container__clientes {
-    width: 90%;
+    max-width: 90%;
     height: 250px;
     margin: 0 auto;
     background-color: $colorSecundario;
     padding: 10px;
     
     div {
+        width: 100%;
         h2 {
-        font-size: 28px;
-        font-weight: 300;
-        margin-bottom: 40px;
-        margin-top: 50px;
-        text-align: center;
-        }
+            font-size: 28px;
+            font-weight: 300;
+            margin-bottom: 40px;
+            margin-top: 50px;
+            text-align: center;
+            }
 
         .slider {
             position: relative;
             width: 100%;
             height: 100%; /* Ajusta la altura según tus necesidades */
             overflow: hidden;
-          
+        
             .slider-container {
-              display: -webkit-flex;
-
-              width: 300%; /* Ajusta el ancho según el número de imágenes */
-              transition: transform 0.3s ease-in-out;
-          
-              img {
-                width: 33.3%; /* Ajusta el ancho según el número de imágenes */
-                height: 100%;
-                object-fit: cover;
-              }
+                display: flex;
+                width: 100%; /* Ajusta el ancho según el número de imágenes */
+                transition: transform 0.3s ease-in-out;
+        
+                img {
+                    width: 100%; /* Ajusta el ancho según el número de imágenes */
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
-          
+        
             .slider-controls {
-              display: none;
-              justify-content: center;
-              margin-top: 10px;
-          
-              button {
-                margin: 0 5px;
-                padding: 5px 10px;
-              }
+                display: none;
+                justify-content: center;
+                margin-top: 10px;
+        
+                button {
+                    margin: 0 5px;
+                    padding: 5px 10px;
+                }
             }
-          }
+        }
     } 
 }
 
@@ -54,20 +54,56 @@
 }
 
 @media(min-width: $breakpoint-laptop){
-  .main-container__clientes {
-    height: 400px;
-  }
+    .main-container__clientes {
+        height: 400px;
+
+        div{
+
+            .slider {
+                position: relative;
+                width: 100%;
+                height: 100%; /* Ajusta la altura según tus necesidades */
+                overflow: hidden;
+    
+                .slider-container {
+                    width: 100%;
+        
+                    img {
+                        width: 100%; /* Ajusta el ancho según el número de imágenes */
+                        height:auto;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(min-width: $breakpoint-desktop){
-  .main-container__clientes {
-    width: 1250px;
-    height: 400px;
-    div{
-      h2{
-        font-size: 3.2rem;
-        font-weight: 500;
-      }
+    .main-container__clientes {
+        width: 1250px;
+        height: 400px;
+        div{
+            h2{
+                font-size: 3.2rem;
+                font-weight: 500;
+            }
+            .slider {
+                position: relative;
+                width: 100%;
+                height: 100%; /* Ajusta la altura según tus necesidades */
+                overflow: hidden;
+    
+                .slider-container {
+                    width: 100%;
+                    object-fit: cover;
+                    img {
+                        width: 100%; /* Ajusta el ancho según el número de imágenes */
+                        height:100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
     }
-  }
 }
