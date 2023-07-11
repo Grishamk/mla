@@ -6,9 +6,10 @@
 header {
     width: 100%;
     background-color: $colorPrincipal;
-    position: fixed;
+    /*position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;*/
 }
 
 .nav-container {

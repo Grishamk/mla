@@ -75,7 +75,7 @@
 //LAPTOP
 @media(min-width: $breakpoint-laptop){
     .footer-container {
-        height: 300px;
+        height: 280px;
         width: 100%;
 
         .footer-movil__container{
@@ -120,6 +120,7 @@
 @media(min-width: $breakpoint-desktop){
     .footer-container {
         justify-content: center;
+        height: 230px;
         .footer-movil__container{
             justify-content: space-between;
             max-width: 1300px;
