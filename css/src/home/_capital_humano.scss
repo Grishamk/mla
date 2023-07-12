@@ -118,7 +118,15 @@
             .capital-humano__socios{
                 max-width: 1200px;
                 gap: 32px;
-                flex-wrap: nowrap;                         
+                flex-wrap: nowrap;
+                
+                .capital-humano__item{
+                    transition: all 300ms ease;
+                }
+
+                .capital-humano__item:hover{
+                    margin-top: -36px;
+                }
             }
 
             //BOTON AL FINAL DE LA SECCION | Tamaño aumentado un poco.
@@ -126,6 +134,13 @@
                 width: 180px;
                 height: 50px;
                 font-size: 1.6rem;
+                transition: all 300ms ease;
+            }
+
+            a:hover{
+                background-color: white;
+                color: black;
+                font-weight: bold;
             }
         }
     }

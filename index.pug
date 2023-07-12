@@ -3,11 +3,11 @@ block contenido
 
         //SECCIÓN PRINCIPAL
         main.main-container
-            section.main-container__carrusel
+            section.main-container__carrusel.fade-in
                 
 
             //NOTICIAS
-            section.main-container__noticias
+            section.main-container__noticias.fade-in
                 h1 Últimas Noticias
                 .noticias__container
                     +noticia("MicrosoftTeams-image.png","Reunion de BKR Internacional","BRK Regional Meeting","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
@@ -15,7 +15,7 @@ block contenido
                     +noticia("MicrosoftTeams-image-1.png","letras iguales al texto de abajo","Elevamos nuestro compromiso","Elevamos nuestro compromiso con Sistema de Gestión de Calidad Certificado por INTECO","#","escondete")         
             
             //SECCIÓN DE BKR
-            section.main-container__respaldo
+            section.main-container__respaldo.fade-in
                 section
                     +respaldo("bkr.jpg","Logo BKR International","Respaldo Internacional", "MLA es miembro de BKR International, una asociación de firmas auditoras y consultoras de negocios localizadas en 81 paises y más de 588 oficinas en el mundo.")
                     +respaldo("servicio.svg","Logo de personas Staff","Staff Especializado", "De forma permanente preparamos cursos y seminarios de actualización para nuestros profesionales, con el fin de prestar servicios eficientes con los más altos estándares de calidad.")
@@ -24,11 +24,11 @@ block contenido
             
 
             //CAPITAL HUMANO
-            section.main-container__capital-humano
-                section.capital-humano__container
+            section.main-container__capital-humano.fade-in
+                section.capital-humano__container.fade-in
                     h2 Capital Humano
                     p Agregamos valor a nuestros clientes cumpliendo con sus requisitos y en satisfacer sus expectativas.
-                    div.capital-humano__socios
+                    div.capital-humano__socios.fade-in
                         +socio("reymi-mejia-1.webp", "Foto Raymi Mejía","Raymi Mejía","Socio")
                         +socio("firelli.webp","Foto Firelli Mejía","Firelli Mejía","Socio")
                         +socio("sayka-mejia-1.webp","Foto Sayka Mejía","Sayka Mejía","Socio")
@@ -56,7 +56,7 @@ block contenido
                     h2 FORMULARIO DE CONTACTO///
             
             //CARRUSEL DE CLIENTES
-            section.main-container__clientes
+            section.main-container__clientes.fade-in
                 div 
                     h2 Nuestros Clientes
                     div.slider
@@ -100,7 +100,7 @@ block contenido
                                 img(src="./icon/1904671_arrow_arrow right_change_direction_next_icon.svg", alt="Flecha para avanzar en el slider")
            
             //MAPA
-            section.main-container__mapa
+            section.main-container__mapa.fade-in
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d473.09774136335295!2d-69.9549795556712!3d18.44820775376078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea5621e1e54cfff%3A0x70cbf5dd68314e49!2sMLA-%20Mejia%20Lora%20%26%20Asociados%20-%20Auditores!5e0!3m2!1ses-419!2sdo!4v1683561275739!5m2!1ses-419!2sdo" title="ubicacion" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Ubicacion</iframe>
 
         //Pie de página

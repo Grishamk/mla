@@ -1,12 +1,12 @@
 //HOME
 mixin respaldo(imagen,alterno,titulo,contenido)
-    div.main-container__item
+    div.main-container__item.fade-in
         img(src="./img/"+imagen alt=alterno)
         h2=titulo
         p=contenido
 
 mixin socio(imagen,alterno,nombre,cargo)
-    article.capital-humano__item
+    article.capital-humano__item.fade-in
         img(src="./img/"+imagen alt=alterno)
         h2=nombre
         p=cargo

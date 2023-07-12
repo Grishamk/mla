@@ -36,8 +36,9 @@ header {
           align-items: center;
   background-color: #F7F7F7;
 }
-.nav-container picture {
-  width: 85%;
+.nav-container .logo-container {
+  display: block;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +46,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.nav-container picture img {
+.nav-container .logo-container img {
   width: 150px;
   height: 37px;
   margin-left: 20px;
@@ -82,6 +83,7 @@ header {
   visibility: hidden;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  z-index: 10;
 }
 .nav-container__menu .nav-movil .nav-movil__cerrar {
   padding: 15px;
@@ -153,12 +155,16 @@ header {
 
 @media (min-width: 750px) {
   .nav-container {
+    width: 100%;
     height: 80px;
   }
-  .nav-container picture img {
+  .nav-container .logo-container {
+    width: 80%;
+  }
+  .nav-container .logo-container img {
     width: 215px;
     height: 54px;
-    margin-left: 120px;
+    margin-left: 150px;
   }
   .nav-container__menu {
     margin-left: 60px;
@@ -177,7 +183,8 @@ header {
   .nav-container {
     height: 94px;
   }
-  .nav-container picture {
+  .nav-container .logo-container {
+    display: block;
     justify-self: flex-start;
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -186,9 +193,9 @@ header {
             justify-content: flex-start;
     width: 30%;
   }
-  .nav-container picture img {
+  .nav-container .logo-container img {
     width: 200px;
-    height: 50px;
+    height: 60px;
     margin-left: 32px;
     margin-top: 16px;
   }
@@ -430,7 +437,7 @@ header {
     max-width: 1200px;
     height: 95px;
   }
-  .nav-container picture {
+  .nav-container .logo-container {
     -ms-flex-item-align: start;
         align-self: flex-start;
     -webkit-box-pack: start;
@@ -438,11 +445,11 @@ header {
             justify-content: flex-start;
     width: 30%;
   }
-  .nav-container picture img {
-    width: 250px;
-    height: 65px;
+  .nav-container .logo-container img {
+    width: 280px;
+    height: 70px;
     margin: 0;
-    margin-top: 16px;
+    margin-top: 10px;
   }
   .nav-container__navbar {
     width: 70%;
@@ -761,10 +768,24 @@ header {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+  .main-container .main-container__capital-humano .capital-humano__container .capital-humano__socios .capital-humano__item {
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  .main-container .main-container__capital-humano .capital-humano__container .capital-humano__socios .capital-humano__item:hover {
+    margin-top: -36px;
+  }
   .main-container .main-container__capital-humano .capital-humano__container a {
     width: 180px;
     height: 50px;
     font-size: 1.6rem;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  .main-container .main-container__capital-humano .capital-humano__container a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
   }
 }
 .main-container .main-container__noticias {
@@ -1055,6 +1076,20 @@ header {
     width: 100%;
     height: 100%;
   }
+}
+.main-container .fade-in {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+.main-container .fade-in.fade-in-show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 /*SOBRE NOSOTROS*/
@@ -3879,8 +3914,17 @@ main .desarrollo__servicios ul li {
     margin-top: 20px;
     gap: 16px;
   }
+  .footer-container .footer-movil__container .footer-movil__logo .redes1 a {
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
   .footer-container .footer-movil__container .footer-movil__logo .redes1 img {
     width: 35px;
+  }
+  .footer-container .footer-movil__container .footer-movil__logo .redes1 a:hover {
+    margin-top: -8px;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
   }
   .footer-container .footer-movil__container .contacto {
     -webkit-box-ordinal-group: 2;
