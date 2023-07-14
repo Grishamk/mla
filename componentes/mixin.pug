@@ -69,3 +69,14 @@ mixin staffElement(imagen,alterno,titulo,text1,text2,text3,clase)
             p=text1
             p=text2
             p(class=clase)=text3
+
+mixin aviso(imagen,alterno,titulo,texto,link)
+    article
+        picture
+            img(src="../../img/"+imagen alt=alterno)
+        div
+            h2=titulo
+            p=texto 
+            a(href=link) Leer más
+                span
+                    img(src="../../icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha")
