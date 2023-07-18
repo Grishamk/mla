@@ -1,6 +1,6 @@
 .main-container__clientes {
     max-width: 90%;
-    height: 250px;
+    height: auto;
     margin: 0 auto;
     background-color: $colorSecundario;
     padding: 10px;
@@ -13,7 +13,7 @@
             margin-bottom: 40px;
             margin-top: 50px;
             text-align: center;
-            }
+        }
 
         .slider {
             position: relative;
@@ -29,7 +29,7 @@
                 img {
                     width: 100%; /* Ajusta el ancho según el número de imágenes */
                     height: 100%;
-                    object-fit: cover;
+                    //object-fit: cover;
                 }
             }
         
@@ -70,8 +70,8 @@
         
                     img {
                         width: 100%; /* Ajusta el ancho según el número de imágenes */
-                        height:auto;
-                        object-fit: cover;
+                        height: 100px;
+                        //object-fit: cover;
                     }
                 }
             }
@@ -96,11 +96,11 @@
     
                 .slider-container {
                     width: 100%;
-                    object-fit: cover;
+                    //object-fit: cover;
                     img {
                         width: 100%; /* Ajusta el ancho según el número de imágenes */
                         height:100%;
-                        object-fit: cover;
+                        //object-fit: cover;
                     }
                 }
             }

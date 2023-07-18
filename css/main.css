@@ -553,7 +553,7 @@ header {
 }
 .main-container .main-container__clientes {
   max-width: 90%;
-  height: 250px;
+  height: auto;
   margin: 0 auto;
   background-color: white;
   padding: 10px;
@@ -587,8 +587,6 @@ header {
 .main-container .main-container__clientes div .slider .slider-container img {
   width: 100%; /* Ajusta el ancho según el número de imágenes */
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .main-container .main-container__clientes div .slider .slider-controls {
   display: none;
@@ -621,9 +619,7 @@ header {
   }
   .main-container .main-container__clientes div .slider .slider-container img {
     width: 100%; /* Ajusta el ancho según el número de imágenes */
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 100px;
   }
 }
 @media (min-width: 1500px) {
@@ -643,14 +639,10 @@ header {
   }
   .main-container .main-container__clientes div .slider .slider-container {
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .main-container .main-container__clientes div .slider .slider-container img {
     width: 100%; /* Ajusta el ancho según el número de imágenes */
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 .main-container .main-container__capital-humano {
