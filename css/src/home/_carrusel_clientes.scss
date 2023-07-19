@@ -7,6 +7,7 @@
     
     div {
         width: 100%;
+        
         h2 {
             font-size: 28px;
             font-weight: 300;
@@ -83,11 +84,14 @@
     .main-container__clientes {
         width: 1250px;
         height: 400px;
+
         div{
+
             h2{
                 font-size: 3.2rem;
                 font-weight: 500;
             }
+
             .slider {
                 position: relative;
                 width: 100%;
@@ -97,6 +101,7 @@
                 .slider-container {
                     width: 100%;
                     //object-fit: cover;
+                    
                     img {
                         width: 100%; /* Ajusta el ancho según el número de imágenes */
                         height:100%;

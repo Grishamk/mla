@@ -6,10 +6,8 @@
     background-position: center;
     background-size: cover;
     color: $colorLetra2;
-    display: flex;
-    justify-content: center;
     text-align: center;
-    align-items: center;
+    @include flexRule(null,center,center);
 
     &__text-container{
         width: 95%;
@@ -31,6 +29,7 @@
 @media(min-width: $breakpoint-tablet){
     .nosotros{
         background-attachment:fixed;
+        
         &__text-container{
             width: 85%;
 
@@ -54,6 +53,7 @@
                 font-weight: 400;
                 margin-bottom: 16px;
             }
+            
             p{
                 font-size: 2rem;
                 font-weight: 300;

@@ -1,7 +1,5 @@
 .registro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexRule(column,null,center);
 
     &__titular {
         font-size: 3.6rem;
@@ -16,10 +14,9 @@
             height: 168px;
             padding: 20px;
             border: solid 1px #eeeeee;
-            display: flex;
-            align-items: center;
             text-align: center;
             margin-bottom: 60px;
+            @include flexRule(null,null,center);
     
             h2{
                 font-size: 1.5rem;
@@ -36,19 +33,18 @@
         }
     
         &__item-container{
-            display: flex;
+            @include flexRule(null,center,null);
             flex-wrap: wrap;
             gap: 40px;
-            justify-content: center;
+
             .registro__item {
                 width: 290px;
                 height: 168px;
                 padding: 20px;
                 border: solid 1px #eeeeee;
-                display: flex;
-                align-items: center;
                 text-align: center;
                 margin-bottom: 48px;
+                @include flexRule(null,null,center);
         
                 h2{
                     font-size: 1.5rem;
@@ -69,6 +65,7 @@
     
         &__item-container{
             gap: 20px;
+
             .registro__item {
                 width: 220px;
         
@@ -87,11 +84,13 @@
         margin-bottom: 60px;
         max-width: 1300px;
         margin: 0 auto;
+        
         &__titular {
         }
     
         &__item-container{
             gap: 20px;
+
             .registro__item {
                 width: 280px;
         

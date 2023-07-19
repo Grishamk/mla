@@ -7,10 +7,7 @@
     background-size: cover;
     color: $colorLetra2;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexRule(column,center,center);
     
     h2{
         font-size: 2.8rem;
@@ -21,18 +18,17 @@
 .boletines-noticias{
     padding: 0 8px;
     margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
     margin-bottom: 64px;
+    @include flexRule(column);
+    gap: 36px;
     
     .boletines-noticias__item{
-        display: flex;
-        flex-direction: column;
+        @include flexRule(column);
         
         picture{
             width: 300px;
             margin: 0 auto;
+            
             img{
                 width: 100%;
             }
@@ -40,16 +36,17 @@
 
         div{
             padding: 0 8px;
-            display: flex;
-            flex-direction: column;
+            @include flexRule(column);
             gap: 16px;
+            
             h2{
                 font-size: 2rem;
-
             }
+
             P{
                 line-height: 2.1rem;
             }
+
             a{
                 text-decoration: none;
                 color: #043877;
@@ -81,16 +78,13 @@
     .boletines-noticias{
         padding: 0 60px;
         margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 36px;
         margin-bottom: 64px;
+        @include flexRule(column);
+        gap: 36px;
         
         .boletines-noticias__item{
             width: 90%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include flexRule(row,center);
             
             picture{
                 width: 250px;
@@ -113,25 +107,21 @@
     }
 
     .boletines__container{
-        display: flex;
         max-width: 1300px;
         margin: 0 auto;
-        justify-content: space-between;
+        @include flexRule(null,space-between);
 
         .boletines-noticias{
             width: 90%;
             padding: 0;
             margin-top: 50px;
-            display: flex;
-            flex-direction: column;
-            gap: 36px;
             margin-bottom: 64px;
+            @include flexRule(column);
+            gap: 36px;
             
             .boletines-noticias__item{
                 width: 90%;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+                @include flexRule(row,center);
                 
                 picture{
                     width: 250px;

@@ -15,16 +15,13 @@ header {
 .nav-container {
     width: 100%;
     height: 57px;
-    display: flex;
-    align-items: center;
+    @include flexRule(row,null,center);
     background-color: $colorPrincipal;
 
     //LOGO MLA
     .logo-container {
-        display: block;
         width: 80%;
-        display: flex;
-        justify-content: center;
+        @include flexRule(null,center,null);
         
         img {
             width: 150px;
@@ -35,23 +32,27 @@ header {
 
     //MENU DESPLEGABLE
     &__menu {
+        
         label{
+            
             img {
                 width: 30px;
                 height: 30px;
             }
         }
+
         input{
             display: none;
         }
+
         input:checked +.nav-movil{
             visibility: visible;
             right: 0;
             transition: all 300ms ease;
         }
+
         .nav-movil{
-            display: flex;
-            flex-direction: column;
+            @include flexRule(column);
             background-color: white;
             position: fixed;
             top: 57px;
@@ -66,13 +67,16 @@ header {
             
             .nav-movil__cerrar{
                 padding: 15px;
+                
                 img{
                     width: 36px;
                 }
             }
+
             ul{
                 list-style: none;
                 width: 100%;
+                
                 li{
                     margin-bottom: 1px;
                     width: 100%;
@@ -85,14 +89,17 @@ header {
                         display: block;
                         padding: 20px;
                     }
+
                     ul{
                         padding: 0;
                         padding: 0 20px;
                         margin-bottom: 20px;
                         margin-top: 10px;
+                        
                         li{
                             margin-bottom: 24px;
                             background-color: #fff;
+                            
                             a{
                                 font-weight: 400;
                                 color: black;
@@ -103,8 +110,9 @@ header {
                     }
                 }
             }
+            
             .boton{
-                display: inline-block;
+                @include flexRule(null,center,center);
                 width: 120px;
                 height: 60px;
                 font-size: 1.4rem;
@@ -113,18 +121,12 @@ header {
                 font-weight: 500;
                 color: $colorTerciario;
                 margin-left: 8px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 margin-top: 20px;
                 margin-bottom: 20px;
                 padding: 8px;
             }
         }
     }
-
-    
-    
 
     //ESTO SOLO ES VISIBLE EN PANTALLAS GRANDES, IGNORAR EN ESTA HOJA DE ESTILOS. CUIDADO, NO BORRAR.
     &__navbar {
@@ -174,23 +176,23 @@ header {
     .nav-container {
         height: 94px;
      
-         //LOGO
-         .logo-container {
+        //LOGO
+        .logo-container {
             display: block;
             justify-self: flex-start;
             align-self: flex-start;
             justify-content: flex-start;
             width: 30%;
-             
-             img {
-                 width: 200px;
-                 height: 60px;
-                 margin-left: 32px;
-                 margin-top: 16px;
-             }
-         }
+            
+            img {
+                width: 200px;
+                height: 60px;
+                margin-left: 32px;
+                margin-top: 16px;
+            }
+        }
      
-         //Este es el menu de la version movil, no borrar
+        //Este es el menu de la version movil, no borrar
         &__menu {
             display: none;
         }
@@ -212,6 +214,7 @@ header {
                 height: 100%;
                 position: relative;
                 transition: all 300ms ease;
+                    
                     a {
                         text-decoration: none;
                         font-size: 1.4rem;
@@ -221,7 +224,6 @@ header {
                         transition: all 300ms ease;
                         height: 100%;
                         display: flex;
-                
                     }
 
                     /*MENU DESPLEGABLE*/
@@ -229,9 +231,8 @@ header {
                     .toggle__nosotros{
                         width: 300px;
                         height: 200px;
-                        display: flex;
+                        @include flexRule(column);
                         gap: 0;
-                        flex-direction: column;
                         background: #fff;
                         border-radius: 8px;
                         box-shadow: 4px 8px 8px 4px rgba(0,0,0,0.5);
@@ -241,35 +242,38 @@ header {
                         top: 50px;
                         z-index: 10;
                         transition: all 300ms ease;
+                        
                         li{
                             margin: 0;
                             height: 100%;
                             padding: 0 15px;
+                            
+                            &:hover{
+                                background-color: #043877;
+                                transform: scale(1.1);
+                            }
+                            
                             a{
                                 border: none !important;
                                 transition: none;
                                 height: 100%;
-                                display: flex;
-                                align-items: center;
+                                @include flexRule(null,null,center);
+                                
+                                &:hover{
+                                    transform: none;
+                                    color: white;
+                                }
+                            
                             }
-                            a:hover{
-                                transform: none;
-                                color: white;
-                            }
-                        }
-                        li:hover{
-                            background-color: #043877;
-                            transform: scale(1.1);
-                        }
+                        }   
                     }
 
-                      /*SERVICIOS*/
-                      .toggle__servicios{
+                    /*SERVICIOS*/
+                    .toggle__servicios{
                         width: 300px;
                         height: 300px;
-                        display: flex;
+                        @include flexRule(column);
                         gap: 0;
-                        flex-direction: column;
                         background: #fff;
                         border-radius: 8px;
                         box-shadow: 4px 8px 8px 4px rgba(0,0,0,0.5);
@@ -279,35 +283,38 @@ header {
                         top: 50px;
                         z-index: 10;
                         transition: all 300ms ease;
+                    
                         li{
                             margin: 0;
                             height: 100%;
                             padding: 0 15px;
+                            
                             a{
                                 border: none !important;
                                 transition: none;
                                 height: 100%;
                                 display: flex;
                                 align-items: center;
+                                
+                                &:hover{
+                                    transform: none;
+                                    color: white;
+                                }
                             }
-                            a:hover{
-                                transform: none;
-                                color: white;
+                            
+                            &:hover{
+                                background-color: #043877;
+                                transform: scale(1.1);
                             }
                         }
-                        li:hover{
-                            background-color: #043877;
-                            transform: scale(1.1);
-                        }
-                      }
+                    }
 
-                      /*NOVEDADES*/
-                      .toggle__novedades{
+                    /*NOVEDADES*/
+                    .toggle__novedades{
                         width: 300px;
                         height: 100px;
-                        display: flex;
+                        @include flexRule(column);
                         gap: 0;
-                        flex-direction: column;
                         background: #fff;
                         border-radius: 8px;
                         box-shadow: 4px 8px 8px 4px rgba(0,0,0,0.5);
@@ -317,67 +324,68 @@ header {
                         top: 50px;
                         z-index: 10;
                         transition: all 300ms ease;
+                        
                         li{
                             margin: 0;
                             height: 100%;
                             padding: 0 15px;
+                            
                             a{
                                 border: none !important;
                                 transition: none;
                                 height: 100%;
                                 display: flex;
                                 align-items: center;
+                                
+                                &:hover{
+                                    transform: none;
+                                    color: white;
+                                }
                             }
-                            a:hover{
-                                transform: none;
-                                color: white;
+
+                            &:hover{
+                                background-color: #043877;
+                                transform: scale(1.1);
                             }
                         }
-                        li:hover{
-                            background-color: #043877;
-                            transform: scale(1.1);
-                        }
-                      }
                     }
-                    li:hover{                       
-                          ul{
+                    
+                    &:hover{                       
+                        ul{
                             visibility: visible;
                             opacity: 1;
                             top: 40px;
-                          }
+                        }
                     }
-                 }
+                }    
+            }
      
-                 li a:hover {
-                     border-bottom: 1px solid #333;
-                     transform: scale(1.1);
+                li a:hover {
+                    border-bottom: 1px solid #333;
+                    transform: scale(1.1);
                 }
             
-         }
+        }
      
          //BOTON DE CAMBIO DE IDIOMAS
-         .boton{
-             display: block;
-             width: 120px;
-             height: 30px;
-             font-size: 1.4rem;
-             text-decoration: none;
-             border: 1px solid $colorTerciario;
-             font-weight: 500;
-             color: $colorTerciario;
-             margin-left: 16px;
-             display: flex;
-             justify-content: center;
-             align-items: center;
-         }
+        .boton{
+            width: 120px;
+            height: 30px;
+            font-size: 1.4rem;
+            text-decoration: none;
+            border: 1px solid $colorTerciario;
+            font-weight: 500;
+            color: $colorTerciario;
+            margin-left: 16px;
+            @include flexRule(null,center,center)
+        }
     }
 }
 
 //DESKTOP
 @media (min-width: $breakpoint-desktop) {
     header{
-        display: flex;
-        justify-content: center;
+        @include flexRule(null,center,null);
     }
     
     .nav-container {
@@ -401,9 +409,9 @@ header {
     
         //LOGO DE NAVEGACION
         &__navbar {
-             width: 70%;
+            width: 70%;
      
-             ul {
+            ul {
     
                 li a {
                     font-size: 1.6rem;

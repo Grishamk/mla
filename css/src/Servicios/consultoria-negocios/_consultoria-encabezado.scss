@@ -1,6 +1,8 @@
 .encabezado {
     background-color: $colorPrincipal;
+    
     .consultoria__encabezado{  
+       
         div{
             width: 100%;
             height: 150px;
@@ -10,10 +12,8 @@
             background-size: cover;
             color: $colorLetra2;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flexRule(column,center,center);
+
             h2{
                 font-size: 2.8rem;
                 font-weight: 300;
@@ -27,12 +27,15 @@
         
         picture {
             width: 320px;
+            
             img {
                 width: 100%;
             }
         }
+
         article {
             padding: 48px 20px;
+            
             strong{
                 display: block;
                 font-size: 1.8rem;
@@ -40,6 +43,7 @@
                 font-weight: 480;
                 margin-bottom: 20px;
             }
+            
             p {
                 font-size: 1.4rem;
                 font-weight: 400;
@@ -53,14 +57,15 @@
     .encabezado {    
         .consultoria__enfoque{
             
-        
             article{
                 padding: 48px 40px;
+                
                 strong{
                     display: block;
                     font-size: 2rem;
                     line-height: 3rem;
                 }
+                
                 p {
                     font-size: 1.6rem;
                     line-height: 2.4rem;
@@ -72,9 +77,12 @@
 
 @media(min-width: $breakpoint-laptop){
     .encabezado {
+        
         .consultoria__encabezado{  
+            
             div{
                 height: 170px;
+                
                 h2{
                     font-size: 4rem;
                 }
@@ -84,13 +92,16 @@
     
         .consultoria__enfoque{
             display: flex;
+            
             picture {
                 width: 50%;
+                
                 img {
                     width: 100%;
                     height: 100%;
                 }
             }
+            
             article {
                 width: 50%;
                 padding: 48px 80px;

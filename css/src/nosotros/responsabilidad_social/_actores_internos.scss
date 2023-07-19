@@ -11,11 +11,10 @@
     }
 
     article {
-        display: flex;
-        align-items: flex-start;
-        gap: 16px;
         line-height: 2.8rem;
         margin-bottom: 16px;
+        @include flexRule(null,null,flex-start);
+        gap: 16px;
 
         img {
             margin-top: 4px;
@@ -30,22 +29,18 @@
     .RS__internos {
         background-color: $colorPrincipal;
         padding: 0 32px 40px;
-        
 
         h2{
             font-size: 2rem;
             font-weight: 400;
             margin-bottom: 16px;
-            padding-top: 48px;
-            
+            padding-top: 48px; 
         }
 
         .RS__internos--item{
             
-            article {
-              
-                display: flex;
-                align-items: flex-start;
+            article{
+                @include flexRule(null,null,flex-start);
                 gap: 16px;
                 line-height: 2.8rem;
                 margin-bottom: 16px;
@@ -60,36 +55,33 @@
 
 //DESKTOP
 @media(min-width: $breakpoint-desktop){
-    .RS__internos {
+    .RS__internos{
         background-color: $colorPrincipal;
         padding: 0 32px 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexRule(column,null,center);
 
         h2{
-            text-align: center;
-            
+            text-align: center; 
         }
 
         .RS__internos--item{
             max-width: 1300px;
-            display: flex;
+            @include flexRule(null,center);
             flex-wrap: wrap;
-            justify-content: center;
             gap: 24px;
+
             article {
                 width: 600px;
-                display: flex;
-                align-items: flex-start;
-                gap: 16px;
                 line-height: 2.8rem;
                 margin-bottom: 16px;
+                @include flexRule(null,null,flex-start);
+                gap: 16px;
     
                 img {
                     margin-top: 4px;
                 }
             }
+            
             .diferenciador {
                 width: 1224px;
             }

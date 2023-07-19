@@ -7,10 +7,7 @@
     background-size: cover;
     color: $colorLetra2;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexRule(column,center,center);
 
     &__text-container{
         width: 95%;
@@ -32,6 +29,7 @@
 @media(min-width: $breakpoint-tablet){
     .RMtitular{
         height: 400px;
+        
         &__text-container{
             width: 85%;
     

@@ -7,22 +7,21 @@
     flex-direction: column;
     align-items: center;
 
-   
     h1{
         color: black;
         padding: 40px 24px 16px;
     }
+
     .noticias__container{
         width: 100%;
         padding: 0 24px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexRule(column,null,center);
         gap: 24px;
 
         .escondete{
             display: none;
         }
+
         .noticia__item{
             background-color: $colorTerciario;
             width: 272px;
@@ -31,38 +30,36 @@
             picture{
                 width: 100%;
                 padding: 15px;
-                
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flexRule(null,center,center);
 
                 img{
                     width: 250px;
                 }
             }
+
             .noticia__contenido{
                 padding: 15px;
+
                 h2{
                     font-size: 2rem;
                     margin-bottom: 24px;
                 }
+
                 p{
                     font-size: 1.6rem;
                 }
             }
+
             .noticia__enlace{
                 padding: 15px;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
+                @include flexRule(null,flex-end,center);
 
                 a{
-                    display: flex;
-                    align-items: center;
                     color: white;
                     text-decoration: none;
                     font-size: 1.6rem;
                     font-weight: 700;
+                    @include flexRule(null,null,center);
 
                     span{
                         width: 32px;
@@ -77,9 +74,9 @@
 
 @media(min-width: $breakpoint-tablet){
     .main-container__noticias{
+        
         .noticias__container {
-            flex-direction: row;
-            justify-content: center;
+            @include flexRule(row,center);
             margin-top: 12px;
         }
     }
@@ -87,7 +84,9 @@
 
 @media(min-width: $breakpoint-laptop){
     .main-container__noticias{
+        
         .noticias__container{
+            
             .escondete{
                 display: block;
             }
@@ -97,6 +96,7 @@
 
 @media(min-width: $breakpoint-desktop){
     .main-container__noticias{
+        
         .noticias__container{
             gap: 72px;
             margin-bottom: 50px;

@@ -2,9 +2,7 @@
     background-color: #089de8;
     color: $colorLetra2;
     padding: 48px 0 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexRule(column,null,center);
     
     .nosotrosMV__text{
         width: 90%;
@@ -47,8 +45,7 @@
     .nosotrosMV {
         
         .nosotrosMV__text{
-            display: flex;
-            flex-direction: row;
+            @include flexRule(row);
             gap: 64px;
             
             .nosotrosMV__text--1 {
@@ -69,6 +66,7 @@
 
             .nosotrosMV__text--2 {
                 width: 448px;
+                
                 h2 {
                     font-size: 3.5rem;
                     margin-bottom: 20px;

@@ -1,16 +1,13 @@
 .nosotrosValores {
     width: 100%;
-    display: flex;
-    justify-content: center;
     padding: 48px 0;
     background-color: white;
+    @include flexRule(null,center,null);
 
     .nosotrosValores__container{
         padding: 0 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         text-align: center;
+        @include flexRule(column,null,center);
         
         
         .nosotrosValores--titulo{
@@ -22,6 +19,7 @@
 
         .nosotrosValores__item{
             height: 400px;
+           
             picture{
                 img{
                     width: 260px;
@@ -64,13 +62,12 @@
 
         .nosotrosValores__container{
 
-            .nosotrosValores__item-container{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 32px;
+            .nosotrosValores__item-container{ 
                 margin-bottom: 50px;
-                
+                @include flexRule(null,center);
+                flex-wrap: wrap;
+                gap: 32px;
+
                 .nosotrosValores__item{
                     width: 200px;
                     height: 350px;
@@ -91,6 +88,7 @@
 
             .nosotrosValores__calidad{
                 width: 90%;
+                
                 h2{
                     font-size: 2.8rem;
                     font-weight: 400;

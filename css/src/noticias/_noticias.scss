@@ -7,10 +7,7 @@
     background-size: cover;
     color: $colorLetra2;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexRule(column,center,center);
     
     h2{
         font-size: 2.8rem;
@@ -21,18 +18,17 @@
 .news-noticias{
     padding: 0 16px;
     margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
     margin-bottom: 64px;
+    @include flexRule(column);
+    gap: 36px;
     
     .news-noticias__item{
-        display: flex;
-        flex-direction: column;
+        @include flexRule(column);
         
         picture{
             width: 300px;
             margin: 0 auto;
+            
             img{
                 width: 100%;
             }
@@ -40,16 +36,18 @@
 
         div{
             padding: 0 8px;
-            display: flex;
-            flex-direction: column;
+            @include flexRule(column);
             gap: 16px;
+            
             h2{
                 font-size: 2rem;
 
             }
+
             P{
                 line-height: 2.1rem;
             }
+
             a{
                 text-decoration: none;
                 color: #043877;
@@ -60,22 +58,22 @@
 }
 
 .news-boletines{
+    margin-bottom: 60px;
     display: none;
     flex-direction: column;
     align-items: center;
     gap: 56px;
-    margin-bottom: 60px;
 
     article{
         width: 295px;
         padding: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexRule(column,null,center);
+
         img{
             width: 100%;
             margin-bottom: 16px;
         }
+
         a{
             text-decoration: none;
             color: #043877;
@@ -106,16 +104,13 @@
     .news-noticias{
         padding: 0 60px;
         margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 36px;
         margin-bottom: 64px;
+        @include flexRule(column);
+        gap: 36px;
         
         .news-noticias__item{
             width: 90%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include flexRule(row,center);
             
             picture{
                 width: 250px;
@@ -138,25 +133,21 @@
     }
 
     .news__container{
-        display: flex;
         max-width: 1300px;
         margin: 0 auto;
-        justify-content: space-between;
+        @include flexRule(null,space-between);
 
         .news-noticias{
             width: 70%;
             padding: 0;
             margin-top: 50px;
-            display: flex;
-            flex-direction: column;
-            gap: 36px;
             margin-bottom: 64px;
+            @include flexRule(column);
+            gap: 36px;
             
             .news-noticias__item{
                 width: 90%;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+                @include flexRule(row,center);
                 
                 picture{
                     width: 250px;
@@ -169,30 +160,31 @@
         }
         
         .news-boletines{
-            display: flex;
             width: 25%;
-            flex-direction: column;
-            align-items: center;
-            gap: 56px;
             margin-top: 60px;
             padding-bottom: 40px;
             background: rgba(4, 56, 119, 0.75);
             border-radius: 4px;
+            @include flexRule(column,null,center);
+            gap: 56px;
 
             h2{
                 color: white;
                 padding-top: 20px;
             }
+
             article{
                 width: 250px;
                 padding: 15px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                
                 img{
                     width: 100%;
                     margin-bottom: 16px;
                 }
+                
                 a{
                     text-decoration: underline;
                     color:white;
