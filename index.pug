@@ -1,42 +1,53 @@
 extend ./componentes/_plantilla.pug
 block contenido
 
-        //SECCIÓN PRINCIPAL
+        //CONTENIDO PRINCIPAL
         main.main-container
+
+            //CARRUSEL PRINCIPAL
             .main-container__carrusel
                 .slider
+                    //Primer slide
                     .slide.active
                         img(src='./img/slide/slide.jpg' alt='')
                         .info
                             h2 Firma de contadores públicos autorizados que ha estado operando desde el año 1983.
                             p Realizamos procesos de revisión y aseguramiento de forma independiente, objetiva y oportuna alineada a las normas y buenas prácticas internacionales. Brindamos una opinión certera sobre la actuación global de la empresa, sus procesos y controles, creando de esta manera valor para el desarrollo y mejora de su organización. 
+                    //Segundo slide
                     .slide
                         img(src='./img/slide/slide2.jpg' alt='')
                         .info
                             h2 Servicios de auditoría
                             p
                                 |Realizamos procesos de revisión y aseguramiento de forma independiente, objetiva y oportuna alineada a las normas y buenas prácticas internacionales. Brindamos una opinión certera sobre la actuación global de la empresa, sus procesos y controles, creando de esta manera valor para el desarrollo y mejora de su organización.
+                    //Tercer slide
                     .slide
                         img(src='./img/slide/slide3.jpg' alt='')
                         .info
                             h2 Desarrollo Organizacional
                             p
                                 | Ofrecemos servicios especializados enfocados al desarrollo organizacional, los cuales permiten garantizar que su estrategia y recursos internos operen de forma eficiente, armónica y organizada permitiéndoles adaptarse a las necesidades actuales y futuras de forma planificada y controlada.
+                    //Cuarto slide
                     .slide
                         img(src='./img/slide/slide4.jpg' alt='')
                         .info
                             h2 Impuestos - Nómina - Contabilidad
                             p
                                 | Sobre la base de nuestra especialización en materia contable y fiscal en los diferentes sectores económicos del país, brindamos servicios de procesamiento contable y cumplimiento fiscal que garanticen: la calidad, confiabilidad y oportunidad de las informaciones financieras de su organzación.
+                    //Quinto slide
                     .slide
                         img(src='./img/slide/slide5.jpg' alt='')
                         .info
                             h2 Asesoramiento Tributario
                             p
                                 | Brindamos servicios especializados de asesoría y planificacion fiscal, consecución de acuerdos y defensas ante el órgano regulador, gestión de cumplimiento de compromisos fiscales, así como auditorías en la matería. Nuestros servicios se basan en la gestión de riesgos enfocada en la eficiencia tributaria bajo el debido cumplimiento.
+                    
+                    //Navegación para los slides (Flechas)
                     .navigation
                         i.fas.fa-chevron-left.prev-btn
                         i.fas.fa-chevron-right.next-btn
+                    
+                    //Indicadores de los slides (puntos)
                     .navigation-visibility
                         .slide-icon.active
                         .slide-icon
@@ -48,6 +59,7 @@ block contenido
             section.main-container__noticias.fade-in
                 h1 Últimas Noticias
                 .noticias__container
+                    //Aqui se agregaran las noticias utilizando el mixin "noticia" creado en su respectivo documento.
                     +noticia("MicrosoftTeams-image.png","Reunion de BKR Internacional","BRK Regional Meeting","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
                     +noticia("MicrosoftTeams-image-1.png","letras iguales al texto de abajo","Elevamos nuestro compromiso","Elevamos nuestro compromiso con Sistema de Gestión de Calidad Certificado por INTECO","#")
                     +noticia("MicrosoftTeams-image-1.png","letras iguales al texto de abajo","Elevamos nuestro compromiso","Elevamos nuestro compromiso con Sistema de Gestión de Calidad Certificado por INTECO","#","escondete")
@@ -55,14 +67,14 @@ block contenido
             //SECCIÓN DE BKR
             section.main-container__respaldo.fade-in
                 section
+                    //Aquí se muestra información sobre el respaldo de la firma utilizando el mixin "respaldo".
                     +respaldo("bkr.jpg","Logo BKR International","Respaldo Internacional", "MLA es miembro de BKR International, una asociación de firmas auditoras y consultoras de negocios localizadas en 81 paises y más de 588 oficinas en el mundo.")
                     +respaldo("servicio.svg","Logo de personas Staff","Staff Especializado", "De forma permanente preparamos cursos y seminarios de actualización para nuestros profesionales, con el fin de prestar servicios eficientes con los más altos estándares de calidad.")
                     +respaldo("calidad.svg","Logo de una diana con un dardo","Expertos en su sector","Desarrollamos metodologías personalizadas que aseguran procesos eficientes para cada sector empresarial. Basados en la experiencia y el conocimiento adquirido con la participación en diversos proyectos.")
 
-            
-
             //CAPITAL HUMANO
             section.main-container__capital-humano.fade-in
+                // Aquí se muestra información sobre los socios de la firma a través de mixins 'socio'
                 section.capital-humano__container.fade-in
                     h2 Capital Humano
                     p Agregamos valor a nuestros clientes cumpliendo con sus requisitos y en satisfacer sus expectativas.
@@ -73,25 +85,6 @@ block contenido
                         +socio("jose-mejia-1.webp","Foto José Mejía","José Mejía","Socio Fundador")
                         +socio("Adelaida-Ortega-1.webp","Foto Adelaida Ortega","Adelaida Ortega","Gerente Fundador")
                     a(href="./html/capital-humano/capital-humano.html") Ver todos 
-
-            
-
-            //CONTACTO
-            ///section.main-container__contacto
-                h2 Contáctenos
-                section
-                    +contactoP("icon-mail.svg","Icono de correo","info@mejialora.com")
-                    +contactoG("icon-location.svg","Icono de localización","Oficina Corporativa:", "Avenida Sarasota # 136, Santo Domingo, República Dominicana")
-                    +contactoG("icon-location.svg","Icono de localización","Oficina Operativa:","Calle Santa Ana #16, Santo Domingo, República Dominicana")
-                    +contactoG("icon-location.svg","Icono de localización","International Mailing Address:","8540 NW 66 st AP-54099 Miami, FL 33195-2698")
-                    +contactoP("icon-phone.svg","Icono de telefono","(809) 482-0838")
-                    
-                    div.contacto__social
-                        a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/"): img(src="./img/104498_facebook_icon.svg" alt="Icono de Facebook")
-                        a(href="https://www.secure.instagram.com/mejialora/?hl=es"): img(src="./img/1161953_instagram_icon.svg" alt="Icono de Instagram")
-                        a(href="https://twitter.com/MejialoraAsoc"): img(src="./img/104501_twitter_bird_icon.svg" alt="Icono de Twitter")
-                        a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/"): img(src="./img/367593_linkedin_business_network_social_icon.svg" alt="Icono de Linkedin") 
-                    h2 FORMULARIO DE CONTACTO///
             
             //CARRUSEL DE CLIENTES
             section.main-container__clientes.fade-in
