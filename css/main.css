@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -468,7 +467,7 @@ header {
   width: 100%;
 }
 .main-container .main-container__carrusel {
-  height: 50vh;
+  height: 52vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,7 +483,7 @@ header {
   position: relative;
   background: #000116;
   width: 100vw;
-  height: 50vh;
+  height: 52vh;
   margin: 20px;
   overflow: hidden;
   border-radius: 10px;
@@ -689,98 +688,46 @@ header {
   }
 }
 .main-container .main-container__clientes {
-  max-width: 90%;
-  height: auto;
-  margin: 0 auto;
-  background-color: white;
-  padding: 10px;
-}
-.main-container .main-container__clientes div {
   width: 100%;
-}
-.main-container .main-container__clientes div h2 {
-  font-size: 28px;
-  font-weight: 300;
-  margin-bottom: 40px;
-  margin-top: 50px;
-  text-align: center;
-}
-.main-container .main-container__clientes div .slider {
-  position: relative;
-  width: 100%;
-  height: 100%; /* Ajusta la altura según tus necesidades */
-  overflow: hidden;
-}
-.main-container .main-container__clientes div .slider .slider-container {
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%; /* Ajusta el ancho según el número de imágenes */
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-.main-container .main-container__clientes div .slider .slider-container img {
-  width: 100%; /* Ajusta el ancho según el número de imágenes */
-  height: 100%;
-}
-.main-container .main-container__clientes div .slider .slider-controls {
-  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.main-container .main-container__clientes div .slider .slider-controls button {
-  margin: 0 5px;
-  padding: 5px 10px;
+.main-container .main-container__clientes h2 {
+  font-size: 3.6rem;
+  margin-bottom: 36px;
 }
-@media (min-width: 750px) {
-  .main-container .main-container__clientes {
-    height: 300px;
-  }
+.main-container .main-container__clientes .carousel {
+  overflow: hidden;
+  width: 1200px;
+  height: 200px;
 }
-@media (min-width: 1024px) {
-  .main-container .main-container__clientes {
-    height: 400px;
-  }
-  .main-container .main-container__clientes div .slider {
-    position: relative;
-    width: 100%;
-    height: 100%; /* Ajusta la altura según tus necesidades */
-    overflow: hidden;
-  }
-  .main-container .main-container__clientes div .slider .slider-container {
-    width: 100%;
-  }
-  .main-container .main-container__clientes div .slider .slider-container img {
-    width: 100%; /* Ajusta el ancho según el número de imágenes */
-    height: 100px;
-  }
+.main-container .main-container__clientes .carousel .carousel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 38400px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
-@media (min-width: 1500px) {
-  .main-container .main-container__clientes {
-    width: 1250px;
-    height: 400px;
-  }
-  .main-container .main-container__clientes div h2 {
-    font-size: 3.2rem;
-    font-weight: 500;
-  }
-  .main-container .main-container__clientes div .slider {
-    position: relative;
-    width: 100%;
-    height: 100%; /* Ajusta la altura según tus necesidades */
-    overflow: hidden;
-  }
-  .main-container .main-container__clientes div .slider .slider-container {
-    width: 100%;
-  }
-  .main-container .main-container__clientes div .slider .slider-container img {
-    width: 100%; /* Ajusta el ancho según el número de imágenes */
-    height: 100%;
-  }
+.main-container .main-container__clientes .carousel img {
+  width: 1200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main-container .main-container__capital-humano {
   width: 100%;

@@ -1,38 +1,30 @@
-const prevButton = document.querySelector('.slider-controls .prev');
-const nextButton = document.querySelector('.slider-controls .next');
-const sliderContainer = document.querySelector('.slider-container');
+const carouselContainer = document.querySelector('.carousel-container');
+const totalImages = 32;
+let currentPosition = 0;
 
-let slideIndex = 0;
-let autoSlideInterval;
+function updateCarouselPosition() {
+  carouselContainer.style.transform = `translateX(-${currentPosition * 1200}px)`;
+}
 
-prevButton.addEventListener('click', () => {
-  slideIndex = (slideIndex - 1 < 0) ? 2 : slideIndex - 1;
-  updateSlider();
+function slideNext() {
+  currentPosition = (currentPosition + 1) % totalImages;
+  updateCarouselPosition();
+}
+
+// Ajusta el intervalo de tiempo aquí (en milisegundos)
+const slideInterval = 2000; // 2 segundos
+
+let slideTimer = setInterval(slideNext, slideInterval);
+
+// Detener la transición cuando el mouse está sobre el carrusel
+carouselContainer.addEventListener('mouseenter', () => {
+  clearInterval(slideTimer);
 });
 
-nextButton.addEventListener('click', () => {
-  slideIndex = (slideIndex + 1) % 32;
-  updateSlider();
+// Reanudar la transición cuando el mouse sale del carrusel
+carouselContainer.addEventListener('mouseleave', () => {
+  slideTimer = setInterval(slideNext, slideInterval);
 });
-
-function startAutoSlide() {
-  autoSlideInterval = setInterval(() => {
-    slideIndex = (slideIndex + 1) % 32;
-    updateSlider();
-  }, 3000); // Cambia el intervalo de tiempo según tus necesidades (en milisegundos)
-}
-
-function stopAutoSlide() {
-  clearInterval(autoSlideInterval);
-}
-
-function updateSlider() {
-  const translateX = slideIndex * -100;
-  sliderContainer.style.transform = `translateX(${translateX}%)`;
-}
-
-
-startAutoSlide(); // Iniciar el slider automático al cargar la página
 
 //FadeIN
 function debounce(func, wait = 20, immediate = true) {
