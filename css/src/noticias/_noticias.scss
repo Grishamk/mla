@@ -176,9 +176,7 @@
             article{
                 width: 250px;
                 padding: 15px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flexRule(column,null,center);
                 
                 img{
                     width: 100%;
