@@ -1,28 +1,76 @@
 .main-container__clientes {
-    width: 100%;
-    height: 400px;
-    @include flexRule(column,center,center);
-    
-    h2{
-        font-size: 3.6rem;
-        margin-bottom: 36px;
-    }
+  height: 400px;
+  width: 100%;
+  @include flexRule(column,center,center);
 
-    .carousel {
-        overflow: hidden;
-        width: 1200px;
-        height: 200px;
-      
-        .carousel-container {
-          display: flex;
-          width: calc(1200px * 32);
-          transition: transform 0.5s ease;
-        }
-      
-        img {
-          width: 1200px;
-          height: 200px;
-          object-fit: cover;
-        }
+  
+  h2{
+    font-size: 3.6rem;
+    margin-bottom: 40px;
+  }
+
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    max-width: 1200px; // Establece un ancho máximo para el carrusel
+    @include flexRule(row,center,center);
+  
+    .carousel-container {
+      display: flex;
+      transition: transform 0.5s ease;
+  
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
     }
+  }
+  
+  
+}
+
+// Estilos para diferentes tamaños de pantalla
+@media screen and (max-width: 768px) {
+  .main-container__clientes{
+    padding: 15px;
+    height: 300px;
+
+    h2{
+      font-size: 2.4rem;
+    }
+    .carousel {
+      max-width: 100%; // Cambia el ancho máximo del carrusel para pantallas pequeñas
+      @include flexRule(row,center,center);
+      
+
+      .carousel-container{
+        width: 100%;
+        @include flexRule(row,center,center);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .main-container__clientes{
+    padding: 15px;
+    height: 200px;
+
+    h2{
+      margin-top: 0;
+    }
+    .carousel {
+      max-width: 100%; // Cambia el ancho máximo del carrusel para pantallas pequeñas
+      @include flexRule(row,center,center);
+      
+
+      .carousel-container{
+        width: 100%;
+        @include flexRule(row,center,center);
+      }
+    }
+  }
 }

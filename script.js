@@ -1,9 +1,9 @@
 const carouselContainer = document.querySelector('.carousel-container');
-const totalImages = 32;
+const totalImages = 32; // Reemplaza el total de imágenes adecuadamente
 let currentPosition = 0;
 
 function updateCarouselPosition() {
-  carouselContainer.style.transform = `translateX(-${currentPosition * 1200}px)`;
+  carouselContainer.style.transform = `translateX(-${currentPosition * 100}%)`;
 }
 
 function slideNext() {
@@ -12,7 +12,7 @@ function slideNext() {
 }
 
 // Ajusta el intervalo de tiempo aquí (en milisegundos)
-const slideInterval = 2000; // 2 segundos
+const slideInterval = 4000; // 4 segundos
 
 let slideTimer = setInterval(slideNext, slideInterval);
 
