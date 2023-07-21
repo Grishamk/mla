@@ -195,10 +195,10 @@ header {
     width: 30%;
   }
   .nav-container .logo-container img {
-    width: 200px;
-    height: 60px;
+    width: 290px;
+    height: 72px;
     margin-left: 32px;
-    margin-top: 16px;
+    margin-top: 10px;
   }
   .nav-container__menu {
     display: none;
@@ -446,7 +446,8 @@ header {
     width: 30%;
   }
   .nav-container .logo-container img {
-    width: 290px;
+    width: 100%;
+    max-width: 290px;
     height: 72px;
     margin: 0;
     margin-top: 10px;
