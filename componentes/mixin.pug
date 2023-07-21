@@ -1,7 +1,7 @@
 //HOME
 mixin respaldo(imagen,alterno,titulo,contenido)
     div.main-container__item.fade-in
-        img(src="./img/"+imagen alt=alterno)
+        img(src="./img/assets/"+imagen alt=alterno)
         h2=titulo
         p=contenido
 
@@ -26,7 +26,7 @@ mixin contactoG(icono,alterno,titulo,contenido)
 mixin noticia(imagen,alterno,titulo,texto,enlace,clase)
     article.noticia__item(class=clase)
         picture
-            img(src="./img/"+imagen, alt=alterno)
+            img(src="./img/avisos/"+imagen, alt=alterno)
         .noticia__contenido
             h2=titulo
             p=texto
@@ -73,7 +73,7 @@ mixin staffElement(imagen,alterno,titulo,text1,text2,text3,clase)
 mixin aviso(imagen,alterno,titulo,texto,link)
     article.news-noticias__item
         picture
-            img(src="../../img/"+imagen alt=alterno)
+            img(src="../../img/avisos/"+imagen alt=alterno)
         div
             h2=titulo
             p=texto 
@@ -84,7 +84,7 @@ mixin aviso(imagen,alterno,titulo,texto,link)
 mixin boletin(imagen,alterno,titulo,texto,link)
     article.boletines-noticias__item
         picture
-            img(src="../../img/"+imagen alt=alterno)
+            img(src="../../img/avisos/"+imagen alt=alterno)
         div
             h2=titulo
             p=texto 

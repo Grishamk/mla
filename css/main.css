@@ -446,8 +446,8 @@ header {
     width: 30%;
   }
   .nav-container .logo-container img {
-    width: 280px;
-    height: 70px;
+    width: 290px;
+    height: 72px;
     margin: 0;
     margin-top: 10px;
   }
@@ -731,7 +731,7 @@ header {
 }
 .main-container .main-container__capital-humano {
   width: 100%;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1176,7 +1176,7 @@ header {
 main .nosotros {
   width: 100%;
   height: 512px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1631,7 +1631,7 @@ main .nosotrosExp .nosotrosExp__container .nosotrosExp__list ul li {
 main .RMtitular {
   width: 100%;
   height: 314px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1907,7 +1907,7 @@ main .registro__item-container .registro__item h2 {
 main .RStitular {
   width: 100%;
   height: 300px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2189,7 +2189,7 @@ main .RS__internos article img {
 .cert-container .cert-container__titular {
   width: 100%;
   height: 100px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2323,7 +2323,7 @@ main .encabezado {
 main .encabezado .auditoria__encabezado div {
   width: 100%;
   height: 100px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2500,7 +2500,7 @@ main .encabezado {
 main .encabezado .asesoria__encabezado div {
   width: 100%;
   height: 100px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2638,7 +2638,7 @@ main .encabezado {
 main .encabezado .imp__encabezado div {
   width: 100%;
   height: 100px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2767,7 +2767,7 @@ main .encabezado {
 main .encabezado .consultoria__encabezado div {
   width: 100%;
   height: 150px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2902,7 +2902,7 @@ main .encabezado {
 main .encabezado .desarrollo__encabezado div {
   width: 100%;
   height: 100px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3038,7 +3038,7 @@ main .desarrollo__servicios ul li {
 .encabezado .proteccion__encabezado div {
   width: 100%;
   height: 100px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3141,7 +3141,7 @@ main .desarrollo__servicios ul li {
 .encabezado .capital__encabezado div {
   width: 100%;
   height: 220px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3633,7 +3633,7 @@ main .desarrollo__servicios ul li {
 .encabezado .contacto__encabezado div {
   width: 100%;
   height: 150px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3860,7 +3860,7 @@ main .desarrollo__servicios ul li {
 .news__titular {
   width: 100%;
   height: 100px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -4122,7 +4122,7 @@ main .desarrollo__servicios ul li {
 .boletines__titular {
   width: 100%;
   height: 100px;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -4302,7 +4302,7 @@ main .desarrollo__servicios ul li {
 }
 .footer-container {
   width: 100%;
-  background-image: url(../img/bg-section.webp);
+  background-image: url(../img/assets/bg-section.webp);
   background-position: center;
   background-size: cover;
   background-position-x: left;
