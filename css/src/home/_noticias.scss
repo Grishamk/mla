@@ -2,19 +2,19 @@
     width: 100%;
     background-color: $colorSecundario;
     color: white;
-    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px 24px;
 
     h1{
         color: black;
-        padding: 40px 24px 16px;
+        padding-bottom: 32px;
     }
 
     .noticias__container{
         width: 100%;
-        padding: 0 24px;
+        
         @include flexRule(column,null,center);
         gap: 24px;
 

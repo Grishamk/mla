@@ -66,7 +66,6 @@
       max-width: 100%; // Cambia el ancho máximo del carrusel para pantallas pequeñas
       @include flexRule(row,center,center);
       
-
       .carousel-container{
         width: 100%;
         @include flexRule(row,center,center);

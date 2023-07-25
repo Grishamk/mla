@@ -1,5 +1,5 @@
 .main-container__carrusel{
-      height: 52vh;
+      height: 60vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -9,10 +9,10 @@
         position: relative;
         background: #000116;
         width: 100vw;
-        height: 52vh;
-        margin: 20px;
+        height: 60vh;
+        //margin: 20px;
         overflow: hidden;
-        border-radius: 10px;
+        //border-radius: 10px;
 
         .slide{
             position: absolute;
@@ -30,23 +30,41 @@
             .info{
                 position: absolute;
                 color: #222;
-                background: rgba(255, 255, 255, 0.3);
-                width: 75%;
+                background: rgba(255, 255, 255, 0.8);
+                width: 40%;
                 margin-top: 50px;
-                margin-left: 50px;
-                padding: 20px;
+                margin-left: 70px;
+                padding: 40px;
                 border-radius: 5px;
                 box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
 
                 h2{
                     font-size: 2em;
                     font-weight: 800;
-                    margin-bottom: 8px;
+                    margin-bottom: 16px;
                 }
                 
                 p{
-                    font-size: 1em;
+                    font-size: 1.6rem;
                     font-weight: 400;
+                    margin-bottom: 48px;
+                }
+
+                a{
+                    text-decoration: none;
+                    width: 213px;
+                    color: white;
+                    height: 41px;
+                    padding: 10px;
+                    background-color: #043877;
+                    font-size: 1.4rem;
+                    transform: all 300ms ease;
+
+                    &:hover{
+                        background-color: black;
+                        transform: all 300ms ease;
+                        font-weight: 700;
+                    }
                 }
             }
         }
@@ -95,7 +113,7 @@
                 background: rgba(255, 255, 255, 0.5);
                 width: 20px;
                 height: 10px;
-                transform: translateY(-50px);
+                transform: translateY(0px);
                 margin: 0 6px;
                 border-radius: 2px;
                 box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
@@ -108,6 +126,19 @@
     }
       
  
+
+    @media (max-width: 1400px){
+        .slider{
+            width: 100%;
+        }
+        
+        .slider .slide .info{
+            position: relative;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
       
       
     @media (max-width: 900px){
@@ -124,13 +155,26 @@
     }
         
     @media (max-width: 500px){
+        .main-container__carrusel{
+            height: 40vh;
+        }
+        
         .slider .slide .info h2{
-            font-size: 1.8em;
-            line-height: 40px;
+            font-size: 1.6rem;
+            line-height: 24px;
         }
     
         .slider .slide .info p{
-            font-size: 0.9em;
+            font-size: 1.2rem;
+        }
+
+        .main{
+            h2{
+                padding-bottom: 48px;
+            }
+            p{
+                display: none;
+            }
         }
     }
 }  

@@ -1,21 +1,21 @@
 .main-container__respaldo {
     width: 100%;
-    height: 1200px;
+    height: auto;
     background-color: $colorPrincipal;
-    padding-top: 52px;
+    padding: 40px 24px;
     
     //MIXIN ITEMS DE RESPALDO
     .main-container__item {
         color: $colorLetra1;
         text-align: center;
         font-size: 1.4rem;
-        margin-bottom: 48px;
+        margin-bottom: 32px;
         @include flexRule(column,null,center);
 
         img{
             width: 219px;
             height: 125px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             border-radius: 4px;
         }
 

@@ -468,7 +468,7 @@ header {
   width: 100%;
 }
 .main-container .main-container__carrusel {
-  height: 52vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,10 +484,8 @@ header {
   position: relative;
   background: #000116;
   width: 100vw;
-  height: 52vh;
-  margin: 20px;
+  height: 60vh;
   overflow: hidden;
-  border-radius: 10px;
 }
 .main-container .main-container__carrusel .slider .slide {
   position: absolute;
@@ -506,11 +504,11 @@ header {
 .main-container .main-container__carrusel .slider .slide .info {
   position: absolute;
   color: #222;
-  background: rgba(255, 255, 255, 0.3);
-  width: 75%;
+  background: rgba(255, 255, 255, 0.8);
+  width: 40%;
   margin-top: 50px;
-  margin-left: 50px;
-  padding: 20px;
+  margin-left: 70px;
+  padding: 40px;
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 25px rgba(1, 1, 1, 0.05);
           box-shadow: 0 5px 25px rgba(1, 1, 1, 0.05);
@@ -518,11 +516,29 @@ header {
 .main-container .main-container__carrusel .slider .slide .info h2 {
   font-size: 2em;
   font-weight: 800;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .main-container .main-container__carrusel .slider .slide .info p {
-  font-size: 1em;
+  font-size: 1.6rem;
   font-weight: 400;
+  margin-bottom: 48px;
+}
+.main-container .main-container__carrusel .slider .slide .info a {
+  text-decoration: none;
+  width: 213px;
+  color: white;
+  height: 41px;
+  padding: 10px;
+  background-color: #043877;
+  font-size: 1.4rem;
+  -webkit-transform: all 300ms ease;
+          transform: all 300ms ease;
+}
+.main-container .main-container__carrusel .slider .slide .info a:hover {
+  background-color: black;
+  -webkit-transform: all 300ms ease;
+          transform: all 300ms ease;
+  font-weight: 700;
 }
 .main-container .main-container__carrusel .slider .active {
   -webkit-clip-path: circle(150% at 0 50%);
@@ -578,8 +594,8 @@ header {
   background: rgba(255, 255, 255, 0.5);
   width: 20px;
   height: 10px;
-  -webkit-transform: translateY(-50px);
-          transform: translateY(-50px);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
   margin: 0 6px;
   border-radius: 2px;
   -webkit-box-shadow: 0 5px 25px rgba(1, 1, 1, 0.2);
@@ -587,6 +603,17 @@ header {
 }
 .main-container .main-container__carrusel .slider .navigation-visibility .slide-icon.active {
   background: #4285F4;
+}
+@media (max-width: 1400px) {
+  .main-container .main-container__carrusel .slider {
+    width: 100%;
+  }
+  .main-container .main-container__carrusel .slider .slide .info {
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (max-width: 900px) {
   .main-container .main-container__carrusel .slider {
@@ -600,19 +627,29 @@ header {
   }
 }
 @media (max-width: 500px) {
+  .main-container .main-container__carrusel .main-container__carrusel {
+    height: 40vh;
+  }
   .main-container .main-container__carrusel .slider .slide .info h2 {
-    font-size: 1.8em;
-    line-height: 40px;
+    font-size: 1.6rem;
+    line-height: 24px;
   }
   .main-container .main-container__carrusel .slider .slide .info p {
-    font-size: 0.9em;
+    font-size: 1.2rem;
+  }
+  .main-container .main-container__carrusel .main h2 {
+    padding-bottom: 48px;
+  }
+  .main-container .main-container__carrusel .main p {
+    display: none;
   }
 }
 .main-container .main__servicios {
+  background-color: #f2f2f2;
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 40px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,15 +680,16 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 32px;
 }
 .main-container .main__servicios .servicios__contenedor a {
   text-decoration: none;
   color: white;
+  width: 100%;
   height: 213px;
 }
 .main-container .main__servicios .servicios__contenedor a img {
-  width: 242px;
+  width: 100%;
   height: 213px;
   border-radius: 8px;
 }
@@ -673,6 +711,9 @@ header {
           align-items: center;
 }
 @media (min-width: 750px) {
+  .main-container .main__servicios {
+    padding: 56px 24px;
+  }
   .main-container .main__servicios h2 {
     margin-bottom: 24px;
   }
@@ -695,11 +736,11 @@ header {
     gap: 20px;
   }
   .main-container .main__servicios .servicios__contenedor a {
-    height: 213px;
+    height: 180px;
   }
   .main-container .main__servicios .servicios__contenedor a img {
-    width: 224px;
-    height: 200px;
+    width: 100%;
+    height: 180px;
   }
 }
 @media (min-width: 1024px) {
@@ -722,27 +763,39 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 20px;
+    gap: 40px;
   }
   .main-container .main__servicios .servicios__contenedor a {
-    height: 213px;
+    width: 300px;
+    height: 200px;
+    -webkit-transform: all 300ms ease;
+            transform: all 300ms ease;
   }
   .main-container .main__servicios .servicios__contenedor a img {
     width: 300px;
     height: 200px;
   }
+  .main-container .main__servicios .servicios__contenedor a p {
+    font-size: 2rem;
+  }
+  .main-container .main__servicios .servicios__contenedor a:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transform: all 300ms ease;
+            transform: all 300ms ease;
+  }
 }
 .main-container .main-container__respaldo {
   width: 100%;
-  height: 1200px;
+  height: auto;
   background-color: #F7F7F7;
-  padding-top: 52px;
+  padding: 40px 24px;
 }
 .main-container .main-container__respaldo .main-container__item {
   color: #333;
   text-align: center;
   font-size: 1.4rem;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -757,7 +810,7 @@ header {
 .main-container .main-container__respaldo .main-container__item img {
   width: 219px;
   height: 125px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   border-radius: 4px;
 }
 .main-container .main-container__respaldo .main-container__item h2 {
@@ -965,10 +1018,9 @@ header {
           justify-content: center;
 }
 .main-container .main-container__capital-humano .capital-humano__container {
-  width: 90%;
+  padding: 40px 24px;
   text-align: center;
-  padding-top: 48px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1089,7 +1141,6 @@ header {
   width: 100%;
   background-color: white;
   color: white;
-  margin-bottom: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1100,14 +1151,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 40px 24px;
 }
 .main-container .main-container__noticias h1 {
   color: black;
-  padding: 40px 24px 16px;
+  padding-bottom: 32px;
 }
 .main-container .main-container__noticias .noticias__container {
   width: 100%;
-  padding: 0 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

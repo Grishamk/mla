@@ -27,7 +27,7 @@ carouselContainer.addEventListener('mouseleave', () => {
 });
 
 //FadeIN
-function debounce(func, wait = 20, immediate = true) {
+function debounce(func, wait = 16, immediate = true) {
   let timeout;
   return function() {
     const context = this, args = arguments;

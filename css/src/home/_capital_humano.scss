@@ -9,10 +9,10 @@
     justify-content: center;
 
     .capital-humano__container {
-        width: 90%;
+        //width: 90%;
+        padding: 40px 24px;
         text-align: center;
-        padding-top: 48px;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
         @include flexRule(column,null,center);
        
         h2 {
