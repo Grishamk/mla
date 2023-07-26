@@ -23,14 +23,15 @@ mixin contactoG(icono,alterno,titulo,contenido)
             p=titulo
             p=contenido
 
-mixin noticia(imagen,alterno,titulo,texto,enlace,clase)
+mixin noticia(imagen,alterno,titulo,fecha,texto,enlace,clase)
     article.noticia__item(class=clase)
         picture
             img(src="./img/avisos/"+imagen, alt=alterno)
         .noticia__contenido
             h2=titulo
+            p.fecha=fecha
             p=texto
-        .noticia__enlace
+        //.noticia__enlace
             a(href=enlace) Leer más
                 span
                     img(src="./icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha") 
@@ -70,15 +71,16 @@ mixin staffElement(imagen,alterno,titulo,text1,text2,text3,clase)
             p=text2
             p(class=clase)=text3
 
-mixin aviso(imagen,alterno,titulo,texto,link)
+mixin aviso(imagen,alterno,titulo,fecha,texto,link)
     article.news-noticias__item
         picture
             img(src="../../img/avisos/"+imagen alt=alterno)
         div
             h2=titulo
+            p.fecha=fecha
             p=texto 
-            a(href=link) Leer más
-                //span
+            //a(href=link) Leer más
+                span
                     img(src="../../icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha")//
 
 mixin boletin(imagen,alterno,titulo,texto,link)

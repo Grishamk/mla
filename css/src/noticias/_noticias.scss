@@ -37,13 +37,17 @@
         div{
             padding: 0 8px;
             @include flexRule(column);
-            gap: 16px;
+            //gap: 16px;
             
             h2{
                 font-size: 2rem;
 
             }
-
+            .fecha{
+                font-size: 1.4rem;
+                padding-top: 4px;
+                padding-bottom: 16px;
+            }
             P{
                 line-height: 2.1rem;
             }

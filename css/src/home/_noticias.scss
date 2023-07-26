@@ -26,11 +26,14 @@
         .noticia__item{
             background-color: $colorTerciario;
             width: 272px;
-            height: 532px;  
+            height: 532px;
+            box-shadow: 8px 8px 14px 0px rgba(0,0,0,0.54);
+            -webkit-box-shadow: 8px 8px 14px 0px rgba(0,0,0,0.54);
+            -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
             
             picture{
                 width: 100%;
-                padding: 15px;
+                padding: 15px 15px 0px;
                 @include flexRule(null,center,center);
 
                 img{
@@ -43,9 +46,12 @@
 
                 h2{
                     font-size: 2rem;
-                    margin-bottom: 24px;
+                    margin-bottom: 4px;
                 }
-
+                .fecha{
+                    margin-bottom: 16px;
+                    font-size: 1.2rem;
+                }
                 p{
                     font-size: 1.6rem;
                 }
