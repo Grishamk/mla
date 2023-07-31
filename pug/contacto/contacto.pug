@@ -16,22 +16,22 @@ block contenido
                     section.main__formulario
                         article.contacto__formulario
                             p Déjenos su solicitud y le responderemos lo más pronto posible
-                            div.formulario__formulario
-                                form.formulario__formulario--1
+                            form(action="https://formsubmit.co/mugiwaranonatha@gmail.com" method="POST").formulario__formulario
+                                div.formulario__formulario--1
                                     label(for="nombres")
-                                        input(type="text" placeholder="Nombres")
+                                        input(type="text" id="nombres" name="nombres" placeholder="Nombres")
                                     label(for="apellidos")
-                                        input(type="text" placeholder="Apellidos")
-                                form
+                                        input(type="text" id="apellidos" name="apellidos" placeholder="Apellidos")
+                                div
                                     label(for="correo")
-                                        input(type="email" placeholder="E-mail")
+                                        input(type="email" id="correo" name="correo" placeholder="E-mail")
                                     label(for="telefono")
-                                        input(type="number" placeholder="Teléfono") 
-                                form.formulario__comentario
+                                        input(type="number" id="telefono" name="telefono" placeholder="Teléfono") 
+                                .formulario__comentario
                                     label(for="comentario")
-                                        input(type="text")
+                                        input(type="text" id="comentario" name="comentario")
             
-                            button Enviar Solicitud
+                                button(type="submit") Enviar Solicitud
 
                             a(href="#").formulario__link Descargar formulario de servicios 
                         

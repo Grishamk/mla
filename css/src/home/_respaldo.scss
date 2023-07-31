@@ -62,6 +62,9 @@
                 margin-bottom: 0px;
                 width: 33%;
 
+                &:hover{
+                    transform: scale(1.05);
+                }
                 h2 {
                     padding: 0;  
                 }

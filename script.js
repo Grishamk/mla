@@ -1,5 +1,5 @@
 const carouselContainer = document.querySelector('.carousel-container');
-const totalImages = 32; // Reemplaza el total de imágenes adecuadamente
+const totalImages = 31; // Reemplaza el total de imágenes adecuadamente
 let currentPosition = 0;
 
 function updateCarouselPosition() {
@@ -59,12 +59,12 @@ window.addEventListener('scroll', debounce(checkFadeIn));
 
 //CARRUSEL
 
-
 const slider = document.querySelector(".slider");
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
 const slides = document.querySelectorAll(".slide");
 const slideIcons = document.querySelectorAll(".slide-icon");
+const info = document.querySelectorAll(".info");
 const numberOfSlides = slides.length;
 var slideNumber = 0;
 
@@ -104,7 +104,9 @@ prevBtn.addEventListener("click", () => {
 
   slides[slideNumber].classList.add("active");
   slideIcons[slideNumber].classList.add("active");
+
 });
+
 
 //image slider autoplay
 var playSlider;
@@ -139,4 +141,19 @@ slider.addEventListener("mouseover", () => {
 slider.addEventListener("mouseout", () => {
   repeater();
 });
-      
+
+// Función para mostrar el slide actual y reiniciar la animación
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) {
+      slide.classList.add("active");
+      const textContainer = slide.querySelector("info");
+      textContainer.classList.add("animate"); // Cambia "animate__bounceIn" por la animación que desees para el texto
+    } else {
+      slide.classList.remove("active");
+      const textContainer = slide.querySelector(".info");
+      textContainer.classList.remove("animate"); // Elimina la clase de animación en slides que no son el actual
+    }
+  });
+}

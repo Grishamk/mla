@@ -548,8 +548,14 @@ header {
 .main-container .main-container__carrusel .slider .active {
   -webkit-clip-path: circle(150% at 0 50%);
           clip-path: circle(150% at 0 50%);
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.main-container .main-container__carrusel .slider .animate {
+  -webkit-animation: fadeInLeftBig;
+          animation: fadeInLeftBig;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 .main-container .main-container__carrusel .slider .navigation {
   height: 500px;
@@ -752,6 +758,9 @@ header {
   }
 }
 @media (min-width: 1024px) {
+  .main-container .main__servicios {
+    padding-top: 60px;
+  }
   .main-container .main__servicios h2 {
     margin-bottom: 24px;
   }
@@ -774,33 +783,33 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 24px;
+    gap: 40px;
   }
   .main-container .main__servicios .servicios__contenedor a {
-    width: 250px;
+    width: 300px;
     height: 200px;
-    -webkit-transform: all 300ms ease;
-            transform: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
     -webkit-animation: fadeInUp;
             animation: fadeInUp;
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
   }
   .main-container .main__servicios .servicios__contenedor a img {
-    width: 250px;
+    width: 300px;
     height: 200px;
   }
   .main-container .main__servicios .servicios__contenedor a p {
     font-size: 1.6rem;
   }
   .main-container .main__servicios .servicios__contenedor a:hover {
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    -webkit-transform: all 300ms ease;
-            transform: all 300ms ease;
   }
   .main-container .main__servicios .servicios__contenedor a:hover div {
-    background-color: black;
+    background-color: #043877;
   }
 }
 .main-container .main-container__respaldo {
@@ -875,6 +884,10 @@ header {
   .main-container .main-container__respaldo section .main-container__item {
     margin-bottom: 0px;
     width: 33%;
+  }
+  .main-container .main-container__respaldo section .main-container__item:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   .main-container .main-container__respaldo section .main-container__item h2 {
     padding: 0;
@@ -1140,7 +1153,10 @@ header {
     transition: all 300ms ease;
   }
   .main-container .main-container__capital-humano .capital-humano__container .capital-humano__socios .capital-humano__item:hover {
-    margin-top: -36px;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
   }
   .main-container .main-container__capital-humano .capital-humano__container a {
     width: 180px;
@@ -1284,6 +1300,16 @@ header {
   .main-container .main-container__noticias .noticias__container {
     gap: 72px;
     margin-bottom: 50px;
+  }
+  .main-container .main-container__noticias .noticias__container .noticia__item {
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  .main-container .main-container__noticias .noticias__container .noticia__item:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
   }
 }
 .main-container .main-container__contacto {
@@ -4018,6 +4044,12 @@ main .desarrollo__servicios ul li {
   border: none;
   float: right;
 }
+.contacto__formulario button:active {
+  background-color: black;
+}
+.contacto__formulario button:hover {
+  cursor: pointer;
+}
 .contacto__formulario .formulario__link {
   text-decoration: none;
   margin-top: 64px;
@@ -4079,7 +4111,7 @@ main .desarrollo__servicios ul li {
   .contacto__formulario {
     padding: 48px 88px 0px;
   }
-  .contacto__formulario .formulario__formulario form {
+  .contacto__formulario .formulario__formulario div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4088,7 +4120,7 @@ main .desarrollo__servicios ul li {
             justify-content: center;
     gap: 20px;
   }
-  .contacto__formulario .formulario__formulario form label {
+  .contacto__formulario .formulario__formulario div label {
     width: 50%;
   }
   .contacto__formulario .formulario__formulario .formulario__comentario label {

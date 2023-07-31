@@ -107,6 +107,14 @@
         .noticias__container{
             gap: 72px;
             margin-bottom: 50px;
+            
+            .noticia__item{
+                transition: all 300ms ease;
+                &:hover{
+                    transform: scale(1.05);
+                    transition: all 300ms ease;
+                }
+            }
         }
     }
 }

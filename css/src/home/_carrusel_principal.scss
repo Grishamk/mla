@@ -74,7 +74,12 @@
 
         .active{
             clip-path: circle(150% at 0 50%);
-            transition: 2s;
+            transition: 1s;
+        }
+        
+        .animate{
+            animation: fadeInLeftBig;
+            animation-duration: 2s;
         }
 
         .navigation{

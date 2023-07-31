@@ -36,6 +36,14 @@
         background-color: #022552;
         border: none;
         float: right;
+
+        &:active{
+            background-color: black;
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     .formulario__link{
@@ -91,7 +99,7 @@
 
         .formulario__formulario{
         
-            form{
+            div{
                 display: flex;
                 justify-content: center;
                 gap: 20px;

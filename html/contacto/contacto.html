@@ -107,30 +107,30 @@
           <section class="main__formulario">
             <article class="contacto__formulario">
               <p>Déjenos su solicitud y le responderemos lo más pronto posible</p>
-              <div class="formulario__formulario">
-                <form class="formulario__formulario--1">
+              <form class="formulario__formulario" action="https://formsubmit.co/mugiwaranonatha@gmail.com" method="POST">
+                <div class="formulario__formulario--1">
                   <label for="nombres">
-                    <input type="text" placeholder="Nombres">
+                    <input type="text" id="nombres" name="nombres" placeholder="Nombres">
                   </label>
                   <label for="apellidos">
-                    <input type="text" placeholder="Apellidos">
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos">
                   </label>
-                </form>
-                <form>
+                </div>
+                <div>
                   <label for="correo">
-                    <input type="email" placeholder="E-mail">
+                    <input type="email" id="correo" name="correo" placeholder="E-mail">
                   </label>
                   <label for="telefono">
-                    <input type="number" placeholder="Teléfono">
+                    <input type="number" id="telefono" name="telefono" placeholder="Teléfono">
                   </label>
-                </form>
-                <form class="formulario__comentario">
+                </div>
+                <div class="formulario__comentario">
                   <label for="comentario">
-                    <input type="text">
+                    <input type="text" id="comentario" name="comentario">
                   </label>
-                </form>
-              </div>
-              <button>Enviar Solicitud</button><a class="formulario__link" href="#">Descargar formulario de servicios </a>
+                </div>
+                <button type="submit">Enviar Solicitud</button>
+              </form><a class="formulario__link" href="#">Descargar formulario de servicios </a>
             </article>
             <article class="contacto__informacion">
               <h2>Información de Contacto</h2>

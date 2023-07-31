@@ -120,7 +120,8 @@
                 }
 
                 .capital-humano__item:hover{
-                    margin-top: -36px;
+                   transform: scale(1.05);
+                   transition: all 300ms ease;
                 }
             }
 
