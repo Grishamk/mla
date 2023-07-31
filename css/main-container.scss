@@ -27,10 +27,8 @@
     //MAPA
     @import "./src/home/mapa";
 
-    //ANIMACION
-    @import "./src/home/fadeIn";
+    
 }
-
 //OTRAS PAGINAS DEL SITIO
 
 /*SOBRE NOSOTROS*/
@@ -70,3 +68,6 @@
 /*NOTICIAS*/
 @import "./src/noticias/noticias";
 @import "./src/noticias/boletines";
+
+//ANIMACION
+@import "./src/home/fadeIn";

@@ -7,6 +7,8 @@
     background-size: cover;
     color: $colorLetra2;
     text-align: center;
+    animation: fadeInLeft;
+    animation-duration: 1s;
     @include flexRule(column,center,center);
 
     &__text-container{

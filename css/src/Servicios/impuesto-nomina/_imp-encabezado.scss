@@ -10,6 +10,8 @@
             background-size: cover;
             color: $colorLetra2;
             text-align: center;
+            animation: fadeInRight;
+            animation-duration: 1s;
             @include flexRule(column,center,center);
 
             h2{
@@ -22,7 +24,8 @@
     }
 
     .imp__enfoque{
-        
+        animation: fadeInLeft;
+        animation-duration: 1s;
         picture {
             width: 320px;
             

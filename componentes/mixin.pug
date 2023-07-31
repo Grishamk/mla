@@ -62,7 +62,7 @@ mixin actoresIn(icono,alterno,texto,diferenciador)
         p=texto
 
 mixin staffElement(imagen,alterno,titulo,text1,text2,text3,clase)
-    article.staff__item
+    article.staff__item.fade-in
         picture
             img(src="../../img/staff/"+imagen alt=alterno)
         div.staff__text-container
@@ -72,7 +72,7 @@ mixin staffElement(imagen,alterno,titulo,text1,text2,text3,clase)
             p(class=clase)=text3
 
 mixin aviso(imagen,alterno,titulo,fecha,texto,link)
-    article.news-noticias__item
+    article.news-noticias__item.fade-in
         picture
             img(src="../../img/avisos/"+imagen alt=alterno)
         div
@@ -84,7 +84,7 @@ mixin aviso(imagen,alterno,titulo,fecha,texto,link)
                     img(src="../../icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha")//
 
 mixin boletin(imagen,alterno,titulo,texto,link)
-    article.boletines-noticias__item
+    article.boletines-noticias__item.fade-in
         picture
             img(src="../../img/avisos/"+imagen alt=alterno)
         div

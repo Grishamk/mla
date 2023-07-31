@@ -10,6 +10,8 @@
             background-size: cover;
             color: $colorLetra2;
             text-align: center;
+            animation: fadeInRight;
+            animation-duration: 1s;
             @include flexRule(column,center,center);
 
             h2{
@@ -21,10 +23,10 @@
     }
 
     .asesoria__enfoque{
-        
+        animation: fadeInLeft;
+        animation-duration: 1s;
         picture {
             width: 320px;
-            
             img {
                 width: 100%;
             }
@@ -32,6 +34,7 @@
 
         article {
             padding: 48px 20px;
+            
             
             strong{
                 display: block;

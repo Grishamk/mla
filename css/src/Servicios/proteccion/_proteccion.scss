@@ -10,6 +10,8 @@
             background-size: cover;
             color: $colorLetra2;
             text-align: center;
+            animation: fadeInRight;
+            animation-duration: 1s;
             @include flexRule(column,center,center);
 
             h2{
@@ -22,7 +24,8 @@
     }
 
     .proteccion__enfoque{
-        
+        animation: fadeInLeftt;
+        animation-duration: 1s;
         picture {
             width: 320px;
             
@@ -65,7 +68,8 @@
 @media(min-width: $breakpoint-tablet){
     .encabezado {    
         .proteccion__enfoque{
-        
+            animation: fadeInLeft;
+            animation-duration: 1s;
             article{
                 padding: 48px 40px;
                 strong{
@@ -97,7 +101,8 @@
     
         .proteccion__enfoque{
             display: flex;
-            
+            animation: fadeInLeft;
+            animation-duration: 1s;
             picture {
                 width: 50%;
                 

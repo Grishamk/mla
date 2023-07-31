@@ -5,18 +5,18 @@ block stylesheet
     link(rel="stylesheet", href="../../css/main.css")  
 block contenido
  
-        main
+        main.fade-in
             section.RS__container
                 section.RStitular
                     .RStitular__text-container
                         h2 Responsabilidad Social
                         p Para nuestra firma, la responsabilidad social es un fundamento clave sobre el cual se rige nuestro desarrollo comercial.
                 
-                section.RS__text-container
+                section.RS__text-container.fade-in
                     strong Fundada sobre la base de valores familiares y  caracterizada por su  continuo crecimiento el cual se sustenta en la  profesionalidad de sus  recursos humanos, la  calidad de sus servicios, la  honestidad y el respeto a  sus clientes y aliados.
                     p.RS__main-text La responsabilidad social va más allá de una actividad, para nosotros es el compromiso consciente y congruente de cumplir integralmente con la finalidad de la empresa, demostrando respeto por las personas, los valores éticos, la comunidad y el medio ambiente, contribuyendo así a la construcción del bien común, lo cual se traduce en acciones concretas que buscan el beneficio de todos los actores involucrados en las actividades de MLA. Entre ellas destacamos:
                 
-                    div.RS__externos
+                    div.RS__externos.fade-in
                         h2 Actores Externos:
                         article
                             img(src='../../icon/check.svg' alt='check icon')
@@ -31,7 +31,7 @@ block contenido
                         article
                             img(src='../../icon/check.svg' alt='check icon')
                             p Respetar el medio ambiente, evitando en lo posible cualquier tipo de contaminación, minimizando la generación de residuos y racionalizando el uso de los recursos naturales y energéticos.
-                div.RS__internos
+                div.RS__internos.fade-in
                     h2 Actores Internos:
                     .RS__internos--item
                         +actoresIn('check.svg','check icon','Establecer controles que aseguren la no discriminación (sexo, raza, religión, estatus social) en los procesos de reclutamiento')
