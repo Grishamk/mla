@@ -6,18 +6,25 @@
 header {
     width: 100%;
     background-color: $colorPrincipal;
-    /*position: fixed;
+    transition: all 300ms ease;
+    
+}
+.fixed {
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;*/
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: all 300ms ease;
 }
-
 .nav-container {
     width: 100%;
     height: 57px;
     @include flexRule(row,null,center);
     background-color: $colorPrincipal;
 
+    
     //LOGO MLA
     .logo-container {
         width: 80%;
