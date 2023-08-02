@@ -14,59 +14,58 @@
     overflow: hidden;
     width: 100%;
     height: auto;
-    max-width: 1200px; // Establece un ancho máximo para el carrusel
-    @include flexRule(row,center,center);
+    max-width: 1000px; // Establece un ancho máximo para el carrusel
   
     .carousel-container {
       display: flex;
       transition: transform 0.5s ease;
   
       img {
-        width: 100%;
-        height: auto;
+        width: 1000px;
+        max-width: 1200px; // Asegúrate de establecer el ancho exacto de la imagen
+        height: 162.5; // Asegúrate de establecer la altura exacta de la imagen
         object-fit: cover;
       }
     }
   }
-}
+  
+  // Estilos para diferentes tamaños de pantalla
+  @media screen and (max-width: 768px) {
+    .carousel {
+      max-width: 700px; // Cambia el ancho máximo del carrusel para pantallas pequeñas
 
-// Estilos para diferentes tamaños de pantalla
-@media screen and (max-width: 768px) {
-  .main-container__clientes{
-    padding: 15px;
-    height: 300px;
+      .carousel-container {
+        display: flex;
+        transition: transform 0.5s ease;
+    
+        img {
+          width: 700px;
+          max-width: 900px; // Asegúrate de establecer el ancho exacto de la imagen
+          height: 113.75; // Asegúrate de establecer la altura exacta de la imagen
+          object-fit: cover;
+        }
+      }
+    }
+  }
 
+  @media screen and (max-width: 430px) {
+    
     h2{
       font-size: 2.4rem;
     }
     .carousel {
-      max-width: 100%; // Cambia el ancho máximo del carrusel para pantallas pequeñas
-      @include flexRule(row,center,center);
-      
+      max-width: 312px; // Cambia el ancho máximo del carrusel para pantallas pequeñas
 
-      .carousel-container{
-        width: 100%;
-        @include flexRule(row,center,center);
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .main-container__clientes{
-    padding: 15px;
-    height: 200px;
-
-    h2{
-      margin-top: 0;
-    }
-    .carousel {
-      max-width: 100%; // Cambia el ancho máximo del carrusel para pantallas pequeñas
-      @include flexRule(row,center,center);
-      
-      .carousel-container{
-        width: 100%;
-        @include flexRule(row,center,center);
+      .carousel-container {
+        display: flex;
+        transition: transform 0.5s ease;
+    
+        img {
+          width: 312px;
+          max-width: 900px; // Asegúrate de establecer el ancho exacto de la imagen
+          height: 52px; // Asegúrate de establecer la altura exacta de la imagen
+          object-fit: cover;
+        }
       }
     }
   }
