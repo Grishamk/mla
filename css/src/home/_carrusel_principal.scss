@@ -1,3 +1,26 @@
+#btnBackToTop {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    background-color: #043875;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    text-decoration: none;
+    vertical-align: middle;
+    padding-bottom: 8px;
+}
+
+#btnBackToTop span {
+    font-size: 48px;
+}
+
 .main-container__carrusel{
       height: 60vh;
       display: flex;
