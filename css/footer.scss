@@ -76,14 +76,15 @@
 //LAPTOP
 @media(min-width: $breakpoint-laptop){
     .footer-container {
-        height: 280px;
+        height: auto;
         width: 100%;
 
         .footer-movil__container{
             width: 100%;
+            padding: 20px 0;
             @include flexRule(row,center,null);
             flex-wrap: wrap;
-            gap: 64px;
+            gap: 40px;
 
             .footer-movil__logo{
                 width: 28%;
@@ -116,7 +117,14 @@
             .contacto{
                 order: 1;
                 text-align: left;
-                width: 50%;
+                width: 60%;
+
+                p{
+                    font-size: 1.4rem;
+                    span{
+                        font-weight: 300;
+                    }
+                }
             }
            
             .redes{
@@ -130,7 +138,8 @@
 @media(min-width: $breakpoint-desktop){
     .footer-container {
         justify-content: center;
-        height: 230px;
+        height: 200px;
+        padding-bottom: 20px 40px;
 
         .footer-movil__container{
             justify-content: space-between;

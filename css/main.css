@@ -4796,11 +4796,12 @@ main .desarrollo__servicios ul li {
 
 @media (min-width: 1024px) {
   .footer-container {
-    height: 280px;
+    height: auto;
     width: 100%;
   }
   .footer-container .footer-movil__container {
     width: 100%;
+    padding: 20px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4813,7 +4814,7 @@ main .desarrollo__servicios ul li {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 64px;
+    gap: 40px;
   }
   .footer-container .footer-movil__container .footer-movil__logo {
     width: 28%;
@@ -4861,7 +4862,13 @@ main .desarrollo__servicios ul li {
         -ms-flex-order: 1;
             order: 1;
     text-align: left;
-    width: 50%;
+    width: 60%;
+  }
+  .footer-container .footer-movil__container .contacto p {
+    font-size: 1.4rem;
+  }
+  .footer-container .footer-movil__container .contacto p span {
+    font-weight: 300;
   }
   .footer-container .footer-movil__container .redes {
     display: none;
@@ -4872,7 +4879,8 @@ main .desarrollo__servicios ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 230px;
+    height: 200px;
+    padding-bottom: 20px 40px;
   }
   .footer-container .footer-movil__container {
     -webkit-box-pack: justify;
