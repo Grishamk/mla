@@ -1,0 +1,29 @@
+extend ../../componentes/_subplantilla.pug
+block logo
+    link(rel="shortcut icon", href="../../icon/favicon.ico")
+block stylesheet
+    link(rel="stylesheet", href="../../css/main.css")
+block contenido
+ 
+        main
+            section.encabezado
+                section.capital__encabezado
+                    div
+                        h2 Trabaja Con Nosotros
+                
+                section.trabajaN__enfoque.fade-in
+                    picture
+                        img(src="../../img/servicios/DO3.webp", alt="Hablando de negocios")
+                    article
+                        h2 Posiciones Abiertas
+                        ul
+                            li
+                                a(href="#") Auditor Externo
+                            li
+                                a(href="#") Consultor de Impuestos
+                            li
+                                a(href="#") Contador 
+            
+            section.auditoria__contacto.fade-in
+                p Para obtener mas información y solicitar nuestros servicios
+                a(href="../../html/contacto/contacto.html") Contáctenos ahora

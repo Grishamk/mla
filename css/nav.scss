@@ -7,7 +7,6 @@ header {
     width: 100%;
     background-color: $colorPrincipal;
     transition: all 300ms ease;
-    
 }
 .fixed {
     position: fixed;
@@ -24,7 +23,6 @@ header {
     @include flexRule(row,null,center);
     background-color: $colorPrincipal;
 
-    
     //LOGO MLA
     .logo-container {
         width: 80%;
