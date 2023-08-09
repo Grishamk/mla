@@ -100,68 +100,60 @@
       <section class="encabezado">
         <section class="capital__encabezado">
           <div>
-            <h2>Trabaja Con Nosotros</h2>
+            <h2>Formulario de empleo</h2>
           </div>
         </section>
-        <section class="auditor__enfoque fade-in">
-          <picture><img src="../../img/servicios/DO3.webp" alt="Hablando de negocios"></picture>
-          <article>
-            <h2>Posiciones Abiertas</h2>
-            <p>Únete a nuestro equipo de profesionales comprometidos y cuidadosamente seleccionados. Valoramos el crecimiento y estamos en cponstante búsqueda de nuevos talentos. Ofrecemos capacitación continua en áreas de interés y la oportuniad de trabajar con expertos en diversas materias. Buscamos personas apasionadas, responsables y con hbailidades para el trabajo en equipo.</p>
-            <p>Si estás interesado, envíanos tu CV en PDF a través de nuestro formulario.</p>
-          </article>
-        </section>
       </section>
-      <section class="auditor__info">
-        <h1>Auditor Externo </h1>
-        <h2>Descripción </h2>
-        <p>Asegurar la ejecución de todas las fases de las auditorias y trabajos asignados según los programas y planificación establecidos, dando cumplimiento a normativas financieras, fiscales y de control interno, garantizando de esta manera la satisfacción del cliente en el servicio brindado.</p>
-        <h2>Lo que harás: </h2>
-        <ul> 
-          <li>Revisar la planificación, el listado de requerimientos y programas de auditoría conjuntamente con el supervisor, para aclarar cualquier inquietud sobre el enfoque de los objetivos y el tiempo de ejecución.</li>
-          <li>Elaborar analíticas de cada área, presentando los hallazgos de mayor relevancia y los procedimientos utilizados para llegar a los objetivos establecidos.</li>
-          <li>Ejecutar análisis y pruebas de auditoria en base al programa establecido, apegados al cumplimiento de las políticas y procedimientos de la firma, las normas internacionales de información financiera, normas de auditoría, leyes fiscales y normativas de control interno.</li>
-          <li>Realizar la toma física de inventario tomando como parámetros el programa de trabajo, la planeación de tiempo y la estimación de la materialidad elaborados por el supervisor.</li>
-          <li>Generar el informe de la toma física de inventario realizada.</li>
-          <li>Actualizar el archivo permanente del cliente de la auditoria.</li>
-          <li>Completar el expediente, apegándose a los objetivos y procedimientos establecidos.</li>
-          <li>Remitir reportes de progreso según indiquen las políticas establecidas, manteniendo una comunicación efectiva.</li>
-          <li>Asignar las tareas al auxiliar de auditoría y dar seguimiento a su ejecución, revisando el análisis y procedimientos realizados por el auxiliar de auditoría.</li>
-          <li>Completar el memo de observaciones de auditoria para su posterior discusión con el cliente por parte del gerente.</li>
-          <li>Realizar observaciones que les sean asignadas respecto al expediente.</li>
-          <li>Completar las evaluaciones del supervisor / gerente.</li>
-          <li>Mantener buena comunicación interna (supervisor/gerente) / externa (clientes).</li>
-          <li>Terminar los trabajos con la máxima calidad y en el tiempo establecido.</li>
-          <li>Realizar otras tareas afines y complementarias al puesto y/o sean requeridas por el supervisor/ gerente y/o socio encargado.</li>
-        </ul>
-        <h2>Experiencia requerida:</h2>
-        <ul> 
-          <li>Graduado de las áreas de: Contabilidad, Administración y/o áreas afines al puesto.</li>
-          <li>2 años de experiencia.</li>
-        </ul>
-        <h2>Habilidades requeridas:</h2>
-        <ul>
-          <li>Facilidad de comunicación oral y escrita.</li>
-          <li>Conocimiento del idioma inglés</li>
-          <li>Conocimientos de Microsoft Office.</li>
-          <li>Redacción de informes.</li>
-          <li>Normas (NIAs, NICs y NIIFs).</li>
-          <li>Normativas fiscales.</li>
-          <li>Proceso de auditoría. </li>
-          <li>Preparación y análisis de Estados Financieros.</li>
-        </ul>
-        <h2>Competencias conductuales:</h2>
-        <ul>
-          <li>Ética e integridad.</li>
-          <li>Compromiso.</li>
-          <li>Orientación al cliente.</li>
-          <li>Calidad en el trabajo.</li>
-          <li>Trabajo en equipo.</li>
-        </ul>
-        <button><a class="button" href="../../html/capital-humano/formulario.html">Aplicar aquí</a></button>
-      </section>
-      <section class="auditoria__contacto fade-in">
-        <p>Para obtener mas información y solicitar nuestros servicios</p><a href="../../html/contacto/contacto.html">Contáctenos ahora</a>
+      <section class="formulario-empleo">
+        <form class="formulario">
+          <div>
+            <label for="nombre">
+              <p>Nombre y apellido</p>
+              <input type="text" id="nombre" placeholder="nombre completo" name="nombre">
+            </label>
+          </div>
+          <div class="doble">
+            <label for="correo">
+              <p>Dirección de correo electrónico </p>
+              <input type="email" id="correo" placeholder="tucorreo@email.com" name="correo">
+            </label>
+            <label for="telefono">
+              <p>Teléfono </p>
+              <input type="number" id="telefono" name="telefono">
+            </label>
+          </div>
+          <div> 
+            <label for="Posicion">
+              <p>Posición que desea aplicar</p>
+              <select name="Posicion" id="posicion">
+                <option>Auditor Externo</option>
+                <option>Consultor de Impuestos</option>
+                <option>Contador</option>
+              </select>
+            </label>
+          </div>
+          <div class="doble">
+            <label for="habilidades">
+              <p>Habilidades</p>
+              <textarea name="habilidades" cols="30" rows="10" id="habilidades"> </textarea>
+            </label>
+            <label for="motivacion">
+              <p>Motivación</p>
+              <textarea name="motivacion" cols="30" rows="10" id="motivacion"></textarea>
+            </label>
+          </div>
+          <div>
+            <label for="experiencia">
+              <p>Experiencia</p>
+              <textarea name="experiencia" cols="30" rows="10" id="experiencia"></textarea>
+            </label>
+          </div>
+          <div>
+            <p>Adjuntar CV (En formato PDF)</p>
+            <input type="file" accept="application/pdf" name="curriculum">
+          </div>
+          <input class="boton" type="submit">
+        </form>
       </section>
     </main>
     <footer class="footer-container">

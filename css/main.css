@@ -4203,12 +4203,15 @@ main .desarrollo__servicios ul li {
 }
 .auditor__info button {
   background-color: #043877;
-  color: white;
   width: 80%;
   height: 40px;
   border: none;
   border-radius: 8px;
+}
+.auditor__info button a {
   font-size: 2rem;
+  color: white;
+  text-decoration: none;
 }
 
 @media (min-width: 750px) {
@@ -4335,6 +4338,118 @@ main .desarrollo__servicios ul li {
   }
   .auditor__info button:hover {
     cursor: pointer;
+  }
+}
+.formulario-empleo {
+  margin: 0 auto;
+  padding: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10px;
+}
+.formulario div p {
+  padding-bottom: 12px;
+}
+.formulario div input {
+  margin-bottom: 40px;
+}
+.formulario div label p {
+  padding-bottom: 8px;
+}
+.formulario div label input {
+  width: 100%;
+  height: 40px;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+.formulario div label textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+.formulario div label select {
+  width: 100%;
+  padding: 8px;
+  height: 40px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+.formulario .boton {
+  width: 50vw;
+  height: 5vh;
+  margin: 0 auto;
+  border: none;
+  border-radius: 8px;
+  background-color: #043877;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.formulario .boton:active {
+  background-color: black;
+}
+.formulario .boton:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 750px) {
+  .formulario {
+    width: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  .formulario {
+    width: 900px;
+  }
+  .formulario div p {
+    padding-bottom: 12px;
+  }
+  .formulario div input {
+    margin-bottom: 40px;
+  }
+  .formulario div label {
+    width: 100%;
+  }
+  .formulario div label input {
+    height: 48px;
+    margin-bottom: 32px;
+  }
+  .formulario div label textarea {
+    margin-bottom: 32px;
+  }
+  .formulario div label select {
+    margin-bottom: 32px;
+  }
+  .formulario .doble {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .formulario .boton {
+    width: 200px;
   }
 }
 /*CONTACTO*/

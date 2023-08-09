@@ -1,0 +1,56 @@
+extend ../../componentes/_subplantilla.pug
+block logo
+    link(rel="shortcut icon", href="../../icon/favicon.ico")
+block stylesheet
+    link(rel="stylesheet", href="../../css/main.css")
+block contenido
+ 
+        main
+            section.encabezado
+                section.capital__encabezado
+                    div
+                        h2 Formulario de empleo
+            
+            section.formulario-empleo
+                form(action="https://formsubmit.co/mugiwaranonatha@gmail.com" method="POST")formulario
+                    div
+                        label(for="nombre")
+                            p Nombre y apellido
+                            input(type="text" id="nombre" placeholder="nombre completo" name="nombre")
+                    div.doble
+                        label(for="correo")
+                            p Dirección de correo electrónico 
+                            input(type="email" id="correo" placeholder="tucorreo@email.com" name="correo")
+
+                        label(for="telefono")
+                            p Teléfono 
+                            input(type="number" id="telefono" name="telefono")
+                    
+                    div 
+                        label(for="Posicion")
+                            p Posición que desea aplicar
+                            select(name="Posicion" id="posicion")
+                                option Auditor Externo
+                                option Consultor de Impuestos
+                                option Contador
+
+                    div.doble
+                        label(for="habilidades")
+                            p Habilidades
+                            textarea(name="habilidades", cols="30", rows="10" id="habilidades") 
+
+                        label(for="motivacion")
+                            p Motivación
+                            textarea(name="motivacion", cols="30", rows="10" id="motivacion")
+                    
+                    div
+                        label(for="experiencia")
+                            p Experiencia
+                            textarea(name="experiencia", cols="30", rows="10" id="experiencia")
+                    
+                    div
+                        p Adjuntar CV (En formato PDF)
+                        input(type="file" accept="application/pdf" name="curriculum")
+                    
+                    input(type="submit").boton
+                    
