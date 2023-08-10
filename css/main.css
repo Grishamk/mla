@@ -2798,7 +2798,7 @@ main .auditoria__servicios ul li {
   }
 }
 main .auditoria__contacto {
-  background-image: url("../../../../img/Certificaciones/bg-section-bottom.webp");
+  background-image: url("../img/Certificaciones/bg-section-bottom.webp");
   color: white;
   height: 207px;
   text-align: center;
