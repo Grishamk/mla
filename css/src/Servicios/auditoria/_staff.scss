@@ -1,5 +1,5 @@
 .mainStaffEspecializado{
-    background-color: #f2f2f2;
+    background-color: #f7f7f7;
     padding: 60px 0;
     padding-bottom: 40px;
     height: auto;
@@ -83,6 +83,12 @@
             .staffEspecializado__item{
                 width: 200px;
                 height: 220px;
+                transition: all 300ms ease;
+
+                &:hover{
+                    transform: scale(1.1);
+                    transition: all 300ms ease;
+                }
                 
                 a{
                     width: 200px;

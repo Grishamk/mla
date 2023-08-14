@@ -2790,7 +2790,7 @@ main .auditoria__servicios ul li {
   }
 }
 main .mainStaffEspecializado {
-  background-color: #f2f2f2;
+  background-color: #f7f7f7;
   padding: 60px 0;
   padding-bottom: 40px;
   height: auto;
@@ -2905,6 +2905,14 @@ main .mainStaffEspecializado .staffEspecializado__container .staffEspecializado_
   main .mainStaffEspecializado .staffEspecializado__container .staffEspecializado__item {
     width: 200px;
     height: 220px;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  main .mainStaffEspecializado .staffEspecializado__container .staffEspecializado__item:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
   }
   main .mainStaffEspecializado .staffEspecializado__container .staffEspecializado__item a {
     width: 200px;
