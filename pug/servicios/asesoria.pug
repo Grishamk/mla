@@ -6,18 +6,15 @@ block stylesheet
 block contenido
 
         main
-            section.encabezado
-                section.asesoria__encabezado
-                    div
-                        h2 Asesoria Fiscal
-                    
-            
-                section.asesoria__enfoque
-                    picture
-                        img(src="../../img/servicios/Asesoria.webp", alt="Tablet con graficos de barras")
-                    article 
-                        strong Brindamos servicios de asesoría especializada desde la óptica de aminorar riesgos y contingencias tributarias, recomendando llevar a cabo el debido proceso. Proveemos a nuestros clientes servicios vinculados con la elaboración y presentación de sus declaraciones y envíos de reportes fiscales, siendo el objetivo la presentación exacta y oportuna.
-                        p En el mismo orden, asistimos a nuestros clientes en la gestión del cumplimiento ante los deberes formales y el cumplimiento de sus responsabilidades como contribuyente, ya sea sobre obligaciones periódicas mensuales o anuales. Estamos sujetos a principios para una práctica impositiva responsable, que establecen conductas éticas fundamentales.
+            section.encabezado__auditoria
+                picture
+                    img(src="../../img/servicios/Asesoria.webp", alt="Foto de analisis digital en tablet")
+                .encabezado__titular
+                    h2 Asesoría Fiscal
+
+                p Brindamos servicios de asesoría especializada desde la óptica de aminorar riesgos y contingencias tributarias, recomendando llevar a cabo el debido proceso. Proveemos a nuestros clientes servicios vinculados con la elaboración y presentación de sus declaraciones y envíos de reportes fiscales, siendo el objetivo la presentación exacta y oportuna.
+                p En el mismo orden, asistimos a nuestros clientes en la gestión del cumplimiento ante los deberes formales y el cumplimiento de sus responsabilidades como contribuyente, ya sea sobre obligaciones periódicas mensuales o anuales. Estamos sujetos a principios para una práctica impositiva responsable, que establecen conductas éticas fundamentales.
+
 
             section.asesoria__servicios.fade-in
                 strong Dentro de los servicios de impuestos se abarcan los siguientes:
@@ -54,6 +51,14 @@ block contenido
                   
                 h3.fade-in Impuestos sobre Sucesiones
 
-            section.auditoria__contacto
+            section.mainStaffEspecializado.fade-in
+                h2 Staff Especializado
+                .staffEspecializado__container
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
+
+            section.auditoria__contacto.fade-in
                 p Para obtener mas información y solicitar nuestros servicios
                 a(href="../../html/contacto/contacto.html") Contáctenos ahora
