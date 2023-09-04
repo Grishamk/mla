@@ -1,0 +1,110 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block logo
+    link(rel="shortcut icon", href="../../../icon/favicon.ico")
+block mainLogo
+    a.logo-container(href="../../index.html")
+        img(src="../../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+block burgerMenu 
+    img(src="../../../icon/menu.svg", alt="menu hamburguesa")
+block homeLinkMovil
+    a(href="../../index.html") Home
+block homeLink
+    a(href="../../index.html") Home
+block stylesheet
+    link(rel="stylesheet", href="../../../css/main.css")
+
+block nosotros
+    li
+        a(href="../../html/nosotros/quienesSomos.html") Who we are
+    li
+        a(href="../../html/nosotros/registros.html") Registries and Memberships
+    li
+        a(href="../../html/nosotros/responsabilidadSoc.html") Social Responsability 
+    li 
+        a(href="../../html/nosotros/certificaciones.html") Certifications
+
+block servicios
+    li
+        a(href="../../html/servicios/auditoria.html") Audit and Assurance
+    li
+        a(href="../../html/servicios/asesoria.html") Tax Advisory
+    li
+        a(href="../../html/servicios/impuesto-nomina.html") Client Accounting Services (CAS)
+    li 
+        a(href="../../html/servicios/consultorias-negocios.html") Business and Financial Consulting
+    li 
+        a(href="../../html/servicios/desarrolloOrg.html") Organizational Development
+    li 
+        a(href="../../html/servicios/proteccion.html") Asset Protection
+
+block noticias 
+    li
+        a(href="../../html/noticias/noticias.html") Notices
+    li
+        a(href="../../html/noticias/boletines.html") News and Bulletins
+
+block capitalHumano
+    a(href="../../html/capital-humano/capital-humano.html") Team
+
+
+block footerLogo
+    img(src="../../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
+
+block footerSocialIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block footerMovilIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block javaScript
+    script(src="../../../subscript.js")
+
+
+
+block contenido
+        main
+            section.RMtitular
+                .RMtitular__text-container
+                    h2 Registros y Membresías
+                    p MLA cuenta con más de 20 membresías y/o registros, tanto en organismos reguladores nacionales como internacionales y diferentes instituciones relativas al sector financiero.
+            
+            section.membresia.fade-in
+                h2.membresia__titular Membresías
+                .membresia__item-container
+                    +membresiaEn('instituto.webp','logo ICPARD', 'El Instituto de Contadores Públicos Autorizados de la República Dominicana (ICPARD)') 
+                    +membresiaEn('anje.webp','logo ANJE','Asociación Nacional de Jóvenes Empresarios (ANJE)')
+                    +membresiaEn('ifa.webp','logo IFA','International Fiscal Association')
+                    +membresiaEn('asonahores.webp','logo ASONAHORES','Asociación Nacional de Hoteles y Restaurantes')
+                    +membresiaEn('afcpard.webp','logo AFCPARD','Asociación de Firmas de Contadores Públicos Autorizados de la República Dominicana (AFCPARD)')
+                    +membresiaEn('asociacion.webp','Logo asociacion','Asociación Interamericana  de Contabilidad')
+                    +membresiaEn('atri.webp','logo ATRI','Asociación Tributaria de la  República Dominicana')
+                    +membresiaEn('bkr.webp','Logo BKR','BKR International')
+            
+            section.registro.fade-in
+                h2.registro__titular Registros
+                .registro__item-container
+                    +registro('Auditores Externos de la  Superintendencia de Bancos  de la República Dominicana.')
+                    +registro('Auditores Externos de la  Superintendencia de Valores  de la República Dominicana.')
+                    +registro('Auditores Externos de la  Superintendencia de Pensiones.')
+                    +registro('Auditores Independiente del  Banco Interamericano de  Desarrollo (BID).')
+                    +registro('Auditores Externos de la  Superintendencia de Seguros.')
+                    +registro('Auditores Externos del Instituto de  Desarrollo y Crédito Cooperativo.')
+                    +registro('Auditores Externos de la Dirección  General de Contrataciones Públicas')
+

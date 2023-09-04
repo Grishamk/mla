@@ -5,9 +5,21 @@ mixin respaldo(imagen,alterno,titulo,contenido)
         h2=titulo
         p=contenido
 
+mixin respaldoEn(imagen,alterno,titulo,contenido)
+    div.main-container__item.fade-in
+        img(src="../img/assets/"+imagen alt=alterno)
+        h2=titulo
+        p=contenido
+
 mixin socio(imagen,alterno,nombre,cargo)
     article.capital-humano__item.fade-in
         img(src="./img/"+imagen alt=alterno)
+        h2=nombre
+        p=cargo
+
+mixin socioEn(imagen,alterno,nombre,cargo)
+    article.capital-humano__item.fade-in
+        img(src="../img/"+imagen alt=alterno)
         h2=nombre
         p=cargo
 
@@ -36,6 +48,18 @@ mixin noticia(imagen,alterno,titulo,fecha,texto,enlace,clase)
                 span
                     img(src="./icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha") 
 
+mixin noticiaEn(imagen,alterno,titulo,fecha,texto,enlace,clase)
+    article.noticia__item(class=clase)
+        picture
+            img(src="../img/avisos/"+imagen, alt=alterno)
+        .noticia__contenido
+            h2=titulo
+            p.fecha=fecha
+            p=texto
+        //.noticia__enlace
+            a(href=enlace) Leer más
+                span
+                    img(src="./icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha") 
 
 
 
@@ -47,9 +71,20 @@ mixin valores(imagen,alterno,titulo,texto,clase)
         h2=titulo
         p=texto
 
+mixin valoresEn(imagen,alterno,titulo,texto,clase)
+    article.nosotrosValores__item
+        picture: img(src="../../../icon/"+imagen alt=alterno class=clase)
+        h2=titulo
+        p=texto
+
 mixin membresia(imagen,alterno,texto)
     article.membresia__item
         picture: img(src="../../img/miembros/"+imagen alt=alterno)
+        h2=texto
+
+mixin membresiaEn(imagen,alterno,texto)
+    article.membresia__item
+        picture: img(src="../../../img/miembros/"+imagen alt=alterno)
         h2=texto
 
 mixin registro(texto)

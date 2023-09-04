@@ -1,0 +1,36 @@
+extend ../../componentes/_subplantilla.pug
+block logo
+    link(rel="shortcut icon", href="../../icon/favicon.ico")
+block stylesheet
+    link(rel="stylesheet", href="../../css/main.css")  
+block contenido
+ 
+        main
+            section.encabezado
+                section.proteccion__encabezado
+                    div
+                        h2 Protección Patrimonial
+                    
+            
+                section.proteccion__enfoque
+                    picture
+                        img(src="../../img/servicios/foto-protec.webp", alt="Hablando de negocios")
+                    article
+                        strong  Asesoramos sobre los procesos tendientes a salvaguardar el patrimonio personal y familiar, mediante un conjunto de procedimientos destinados a prevenir el surgimiento de eventualidades que afectan la estabilidad y continuidad patrimonial de una organización.
+                        p Emitimos opinión experta en materia de gestión; específicamente en ámbitos jurídicos, financieros, tributarios y contables. Estos servicios abarcan entre otros el asesoramiento a organizaciones de:
+                        ul
+                            li Fideicomisos
+                            li Fundación de Intereses Privado
+                            li Otros
+
+            section.mainStaffEspecializado.fade-in
+                h2 Staff Especializado
+                .staffEspecializado__container
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
+
+            section.auditoria__contacto.fade-in
+                p Para obtener mas información y solicitar nuestros servicios
+                a(href="../../html/contacto/contacto.html") Contáctenos ahora

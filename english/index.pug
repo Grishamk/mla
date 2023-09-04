@@ -1,0 +1,256 @@
+extend ../componentes/_plantillaEn.pug
+block logo
+    link(rel="shortcut icon", href="../../icon/favicon.ico")
+block mainLogo
+    a.logo-container(href="./index.html")
+        img(src="../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+block burgerMenu 
+    img(src="../icon/menu.svg", alt="menu hamburguesa")
+block homeLinkMovil
+    a(href="./index.html") Home
+block homeLink
+    a(href="./index.html") Home
+block stylesheet
+    link(rel="stylesheet", href="../../css/main.css")
+
+block nosotros
+    li
+        a(href="./html/nosotros/quienesSomos.html") Who we are
+    li
+        a(href="./html/nosotros/registros.html") Registries and Memberships
+    li
+        a(href="./html/nosotros/responsabilidadSoc.html") Social Responsability 
+    li 
+        a(href="./html/nosotros/certificaciones.html") Certifications
+
+block servicios
+    li
+        a(href="./html/servicios/auditoria.html") Audit and Assurance
+    li
+        a(href="./html/servicios/asesoria.html") Tax Advisory
+    li
+        a(href="./html/servicios/impuesto-nomina.html") Client Accounting Services (CAS)
+    li 
+        a(href="./html/servicios/consultorias-negocios.html") Business and Financial Consulting
+    li 
+        a(href="./html/servicios/desarrolloOrg.html") Organizational Development
+    li 
+        a(href="./html/servicios/proteccion.html") Asset Protection
+
+block noticias 
+    li
+        a(href="./html/noticias/noticias.html") Notices
+    li
+        a(href="./html/noticias/boletines.html") News and Bulletins
+
+block capitalHumano
+    a(href="./html/capital-humano/capital-humano.html") Team
+
+
+
+
+block contenido
+
+        //CONTENIDO PRINCIPAL
+        main.main-container
+            a(href="#head")#btnBackToTop
+                span ↑
+            //CARRUSEL PRINCIPAL
+            .main-container__carrusel#head
+                .slider
+                    //Primer slide
+                    .slide.active
+                        img(src='../img/slide/slide1.webp' alt='')
+                        .info.main
+                            h2 Firm of certified public accountants that has been operating since 1983.
+                            p
+                                |Offering audit and assurance, Tax Advisory, business and financial consulting services, as well as accounting and organizational development services with high international quality standards. Our main asset and key factor for success is our human capital, currently made up of more than 70 professionals. 
+                            
+                            a(href="./html/nosotros/quienesSomos.html") MORE INFORMATION
+
+                    //Segundo slide
+                    .slide
+                        img(src='../img/slide/slide2.webp' alt='')
+                        .info
+                            h2 Audit and Assurance
+                            p
+                                |We conduct review and assurance processes in an independent, objective and timely manner aligned with international standards and best practices. We provide an accurate opinion on the general performance of the company, its processes and controls, thus creating value for the development and improvement of your organization. 
+                            
+                            a(href="./html/servicios/auditoria.html") MORE INFORMATION
+
+                    //Tercer slide
+                    .slide
+                        img(src='../img/slide/slide3.webp' alt='')
+                        .info
+                            h2 Organizational Development
+                            p
+                                | We offer specialized services focused on Organizational Development, which ensure that your strategy and internal resources operate efficiently, harmoniously and organized, allowing your company to adapt to the current and future needs in a planned and controlled manner. 
+                            
+                            a(href="./html/servicios/desarrolloOrg.html") MORE INFORMATION
+
+                    //Cuarto slide
+                    .slide
+                        img(src='../img/slide/slide4.webp' alt='')
+                        .info
+                            h2 Client Accounting Services (CAS)
+                            p
+                                | Based on our specialization in accounting and tax matters in the different economic sectors of the country, we provide accounting outsourcing and tax compliance services that guarantees: the quality, reliability and timeliness of the financial information of your organization.
+                            
+                            a(href="./html/servicios/impuesto-nomina.html") MORE INFORMATION
+
+                    //Quinto slide
+                    .slide
+                        img(src='../img/slide/slide5.webp' alt='')
+                        .info
+                            h2 Tax Advisory
+                            p
+                                |We provide specialized advisory and tax planning services, as well as defense and the reach of agreements with the regulatory authority, tax compliance and audits on the matter.  Our services are based on risk management focused on tax efficiency under due compliance. 
+
+                            a(href="./html/servicios/asesoria.html") MORE INFORMATION
+
+                    //Navegación para los slides (Flechas)
+                    .navigation
+                        i.fas.fa-chevron-left.prev-btn
+                        i.fas.fa-chevron-right.next-btn
+                    
+                    //Indicadores de los slides (puntos)
+                    .navigation-visibility
+                        .slide-icon.active
+                        .slide-icon
+                        .slide-icon
+                        .slide-icon
+                        .slide-icon
+
+            //SERVICIOS
+            section.main__servicios
+                //h2 Servicios
+                div.servicios__contenedor
+                    a(href="./html/servicios/impuesto-nomina.html")
+                        img(src="../img/slide/slide4.webp", alt="")
+                        div
+                            p Client Accounting Services (CAS)
+                    a(href="./html/servicios/auditoria.html")
+                        img(src="../img/slide/slide2.webp", alt="")
+                        div
+                            p Audit and Assurance
+                    a(href="./html/servicios/desarrolloOrg.html")
+                        img(src="../img/slide/slide3.webp", alt="")
+                        div
+                            p Organizational Development
+                    a(href="./html/servicios/asesoria.html")
+                        img(src="../img/servicios/Asesoria.webp", alt="")
+                        div
+                            p Tax Advisory
+                 
+                    a(href="./html/servicios/consultorias-negocios.html")
+                        img(src="../img/servicios/foto-consulto.webp", alt="")
+                        div
+                            p Business and Financial Consulting
+                    a(href="./html/servicios/proteccion.html")
+                        img(src="../img/servicios/foto-protec.webp", alt="")
+                        div
+                            p Asset Protection
+                 
+            //NOTICIAS
+            section.main-container__noticias.fade-in
+                h1 Last News
+                .noticias__container
+                    //Aqui se agregaran las noticias utilizando el mixin "noticiaEn" creado en su respectivo documento.
+                    +noticiaEn("microsoftteams-image.webp","BKR International Meeting","BRK Regional Meeting","May 24","MLA has international support. One of the main (top 5) global associations of independent audit and consulting firms.","#")
+                    +noticiaEn("microsoftteams-image-1.webp","Image with the headline letters","We raise our commitment","May 19","We raise our commitment to the Quality Management System Certified by INTECO","#")
+                    +noticiaEn("publicacion-1.webp","Image with the headline letters","Public Accountant Day","May 17","Congratulations to all the public accountants on your day! His dedication and knowledge are essential. Thank you for your excellent work!","#","escondete")
+
+            //SECCIÓN DE BKR
+            section.main-container__respaldo.fade-in
+                section
+                    //Aquí se muestra información sobre el respaldo de la firma utilizando el mixin "respaldo".
+                    +respaldoEn("bkr.webp","Logo BKR International","International support", "MLA is a member of BKR International, an association of audit and business consulting firms located in 81 countries with more than 588 offices around the world.")
+                    +respaldoEn("servicio.svg","Logo de personas Staff","Specialized Staff", "We permanently prepare courses and seminars for our professionals to keep them updated in order to provide efficient services with the highest quality standards.")
+                    +respaldoEn("calidad.svg","Logo de una diana con un dardo","Experts in your Sector","We develop personalized processes for each client based on our experience and the economic sector in which the company operates in order to ensure the efficiency of the organization.")
+
+            //CAPITAL HUMANO
+            section.main-container__capital-humano.fade-in
+                // Aquí se muestra información sobre los socios de la firma a través de mixins 'socio'
+                section.capital-humano__container.fade-in
+                    h2 Team
+                    p We add value to our clients fulfilling the requirements and satisfying their expectations.
+                    div.capital-humano__socios.fade-in
+                        +socioEn("staff/reymi-mejia-1.webp", "Foto Raymi Mejía","Raymi Mejía","Partner")
+                        +socioEn("staff/firelli.webp","Foto Firelli Mejía","Firelli Mejía","Partner")
+                        +socioEn("staff/sayka-mejia-1.webp","Foto Sayka Mejía","Sayka Mejía","Partner")
+                        +socioEn("staff/jose-mejia-1.webp","Foto José Mejía","José Mejía","Founding Partner")
+                        +socioEn("staff/Adelaida-Ortega-1.webp","Foto Adelaida Ortega","Adelaida Ortega","Founding Manager")
+                    a(href="./html/capital-humano/capital-humano.html") View all 
+            
+            //CARRUSEL DE CLIENTES
+            section.main-container__clientes.fade-in
+                h2 Our Clients
+                div.carousel
+                    div.carousel-container
+                        img(src="../img/SLIDE-TRABAJADAS/gas-1.webp", alt="Imagen 1")
+                        img(src="../img/SLIDE-TRABAJADAS/gas-2.webp", alt="Imagen 2")
+                        img(src="../img/SLIDE-TRABAJADAS/gas-3.webp", alt="Imagen 3")
+                        img(src="../img/SLIDE-TRABAJADAS/gas-4.webp", alt="Imagen 4")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-1.webp", alt="Imagen 5")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-2mesa-de-trabajo-1.webp", alt="Imagen 6")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-3mesa-de-trabajo-1.webp", alt="Imagen 7")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-4mesa-de-trabajo-1.webp", alt="Imagen 8")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-5mesa-de-trabajo-1.webp", alt="Imagen 9")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-6mesa-de-trabajo-1.webp", alt="Imagen 10")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-7mesa-de-trabajo-1.webp", alt="Imagen 11")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-8mesa-de-trabajo-1.webp", alt="Imagen 12")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-9mesa-de-trabajo-1.webp", alt="Imagen 13")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-10mesa-de-trabajo-1.webp", alt="Imagen 14")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-11mesa-de-trabajo-1.webp", alt="Imagen 15")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-12mesa-de-trabajo-1.webp", alt="Imagen 16")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-13mesa-de-trabajo-1.webp", alt="Imagen 17")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-14mesa-de-trabajo-1.webp", alt="Imagen 18")
+                        img(src="../img/SLIDE-TRABAJADAS/hotel-15mesa-de-trabajo-1.webp", alt="Imagen 19")
+                        img(src="../img/SLIDE-TRABAJADAS/konst1mesa-de-trabajo-1.webp", alt="Imagen 20")
+                        img(src="../img/SLIDE-TRABAJADAS/konst2mesa-de-trabajo-1.webp", alt="Imagen 21")
+                        img(src="../img/SLIDE-TRABAJADAS/konst3mesa-de-trabajo-1.webp", alt="Imagen 22")
+                        img(src="../img/SLIDE-TRABAJADAS/lamb1mesa-de-trabajo-1.webp", alt="Imagen 23")
+                        img(src="../img/SLIDE-TRABAJADAS/lamb2mesa-de-trabajo-1.webp", alt="Imagen 24")
+                        img(src="../img/SLIDE-TRABAJADAS/Merc1Mesa-de-trabajo-1.webp", alt="Imagen 25")
+                        img(src="../img/SLIDE-TRABAJADAS/merc2Mesa-de-trabajo-1.webp", alt="Imagen 26")
+                        img(src="../img/SLIDE-TRABAJADAS/merc3Mesa-de-trabajo-1.webp", alt="Imagen 27")
+                        img(src="../img/SLIDE-TRABAJADAS/Pas1Mesa-de-trabajo-1.webp", alt="Imagen 28")
+                        img(src="../img/SLIDE-TRABAJADAS/Pas2Mesa-de-trabajo-1.webp", alt="Imagen 29")
+                        img(src="../img/SLIDE-TRABAJADAS/Pas3Mesa-de-trabajo-1.webp", alt="Imagen 30")
+                        img(src="../img/SLIDE-TRABAJADAS/Pas4Mesa-de-trabajo-1.webp", alt="Imagen 31")
+
+            //MAPA
+            section.main-container__mapa.fade-in
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d473.09774136335295!2d-69.9549795556712!3d18.44820775376078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea5621e1e54cfff%3A0x70cbf5dd68314e49!2sMLA-%20Mejia%20Lora%20%26%20Asociados%20-%20Auditores!5e0!3m2!1ses-419!2sdo!4v1683561275739!5m2!1ses-419!2sdo" title="ubicacion" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Ubicacion</iframe>
+
+        //Pie de página
+
+block footerLogo
+    img(src="../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
+
+
+block footerSocialIcons 
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block footerMovilIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter") 
+
+
+block javaScript
+    script(src="../script.js")

@@ -1,0 +1,64 @@
+extend ../../componentes/_subplantilla.pug
+block logo
+    link(rel="shortcut icon", href="../../icon/favicon.ico")
+block stylesheet
+    link(rel="stylesheet", href="../../css/main.css")  
+block contenido
+
+        main
+            section.news__titular
+                h2 Avisos
+
+            div.news__container
+                section.news-noticias
+                    +aviso("microsoftteams-image.webp","Reunion de BKR Internacional","BRK Regional Meeting","24 de Mayo","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
+                    hr
+                    +aviso("microsoftteams-image-1.webp","letras iguales al texto de abajo","Elevamos nuestro compromiso","19 de Mayo","Elevamos nuestro compromiso con Sistema de Gestión de Calidad Certificado por INTECO","#")
+                    hr
+                    +aviso("publicacion-1.webp","letras iguales al texto de abajo","Día del contador público","17 de Mayo","¡Felicidades a todos los contadores públicos en su día! Su dedicación y conocimiento son imprescindibles. ¡Gracias por su excelente trabajo!","#")
+                    hr
+                    +aviso("1.webp","Imágen con el mismo texto de debajo","Miembros de BKR INTERNACIONAL","10 de Abril","¡Mejía Lora & Asociados cuenta con respaldo internacional!","#")
+                    hr
+                    +aviso("aviso-normas-08.webp","imágen con texto descriptivo","Norma General No.08-2022","20 de Mayo","NORMA GENERAL NO. 08-2022 QUE MODIFICA EL ARTÍCULO 3 DE LA NORMA GENERAL NO. 08-2021.","#")
+                    hr
+                    +aviso("plantilla-informativa-mla-5.webp","imágen con texto descriptivo","Tasas de cambio para el tratamiento de las diferencias cambiarias","5 de Mayo","Tasas de cambio para el tratamiento de las diferencias cambiarias.","#")
+                    hr
+                    +aviso("1-1.webp","imágen con texto descriptivo","Norma general No.09-2021","9 de Noviembre","Norma general No.09-2021 sobre salidas de inventario no facturadas.","#")
+                    hr
+                    +aviso("1co.webp","imágen con texto descriptivo","Actualización de multas administrativas","2 de Noviembre","Actualización de multas administrativas para los sujetos obligadors no financieros","#")
+                    hr
+                    +aviso("colaboradores-2.webp","Foto del Lic. Lisandro Gonzalez","Promoción interna MLA","2 de Noviembre","MLA se complace en anunciar la promoción de Lisandro González a gerente junior en el departamento de impuetos de la firma.","#")
+                    hr
+                    +aviso("4.webp","imágen con texto descriptivo","Actividad de lanzamiento de alanube soluciones","30 de Octubre","Firelli Mejia y Sayka Mejia (Partners de MLA) asistieron el día de hoy en la actividad de lanzamiento de nuestro cliente Alanube Soluciones, S.R.L., como tercer proveedor autorizado por la Dirección General de Impuestos Internos de Facturación Electrónica, una modalidad que ofrece mayor seguridad e integridad de la información.","#")
+                    hr
+                    +aviso("1635541951809.webp","imágen con texto descriptivo","Día nacional de la prevención del lavado de activos","29 de Octubre","Hoy 29 de octubre conmemoramos el Día Nacional de la Prevención del Lavado de Activos. Asistimos al Congreso Internacional Contra el Lavado de Activos gracias a la Unidad de Análisis Financiero (UAF) de República Dominicana, modalidad virtual los días 28 y 29 de octubre de 2021, se trataron temas sobre la transformación digital de los procesos anti lavado, repensando los delitos medioambientales como un desafío global en la lucha contra el lavado de activos y la importancia de los planes de integridad institucional en la administración pública como sostén de las políticas de transparencia y corrupción.","#")
+                    hr
+                    +aviso("noticia5.webp","imágen con texto descriptivo","Obligación de remisión del estudio de precios de transferencia","27 de Octubre","Recordamos que a partir del ejercicio fiscal con cierre al 31 de diciembre del 2021 deberá remitirse el Estudio de Precios de Transferencia o Reporte Local a la Dirección General de Impuestos Internos en formato digital","#")
+                    hr
+                    +aviso("noticia6.webp","imágen con texto descriptivo","Multiplicador para el ajuste con inflación cierre al 30 de septiembre 2021","25 de Octubre","Se informa que el Miltiplicador del ajuste por inflación para el ejercicio fiscal cerrado al 30 de septiembre de 2021 es 1.0774; inflación equivalente a 7.74%","#")
+                    hr
+                    +aviso("noticia4.webp","imágen con texto descriptivo","Tasas de cambio para el tratamiento de las diferencias cambiarias","25 de Octubre","Para determinar las diferencias cambiarias del ejercicio fiscal cerrado al 30 de septiembre de 2021, las tasas de cambio que deberán utilizarse según aviso publicado por la Dirección General de Impuestos Internos (DGII) son las mencionadas anteriormente.","#")
+                    hr
+                    +aviso("noticia3.webp","imágen con texto descriptivo","Nuevas facilidades de pago para deudas tributarias","22 de Octubre","La Dirección General de Impuestos Internos (#DGII) ha planteado de manera institucional la posibilidad de acoger a los contribuyentes a las concesiones especiales de nuevas facilidades de pago, las cuales conllevarían al aminoramiento de los montos a pagar por concepto de recargos en deudas antiguas al 2021.","#")
+                    hr
+                    +aviso("noticia2.webp","imágen con texto descriptivo","Fecha límite presentación de la declaración jurada IR-2 2021 Cierre 30 de Junio","22 de Octubre","Recordamos que este próximo 28 de octubre de 2021. Luego de esta fecha se generarán recargos e intereses, además de multas por omisión en caso de no ser presentado.","#")
+                    hr
+                    +aviso("noticia1.webp","imágen con texto descriptivo","Fecha límite de pago 2da cuota impuesto sobre activos (ISA) del periodo 2020","21 de Octubre","Recordamos que es este próximo 28 de octubre de 2021. Luego de esta fecha se generarán recargos e intereses.","#")
+                    
+                //section.news-boletines
+                    h2 Boletines
+                    article
+                        img(src="../../img/avisos/doing.webp", alt="Imagen con el escudo de la bandera dominicana")
+                        a(href="") Descargar PDF
+                    article
+                        img(src="../../img/avisos/as-para-el-cumplimiento-tributario-1.webp", alt="Imagen de felicitaciones")
+                        a(href="") Descargar PDF
+                    article
+                        img(src="../../img/avisos/letter-from-the-chair.webp", alt="Carta del chairman de BKR")
+                        a(href="") Descargar PDF
+                    article
+                        img(src="../../img/avisos/brk-india-2.webp", alt="Foto del Lic. Raymi Mejia en la india")
+                        a(href="") Descargar PDF
+                    article
+                        img(src="../../img/avisos/boletin.webp", alt="foto de un boletin")
+                        a(href="") Descargar PDF
