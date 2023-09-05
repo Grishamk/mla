@@ -96,6 +96,11 @@ mixin actoresIn(icono,alterno,texto,diferenciador)
         img(src='../../icon/'+icono alt=alterno)
         p=texto
 
+mixin actoresInEn(icono,alterno,texto,diferenciador)
+    article(class=diferenciador)
+        img(src='../../../icon/'+icono alt=alterno)
+        p=texto
+
 mixin staffElement(imagen,alterno,titulo,text1,text2,text3,clase)
     article.staff__item.fade-in
         picture

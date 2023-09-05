@@ -6,24 +6,27 @@ html(lang="es")
         //Barra de navegación
         header#mi-barra
             nav.nav-container
-                a.logo-container(href="./index.html")
-                    img(src="./img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+                //a.logo-container(href="./index.html")
+                    img(src="../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+                block mainLogo
             
 
                 div.nav-container__menu
-                    label(for="menu").nav-label 
-                        img(src="./icon/menu.svg", alt="menu hamburguesa")                
+                    label(for="menu").nav-label
+                        block burgerMenu
+                        //img(src="../icon/menu.svg", alt="menu hamburguesa")                
                     input(type="checkbox" id="menu").nav-input
                     
                     div.nav-movil
                         ul
                             li
-                                a(href="./index.html") Inicio
+                                block homeLinkMovil
                         
                             li
                                 a(href="") Nosotros
                                 ul
-                                    li
+                                    block nosotros
+                                //  li
                                         a(href="./html/nosotros/quienesSomos.html") Quienes Somos
                                     li
                                         a(href="./html/nosotros/registros.html") Registros y Membresías
@@ -36,7 +39,9 @@ html(lang="es")
                             li
                                 a(href="") Servicios
                                 ul
-                                    li
+                                    block servicios
+                                    
+                                //  li
                                         a(href="./html/servicios/auditoria.html") Auditoría
                                     li
                                         a(href="./html/servicios/asesoria.html") Asesoría Fiscal
@@ -53,18 +58,22 @@ html(lang="es")
                             li
                                 a(href="") Novedades
                                 ul
-                                    li
+                                    block noticias
+                                    
+                                //  li
                                         a(href="./html/noticias/noticias.html") Avisos
                                     li
                                         a(href="./html/noticias/boletines.html") Noticias y Boletines
 
                             //CAPITAL HUMANO    
                             li
-                                a(href="./html/capital-humano/capital-humano.html") Capital Humano
+                                block capitalHumano
+                            //  a(href="./html/capital-humano/capital-humano.html") Capital Humano
                             
                             //CONTACTO
                             li
-                                a(href="./html/contacto/contacto.html") Contacto
+                                block contacto
+                            //  a(href="./html/contacto/contacto.html") Contacto
                         
                         a(href="./english/index.html").boton  ENGLISH
 
@@ -73,13 +82,16 @@ html(lang="es")
                 .nav-container__navbar
                     ul
                         li 
-                            a(href="./index.html") Inicio
+                            block homeLink
+
+                        //  a(href="./index.html") Inicio
 
                         //NOSOTROS
                         li
                             a(href="") Nosotros
                             ul.toggle__nosotros
-                                li
+                                block nosotros
+                            //  li
                                     a(href="./html/nosotros/quienesSomos.html") Quienes Somos
                                 li
                                     a(href="./html/nosotros/registros.html") Registros y Membresías
@@ -92,7 +104,8 @@ html(lang="es")
                         li
                             a(href="") Servicios
                             ul.toggle__servicios
-                                li
+                                block servicios
+                            //   li
                                     a(href="./html/servicios/auditoria.html") Auditoría
                                 li
                                     a(href="./html/servicios/asesoria.html") Asesoría Fiscal
@@ -109,20 +122,24 @@ html(lang="es")
                         li
                             a(href="") Novedades
                             ul.toggle__novedades
-                                li
+                                block noticias
+                            //  li
                                     a(href="./html/noticias/noticias.html") Avisos
                                 li
                                     a(href="./html/noticias/boletines.html") Noticias y Boletines
 
                         //CAPITAL HUMANO    
                         li
-                            a(href="./html/capital-humano/capital-humano.html") Staff
+                            block capitalHumano
+                        //  a(href="./html/capital-humano/capital-humano.html") Staff
                         
                         //CONTACTO
                         li
-                            a(href="./html/contacto/contacto.html") Contacto
+                            block contacto
+                        //  a(href="./html/contacto/contacto.html") Contacto
                 
-                a(href="./english/index.html").boton  ENGLISH
+                block botonEs
+            //  a(href="./english/index.html").boton  ENGLISH
 
         block contenido
         include _footer.pug
