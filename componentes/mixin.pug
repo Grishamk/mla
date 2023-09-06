@@ -111,6 +111,16 @@ mixin staffElement(imagen,alterno,titulo,text1,text2,text3,clase)
             p=text2
             p(class=clase)=text3
 
+mixin staffElementEn(imagen,alterno,titulo,text1,text2,text3,clase)
+    article.staff__item.fade-in
+        picture
+            img(src="../../../img/staff/"+imagen alt=alterno)
+        div.staff__text-container
+            h2=titulo
+            p=text1
+            p=text2
+            p(class=clase)=text3
+
 mixin aviso(imagen,alterno,titulo,fecha,texto,link)
     article.news-noticias__item.fade-in
         picture

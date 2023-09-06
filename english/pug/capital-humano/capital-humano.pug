@@ -1,107 +1,185 @@
-extend ../../componentes/_subplantilla.pug
+extend ../../../componentes/_plantillaEn.pug
+
 block logo
-    link(rel="shortcut icon", href="../../icon/favicon.ico")
+    link(rel="shortcut icon", href="../../../icon/favicon.ico")
+block mainLogo
+    a.logo-container(href="../../index.html")
+        img(src="../../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+block burgerMenu 
+    img(src="../../../icon/menu.svg", alt="menu hamburguesa")
+block homeLinkMovil
+    a(href="../../index.html") Home
+block homeLink
+    a(href="../../index.html") Home
 block stylesheet
-    link(rel="stylesheet", href="../../css/main.css")
+    link(rel="stylesheet", href="../../../css/main.css")
+
+block nosotros
+    li
+        a(href="../../html/nosotros/quienesSomos.html") Who we are
+    li
+        a(href="../../html/nosotros/registros.html") Registries and Memberships
+    li
+        a(href="../../html/nosotros/responsabilidadSoc.html") Social Responsability 
+    li 
+        a(href="../../html/nosotros/certificaciones.html") Certifications
+
+block servicios
+    li
+        a(href="../../html/servicios/auditoria.html") Audit and Assurance
+    li
+        a(href="../../html/servicios/asesoria.html") Tax Advisory
+    li
+        a(href="../../html/servicios/impuesto-nomina.html") Client Accounting Services (CAS)
+    li 
+        a(href="../../html/servicios/consultorias-negocios.html") Business and Financial Consulting
+    li 
+        a(href="../../html/servicios/desarrolloOrg.html") Organizational Development
+    li 
+        a(href="../../html/servicios/proteccion.html") Asset Protection
+
+block noticias 
+    li
+        a(href="../../html/noticias/noticias.html") Notices
+    li
+        a(href="../../html/noticias/boletines.html") News and Bulletins
+
+block capitalHumano
+    a(href="../../html/capital-humano/capital-humano.html") Team
+
+block contacto 
+    a(href="../../html/contacto/contacto.html") Contact
+
+block botonEn
+    a(href="../../../html/capital-humano/capital-humano.html").boton  ESPAÑOL
+
+block footerLogo
+    img(src="../../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
+
+block footerSocialIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block footerMovilIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block javaScript
+    script(src="../../../subscript.js")
+
 block contenido
  
         main
             section.encabezado
                 section.capital__encabezado
                     div
-                        h2 Capital Humano
-                        p Agregamos valor a nuestros clientes cumpliendo con sus requisitos y en satisfacer sus expectativas.
+                        h2 Team
+                        p We add value to our clients fulfilling the requirements and satisfying their expectations.
                     
             
                 section.capital__enfoque.fade-in
                     picture
-                        img(src="../../img/servicios/DO3.webp", alt="Hablando de negocios")
+                        img(src="../../../img/servicios/DO3.webp", alt="Hablando de negocios")
                     article
-                        strong Nuestro principal activo y el factor clave del éxito es nuestro capital humano, es por ello que nuestra firma mantiene un sistema de gestión de talentos enfocado en altos estándares de contratación, entrenamiento y capacitación del personal.
-                        p En cada proyecto, es nuestra gente la que entrega lo mejor de sí, para comprender los retos que enfrentan nuestros clientes y desarrollar soluciones prácticas que agreguen valor a su negocio. Cabe destacar que los socios reciben entrenamiento en el país y en el extranjero, manteniendo contacto profesional permanente con los Organismos de Control y principales Universidades. Los gerentes y el personal de auditores y consultores reciben permanentemente cursos y seminarios de capacitación que nuestra firma imparte In House o externos.
-                        p Si deseas ser parte de nuestra familia:
-                            a(href="../../html/capital-humano/trabaja-nosotros.html") Click aquí  
+                        strong Our main asset and key factor for success is our human capital; therefore, our firm maintains a talent management system focused on high standards of hiring and training.
+                        p In each project our staff give their best to understand the challenges faced by our clients and develop practical solutions that add value to their business. Our partners receive training in the country and abroad, maintaining permanent professional contact with the Regulatory Bodies and the main Universities. Our managers and staff of auditors and consultants continuously receive internal and external training courses and seminars.
+                        p If you want to be part of our family:
+                            a(href="../../html/capital-humano/trabaja-nosotros.html") Click Here
 
             section.capital__staff.fade-in
-                h2.staff__title Capital Humano
+                h2.staff__title Human capital
                 .staff__text 
                     p staff
                 section.staff__container 
                     
                     article.staff__raymi.fade-in
-                        picture: img(src="../../img/staff/reymi-mejia-1.webp" alt="Lic. Raymi Mejía")
+                        picture: img(src="../../../img/staff/reymi-mejia-1.webp" alt="Lic. Raymi Mejía")
                         div
-                            h2 Raymi Mejía - Socio
-                            p Licenciado en Contabilidad egresado de Contaduría Pública de la Universidad INTEC, con especialización en Planificación Tributaria Internacional con doble titulación de la Universidad de San Francisco y Aden Business School, además cuenta con varias especializaciones en Administración de Empresas, Impuestos, IFRS, Normas Internacionales de Auditoría y participación continua en y seminarios internacionales.
+                            h2 Raymi Mejía - Partner
+                            p Graduated in Accounting from INTEC University, with a specialization in International Tax Planning with a dual degree from the University of San Francisco and Aden Business School, also he holds several specializations in Business Management, Taxes, IFRS, International Audit Standards and continuous participation in national and international seminars.
                             ul
-                                p El Sr. Mejía tiene más de 30 años de práctica; han formado parte de varios directorios, tales como:
-                                li BKR International (quinta asociación más grande de contabilidad y consultoría a nivel mundial), donde ha sido miembro de la Junta durante los últimos 10 años, incluido el Presidente y Vicepresidente para la Región de las Américas (EE. UU., Canadá y Latam), actualmente Miembro de la Junta Mundial .
-                                li Ex miembro del Directorio de Grupo Apec; incluido el presidente del comité de auditoría.
-                                li Ex miembro de la Junta de Asesores de Saint George School.
-                                li Primer Vicepresidente de la Asociación de Contadores Públicos Certificados (AFCPA).
-                                li  Ex miembro de varios comités del Instituto de Contadores Públicos Autorizados de la República Dominicana (ICPARD).
-                            p El Sr. Mejía también es miembro de la Asociación Internacional de Contadores, de la Asociación Nacional de Jóvenes Empresarios (ANJE), International Fiscal Association (IFA), Asociación Tributaria de la República Dominicana (ATRIRD) y miembro fundador del Consejo Nacional de Asesores Impositivos (CONACI – Consejo Nacional de Asesores Fiscales).
-                            p.separate Cuenta con amplia experiencia en el sector hotelero y proyectos inmobiliarios, ha participado en auditorías y asesorías fiscales para las principales cadenas hoteleras internacionales que operan en el país. También se ha desempeñado como asesor en las negociaciones de Contratos de Precios de Transferencia y Acuerdos Anticipados de Precios entre la Asociación Nacional de Hoteles y Restaurantes (ASONAHORES) y la Dirección General de Impuestos Internos (DGII-IRS).
+                                p Mr. Mejia has more than 30 years of practice; have been part of several boards, such as:
+                                li BKR International (5th Largest accounting and consulting association worldwide), where he has been member of the Board for the past 10 years, including Chairman and Vice-Chairman for the Americas Region (USA, Canada and Latam), currently Member of the Worldwide Board.
+                                li Past member of the Board for Grupo Apec; including president of the audit committee.
+                                li Past member of Board of Advisors of Saint George School.
+                                li First Vice-president of the Certified Public Accountants Association (AFCPA).
+                                li  Past member of several committees at Instituto de Contadores Públicos Autorizados de la República Dominicana (ICPARD).
+                            p Mr. Mejia is also member of the International Accounting Asociation, of the Asociación Nacional de Jóvenes Empresarios (ANJE), International Fiscal Association (IFA), Asociación Tributaria de la República Dominicana (ATRIRD) and founding member of Consejo Nacional de Asesores Impositivos (CONACI- Tax Advisors National Council).
+                            p.separate He has extensive experience in the hospitality sector and real estate projects, has participated in audits and tax advisories for the major international hotel chains operating in the country. He has also served as an advisor in the negotiations of Transfer Price Contracts and Advanced Price Agreements between the National Association of Hotels and Restaurants (ASONAHORES) and the Dirección General de Impuestos Internos (DGII- IRS).
                     
                     //Firelli Mejía
-                    +staffElement("firelli.webp","Lic. Firelli Mejía","Firelli Mejía - Socio","Licenciada en Contabilidad Egresada de la Universidad INTEC, con especialización en Planificación Tributaria Internacional con doble titulación de la Universidad de San Francisco de Estados Unidos y Aden Business School, con Postgrado en Finanzas Corporativas (INTEC). Licenciada en Artes, ha realizado diversos cursos y seminarios nacionales e internacionales en instituciones como: Worldwide meeting of BKR International, IFA Congress of International Fiscal Association, ADEN Business School. Cuenta con certificación Antilavado (AMLCA) por FIBA-FIU.","30 años de experiencia en Auditoria, Outsourcing de Contabilidad e Impuestos, así como asesorías en Desarrollo organizacional, Dirección de auditoria interna, entre otras. Miembro ejecutivo de: International Fiscal Association (IFA), Asociación Tributaria de la República Dominicana (ATRIRD), Instituto Contadores Públicos Autorizados (ICPARD), Consejo Nacional de Asesores Impositivos (CONACI), la Asociación Nacional de Jóvenes Empresarios (ANJE).","Cuenta con experiencia en el área de la docencia a nivel profesional y ha fungido como expositora en diversas charlas. Ha participado como cooperadora con la Dirección General de Impuestos Internos en la elaboración del Manual Tributario de la Republica Dominicana 2011. Ha brindado sus servicios a importantes empresas del sector retail, construcción, inmobiliarias, restaurantes, cooperativas, gubernamental, fundaciones e instituciones sin fines de lucro, manufactura, sector agropecuario, seguros, IT, entre otros.","separate")
+                    +staffElementEn("firelli.webp","Lic. Firelli Mejía","Firelli Mejía - Partner","Graduated in Accounting from Universidad INTEC with a specialization in International Tax Planning with a double degree from the University of San Francisco and Aden Business School, and a postgraduate degree in Corporate Finance from Universidad INTEC. Also graduated in Arts, she has completed various national and international courses and seminars at institutions such as the World Meeting of BKR International, IFA Congress of International Fiscal Association and ADEN Business School. She is certified in Anti-money Laundering (AMLCA) by FIBA-FIU.","She has more than 30 years of experience in Auditing, Accounting and Tax Outsourcing, Organizational Development, Internal Audit Direction, among others. Executive member of the International Fiscal Association (IFA), Asociación Tributaria de la República Dominicana (ATRIRD), Instituto Contadores Públicos Autorizados (ICPARD), Consejo Nacional de Asesores Impositivos (CONACI) and Asociación Nacional de Jóvenes Empresarios (ANJE).","She has professional teaching experience and has been a speaker at various conferences. She participated as a cooperator with Dirección General de Impuestos Internos (DGII) in the preparation of the 2011 Dominican Republic Fiscal Manual and has provided services to important companies in the industries of retail, construction, real estate, restaurants, cooperatives, governmental, non-profit institutions, manufacturing, agricultural, insurance, IT, among others.","separate")
                     
                     //Sayka Mejía
-                    +staffElement("sayka-mejia-1.webp","Lic. Sayka Mejía","Sayka Mejía - Socio","Licenciada en Contabilidad Egresada de la Universidad INTEC, con especialización en Planificación Tributaria Internacional con doble titulación de la Universidad de San Francisco de Estados Unidos y Aden Business School, con Postgrado en Finanzas Corporativas de la Universidad Pontificia Madre y Maestra (PUCMM). Cuenta con certificación Antilavado (AMLCA) por FIBA-FIU.","Mas de 25 años de experiencia en Auditoria, asesora a clientes en: asuntos corporativos, asesoría estratégica de negocios, financieros e impositivos. Presidenta del International Fiscal Association (IFA) Branch en Republica Dominicana, Miembro ejecutivo de: Asociación Tributaria de la República Dominicana (ATRIRD), Instituto Contadores Públicos Autorizados (ICPARD), Consejo Nacional de Asesores Impositivos (CONACI), la Asociación Nacional de Jóvenes Empresarios (ANJE).","Ha fungido como docente a nivel profesional, ha estado a cargo de importantes auditorías a empresas de diferentes sectores: retail, agencias de cambio, sector inmobiliario, construcción, servicios, importación, fundaciones e instituciones sin fines de lucro, publicitarias, manufacturas, sector vehículos Combustible (importación, distribución, transporte), entre otros.","separate")
+                    +staffElementEn("sayka-mejia-1.webp","Lic. Sayka Mejía","Sayka Mejía - Partner","Graduated in Accounting from Universidad INTEC with a specialization in International Tax Planning with a double degree from the University of San Francisco and Aden Business School, and a postgraduate degree in Corporate Finance from Universidad Pontificia Madre y Maestra (PUCMM). She is certified in Anti-money Laundering (AMLCA) by FIBA-FIU.","With more than 25 years of experience in Auditing, she advises clients on: corporate matters, business strategy, and on tax and financial matters. She is president of the International Fiscal Association (IFA) Branch in the Dominican Republic and executive member of Asociación Tributaria de la República Dominicana (ATRIRD), Instituto Contadores Públicos Autorizados (ICPARD), Consejo Nacional de Asesores Impositivos (CONACI) and Asociación Nacional de Jóvenes Empresarios (ANJE).","She has worked as a teacher at a professional level and has been in charge of important audits of companies in different industries: retail, currency exchange, real estate, construction, services, import, non-profit institutions, advertising, manufacturing, vehicle and Fuel (import, distribution, transportation), among others.","separate")
                     
                     //José Mejía
-                    +staffElement("jose-mejia-1.webp","Lic. José Mejía","José Mejíá - Socio Fundador","Licenciado en Contabilidad. Socio fundador de la oficina de Mejía Lora & Asociados, con más de 40 años de experiencia en el área de auditoria, Outsourcing de Contabilidad e impuestos. En su desarrollo laboral ha ocupado distintas posiciones que le han permitido acumular una gran experiencia y habilidad para ser hoy un gran consultor financiero, se destaca por sus labores gerenciales en el área de Consultoría e Impuestos. Posee numerosos años de docencia impartida en la Universidad Autónoma de Santo Domingo (UASD), fue profesor de la Facultad de Ciencias Económicas en las materias de: Sistemas de Contabilidad, Contabilidad de Costos y Contabilidad Avanzada.","","","separate")
+                    +staffElementEn("jose-mejia-1.webp","Lic. José Mejía","José Mejíá - Founding Partner","Graduate in Accounting. Founding partner of the Mejía Lora & Asociados, with more than 40 years of experience in areas such as Auditing, Accounting Outsourcing, and Taxes. Throughout his professional career, he has held different positions that allowed him to accumulate experience and a great ability to become an outstanding financial consultant. He stands out for his managerial work in Consulting and Taxes. He accumulated many years of teaching experience at Universidad Autónoma de Santo Domingo (UASD), where he was a professor at the Faculty of Economic Sciences, teaching the subjects of Accounting Systems, Cost Accounting, and Advanced Accounting.","","","separate")
                     
                     //Adelaida Ortega
-                    +staffElement("Adelaida-Ortega-1.webp","Lic. Adelaida Ortega","Adelaida Ortega - Gerente Fundador","Administradora, más de 30 años de experiencia en administración de empresas, se destaca por sus labores gerenciales administrativas en Mejia Lora & Asociados.","","","separate")
+                    +staffElementEn("Adelaida-Ortega-1.webp","Lic. Adelaida Ortega","Adelaida Ortega - Founding Manager","Graduate in Business Administration. She has more than 30 years of experience in the field and stands out for her administrative and managerial work at Mejía Lora & Asociados.","","","separate")
                     
                     //Ana Gonzalez
-                    +staffElement("anaGonzalez.webp","Lic. Ana González","Ana González - Gerente de Impuestos","Licenciada en Contabilidad, Postgrado y Maestría en Administración Financiera, más de 22 años de experiencia en Auditoria, contabilidad e Impuestos. Posee estudios y especializaciones en materia Impositiva, Diplomados de Normas Internacionales de Auditoria (NIAS) y Gerencia – Productividad.","","","separate")
+                    +staffElementEn("anaGonzalez.webp","Lic. Ana González","Ana González - Tax Manager","Graduate in Accounting with a postgraduate degree in Financial Management. She has more than 22 years of experience in Auditing, Accounting and Taxes. She has specializations in tax matters and diplomas in International Standards on Auditing (ISA) and Management-Productivity.","","","separate")
                     
                     //Lizandro Gonzalez
-                    +staffElement("lisandro.webp","Lic. Lisandro González","Lisandro González - Gerente Junior de Impuestos", "Durante su ejercicio profesional ha logrado acumular una experiencia ininterrumpida de más de 14 años en el área tributaria, destacándose en trabajos especializados como procesos de fiscalización, transparencias patrimoniales, procedimientos convenidos, recursos de reconsideración, evaluaciones relacionadas a acogencias en procesos de amnistía y acuerdos especiales, así como representación de los clientes en procesos relacionados con la Administración Tributaria. Licenciado en Contaduría Pública (Cum laude) certificado como Consultor Tributario (CTC) por la Asociación Tributaria de la República Dominicana (ATRIRD), especialidad en Normas Internacionales de Información Financiera (NIIF), se encuentra en término de la Maestría en Contabilidad Tributaria de la Universidad Autónoma de Santo Domingo (UASD). Además, ha participado en diversos congresos tributarios tanto locales como internacionales entre los que destacan los auspiciados por la International Fiscal Association (IFA).","","","separate")
+                    +staffElementEn("lisandro.webp","Lic. Lisandro González","Lisandro González - Junior Tax Manager", "In the course of his professional practice, he has managed to accumulate an uninterrupted experience of more than 14 years in the tax area. Standing out in specialized works such as audit processes, equity transparencies, agreed procedures, reconsideration resources, evaluations related to acceptances in amnesty processes and special agreements, as well as representation of clients in processes related to the Tax Administration. Graduated in Public Accounting (Cum laude), certified as a Tax Consultant by The Tax Association of the Dominican Republic (CTC), in addiction, he has a specialty in International Financial Reporting Standards (IFRS). Currently, He is finishing a Master´s Degree in Tax Accounting at Universidad Autónoma de Santo Domingo (UASD) (Autonomous University of Santo Domingo). He has participated in various local and international tax congresses, including those sponsored by the International Fiscal Association (IFA).","","","separate")
                     
                     //Mauricio Rodríguez
-                    +staffElement("mauricio.webp","Ing. Mauricio Rodríguez","Mauricio Rodríguez - Gerente de Desarrollo Organizacional", "Ingeniero de Organización Industrial y MBA en Dirección General De Empresas, ambas cursadas en España y una certificación internacional como Project Management Professional, más de 14 años de experiencia en consultoría de negocio relacionada a métodos y organización, modelos financieros, gestión de riesgos y auditoria interna. Posee estudios y especializaciones en Proyectos, Entrepreneurship, planificación estratégica, indicadores, controles internos, creación y desarrollo de negocios, entre otros.","","","separate")
+                    +staffElementEn("mauricio.webp","Ing. Mauricio Rodríguez","Mauricio Rodríguez - Organizational Development manager", "Industrial Organization Engineer with an MBA in General Business Management, graduated from both in Spain, and certified as a Project Management Professional (PMP). He has more than 14 years of experience in business consulting related to organizational methods, financial modeling, risk management and internal auditing. He has specializations in Projects, Entrepreneurship, Strategic Planning, Indicators, Internal Controls, Business Creation and Business Development, among others.","","","separate")
                     
                     //Nallil Rodríguez
-                    +staffElement("nallil.webp","Lic. Nallil Rodríguez","Nallil Rodríguez - Gerente Junior de Auditoria","Licenciada en Contabilidad, más de 10 años de experiencia en contabilidad, auditoría e impuestos destacándose en las áreas de hidrocarburos, hotelería y turismo y servicios. Miembro del comité científico de la Asociación Tributaria de la República Dominicana (ATRIRD) y represéntate del Young IFA Network en el país de la International Fiscal Association (IFA). Con especializaciones en Normas Internacionales de auditoría (NIA) Y de Información Financiera (NIIF) Consultora Tributaria Certificada (CTC).","","","separate")
+                    +staffElementEn("nallil.webp","Lic. Nallil Rodríguez","Nallil Rodríguez - Junior Audit Manager","Graduate in Accounting, more than 10 years of experience in accounting, auditing and taxes, standing out in the areas of hydrocarbons, hotels and tourism and services. Member of the scientific committee of the Tax Association of the Dominican Republic (ATRIRD) and representative of the Young IFA Network in the country of the International Fiscal Association (IFA). With specializations in International Auditing Standards (NIA) and Financial Reporting (IFRS) Certified Tax Consultant (CTC).","","","separate")
                     
                     //Rafael Mateo
-                    +staffElement("rafael.webp","Lic. Rafael Mateo","Rafael Mateo - Gerente de Auditoria","Licenciado en Contabilidad, con maestría en Administración Financiera de la Universidad APEC. Más de 18 años de experiencia en auditoría externa, incluyendo más de 7 años como gerente de auditoria en firma reconocida del país. Ha realizado diplomados y cursos en Normas Internacionales de Información Financiera (NIIF) y Normas Internacionales de Auditoria (NIA), entre otros.","","","separate")
+                    +staffElementEn("rafael.webp","Lic. Rafael Mateo","Rafael Mateo - Audit Manager","Degree in Accounting, with a master’s degree in Financial Administration from APEC University. More than 18 years of experience in external auditing, including more than 7 years as audit manager in a recognized firm in the country. He has completed diplomas and courses in International Financial Reporting Standards (IFRS) and International Auditing Standards (NIA), among others.","","","separate")
                     
                     //Geraldín Frías
-                    +staffElement("geraldin.webp","Lic. Geraldin J. Frías","Geraldin J. Frías - Gerente de TPA","Licenciada en Contabilidad, con especialización en Impuestos Corporativos, Presupuesto, Planificación de Utilidades, Gestión del Talento Humano, y Liderazgo, con Máster en Administración Financiera. Durante su ejercicio profesional ha logrado acumular una experiencia ininterrumpida de más de 12 años en las diferentes áreas de Finanzas, Contabilidad, Administración y RR HH. Durante su trayectoria a ocupado posiciones Gerenciales para importantes empresas del sector comercial y zonas francas.","","","separate")
+                    +staffElementEn("geraldin.webp","Lic. Geraldin J. Frías","Geraldin J. Frías - TPA Manager","Degree in Accounting, specializing in Corporate Taxes, Budget, Profit Planning, Human Talent Management, and Leadership, with a Master’s in Financial Administration. During his professional practice he has managed to accumulate uninterrupted experience of more than 12 years in the different areas of Finance, Accounting, Administration and HR. During his career he has held managerial positions for important companies in the commercial sector and free zones.","","","separate")
                     
                     //Sandra de los Santos
-                    +staffElement("sandra.webp","Lic. Sandra de los Santos","Sandra de los Santos - Gerente de Gestión Humana","Durante su ejercicio profesional en Psicología Industrial ha logrado acumular una experiencia de más de 15 años en el sector comercial, de servicio y gubernamental. Posee estudios y especializaciones en Magister en Recursos Humanos y MBA Dirección Estratégica de Recursos, Auditor Interno de la Norma ISO 9001:2015, Igualdad de Género (G:38) y Responsabilidad Social.","","","separate")
+                    +staffElementEn("sandra.webp","Lic. Sandra de los Santos","Sandra de los Santos - Human Resources Manager","During his professional practice in Industrial Psychology, he has managed to accumulate more than 15 years of experience in the commercial, service and government sectors. She has studies and specializations in a Master’s in Human Resources and an MBA in Strategic Resource Management, Internal Auditor of ISO 9001:2015, Gender Equality (G:38) and Social Responsibility.","","","separate")
                     
                     //Rikelvin Jimenez
-                    +staffElement("rikelvin.webp","Lic. Rikelvin Jimenez","Rikelvin Jimenez - Gerente de Tecnología","Licenciado en Informática, con más de 18 años de experiencia en el área de tecnología, capacitado para la administración de infraestructura y la implementación de nuevas tecnologías ajustada al entorno empresarial. Posee experiencia en las áreas de Seguridad de la información, Administración de base datos, redes de datos, Virtualización, administración de servidores, administración de soluciones Endpoint, Firewall e implementación de sistemas ERP.","","","separate")
+                    +staffElementEn("rikelvin.webp","Lic. Rikelvin Jimenez","Rikelvin Jimenez - IT Manager","Graduate in Computer Science. He has more than 18 years of experience in the IT environment and knowledge in IT Infrastructure Management and implementation of new technologies adjusted to the business environment. He also has experience in the areas of IT Security, Database Administration, Data Networks, Virtualization, Server Administration, Unified Endpoint Management, Firewall Implementation, and ERP Systems Implementation.","","","separate")
                     
                     //María Curiel
-                    +staffElement("maria.webp","Lic. María Curiel","María Curiel - Encargada de Recursos Humanos","Licenciada en Derecho, con más de 10 años de experiencia en el área de recursos humanos. Posee estudios y especialización en Gestión de Los Recursos Humanos. Diplomados en Gestión del Desempeño Organizacional, Legislación Laboral, Auditor Interno norma ISO 9001:2015. Desarrollo de Habilidades Gerenciales, Evaluación y descripciones de puestos.","","","separate")
+                    +staffElementEn("maria.webp","Lic. María Curiel","María Curiel - Leader of Human Resources","Juris Doctor degree with more than 10 years of experience in Human Resources. She has specializations and diplomas in Human Resource Management, Organizational Performance Management, Labor Legislation, ISO 9001: 2015 Auditor,  Management Skills Development, and Job Descriptions.","","","separate")
                     
                     //Wilmarys Ledezma
-                    +staffElement("wilmarys.webp","Lic. Wilmarys Ledezma","Wilmarys Ledezma - Encargada del Sistema de Gestión de Calidad y Servicio al Cliente","Licenciada en Contaduría Pública, Abogado, se encuentra cursando Maestría en Alta Gerencia, certificado como Auditor Líder bajo la Norma ISO 9001:2015. Más de 8 años de experiencia en auditoría interna, desarrollo organizacional, planificación estratégica, gestión de riesgos y oportunidades, medición a través de indicadores de desempeño (KPI`s). Posee estudios y diplomado en sistemas de gestión de calidad en ISO 9001:2015 y lavado de activos y financiamiento al terrorismo.","","","separate")
+                    +staffElementEn("wilmarys.webp","Lic. Wilmarys Ledezma","Wilmarys Ledezma - Leader of the Quality Management System and Customer Service","Graduated in Public Accounting, Lawyer, she is studying a Master’s Degree in Senior Management, certified as a Lead Auditor under the ISO 9001: 2015 Standard. More than 8 years of experience in internal audit, organizational development, strategic planning, risk and opportunity management, measurement through performance indicators (KPI`s). He has studies and a diploma in quality management systems in ISO 9001: 2015 and money laundering and terrorist financing.","","","separate")
                     
                     //Wilkyns Ruiz
-                    +staffElement("wilkyns.webp","Lic. Wilkyns Ruiz", "Wilkyns Ruiz - Encargado de Tecnología","Licenciado en Informática, más de 17 años de experiencia en el área de Tecnología, experiencia en el área contable y sistemas. Posee estudios y especializaciones en seminario sobre Seguridad, Big Data, Auditoria de Sistemas y Business Intelligence (BI), Servidores, Implementación de sistemas, Programacion Orientada a Objetos (POO) y Bases de Datos.","","","separate")
+                    +staffElementEn("wilkyns.webp","Lic. Wilkyns Ruiz", "Wilkyns Ruiz - IT Leader","Graduate in Computer Science. He has more than 17 years of experience in accounting software. He has specializations and diplomas in IT Security, Bid Data, IT Auditing, Business Intelligence, Servers, Systems Implementation, Object-oriented Programming (OOP) and Databases.","","","separate")
                     
                     //Alba Vásquez
-                    +staffElement("alba.webp","Lic. Alba Vásquez","Alba Vásquez - Encargada de Precio de Transferencia","Licenciada en Contabilidad y Auditoría, con más de 5 años de experiencia en el área de Precio de Transferencia e Impuestos. Posee estudios y especializaciones en Gestión de Proyectos y Liderazgo. Durante su trayectoria profesional ha ocupado posiciones en firmas internacionales que forman parte de las “Big Four”.","","","separate")
+                    +staffElementEn("alba.webp","Lic. Alba Vásquez","Alba Vásquez - Transfer Pricing Manager","Degree in Accounting and Auditing, with more than 5 years of experience in the area of ​​Transfer Pricing and Taxes. He has studies and specializations in Project Management and Leadership. During his professional career he has held positions in international firms that are part of the “Big Four”.","","","separate")
                     
                     //Yohanna Herrera
-                    +staffElement("yohanna.webp","Lic. Yohanna Herrera","Yohanna Herrera - Supervisora de Impuestos","Licenciada en contabilidad, con más de 7 años de experiencia en contabilidad e impuestos, así como una Maestría en Contabilidad Tributaria. Diplomados en Administración Financiera, Contabilidad por Igualas y Gestión Documental, además de poseer un alto conocimiento y experiencia en el cumplimiento de las Normativas Fiscales vigentes.","","","separate")
+                    +staffElementEn("yohanna.webp","Lic. Yohanna Herrera","Yohanna Herrera - Tax Supervisor","Degree in accounting, with more than 7 years of experience in accounting and taxes, as well as a Master’s degree in Tax Accounting. Graduates in Financial Administration, Accounting by Equals and Document Management, in addition to having a high knowledge and experience in compliance with current Tax Regulations.","","","separate")
                     
                     //Jenniffer Ventura
-                    +staffElement("jenniffer.webp","Lic. Jenniffer Ventura Soto","Jenniffer Ventura Soto - Supervisora de Impuestos","Licenciada en contabilidad, con más de 10 años de experiencia en contabilidad e impuestos, Consultor Tributario Certificado, con una Maestría en curso en Administración Financiera. Diplomados en Impuestos Corporativos y Normas Impositivas, Posee un alto conocimiento y experiencia en el cumplimiento de las Normativas Fiscales vigentes y Precio de Transferencia.","","","separate")
+                    +staffElementEn("jenniffer.webp","Lic. Jenniffer Ventura Soto","Jenniffer Ventura Soto - Tax Supervisor","Bachelor of Accounting, with more than 10 years of experience in accounting and taxes, Certified Tax Consultant, with a Master’s Degree in Financial Administration in progress. Diplomas in Corporate Taxes and Tax Regulations, has extensive knowledge and experience in compliance with current Tax Regulations and Transfer Pricing.","","","separate")
                     
                     //Indira Jiménez
-                    +staffElement("indira.webp","Lic. Indira Jiménez","Indira Jiménez - Supervisora de Auditoría","Licenciada en contabilidad y auditoría, con más de 17 años de experiencia en el área financiera, auditoria forense, contabilidad, impuestos. Posee estudios y especializaciones en Diplomado competencias profesionales, Destrezas gerenciales, liderazgo, Cultura de servicios, trabajo en equipo, entre otros.","","","separate")
+                    +staffElementEn("indira.webp","Lic. Indira Jiménez","Indira Jiménez - Audit Manager","Graduate in Accounting. She has more than 17 years of experience in finance, forensic auditing, accounting, and tax. She has specializations and diplomas in professional skills, management, leadership, service culture, teamwork, among others.","","","separate")
                     
                     //Aminta Rodriguez
-                    +staffElement("aminta.webp","Lic. Aminta Rodríguez","Aminta Rodríguez - Supervisora de Auditoria", "Licenciada en Contaduría Pública, Postgrado en Administración Financiera y Maestría en Gerencia y Productividad, más de 27 años de experiencia en el área financiera, auditoria externa, contabilidad. Posee estudios y especializaciones en Diplomados en Normas internacionales de Información Financiera y Normas Internacionales de Auditoria, Impuestos a la Transferencia de Bienes Industrializados y Servicios, Gerencia de Proyecto, Liderazgo y Supervisión, entre otros.","","","separate")
+                    +staffElementEn("aminta.webp","Lic. Aminta Rodríguez","Aminta Rodríguez - Audit Supervisor", "Graduate in Accounting with Postgraduate Degrees in Financial Management and Productivity Management. She has more than 27 years of experience in finance, external auditing, and accounting. She has specializations and diplomas in International Financial Reporting Standards (IFRS), International Standards on Auditing (ISA), Taxes on the transfer of industrialized goods and services, Project Management, Leadership, among others.","","","separate")
                     
                     //Magnelli Montero
-                    +staffElement("Magnelli.webp","Lic. Magnelli Montero", "Magnelli Montero - Supervisora Junior de Auditoria", "Licenciada en contabilidad y Maestría en Administracion Financiera. Posee más de 15 años de experiencia en el área de auditoría financiera dentro del sector combustible, hotelero, entre otros, además de conocimientos en contabilidad e impuestos, con estudios y especializaciones en Normas Internacionales de Información Financiera (NIIF) y Diplomado en Alta Gerencia.","","","separate")
+                    +staffElementEn("Magnelli.webp","Lic. Magnelli Montero", "Magnelli Montero - Junior Audit Supervisor", "Barchelor of Accounting and Master of Financial Administration. She has more than 15 years of experience in the financial auditing area within the fuel and hotel sector, among others.  She also has knowledge in accounting and taxes, with studies and specializations in International Financial Reporting Standards (IFRS) and a Diploma in Senior Management.","","","separate")
