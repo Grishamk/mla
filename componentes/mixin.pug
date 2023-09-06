@@ -140,3 +140,12 @@ mixin staffEspecializado(link,nombre,cargo,imagen,alterno)
                 p=nombre
                 p.cargo=cargo
 
+mixin staffEspecializadoEn(link,nombre,cargo,imagen,alterno)
+    article.staffEspecializado__item.fade-in
+        a(href=link)
+            img(src="../../../img/staff/"+imagen, alt=alterno)
+            div.datos
+                p=nombre
+                p.cargo=cargo
+
+

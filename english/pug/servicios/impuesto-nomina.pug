@@ -1,36 +1,116 @@
-extend ../../componentes/_subplantilla.pug
+extend ../../../componentes/_plantillaEn.pug
+
 block logo
-    link(rel="shortcut icon", href="../../icon/favicon.ico")
+    link(rel="shortcut icon", href="../../../icon/favicon.ico")
+block mainLogo
+    a.logo-container(href="../../index.html")
+        img(src="../../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+block burgerMenu 
+    img(src="../../../icon/menu.svg", alt="menu hamburguesa")
+block homeLinkMovil
+    a(href="../../index.html") Home
+block homeLink
+    a(href="../../index.html") Home
 block stylesheet
-    link(rel="stylesheet", href="../../css/main.css")  
+    link(rel="stylesheet", href="../../../css/main.css")
+
+block nosotros
+    li
+        a(href="../../html/nosotros/quienesSomos.html") Who we are
+    li
+        a(href="../../html/nosotros/registros.html") Registries and Memberships
+    li
+        a(href="../../html/nosotros/responsabilidadSoc.html") Social Responsability 
+    li 
+        a(href="../../html/nosotros/certificaciones.html") Certifications
+
+block servicios
+    li
+        a(href="../../html/servicios/auditoria.html") Audit and Assurance
+    li
+        a(href="../../html/servicios/asesoria.html") Tax Advisory
+    li
+        a(href="../../html/servicios/impuesto-nomina.html") Client Accounting Services (CAS)
+    li 
+        a(href="../../html/servicios/consultorias-negocios.html") Business and Financial Consulting
+    li 
+        a(href="../../html/servicios/desarrolloOrg.html") Organizational Development
+    li 
+        a(href="../../html/servicios/proteccion.html") Asset Protection
+
+block noticias 
+    li
+        a(href="../../html/noticias/noticias.html") Notices
+    li
+        a(href="../../html/noticias/boletines.html") News and Bulletins
+
+block capitalHumano
+    a(href="../../html/capital-humano/capital-humano.html") Team
+
+block contacto 
+    a(href="../../html/contacto/contacto.html") Contact
+
+block botonEn
+    a(href="../../../html/servicios/impuesto-nomina.html").boton  ESPAÑOL
+
+block footerLogo
+    img(src="../../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
+
+block footerSocialIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block footerMovilIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block javaScript
+    script(src="../../../subscript.js")
+
+
+
 block contenido
  
         main
             section.encabezado
                 section.imp__encabezado
                     div
-                        h2 Impuestos - Nómina - Contabilidad
+                        h2 Client Accounting Services (CAS)
                     
             
                 section.imp__enfoque
                     picture
-                        img(src="../../img/servicios/impuesto.webp", alt="Lentes sobre papeles con números")
+                        img(src="../../../img/servicios/impuesto.webp", alt="Lentes sobre papeles con números")
                     article 
-                        p Nuestro objetivo está orientado a prestar servicios de Outsourcing (tercerización) de procesos financieros, contables y tributarios, permitiendo que nuestros clientes puedan concentrar sus esfuerzos en incrementar la comercialización de sus productos o servicios, la eficiencia de sus procesos y el logro de las metas establecidas.
-                        p Mediante la base de nuestra especialización en materia contable y fiscal en los diferentes sectores económicos del país, brindamos servicios que garanticen la calidad, confiabilidad y oportunidad de las informaciones financieras, contables y el cumplimiento fiscal de su organización, usando una metodología bajo las mejores prácticas internacionales.
+                        p Our objective is to provide outsourcing services of financial, accounting and tax processes allowing our clients to concentrate their efforts on increasing the commercialization of their products or services, the efficiency of their processes and the achievement of the established goals.
+                        p We provide services that guarantee the quality, reliability and timeliness of the financial and accounting information, as well as the tax compliance of your organization, through the basis of our specialization in accounting and tax matters in the different economic sectors of the country and applying the best international practices. We work in accordance with the applicable International Financial Reporting and Accounting Standards.
 
             section.imp__servicios.fade-in
-                strong.fade-in Efectuamos nuestro trabajo de acuerdo con las Normas Internacionales de Información Financiera y de Contabilidad aplicables. Los servicios de TPA abarcan:
-                h3.fade-in Asesoramiento y revisión de registros contables y fiscales:
-                p.fade-in Su finalidad es mantener un registro ordenado y sistemático de todas las transacciones comerciales que realicen nuestros clientes, validando la razonabilidad de las cifras a través de los soportes suministrados y elaboración de análisis y cruces fiscales.
-                h3.fade-in Informes y compilación de estados financieros:
-                p.fade-in Tiene como propósito reunir, clasificar y resumir en forma de Estados Financieros la información que surge del sistema contable de la empresa, así como la elaboración de la Declaración Jurada Anual de Sociedades y evaluación de riesgos fiscales sobre las operaciones realizadas.
-                h3.fade-in Outsourcing Contable:
-                p.fade-in Consiste en el proceso de registrar, clasificar y resumir la información de cada una de las transacciones efectuadas por la empresa.
-                h3.fade-in Impuestos y nóminas:
-                p.fade-in Abarcan la elaboración y/o revisión de los impuestos y nóminas mensuales, actualizaciones de cambios en el portal del SuirPlus en la Tesorería de la Seguridad Social (TSS).
+                strong.fade-in We carry out our work in accordance with the applicable International Financial Reporting and Accounting Standards. CAS services include:
+                h3.fade-in Advisory and revision of accounting and tax records:
+                p.fade-in Its purpose is to keep an orderly and systematic record of all commercial transactions carried out by our clients, validating the reasonableness of the figures through the evidence provided and the preparation of analysis and tax crossings.
+                h3.fade-in Compilation of financial statements:
+                p.fade-in Its purpose is to gather, classify and summarize in the form of Financial Statements the information that arises from the accounting system of the company, as well as the preparation of the Annual Corporate Tax Return  and assessment of tax risks of the operations carried out.
+                h3.fade-in Accounting Outsourcing (Bookkeeping):
+                p.fade-in It consists of the process of recording, classifying and summarizing the information of each of the transactions carried out by the company.
+                h3.fade-in Tax and payroll:
+                p.fade-in It consists of the preparation and / or review of monthly taxes and payrolls and updates on the SuirPlus portal in the Social Security Treasury (TSS).
 
-            section.mainStaffEspecializado.fade-in
+            //section.mainStaffEspecializado.fade-in
                 h2 Staff Especializado
                 .staffEspecializado__container
                     +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
@@ -39,5 +119,5 @@ block contenido
                     +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
 
             section.auditoria__contacto.fade-in
-                p Para obtener mas información y solicitar nuestros servicios
-                a(href="../../html/contacto/contacto.html") Contáctenos ahora
+                p For more information and request our services
+                a(href="../../html/contacto/contacto.html") Contact us now

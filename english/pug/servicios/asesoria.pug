@@ -1,64 +1,143 @@
-extend ../../componentes/_subplantilla.pug
+extend ../../../componentes/_plantillaEn.pug
+
 block logo
-    link(rel="shortcut icon", href="../../icon/favicon.ico")
+    link(rel="shortcut icon", href="../../../icon/favicon.ico")
+block mainLogo
+    a.logo-container(href="../../index.html")
+        img(src="../../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+block burgerMenu 
+    img(src="../../../icon/menu.svg", alt="menu hamburguesa")
+block homeLinkMovil
+    a(href="../../index.html") Home
+block homeLink
+    a(href="../../index.html") Home
 block stylesheet
-    link(rel="stylesheet", href="../../css/main.css")  
+    link(rel="stylesheet", href="../../../css/main.css")
+
+block nosotros
+    li
+        a(href="../../html/nosotros/quienesSomos.html") Who we are
+    li
+        a(href="../../html/nosotros/registros.html") Registries and Memberships
+    li
+        a(href="../../html/nosotros/responsabilidadSoc.html") Social Responsability 
+    li 
+        a(href="../../html/nosotros/certificaciones.html") Certifications
+
+block servicios
+    li
+        a(href="../../html/servicios/auditoria.html") Audit and Assurance
+    li
+        a(href="../../html/servicios/asesoria.html") Tax Advisory
+    li
+        a(href="../../html/servicios/impuesto-nomina.html") Client Accounting Services (CAS)
+    li 
+        a(href="../../html/servicios/consultorias-negocios.html") Business and Financial Consulting
+    li 
+        a(href="../../html/servicios/desarrolloOrg.html") Organizational Development
+    li 
+        a(href="../../html/servicios/proteccion.html") Asset Protection
+
+block noticias 
+    li
+        a(href="../../html/noticias/noticias.html") Notices
+    li
+        a(href="../../html/noticias/boletines.html") News and Bulletins
+
+block capitalHumano
+    a(href="../../html/capital-humano/capital-humano.html") Team
+
+block contacto 
+    a(href="../../html/contacto/contacto.html") Contact
+
+block botonEn
+    a(href="../../../html/servicios/asesoria.html").boton  ESPAÑOL
+
+block footerLogo
+    img(src="../../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
+
+block footerSocialIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block footerMovilIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block javaScript
+    script(src="../../../subscript.js")
+
+
 block contenido
 
         main
             section.encabezado__auditoria
                 picture
-                    img(src="../../img/servicios/Asesoria.webp", alt="Foto de analisis digital en tablet")
+                    img(src="../../../img/servicios/Asesoria.webp", alt="Foto de analisis digital en tablet")
                 .encabezado__titular
-                    h2 Asesoría Fiscal
+                    h2 Tax advice
 
-                p Brindamos servicios de asesoría especializada desde la óptica de aminorar riesgos y contingencias tributarias, recomendando llevar a cabo el debido proceso. Proveemos a nuestros clientes servicios vinculados con la elaboración y presentación de sus declaraciones y envíos de reportes fiscales, siendo el objetivo la presentación exacta y oportuna.
-                p En el mismo orden, asistimos a nuestros clientes en la gestión del cumplimiento ante los deberes formales y el cumplimiento de sus responsabilidades como contribuyente, ya sea sobre obligaciones periódicas mensuales o anuales. Estamos sujetos a principios para una práctica impositiva responsable, que establecen conductas éticas fundamentales.
+                p We provide specialized advisory services from the perspective of reducing risks and tax contingencies, recommending carrying out due process. We provide our clients with services related to the preparation and presentation of their tax reports with the goal of achieving an accurate and timely presentation.
+                p In the same order, we assist our clients in managing compliance with their formal duties and responsibilities as taxpayers, whether in periodic monthly or annual obligations. We are subject to principles of responsible tax practice that establish fundamental ethical conduct.
 
 
             section.asesoria__servicios.fade-in
-                strong Dentro de los servicios de impuestos se abarcan los siguientes:
-                h3 Asesoría Fiscal
+                strong Tax advisory services include:
+                h3 Tax Advisory:
                 ul.fade-in
-                    li Asesoría Fiscal.
-                    li Asesoría Especializada en fusiones y Adquisiciones.
-                    li Acuerdos de exenciones fiscales.
-                    li Planeación impositiva- previsional: Análisis impositivo sobre nuevas inversiones; Asesoramiento en la búsqueda de economías impositivas.
-                    li Planificación Fiscal: Asistimos a las empresas en el análisis y la reestructuración de sus funciones tributarias internas, a fin de que sean más eficientes y efectivas en el manejo de sus responsabilidades fiscales y el apropiado cumplimiento de las obligaciones tributarias.
-                h3 Consultoría Impositiva
+                    li Comprehensive tax advisory
+                    li Specialized advisory on Mergers and Acquisitions.
+                    li Tax exemption agreements.
+                    li Tax-pension planning: Tax analysis on new investments; Advice on the search for tax savings.
+                    li Tax planning: We assist companies in the analysis and restructuring of their internal tax functions, in order to make them more efficient and effective in the management of their tax responsibilities and proper compliance with tax obligations.
+                h3 Tax Consulting:
                 ul.fade-in
-                    li Representación y asesoría respecto de requerimientos efectuados por organismos reguladores.
-                    li Representación y elaboración de solicitudes generales realizadas ante la Administración Tributaria.
-                    li Apelaciones de resoluciones emanadas de los organismos reguladores.
-                    li Elaboración de Recursos de Reconsideración.
-                    li Recursos ante el Tribunal Contencioso Tributario y Administrativo.
-                    li Incorporación empresarial y actualización del Registro Mercantil y Registro Nacional de Contribuyentes.
-                    li Revisión de créditos fiscales.
-                    li Análisis Legislación nacional / internacional; Análisis y respuestas sobre temas específicos en materia impositiva.
+                    li Representation and advice on requirements made by regulatory bodies.
+                    li Representation and preparation of general requests before the Tax Administration.
+                    li Appeal the resolutions issued by the regulatory bodies.
+                    li Preparation of appeals for reconsideration.
+                    li Appeals before the Contentious Tax and Administrative Court.
+                    li Business incorporation. Updates of the Mercantile Registry and the National Taxpayers Registry.
+                    li Review of tax credits.
+                    li Analysis of national and international legislation. Analysis and answers to specific tax issues.
                 h3 Due diligence
-                p Revisión enfocada en la razonabilidad de cifras y validación del estatus fiscal de entidades comerciales.
-                h3.espacio.fade-in Defensa en Fiscalizaciones
-                h3.espacio.fade-in Impuestos a la Propiedad de Inmuebles
-                h3.espacio.fade-in Planeación tributaria nacional e internacional
-                h3 Precios de Transferencia
-                p Elaboración de estudios orientados a ratificar cumplimientos de comparabilidad en precios pactados con relacionados. A su vez, elaboración de las declaraciones informativas de operaciones con relacionados.
-                h3 Preparación y/o revisión de declaraciones juradas
+                p Review focused on the reasonableness of figures and validation of the fiscal situation of commercial entities.
+                h3.espacio.fade-in Defense in tax  inspections
+                h3.espacio.fade-in Property taxes
+                h3.espacio.fade-in National and international tax planning
+                h3 Transfer pricing:
+                p Preparation of studies aimed at ratifying compliance with comparability in the prices agreed with related parties. Preparation of statements of information on transactions with related parties.
+                h3 Preparation and/or review of tax filings and forms
                 ul.fade-in
-                    li Revisión y guía respecto al planteamiento de las declaraciones de impuestos realizadas por las empresas.
-                    li Elaboración de las declaraciones juradas anuales y mensuales, así como de los formatos de envíos de datos.
-                    li Revisión fiscal, detención de errores en las presentaciones, validación de diferencias en las declaraciones propias y con terceros.
-                    li Regímenes de regularización impositiva y previsional, facilidades de pago, etc.
+                    li Review and guidance on the approach of corporate tax returns, filings and forms.
+                    li Preparation of annual and monthly tax returns, filings and forms.
+                    li Tax review, detection of errors and validation of differences in own statements and with third parties.
+                    li Regulatory tax and pension regimes, payment facilities, etc.
                   
-                h3.fade-in Impuestos sobre Sucesiones
+                h3.fade-in Inheritance Tax
 
-            section.mainStaffEspecializado.fade-in
+            //section.mainStaffEspecializado.fade-in
                 h2 Staff Especializado
                 .staffEspecializado__container
                     +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
                     +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
                     +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
                     +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
-
+            
             section.auditoria__contacto.fade-in
-                p Para obtener mas información y solicitar nuestros servicios
-                a(href="../../html/contacto/contacto.html") Contáctenos ahora
+                p For more information and request our services
+                a(href="../../html/contacto/contacto.html") Contact us now

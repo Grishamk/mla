@@ -1,57 +1,136 @@
-extend ../../componentes/_subplantilla.pug
+extend ../../../componentes/_plantillaEn.pug
+
 block logo
-    link(rel="shortcut icon", href="../../icon/favicon.ico")
+    link(rel="shortcut icon", href="../../../icon/favicon.ico")
+block mainLogo
+    a.logo-container(href="../../index.html")
+        img(src="../../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+block burgerMenu 
+    img(src="../../../icon/menu.svg", alt="menu hamburguesa")
+block homeLinkMovil
+    a(href="../../index.html") Home
+block homeLink
+    a(href="../../index.html") Home
 block stylesheet
-    link(rel="stylesheet", href="../../css/main.css")  
+    link(rel="stylesheet", href="../../../css/main.css")
+
+block nosotros
+    li
+        a(href="../../html/nosotros/quienesSomos.html") Who we are
+    li
+        a(href="../../html/nosotros/registros.html") Registries and Memberships
+    li
+        a(href="../../html/nosotros/responsabilidadSoc.html") Social Responsability 
+    li 
+        a(href="../../html/nosotros/certificaciones.html") Certifications
+
+block servicios
+    li
+        a(href="../../html/servicios/auditoria.html") Audit and Assurance
+    li
+        a(href="../../html/servicios/asesoria.html") Tax Advisory
+    li
+        a(href="../../html/servicios/impuesto-nomina.html") Client Accounting Services (CAS)
+    li 
+        a(href="../../html/servicios/consultorias-negocios.html") Business and Financial Consulting
+    li 
+        a(href="../../html/servicios/desarrolloOrg.html") Organizational Development
+    li 
+        a(href="../../html/servicios/proteccion.html") Asset Protection
+
+block noticias 
+    li
+        a(href="../../html/noticias/noticias.html") Notices
+    li
+        a(href="../../html/noticias/boletines.html") News and Bulletins
+
+block capitalHumano
+    a(href="../../html/capital-humano/capital-humano.html") Team
+
+block contacto 
+    a(href="../../html/contacto/contacto.html") Contact
+
+block botonEn
+    a(href="../../../html/servicios/consultorias-negocios.html").boton  ESPAÑOL
+
+block footerLogo
+    img(src="../../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
+
+block footerSocialIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block footerMovilIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block javaScript
+    script(src="../../../subscript.js")
+
+
 block contenido
  
         main
             section.encabezado
                 section.consultoria__encabezado
                     div
-                        h2 Consultoría de Negocios y Financiera
+                        h2 Business and Financial Consulting
                     
             
                 section.consultoria__enfoque
                     picture
-                        img(src="../../img/servicios/foto-consulto.webp", alt="Lentes sobre papeles con números")
+                        img(src="../../../img/servicios/foto-consulto.webp", alt="Lentes sobre papeles con números")
                     article 
-                        p Asesoramos a su organización en la definición de su estrategia financiera y corporativa, con el objetivo de que puedan rentabilizar cada vez más los recursos financieros. Evaluamos alternativas estratégicas para determinar objetivos y metas tangibles mediante la realización de planes y proyectos estratégicos concretos.
+                        p We advise your organization in the definition of its financial and corporate strategy with the aim of making its financial resources even more profitable. We evaluate strategic alternatives to determine tangible objectives and goals by carrying out concrete strategic plans and projects.
 
             section.consultoria__servicios.fade-in
-                strong.fade-in Dentro de los servicios de consultoría se abarcan los siguientes:
-                h3.fade-in Consultoría de negocios y procedimientos convenidos:
+                strong.fade-in Our consulting services include:
+                h3.fade-in Business Consulting and Agreed-Upon Procedures
                 ul.fade-in
-                    p Estos servicios se centran en el diseño de estrategias y en el acompañamiento en su ejecución para lograr los resultados esperados. Coordinamos procedimientos especializados relacionados a la Inteligencia de Negocio que persiguen objetivos específicos. Entre estos se destacan:
+                    p These services focus on the design of strategies and support in their execution to achieve the expected results. We coordinate specialized procedures related to Business Intelligence that pursue specific objectives. Among these we highlight:
 
-                    li Outsourcing gestión de proyectos
-                    li Análisis de gestión de compras
-                    li Optimización de sistema de inventario y almacén
-                    li Levantamiento, identificación y conciliación de activos fijos
-                    li Inteligencia comercial
-                    li Evaluación de riesgo de cartera de crédito
-                    li Elaboración de presupuestos generales o específicos.
-                    li Seguimiento y control presupuestario.
-                h3.fade-in Planes de negocio, estudios de factibilidad y valoración de empresas:
+                    li Project Management Outsourcing.
+                    li Purchasing management analysis.
+                    li Warehouse system optimization.
+                    li Fixed Asset Inventory and Reconciliation.
+                    li Business Intelligence.
+                    li Credit portfolio risk assessment.
+                    li Preparation of general or specific budgets.
+                    li Budget monitoring and control.
+                h3.fade-in Business plans, feasibility studies and business valuation:
                 ul.fade-in
-                    p Este conjunto de servicios se enfoca en estudios económicos, financieros y de viabilidad que permiten la generación y análisis de información prospectiva útil para evaluar la viabilidad de proyectos de inversión y/o conocer el valor objetivo de una empresa, marca, producto o línea de negocio.  Entre estos se destacan:
-                    li Test de maduración de la idea de negocio.
-                    li Conformación de Plan de negocio.
-                    li Evaluación de riesgos y contingencias de proyectos e ideas de negocio.
-                    li Estudio de factibilidad, costo-beneficio y/o estudio prospectivo.
-                    li Modelación de resultados sobre análisis de variables y alternativas.
-                    li Preparación de estados financieros prospectivos
-                    li Valoración de empresa.
-                h3.fade-in Planificación Financiera:
-                p.fade-in Comprende el análisis y estructuración de las estrategias financieras de personas jurídicas o físicas, las cuales vayan alineadas a los objetivos esperados.
-                h3.fade-in Asesoría en Fusiones y Adquisiciones
-                p.fade-in Asesoramiento en la realización de operaciones de venta, adquisición, fusiones, alianzas estratégicas entre compañías o reestructuraciones accionarias.
-                h3.fade-in Análisis de Estructura de Financiamiento:
-                p.fade-in Involucra la realización de estudios que permiten estructurar eficientemente los pasivos a largo y corto plazo considerando las necesidades de capital de la empresa.
-                h3.fade-in Asesoría de Estrategias de Negocios:
-                p.fade-in Comprende el acompañamiento en la toma de decisiones estratégicas de su organización, poniendo a su disposición recursos experimentados que garanticen la consecución de los resultados esperados.
+                    p EThis set of services focuses on economic, financial, and feasibility studies that allow the generation and analysis of prospective information useful to evaluate the viability of investment projects and/or to know the fair value of a company, brand, product or business line. Among these we highlight:
+                    li Maturity test of the business idea.
+                    li Preparation of business plans.
+                    li Evaluation of risks and contingencies of projects and business ideas.
+                    li Feasibility study , Cost–benefit analysis and / or prospective study.
+                    li Financial modeling based on the analysis of variables and alternatives.
+                    li Preparation of prospective financial statements.
+                    li Business Valuation.
+                h3.fade-in Financial Planning:
+                p.fade-in Analysis and structuring of financial strategies for companies and individuals, which are aligned with the expected objectives.
+                h3.fade-in Advisory on Mergers and Acquisitions.
+                p.fade-in Specialized advisory on the sale, acquisition, mergers and strategic alliances between companies and shareholding restructuring.
+                h3.fade-in Analysis of the Financing Structure:
+                p.fade-in It involves carrying out a study that allows the efficient structuring of long and short-term liabilities considering the capital needs of the company.
+                h3.fade-in Business Strategy:
+                p.fade-in It implies support in the strategic decision-making of your organization by putting at your disposal our experienced resources that guarantee the achievement of the expected results.
 
-            section.mainStaffEspecializado.fade-in
+            //section.mainStaffEspecializado.fade-in
                 h2 Staff Especializado
                 .staffEspecializado__container
                     +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
@@ -60,5 +139,5 @@ block contenido
                     +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
                     
             section.auditoria__contacto.fade-in
-                p Para obtener mas información y solicitar nuestros servicios
-                a(href="../../html/contacto/contacto.html") Contáctenos ahora
+                p For more information and request our services
+                a(href="../../html/contacto/contacto.html") Contact us now
