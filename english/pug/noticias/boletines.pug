@@ -1,22 +1,100 @@
-extend ../../componentes/_subplantilla.pug
+extend ../../../componentes/_plantillaEn.pug
+
 block logo
-    link(rel="shortcut icon", href="../../icon/favicon.ico")
+    link(rel="shortcut icon", href="../../../icon/favicon.ico")
+block mainLogo
+    a.logo-container(href="../../index.html")
+        img(src="../../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+block burgerMenu 
+    img(src="../../../icon/menu.svg", alt="menu hamburguesa")
+block homeLinkMovil
+    a(href="../../index.html") Home
+block homeLink
+    a(href="../../index.html") Home
 block stylesheet
-    link(rel="stylesheet", href="../../css/main.css")  
+    link(rel="stylesheet", href="../../../css/main.css")
+
+block nosotros
+    li
+        a(href="../../html/nosotros/quienesSomos.html") Who we are
+    li
+        a(href="../../html/nosotros/registros.html") Registries and Memberships
+    li
+        a(href="../../html/nosotros/responsabilidadSoc.html") Social Responsability 
+    li 
+        a(href="../../html/nosotros/certificaciones.html") Certifications
+
+block servicios
+    li
+        a(href="../../html/servicios/auditoria.html") Audit and Assurance
+    li
+        a(href="../../html/servicios/asesoria.html") Tax Advisory
+    li
+        a(href="../../html/servicios/impuesto-nomina.html") Client Accounting Services (CAS)
+    li 
+        a(href="../../html/servicios/consultorias-negocios.html") Business and Financial Consulting
+    li 
+        a(href="../../html/servicios/desarrolloOrg.html") Organizational Development
+    li 
+        a(href="../../html/servicios/proteccion.html") Asset Protection
+
+block noticias 
+    li
+        a(href="../../html/noticias/noticias.html") Notices
+    li
+        a(href="../../html/noticias/boletines.html") News and Bulletins
+
+block capitalHumano
+    a(href="../../html/capital-humano/capital-humano.html") Team
+
+block contacto 
+    a(href="../../html/contacto/contacto.html") Contact
+
+block botonEn
+    a(href="../../../html/noticias/boletines.html").boton  ESPAÑOL
+
+block footerLogo
+    img(src="../../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
+
+block footerSocialIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block footerMovilIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block javaScript
+    script(src="../../../subscript.js")
+
 block contenido
 
         main
             section.boletines__titular
-                h2 Noticias y Boletines
+                h2 News and Bulletins
 
             div.boletines__container.fade-in
                 section.boletines-noticias
-                    +boletin("doing.webp","Imagen con el escudo de la bandera dominicana","Guía Doing Business República Dominicana 2021","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
+                    +boletinEn("doing.webp","Imagen con el escudo de la bandera dominicana","Guía Doing Business República Dominicana 2021","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
                     hr
-                    +boletin("as-para-el-cumplimiento-tributario-1.webp","Imagen de felicitaciones","FACILIDADES PARA LA PRESENTACIÓN Y PAGO DE LAS OBLIGACIONES RELATIVAS...","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
+                    +boletinEn("as-para-el-cumplimiento-tributario-1.webp","Imagen de felicitaciones","FACILIDADES PARA LA PRESENTACIÓN Y PAGO DE LAS OBLIGACIONES RELATIVAS...","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
                     hr
-                    +boletin("letter-from-the-chair.webp","Carta del chairman de BKR","Carta del Chairman de BKR","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
+                    +boletinEn("letter-from-the-chair.webp","Carta del chairman de BKR","Carta del Chairman de BKR","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
                     hr
-                    +boletin("brk-india-2.webp","Foto del Lic. Raymi Mejia en la india","Reunión Regional de BKR Internacional para Asia y el Pacífico","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
+                    +boletinEn("brk-india-2.webp","Foto del Lic. Raymi Mejia en la india","Reunión Regional de BKR Internacional para Asia y el Pacífico","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
                     hr
-                    +boletin("boletin.webp","Foto de un Boletin","Boletín Transformación","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
+                    +boletinEn("boletin.webp","Foto de un Boletin","Boletín Transformación","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
