@@ -1,74 +1,153 @@
-extend ../../componentes/_subplantilla.pug
+extend ../../../componentes/_plantillaEn.pug
+
 block logo
-    link(rel="shortcut icon", href="../../icon/favicon.ico")
+    link(rel="shortcut icon", href="../../../icon/favicon.ico")
+block mainLogo
+    a.logo-container(href="../../index.html")
+        img(src="../../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+block burgerMenu 
+    img(src="../../../icon/menu.svg", alt="menu hamburguesa")
+block homeLinkMovil
+    a(href="../../index.html") Home
+block homeLink
+    a(href="../../index.html") Home
 block stylesheet
-    link(rel="stylesheet", href="../../css/main.css")
+    link(rel="stylesheet", href="../../../css/main.css")
+
+block nosotros
+    li
+        a(href="../../html/nosotros/quienesSomos.html") Who we are
+    li
+        a(href="../../html/nosotros/registros.html") Registries and Memberships
+    li
+        a(href="../../html/nosotros/responsabilidadSoc.html") Social Responsability 
+    li 
+        a(href="../../html/nosotros/certificaciones.html") Certifications
+
+block servicios
+    li
+        a(href="../../html/servicios/auditoria.html") Audit and Assurance
+    li
+        a(href="../../html/servicios/asesoria.html") Tax Advisory
+    li
+        a(href="../../html/servicios/impuesto-nomina.html") Client Accounting Services (CAS)
+    li 
+        a(href="../../html/servicios/consultorias-negocios.html") Business and Financial Consulting
+    li 
+        a(href="../../html/servicios/desarrolloOrg.html") Organizational Development
+    li 
+        a(href="../../html/servicios/proteccion.html") Asset Protection
+
+block noticias 
+    li
+        a(href="../../html/noticias/noticias.html") Notices
+    li
+        a(href="../../html/noticias/boletines.html") News and Bulletins
+
+block capitalHumano
+    a(href="../../html/capital-humano/capital-humano.html") Team
+
+block contacto 
+    a(href="../../html/contacto/contacto.html") Contact
+
+block botonEn
+    a(href="../../../html/capital-humano/auditor-externo.html").boton  ESPAÑOL
+
+block footerLogo
+    img(src="../../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
+
+block footerSocialIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block footerMovilIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block javaScript
+    script(src="../../../subscript.js")
+
+
 block contenido
  
         main
             section.encabezado
                 section.capital__encabezado
                     div
-                        h2 Trabaja Con Nosotros
+                        h2 Work with us
                 
                 section.auditor__enfoque.fade-in
                     picture
-                        img(src="../../img/servicios/DO3.webp", alt="Hablando de negocios")
+                        img(src="../../../img/servicios/DO3.webp", alt="Hablando de negocios")
                     article
-                        h2 Posiciones Abiertas
-                        p Únete a nuestro equipo de profesionales comprometidos y cuidadosamente seleccionados. Valoramos el crecimiento y estamos en cponstante búsqueda de nuevos talentos. Ofrecemos capacitación continua en áreas de interés y la oportuniad de trabajar con expertos en diversas materias. Buscamos personas apasionadas, responsables y con hbailidades para el trabajo en equipo.
-                        p Si estás interesado, envíanos tu CV en PDF a través de nuestro formulario.
+                        //h2 Posiciones Abiertas
+                        p Join our team of carefully selected and committed professionals. We value growth and are constantly looking for new talent. We offer continuous training in areas of interest and the opportunity to work with experts in various fields. We are looking for passionate, responsible people with skills for teamwork.
+                        p If you are interested, send us your CV in PDF through our form.
             
             section.auditor__info
-                h1 Auditor Externo 
-                h2 Descripción 
-                p Asegurar la ejecución de todas las fases de las auditorias y trabajos asignados según los programas y planificación establecidos, dando cumplimiento a normativas financieras, fiscales y de control interno, garantizando de esta manera la satisfacción del cliente en el servicio brindado.
+                h1 External auditor
+                h2 Description
+                p Ensure the execution of all phases of audits and assigned work according to the established programs and planning, complying with financial, fiscal and internal control regulations, thus guaranteeing customer satisfaction in the service provided.
                 
-                h2 Lo que harás: 
+                h2 What you will do: 
                 ul 
-                    li Revisar la planificación, el listado de requerimientos y programas de auditoría conjuntamente con el supervisor, para aclarar cualquier inquietud sobre el enfoque de los objetivos y el tiempo de ejecución.
-                    li Elaborar analíticas de cada área, presentando los hallazgos de mayor relevancia y los procedimientos utilizados para llegar a los objetivos establecidos.
-                    li Ejecutar análisis y pruebas de auditoria en base al programa establecido, apegados al cumplimiento de las políticas y procedimientos de la firma, las normas internacionales de información financiera, normas de auditoría, leyes fiscales y normativas de control interno.
-                    li Realizar la toma física de inventario tomando como parámetros el programa de trabajo, la planeación de tiempo y la estimación de la materialidad elaborados por el supervisor.
-                    li Generar el informe de la toma física de inventario realizada.
-                    li Actualizar el archivo permanente del cliente de la auditoria.
-                    li Completar el expediente, apegándose a los objetivos y procedimientos establecidos.
-                    li Remitir reportes de progreso según indiquen las políticas establecidas, manteniendo una comunicación efectiva.
-                    li Asignar las tareas al auxiliar de auditoría y dar seguimiento a su ejecución, revisando el análisis y procedimientos realizados por el auxiliar de auditoría.
-                    li Completar el memo de observaciones de auditoria para su posterior discusión con el cliente por parte del gerente.
-                    li Realizar observaciones que les sean asignadas respecto al expediente.
-                    li Completar las evaluaciones del supervisor / gerente.
-                    li Mantener buena comunicación interna (supervisor/gerente) / externa (clientes).
-                    li Terminar los trabajos con la máxima calidad y en el tiempo establecido.
-                    li Realizar otras tareas afines y complementarias al puesto y/o sean requeridas por el supervisor/ gerente y/o socio encargado.
+                    li Review the planning, requirements list, and audit programs together with the supervisor to clarify any concerns regarding the approach to objectives and the execution timeline.
+                    li Prepare analytics for each area, presenting the most relevant findings and the procedures used to achieve the established objectives.
+                    li Conduct audits and audit tests based on the established program, adhering to the compliance of the firm's policies and procedures, international financial reporting standards, auditing standards, tax laws, and internal control regulations.
+                    li Perform the physical inventory count, taking into account the work program, time planning, and materiality estimation prepared by the supervisor.
+                    li Generate the report for the physical inventory count conducted.
+                    li Update the permanent client file for the audit.
+                    li Complete the file, adhering to the established objectives and procedures.
+                    li Submit progress reports as dictated by established policies, maintaining effective communication.
+                    li Assign tasks to the audit assistant and follow up on their execution, reviewing the analysis and procedures carried out by the audit assistant.
+                    li Complete the audit findings memo for later discussion with the client by the manager.
+                    li Make observations assigned to you regarding the file.
+                    li Complete the evaluations from the supervisor/manager.
+                    li Maintain good internal (supervisor/manager) and external (clients) communication.
+                    li Finish the work with the highest quality and within the established timeframe.
+                    li Perform other related and complementary tasks required by the supervisor/manager and/or responsible partner.
                 
-                h2 Experiencia requerida:
+                h2 Experience required:
                 ul 
-                    li Graduado de las áreas de: Contabilidad, Administración y/o áreas afines al puesto.
-                    li 2 años de experiencia.
+                    li Graduate from the fields of Accounting, Administration, or related areas to the position.
+                    li 2 years of experience.
                 
-                h2 Habilidades requeridas:
+                h2 Required skills:
                 ul
-                    li Facilidad de comunicación oral y escrita.
-                    li Conocimiento del idioma inglés
-                    li Conocimientos de Microsoft Office.
-                    li Redacción de informes.
-                    li Normas (NIAs, NICs y NIIFs).
-                    li Normativas fiscales.
-                    li Proceso de auditoría. 
-                    li Preparación y análisis de Estados Financieros.
+                    li Fluency in oral and written communication.
+                    li Knowledge of the English language.
+                    li Knowledge of Microsoft Office.
+                    li Report writing skills.
+                    li Knowledge of International Standards on Auditing (ISAs), International Accounting Standards (IAS/IFRS).
+                    li Tax regulations knowledge.
+                    li Auditing process understanding. 
+                    li Preparation and analysis of Financial Statements.
 
-                h2 Competencias conductuales:
+                h2 Behavioral competencies:
                 ul
-                    li Ética e integridad.
-                    li Compromiso.
-                    li Orientación al cliente.
-                    li Calidad en el trabajo.
-                    li Trabajo en equipo.
+                    li Ethics and integrity.
+                    li Commitment.
+                    li Customer orientation.
+                    li Quality in work.
+                    li Teamwork.
                 
                 button
-                    a(href="../../html/capital-humano/formulario.html").button Aplicar aquí
+                    a(href="../../html/capital-humano/formulario.html").button Apply here
                     
             section.auditoria__contacto.fade-in
-                p Para obtener mas información y solicitar nuestros servicios
-                a(href="../../html/contacto/contacto.html") Contáctenos ahora
+                p For more information and request our services
+                a(href="../../html/contacto/contacto.html") Contact us now

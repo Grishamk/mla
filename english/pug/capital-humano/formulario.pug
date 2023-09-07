@@ -1,55 +1,133 @@
-extend ../../componentes/_subplantilla.pug
+extend ../../../componentes/_plantillaEn.pug
+
 block logo
-    link(rel="shortcut icon", href="../../icon/favicon.ico")
+    link(rel="shortcut icon", href="../../../icon/favicon.ico")
+block mainLogo
+    a.logo-container(href="../../index.html")
+        img(src="../../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+block burgerMenu 
+    img(src="../../../icon/menu.svg", alt="menu hamburguesa")
+block homeLinkMovil
+    a(href="../../index.html") Home
+block homeLink
+    a(href="../../index.html") Home
 block stylesheet
-    link(rel="stylesheet", href="../../css/main.css")
+    link(rel="stylesheet", href="../../../css/main.css")
+
+block nosotros
+    li
+        a(href="../../html/nosotros/quienesSomos.html") Who we are
+    li
+        a(href="../../html/nosotros/registros.html") Registries and Memberships
+    li
+        a(href="../../html/nosotros/responsabilidadSoc.html") Social Responsability 
+    li 
+        a(href="../../html/nosotros/certificaciones.html") Certifications
+
+block servicios
+    li
+        a(href="../../html/servicios/auditoria.html") Audit and Assurance
+    li
+        a(href="../../html/servicios/asesoria.html") Tax Advisory
+    li
+        a(href="../../html/servicios/impuesto-nomina.html") Client Accounting Services (CAS)
+    li 
+        a(href="../../html/servicios/consultorias-negocios.html") Business and Financial Consulting
+    li 
+        a(href="../../html/servicios/desarrolloOrg.html") Organizational Development
+    li 
+        a(href="../../html/servicios/proteccion.html") Asset Protection
+
+block noticias 
+    li
+        a(href="../../html/noticias/noticias.html") Notices
+    li
+        a(href="../../html/noticias/boletines.html") News and Bulletins
+
+block capitalHumano
+    a(href="../../html/capital-humano/capital-humano.html") Team
+
+block contacto 
+    a(href="../../html/contacto/contacto.html") Contact
+
+block botonEn
+    a(href="../../../html/capital-humano/formulario.html").boton  ESPAÑOL
+
+block footerLogo
+    img(src="../../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
+
+block footerSocialIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block footerMovilIcons
+    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
+        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
+    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
+        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
+    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
+        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
+    //Posiblemente será eliminado
+    a(href="https://twitter.com/MejialoraAsoc") 
+        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
+
+block javaScript
+    script(src="../../../subscript.js")
+
 block contenido
  
         main
             section.encabezado
                 section.capital__encabezado
                     div
-                        h2 Formulario de empleo
+                        h2 Employment application form
             
             section.formulario-empleo
                 form(action="https://formsubmit.co/borgenatanel@gmail.com" method="POST").formulario
                     div
                         label(for="nombre")
-                            p Nombre y apellido
-                            input(type="text" id="nombre" placeholder="nombre completo" name="nombre" required)
+                            p Name and last name
+                            input(type="text" id="nombre" placeholder="Full name" name="nombre" required)
                     div.doble
                         label(for="correo")
-                            p Dirección de correo electrónico 
-                            input(type="email" id="correo" placeholder="tucorreo@email.com" name="correo")
+                            p Email address 
+                            input(type="email" id="correo" placeholder="youremail@email.com" name="correo")
 
                         label(for="telefono")
-                            p Teléfono 
-                            input(type="number" id="telefono" name="telefono")
+                            p Phone number
+                            input(type="number" id="Phone number" name="telefono")
                     
                     div 
                         label(for="Posicion")
-                            p Posición que desea aplicar
+                            p Position you wish to apply for
                             select(name="Posicion" id="posicion")
-                                option Auditor Externo
-                                option Consultor de Impuestos
-                                option Contador
+                                option External Auditor
+                                option Tax Consultant
+                                option Accountant
 
                     div.doble
                         label(for="habilidades")
-                            p Habilidades
+                            p Skills
                             textarea(name="habilidades", cols="30", rows="10" id="habilidades") 
 
                         label(for="motivacion")
-                            p Motivación
+                            p Motivation
                             textarea(name="motivacion", cols="30", rows="10" id="motivacion")
                     
                     div
                         label(for="experiencia")
-                            p Experiencia
+                            p Experience
                             textarea(name="experiencia", cols="30", rows="10" id="experiencia")
                     
                     div
-                        p Adjuntar CV (En formato PDF)
+                        p Attach CV (In PDF format)
                         input(type="file" accept="application/pdf" name="curriculum")
                     
                     input(type="submit").boton
