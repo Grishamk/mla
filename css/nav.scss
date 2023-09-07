@@ -64,7 +64,7 @@ header {
             right: -300px;
             width: 90vw;
             max-width: 300px;
-            height: 100%;
+            height: 93.5%;
             overflow: auto;
             visibility: hidden;
             transition: all 300ms ease;
@@ -115,8 +115,7 @@ header {
                     }
                 }
             }
-            
-            .boton{
+            a.boton{
                 @include flexRule(null,center,center);
                 width: 120px;
                 height: 60px;
@@ -130,6 +129,7 @@ header {
                 margin-bottom: 20px;
                 padding: 8px;
             }
+            
         }
     }
 
