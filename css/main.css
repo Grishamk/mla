@@ -4824,6 +4824,12 @@ main .desarrollo__servicios ul li {
     margin-bottom: 24px;
     height: 40px;
   }
+  .contacto__redes {
+    gap: 40px;
+  }
+  .contacto__redes a img {
+    width: 32px;
+  }
 }
 .contacto__mapa {
   width: 100%;
