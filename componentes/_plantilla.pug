@@ -25,58 +25,29 @@ html(lang="es")
                             li
                                 block homeLinkMovil
                             
+                            //NOSOTROS
                             li
-                                a(href="") Nosotros
-                                ul
-                                    block nosotros
-                                //  li
-                                        a(href="./html/nosotros/quienesSomos.html") Quienes Somos
-                                    li
-                                        a(href="./html/nosotros/registros.html") Registros y Membresías
-                                    li
-                                        a(href="./html/nosotros/responsabilidadSoc.html") Responsabilidad Social 
-                                    li 
-                                        a(href="./html/nosotros/certificaciones.html") Certificaciones 
+                                block nosotros 
 
                             //SERVICIOS
-                            li
-                                a(href="") Servicios
-                                ul
-                                    block servicios
-                                    
-                                //  li
-                                        a(href="./html/servicios/auditoria.html") Auditoría
-                                    li
-                                        a(href="./html/servicios/asesoria.html") Asesoría Fiscal
-                                    li
-                                        a(href="./html/servicios/impuesto-nomina.html") Impuesto - Nómina - Contabilidad
-                                    li 
-                                        a(href="./html/servicios/consultorias-negocios.html") Consultoría de Negocios y Financiera
-                                    li 
-                                        a(href="./html/servicios/desarrolloOrg.html") Desarrollo Organizacional
-                                    li 
-                                        a(href="./html/servicios/proteccion.html") Protección Patrimonial 
+                            li 
+                                block servicios
+                                
                             
                             //NOVEDADES
                             li
-                                a(href="") Novedades
-                                ul
-                                    block noticias
-                                    
-                                //  li
-                                        a(href="./html/noticias/noticias.html") Avisos
-                                    li
-                                        a(href="./html/noticias/boletines.html") Noticias y Boletines
+                                block noticias
+                                
 
                             //CAPITAL HUMANO    
                             li
                                 block capitalHumano
-                            //  a(href="./html/capital-humano/capital-humano.html") Capital Humano
+                           
                             
                             //CONTACTO
                             li
                                 block contacto
-                            //  a(href="./html/contacto/contacto.html") Contacto
+                            
                         
                        
 
@@ -90,11 +61,12 @@ html(lang="es")
                         //  a(href="./index.html") Inicio
 
                         //NOSOTROS
-                        li
+                        block nosotros
+                        //li
                             a(href="") Nosotros
                             ul.toggle__nosotros
-                                block nosotros
-                            //  li
+                                
+                                li
                                     a(href="./html/nosotros/quienesSomos.html") Quienes Somos
                                 li
                                     a(href="./html/nosotros/registros.html") Registros y Membresías
@@ -104,11 +76,13 @@ html(lang="es")
                                     a(href="./html/nosotros/certificaciones.html") Certificaciones 
 
                         //SERVICIOS
-                        li
+                        block servicios
+                        
+                        //li
                             a(href="") Servicios
                             ul.toggle__servicios
-                                block servicios
-                            //   li
+                                
+                                li
                                     a(href="./html/servicios/auditoria.html") Auditoría
                                 li
                                     a(href="./html/servicios/asesoria.html") Asesoría Fiscal
@@ -122,11 +96,12 @@ html(lang="es")
                                     a(href="./html/servicios/proteccion.html") Protección Patrimonial 
                         
                         //NOVEDADES
-                        li
+                        block noticias
+                        //li
                             a(href="") Novedades
                             ul.toggle__novedades
-                                block noticias
-                            //  li
+                                
+                                  li
                                     a(href="./html/noticias/noticias.html") Avisos
                                 li
                                     a(href="./html/noticias/boletines.html") Noticias y Boletines
