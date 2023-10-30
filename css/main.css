@@ -192,7 +192,7 @@ header {
     max-width: 450px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .nav-container {
     height: 94px;
   }
@@ -785,17 +785,20 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 20px;
   }
   .main-container .main__servicios .servicios__contenedor a {
     height: 180px;
+    width: 300px;
   }
   .main-container .main__servicios .servicios__contenedor a img {
     width: 100%;
     height: 180px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .main-container .main__servicios {
     padding-top: 60px;
   }
@@ -897,7 +900,7 @@ header {
     padding-top: 64px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .main-container .main-container__respaldo {
     height: 448px;
     padding: 0;
@@ -1130,7 +1133,7 @@ header {
     margin-top: 48px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .main-container .main-container__capital-humano .capital-humano__container .capital-humano__socios {
     max-width: 1200px;
     gap: 32px;
@@ -1280,7 +1283,7 @@ header {
     margin-top: 12px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .main-container .main-container__noticias .noticias__container .escondete {
     display: block;
   }
@@ -1449,7 +1452,7 @@ header {
   width: 100%;
   height: 100%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .main-container .main-container__mapa {
     width: 100%;
     height: 400px;
@@ -1686,7 +1689,7 @@ main .nosotrosMV .nosotrosMV__text p {
     line-height: 2.4rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   main .nosotrosMV .nosotrosMV__text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1826,7 +1829,7 @@ main .nosotrosValores .nosotrosValores__container .nosotrosValores__calidad p {
     height: 128px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   main .nosotrosValores .nosotrosValores__container .nosotrosValores__item-container {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -1990,7 +1993,7 @@ main .RMtitular__text-container p {
     line-height: 28px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   main .RMtitular__text-container h2 {
     font-size: 4rem;
   }
@@ -2073,7 +2076,7 @@ main .membresia__item-container .membresia__item h2 {
     width: 340px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   main .membresia__item-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2183,7 +2186,7 @@ main .registro__item-container .registro__item h2 {
     font-weight: 400;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   main .registro {
     margin-bottom: 60px;
   }
@@ -2699,7 +2702,7 @@ main .encabezado__auditoria p {
     padding: 10px 40px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   main .encabezado__auditoria picture img {
     height: 400px;
   }
@@ -2872,7 +2875,7 @@ main .mainStaffEspecializado .staffEspecializado__container .staffEspecializado_
     gap: 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   main .mainStaffEspecializado {
     padding: 40px 0;
     height: 450px;
@@ -3002,7 +3005,7 @@ main .auditoria__contacto a {
   vertical-align: middle;
   padding: 6px 12px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   main .auditoria__contacto p {
     display: block;
     margin-bottom: 32px;
@@ -3085,7 +3088,7 @@ main .encabezado .asesoria__enfoque article p {
     line-height: 2.4rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   main .encabezado .asesoria__encabezado div {
     height: 170px;
   }
@@ -3211,7 +3214,7 @@ main .encabezado__impuesto p {
     padding: 10px 40px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   main .encabezado__impuesto picture img {
     height: 400px;
   }
@@ -3364,7 +3367,7 @@ main .encabezado .consultoria__enfoque article p {
     line-height: 2.4rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   main .encabezado .consultoria__encabezado div {
     height: 170px;
   }
@@ -3510,7 +3513,7 @@ main .encabezado .desarrollo__enfoque article p {
     line-height: 2.4rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   main .encabezado .desarrollo__encabezado div {
     height: 170px;
   }
@@ -3670,7 +3673,7 @@ main .desarrollo__servicios ul li {
     line-height: 2.4rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .encabezado .proteccion__encabezado div {
     height: 170px;
   }
@@ -3780,7 +3783,7 @@ main .desarrollo__servicios ul li {
     line-height: 2.4rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .encabezado .capital__encabezado div {
     height: 170px;
   }
@@ -4026,7 +4029,7 @@ main .desarrollo__servicios ul li {
     margin-bottom: 52px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .capital__staff {
     padding: 48px 24px 0px;
   }
@@ -4260,7 +4263,7 @@ main .desarrollo__servicios ul li {
     color: #007bff;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .trabajaN__enfoque {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4435,7 +4438,7 @@ main .desarrollo__servicios ul li {
     width: 40%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .auditor__enfoque {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4586,7 +4589,7 @@ main .desarrollo__servicios ul li {
     width: 600px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .formulario {
     width: 900px;
   }
@@ -4671,7 +4674,7 @@ main .desarrollo__servicios ul li {
     line-height: 2.4rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .encabezado .capital__encabezado div {
     height: 170px;
   }
@@ -4807,7 +4810,7 @@ main .desarrollo__servicios ul li {
     margin-bottom: 32px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .main__formulario {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4841,7 +4844,7 @@ main .desarrollo__servicios ul li {
   height: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .contacto__mapa {
     width: 100%;
     height: 400px;
@@ -4998,7 +5001,7 @@ main .desarrollo__servicios ul li {
     width: 400px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .news-noticias {
     padding: 0 60px;
     margin-top: 50px;
@@ -5224,7 +5227,7 @@ main .desarrollo__servicios ul li {
     width: 400px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .boletines-noticias {
     padding: 0 60px;
     margin-top: 50px;
@@ -5415,7 +5418,7 @@ main .desarrollo__servicios ul li {
   width: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .footer-container {
     height: auto;
     width: 100%;

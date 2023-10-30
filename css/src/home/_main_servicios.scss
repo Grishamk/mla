@@ -53,10 +53,12 @@
             width: 100%;
             height: 100%;
             @include flexRule(row,center,center);
+            flex-wrap: wrap;
             gap: 20px;
     
             a{
                 height: 180px;
+                width: 300px;
     
                 img{
                     width: 100%;
