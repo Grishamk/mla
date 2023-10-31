@@ -22,7 +22,7 @@
 }
 
 .main-container__carrusel{
-      height: 60vh;
+      height: 70vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -32,7 +32,7 @@
         position: relative;
         background: #000116;
         width: 100vw;
-        height: 60vh;
+        height: 70vh;
         //margin: 20px;
         overflow: hidden;
         //border-radius: 10px;
@@ -55,7 +55,7 @@
                 color: #222;
                 background: rgba(255, 255, 255, 0.8);
                 width: 40%;
-                margin-top: 50px;
+                margin-top: 150px;
                 margin-left: 70px;
                 padding: 40px;
                 border-radius: 5px;
@@ -106,7 +106,7 @@
         }
 
         .navigation{
-            height: 500px;
+            height: 90%;
             opacity: 0;
             transition: opacity 0.5s ease;
             @include flexRule(null,space-between,center);
@@ -136,11 +136,12 @@
         }
           
         .navigation-visibility{
-            z-index: 999;
-            @include flexRule(null,center);
+            z-index: 90;
+            @include flexRule(null,center,flex-end);
+            
 
             .slide-icon{
-                z-index: 999;
+                z-index: 90;
                 background: rgba(255, 255, 255, 0.5);
                 width: 20px;
                 height: 10px;

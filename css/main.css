@@ -20,18 +20,26 @@ body {
 header {
   width: 100%;
   background-color: #F7F7F7;
+  position: fixed;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  z-index: 100;
+  opacity: 0.8;
+}
+
+header:hover {
+  opacity: 1;
 }
 
 .fixed {
   position: fixed;
+  opacity: 1;
   top: 0;
   left: 0;
   width: 100%;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  z-index: 999;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
@@ -507,7 +515,7 @@ header {
   font-size: 48px;
 }
 .main-container .main-container__carrusel {
-  height: 60vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,7 +531,7 @@ header {
   position: relative;
   background: #000116;
   width: 100vw;
-  height: 60vh;
+  height: 70vh;
   overflow: hidden;
 }
 .main-container .main-container__carrusel .slider .slide {
@@ -545,7 +553,7 @@ header {
   color: #222;
   background: rgba(255, 255, 255, 0.8);
   width: 40%;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-left: 70px;
   padding: 40px;
   border-radius: 5px;
@@ -596,7 +604,7 @@ header {
           animation-duration: 2s;
 }
 .main-container .main-container__carrusel .slider .navigation {
-  height: 500px;
+  height: 90%;
   opacity: 0;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
@@ -630,16 +638,19 @@ header {
   border-bottom-left-radius: 3px;
 }
 .main-container .main-container__carrusel .slider .navigation-visibility {
-  z-index: 999;
+  z-index: 90;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .main-container .main-container__carrusel .slider .navigation-visibility .slide-icon {
-  z-index: 999;
+  z-index: 90;
   background: rgba(255, 255, 255, 0.5);
   width: 20px;
   height: 10px;
@@ -2522,7 +2533,7 @@ main .RS__internos article img {
 }
 .cert-container .cert-container__titular {
   width: 100%;
-  height: 100px;
+  height: 300px;
   background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
@@ -2549,7 +2560,7 @@ main .RS__internos article img {
 }
 @media (min-width: 1500px) {
   .cert-container .cert-container__titular {
-    height: 200px;
+    height: 300px;
   }
   .cert-container .cert-container__titular h2 {
     font-size: 4.8rem;

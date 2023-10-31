@@ -6,15 +6,23 @@
 header {
     width: 100%;
     background-color: $colorPrincipal;
+    position: fixed;
     transition: all 300ms ease;
+    z-index: 100;
+    opacity: 0.8;
+}
+
+header:hover{
+    opacity: 1;
 }
 .fixed {
     position: fixed;
+    opacity: 1;
     top: 0;
     left: 0;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 10;
+    z-index: 999;
     transition: all 300ms ease;
 }
 .nav-container {
