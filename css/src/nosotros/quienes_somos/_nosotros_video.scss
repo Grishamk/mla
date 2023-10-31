@@ -6,15 +6,19 @@
         padding: 64px 32px;
         animation: fadeInLeft;
         animation-duration: 1s;
-        h2 {
-            font-size: 1.7rem;
-            margin-bottom: 20px;
-            line-height: 2.4rem;
+        
+        p{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            margin-bottom: 48px;
         }
 
-        p{
-            font-size: 1.4rem;
-            line-height: 2.2rem;
+        i{
+            display: block;
+            font-size: 2rem;
+            padding: 0 80px;
+            font-weight: 700;
+            color: #043877;
         }
     }
 
