@@ -17,6 +17,10 @@ body {
   color: #333;
 }
 
+.inicio {
+  border-bottom: 1px solid #333;
+}
+
 header {
   width: 100%;
   background-color: #F7F7F7;
@@ -506,7 +510,7 @@ header:hover {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  z-index: 10;
+  z-index: 99;
   text-decoration: none;
   vertical-align: middle;
   padding-bottom: 8px;
@@ -551,7 +555,7 @@ header:hover {
 .main-container .main-container__carrusel .slider .slide .info {
   position: absolute;
   color: #222;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.7);
   width: 40%;
   margin-top: 150px;
   margin-left: 70px;
