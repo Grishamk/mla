@@ -74,7 +74,7 @@ header:hover {
 }
 .nav-container .logo-container img {
   width: 150px;
-  height: 45px;
+  height: 35px;
   margin-left: 20px;
 }
 .nav-container__menu label img {
@@ -188,7 +188,7 @@ header:hover {
   }
   .nav-container .logo-container img {
     width: 200px;
-    height: 65px;
+    height: 55px;
     margin-left: 150px;
   }
   .nav-container__menu {
@@ -220,9 +220,9 @@ header:hover {
   }
   .nav-container .logo-container img {
     width: 280px;
-    height: 80px;
+    height: 70px;
     margin-left: 32px;
-    margin-top: 5px;
+    margin-top: 10px;
   }
   .nav-container__menu {
     display: none;
@@ -472,9 +472,9 @@ header:hover {
   .nav-container .logo-container img {
     width: 100%;
     max-width: 280px;
-    height: 85px;
+    height: 70px;
     margin: 0;
-    margin-top: 3px;
+    margin-top: 10px;
   }
   .nav-container__navbar {
     width: 70%;
@@ -1055,6 +1055,9 @@ header:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.main-container .main-container__capital-humano .oculto {
+  display: none;
+}
 .main-container .main-container__capital-humano .capital-humano__container {
   padding: 40px 24px;
   text-align: center;
@@ -1123,6 +1126,9 @@ header:hover {
           align-items: center;
 }
 @media (min-width: 750px) {
+  .main-container .main-container__capital-humano .capital-humano__container .oculto {
+    display: none;
+  }
   .main-container .main-container__capital-humano .capital-humano__container p {
     margin-bottom: 48px;
   }
@@ -1149,6 +1155,9 @@ header:hover {
   }
 }
 @media (min-width: 1050px) {
+  .main-container .main-container__capital-humano .capital-humano__container .oculto {
+    display: none;
+  }
   .main-container .main-container__capital-humano .capital-humano__container .capital-humano__socios {
     max-width: 1200px;
     gap: 32px;

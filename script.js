@@ -182,3 +182,29 @@ window.addEventListener("load", function() {
   });
 });
 
+let socioItem = document.querySelector('.capital-humano__socios');
+let botonSocio = document.querySelector('.ocultoActivo');
+let botonSocio2 = document.querySelector('.ocultoActivo2');
+
+botonSocio.addEventListener('click', activeSocios);
+botonSocio2.addEventListener('click', activeSocios);
+
+function activeSocios(){
+  const openSocios = socioItem.classList.contains('oculto');
+  const closeSocios = socioItem.classList.contains('oculto');
+
+  if(openSocios){
+    socioItem.classList.remove('oculto');
+    botonSocio.classList.add('oculto');
+    botonSocio2.classList.remove('oculto');
+  }
+  else if(!openSocios){
+    socioItem.classList.add('oculto');
+    botonSocio.classList.remove('oculto');
+    botonSocio2.classList.add('oculto');
+  }
+
+
+
+
+}
