@@ -3,7 +3,7 @@
     .contacto__encabezado{  
         div{
             width: 100%;
-            height: 150px;
+            height: 200px;
             background-image: url(../img/assets/bg-section.webp);
             background-repeat: no-repeat;
             background-position:center;
@@ -18,6 +18,7 @@
                 font-size: 2.8rem;
                 font-weight: 300;
                 padding: 15px;
+                margin-top: 20px;
             }
             p {
                 font-size: 1.4rem;
@@ -30,7 +31,18 @@
 }
 
 @media(min-width: $breakpoint-tablet){
-    .encabezado {    
+    .encabezado {
+        .contacto__encabezado{  
+            div{
+                
+                h2{
+                    font-size: 2.8rem;
+                    font-weight: 300;
+                    padding: 15px;
+                    margin-top: 60px;
+                }
+            } 
+        }
         .capital__enfoque{
             
         
@@ -46,15 +58,15 @@
                     line-height: 2.4rem;
                 }
             }
-        }
+        }   
     }
 }
 
 @media(min-width: $breakpoint-laptop){
     .encabezado {
-        .capital__encabezado{  
+        .contacto__encabezado{  
             div{
-                height: 170px;
+                height: 300px;
                 h2{
                     font-size: 4rem;
                 }

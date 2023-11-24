@@ -182,7 +182,7 @@ window.addEventListener("load", function() {
   });
 });
 
-let socioItem = document.querySelector('.capital-humano__socios');
+/*let socioItem = document.querySelector('.capital-humano__socios');
 let botonSocio = document.querySelector('.ocultoActivo');
 let botonSocio2 = document.querySelector('.ocultoActivo2');
 
@@ -204,7 +204,25 @@ function activeSocios(){
     botonSocio2.classList.add('oculto');
   }
 
+}*/
 
+let socioItem = document.querySelector('.capital-humano__socios');
+let botonSocio = document.querySelector('.ocultoActivo');
+let botonSocio2 = document.querySelector('.ocultoActivo2');
 
+botonSocio.addEventListener('click', activeSocios);
+botonSocio2.addEventListener('click', activeSocios);
 
+function activeSocios() {
+  const isOpen = socioItem.classList.contains('oculto');
+
+  if (isOpen) {
+    socioItem.classList.remove('oculto');
+    botonSocio.classList.add('oculto');
+    botonSocio2.classList.remove('oculto');
+  } else {
+    socioItem.classList.add('oculto');
+    botonSocio.classList.remove('oculto');
+    botonSocio2.classList.add('oculto');
+  }
 }
