@@ -121,26 +121,30 @@ mixin staffElementEn(imagen,alterno,titulo,text1,text2,text3,clase)
             p=text2
             p(class=clase)=text3
 
-mixin aviso(imagen,alterno,titulo,fecha,texto,link)
+mixin aviso(imagen,alterno,titulo,fecha,texto,texto2,link)
     article.news-noticias__item.fade-in
         picture
             img(src="../../img/avisos/"+imagen alt=alterno)
         div
             h2=titulo
             p.fecha=fecha
-            p=texto 
+            p=texto
+            br
+            p=texto2
             //a(href=link) Leer más
                 span
                     img(src="../../icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha")//
 
-mixin avisoEn(imagen,alterno,titulo,fecha,texto,link)
+mixin avisoEn(imagen,alterno,titulo,fecha,texto,texto2,link)
     article.news-noticias__item.fade-in
         picture
             img(src="../../../img/avisos/"+imagen alt=alterno)
         div
             h2=titulo
             p.fecha=fecha
-            p=texto 
+            p=texto
+            br
+            p=texto2 
             //a(href=link) Leer más
                 span
                     img(src="../../icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha")//
