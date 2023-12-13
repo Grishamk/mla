@@ -7,19 +7,11 @@ $colorLetra2: white;
 $colorPrincipal: #F7F7F7;
 $colorSecundario: white;
 $colorTerciario: #043877;
+$colorCuaternario: #089de8;
 
 $breakpoint-tablet: 750px;
 $breakpoint-laptop: 1050px;
 $breakpoint-desktop: 1500px;
-
-
-//MIXINS
-@mixin flexRule($direction:null,$content:null,$align:null){
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $content;
-    align-items: $align;
-}
 
 //FORMATO GLOBAL
 * {

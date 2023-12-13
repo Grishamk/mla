@@ -22,6 +22,7 @@ header {
 header:hover{
     opacity: 1;
 }
+
 .fixed {
     position: fixed;
     opacity: 1;
@@ -32,9 +33,9 @@ header:hover{
     z-index: 999;
     transition: all 300ms ease;
 }
+
 .nav-container {
-    width: 100%;
-    height: 57px;
+    @include wH(100%, 57px);
     @include flexRule(row,null,center);
     background-color: $colorPrincipal;
 
@@ -44,8 +45,7 @@ header:hover{
         @include flexRule(null,center,null);
         
         img {
-            width: 150px;
-            height: 35px;
+            @include wH(150px, 35px);
             margin-left: 20px;
         }
     }
@@ -56,8 +56,7 @@ header:hover{
         label{
             
             img {
-                width: 30px;
-                height: 30px;
+                @include wH(30px, 30px);
             }
         }
 
@@ -72,14 +71,13 @@ header:hover{
         }
 
         .nav-movil{
+            @include wH(90vw, 93.5%);
+            max-width: 300px;
             @include flexRule(column);
             background-color: white;
             position: fixed;
             top: 57px;
             right: -300px;
-            width: 90vw;
-            max-width: 300px;
-            height: 93.5%;
             overflow: auto;
             visibility: hidden;
             transition: all 300ms ease;
@@ -103,9 +101,9 @@ header:hover{
     
                     a{
                         text-decoration: none;
-                        color: white;
+                        color: $colorLetra2;
                         font-weight: bold;
-                        background-color:#043877;
+                        background-color: $colorTerciario;
                         display: block;
                         padding: 20px;
                     }
@@ -118,22 +116,22 @@ header:hover{
                         
                         li{
                             margin-bottom: 24px;
-                            background-color: #fff;
+                            background-color: $colorSecundario;
                             
                             a{
                                 font-weight: 400;
-                                color: black;
-                                background-color: #fff;
+                                color: $colorLetra1;
+                                background-color: $colorSecundario;
                                 padding: 0;
                             }
                         }
                     }
                 }
             }
+
             a.boton{
                 @include flexRule(null,center,center);
-                width: 120px;
-                height: 60px;
+                @include wH(120px, 60px);
                 font-size: 1.4rem;
                 text-decoration: none;
                 border: 1px solid $colorTerciario;
@@ -162,15 +160,14 @@ header:hover{
 //TABLET
 @media (min-width: $breakpoint-tablet) {
     .nav-container {
-        width: 100%;
-        height: 80px;
+        @include wH(100%, 80px);
     
         //LOGO MLA
         .logo-container {       
             width: 80%;
+            
             img {
-                width: 200px;
-                height: 55px;
+                @include wH(200px, 55px);
                 margin-left: 150px;
             }
         }
@@ -178,10 +175,11 @@ header:hover{
         //MENU DESPLEGABLE
         &__menu {
             margin-left: 60px;
+            
             img {
-                width: 30px;
-                height: 30px;
+                @include wH(30px, 30px);
             }
+
             .nav-movil{
                 top: 80px;
                 right: -700px;
@@ -205,8 +203,7 @@ header:hover{
             width: 30%;
             
             img {
-                width: 280px;
-                height: 70px;
+                @include wH(280px, 70px);
                 margin-left: 32px;
                 margin-top: 10px;
             }
@@ -219,8 +216,7 @@ header:hover{
      
         //BARRA DE NAVEGACIÓN
         &__navbar {
-            display: flex;
-            justify-content: flex-end;
+            @include flexRule(null,center,null);
             margin: 0;
             width: 55%;
     
@@ -249,13 +245,12 @@ header:hover{
                     /*MENU DESPLEGABLE*/
                     /*NOSOTROS*/
                     .toggle__nosotros{
-                        width: 300px;
-                        height: 200px;
+                        @include wH(300px, 200px);
                         @include flexRule(column);
                         gap: 0;
-                        background: #fff;
+                        background: $colorSecundario;
                         border-radius: 8px;
-                        box-shadow: 4px 8px 8px 4px rgba(0,0,0,0.5);
+                        @include boxShadow();
                         position: absolute;
                         visibility: hidden;
                         opacity: 0;
@@ -269,7 +264,7 @@ header:hover{
                             padding: 0 15px;
                             
                             &:hover{
-                                background-color: #043877;
+                                background-color: $colorCuaternario;
                                 transform: scale(1.1);
                             }
                             
@@ -281,7 +276,7 @@ header:hover{
                                 
                                 &:hover{
                                     transform: none;
-                                    color: white;
+                                    color: $colorLetra2;
                                 }
                             
                             }
@@ -290,13 +285,12 @@ header:hover{
 
                     /*SERVICIOS*/
                     .toggle__servicios{
-                        width: 300px;
-                        height: 300px;
+                        @include wH(300px, 300px);
                         @include flexRule(column);
                         gap: 0;
-                        background: #fff;
+                        background: $colorSecundario;
                         border-radius: 8px;
-                        box-shadow: 4px 8px 8px 4px rgba(0,0,0,0.5);
+                        @include boxShadow();
                         position: absolute;
                         visibility: hidden;
                         opacity: 0;
@@ -313,17 +307,16 @@ header:hover{
                                 border: none !important;
                                 transition: none;
                                 height: 100%;
-                                display: flex;
-                                align-items: center;
+                                @include flexRule(null,null,center);
                                 
                                 &:hover{
                                     transform: none;
-                                    color: white;
+                                    color: $colorLetra2;
                                 }
                             }
                             
                             &:hover{
-                                background-color: #043877;
+                                background-color: $colorCuaternario;
                                 transform: scale(1.1);
                             }
                         }
@@ -331,13 +324,12 @@ header:hover{
 
                     /*NOVEDADES*/
                     .toggle__novedades{
-                        width: 300px;
-                        height: 100px;
+                        @include wH(300px, 100px);
                         @include flexRule(column);
                         gap: 0;
-                        background: #fff;
+                        background: $colorSecundario;
                         border-radius: 8px;
-                        box-shadow: 4px 8px 8px 4px rgba(0,0,0,0.5);
+                        @include boxShadow();
                         position: absolute;
                         visibility: hidden;
                         opacity: 0;
@@ -354,17 +346,16 @@ header:hover{
                                 border: none !important;
                                 transition: none;
                                 height: 100%;
-                                display: flex;
-                                align-items: center;
+                                @include flexRule(null,null,center);
                                 
                                 &:hover{
                                     transform: none;
-                                    color: white;
+                                    color: $colorLetra2;
                                 }
                             }
 
                             &:hover{
-                                background-color: #043877;
+                                background-color: $colorCuaternario;
                                 transform: scale(1.1);
                             }
                         }
@@ -389,15 +380,25 @@ header:hover{
      
          //BOTON DE CAMBIO DE IDIOMAS
         .boton{
-            width: 120px;
-            height: 30px;
+            @include wH(120px,30px);
             font-size: 1.4rem;
             text-decoration: none;
             border: 1px solid $colorTerciario;
             font-weight: 500;
             color: $colorTerciario;
             margin-left: 16px;
-            @include flexRule(null,center,center)
+            @include flexRule(null,center,center);
+            transition: all 300ms ease;
+
+            &:hover{
+                background: $colorCuaternario;
+                border: none;
+                color: $colorLetra2;
+                font-weight: bold;
+                transform: scale(1.1);
+                border-radius: 4px;
+                @include boxShadow();
+            }
         }
     }
 }
@@ -420,9 +421,8 @@ header:hover{
             width: 30%;
             
             img {
-                width: 100%;
+                @include wH(100%, 70px);
                 max-width: 280px;
-                height: 70px;
                 margin: 0;
                 margin-top: 10px;
             }
@@ -441,8 +441,7 @@ header:hover{
         }
     
         .boton{
-            width: 130px;
-            height: 40px;
+            @include wH(130px, 40px);
         }
     }
 }

@@ -21,8 +21,7 @@
             @include flexRule(column,null,center);
 
             picture img {
-                width: 200px;
-                height: 53px;
+                @include wH(200px, 53px);
             }
             
             .derechosAutor{
@@ -32,8 +31,7 @@
             }
 
             .redes1{
-                display: none;
-                
+                display: none; 
             }
         }
 
@@ -76,8 +74,7 @@
 //LAPTOP
 @media(min-width: $breakpoint-laptop){
     .footer-container {
-        height: auto;
-        width: 100%;
+        @include wH(100%, auto);
 
         .footer-movil__container{
             width: 100%;
@@ -114,6 +111,7 @@
                     transition: all 300ms ease;
                 }
             }
+
             .contacto{
                 order: 1;
                 text-align: left;
@@ -121,6 +119,7 @@
 
                 p{
                     font-size: 1.4rem;
+                    
                     span{
                         font-weight: 300;
                     }

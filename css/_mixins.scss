@@ -1,0 +1,18 @@
+//MIXINS
+@mixin flexRule($direction:null,$content:null,$align:null){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@mixin boxShadow(){
+    box-shadow: 8px 5px 14px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 8px 8px 14px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
+}
+
+@mixin wH($width:null,$height:null){
+    width: $width;
+    height: $height;
+}

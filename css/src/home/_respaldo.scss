@@ -1,7 +1,6 @@
 .main-container__respaldo {
-    width: 100%;
-    height: auto;
-    background-color: $colorPrincipal;
+    @include wH(100%, auto);
+    background-color: $colorSecundario;
     padding: 40px 24px;
     
     //MIXIN ITEMS DE RESPALDO
@@ -13,8 +12,7 @@
         @include flexRule(column,null,center);
 
         img{
-            width: 219px;
-            height: 125px;
+            @include wH(219px, 125px);
             margin-bottom: 20px;
             border-radius: 4px;
         }
@@ -39,7 +37,7 @@
 @media(min-width: $breakpoint-tablet){
     .main-container__respaldo {
         height: 1000px;
-        padding: 0 64px;
+        padding: 0 80px;
         padding-top: 64px;
     }
 }
@@ -65,6 +63,7 @@
                 &:hover{
                     transform: scale(1.05);
                 }
+                
                 h2 {
                     padding: 0;  
                 }

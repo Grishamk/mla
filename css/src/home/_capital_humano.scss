@@ -20,14 +20,13 @@
         @include flexRule(column,null,center);
 
         .ocultoActivo{
+            @include wH(40px, 40px);
             background: none;
             border: none;
             background-image: url(../../../icon/flecha-blanca.svg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            width: 40px;
-            height: 40px;
             margin-bottom: 40px;
 
             &:hover{
@@ -36,14 +35,13 @@
         }
 
         .ocultoActivo2{
+            @include wH(40px, 40px);
             background: none;
             border: none;
             background-image: url(../../../icon/flecha-arriba-b.svg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            width: 40px;
-            height: 40px;
             margin-bottom: 40px;
 
             &:hover{
@@ -69,12 +67,9 @@
             margin-bottom: 24px;
             
             img {
-                width: 160px;
-                height: 240px;
+                @include wH(160px, 240px);
                 border-radius: 4px;
-                box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
-                -webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
-                -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.54);
+                @include boxShadow();
                 margin-bottom: 12px;
             }
 
@@ -93,9 +88,8 @@
         
         //BOTON DE CAPITAL HUMANO
         a {
-            width: 164px;
-            height: 40px;
-            border: 1px solid #089de8;
+            @include wH(164px, 40px);
+            border: 1px solid $colorCuaternario;
             text-decoration: none;
             color: $colorLetra2;
             font-weight: 300;
@@ -112,9 +106,11 @@
         
 
         .capital-humano__container{
+            
             .oculto{
                 display: none;
             }
+
             p {
                 margin-bottom: 48px;
             }
@@ -134,8 +130,7 @@
             
             //Boton de la sección agrandado para mejor visibilidad en tablet
             a {
-                width: 200px;
-                height: 50px;
+                @include wH(200px, 50px);
                 font-size: 1.6rem;
                 margin-top: 48px;
             }
@@ -159,14 +154,14 @@
             }
 
             .ocultoActivo{
-                width: 40px;
-                height: 40px;
+                @include wH(40px, 40px);
                 margin-bottom: 40px;
                 transition: all 300ms ease;
 
                 &:hover{
                     cursor: pointer;
                 }
+
                 &:active{
                     transform: scale(0.9);
                     transition: transform 300ms ease;
@@ -202,14 +197,12 @@
 
             //BOTON AL FINAL DE LA SECCION | Tamaño aumentado un poco.
             a{
-                width: 180px;
-                height: 50px;
+                @include wH(180px, 50px);
                 font-size: 1.6rem;
                 transition: all 300ms ease;
 
                 &:hover{
-                    background-color: white;
-                    color: black;
+                    background-color: $colorCuaternario;
                     font-weight: bold;
                 }
             }

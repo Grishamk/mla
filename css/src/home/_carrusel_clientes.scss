@@ -1,6 +1,5 @@
 .main-container__clientes {
-  height: 400px;
-  width: 100%;
+  @include wH(100%, 400px);
   @include flexRule(column,center,center);
 
   
@@ -10,10 +9,9 @@
   }
 
   .carousel {
+    @include wH(100%, auto);
     position: relative;
     overflow: hidden;
-    width: 100%;
-    height: auto;
     max-width: 1000px; // Establece un ancho máximo para el carrusel
   
     .carousel-container {
@@ -21,9 +19,8 @@
       transition: transform 0.5s ease;
   
       img {
-        width: 1000px;
+        @include wH(1000px, 162.5);
         max-width: 1200px; // Asegúrate de establecer el ancho exacto de la imagen
-        height: 162.5; // Asegúrate de establecer la altura exacta de la imagen
         object-fit: cover;
       }
     }

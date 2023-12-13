@@ -2,14 +2,11 @@
     position: fixed;
     bottom: 100px;
     right: 25px;
-    background-color: #043875;
-    color: #fff;
-    width: 60px;
-    height: 60px;
+    background-color: $colorTerciario;
+    color: $colorLetra2;
+    @include wH(60px, 60px);
+    @include flexRule(null,center,center);
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     z-index: 99;
     text-decoration: none;
@@ -23,36 +20,29 @@
 
 .main-container__carrusel{
       height: 70vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexRule(null,center,center);
       background: #000116;
 
     .slider{
         position: relative;
         background: #000116;
-        width: 100vw;
-        height: 70vh;
-        //margin: 20px;
+        @include wH(100vw, 70vh);
         overflow: hidden;
-        //border-radius: 10px;
 
         .slide{
+            @include wH(100%, 100%);
             position: absolute;
-            width: 100%;
-            height: 100%;
             clip-path: circle(0% at 0 50%);
 
             img{
+                @include wH(100%, 100%);
                 position: absolute;
-                width: 100%;
-                height: 100%;
                 object-fit: cover;
             }
             
             .info{
                 position: absolute;
-                color: #222;
+                color: $colorLetra1;
                 background: rgba(255, 255, 255, 0.7);
                 width: 40%;
                 margin-top: 150px;
@@ -62,7 +52,7 @@
                 box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
 
                 animation: fadeInDownBig;
-                animation-duration: 2s;
+                animation-duration: 1s;
 
                 h2{
                     font-size: 2em;
@@ -79,15 +69,15 @@
                 a{
                     text-decoration: none;
                     width: 213px;
-                    color: white;
+                    color: $colorLetra2;
                     height: 41px;
                     padding: 10px;
-                    background-color: #043877;
+                    background-color: $colorTerciario;
                     font-size: 1.4rem;
                     transform: all 300ms ease;
 
                     &:hover{
-                        background-color: black;
+                        background-color: $colorCuaternario;
                         transform: all 300ms ease;
                         font-weight: 700;
                     }
@@ -119,7 +109,7 @@
         .prev-btn, .next-btn{
             z-index: 999;
             font-size: 2em;
-            color: #222;
+            color: $colorLetra1;
             background: rgba(255, 255, 255, 0.8);
             padding: 30px;
             cursor: pointer;
@@ -152,7 +142,7 @@
             }
 
             .slide-icon.active{
-                background: #4285F4;
+                background: $colorTerciario
             }
         }   
     }
