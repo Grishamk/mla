@@ -2905,8 +2905,8 @@ main .encabezado__auditoria p {
   }
   main .encabezado__auditoria picture img {
     width: 100vw;
-    display: block;
     height: 100%;
+    display: block;
   }
   main .encabezado__auditoria .encabezado__titular {
     width: 400px;
@@ -2936,7 +2936,7 @@ main .auditoria__servicios strong {
 main .auditoria__servicios h3 {
   font-size: 2.4rem;
   font-weight: 400;
-  color: #00066e;
+  color: #043877;
   margin: 38px 0 24px;
 }
 main .auditoria__servicios p {
@@ -2964,7 +2964,7 @@ main .auditoria__servicios ul li {
   }
 }
 main .mainStaffEspecializado {
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
   padding: 60px 0;
   padding-bottom: 40px;
   height: auto;
@@ -2973,7 +2973,7 @@ main .mainStaffEspecializado {
 main .mainStaffEspecializado h2 {
   font-size: 2.4rem;
   font-weight: 500;
-  color: #00066e;
+  color: #043877;
   margin-bottom: 36px;
   text-align: center;
 }
@@ -3178,7 +3178,7 @@ main .auditoria__contacto a {
   color: white;
   font-size: 2.2rem;
   font-weight: 600;
-  border: 1px solid #fff;
+  border: 1px solid white;
   width: 240px;
   height: 48px;
   vertical-align: middle;
@@ -3308,7 +3308,7 @@ main .asesoria__servicios strong {
 main .asesoria__servicios h3 {
   font-size: 2.4rem;
   font-weight: 400;
-  color: #00066e;
+  color: #043877;
   margin: 38px 0 24px;
 }
 main .asesoria__servicios .espacio {
@@ -3417,8 +3417,8 @@ main .encabezado__impuesto p {
   }
   main .encabezado__impuesto picture img {
     width: 100vw;
-    display: block;
     height: 100%;
+    display: block;
   }
   main .encabezado__impuesto .encabezado__titular {
     width: 400px;
@@ -3449,7 +3449,7 @@ main .imp__servicios strong {
 main .imp__servicios h3 {
   font-size: 2.4rem;
   font-weight: 400;
-  color: #00066e;
+  color: #043877;
   margin: 38px 0 24px;
 }
 main .imp__servicios p {
@@ -3587,7 +3587,7 @@ main .consultoria__servicios strong {
 main .consultoria__servicios h3 {
   font-size: 2.4rem;
   font-weight: 400;
-  color: #00066e;
+  color: #043877;
   margin: 38px 0 24px;
 }
 main .consultoria__servicios p {
@@ -3620,7 +3620,7 @@ main .encabezado {
 }
 main .encabezado .desarrollo__encabezado div {
   width: 100%;
-  height: 100px;
+  height: 100%;
   background-image: url(../img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
@@ -3733,7 +3733,7 @@ main .desarrollo__servicios strong {
 main .desarrollo__servicios h3 {
   font-size: 2.4rem;
   font-weight: 400;
-  color: #00066e;
+  color: #043877;
   margin: 38px 0 24px;
 }
 main .desarrollo__servicios p {
