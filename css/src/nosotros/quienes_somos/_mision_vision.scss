@@ -1,5 +1,5 @@
 .nosotrosMV {
-    background-color: #089de8;
+    background-color: $colorCuaternario;
     color: $colorLetra2;
     padding: 48px 0 32px;
     @include flexRule(column,null,center);

@@ -10,10 +10,9 @@
     &__item-container{
 
         .registro__item {
-            width: 290px;
-            height: 168px;
+            @include wH(290px,168px);
             padding: 20px;
-            border: solid 1px #eeeeee;
+            border: solid 1px $colorSecundario;
             text-align: center;
             margin-bottom: 60px;
             @include flexRule(null,null,center);
@@ -38,10 +37,9 @@
             gap: 40px;
 
             .registro__item {
-                width: 290px;
-                height: 168px;
+                @include wH(290px,168px);
                 padding: 20px;
-                border: solid 1px #eeeeee;
+                border: solid 1px $colorSecundario;
                 text-align: center;
                 margin-bottom: 48px;
                 @include flexRule(null,null,center);

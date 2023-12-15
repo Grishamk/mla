@@ -3,20 +3,23 @@
     article {
         //padding: 40px 28px;
         height: 300px;
+
         h2{
             font-size: 2.4rem;
             font-weight: 400;
             margin-bottom: 24px;
         }
+
         ul{
-            display: flex;
-            flex-direction: column;
+            @include flexRule(column);
             gap: 16px;
+
             li{
                 list-style: none;
+                
                 a{
                     text-decoration: none;
-                    color: #007bff;
+                    color: $colorCuaternario;
                 }
             }
         }
@@ -25,23 +28,26 @@
 
 @media(min-width: $breakpoint-tablet){  
     .trabajaN__enfoque{
+        
         article{
             padding: 40px 28px;
             height: 300px;
+            
             h2{
                 font-size: 2.4rem;
                 font-weight: 400;
                 margin-bottom: 24px;
             }
+            
             ul{
-                display: flex;
-                flex-direction: column;
+                @include flexRule(column);
                 gap: 16px;
+                
                 li{
                     list-style: none;
                     a{
                         text-decoration: none;
-                        color: #007bff;
+                        color: $colorCuaternario;
                     }
                 }
             }
@@ -57,26 +63,28 @@
         article{
             padding: 0px 100px;
             height: 300px;
-            display: flex;
-            flex-direction: column;
+            @include flexRule(column);
             margin-left: 300px;
             margin-top: 25px;
             //justify-content: center;
+            
             h2{
                 font-size: 3rem;
                 font-weight: 400;
                 margin-bottom: 24px;
             }
+            
             ul{
-                display: flex;
-                flex-direction: column;
+                @include flexRule(column);
                 gap: 16px;
+                
                 li{
                     list-style: none;
+                   
                     a{
                         text-decoration: none;
                         font-size: 1.8rem;
-                        color: #007bff;
+                        color: $colorCuaternario;
                     }
                 }
             }

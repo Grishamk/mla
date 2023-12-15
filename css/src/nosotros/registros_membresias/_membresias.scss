@@ -3,6 +3,7 @@
     @include flexRule(column,null,center);
     animation: fadeInLeft;
     animation-duration: 1s;
+    
     &__titular {
         font-size: 3.6rem;
         font-weight: 300;
@@ -20,8 +21,7 @@
             picture{
                 
                 img {
-                    width: 282px;
-                    height: 152px;
+                    @include wH(282px,152px);
                     border: solid 1px #eeeeee;
                     margin-bottom: 16px;
                 }
@@ -81,8 +81,7 @@
                 picture{
                     
                     img {
-                        width: 250px;
-                        height: 150px;
+                        @include wH(250px,150px);
                     }
                 }
         
@@ -109,8 +108,7 @@
                 
                 picture{
                     img {
-                        width: 250px;
-                        height: 150px;
+                        @include wH(250px,150px);
                     }
                 }
             }

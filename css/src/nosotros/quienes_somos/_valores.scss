@@ -1,7 +1,7 @@
 .nosotrosValores {
     width: 100%;
     padding: 48px 0;
-    background-color: white;
+    background-color: $colorSecundario;
     @include flexRule(null,center,null);
 
     .nosotrosValores__container{
@@ -22,8 +22,7 @@
            
             picture{
                 img{
-                    width: 260px;
-                    height: 166px;
+                    @include wH(260px, 166px);
                 }
             }
             
@@ -69,14 +68,12 @@
                 gap: 32px;
 
                 .nosotrosValores__item{
-                    width: 200px;
-                    height: 350px;
+                    @include wH(200px,350px);
                     
                     picture{
                         
                         img{
-                            width: 200px;
-                            height: 128px; 
+                            @include wH(200px,128px); 
                         }
                     }
                 }
@@ -96,14 +93,12 @@
                 gap: 40px;
                 
                 .nosotrosValores__item{
-                    width: 160px;
-                    height: 400px;
+                    @include wH(160px,400px);
                     
                     picture{
                         
                         img{
-                            width: 168px;
-                            height: 108px; 
+                            @include wH(168px,108px);
                         }
                     }
 
@@ -111,9 +106,7 @@
                         height: 90px;
                         padding-top: 24px;
                         margin-bottom: 0;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        @include flexRule(null,center,center);
                     }
                 }
             }
@@ -133,14 +126,12 @@
                 max-width: 1400px;
                 
                 .nosotrosValores__item{
-                    width: 220px;
-                    height: 350px;
+                    @include wH(220px,350px);
                     
                     picture{
                         
                         img{
-                            width: 168px;
-                            height: 108px; 
+                            @include wH(168px,108px);
                         }
                     }
                 }

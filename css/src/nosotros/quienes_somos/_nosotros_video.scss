@@ -18,14 +18,13 @@
             font-size: 2rem;
             padding: 0 80px;
             font-weight: 700;
-            color: #043877;
+            color: $colorTerciario;
         }
     }
 
     .sobreNosotrosVideo__video {
-        width: 95%;
+        @include wH(95%,200px);
         display: block;
-        height: 200px;
         @include flexRule(null,center,center);
         
         .video-iframe {
@@ -82,12 +81,10 @@
         }
 
         .sobreNosotrosVideo__video {
-            width: 1000px;
-            height: 600px;
+            @include wH(1000px,600px);
             
             .video-iframe {
-                width: 100%;
-                height: 100%;
+                @include wH(100%,100%);
                 padding: 0;
                 margin: 0;
             }

@@ -2,26 +2,26 @@
 .capital__staff {
     padding: 48px 28px 0px;
     background-color: $colorSecundario;
+    
     .staff__title {
         font-size: 3.2rem;
         height: 74px;
         text-align: center;
         font-weight: 300;
     }
+
     .staff__text{
-        width: 290px;
-        height: 46px;
+        @include wH(290px,46px);
         margin: 0 auto;
-        border-bottom: 1px solid #dee2e6;
-        display: flex;
-        justify-content: center;
+        border-bottom: 1px solid $colorSecundario;
+        @include flexRule(null,center);
 
         p{
             text-align: center;
             width: 50px;
             padding: 14px 10px;
-            color: #007bff;
-            border-bottom: 1px solid #007bff;
+            color: $colorCuaternario;
+            border-bottom: 1px solid $colorCuaternario;
         }
     }
 
@@ -30,16 +30,18 @@
 
         .staff__raymi{
             margin-bottom: 52px;
-            border-bottom: 1px solid #dee2e6;
+            border-bottom: 1px solid $colorSecundario;
+            
             picture{
                 width: 100%;
-                display: flex;
-                justify-content: center;
+                @include flexRule(null,center);
+                
                 img{
                     margin-bottom: 16px;
                     border-radius: 8px;
                 }
             }
+
             div{
                 h2 {
                     font-size: 1.6rem;
@@ -47,44 +49,51 @@
                     margin-bottom: 18px;
                     text-align: center;
                 }
+
                 p {
                     margin-bottom: 16px;
                     line-height: 2.8rem;
                 }
+
                 ul {
                     li{
                         margin-left: 20px;
                         margin-bottom: 16px;
                         line-height: 2.4rem;
                     }
+
                     p{
                         line-height: 2.8rem;
                     }
                 }
+
                 .separate {
                     margin-bottom: 52px;
                 }
+
                 .sinmargen{
                     margin-bottom: 0;
                 }
             }
            
         }
+
         .staff__item{
             margin-bottom: 52px;
-            border-bottom: 1px solid #dee2e6;
+            border-bottom: 1px solid $colorSecundario;
+            
             picture{
                 width: 100%;
-                display: flex;
-                justify-content: center;
+                @include flexRule(null,center);
+                
                 img{
+                    @include wH(160px,240px);
                     margin-bottom: 16px;
-                    width: 160px;
-                    height: 240px;
                     border-radius: 8px;
                     object-fit: cover;
                 }
             }
+
             div{
                 h2 {
                     font-size: 1.6rem;
@@ -92,16 +101,19 @@
                     margin-bottom: 18px;
                     text-align: center;
                 }
+                
                 p {
                     margin-bottom: 16px;
                     line-height: 2.4rem;
                 }
+                
                 ul {
                     li{
                         margin-left: 20px;
                         margin-bottom: 16px;
                     }
                 }
+                
                 .separate {
                     margin-bottom: 52px;
                 }
@@ -114,26 +126,26 @@
     .capital__staff {
         padding: 48px 88px 0px;
         background-color: $colorSecundario;
+        
         .staff__title {
             font-size: 3.2rem;
             height: 74px;
             text-align: center;
             font-weight: 300;
         }
+
         .staff__text{
-            width: 290px;
-            height: 46px;
+            @include wH(290px,46px);
             margin: 0 auto;
-            border-bottom: 1px solid #dee2e6;
-            display: flex;
-            justify-content: center;
+            border-bottom: 1px solid $colorSecundario;
+            @include flexRule(null,center);
     
             p{
                 text-align: center;
                 width: 50px;
                 padding: 14px 10px;
-                color: #007bff;
-                border-bottom: 1px solid #007bff;
+                color: $colorCuaternario;
+                border-bottom: 1px solid $colorCuaternario;
             }
         }
     
@@ -142,16 +154,18 @@
     
             .staff__raymi{
                 margin-bottom: 52px;
-                border-bottom: 1px solid #dee2e6;
+                border-bottom: 1px solid $colorSecundario;
+                
                 picture{
                     width: 100%;
-                    display: flex;
-                    justify-content: center;
+                    @include flexRule(null,center);
+
                     img{
                         margin-bottom: 16px;
                         border-radius: 8px;
                     }
                 }
+
                 div{
                     h2 {
                         font-size: 2rem;
@@ -159,39 +173,45 @@
                         margin-bottom: 18px;
                         text-align: center;
                     }
+
                     p {
                         margin-bottom: 16px;
                     }
+
                     ul {
                         li{
                             margin-left: 20px;
                             margin-bottom: 16px;
                         }
                     }
+
                     .separate {
                         margin-bottom: 52px;
                     }
+
                     .sinmargen{
                         margin-bottom: 0;
                     }
                 }
                
             }
+
             .staff__item{
                 margin-bottom: 52px;
-                border-bottom: 1px solid #dee2e6;
+                border-bottom: 1px solid $colorSecundario;
+                
                 picture{
                     width: 100%;
-                    display: flex;
-                    justify-content: center;
+                    @include flexRule(null,center);
+                    
                     img{
+                        @include wH(160px,240px);
                         margin-bottom: 16px;
-                        width: 160px;
-                        height: 240px;
                         border-radius: 8px;
                         object-fit: cover;
                     }
                 }
+
                 div{
                     h2 {
                         font-size: 2rem;
@@ -199,15 +219,18 @@
                         margin-bottom: 18px;
                         text-align: center;
                     }
+
                     p {
                         margin-bottom: 16px;
                     }
+
                     ul {
                         li{
                             margin-left: 20px;
                             margin-bottom: 16px;
                         }
                     }
+
                     .separate {
                         margin-bottom: 52px;
                     }
@@ -221,35 +244,39 @@
 @media(min-width: $breakpoint-laptop){
     .capital__staff {
         padding: 48px 24px 0px;
+        
         .staff__container{
             .staff__raymi{
                 width: 90%;
                 margin-bottom: 52px;
-                border-bottom: 1px solid #dee2e6;
+                border-bottom: 1px solid $colorSecundario;
                 display: flex;
                 gap: 48px;
                 margin: 0 auto;
                 margin-bottom: 52px;
+                
                 picture{
-                    width: 200px;
-                    height: 100%;
+                    @include wH(200px,100%);
+                    
                     img{
                         margin-bottom: 16px;
                         border-radius: 8px;
                     }
                 }
+
                 div{
                     h2 {
                         font-size: 2.1rem;
                         font-weight: 700;
                         margin-bottom: 18px;
-                        text-align: start;
-                        
+                        text-align: start;   
                     }
+
                     p {
                         margin-bottom: 16px;
                         font-size: 1.6rem;
                     }
+
                     ul {
                         li{
                             margin-left: 20px;
@@ -257,34 +284,37 @@
                             font-size: 1.6rem;
                         }
                     }
+
                     .separate {
                         margin-bottom: 50px;
                     }
+
                     .sinmargen{
                         margin-bottom: 0;
                     }
                 }
-               
             }
+
             .staff__item{
                 width: 90%;
-                border-bottom: 1px solid #dee2e6;
+                border-bottom: 1px solid $colorSecundario;
                 display: flex;
                 gap: 48px;
                 margin: 0 auto;
                 margin-bottom: 52px;
+               
                 picture{
                     width: 200px;
-                    display: flex;
-                    justify-content: center;
+                    @include flexRule(null,center);
+                    
                     img{
+                        @include wH(160px,240px);
                         margin-bottom: 16px;
-                        width: 160px;
-                        height: 240px;
                         border-radius: 8px;
                         object-fit: cover;
                     }
                 }
+
                 div{
                     h2 {
                         font-size: 2.1rem;
@@ -292,15 +322,18 @@
                         margin-bottom: 18px;
                         text-align: start;
                     }
+
                     p {
                         margin-bottom: 16px;
                     }
+
                     ul {
                         li{
                             margin-left: 20px;
                             margin-bottom: 16px;
                         }
                     }
+
                     .separate {
                         margin-bottom: 52px;
                     }
@@ -317,19 +350,21 @@
             .staff__raymi{
                 width: 70%;
                 margin-bottom: 52px;
-                border-bottom: 1px solid #dee2e6;
+                border-bottom: 1px solid $colorSecundario;
                 display: flex;
                 gap: 48px;
                 margin: 0 auto;
                 margin-bottom: 52px;
+                
                 picture{
-                    width: 200px;
-                    height: 100%;
+                    @include wH(200px,100%);
+                    
                     img{
                         margin-bottom: 16px;
                         border-radius: 8px;
                     }
                 }
+
                 div{
                     h2 {
                         font-size: 2.1rem;
@@ -338,10 +373,12 @@
                         text-align: start;
                         
                     }
+                   
                     p {
                         margin-bottom: 16px;
                         font-size: 1.6rem;
                     }
+
                     ul {
                         li{
                             margin-left: 20px;
@@ -349,34 +386,37 @@
                             font-size: 1.6rem;
                         }
                     }
+
                     .separate {
                         margin-bottom: 50px;
                     }
+
                     .sinmargen{
                         margin-bottom: 0;
                     }
                 }
-               
             }
+
             .staff__item{
                 width: 70%;
-                border-bottom: 1px solid #dee2e6;
+                border-bottom: 1px solid $colorSecundario;
                 display: flex;
                 gap: 48px;
                 margin: 0 auto;
                 margin-bottom: 52px;
+                
                 picture{
                     width: 200px;
-                    display: flex;
-                    justify-content: center;
+                    @include flexRule(null,center);
+                    
                     img{
+                        @include wH(160px,240px);
                         margin-bottom: 16px;
-                        width: 160px;
-                        height: 240px;
                         border-radius: 8px;
                         object-fit: cover;
                     }
                 }
+
                 div{
                     h2 {
                         font-size: 2.1rem;
@@ -384,15 +424,18 @@
                         margin-bottom: 18px;
                         text-align: start;
                     }
+
                     p {
                         margin-bottom: 16px;
                     }
+
                     ul {
                         li{
                             margin-left: 20px;
                             margin-bottom: 16px;
                         }
                     }
+                    
                     .separate {
                         margin-bottom: 52px;
                     }
