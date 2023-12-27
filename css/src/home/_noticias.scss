@@ -1,7 +1,7 @@
 .main-container__noticias {
     @include wH(100%, null);
     background-color: $colorSecundario;
-    color: $colorSecundario;
+    color: $colorLetra2;
     background-color: $colorPrincipal;
     @include flexRule(column,null,center);
     padding: 40px 24px;
