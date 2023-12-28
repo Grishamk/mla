@@ -6,3 +6,4 @@ img/registro
 img/SIN TRABAJAR
 *:Zone.Identifier
 *.config
+./prepros.config

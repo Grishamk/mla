@@ -1272,6 +1272,53 @@ header:hover {
     font-weight: bold;
   }
 }
+.main-container .main-container__noticias {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 40px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F7F7F7;
+}
+.main-container .main-container__noticias h1 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+.main-container .main-container__noticias .noticia__item {
+  margin-bottom: 32px;
+}
+.main-container .main-container__noticias .noticia__item picture {
+  width: 100%;
+}
+.main-container .main-container__noticias .noticia__item picture img {
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+.main-container .main-container__noticias .noticia__item .noticia__contenido h2 {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+.main-container .main-container__noticias .noticia__item .noticia__contenido .fecha {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+.main-container .main-container__noticias .button a {
+  color: #043877;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 25px;
+}
+.main-container .main-container__noticias .button a span {
+  font-size: 2.5rem;
+}
 .main-container .main-container__contacto {
   width: 100%;
   background-color: #F7F7F7;

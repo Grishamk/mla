@@ -1,2 +1,45 @@
 .main-container__noticias {
+    @include wH(100%,auto);
+    margin: 0 auto;
+    padding: 40px 24px;
+    @include flexRule(column);
+    background-color: $colorPrincipal;
+    h1{
+        font-size: 2.4rem;
+        margin-bottom: 40px;
+    }
+    .noticia__item{
+        margin-bottom: 32px;
+        picture{
+            width: 100%;
+            img{
+                width: 100%;
+                margin-bottom: 12px;
+                border-radius: 8px;
+            }
+        }
+        .noticia__contenido{
+            h2{
+                font-size: 1.6rem;
+                margin-bottom: 4px;
+            }
+            .fecha{
+                font-size: 1.4rem;
+                margin-bottom: 12px;
+            }
+        }
+    }
+    .button{
+        a{
+            color: $colorTerciario;
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            line-height: 25px;
+
+            span{
+                font-size: 2.5rem;
+            }
+        }
+    }
 }

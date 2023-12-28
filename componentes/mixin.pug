@@ -36,17 +36,13 @@ mixin contactoG(icono,alterno,titulo,contenido)
             p=contenido
 
 mixin noticia(imagen,alterno,titulo,fecha,texto,enlace,clase)
-    article.noticia__item(class=clase)
+    article.noticia__item.fade-in
         picture
             img(src="./img/avisos/"+imagen, alt=alterno)
         .noticia__contenido
             h2=titulo
             p.fecha=fecha
             p=texto
-        //.noticia__enlace
-            a(href=enlace) Leer más
-                span
-                    img(src="./icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha") 
 
 mixin noticiaEn(imagen,alterno,titulo,fecha,texto,enlace,clase)
     article.noticia__item(class=clase)
@@ -56,10 +52,6 @@ mixin noticiaEn(imagen,alterno,titulo,fecha,texto,enlace,clase)
             h2=titulo
             p.fecha=fecha
             p=texto
-        //.noticia__enlace
-            a(href=enlace) Leer más
-                span
-                    img(src="./icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha") 
 
 
 
