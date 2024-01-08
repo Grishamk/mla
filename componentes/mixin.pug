@@ -40,9 +40,11 @@ mixin noticia(imagen,alterno,titulo,fecha,texto,enlace,clase)
         picture
             img(src="./img/avisos/"+imagen, alt=alterno)
         .noticia__contenido
-            h2=titulo
-            p.fecha=fecha
-            p=texto
+            .titulo
+                h2=titulo
+                p.fecha=fecha
+            .texto
+                p=texto
         //.noticia__enlace
             a(href=enlace) Leer más
                 span
