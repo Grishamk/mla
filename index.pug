@@ -194,27 +194,6 @@ block contenido
                         img(src="./img/servicios/foto-protec.webp", alt="")
                         div
                             p Protección patrimonial
-                 
-            //NOTICIAS
-            .main-container__noticias.fade-in
-                h1 Ultimas noticias
-                section.noticia__principal
-                    +noticia("placa.webp","Reconocimiento a la excelencia","Reconocimiento por la Excelencia","12 de Diciembre","Mejía Lora & Asociados recibió placa de reconocimiento por Excelencia en el servicio y 20 años de Membresía en BKR Internacional.","<hr>")
-                hr
-                section.noticias__secundarias
-                    +noticia("presentacion.webp","Slide de Powerpoint","Tendencias de la Tributación en un mundo digitaliazdo","11 de Diciembre","Compartimos ponencia de la Lic. Sayka Mejía, como expositor invitado en el XIII Congreso Tributario IFA-RD 2023.","#")
-                    +noticia("reunionDeFirmas.webp","Reunion de BKR Internacional","Reunion Mundial de Firmas BKR International","17 de Noviembre","MLA-Mejia Lora & Asociados se une a BKR International en la Reunión Mundial Anual de este año en Washington DC, donde se lanzó Future Ready BKR International con una nueva estrategia, una nueva marca y un nuevo sitio web.","#")
-                    +noticia("ampliacion.webp","letras iguales al texto de abajo","Ampliacion en MLA","14 de Noviembre","En Mejía Lora y Asociados, damos la bienvenida a la Navidad con áreas renovadas y el orgullo de serviles siempre!. Celebramos la magia de la temporada inaugurando las nuevas áreas y reconociendo a parte de nuestro staff por sus 15 años en la empresa.","")
-                    +noticia("cenaClausura.webp","Foto del cierre de la cena","XXXV Conferencia Interamericana de conabilidad","13 de Noviembre","Celebrando el cierre con broche de oro en la Cena de Clausura de la XXXV Conferencia Interamericana de Contabilidad en Guatemala. ¡El equipo de MLA se siente muy agradecido de haber participado y compartir tan lindas experiencias!","")
-                
-                .button
-                    a(href="./html/noticias/noticias.html") 
-                        p Ver más 
-                            span »
-
-                 
-
-                    
 
             //SECCIÓN DE BKR
             section.main-container__respaldo.fade-in
@@ -223,6 +202,24 @@ block contenido
                     +respaldo("bkr.svg   ","Logo BKR International","Respaldo Internacional", "MLA es miembro de BKR International, una asociación de firmas auditoras y consultoras de negocios localizadas en 81 paises y más de 588 oficinas en el mundo.")
                     +respaldo("servicio.svg","Logo de personas Staff","Staff Especializado", "De forma permanente preparamos cursos y seminarios de actualización para nuestros profesionales, con el fin de prestar servicios eficientes con los más altos estándares de calidad.")
                     +respaldo("calidad.svg","Logo de una diana con un dardo","Expertos en su sector","Desarrollamos metodologías personalizadas que aseguran procesos eficientes para cada sector empresarial. Basados en la experiencia y el conocimiento adquirido con la participación en diversos proyectos.")
+
+            //NOTICIAS
+            .main-container__noticias.fade-in
+                h1 Ultimas noticias
+                .noticias__container
+                    section.noticia__principal
+                        +noticia("placa.webp","Reconocimiento a la excelencia","Reconocimiento por la Excelencia","12 de Diciembre","Mejía Lora & Asociados fue honrado con una placa de reconocimiento por la Excelencia en el Servicio y conmemoró 20 años de membresía en BKR Internacional. Este reconocimiento no solo resalta el compromiso de la firma con la prestación de un servicio excepcional, sino que también subraya su dedicación de larga data a la red global de BKR Internacional.","Recibir una placa de reconocimiento por la excelencia en el servicio y celebrar dos décadas de membresía en BKR Internacional es un testimonio del compromiso duradero y del desempeño excepcional de Mejía Lora & Asociados. Este hito marca un logro significativo en su trayectoria, reflejando la búsqueda continua de la excelencia en el campo de la contabilidad y su impacto perdurable en el escenario global.")
+                    hr
+                    section.noticias__secundarias
+                        +noticia("presentacion.webp","Slide de Powerpoint","Tendencias de la Tributación en un mundo digitaliazdo","11 de Diciembre","Compartimos ponencia de la Lic. Sayka Mejía, como expositor invitado en el XIII Congreso Tributario IFA-RD 2023.","")
+                        +noticia("reunionDeFirmas.webp","Reunion de BKR Internacional","Reunion Mundial de Firmas BKR International","17 de Noviembre","MLA-Mejia Lora & Asociados se une a BKR International en la Reunión Mundial Anual de este año en Washington DC, donde se lanzó Future Ready BKR International con una nueva estrategia, una nueva marca y un nuevo sitio web.","")
+                        +noticia("ampliacion.webp","letras iguales al texto de abajo","Ampliacion en MLA","14 de Noviembre","En Mejía Lora y Asociados, damos la bienvenida a la Navidad con áreas renovadas y el orgullo de serviles siempre!. Celebramos la magia de la temporada inaugurando las nuevas áreas y reconociendo a parte de nuestro staff por sus 15 años en la empresa.","")
+                        +noticia("cenaClausura.webp","Foto del cierre de la cena","XXXV Conferencia Interamericana de contabilidad","13 de Noviembre","Celebrando el cierre con broche de oro en la Cena de Clausura de la XXXV Conferencia Interamericana de Contabilidad en Guatemala. ¡El equipo de MLA se siente muy agradecido de haber participado y compartir tan lindas experiencias!","")
+                    
+                .button
+                    a(href="./html/noticias/noticias.html") 
+                        p Ver más 
+                             span »
 
             //CAPITAL HUMANO
             section.main-container__capital-humano.fade-in

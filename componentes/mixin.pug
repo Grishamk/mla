@@ -35,7 +35,7 @@ mixin contactoG(icono,alterno,titulo,contenido)
             p=titulo
             p=contenido
 
-mixin noticia(imagen,alterno,titulo,fecha,texto,enlace,clase)
+mixin noticia(imagen,alterno,titulo,fecha,texto,texto2,enlace,clase)
     article.noticia__item.fade-in
         picture
             img(src="./img/avisos/"+imagen, alt=alterno)
@@ -43,8 +43,9 @@ mixin noticia(imagen,alterno,titulo,fecha,texto,enlace,clase)
             h2=titulo
             p.fecha=fecha
             p=texto
+            p.segundoP=texto2
 
-mixin noticiaEn(imagen,alterno,titulo,fecha,texto,enlace,clase)
+mixin noticiaEn(imagen,alterno,titulo,fecha,texto,texto2,enlace,clase)
     article.noticia__item(class=clase)
         picture
             img(src="../img/avisos/"+imagen, alt=alterno)
@@ -52,6 +53,7 @@ mixin noticiaEn(imagen,alterno,titulo,fecha,texto,enlace,clase)
             h2=titulo
             p.fecha=fecha
             p=texto
+            p.segundoP=texto2
 
 
 
