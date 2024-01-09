@@ -36,32 +36,36 @@ mixin contactoG(icono,alterno,titulo,contenido)
             p=contenido
 
 mixin noticia(imagen,alterno,titulo,fecha,texto,enlace,clase)
-    article.noticia__item(class=clase)
-        picture
-            img(src="./img/avisos/"+imagen, alt=alterno)
-        .noticia__contenido
-            .titulo
-                h2=titulo
-                p.fecha=fecha
-            .texto
-                p=texto
-        //.noticia__enlace
-            a(href=enlace) Leer más
-                span
-                    img(src="./icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha") 
+    a(href="http://"+enlace target="_blank") 
+        article.noticia__item(class=clase href="google.com")
+            picture
+                img(src="./img/avisos/"+imagen, alt=alterno)
+            .noticia__contenido
+                .titulo
+                    h2=titulo
+                    p.fecha=fecha
+                .texto
+                    p=texto
+            //.noticia__enlace
+                a(href=enlace) Leer más
+                    span
+                        img(src="./icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha") 
 
 mixin noticiaEn(imagen,alterno,titulo,fecha,texto,enlace,clase)
-    article.noticia__item(class=clase)
-        picture
-            img(src="../img/avisos/"+imagen, alt=alterno)
-        .noticia__contenido
-            h2=titulo
-            p.fecha=fecha
-            p=texto
-        //.noticia__enlace
-            a(href=enlace) Leer más
-                span
-                    img(src="./icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha") 
+    a(href="http://"+enlace target="_blank")
+        article.noticia__item(class=clase)
+            picture
+                img(src="../img/avisos/"+imagen, alt=alterno)
+            .noticia__contenido
+                .titulo
+                    h2=titulo
+                    p.fecha=fecha
+                .texto
+                    p=texto
+            //.noticia__enlace
+                a(href=enlace) Leer más
+                    span
+                        img(src="./icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha") 
 
 
 
@@ -123,19 +127,20 @@ mixin staffElementEn(imagen,alterno,titulo,text1,text2,text3,clase)
             p=text2
             p(class=clase)=text3
 
-mixin aviso(imagen,alterno,titulo,fecha,texto,texto2,link)
-    article.news-noticias__item.fade-in
-        picture
-            img(src="../../img/avisos/"+imagen alt=alterno)
-        div
-            h2=titulo
-            p.fecha=fecha
-            p=texto
-            br
-            p=texto2
-            //a(href=link) Leer más
-                span
-                    img(src="../../icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha")//
+mixin aviso(imagen,alterno,titulo,fecha,texto,texto2,enlace)
+    a(href="http://"+enlace target="_blank") 
+        article.news-noticias__item.fade-in
+            picture
+                img(src="../../img/avisos/"+imagen alt=alterno)
+            div
+                h2=titulo
+                p.fecha=fecha
+                p=texto
+                br
+                p=texto2
+                //a(href=link) Leer más
+                    span
+                        img(src="../../icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha")//
 
 mixin avisoEn(imagen,alterno,titulo,fecha,texto,texto2,link)
     article.news-noticias__item.fade-in

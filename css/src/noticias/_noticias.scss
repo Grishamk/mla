@@ -22,40 +22,49 @@
     @include flexRule(column);
     gap: 36px;
     
-    .news-noticias__item{
-        @include flexRule(column);
-        
-        picture{
-            width: 300px;
-            margin: 0 auto;
+    a{
+        text-decoration: none;
+        color: black;
+        .news-noticias__item{
+            @include flexRule(column);
             
-            img{
-                width: 100%;
+            picture{
+                width: 300px;
+                margin: 0 auto;
+                
+                img{
+                    width: 100%;
+                }
+            }
+    
+            div{
+                padding: 0 8px;
+                @include flexRule(column);
+                //gap: 16px;
+                
+                h2{
+                    font-size: 2rem;
+    
+                }
+                .fecha{
+                    font-size: 1.4rem;
+                    padding-top: 4px;
+                    padding-bottom: 16px;
+                }
+                P{
+                    line-height: 2.1rem;
+                }
+    
+                a{
+                    text-decoration: none;
+                    color: $colorTerciario;
+                    font-weight: 700;
+                }
             }
         }
-
-        div{
-            padding: 0 8px;
-            @include flexRule(column);
-            //gap: 16px;
-            
+        &:hover{
             h2{
-                font-size: 2rem;
-
-            }
-            .fecha{
-                font-size: 1.4rem;
-                padding-top: 4px;
-                padding-bottom: 16px;
-            }
-            P{
-                line-height: 2.1rem;
-            }
-
-            a{
-                text-decoration: none;
                 color: $colorTerciario;
-                font-weight: 700;
             }
         }
     }
