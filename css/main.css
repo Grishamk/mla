@@ -1391,9 +1391,13 @@ header:hover {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.main-container .main-container__noticias .noticias__container a .noticia__item .noticia__contenido .titulo {
+  height: 100px;
+}
 .main-container .main-container__noticias .noticias__container a .noticia__item .noticia__contenido .titulo h2 {
   font-size: 1.8rem;
   margin-bottom: 4px;
+  font-weight: 500;
 }
 .main-container .main-container__noticias .noticias__container a .noticia__item .noticia__contenido .titulo .fecha {
   margin-bottom: 16px;

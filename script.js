@@ -211,7 +211,7 @@ let botonSocio = document.querySelector('.ocultoActivo');
 let botonSocio2 = document.querySelector('.ocultoActivo2');
 
 botonSocio.addEventListener('click', activeSocios);
-botonSocio2.addEventListener('click', activeSocios);
+//botonSocio2.addEventListener('click', activeSocios);
 
 function activeSocios() {
   const isOpen = socioItem.classList.contains('oculto');
