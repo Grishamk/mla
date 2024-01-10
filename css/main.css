@@ -1363,6 +1363,7 @@ header:hover {
   box-shadow: 8px 5px 14px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 8px 8px 14px 0px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.54);
+  color: white;
 }
 .main-container .main-container__noticias .noticias__container a .noticia__item picture {
   width: 100%;

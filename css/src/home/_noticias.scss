@@ -53,6 +53,7 @@
                 background-color: $colorTerciario;
                 @include wH(272px, 600px);
                 @include boxShadow();
+                color: $colorLetra2;
                 
                 picture{
                     width: 100%;
