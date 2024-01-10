@@ -48,6 +48,7 @@
         a{
             text-decoration: none;
             color: $colorLetra2;
+            
             .noticia__item{
                 background-color: $colorTerciario;
                 @include wH(272px, 600px);
