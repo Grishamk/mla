@@ -711,9 +711,13 @@ header:hover {
   .main-container .main-container__carrusel .main-container__carrusel {
     height: 40vh;
   }
+  .main-container .main-container__carrusel .slider .slide .info .especial {
+    height: 150px;
+  }
   .main-container .main-container__carrusel .slider .slide .info h2 {
     font-size: 1.6rem;
     line-height: 24px;
+    height: 48px;
   }
   .main-container .main-container__carrusel .slider .slide .info p {
     font-size: 1.2rem;

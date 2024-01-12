@@ -106,7 +106,7 @@ block contenido
                     .slide.active
                         img(src='./img/slide/slide1.webp' alt='')
                         .info.main
-                            h2 Firma de contadores públicos autorizados que ha estado operando desde el año 1983.
+                            h2.especial Firma de contadores públicos autorizados que ha estado operando desde el año 1983.
                             p
                                 |Realizamos procesos de revisión y aseguramiento de forma independiente, objetiva y oportuna alineada a las normas y buenas prácticas internacionales. Brindamos una opinión certera sobre la actuación global de la empresa, sus procesos y controles, creando de esta manera valor para el desarrollo y mejora de su organización.
                             
@@ -199,11 +199,12 @@ block contenido
             section.main-container__noticias.fade-in
                 h1 Últimas Noticias
                 .noticias__container
+
                     //Aqui se agregaran las noticias utilizando el mixin "noticia" creado en su respectivo documento.
+                    +noticia("placa.webp","Reconocimiento a la excelencia","Reconocimiento por la Excelencia","12 de Diciembre","Mejía Lora & Asociados recibió placa de reconocimiento por Excelencia en el servicio y 20 años de Membresía en BKR Internacional.","www.instagram.com/p/C1Hoj7rrcc7/?hl=es&img_index=1")
                     +noticia("placa.webp","Reconocimiento a la excelencia","Reconocimiento por la Excelencia","12 de Diciembre","Mejía Lora & Asociados recibió placa de reconocimiento por Excelencia en el servicio y 20 años de Membresía en BKR Internacional.","www.instagram.com/p/C1Hoj7rrcc7/?hl=es&img_index=1")
                     +noticia("presentacion.webp","Slide de Powerpoint","Tendencias de la Tributación en un mundo digitaliazdo","11 de Diciembre","Compartimos ponencia de la Lic. Sayka Mejía, como expositor invitado en el XIII Congreso Tributario IFA-RD 2023.","www.instagram.com/p/C0R1Cz3rnDv/?hl=es&img_index=1")
                     +noticia("reunionDeFirmas.webp","Reunion de BKR Internacional","Reunion Mundial de Firmas BKR International","17 de Noviembre","MLA-Mejia Lora & Asociados se une a BKR International en la Reunión Mundial Anual de este año en Washington DC, donde se lanzó Future Ready BKR International con una nueva estrategia, una nueva marca y un nuevo sitio web.","www.instagram.com/p/CzwQMIQLdId/?hl=es&img_index=1")
-                    +noticia("ampliacion.webp","letras iguales al texto de abajo","Ampliacion en MLA","14 de Noviembre","En Mejía Lora y Asociados, damos la bienvenida a la Navidad con áreas renovadas y el orgullo de serviles siempre!","www.instagram.com/p/Czoa8miLptj/?hl=es&img_index=1")
                    
 
                 .noticias__boton
