@@ -711,6 +711,9 @@ header:hover {
   .main-container .main-container__carrusel .main-container__carrusel {
     height: 40vh;
   }
+  .main-container .main-container__carrusel .slide img {
+    max-height: 700px;
+  }
   .main-container .main-container__carrusel .slider .slide .info .especial {
     height: 150px;
   }
