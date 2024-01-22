@@ -536,7 +536,7 @@ header:hover {
   font-size: 48px;
 }
 .main-container .main-container__carrusel {
-  height: 70vh;
+  height: 637px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,7 +552,7 @@ header:hover {
   position: relative;
   background: #000116;
   width: 100vw;
-  height: 70vh;
+  height: 637px;
   overflow: hidden;
 }
 .main-container .main-container__carrusel .slider .slide {
@@ -701,6 +701,7 @@ header:hover {
 @media (max-width: 900px) {
   .main-container .main-container__carrusel .slider {
     width: 100%;
+    min-height: 60vh;
   }
   .main-container .main-container__carrusel .slider .slide .info {
     position: relative;
