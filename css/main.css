@@ -574,6 +574,7 @@ header:hover {
   color: #333;
   background: rgba(255, 255, 255, 0.7);
   width: 40%;
+  max-width: 40%;
   margin-top: 150px;
   margin-left: 70px;
   padding: 40px;
@@ -691,7 +692,8 @@ header:hover {
   }
   .main-container .main-container__carrusel .slider .slide .info {
     position: relative;
-    width: 70%;
+    width: 60%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -703,6 +705,7 @@ header:hover {
   .main-container .main-container__carrusel .slider .slide .info {
     position: relative;
     width: 80%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
