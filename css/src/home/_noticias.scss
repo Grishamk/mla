@@ -123,61 +123,64 @@
             .escondete{
                 display: none;
             }
-    
-            .noticia__item{
-                background-color: $colorTerciario;
-                @include wH(300px, 600px);
-                @include boxShadow();
-                
-                picture{
-                    width: 100%;
-                    @include flexRule(null,center,center);
-                    padding: 15px 15px 0px;
-    
-                    img{
-                        width: 250px;
-                        height: 250px;
-                    }
-                }
-    
-                .noticia__contenido{
-                    padding: 15px;
-                    @include flexRule(column);
-                    gap: 12px;
-                    .titulo{
-                        
-                        h2{
-                            font-size: 1.8rem;
-                            margin-bottom: 4px;
-                        }
+            a{
+
+                .noticia__item{
+                    background-color: $colorTerciario;
+                    @include wH(300px, 650px);
+                    @include boxShadow();
+                    
+                    picture{
+                        width: 100%;
+                        @include flexRule(null,center,center);
+                        padding: 15px 15px 0px;
+                        object-fit: fill;
         
-                        .fecha{
-                            margin-bottom: 16px;
-                            font-size: 1.2rem;
+                        img{
+                            width: 250px;
+                            height: 250px;
                         }
                     }
-                    .texto{
-    
-                        p{
+        
+                    .noticia__contenido{
+                        padding: 15px;
+                        @include flexRule(column);
+                        gap: 12px;
+                        .titulo{
+                            
+                            h2{
+                                font-size: 1.8rem;
+                                margin-bottom: 4px;
+                            }
+            
+                            .fecha{
+                                margin-bottom: 16px;
+                                font-size: 1.2rem;
+                            }
+                        }
+                        .texto{
+        
+                            p{
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+        
+                    .noticia__enlace{
+                        padding: 15px;
+                        @include flexRule(null,flex-end,center);
+        
+                        a{
+                            color: $colorLetra2;
+                            text-decoration: none;
                             font-size: 1.6rem;
-                        }
-                    }
-                }
-    
-                .noticia__enlace{
-                    padding: 15px;
-                    @include flexRule(null,flex-end,center);
-    
-                    a{
-                        color: $colorLetra2;
-                        text-decoration: none;
-                        font-size: 1.6rem;
-                        font-weight: 700;
-                        @include flexRule(null,null,center);
-    
-                        span{
-                            @include wH(32px, 32px);
-                            margin-left: 14px;
+                            font-weight: 700;
+                            @include flexRule(null,null,center);
+        
+                            span{
+                                @include wH(32px, 32px);
+                                margin-left: 14px;
+                            }
                         }
                     }
                 }
@@ -229,23 +232,25 @@
         .noticias__container{
             gap: 28px;
             margin-bottom: 28px;
-            
-            .noticia__item{
-                transition: all 300ms ease;
-                picture{
-                    width: 100%;
-                    @include flexRule(null,center,center);
-                    padding: 15px 15px 0px;
-    
-                    img{
-                        width: 250px;
-                        height: 250px;
-                    }
-                }
-                
-                &:hover{
-                    transform: scale(1.05);
+            a{
+
+                .noticia__item{
                     transition: all 300ms ease;
+                    picture{
+                        width: 100%;
+                        @include flexRule(null,center,center);
+                        padding: 15px 15px 0px;
+        
+                        img{
+                            width: 100%;
+                            height: 250px;
+                        }
+                    }
+                    
+                    &:hover{
+                        transform: scale(1.05);
+                        transition: all 300ms ease;
+                    }
                 }
             }
         }
