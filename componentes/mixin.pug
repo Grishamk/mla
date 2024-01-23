@@ -142,19 +142,20 @@ mixin aviso(imagen,alterno,titulo,fecha,texto,texto2,enlace)
                     span
                         img(src="../../icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha")//
 
-mixin avisoEn(imagen,alterno,titulo,fecha,texto,texto2,link)
-    article.news-noticias__item.fade-in
-        picture
-            img(src="../../../img/avisos/"+imagen alt=alterno)
-        div
-            h2=titulo
-            p.fecha=fecha
-            p=texto
-            br
-            p=texto2 
-            //a(href=link) Leer más
-                span
-                    img(src="../../icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha")//
+mixin avisoEn(imagen,alterno,titulo,fecha,texto,texto2,enlace)
+    a(href="http://"+enlace target="_blank") 
+        article.news-noticias__item.fade-in
+            picture
+                img(src="../../../img/avisos/"+imagen alt=alterno)
+            div
+                h2=titulo
+                p.fecha=fecha
+                p=texto
+                br
+                p=texto2 
+                //a(href=link) Leer más
+                    span
+                        img(src="../../icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha")//
 
 mixin boletin(imagen,alterno,titulo,texto,link)
     article.boletines-noticias__item.fade-in
