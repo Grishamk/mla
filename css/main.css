@@ -1066,8 +1066,11 @@ header:hover {
 }
 .main-container .main-container__capital-humano {
   width: 100%;
-  background-image: url(../img/assets/bg-section.webp);
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 56, 119, 0.7))), url(../img/assets/grupal.webp);
+  background-image: linear-gradient(rgba(4, 56, 119, 0.7)), url(../img/assets/grupal.webp);
   background-repeat: no-repeat;
+  top: -100px;
   background-position: center;
   background-size: cover;
   color: white;
@@ -1086,7 +1089,7 @@ header:hover {
 .main-container .main-container__capital-humano .capital-humano__container {
   padding: 40px 24px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1134,7 +1137,7 @@ header:hover {
 .main-container .main-container__capital-humano .capital-humano__container p {
   font-size: 1.4rem;
   font-weight: 200;
-  margin-bottom: 8px;
+  margin-bottom: 100px;
   line-height: 2.2rem;
 }
 .main-container .main-container__capital-humano .capital-humano__container .capital-humano__item {
@@ -1162,12 +1165,12 @@ header:hover {
 .main-container .main-container__capital-humano .capital-humano__container a {
   width: 164px;
   height: 40px;
-  border: 1px solid #089de8;
+  background-color: white;
   text-decoration: none;
-  color: white;
-  font-weight: 300;
+  color: #333;
+  font-weight: 700;
   border-radius: 4px;
-  font-size: 1.4rem;
+  font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1182,8 +1185,12 @@ header:hover {
   .main-container .main-container__capital-humano .capital-humano__container .oculto {
     display: none;
   }
+  .main-container .main-container__capital-humano .capital-humano__container h2 {
+    font-size: 3rem;
+  }
   .main-container .main-container__capital-humano .capital-humano__container p {
     margin-bottom: 48px;
+    font-size: 1.6rem;
   }
   .main-container .main-container__capital-humano .capital-humano__container .capital-humano__socios {
     max-width: 690px;
@@ -1208,14 +1215,23 @@ header:hover {
   }
 }
 @media (min-width: 1050px) {
+  .main-container .main-container__capital-humano {
+    height: 600px;
+  }
   .main-container .main-container__capital-humano .capital-humano__container .oculto {
     display: none;
     opacity: 0;
     -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
   }
+  .main-container .main-container__capital-humano .capital-humano__container h2 {
+    font-size: 4rem;
+    margin-bottom: 16px;
+    font-weight: 300;
+  }
   .main-container .main-container__capital-humano .capital-humano__container p {
-    margin-bottom: 40px;
+    margin-bottom: 280px;
+    font-size: 2rem;
   }
   .main-container .main-container__capital-humano .capital-humano__container .ocultoActivo {
     width: 40px;
@@ -1278,6 +1294,9 @@ header:hover {
   .main-container .main-container__capital-humano .capital-humano__container a:hover {
     background-color: #089de8;
     font-weight: bold;
+    color: white;
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
   }
 }
 .main-container .main-container__noticias {
