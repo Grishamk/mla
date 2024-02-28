@@ -19,14 +19,14 @@
 }
 
 .main-container__carrusel{
-      height: 637px;
+      height: 100vh;
       @include flexRule(null,center,center);
       background: #000116;
 
     .slider{
         position: relative;
         background: #000116;
-        @include wH(100vw, 637px);
+        @include wH(100vw, 100vh);
         overflow: hidden;
 
         .slide{

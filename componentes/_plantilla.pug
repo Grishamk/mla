@@ -18,10 +18,11 @@ html(lang="es")
                     input(type="checkbox" id="menu").nav-input
                     
                     div.nav-movil
+                        label(for="menu").nav-label
+                            block burgerMenuClose                
+                        input(type="checkbox" id="menu").nav-input
                         ul
-                            li 
-                                block traductorMovil
-
+                            
                             li
                                 block homeLinkMovil
                             
@@ -47,6 +48,10 @@ html(lang="es")
                             //CONTACTO
                             li
                                 block contacto
+                            
+                            //Boton para traducir la página
+                            li 
+                                block traductorMovil
                             
                         
                        

@@ -23,12 +23,11 @@ body {
 
 header {
   width: 100%;
-  background-color: #F7F7F7;
   position: fixed;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   z-index: 100;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 header:hover {
@@ -37,6 +36,7 @@ header:hover {
 
 .fixed {
   position: fixed;
+  background-color: #F7F7F7;
   opacity: 1;
   top: 0;
   left: 0;
@@ -61,7 +61,6 @@ header:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F7F7F7;
 }
 .nav-container .logo-container {
   width: 80%;
@@ -91,9 +90,8 @@ header:hover {
   transition: all 300ms ease;
 }
 .nav-container__menu .nav-movil {
-  width: 90vw;
-  height: 93.5%;
-  max-width: 300px;
+  width: 100vw;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,7 +101,7 @@ header:hover {
           flex-direction: column;
   background-color: white;
   position: fixed;
-  top: 57px;
+  top: 0;
   right: -300px;
   overflow: auto;
   visibility: hidden;
@@ -117,34 +115,121 @@ header:hover {
 .nav-container__menu .nav-movil .nav-movil__cerrar img {
   width: 36px;
 }
+.nav-container__menu .nav-movil label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  padding: 8px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 10;
+}
+.nav-container__menu .nav-movil label img {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
 .nav-container__menu .nav-movil ul {
   list-style: none;
   width: 100%;
+  height: 100vh;
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .nav-container__menu .nav-movil ul li {
   margin-bottom: 1px;
-  width: 100%;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .nav-container__menu .nav-movil ul li a {
   text-decoration: none;
-  color: white;
+  color: #333;
   font-weight: bold;
-  background-color: #043877;
+  font-size: 2.4rem;
   display: block;
   padding: 20px;
 }
+.nav-container__menu .nav-movil ul li p {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 2.4rem;
+  display: block;
+  padding: 12px;
+}
+.nav-container__menu .nav-movil ul li .mobile-hidden {
+  display: none;
+}
+.nav-container__menu .nav-movil ul li .mobile-show {
+  margin-bottom: 15px;
+  width: 95%;
+  text-align: center;
+  height: auto;
+  border-radius: 8px;
+}
+.nav-container__menu .nav-movil ul li .mobile-show li {
+  background-color: #089de8;
+  width: 95%;
+  border-radius: 8px;
+}
+.nav-container__menu .nav-movil ul li .mobile-show li a {
+  background-color: #089de8;
+  color: white;
+  width: 95%;
+  border-radius: 8px;
+  padding: 16px;
+}
+.nav-container__menu .nav-movil ul li .mobile-show li hr {
+  width: 80%;
+}
 .nav-container__menu .nav-movil ul li ul {
   padding: 0;
-  padding: 0 20px;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin: 0;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .nav-container__menu .nav-movil ul li ul li {
-  margin-bottom: 24px;
   background-color: white;
+  text-align: center;
 }
 .nav-container__menu .nav-movil ul li ul li a {
   font-weight: 400;
+  font-size: 1.8rem;
   color: #333;
   background-color: white;
   padding: 0;
@@ -536,7 +621,7 @@ header:hover {
   font-size: 48px;
 }
 .main-container .main-container__carrusel {
-  height: 637px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,7 +637,7 @@ header:hover {
   position: relative;
   background: #000116;
   width: 100vw;
-  height: 637px;
+  height: 100vh;
   overflow: hidden;
 }
 .main-container .main-container__carrusel .slider .slide {
