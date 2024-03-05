@@ -164,6 +164,9 @@ header:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+.nav-container__menu .nav-movil ul li .noDisplay {
+  display: none;
+}
 .nav-container__menu .nav-movil ul li a {
   text-decoration: none;
   color: #333;
@@ -284,9 +287,9 @@ header:hover {
     height: 30px;
   }
   .nav-container__menu .nav-movil {
-    top: 80px;
     right: -700px;
-    max-width: 450px;
+    width: 100vw;
+    height: 100vh;
   }
 }
 @media (min-width: 1050px) {
@@ -339,6 +342,12 @@ header:hover {
     /*NOSOTROS*/
     /*SERVICIOS*/
     /*NOVEDADES*/
+  }
+  .nav-container__navbar ul li .noDisplay {
+    display: block;
+  }
+  .nav-container__navbar ul li .Display {
+    display: none;
   }
   .nav-container__navbar ul li a {
     text-decoration: none;

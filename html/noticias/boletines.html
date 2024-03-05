@@ -6,160 +6,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Firma de contadores públicos autorizados con más de 35 años de experiencia, ofreciendo servicios de auditoría, impuestos, consultoría administrativa y financiera, al igual que servicios de contabilidad y Desarrollo Organizacional.">
-    <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="/css/main.css"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../../icon/favicon.ico">
-    <link rel="shortcut icon" href="../icon/favicon.ico">
+    <link rel="shortcut icon" href="/icon/favicon.ico">
     <title>Mejía Lora & Asociados</title>
   </head>
   <body>
     <!--Barra de navegación-->
     <header id="mi-barra">
-      <nav class="nav-container">
-        <!--a.logo-container(href="./index.html")img(src="../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
-        --><a class="logo-container" href="../../index.html"><img src="../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados"></a>
+      <nav class="nav-container"><a class="logo-container" href="/index.html"><img src="/img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados"></a>
         <div class="nav-container__menu">
-          <label class="nav-label" for="menu"><img src="../../icon/menu.svg" alt="menu hamburguesa">
-            <!--img(src="../icon/menu.svg", alt="menu hamburguesa")                -->
-          </label>
+          <label class="nav-label" for="menu"><img src="/icon/menu.svg" alt="menu hamburguesa"></label>
           <input class="nav-input" type="checkbox" id="menu">
           <div class="nav-movil">
+            <label class="nav-label" for="menu"><img src="/icon/close.svg" alt="Cerrar menu hamburguesa"></label>
+            <input class="nav-input" type="checkbox" id="menu">
             <ul>
-              <li> <a href="../../english/html/noticias/boletines.html">ENGLISH VERSION</a>
-              </li>
-              <li><a href="../../index.html">Inicio</a>
-              </li>
+              <li><a href="/index.html">Inicio</a></li>
               <!--NOSOTROS-->
               <li>
-                <li><a href="../../html/nosotros/quienesSomos.html">Nosotros</a>
-                  <ul class="toggle__nosotros">
-                    <li><a href="../../html/nosotros/quienesSomos.html">Quienes Somos</a></li>
-                    <li><a href="../../html/nosotros/registros.html">Registros y Membresías</a></li>
-                    <li><a href="../../html/nosotros/responsabilidadSoc.html">Responsabilidad Social </a></li>
-                    <li> <a href="../../html/nosotros/certificaciones.html">Certificaciones </a></li>
+                <li><a class="noDisplay" href="/html/nosotros/quienesSomos.html">Nosotros</a>
+                  <p class="Display" id="nosotros">Nosotros</p>
+                  <ul class="toggle__nosotros mobile-hidden">
+                    <li><a href="/html/nosotros/quienesSomos.html">Quienes Somos</a></li>
+                    <li><a href="/html/nosotros/registros.html">Registros y Membresía</a></li>
+                    <li><a href="/html/nosotros/responsabilidadSoc.html">Responsabilidad Social</a></li>
+                    <li> <a href="/html/nosotros/certificaciones.html">Certificaciones </a></li>
                   </ul>
                 </li>
               </li>
               <!--SERVICIOS-->
               <li> 
-                <li><a href="../../html/servicios/auditoria.html">Servicios</a>
-                  <ul class="toggle__servicios">
-                    <li><a href="../../html/servicios/auditoria.html">Auditoría</a></li>
-                    <li><a href="../../html/servicios/asesoria.html">Asesoría Fiscal</a></li>
-                    <li><a href="../../html/servicios/impuesto-nomina.html">Impuesto - Nómina - Contabilidad</a></li>
-                    <li> <a href="../../html/servicios/consultorias-negocios.html">Consultoría de Negocios y Financiera</a></li>
-                    <li> <a href="../../html/servicios/desarrolloOrg.html">Desarrollo Organizacional</a></li>
-                    <li> <a href="../../html/servicios/proteccion.html">Protección Patrimonial </a></li>
+                <li><a class="noDisplay" href="./html/servicios/auditoria.html">Servicios</a>
+                  <p class="Display" id="servicios">Servicios</p>
+                  <ul class="toggle__servicios mobile-hidden">
+                    <li><a href="/html/servicios/auditoria.html">Auditoría</a></li>
+                    <li><a href="/html/servicios/asesoria.html">Asesoría Fiscal</a></li>
+                    <li><a href="/html/servicios/impuesto-nomina.html">Impuesto - Nómina - Contabilidad</a></li>
+                    <li> <a href="/html/servicios/consultorias-negocios.html">Consultoría de Negocios y Financiera</a></li>
+                    <li> <a href="/html/servicios/desarrolloOrg.html">Desarrollo Organizacional</a></li>
+                    <li> <a href="/html/servicios/proteccion.html">Protección Patrimonial</a></li>
                   </ul>
                 </li>
               </li>
               <!--NOVEDADES-->
               <li>
-                <li><a href="../../html/noticias/noticias.html">Novedades</a>
-                  <ul class="toggle__novedades">
-                    <li><a href="../../html/noticias/noticias.html">Avisos</a></li>
-                    <li><a href="../../html/noticias/boletines.html">Noticias y Boletines</a></li>
+                <li><a class="noDisplay" href="/html/noticias/noticias.html">Novedades</a>
+                  <p class="Display" id="novedades">Novedades</p>
+                  <ul class="toggle__novedades mobile-hidden">
+                    <li><a href="/html/noticias/noticias.html">Avisos</a></li>
+                    <li><a href="/html/noticias/boletines.html">Noticias y Boletines</a></li>
                   </ul>
                 </li>
               </li>
               <!--CAPITAL HUMANO    -->
-              <li><a href="../../html/capital-humano/capital-humano.html">Staff</a>
-              </li>
+              <li><a href="/html/capital-humano/capital-humano.html">Staff</a></li>
               <!--CONTACTO-->
-              <li><a href="../../html/contacto/contacto.html">Contacto</a>
-              </li>
+              <li><a href="/html/contacto/contacto.html">Contacto</a></li>
+              <!--Boton para traducir la página-->
+              <li> <a href="/english/index.html">ENGLISH VERSION</a></li>
             </ul>
           </div>
         </div>
         <!--BARRA DE NAVEGACION-->
         <div class="nav-container__navbar">
           <ul>
-            <li> <a href="../../index.html">Inicio</a>
-            </li>
-            <!--  a(href="./index.html") Inicio-->
+            <li> <a href="/index.html">Inicio</a></li>
+            <!--  a(href="/index.html") Inicio-->
             <!--NOSOTROS-->
-            <li><a href="../../html/nosotros/quienesSomos.html">Nosotros</a>
-              <ul class="toggle__nosotros">
-                <li><a href="../../html/nosotros/quienesSomos.html">Quienes Somos</a></li>
-                <li><a href="../../html/nosotros/registros.html">Registros y Membresías</a></li>
-                <li><a href="../../html/nosotros/responsabilidadSoc.html">Responsabilidad Social </a></li>
-                <li> <a href="../../html/nosotros/certificaciones.html">Certificaciones </a></li>
+            <li><a href="/html/nosotros/quienesSomos.html">Nosotros</a>
+              <ul class="toggle__nosotros mobile-hidden">
+                <li><a href="/html/nosotros/quienesSomos.html">Quienes Somos</a></li>
+                <li><a href="/html/nosotros/registros.html">Registros y Membresía</a></li>
+                <li><a href="/html/nosotros/responsabilidadSoc.html">Responsabilidad Social</a></li>
+                <li> <a href="/html/nosotros/certificaciones.html">Certificaciones </a></li>
               </ul>
             </li>
-            <!--li
-            a(href="") Nosotros
-            ul.toggle__nosotros
-                
-                li
-                    a(href="./html/nosotros/quienesSomos.html") Quienes Somos
-                li
-                    a(href="./html/nosotros/registros.html") Registros y Membresías
-                li
-                    a(href="./html/nosotros/responsabilidadSoc.html") Responsabilidad Social 
-                li 
-                    a(href="./html/nosotros/certificaciones.html") Certificaciones 
-            
-            -->
             <!--SERVICIOS-->
-            <li><a href="../../html/servicios/auditoria.html">Servicios</a>
+            <li><a href="/html/servicios/auditoria.html">Servicios</a>
               <ul class="toggle__servicios">
-                <li><a href="../../html/servicios/auditoria.html">Auditoría</a></li>
-                <li><a href="../../html/servicios/asesoria.html">Asesoría Fiscal</a></li>
-                <li><a href="../../html/servicios/impuesto-nomina.html">Impuesto - Nómina - Contabilidad</a></li>
-                <li> <a href="../../html/servicios/consultorias-negocios.html">Consultoría de Negocios y Financiera</a></li>
-                <li> <a href="../../html/servicios/desarrolloOrg.html">Desarrollo Organizacional</a></li>
-                <li> <a href="../../html/servicios/proteccion.html">Protección Patrimonial </a></li>
+                <li><a href="/html/servicios/auditoria.html">Auditoría</a></li>
+                <li><a href="/html/servicios/asesoria.html">Asesoría Fiscal</a></li>
+                <li><a href="/html/servicios/impuesto-nomina.html">Impuesto - Nómina - Contabilidad</a></li>
+                <li> <a href="/html/servicios/consultorias-negocios.html">Consultoría de Negocios y Financiera</a></li>
+                <li> <a href="/html/servicios/desarrolloOrg.html">Desarrollo Organizacional</a></li>
+                <li> <a href="/html/servicios/proteccion.html">Protección Patrimonial</a></li>
               </ul>
             </li>
-            <!--li
-            a(href="") Servicios
-            ul.toggle__servicios
-                
-                li
-                    a(href="./html/servicios/auditoria.html") Auditoría
-                li
-                    a(href="./html/servicios/asesoria.html") Asesoría Fiscal
-                li
-                    a(href="./html/servicios/impuesto-nomina.html") Impuesto - Nómina - Contabilidad
-                li 
-                    a(href="./html/servicios/consultorias-negocios.html") Consultoría de Negocios y Financiera
-                li 
-                    a(href="./html/servicios/desarrolloOrg.html") Desarrollo Organizacional
-                li 
-                    a(href="./html/servicios/proteccion.html") Protección Patrimonial 
-            
-            -->
             <!--NOVEDADES-->
-            <li><a href="../../html/noticias/noticias.html">Novedades</a>
+            <li><a href="/html/noticias/noticias.html">Novedades</a>
               <ul class="toggle__novedades">
-                <li><a href="../../html/noticias/noticias.html">Avisos</a></li>
-                <li><a href="../../html/noticias/boletines.html">Noticias y Boletines</a></li>
+                <li><a href="/html/noticias/noticias.html">Avisos</a></li>
+                <li><a href="/html/noticias/boletines.html">Noticias y Boletines</a></li>
               </ul>
             </li>
-            <!--li
-            a(href="") Novedades
-            ul.toggle__novedades
-                
-                  li
-                    a(href="./html/noticias/noticias.html") Avisos
-                li
-                    a(href="./html/noticias/boletines.html") Noticias y Boletines
-            
-            -->
             <!--CAPITAL HUMANO    -->
-            <li><a href="../../html/capital-humano/capital-humano.html">Staff</a>
-            </li>
-            <!--  a(href="./html/capital-humano/capital-humano.html") Staff-->
+            <li><a href="/html/capital-humano/capital-humano.html">Staff</a></li>
             <!--CONTACTO-->
-            <li><a href="../../html/contacto/contacto.html">Contacto</a>
-            </li>
-            <!--  a(href="./html/contacto/contacto.html") Contacto-->
-          </ul>
-        </div><a class="boton" href="../../english/html/noticias/boletines.html"> ENGLISH</a>
+            <li><a href="/html/contacto/contacto.html">Contacto</a></li>
+          </ul><a class="boton" href="/english/index.html"> ENGLISH</a>
+        </div>
       </nav>
-      <!--  a(href="./english/index.html").boton  ENGLISH-->
     </header>
     <main>
       <section class="boletines__titular">
@@ -212,11 +160,13 @@
     <footer class="footer-container">
       <div class="footer-movil__container">
         <div class="footer-movil__logo">
-          <picture><img src="../../img/assets/mla-white.webp" alt="Logo del 40 aniversario">
-          </picture>
+          <!--picture
+          block footerLogo
+              
+          -->
           <p class="derechosAutor">Mejia Lora & Asociados © 2023</p>
-          <div class="redes1"><a href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/"> <img src="../../icon/317752_facebook_social media_social_icon.svg" alt="Logo de facebook"></a><a href="https://www.secure.instagram.com/mejialora/?hl=es"> <img src="../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg" alt="Logo de instagram"></a><a href="https://www.linkedin.com/company/mejia-lora-&amp;-asociados/"> <img src="../../icon/317750_linkedin_icon.svg" alt="Logo de Linkedin"></a>
-            <!--Posiblemente será eliminado--><a href="https://twitter.com/MejialoraAsoc"> <img src="../../icon/317749_social media_tweet_twitter_social_icon.svg" alt="Logo de Twitter"></a>
+          <div class="redes1"><a href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/"> <img src="/icon/317752_facebook_social media_social_icon.svg" alt="Logo de facebook"></a><a href="https://www.secure.instagram.com/mejialora/?hl=es"> <img src="/icon/5279112_camera_instagram_social media_instagram logo_icon.svg" alt="Logo de instagram"></a><a href="https://www.linkedin.com/company/mejia-lora-&amp;-asociados/"> <img src="/icon/317750_linkedin_icon.svg" alt="Logo de Linkedin"></a>
+            <!--Posiblemente será eliminado--><a href="https://twitter.com/MejialoraAsoc"> <img src="/icon/317749_social media_tweet_twitter_social_icon.svg" alt="Logo de Twitter"></a>
           </div>
         </div>
         <div class="contacto">
@@ -227,8 +177,8 @@
           <p>Teléfono: <span>(809) 482-0838</span></p>
           <p>Email: <span>info@mejialora.com</span></p>
         </div>
-        <div class="redes"><a href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/"> <img src="../../icon/317752_facebook_social media_social_icon.svg" alt="Logo de facebook"></a><a href="https://www.secure.instagram.com/mejialora/?hl=es"> <img src="../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg" alt="Logo de instagram"></a><a href="https://www.linkedin.com/company/mejia-lora-&amp;-asociados/"> <img src="../../icon/317750_linkedin_icon.svg" alt="Logo de Linkedin"></a>
-          <!--Posiblemente será eliminado--><a href="https://twitter.com/MejialoraAsoc"> <img src="../../icon/317749_social media_tweet_twitter_social_icon.svg" alt="Logo de Twitter"></a>
+        <div class="redes"><a href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/"> <img src="/icon/317752_facebook_social media_social_icon.svg" alt="Logo de facebook"></a><a href="https://www.secure.instagram.com/mejialora/?hl=es"><img src="/icon/5279112_camera_instagram_social media_instagram logo_icon.svg" alt="Logo de instagram"></a><a href="https://www.linkedin.com/company/mejia-lora-&amp;-asociados/"> <img src="/icon/317750_linkedin_icon.svg" alt="Logo de Linkedin"></a>
+          <!--Posiblemente será eliminado--><a href="https://twitter.com/MejialoraAsoc"> <img src="/icon/317749_social media_tweet_twitter_social_icon.svg" alt="Logo de Twitter"></a>
         </div>
       </div>
     </footer>
