@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Firma de contadores públicos autorizados con más de 35 años de experiencia, ofreciendo servicios de auditoría, impuestos, consultoría administrativa y financiera, al igual que servicios de contabilidad y Desarrollo Organizacional.">
-    <link rel="stylesheet" type="text/css" href="/css/main.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/tablet/tablet.css" media="screen and (min-width: 768px)"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/icon/favicon.ico">
@@ -76,7 +77,7 @@
             <!--  a(href="/index.html") Inicio-->
             <!--NOSOTROS-->
             <li><a href="/html/nosotros/quienesSomos.html">Nosotros</a>
-              <ul class="toggle__nosotros mobile-hidden">
+              <ul class="toggle__nosotros">
                 <li><a href="/html/nosotros/quienesSomos.html">Quienes Somos</a></li>
                 <li><a href="/html/nosotros/registros.html">Registros y Membresía</a></li>
                 <li><a href="/html/nosotros/responsabilidadSoc.html">Responsabilidad Social</a></li>
@@ -164,25 +165,32 @@
       <!--SERVICIOS-->
       <section class="main__servicios">
         <!--h2 Servicios-->
-        <div class="servicios__contenedor"><a href="./html/servicios/impuesto-nomina.html"><img src="./img/slide/slide4.webp" alt="">
-            <div>
+        <div class="servicios__contenedor">
+          <!--IMPUESTOS--><a href="./html/servicios/impuesto-nomina.html"><img class="servicios__imagen" src="./img/slide/slide4.webp" alt="">
+            <div class="servicios__texto">
               <p>Impuestos</p>
-            </div></a><a href="./html/servicios/auditoria.html"><img src="./img/slide/slide2.webp" alt="">
-            <div>
+            </div></a>
+          <!--AUDITORIA--><a href="./html/servicios/auditoria.html"><img class="servicios__imagen" src="./img/slide/slide2.webp" alt="">
+            <div class="servicios__texto">
               <p>Auditoria</p>
-            </div></a><a href="./html/servicios/desarrolloOrg.html"><img src="./img/slide/slide3.webp" alt="">
-            <div>
+            </div></a>
+          <!--DESARROLLO ORGANIZACIONAL--><a href="./html/servicios/desarrolloOrg.html"><img class="servicios__imagen" src="./img/slide/slide3.webp" alt="">
+            <div class="servicios__texto">
               <p>Desarrollo Organizacional</p>
-            </div></a><a href="./html/servicios/asesoria.html"><img src="./img/servicios/Asesoria.webp" alt="">
-            <div>
+            </div></a>
+          <!--ASESORIA FISCAL--><a href="./html/servicios/asesoria.html"><img class="servicios__imagen" src="./img/servicios/Asesoria.webp" alt="">
+            <div class="servicios__texto">
               <p>Asesoría Fiscal</p>
-            </div></a><a href="./html/servicios/consultorias-negocios.html"><img src="./img/servicios/foto-consulto.webp" alt="">
-            <div>
-              <p>Consultoría de negocios</p>
-            </div></a><a href="./html/servicios/proteccion.html"><img src="./img/servicios/foto-protec.webp" alt="">
-            <div>
-              <p>Protección patrimonial</p>
-            </div></a></div>
+            </div></a>
+          <!--CONSULTORIA DE NEGOCIOS--><a href="./html/servicios/consultorias-negocios.html"><img class="servicios__imagen" src="./img/servicios/foto-consulto.webp" alt="">
+            <div class="servicios__texto">
+              <p>Consultoría de Negocios</p>
+            </div></a>
+          <!--PROTECCION PATRIMONIAL--><a href="./html/servicios/proteccion.html"><img class="servicios__imagen" src="./img/servicios/foto-protec.webp" alt="">
+            <div class="servicios__texto">
+              <p>Protección Patrimonial</p>
+            </div></a>
+        </div>
       </section>
       <!--NOTICIAS-->
       <section class="main-container__noticias fade-in">
@@ -191,7 +199,7 @@
         <div class="noticias__container">
           <!--Aqui se agregaran las noticias utilizando el mixin "noticia" creado en su respectivo documento.--><a href="http://www.instagram.com/p/C3iZZPAL4Wu/?hl=es&amp;img_index=1" target="_blank"> 
             <article class="noticia__item" href="google.com">
-              <picture><img src="./img/avisos/20feb.webp" alt="foto de la Licenciada Sayka Mejía"/></picture>
+              <picture class="noticia__img"><img src="./img/avisos/20feb.webp" alt="foto de la Licenciada Sayka Mejía"/></picture>
               <div class="noticia__contenido">
                 <div class="titulo">
                   <h2>Juramentación Women of IFA Network (WIN) International Fiscal Association (IFA)</h2>
@@ -203,7 +211,7 @@
               </div>
             </article></a><a href="http://www.instagram.com/p/C3XszL2Lo2l/?hl=es&amp;img_index=1" target="_blank"> 
             <article class="noticia__item" href="google.com">
-              <picture><img src="./img/avisos/15febrero.webp" alt="foto con texto sobre lo que se va a leer abajo"/></picture>
+              <picture class="noticia__img"><img src="./img/avisos/15febrero.webp" alt="foto con texto sobre lo que se va a leer abajo"/></picture>
               <div class="noticia__contenido">
                 <div class="titulo">
                   <h2>Nuevos topes de cotización para el Régimen contributivo</h2>
@@ -215,7 +223,7 @@
               </div>
             </article></a><a href="http://www.linkedin.com/company/mejia-lora-&amp;-asociados/posts/?feedView=all" target="_blank"> 
             <article class="noticia__item" href="google.com">
-              <picture><img src="./img/avisos/FEB7.webp" alt="Foto informativa con el planeta y el logo de la firma"/></picture>
+              <picture class="noticia__img"><img src="./img/avisos/FEB7.webp" alt="Foto informativa con el planeta y el logo de la firma"/></picture>
               <div class="noticia__contenido">
                 <div class="titulo">
                   <h2>Fecha límite presentación IR-13</h2>
@@ -227,7 +235,7 @@
               </div>
             </article></a><a href="http://www.linkedin.com/company/mejia-lora-&amp;-asociados/posts/?feedView=all" target="_blank"> 
             <article class="noticia__item" href="google.com">
-              <picture><img src="./img/avisos/FEB6.webp" alt="Foto informativa con el planeta y el logo de la firma"/></picture>
+              <picture class="noticia__img"><img src="./img/avisos/FEB6.webp" alt="Foto informativa con el planeta y el logo de la firma"/></picture>
               <div class="noticia__contenido">
                 <div class="titulo">
                   <h2>Vencimiento plazo de implementación facturación electronica</h2>

@@ -7,6 +7,7 @@
     h2{
         margin-bottom: 24px;
     }
+
     .servicios__contenedor{
         @include flexRule(column,center,center);
         gap: 32px;
@@ -18,12 +19,12 @@
             @include boxShadow();
             border-radius: 8px;
 
-            img{
+            .servicios__imagen{
                 @include wH(100%,213px);
                 border-radius: 8px;
             }
 
-            div{
+            .servicios__texto{
                 @include wH(null,33px);
                 position: relative;
                 top: -37px;
@@ -36,30 +37,9 @@
     }
 }
 
-@media(min-width: $breakpoint-tablet){
-    .main__servicios{
-        padding: 40px 24px;
-        
-        h2{
-            margin-bottom: 24px;
-        }
 
-        .servicios__contenedor{
-            @include wH(100%,100%);
-            @include flexRule(row,center,center);
-            flex-wrap: wrap;
-            gap: 20px;
-    
-            a{
-                @include wH(300px,180px);
-    
-                img{
-                    @include wH(100%, 180px);
-                }
-            }
-        }
-    }
-}
+//BORRAR
+
 
 @media(min-width: $breakpoint-laptop){
     .main__servicios{

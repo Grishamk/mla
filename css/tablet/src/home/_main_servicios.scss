@@ -1,0 +1,40 @@
+.main__servicios{
+    @include wH(100%,auto);
+    margin: 0 auto;
+    padding: 40px 24px;
+    @include flexRule(column,null,center);
+
+    h2{
+        margin-bottom: 24px;
+    }
+
+    .servicios__contenedor{
+        @include flexRule(row,center,center);
+        flex-wrap: wrap;
+        @include wH(100%, 100%);
+        gap: 40px;
+
+        a{
+            @include wH(300px,180px);
+            color: $colorLetra2;
+            text-decoration: none;
+            @include boxShadow();
+            border-radius: 8px;
+
+            .servicios__imagen{
+                @include wH(300px,180px);
+                border-radius: 8px;
+            }
+
+            .servicios__texto{
+                @include wH(null,33px);
+                position: relative;
+                top: -37px;
+                text-align: center;
+                border-radius: 0px 0px 8px 8px;
+                background: rgba(4, 56, 119, 0.75);
+                @include flexRule(null,center,center);
+            }
+        }
+    }
+}

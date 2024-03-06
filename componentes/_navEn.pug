@@ -9,16 +9,19 @@ header#mi-barra
             input(type="checkbox" id="menu").nav-input
             
             div.nav-movil
-                ul
-                    li 
-                        a(href="/index.html") VERSION EN ESPAÑOL
-                        
+                
+                label(for="menu").nav-label
+                    img(src="/icon/close.svg", alt="Cerrar menu hamburguesa")                
+                input(type="checkbox" id="menu").nav-input
+               
+                ul                                         
                     li
                         a(href="/english/index.html") Home
                 
                     li
-                        a(href="/english/html/nosotros/quienesSomos.html") About Us
-                        ul.toggle__nosotros
+                        a(href="/english/html/nosotros/quienesSomos.html").noDisplay About Us
+                        p.Display#nosotros About Us
+                        ul.toggle__nosotros.mobile-hidden
                             li
                                 a(href="/english/html/nosotros/quienesSomos.html") Who we are
                             li
@@ -30,8 +33,9 @@ header#mi-barra
 
                     //SERVICIOS
                     li
-                        a(href="/english/html/servicios/auditoria.html") Services
-                        ul.toggle__servicios
+                        a(href="/english/html/servicios/auditoria.html").noDisplay Services
+                        p.Display#servicios Services
+                        ul.toggle__servicios.mobile-hidden
                             li
                                 a(href="/english/html/servicios/auditoria.html") Audit and Assurance
                             li
@@ -47,8 +51,9 @@ header#mi-barra
                     
                     //NOVEDADES
                     li
-                        a(href="/english/html/noticias/noticias.html") News
-                        ul.toggle__novedades
+                        a(href="/english/html/noticias/noticias.html").noDisplay News
+                        p.Display#novedades News
+                        ul.toggle__novedades.mobile-hidden
                             li
                                 a(href="/english/html/noticias/noticias.html") Notices
                             li
@@ -62,6 +67,10 @@ header#mi-barra
                     //CONTACTO
                     li
                         a(href="/english/html/contacto/contacto.html") Contact
+                    
+                    //TRADUCCION
+                    li 
+                        a(href="/index.html") VERSION EN ESPAÑOL
 
 
         //BARRA DE NAVEGACION

@@ -38,7 +38,7 @@ mixin contactoG(icono,alterno,titulo,contenido)
 mixin noticia(imagen,alterno,titulo,fecha,texto,enlace,clase)
     a(href="http://"+enlace target="_blank") 
         article.noticia__item(class=clase href="google.com")
-            picture
+            picture.noticia__img
                 img(src="./img/avisos/"+imagen, alt=alterno)
             .noticia__contenido
                 .titulo
