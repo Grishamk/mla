@@ -14,7 +14,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
-  color: #333;
+  color: #02142B;
 }
 
 /*HOME*/
@@ -108,7 +108,7 @@ body {
   padding: 40px 24px;
 }
 .main-container .main-container__noticias h1 {
-  color: #333;
+  color: #02142B;
   padding-bottom: 32px;
 }
 .main-container .main-container__noticias .noticias__container {

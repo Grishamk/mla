@@ -109,7 +109,7 @@ prevBtn.addEventListener("click", () => {
 
 
 //image slider autoplay
-/**var playSlider;
+var playSlider;
 
 var repeater = () => {
   playSlider = setInterval(function(){
@@ -140,7 +140,7 @@ slider.addEventListener("mouseover", () => {
 //start the image slider autoplay again on mouseout
 slider.addEventListener("mouseout", () => {
   repeater();
-});**/
+});
 
 // Función para mostrar el slide actual y reiniciar la animación
 function showSlide(index) {

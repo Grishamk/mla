@@ -3,11 +3,89 @@ extend ./componentes/_plantilla.pug
 block contenido
 
         //CONTENIDO PRINCIPAL
-        main.main-container
+        main.main-container#head
             a(href="#head")#btnBackToTop
                 span ↑
             //CARRUSEL PRINCIPAL
-            .main-container__carrusel#head
+            
+            .main-container__carrusel 
+                
+                .slider
+                    //Primer Slide
+                    .slide.active
+                        .main-container__filtroAzul
+                        img(src='./img/slide/slide1.webp' alt='')
+                        .info.main
+                            h2.especial Contadores públicos autorizados desde 1983
+                            p
+                                |Realizamos procesos de revisión y aseguramiento de forma independiente, objetiva y oportuna alineada a las normas y buenas prácticas internacionales. Brindamos una opinión certera sobre la actuación global de la empresa, sus procesos y controles, creando de esta manera valor para el desarrollo y mejora de su organización.
+                            
+                            a(href="./html/nosotros/quienesSomos.html") MÁS INFORMACIÓN
+
+                    //Segundo Slide
+                    .slide
+                        .main-container__filtroAzul
+                        img(src='./img/slide/slide2.webp' alt='')
+                        .info
+                            h2.especial Servicios de auditoría
+                            p
+                                |Realizamos procesos de revisión y aseguramiento de forma independiente, objetiva y oportuna alineada a las normas y buenas prácticas internacionales. Brindamos una opinión certera sobre la actuación global de la empresa, sus procesos y controles, creando de esta manera valor para el desarrollo y mejora de su organización.
+                            
+                            a(href="./html/servicios/auditoria.html") MÁS INFORMACIÓN
+                    
+                    // Tercer Slide
+                    .slide
+                        .main-container__filtroAzul
+                        img(src='./img/slide/slide3.webp' alt='')
+                        .info
+                            h2 Desarrollo Organizacional
+                            p
+                                | Ofrecemos servicios especializados enfocados al desarrollo organizacional, los cuales permiten garantizar que su estrategia y recursos internos operen de forma eficiente, armónica y organizada permitiéndoles adaptarse a las necesidades actuales y futuras de forma planificada y controlada. 
+                            
+                            a(href="./html/servicios/desarrolloOrg.html") MÁS INFORMACIÓN
+                    
+                    // Cuarto Slide
+                    .slide
+                        .main-container__filtroAzul
+                        img(src='./img/slide/slide4.webp' alt='')
+                        .info
+                            h2 Impuestos - Nómina - Contabilidad
+                            p
+                                | Sobre la base de nuestra especialización en materia contable y fiscal en los diferentes sectores económicos del país, brindamos servicios de procesamiento contable y cumplimiento fiscal que garanticen: la calidad, confiabilidad y oportunidad de las informaciones financieras de su organzación.
+                            
+                            a(href="./html/servicios/impuesto-nomina.html") MÁS INFORMACIÓN
+                    
+                    // Quinto Slide
+                    .slide
+                        .main-container__filtroAzul
+                        img(src='./img/slide/slide5.webp' alt='')
+                        .info
+                            h2 Asesoramiento Tributario
+                            p
+                                | Brindamos servicios especializados de asesoría y planificacion fiscal, consecución de acuerdos y defensas ante el órgano regulador, gestión de cumplimiento de compromisos fiscales, así como auditorías en la matería. Nuestros servicios se basan en la gestión de riesgos enfocada en la eficiencia tributaria bajo el debido cumplimiento.
+
+                            a(href="./html/servicios/asesoria.html") MÁS INFORMACIÓN
+
+                    //Navegación para los slides (Flechas)
+                    .navigation
+                        i.fas.fa-chevron-left.prev-btn
+                            img(src="/icon/1904658_arrow_arrow left_change_direction_left_icon.svg", alt="")
+                        i.fas.fa-chevron-right.next-btn
+                            img(src="/icon/1904671_arrow_arrow right_change_direction_next_icon.svg", alt="")
+                    
+                    //Indicadores de los slides (puntos)
+                    .navigation-visibility
+                        .slide-icon.active
+                        .slide-icon
+                        .slide-icon
+                        .slide-icon
+                        .slide-icon
+                
+                .backButton#btnBaja
+                    a(href="#services") 
+            
+
+            //.main-container__carrusel#head
                 .slider
                     //Primer slide
                     .slide.active
@@ -75,7 +153,7 @@ block contenido
 
             //SERVICIOS
 
-            section.main__servicios
+            section.main__servicios#services
                 //h2 Servicios
                 div.servicios__contenedor
                     

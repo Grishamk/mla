@@ -14,8 +14,9 @@ header {
     width: 100%;
     position: fixed;
     transition: all 300ms ease;
-    z-index: 100;
-    opacity: 1;
+    z-index: 50;
+    opacity: 0.8;
+    background-color: $colorPrincipal;
 }
 
 header:hover{

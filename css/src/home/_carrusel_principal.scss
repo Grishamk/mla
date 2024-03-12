@@ -1,3 +1,5 @@
+
+
 #btnBackToTop {
     position: fixed;
     bottom: 100px;
@@ -21,7 +23,30 @@
 .main-container__carrusel{
       height: 100vh;
       @include flexRule(null,center,center);
-      background: #000116;
+      background: #d9d9d9;
+      position: relative;
+    
+      .backButton{
+        width: 80px;
+        height: 44px;
+        bottom: 0;
+        position: absolute;
+        background-color: $colorSecundario;
+        z-index: 999;
+        border-radius: 32px 32px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            width: 32px;
+            height: 32px;
+            background-image: url(/icon/172458_down_arrow_icon.svg);
+            background-size: 32px;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+      }
 
     .slider{
         position: relative;
@@ -33,6 +58,19 @@
             @include wH(100%, 100%);
             position: absolute;
             clip-path: circle(0% at 0 50%);
+            display: flex;
+            align-items: center;
+
+            .main-container__filtroAzul{
+                height: 100vh;
+                width: 100vw;
+                @include flexRule(null,center,center);
+                background: rgb(2,0,36);
+                background: linear-gradient(7deg, rgba(2,0,36,1) 24%, rgba(4,56,119,1) 65%, rgba(7,88,186,1) 100%);
+                opacity: 0.6;
+                position: absolute;
+                z-index: 10;
+            }
 
             img{
                 @include wH(100%, 100%);
@@ -43,39 +81,49 @@
             .info{
                 position: absolute;
                 color: $colorLetra1;
-                background: rgba(255, 255, 255, 0.7);
-                width: 40%;
-                max-width: 40%;
-                margin-top: 150px;
-                margin-left: 70px;
-                padding: 40px;
+                //background: rgba(255, 255, 255, 0.7);
+                width: 50%;
+                max-width: 50%;
+                height: 400px;
+                margin-left: 160px;
+                padding: 10px;
                 border-radius: 5px;
-                box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                z-index: 100;
 
                 animation: fadeInDownBig;
                 animation-duration: 1s;
 
                 h2{
-                    font-size: 2em;
+                    font-size: 8rem;
                     font-weight: 800;
                     margin-bottom: 16px;
+                    color: $colorLetra2;
                 }
                 
                 p{
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                     font-weight: 400;
-                    margin-bottom: 48px;
+                    line-height: 24px;
+                    margin-bottom: 20px;
+                    color: $colorLetra2;
+                    width: 70%;
                 }
 
                 a{
                     text-decoration: none;
                     width: 213px;
                     color: $colorLetra2;
-                    height: 41px;
+                    height: 42px;
                     padding: 10px;
                     background-color: $colorTerciario;
-                    font-size: 1.4rem;
+                    font-size: 1.8rem;
                     transform: all 300ms ease;
+                    text-align: center;
+                    border-radius: 8px;
 
                     &:hover{
                         background-color: $colorCuaternario;
@@ -101,6 +149,14 @@
             opacity: 0;
             transition: opacity 0.5s ease;
             @include flexRule(null,space-between,center);
+
+            i{
+
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
         }
           
         &:hover .navigation{
@@ -109,10 +165,9 @@
           
         .prev-btn, .next-btn{
             z-index: 999;
-            font-size: 2em;
             color: $colorLetra1;
             background: rgba(255, 255, 255, 0.8);
-            padding: 30px;
+            padding: 25px;
             cursor: pointer;
         }
           
@@ -143,7 +198,7 @@
             }
 
             .slide-icon.active{
-                background: $colorTerciario
+                background: white;
             }
         }   
     }
@@ -185,7 +240,7 @@
             height: 40vh;
         }
         .slider .slide .info .especial{
-            height: 150px;
+            //height: 150px;
         }
 
         .slider .slide .info h2{
@@ -200,7 +255,8 @@
 
         .main{
             h2{
-                padding-bottom: 48px;
+                padding-bottom: 0px;
+                margin-bottom: 0;
             }
             p{
                 display: none;
