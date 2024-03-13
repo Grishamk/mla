@@ -15,6 +15,10 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #02142B;
 }
+body main {
+  -webkit-animation: none;
+          animation: none;
+}
 
 .inicio {
   border-bottom: 1px solid #333;
@@ -268,7 +272,6 @@ header:hover {
 
 .main-container {
   /*HOME*/
-  /*SERVICIOS*/
 }
 .main-container #btnBackToTop {
   position: fixed;
@@ -406,10 +409,6 @@ header:hover {
           justify-content: center;
   gap: 20px;
   z-index: 100;
-  -webkit-animation: fadeInDownBig;
-          animation: fadeInDownBig;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
 }
 .main-container .main-container__carrusel .slider .slide .info h2 {
   font-size: 5rem;
@@ -514,7 +513,7 @@ header:hover {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 40px 24px;
+  padding: 90px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,7 +526,19 @@ header:hover {
           align-items: center;
 }
 .main-container .main__servicios h2 {
+  width: 100%;
+  font-size: 3.2rem;
+  justify-self: flex-start;
   margin-bottom: 24px;
+  margin-left: 40px;
+}
+.main-container .main__servicios h2 .linea {
+  width: 150px;
+  height: 4px;
+  background-color: #089de8;
+  border-radius: 0 0 8px 0;
+  -webkit-box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.44);
 }
 .main-container .main__servicios .servicios__contenedor {
   display: -webkit-box;
@@ -569,6 +580,7 @@ header:hover {
   position: relative;
   top: -37px;
   text-align: center;
+  font-size: 1.5rem;
   border-radius: 0px 0px 8px 8px;
   background: rgba(4, 56, 119, 0.75);
   display: -webkit-box;

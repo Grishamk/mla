@@ -28,14 +28,17 @@
                 @include wH(272px, 600px);
                 @include boxShadow();
                 color: $colorLetra2;
+                border-radius: 8px;
                 
                 picture{
                     width: 100%;
                     @include flexRule(null,center,center);
-                    padding: 15px 15px 0px;
+                    padding: 12px 8px 0px;
+                    
     
                     img{
-                        width: 250px;
+                        width: 248px;
+                        border-radius: 6px 6px 0 0;
                     }
                 }
     

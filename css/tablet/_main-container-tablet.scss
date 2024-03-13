@@ -4,9 +4,7 @@
 .main-container{
     /*HOME*/
     @import './src/home/carrusel_principal-tablet';
-    
-    /*SERVICIOS*/
-    @import './src/home/main_servicios';
+    @import './src/home/main_servicios-tablet';
     @import './src/home/main_noticias';
 
 }

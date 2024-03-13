@@ -1,11 +1,22 @@
 .main__servicios{
     @include wH(100%,auto);
     margin: 0 auto;
-    padding: 40px 24px;
+    padding: 90px 24px;
     @include flexRule(column,null,center);
 
     h2{
+        width: 100%;
+        font-size: 3.2rem;
+        justify-self: flex-start;
         margin-bottom: 24px;
+        margin-left: 40px;
+
+        .linea{
+            @include wH(150px,4px);
+            background-color: $colorCuaternario;
+            border-radius: 0 0 8px 0;
+            @include boxShadowLite;
+        }
     }
 
     .servicios__contenedor{
@@ -31,6 +42,7 @@
                 position: relative;
                 top: -37px;
                 text-align: center;
+                font-size: 1.5rem;
                 border-radius: 0px 0px 8px 8px;
                 background: rgba(4, 56, 119, 0.75);
                 @include flexRule(null,center,center);

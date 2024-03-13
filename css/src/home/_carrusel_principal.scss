@@ -24,7 +24,9 @@
       @include flexRule(null,center,center);
       background: #d9d9d9;
       position: relative;
-    
+
+      animation-duration: 2s;
+
       .backButton{
         width: 70px;
         height: 40px;
@@ -94,8 +96,6 @@
                 gap: 20px;
                 z-index: 100;
 
-                animation: fadeInDownBig;
-                animation-duration: 1s;
 
                 h2{
                     font-size: 3.2rem;

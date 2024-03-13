@@ -23,15 +23,15 @@
       @include flexRule(null,center,center);
       background: #d9d9d9;
       position: relative;
-    
+
       .backButton{
         width: 80px;
-        height: 44px;
+        height: 48px;
         bottom: 0;
         position: absolute;
         background-color: $colorSecundario;
         z-index: 15;
-        border-radius: 32px 32px 0px 0px;
+        border-radius: 36px 36px 0px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -92,9 +92,6 @@
                 justify-content: center;
                 gap: 20px;
                 z-index: 100;
-
-                animation: fadeInDownBig;
-                animation-duration: 1s;
 
                 h2{
                     font-size: 8rem;

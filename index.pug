@@ -8,14 +8,14 @@ block contenido
                 span ↑
             //CARRUSEL PRINCIPAL
             
-            .main-container__carrusel 
+            .main-container__carrusel.animate__animated.animate__fadeIn
                 
                 .slider
                     //Primer Slide
                     .slide.active
                         .main-container__filtroAzul
                         img(src='./img/slide/slide1.webp' alt='')
-                        .info
+                        .info.animate__animated.animate__fadeInLeftBig
                             h2.especial Contadores públicos autorizados desde 1983
                             p
                                 |Realizamos procesos de revisión y aseguramiento de forma independiente, objetiva y oportuna alineada a las normas y buenas prácticas internacionales. 
@@ -74,7 +74,7 @@ block contenido
                             img(src="/icon/1904671_arrow_arrow right_change_direction_next_icon.svg", alt="")
                     
                     //Indicadores de los slides (puntos)
-                    .navigation-visibility
+                    .navigation-visibility.animate__animated.animate__fadeInUpBig
                         .slide-icon.active
                         .slide-icon
                         .slide-icon
@@ -85,78 +85,18 @@ block contenido
                     a(href="#services") 
             
 
-            //.main-container__carrusel#head
-                .slider
-                    //Primer slide
-                    .slide.active
-                        img(src='./img/slide/slide1.webp' alt='')
-                        .info.main
-                            h2.especial Firma de contadores públicos autorizados que ha estado operando desde el año 1983.
-                            p
-                                |Realizamos procesos de revisión y aseguramiento de forma independiente, objetiva y oportuna alineada a las normas y buenas prácticas internacionales. Brindamos una opinión certera sobre la actuación global de la empresa, sus procesos y controles, creando de esta manera valor para el desarrollo y mejora de su organización.
-                            
-                            a(href="./html/nosotros/quienesSomos.html") MÁS INFORMACIÓN 
-
-                    //Segundo slide
-                    .slide
-                        img(src='./img/slide/slide2.webp' alt='')
-                        .info
-                            h2 Servicios de auditoría
-                            p
-                                |Realizamos procesos de revisión y aseguramiento de forma independiente, objetiva y oportuna alineada a las normas y buenas prácticas internacionales. Brindamos una opinión certera sobre la actuación global de la empresa, sus procesos y controles, creando de esta manera valor para el desarrollo y mejora de su organización.
-                            
-                            a(href="./html/servicios/auditoria.html") MÁS INFORMACIÓN
-
-                    //Tercer slide
-                    .slide
-                        img(src='./img/slide/slide3.webp' alt='')
-                        .info
-                            h2 Desarrollo Organizacional
-                            p
-                                | Ofrecemos servicios especializados enfocados al desarrollo organizacional, los cuales permiten garantizar que su estrategia y recursos internos operen de forma eficiente, armónica y organizada permitiéndoles adaptarse a las necesidades actuales y futuras de forma planificada y controlada. 
-                            
-                            a(href="./html/servicios/desarrolloOrg.html") MÁS INFORMACIÓN
-
-                    //Cuarto slide
-                    .slide
-                        img(src='./img/slide/slide4.webp' alt='')
-                        .info
-                            h2 Impuestos - Nómina - Contabilidad
-                            p
-                                | Sobre la base de nuestra especialización en materia contable y fiscal en los diferentes sectores económicos del país, brindamos servicios de procesamiento contable y cumplimiento fiscal que garanticen: la calidad, confiabilidad y oportunidad de las informaciones financieras de su organzación.
-                            
-                            a(href="./html/servicios/impuesto-nomina.html") MÁS INFORMACIÓN
-
-                    //Quinto slide
-                    .slide
-                        img(src='./img/slide/slide5.webp' alt='')
-                        .info
-                            h2 Asesoramiento Tributario
-                            p
-                                | Brindamos servicios especializados de asesoría y planificacion fiscal, consecución de acuerdos y defensas ante el órgano regulador, gestión de cumplimiento de compromisos fiscales, así como auditorías en la matería. Nuestros servicios se basan en la gestión de riesgos enfocada en la eficiencia tributaria bajo el debido cumplimiento.
-
-                            a(href="./html/servicios/asesoria.html") MÁS INFORMACIÓN
-
-                    //Navegación para los slides (Flechas)
-                    .navigation
-                        i.fas.fa-chevron-left.prev-btn
-                        i.fas.fa-chevron-right.next-btn
-                    
-                    //Indicadores de los slides (puntos)
-                    .navigation-visibility
-                        .slide-icon.active
-                        .slide-icon
-                        .slide-icon
-                        .slide-icon
-                        .slide-icon
+            
 
 
             //SERVICIOS
 
             section.main__servicios#services
                 //h2 Servicios
-                div.servicios__contenedor
+                div.servicios__contenedor.fade-in
                     
+                    h2 Servicios
+                        .linea
+
                     //IMPUESTOS
                     a(href="./html/servicios/impuesto-nomina.html")
                         img(src="./img/slide/slide4.webp", alt="").servicios__imagen
@@ -195,7 +135,7 @@ block contenido
                  
             //NOTICIAS
             
-            section.main-container__noticias.fade-in
+            section.main-container__noticias
                 h1 Últimas Noticias
                 //ESTO SERÁ ELIMINADO CUANDO SE HAGA EL BACKEND
                 .noticias__container
@@ -218,7 +158,7 @@ block contenido
                     
 
             //SECCIÓN DE BKR
-            section.main-container__respaldo.fade-in
+            section.main-container__respaldo
                 section
                     //Aquí se muestra información sobre el respaldo de la firma utilizando el mixin "respaldo".
                     +respaldo("bkr.svg   ","Logo BKR International","Respaldo Internacional", "MLA es miembro de BKR International, una asociación de firmas auditoras y consultoras de negocios localizadas en 81 paises y más de 588 oficinas en el mundo.")
@@ -226,16 +166,16 @@ block contenido
                     +respaldo("calidad.svg","Logo de una diana con un dardo","Expertos en su sector","Desarrollamos metodologías personalizadas que aseguran procesos eficientes para cada sector empresarial. Basados en la experiencia y el conocimiento adquirido con la participación en diversos proyectos.")
 
             //CAPITAL HUMANO
-            section.main-container__capital-humano.fade-in
+            section.main-container__capital-humano
                 // Aquí se muestra información sobre los socios de la firma a través de mixins 'socio'
-                section.capital-humano__container.fade-in
-                    h2.fade-in Capital Humano
-                    p.fade-in Agregamos valor a nuestros clientes cumpliendo con sus requisitos y en satisfacer sus expectativas.
+                section.capital-humano__container
+                    h2 Capital Humano
+                    p Agregamos valor a nuestros clientes cumpliendo con sus requisitos y en satisfacer sus expectativas.
                    
-                    a(href="./html/capital-humano/capital-humano.html").fade-in Ver todos 
+                    a(href="./html/capital-humano/capital-humano.html") Ver todos 
             
             //CARRUSEL DE CLIENTES
-            section.main-container__clientes.fade-in
+            section.main-container__clientes
                 h2 Nuestros Clientes
                 div.carousel
                     div.carousel-container
@@ -272,7 +212,7 @@ block contenido
                         img(src="./img/SLIDE-TRABAJADAS/Pas4Mesa-de-trabajo-1.webp", alt="Imagen 31")
 
             //MAPA
-            section.main-container__mapa.fade-in
+            section.main-container__mapa
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d473.09774136335295!2d-69.9549795556712!3d18.44820775376078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea5621e1e54cfff%3A0x70cbf5dd68314e49!2sMLA-%20Mejia%20Lora%20%26%20Asociados%20-%20Auditores!5e0!3m2!1ses-419!2sdo!4v1683561275739!5m2!1ses-419!2sdo" title="ubicacion" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Ubicacion</iframe>
 
         //Pie de página
