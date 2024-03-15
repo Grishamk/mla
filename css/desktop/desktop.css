@@ -368,7 +368,7 @@ header:hover {
     height: 40px;
   }
 }
-/*SERVICIOS*/
+/*HOME*/
 .main-container #btnBackToTop {
   position: fixed;
   bottom: 100px;
@@ -705,4 +705,71 @@ header:hover {
 }
 .main-container .main__servicios .servicios__contenedor a:hover div {
   background-color: #043877;
+}
+.main-container .main-container__clientes {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 24px;
+  gap: 48px;
+}
+.main-container .main-container__clientes h2 {
+  width: 100%;
+  max-width: 1300px;
+  font-size: 3.6rem;
+  justify-self: flex-start;
+  margin-bottom: 60px;
+  margin-left: 76px;
+  color: #02142B;
+}
+.main-container .main-container__clientes h2 .linea {
+  width: 150px;
+  height: 4px;
+  background-color: #089de8;
+  border-radius: 0 0 8px 0;
+  -webkit-box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.44);
+}
+.main-container .main-container__clientes .carousel {
+  width: 90%;
+  height: auto;
+  max-width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+.main-container .main-container__clientes .carousel div.autoplay {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.main-container .main-container__clientes .carousel div.autoplay .carrusel-Item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-container .main-container__clientes .carousel div.autoplay .carrusel-Item img {
+  width: 200px;
+  height: 100px;
 }

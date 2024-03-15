@@ -678,7 +678,7 @@ header:hover {
 }
 .main-container .main-container__clientes {
   width: 100%;
-  height: 400px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,78 +692,49 @@ header:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 64px 24px;
+  gap: 48px;
 }
 .main-container .main-container__clientes h2 {
-  font-size: 3.6rem;
-  margin-bottom: 40px;
+  width: 100%;
+  font-size: 3.2rem;
+  justify-self: flex-start;
+  margin-bottom: 60px;
+  color: #02142B;
+}
+.main-container .main-container__clientes h2 .linea {
+  width: 150px;
+  height: 4px;
+  background-color: #089de8;
+  border-radius: 0 0 8px 0;
+  -webkit-box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.44);
 }
 .main-container .main-container__clientes .carousel {
   width: 100%;
   height: auto;
-  position: relative;
-  overflow: hidden;
-  max-width: 1000px;
-}
-.main-container .main-container__clientes .carousel .carousel-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
 }
-.main-container .main-container__clientes .carousel .carousel-container img {
-  width: 1000px;
-  height: 162.5;
-  max-width: 1200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.main-container .main-container__clientes .carousel div.autoplay {
+  width: 80vw;
 }
-@media screen and (max-width: 768px) {
-  .main-container .main-container__clientes .carousel {
-    max-width: 700px;
-  }
-  .main-container .main-container__clientes .carousel .carousel-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  }
-  .main-container .main-container__clientes .carousel .carousel-container img {
-    width: 700px;
-    max-width: 900px;
-    height: 113.75;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+.main-container .main-container__clientes .carousel div.autoplay div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-@media screen and (max-width: 430px) {
-  .main-container .main-container__clientes h2 {
-    font-size: 2.4rem;
-  }
-  .main-container .main-container__clientes .carousel {
-    max-width: 312px;
-  }
-  .main-container .main-container__clientes .carousel .carousel-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  }
-  .main-container .main-container__clientes .carousel .carousel-container img {
-    width: 312px;
-    max-width: 900px;
-    height: 52px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+.main-container .main-container__clientes .carousel div.autoplay div img {
+  width: 200px;
+  height: 100px;
 }
 .main-container .main-container__capital-humano {
   width: 100%;
@@ -995,7 +966,6 @@ header:hover {
 }
 .main-container .main-container__noticias {
   width: 100%;
-  background-color: white;
   color: white;
   background-color: #F7F7F7;
   display: -webkit-box;
@@ -1008,11 +978,22 @@ header:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 24px;
+  padding: 80px 24px;
 }
-.main-container .main-container__noticias h1 {
+.main-container .main-container__noticias h2 {
+  width: 100%;
+  font-size: 3.2rem;
+  justify-self: flex-start;
+  margin-bottom: 60px;
   color: #02142B;
-  padding-bottom: 32px;
+}
+.main-container .main-container__noticias h2 .linea {
+  width: 150px;
+  height: 4px;
+  background-color: #089de8;
+  border-radius: 0 0 8px 0;
+  -webkit-box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 6px 10px -1px rgba(0, 0, 0, 0.44);
 }
 .main-container .main-container__noticias .noticias__container {
   width: 100%;
@@ -1036,13 +1017,13 @@ header:hover {
   color: white;
 }
 .main-container .main-container__noticias .noticias__container a .noticia__item {
-  background-color: #043877;
+  background-color: white;
   width: 272px;
-  height: 600px;
+  height: 450px;
   box-shadow: 8px 5px 14px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 8px 8px 14px 0px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.54);
-  color: white;
+  color: #02142B;
   border-radius: 8px;
 }
 .main-container .main-container__noticias .noticias__container a .noticia__item picture {
@@ -1056,14 +1037,14 @@ header:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 12px 8px 0px;
+  padding: 15px 15px 8px;
 }
 .main-container .main-container__noticias .noticias__container a .noticia__item picture img {
-  width: 248px;
+  width: 100%;
   border-radius: 6px 6px 0 0;
 }
 .main-container .main-container__noticias .noticias__container a .noticia__item .noticia__contenido {
-  padding: 15px;
+  padding: 8px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,17 +1057,14 @@ header:hover {
   height: 100px;
 }
 .main-container .main-container__noticias .noticias__container a .noticia__item .noticia__contenido .titulo h2 {
-  font-size: 1.8rem;
-  margin-bottom: 4px;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
   font-weight: 500;
+  color: #02142B;
 }
 .main-container .main-container__noticias .noticias__container a .noticia__item .noticia__contenido .titulo .fecha {
   margin-bottom: 16px;
-  font-size: 1.2rem;
-}
-.main-container .main-container__noticias .noticias__container a .noticia__item .noticia__contenido .texto p {
-  font-size: 1.6rem;
-  line-height: 2.2rem;
+  font-size: 1.4rem;
 }
 .main-container .main-container__noticias .noticias__container a .noticia__item .noticia__enlace {
   padding: 15px;

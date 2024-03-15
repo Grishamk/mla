@@ -84,9 +84,7 @@ block contenido
                 .backButton#btnBaja
                     a(href="#services") 
             
-
             
-
 
             //SERVICIOS
 
@@ -132,21 +130,28 @@ block contenido
                         img(src="./img/servicios/foto-protec.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Protección Patrimonial
-                 
+        
+
+
             //NOTICIAS
             
             section.main-container__noticias
-                h1 Últimas Noticias
+                
+                h2.noticias_titulo Noticias
+                    .linea
+
                 //ESTO SERÁ ELIMINADO CUANDO SE HAGA EL BACKEND
                 .noticias__container
 
                     //Aqui se agregaran las noticias utilizando el mixin "noticia" creado en su respectivo documento.
                     
-                    +noticia("20feb.webp","foto de la Licenciada Sayka Mejía", "Juramentación Women of IFA Network (WIN) International Fiscal Association (IFA)","19 de febrero", "La Licda. Sayka Mejía fue designada como representante de WIN-RD y parte de la Junta Directiva de ATRIRD (2024-2026), mientras que la Licda. Nallil Rodríguez fue nombrada 1er Delegado WIN-RD. El acto tuvo lugar en el hotel JW Marriott.", "www.instagram.com/p/C3iZZPAL4Wu/?hl=es&img_index=1")
-                    +noticia("15febrero.webp","foto con texto sobre lo que se va a leer abajo", "Nuevos topes de cotización para el Régimen contributivo","15 de febrero", "La Tesorería de la Seguridad Social estableció los nuevos topes de cotización del régimen contributivo, Estas modificaciones están contenidas en la Resolución 01-2024, emitida por la institución, y entraron en vigor a partir del 1 de febrero de 2024.", "www.instagram.com/p/C3XszL2Lo2l/?hl=es&img_index=1")
+                    +noticia("20feb.webp","foto de la Licenciada Sayka Mejía", "Juramentación Women of IFA Network (WIN) International Fiscal Association (IFA)","19 de febrero", "www.instagram.com/p/C3iZZPAL4Wu/?hl=es&img_index=1")
                     
-                    +noticia("FEB7.webp","Foto informativa con el planeta y el logo de la firma","Fecha límite presentación IR-13","7 de Febrero","Les recordamos que la fecha límite de presentación de la Declaración Jurada Anual de Retenciones a Empleados (IR-13) es el 15 de marzo 2024.","www.linkedin.com/company/mejia-lora-&-asociados/posts/?feedView=all")
-                    +noticia("FEB6.webp","Foto informativa con el planeta y el logo de la firma","Vencimiento plazo de implementación facturación electronica","6 de Febrero","De acuerdo a lo establecido en el Aviso 08-23 publicado por la Dirección General de Impuestos Internos (DGII), el plazo otorgado a los Grandes Contribuyentes Nacionales para la implementación de la facturación electrinica corresponde al 15 de marzo de 2024 - Grupo 2 está próximo a vencer.","www.linkedin.com/company/mejia-lora-&-asociados/posts/?feedView=all")
+                    +noticia("15febrero.webp","foto con texto sobre lo que se va a leer abajo", "Nuevos topes de cotización para el Régimen contributivo","15 de febrero", "www.instagram.com/p/C3XszL2Lo2l/?hl=es&img_index=1")
+                    
+                    +noticia("FEB7.webp","Foto informativa con el planeta y el logo de la firma","Fecha límite presentación IR-13","7 de Febrero","www.linkedin.com/company/mejia-lora-&-asociados/posts/?feedView=all")
+
+                    +noticia("FEB6.webp","Foto informativa con el planeta y el logo de la firma","Vencimiento plazo de implementación facturación electronica","6 de Febrero","www.linkedin.com/company/mejia-lora-&-asociados/posts/?feedView=all")
     
                    
 
@@ -176,40 +181,160 @@ block contenido
             
             //CARRUSEL DE CLIENTES
             section.main-container__clientes
-                h2 Nuestros Clientes
+                h2.noticias_titulo Clientes
+                    .linea
                 div.carousel
-                    div.carousel-container
-                        img(src="./img/SLIDE-TRABAJADAS/gas-1.webp", alt="Imagen 1")
-                        img(src="./img/SLIDE-TRABAJADAS/gas-2.webp", alt="Imagen 2")
-                        img(src="./img/SLIDE-TRABAJADAS/gas-3.webp", alt="Imagen 3")
-                        img(src="./img/SLIDE-TRABAJADAS/gas-4.webp", alt="Imagen 4")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-1.webp", alt="Imagen 5")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-2mesa-de-trabajo-1.webp", alt="Imagen 6")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-3mesa-de-trabajo-1.webp", alt="Imagen 7")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-4mesa-de-trabajo-1.webp", alt="Imagen 8")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-5mesa-de-trabajo-1.webp", alt="Imagen 9")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-6mesa-de-trabajo-1.webp", alt="Imagen 10")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-7mesa-de-trabajo-1.webp", alt="Imagen 11")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-8mesa-de-trabajo-1.webp", alt="Imagen 12")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-9mesa-de-trabajo-1.webp", alt="Imagen 13")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-10mesa-de-trabajo-1.webp", alt="Imagen 14")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-11mesa-de-trabajo-1.webp", alt="Imagen 15")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-12mesa-de-trabajo-1.webp", alt="Imagen 16")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-13mesa-de-trabajo-1.webp", alt="Imagen 17")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-14mesa-de-trabajo-1.webp", alt="Imagen 18")
-                        img(src="./img/SLIDE-TRABAJADAS/hotel-15mesa-de-trabajo-1.webp", alt="Imagen 19")
-                        img(src="./img/SLIDE-TRABAJADAS/konst1mesa-de-trabajo-1.webp", alt="Imagen 20")
-                        img(src="./img/SLIDE-TRABAJADAS/konst2mesa-de-trabajo-1.webp", alt="Imagen 21")
-                        img(src="./img/SLIDE-TRABAJADAS/konst3mesa-de-trabajo-1.webp", alt="Imagen 22")
-                        img(src="./img/SLIDE-TRABAJADAS/lamb1mesa-de-trabajo-1.webp", alt="Imagen 23")
-                        img(src="./img/SLIDE-TRABAJADAS/lamb2mesa-de-trabajo-1.webp", alt="Imagen 24")
-                        img(src="./img/SLIDE-TRABAJADAS/Merc1Mesa-de-trabajo-1.webp", alt="Imagen 25")
-                        img(src="./img/SLIDE-TRABAJADAS/merc2Mesa-de-trabajo-1.webp", alt="Imagen 26")
-                        img(src="./img/SLIDE-TRABAJADAS/merc3Mesa-de-trabajo-1.webp", alt="Imagen 27")
-                        img(src="./img/SLIDE-TRABAJADAS/Pas1Mesa-de-trabajo-1.webp", alt="Imagen 28")
-                        img(src="./img/SLIDE-TRABAJADAS/Pas2Mesa-de-trabajo-1.webp", alt="Imagen 29")
-                        img(src="./img/SLIDE-TRABAJADAS/Pas3Mesa-de-trabajo-1.webp", alt="Imagen 30")
-                        img(src="./img/SLIDE-TRABAJADAS/Pas4Mesa-de-trabajo-1.webp", alt="Imagen 31")
+                    div.autoplay
+                        +carruselItem("HM Hotels Logo.webp","Logo de cliente")
+                        +carruselItem("volvo.webp","Logo de Volvo")
+                        +carruselItem("fiat.webp","Logo de cliente")
+                        +carruselItem("saintGeorgeSchool.webp","Logo de cliente")
+                        +carruselItem("W2M logo.webp","Logo de cliente")
+                        +carruselItem("grupoAlonzo.webp","Logo de cliente")
+                        +carruselItem("tribunalConstitucional.webp","Logo de cliente")
+                        +carruselItem("henkel.webp","Logo de cliente")
+                        +carruselItem("majesticColonial.webp","Logo de cliente")
+                        +carruselItem("GSKlogo.webp","Logo de cliente")
+                        +carruselItem("royaltonChicPuntaCana.webp","Logo de cliente")
+                        +carruselItem("jewelPuntaCana.webp","Logo de cliente")
+                        +carruselItem("breathlessPuntaCana.webp","Logo de cliente")
+                        +carruselItem("h10Hotels.webp","Logo de cliente")
+                        +carruselItem("henriquezSolucionesLogisticas.webp","Logo de cliente")
+                        +carruselItem("majesticElegancePuntaCana.webp","Logo de cliente")
+                        +carruselItem("costaFarm.webp","Logo de cliente")
+                        +carruselItem("oceanBlueySand.webp","Logo de cliente")
+                        +carruselItem("whalaUrbanPuntaCana.webp","Logo de cliente")
+                        +carruselItem("Tropigas.webp","Logo de cliente")
+                        +carruselItem("porche.webp","Logo de cliente")
+                        +carruselItem("hardrockHotelyCasino.webp","Logo de cliente")
+                        +carruselItem("babeque.webp","Logo de cliente")
+                        +carruselItem("RCD hotels Logo.webp","Logo de cliente")
+                        +carruselItem("inmuebleca.webp","Logo de cliente")
+                        +carruselItem("puntaCanaIberostar.webp","Logo de cliente")
+                        +carruselItem("hondaRentACar.webp","Logo de cliente")
+                        +carruselItem("princessHotels.webp","Logo de cliente")
+                        +carruselItem("scubaQuatic.webp","Logo de cliente")
+                        +carruselItem("bahiaPrincipeHotelsLuxury.webp","Logo de cliente")
+                        +carruselItem("royaltonPuntaCana.webp","Logo de cliente")
+                        +carruselItem("sunscapePuertoPlata.webp","Logo de cliente")
+                        +carruselItem("NTDingredientes.webp","Logo de cliente")
+                        +carruselItem("elDinero.webp","Logo de cliente")
+                        +carruselItem("sanctuaryCapcana.webp","Logo de cliente")
+                        +carruselItem("cantroMarinoForrest.webp","Logo de cliente")
+                        +carruselItem("grandSirenisPuntaCana.webp","Logo de cliente")
+                        +carruselItem("royaltonBavaro.webp","Logo de cliente")
+                        +carruselItem("vistaSolPuntaCana.webp","Logo de cliente")
+                        +carruselItem("farmaciaCarmina.webp","Logo de cliente")
+                        +carruselItem("baxter.webp","Logo de cliente")
+                        +carruselItem("luxuryBahiaPrincipeDonPablo.webp","Logo de cliente")
+                        +carruselItem("expressChange.webp","Logo de cliente")
+                        +carruselItem("mercafrio.webp","Logo de cliente")
+                        +carruselItem("bahiaPrincipeHotels.webp","Logo de cliente")
+                        +carruselItem("Agas.webp","Logo de cliente")
+                        +carruselItem("cayoLevantadoResort.webp","Logo de cliente")
+                        +carruselItem("seaHorseRanch.webp","Logo de cliente")
+                        +carruselItem("coastal.webp","Logo de cliente")
+                        +carruselItem("Posadas Logo.webp","Logo de cliente")
+                        +carruselItem("camaraComercioyProduccion.webp","Logo de cliente")
+                        +carruselItem("energia2000.webp","Logo de cliente")
+                        +carruselItem("fundacionTropigas.webp","Logo de cliente")
+                        +carruselItem("Grupo Martinon logo.webp","Logo de cliente")
+                        +carruselItem("fistaHotel.webp","Logo de cliente")
+                        +carruselItem("bayacao.webp","Logo de cliente")
+                        +carruselItem("liveAquaHotels.webp","Logo de cliente")
+                        +carruselItem("afermegas.webp","Logo de cliente")
+                        +carruselItem("soventix.webp","Logo de cliente")
+                        +carruselItem("sirenisHotels.webp","Logo de cliente")
+                        +carruselItem("jGasso.webp","Logo de cliente")
+                        +carruselItem("TCLatinAmerica.webp","Logo de cliente")
+                        +carruselItem("royaltonLuxuryResort.webp","Logo de cliente")
+                        +carruselItem("fundacionPropagas.webp","Logo de cliente")
+                        +carruselItem("laMundialdeCoco.webp","Logo de cliente")
+                        +carruselItem("iberostalHotelsyResort.webp","Logo de cliente")
+                        +carruselItem("iberostarHotels.webp","Logo de cliente")
+                        +carruselItem("hyattZilara.webp","Logo de cliente")
+                        +carruselItem("sampol.webp","Logo de cliente")
+                        +carruselItem("playaNuevaRomana.webp","Logo de cliente")
+                        +carruselItem("casaHemingway.webp","Logo de cliente")
+                        +carruselItem("zoetryAguaPuntaCana.webp","Logo de cliente")
+                        +carruselItem("bonanzaBanco.webp","Logo de cliente")
+                        +carruselItem("suplidoraDeCarnes.webp","Logo de cliente")
+                        +carruselItem("pauliGas.webp","Logo de cliente")
+                        +carruselItem("Metrogas.webp","Logo de cliente")
+                        +carruselItem("playaHemingway.webp","Logo de cliente")
+                        +carruselItem("idcConstruccion.webp","Logo de cliente")
+                        +carruselItem("embat.webp","Logo de cliente")
+                        +carruselItem("hageco.webp","Logo de cliente")
+                        +carruselItem("contactoIdeas.webp","Logo de cliente")
+                        +carruselItem("natgas.webp","Logo de cliente")
+                        +carruselItem("tanzaniaComercial.webp","Logo de cliente")
+                        +carruselItem("bgHotel.webp","Logo de cliente")
+                        +carruselItem("propaGas.webp","Logo de cliente")
+                        +carruselItem("bahiaPrincipeHotelsGrand.webp","Logo de cliente")
+                        +carruselItem("next.webp","Logo de cliente")
+                        +carruselItem("softland.webp","Logo de cliente")
+                        +carruselItem("puntaCanaPrincess.webp","Logo de cliente")
+                        +carruselItem("evolucion.webp","Logo de cliente")
+                        +carruselItem("blueDiamondResort.webp","Logo de cliente")
+                        +carruselItem("sotech.webp","Logo de cliente")
+                        +carruselItem("pureSaltLuxuryHotels.webp","Logo de cliente")
+                        +carruselItem("garciaGoicoArquitectos.webp","Logo de cliente")
+                        +carruselItem("bahiaPrincipeHotelsFantasia.webp","Logo de cliente")
+                        +carruselItem("mallen.webp","Logo de cliente")
+                        +carruselItem("puntaBlancaGolf.webp","Logo de cliente")
+                        +carruselItem("breathlessResort.webp","Logo de cliente")
+                        +carruselItem("drTrade.webp","Logo de cliente")
+                        +carruselItem("farmasi.webp","Logo de cliente")
+                        +carruselItem("solbus.webp","Logo de cliente")
+                        +carruselItem("Coming2.webp","Logo de cliente")
+                        +carruselItem("hugoPork.webp","Logo de cliente")
+                        +carruselItem("dreamsOnyscResort.webp","Logo de cliente")
+                        +carruselItem("whalaBavaro.webp","Logo de cliente")
+                        +carruselItem("alCappuccino.webp","Logo de cliente")
+                        +carruselItem("Aloft Santo Domingo.webp","Logo de cliente")
+                        +carruselItem("adocem.webp","Logo de cliente")
+                        +carruselItem("majesticMiragePuntaCana.webp","Logo de cliente")
+                        +carruselItem("grumasa.webp","Logo de cliente")
+                        +carruselItem("hyattZilaraHyattZiva.webp","Logo de cliente")
+                        +carruselItem("naturaParkBeach.webp","Logo de cliente")
+                        +carruselItem("elPalmarAgroindustrial.webp","Logo de cliente")
+                        +carruselItem("cosancaTransporte.webp","Logo de cliente")
+                        +carruselItem("case.webp","Logo de cliente")
+                        +carruselItem("transgas.webp","Logo de cliente")
+                        +carruselItem("honda.webp","Logo de cliente")
+                        +carruselItem("iberostate.webp","Logo de cliente")
+                        +carruselItem("coave.webp","Logo de cliente")
+                        +carruselItem("plasticosDelCaribe.webp","Logo de cliente")
+                        +carruselItem("dreamsFloraResort.webp","Logo de cliente")
+                        +carruselItem("grandBavaroPrincess.webp","Logo de cliente")
+                        +carruselItem("alfaRomeo.webp","Logo de cliente")
+                        +carruselItem("edenRocCapCana.webp","Logo de cliente")
+                        +carruselItem("grandPalladium.webp","Logo de cliente")
+                        +carruselItem("secretsRoyalBeach.webp","Logo de cliente")
+                        +carruselItem("enso.webp","Logo de cliente")
+                        +carruselItem("whalaBayahibe.webp","Logo de cliente")
+                        +carruselItem("tropinsa.webp","Logo de cliente")
+                        +carruselItem("caribeDeluxePrinces.webp","Logo de cliente")
+                        +carruselItem("secretsResort.webp","Logo de cliente")
+                        +carruselItem("rojogas.webp","Logo de cliente")
+                        +carruselItem("oceanElFaro.webp","Logo de cliente")
+                        +carruselItem("steeltec.webp","Logo de cliente")
+                        +carruselItem("tropicalDeluxePrincess.webp","Logo de cliente")
+                        +carruselItem("haciendaDominicus.webp","Logo de cliente")
+                        +carruselItem("dominicanaIberostar.webp","Logo de cliente")
+                        +carruselItem("dipsa.webp","Logo de cliente")
+                        +carruselItem("autotecnigas.webp","Logo de cliente")
+                        +carruselItem("fuerteGroupHotels.webp","Logo de cliente")
+                        +carruselItem("coralLevelBavaro.webp","Logo de cliente")
+                        +carruselItem("peynadoGA.webp","Logo de cliente")
+                        +carruselItem("marti.webp","Logo de cliente")
+                        +carruselItem("costaDoradaIberostar.webp","Logo de cliente")
+                        +carruselItem("bepensa.webp","Logo de cliente")
+                        +carruselItem("motoNeo.webp","Logo de cliente")
+                        +carruselItem("turiscar.webp","Logo de cliente")
+                        +carruselItem("cobinca.webp","Logo de cliente")
+
+
 
             //MAPA
             section.main-container__mapa

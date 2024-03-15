@@ -1,67 +1,38 @@
 .main-container__clientes {
-  @include wH(100%, 400px);
+  @include wH(100%, auto);
   @include flexRule(column,center,center);
+  padding: 64px 24px;
+  gap: 48px;
 
   
   h2{
-    font-size: 3.6rem;
-    margin-bottom: 40px;
-  }
+    width: 100%;
+    font-size: 3.2rem;
+    justify-self: flex-start;
+    margin-bottom: 60px;
+    color: $colorLetra1;
+
+    .linea{
+        @include wH(150px,4px);
+        background-color: $colorCuaternario;
+        border-radius: 0 0 8px 0;
+        @include boxShadowLite;
+    }
+}
 
   .carousel {
     @include wH(100%, auto);
-    position: relative;
-    overflow: hidden;
-    max-width: 1000px; // Establece un ancho máximo para el carrusel
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
   
-    .carousel-container {
-      display: flex;
-      transition: transform 0.5s ease;
-  
-      img {
-        @include wH(1000px, 162.5);
-        max-width: 1200px; // Asegúrate de establecer el ancho exacto de la imagen
-        object-fit: cover;
-      }
-    }
-  }
-  
-  // Estilos para diferentes tamaños de pantalla
-  @media screen and (max-width: 768px) {
-    .carousel {
-      max-width: 700px; // Cambia el ancho máximo del carrusel para pantallas pequeñas
-
-      .carousel-container {
-        display: flex;
-        transition: transform 0.5s ease;
-    
+    div.autoplay{
+      width: 80vw;
+      div{
+        @include flexRule(null,center);
         img {
-          width: 700px;
-          max-width: 900px; // Asegúrate de establecer el ancho exacto de la imagen
-          height: 113.75; // Asegúrate de establecer la altura exacta de la imagen
-          object-fit: cover;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 430px) {
-    
-    h2{
-      font-size: 2.4rem;
-    }
-    .carousel {
-      max-width: 312px; // Cambia el ancho máximo del carrusel para pantallas pequeñas
-
-      .carousel-container {
-        display: flex;
-        transition: transform 0.5s ease;
-    
-        img {
-          width: 312px;
-          max-width: 900px; // Asegúrate de establecer el ancho exacto de la imagen
-          height: 52px; // Asegúrate de establecer la altura exacta de la imagen
-          object-fit: cover;
+          width: 200px;
+          height: 100px;
         }
       }
     }

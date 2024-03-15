@@ -2,13 +2,12 @@
 
 
 
-/*SERVICIOS*/
+/*HOME*/
 .main-container{
     //HOME
     @import "./src/home/carrusel_principal-desktop";
-
-    //Servicios
     @import './src/home/main_servicios-desktop';
     @import './src/home/main_noticias-desktop';
+    @import './src/home/carrusel_clientes-desktop';
 
 }
