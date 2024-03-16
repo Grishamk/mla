@@ -1,7 +1,7 @@
 .main-container__respaldo {
-    @include wH(100%, auto);
+    @include wH(100%, 1000px);
     background-color: $colorSecundario;
-    padding: 100px 24px;
+    padding: 100px 80px;
     
     //MIXIN ITEMS DE RESPALDO
     .main-container__item {
@@ -32,6 +32,3 @@
         }
     }
 }
-
-
-//LAPTOP

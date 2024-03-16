@@ -1,0 +1,49 @@
+.main-container__respaldo {
+    @include wH(100%, 448px);
+    background-color: $colorSecundario;
+    padding: 300px 0px;
+    
+    section{
+        max-width: 1300px;
+        height: 100%;
+        @include flexRule(null,center,center);
+        gap: 8px;
+        margin: 0 auto;
+
+        .main-container__item {
+            color: $colorLetra1;
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 0px;
+            width: 33%;
+            transition: all ease 300ms;
+            @include flexRule(column,null,center);
+            
+            &:hover{
+                transform: scale(1.05);
+                transition: all ease 300ms;
+            }
+
+            img{
+                @include wH(219px, 125px);
+                margin-bottom: 20px;
+                border-radius: 4px;
+            }
+    
+            h2 {
+                font-weight: 400;
+                font-size: 2.6rem;
+                padding: 0;
+                margin-bottom: 8px;
+                line-height: 30px;
+            }
+    
+            p {
+                margin: 0 14px;
+                font-size: 1.4rem;
+                line-height: 24px;
+                padding: 0 8px;
+            }
+        }
+    }
+}
