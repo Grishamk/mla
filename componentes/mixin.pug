@@ -44,21 +44,16 @@ mixin noticia(imagen,alterno,titulo,fecha,enlace,clase)
                 .titulo
                     h2=titulo
                     p.fecha=fecha
-                //.texto
-                    p=texto
-
-
-mixin noticiaEn(imagen,alterno,titulo,fecha,texto,enlace,clase)
-    a(href="http://"+enlace target="_blank")
-        article.noticia__item(class=clase)
-            picture
+    
+mixin noticiaEn(imagen,alterno,titulo,fecha,enlace,clase)
+    a(href="http://"+enlace target="_blank") 
+        article.noticia__item(class=clase href="google.com")
+            picture.noticia__img
                 img(src="../img/avisos/"+imagen, alt=alterno)
             .noticia__contenido
                 .titulo
                     h2=titulo
                     p.fecha=fecha
-                .texto
-                    p=texto
 
 mixin carruselItem(imagen,alterno,clase)
     div.carrusel-Item
