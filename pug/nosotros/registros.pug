@@ -6,12 +6,13 @@ block javaScript
 
 block contenido
         main
-            section.RMtitular
-                .RMtitular__text-container
-                    h2 Registros y Membresías
-                    p MLA cuenta con más de 20 membresías y/o registros, tanto en organismos reguladores nacionales como internacionales y diferentes instituciones relativas al sector financiero.
-            
-            section.membresia.fade-in
+            section.encabezado
+                .encabezado__text-container
+                    h2.animate__animated.animate__fadeInDownBig Registros y Membresías
+                    p.animate__animated.animate__fadeInLeftBig MLA cuenta con más de 20 membresías y/o registros, tanto en organismos reguladores nacionales como internacionales y diferentes instituciones relativas al sector financiero.
+                .backButton#btnBaja.animate__animated.animate__fadeInUp
+                    a(href="#membresias")
+            section.membresia.fade-in#membresias
                 h2.membresia__titular Membresías
                 .membresia__item-container
                     +membresia('bkr.svg','Logo BKR','BKR International')
@@ -22,7 +23,7 @@ block contenido
                     +membresia('asociacion.webp','Logo Foro de Firmas Interamericanas','Foro de Firmas Interamericanas')
                     +membresia('ifa.webp','logo IFA','International Fiscal Association (IFA)')
                     +membresia('IFAC.png','Logo IFAC','Federación Internacional de Contadores (IFAC)')
-                    +membresia('prueba.png','Logo AMLCA','Anti-Money Laundering Certified Associate (AMLCA)')
+                    +membresia('Prueba.png','Logo AMLCA','Anti-Money Laundering Certified Associate (AMLCA)')
                     +membresia('anje.webp','logo ANJE','Asociación Nacional de Jóvenes Empresarios (ANJE)')
             
             section.registro.fade-in

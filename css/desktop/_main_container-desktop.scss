@@ -12,3 +12,9 @@
     @import './src/home/carrusel_clientes-desktop';
 
 }
+
+/*QUIENES SOMOS*/
+main {
+    @import './src/nosotros/encabezado-desktop';
+}
+@import "./src/nosotros/quienes_somos/quienes_somos-desktop";

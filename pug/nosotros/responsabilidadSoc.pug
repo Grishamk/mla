@@ -3,18 +3,17 @@ extend ../../componentes/_plantilla.pug
 block javaScript
     script(src="../../subscript.js")
 
-
-
 block contenido
  
-        main.fade-in
+        main
             section.RS__container
-                section.RStitular
-                    .RStitular__text-container
-                        h2 Responsabilidad Social
-                        p Para nuestra firma, la responsabilidad social es un fundamento clave sobre el cual se rige nuestro desarrollo comercial.
-                
-                section.RS__text-container.fade-in
+                section.encabezado
+                    .encabezado__text-container
+                        h2.animate__animated.animate__fadeInDownBig Responsabilidad Social
+                        p.animate__animated.animate__fadeInLeftBig Para nuestra firma, la responsabilidad social es un fundamento clave sobre el cual se rige nuestro desarrollo comercial.
+                    .backButton#btnBaja.animate__animated.animate__fadeInUp
+                        a(href="#rsText")
+                section.RS__text-container.fade-in#rsText
                     strong Fundada sobre la base de valores familiares y  caracterizada por su  continuo crecimiento el cual se sustenta en la  profesionalidad de sus  recursos humanos, la  calidad de sus servicios, la  honestidad y el respeto a  sus clientes y aliados.
                     p.RS__main-text La responsabilidad social va más allá de una actividad, para nosotros es el compromiso consciente y congruente de cumplir integralmente con la finalidad de la empresa, demostrando respeto por las personas, los valores éticos, la comunidad y el medio ambiente, contribuyendo así a la construcción del bien común, lo cual se traduce en acciones concretas que buscan el beneficio de todos los actores involucrados en las actividades de MLA. Entre ellas destacamos:
                 

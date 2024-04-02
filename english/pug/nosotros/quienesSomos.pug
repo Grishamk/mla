@@ -7,15 +7,13 @@ block javaScript
 block contenido
 
         main
-            a(href="#head").btnBackToTop
-                span ↑
-
-            section.nosotros#head
-                .nosotros__text-container
-                    h2 About us
-                    p Mejía Lora & Asociados (MLA) is a Firm of certified public accountants founded in 1983. We are recognized as a leading Firm nationwide, with international reach, in terms of quality, management, services, and work environment. Our size and culture enable us to provide this full range of services while offering personalized attention to the diverse needs of our clients. By delivering superior service and high-quality work product, we enjoy long-term relationships with our clients, some spanning over 37 years. Our industry experience and commitment to customer service have earned us a stellar reputation in the business, financial, and legal communities.
-            
-            section.nosotrosVideo
+            section.encabezado
+                .encabezado__text-container.animate__animated
+                    h2.animate__animated.animate__fadeInDownBig About us
+                    p.animate__animated.animate__fadeInLeftBig Mejía Lora & Asociados (MLA) is a Firm of certified public accountants founded in 1983. We are recognized as a leading Firm nationwide, with international reach, in terms of quality, management, services, and work environment. Our size and culture enable us to provide this full range of services while offering personalized attention to the diverse needs of our clients. By delivering superior service and high-quality work product, we enjoy long-term relationships with our clients, some spanning over 37 years. Our industry experience and commitment to customer service have earned us a stellar reputation in the business, financial, and legal communities.
+                .backButton#btnBaja.animate__animated.animate__fadeInUp
+                    a(href="#video") 
+            section.nosotrosVideo#video
                 .nosotrosVideo__text
                     p MLA has international backing; we are members of BKR International, one of the top five global associations of independent audit and tax consulting firms. Membership ensures our effective cooperation across borders: 155 affiliated firms with over 266 offices in 81 countries around the world.
                     i "The member firms of BKR International are selected for their local influence, expertise, and international capability."

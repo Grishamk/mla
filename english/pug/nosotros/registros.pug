@@ -5,12 +5,13 @@ block javaScript
 
 block contenido
         main
-            section.RMtitular
-                .RMtitular__text-container
-                    h2 Registries and Memberships
-                    p MLA possesses more than 20 memberships and / or registries in both national and international regulatory institutions, as well as in other institutions related to the financial sector.
-            
-            section.membresia.fade-in
+            section.encabezado
+                .encabezado__text-container
+                    h2.animate__animated.animate__fadeInDownBig Registries and Memberships
+                    p.animate__animated.animate__fadeInLeftBig MLA possesses more than 20 memberships and / or registries in both national and international regulatory institutions, as well as in other institutions related to the financial sector.
+                .backButton#btnBaja.animate__animated.animate__fadeInUp
+                    a(href="#membresias")
+            section.membresia.fade-in#membresias
                 h2.membresia__titular Memberships
                 .membresia__item-container
                     +membresiaEn('bkr.svg','Logo BKR','BKR International')
@@ -21,7 +22,7 @@ block contenido
                     +membresiaEn('asociacion.webp','Logo Foro de Firmas Interamericanas','Foro de Firmas Interamericanas')
                     +membresiaEn('ifa.webp','logo IFA','International Fiscal Association (IFA)')
                     +membresiaEn('IFAC.png','Logo IFAC','Federación Internacional de Contadores (IFAC)')
-                    +membresiaEn('prueba.png','Logo AMLCA','Anti-Money Laundering Certified Associate (AMLCA)')
+                    +membresiaEn('Prueba.png','Logo AMLCA','Anti-Money Laundering Certified Associate (AMLCA)')
                     +membresiaEn('anje.webp','logo ANJE','Asociación Nacional de Jóvenes Empresarios (ANJE)')
             
             section.registro.fade-in

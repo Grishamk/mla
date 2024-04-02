@@ -1262,16 +1262,15 @@ header:hover {
 }
 
 /*SOBRE NOSOTROS*/
-/*SOBRE NOSOTROS*/
-main .nosotros {
-  width: 100%;
-  height: 512px;
-  background-image: url(../img/assets/bg-section.webp);
+main .encabezado {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/assets/bg-section.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: white;
-  text-align: center;
+  padding: 0 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1282,46 +1281,51 @@ main .nosotros {
       -ms-flex-align: center;
           align-items: center;
 }
-main .nosotros__text-container {
+main .encabezado__text-container {
   width: 95%;
+  position: relative;
 }
-main .nosotros__text-container h2 {
-  font-size: 2.8rem;
-  font-weight: 300;
-  margin-bottom: 8px;
+main .encabezado__text-container h2 {
+  width: 100%;
+  font-size: 3.2rem;
+  justify-self: flex-start;
+  margin-bottom: 36px;
+  color: white;
 }
-main .nosotros__text-container p {
+main .encabezado__text-container p {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 22px;
 }
-@media (min-width: 750px) {
-  main .nosotros {
-    background-attachment: fixed;
-  }
-  main .nosotros__text-container {
-    width: 85%;
-  }
-  main .nosotros__text-container p {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-  }
+main .encabezado .backButton {
+  width: 70px;
+  height: 40px;
+  bottom: 0;
+  position: absolute;
+  background-color: white;
+  z-index: 15;
+  border-radius: 32px 32px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-@media (min-width: 1500px) {
-  main .nosotros__text-container {
-    width: 75%;
-  }
-  main .nosotros__text-container h2 {
-    font-size: 4rem;
-    font-weight: 400;
-    margin-bottom: 16px;
-  }
-  main .nosotros__text-container p {
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 32px;
-  }
+main .encabezado .backButton a {
+  width: 32px;
+  height: 32px;
+  background-image: url(/icon/172458_down_arrow_icon.svg);
+  background-size: 24px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: center;
 }
+
+/*SOBRE NOSOTROS*/
 main .nosotrosVideo {
   margin-bottom: 48px;
   display: -webkit-box;
@@ -1717,85 +1721,6 @@ main .nosotrosExp .nosotrosExp__container .nosotrosExp__list ul li {
   margin-bottom: 4px;
 }
 
-main .RMtitular {
-  width: 100%;
-  height: 314px;
-  background-image: url(../img/assets/bg-section.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  -webkit-animation: fadeInLeft;
-          animation: fadeInLeft;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-main .RMtitular__text-container {
-  width: 95%;
-}
-main .RMtitular__text-container h2 {
-  font-size: 2.8rem;
-  font-weight: 300;
-  margin-bottom: 8px;
-}
-main .RMtitular__text-container p {
-  font-size: 1.4rem;
-  font-weight: 300;
-  line-height: 22px;
-}
-@media (min-width: 750px) {
-  main .RMtitular {
-    height: 400px;
-  }
-  main .RMtitular__text-container {
-    width: 85%;
-  }
-  main .RMtitular__text-container h2 {
-    font-size: 3rem;
-    font-weight: 300;
-    margin-bottom: 8px;
-  }
-  main .RMtitular__text-container p {
-    font-size: 1.8rem;
-    font-weight: 300;
-    line-height: 28px;
-  }
-}
-@media (min-width: 1050px) {
-  main .RMtitular__text-container h2 {
-    font-size: 4rem;
-  }
-  main .RMtitular__text-container p {
-    font-size: 2rem;
-    line-height: 30px;
-  }
-}
-@media (min-width: 1500px) {
-  main .RMtitular__text-container {
-    max-width: 1000px;
-  }
-  main .RMtitular__text-container h2 {
-    font-size: 4rem;
-  }
-  main .RMtitular__text-container p {
-    font-size: 2rem;
-    line-height: 30px;
-  }
-}
 main .membresia {
   padding: 80px 0 40px;
   display: -webkit-box;
@@ -2001,78 +1926,6 @@ main .registro__item-container .registro__item h2 {
   }
 }
 
-main {
-  -webkit-animation: fadeInLeft;
-          animation: fadeInLeft;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-main .RStitular {
-  width: 100%;
-  height: 300px;
-  background-image: url(../img/assets/bg-section.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  -webkit-animation: fadeInLeft;
-          animation: fadeInLeft;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-main .RStitular__text-container {
-  width: 95%;
-}
-main .RStitular__text-container h2 {
-  font-size: 2.8rem;
-  font-weight: 300;
-  margin-bottom: 8px;
-}
-main .RStitular__text-container p {
-  font-size: 1.4rem;
-  font-weight: 300;
-  line-height: 22px;
-}
-@media (min-width: 750px) {
-  main .RStitular__text-container {
-    padding: 0 16px;
-  }
-  main .RStitular__text-container h2 {
-    font-size: 3rem;
-    margin-bottom: 8px;
-  }
-  main .RStitular__text-container p {
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-  }
-}
-@media (min-width: 1500px) {
-  main .RStitular__text-container {
-    padding: 0 16px;
-  }
-  main .RStitular__text-container h2 {
-    font-size: 3rem;
-    margin-bottom: 8px;
-  }
-  main .RStitular__text-container p {
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-  }
-}
 main .RS__text-container {
   padding: 48px 20px 24px;
   margin-bottom: 16px;
@@ -2293,47 +2146,6 @@ main .RS__internos article img {
   }
 }
 
-.cert-container {
-  -webkit-animation: fadeInLeft;
-          animation: fadeInLeft;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-.cert-container .cert-container__titular {
-  width: 100%;
-  height: 300px;
-  background-image: url(../img/assets/bg-section.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.cert-container .cert-container__titular h2 {
-  font-size: 2.8rem;
-  font-weight: 300;
-}
-@media (min-width: 1500px) {
-  .cert-container .cert-container__titular {
-    height: 300px;
-  }
-  .cert-container .cert-container__titular h2 {
-    font-size: 4.8rem;
-  }
-}
 .cert-container .cert-container__principal {
   padding: 48px 24px;
 }

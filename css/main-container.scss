@@ -34,6 +34,10 @@
 
 /*SOBRE NOSOTROS*/
 //QUIENES SOMOS
+main{
+    @import './src/nosotros/encabezado';
+}
+
 @import "./src/nosotros/quienes_somos/Quienes_somos";
 
 //REGISTROS Y MEMBRESIAS
