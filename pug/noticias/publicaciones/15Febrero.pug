@@ -1,0 +1,28 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/15febrero.webp", alt="Background de la noticia")
+                    h2 NUEVOS TOPES DE COTIZACIÓN PARA EL RÉGIMEN CONTRIBUTIVO
+            
+            section.publicacion__content
+                p 15 de febrero de 2024
+                
+                div
+                    p La Tesorería de la Seguridad Social estableció los nuevos topes de cotización del régimen contributivo. Estas modificaciones están contenidas en la Resolución 01-2024, emitida por la institución, y entraron en vigor a partir del 1 de febrero de 2024.
+
+                    p De acuerdo con la mencionada disposición, el salario mínimo nacional aplicable para el cálculo de topes de cotización es de RD$19,352.50. Este monto se utiliza como referencia para determinar las contribuciones correspondientes al Seguro de Riesgos Laborales, el Seguro Familiar de Salud, y el el Seguro de Vejez, Discapacidad y Sobrevivencia.
+
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

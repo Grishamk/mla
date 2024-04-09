@@ -1,0 +1,26 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/8marzo.webp", alt="Background de la noticia")
+                    h2 DIA INTERNACIONAL DE LA MUJER
+            
+            section.publicacion__content
+                p 08 de marzo de 2024
+                
+                div
+                    p En Mejía Lora & Asociados celebramos el poder, la valentía y la pasión de todas las mujeres en el día internacional de la mujer. ¡Gracias por su invaluable contribución a cada aspecto de nuestra sociedad!
+
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal
