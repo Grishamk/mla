@@ -4508,6 +4508,181 @@ main .desarrollo__servicios ul li {
     height: 100%;
   }
 }
+@media screen and (min-width: 1050px) {
+  .contacto__main-container {
+    width: 100%;
+    height: 100%;
+  }
+  .contacto__main-container .contacto__encabezado {
+    width: 100%;
+    height: 300px;
+    background-image: url(/img/assets/bg-section.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-top: 100px;
+  }
+  .contacto__main-container .contacto__encabezado div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 80px;
+  }
+  .contacto__main-container .contacto__encabezado div h2 {
+    color: white;
+    font-size: 5.6rem;
+    font-weight: 300;
+  }
+  .contacto__main-container .contacto__main-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario {
+    padding: 60px 88px;
+    background-color: #089de8;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 36px;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario form {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -ms-grid-rows: 36px 24px 36px 24px 156px 24px 40px;
+    grid-template-rows: 36px 36px 156px 40px;
+    grid-auto-flow: column;
+    margin-bottom: 24px;
+    gap: 24px;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario form > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario form > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario form > *:nth-child(3) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario form > *:nth-child(4) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario form div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario form div label {
+    width: 100%;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario form div label input {
+    width: 100%;
+    height: 34px;
+    margin-bottom: 0;
+    border: none;
+    padding: 10px;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario form .formulario__text-area {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario form .formulario__text-area input {
+    height: 148px;
+    margin-bottom: 0;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario form button {
+    width: 172px;
+    height: 40px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    background-color: #043877;
+    border: none;
+    margin-bottom: 0;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 4/1/5/2;
+  }
+  .contacto__main-container .contacto__main-section .main-section__formulario .formulario__link {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  .contacto__main-container .contacto__main-section .main-section__info {
+    padding: 60px 88px;
+    background-color: #F7F7F7;
+  }
+  .contacto__main-container .contacto__main-section .main-section__info .info__titulo {
+    font-weight: 300;
+    margin-bottom: 32px;
+  }
+  .contacto__main-container .contacto__main-section .main-section__info .info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80px 400px;
+    grid-template-columns: 80px 400px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .contacto__main-container .contacto__main-section .main-section__info .info img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .contacto__main-container .contacto__main-section .main-section__info .info__redes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60px 32px 60px 32px 60px 32px 60px;
+    grid-template-columns: repeat(4, 60px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 32px;
+    margin-top: 60px;
+  }
+  .contacto__main-container .contacto__main-section .main-section__info .info__redes a img {
+    width: 40px;
+  }
+  .contacto__main-container .main-section__mapa {
+    width: 100%;
+    height: 400px;
+  }
+  .contacto__main-container .main-section__mapa iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
 /*NOTICIAS*/
 .news__titular {
   width: 100%;
