@@ -65,7 +65,7 @@
         }
 
         //MIXIN ITEMS DE CAPITAL HUMANO
-        .capital-humano__item {
+        /**.capital-humano__item {
             margin-bottom: 24px;
             
             img {
@@ -86,7 +86,7 @@
                 font-weight: 300;
                 margin: 0;
             }
-        }
+        }**/
         
         //BOTON DE CAPITAL HUMANO
         a {
@@ -182,7 +182,7 @@
             }
 
             //MIXIN SOCIOS | Puesto en horizontal y con espaciado.
-            .capital-humano__socios {
+            /**.capital-humano__socios {
                 max-width: 1200px;
                 gap: 32px;
                 flex-wrap: nowrap;
@@ -206,7 +206,7 @@
                         transform: scale(1.05);
                     }
                 }
-            }
+            }**/
 
             //BOTON AL FINAL DE LA SECCION | Tamaño aumentado un poco.
             a{

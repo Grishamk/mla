@@ -1,7 +1,7 @@
 .main-container__respaldo {
     @include wH(100%, auto);
     background-color: $colorSecundario;
-    padding: 40px 24px;
+    padding: 100px 24px;
     
     //MIXIN ITEMS DE RESPALDO
     .main-container__item {
@@ -33,50 +33,5 @@
     }
 }
 
-//TABLET
-@media(min-width: $breakpoint-tablet){
-    .main-container__respaldo {
-        height: 1000px;
-        padding: 0 80px;
-        padding-top: 64px;
-    }
-}
 
 //LAPTOP
-@media(min-width: $breakpoint-laptop){
-    .main-container__respaldo {
-        height: 448px;
-        padding: 0;
-        padding-top: 58px;
-        @include flexRule(null,center,null);
-
-        section {
-            width: 1300px;
-            @include flexRule(null,center,null);
-            gap: 8px;
-
-            //MIXIN ITEM RESPALDO
-            .main-container__item {
-                margin-bottom: 0px;
-                width: 33%;
-
-                &:hover{
-                    transform: scale(1.05);
-                }
-                
-                h2 {
-                    padding: 0;  
-                }
-
-                p {
-                    padding: 0 8px;
-                }
-            }
-        } 
-    }
-}
-
-//DESKTOP
-@media(min-width: $breakpoint-desktop){
-    //version de laptop le queda bien. Aun así, dejo este bloque para futuros cambios.
-}

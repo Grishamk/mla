@@ -1,110 +1,18 @@
 extend ../../componentes/_plantilla.pug
 
-block logo
-    link(rel="shortcut icon", href="../../icon/favicon.ico")
-block mainLogo
-    a.logo-container(href="../../index.html")
-        img(src="../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
-block burgerMenu 
-    img(src="../../icon/menu.svg", alt="menu hamburguesa")
-block homeLinkMovil
-    a(href="../../index.html") Inicio
-block homeLink
-    a(href="../../index.html") Inicio
-block traductorMovil
-    a(href="../../english/html/nosotros/quienesSomos.html") ENGLISH VERSION
-block stylesheet
-    link(rel="stylesheet", href="../../css/main.css")
-
-block nosotros
-    li
-        a(href="../../html/nosotros/quienesSomos.html") Nosotros
-        ul.toggle__nosotros
-            li
-                a(href="../../html/nosotros/quienesSomos.html") Quienes Somos
-            li
-                a(href="../../html/nosotros/registros.html") Registros y Membresías
-            li
-                a(href="../../html/nosotros/responsabilidadSoc.html") Responsabilidad Social 
-            li 
-                a(href="../../html/nosotros/certificaciones.html") Certificaciones 
-
-block servicios
-    li
-        a(href="../../html/servicios/auditoria.html") Servicios
-        ul.toggle__servicios
-            li
-                a(href="../../html/servicios/auditoria.html") Auditoría
-            li
-                a(href="../../html/servicios/asesoria.html") Asesoría Fiscal
-            li
-                a(href="../../html/servicios/impuesto-nomina.html") Impuesto - Nómina - Contabilidad
-            li 
-                a(href="../../html/servicios/consultorias-negocios.html") Consultoría de Negocios y Financiera
-            li 
-                a(href="../../html/servicios/desarrolloOrg.html") Desarrollo Organizacional
-            li 
-                a(href="../../html/servicios/proteccion.html") Protección Patrimonial 
-
-block noticias 
-    li
-        a(href="../../html/noticias/noticias.html") Novedades
-        ul.toggle__novedades
-            li
-                a(href="../../html/noticias/noticias.html") Avisos
-            li
-                a(href="../../html/noticias/boletines.html") Noticias y Boletines
-
-block capitalHumano
-    a(href="../../html/capital-humano/capital-humano.html") Staff
-
-block contacto 
-    a(href="../../html/contacto/contacto.html") Contacto
-
-block botonEs
-    a(href="../../english/html/nosotros/quienesSomos.html").boton  ENGLISH
-
-block footerLogo
-    img(src="../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
-
-block footerSocialIcons
-    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
-        img(src="../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
-    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
-        img(src="../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
-    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
-        img(src="../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
-    //Posiblemente será eliminado
-    a(href="https://twitter.com/MejialoraAsoc") 
-        img(src="../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
-
-block footerMovilIcons
-    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
-        img(src="../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
-    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
-        img(src="../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
-    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
-        img(src="../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
-    //Posiblemente será eliminado
-    a(href="https://twitter.com/MejialoraAsoc") 
-        img(src="../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
-
 block javaScript
     script(src="../../subscript.js")
-
-
-
-
 
 block contenido
 
         main
-            section.nosotros
-                .nosotros__text-container
-                    h2 Sobre Nosotros
-                    p Mejía Lora & Asociados (MLA) es una Firma de contadores públicos autorizados fundada en 1983. Somos reconocidos como una Firma líder a nivel nacional, con alcance internacional, en términos de: calidad, administración, servicios y ambiente de trabajo. Nuestro tamaño y cultura nos permite brindar esta gama completa de servicios, mientras ofrecemos una atención personalizada a las diversas necesidades de nuetros clientes. Al ofrecer un servicio superior y un producto de trabajo de calidad, disfrutamos de relaciones a largo plazo con nuestros clientes, algunos diurante más de 37 años. Nuestra experiencia en la industria y nuestro compromiso con el servicio al cliente nos han hecho merecedores de una reputación estelar en las comunidades empresarial, financiera y legal.
-            
-            section.nosotrosVideo
+            section.encabezado
+                .encabezado__text-container.animate__animated
+                    h2.animate__animated.animate__fadeInDownBig Sobre Nosotros
+                    p.animate__animated.animate__fadeInLeftBig Mejía Lora & Asociados (MLA) es una Firma de contadores públicos autorizados fundada en 1983. Somos reconocidos como una Firma líder a nivel nacional, con alcance internacional, en términos de: calidad, administración, servicios y ambiente de trabajo. Nuestro tamaño y cultura nos permite brindar esta gama completa de servicios, mientras ofrecemos una atención personalizada a las diversas necesidades de nuetros clientes. Al ofrecer un servicio superior y un producto de trabajo de calidad, disfrutamos de relaciones a largo plazo con nuestros clientes, algunos diurante más de 37 años. Nuestra experiencia en la industria y nuestro compromiso con el servicio al cliente nos han hecho merecedores de una reputación estelar en las comunidades empresarial, financiera y legal.
+                .backButton#btnBaja.animate__animated.animate__fadeInUp
+                    a(href="#video") 
+            section.nosotrosVideo#video
                 .nosotrosVideo__text
                     p MLA cuenta con respaldo internacional, somos miembros de BKR International, una de las principales (top 5) asociaciones mundiales de empresas independientes de auditoría y consultoría tributaria. La membresía asegura nuestra efectiva cooperación a través de fronteras: 155 Firmas asociadas con más de 266 oficinas en 81 países alrededor del mundo.
                     i "Las Firmas miembros de BKR International son seleccionadas por su influencia local, experiencia y capacidad internacional."

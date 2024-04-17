@@ -1,0 +1,26 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/7marzo.webp", alt="Background de la noticia")
+                    h2 FECHA LÍMITE DE PAGO 1ERA. CUOTA IPI 2024
+            
+            section.publicacion__content
+                p 05 de marzo de 2024
+                
+                div
+                    p Recordamos que la fecha límite para realizar el pago de la primera cuota del Impuesto al Patrimonio Inmobiliario (IPI) del período 2024 es el próximo 11 de marzo de 2024. Luego de esta fecha se generarán recargos e intereses.
+
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

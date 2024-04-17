@@ -1,91 +1,5 @@
 extend ../../../componentes/_plantillaEn.pug
 
-block logo
-    link(rel="shortcut icon", href="../../../icon/favicon.ico")
-block mainLogo
-    a.logo-container(href="../../index.html")
-        img(src="../../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
-block burgerMenu 
-    img(src="../../../icon/menu.svg", alt="menu hamburguesa")
-block homeLinkMovil
-    a(href="../../index.html") Home
-block homeLink
-    a(href="../../index.html") Home
-block traductorMovil
-    a(href="../../../html/nosotros/quienesSomos.html") VERSION EN ESPAÑOL
-block stylesheet
-    link(rel="stylesheet", href="../../../css/main.css")
-
-block nosotros
-    a(href="../../html/nosotros/quienesSomos.html") About Us
-    ul.toggle__nosotros
-        li
-            a(href="../../html/nosotros/quienesSomos.html") Who we are
-        li
-            a(href="../../html/nosotros/registros.html") Registries and Memberships
-        li
-            a(href="../../html/nosotros/responsabilidadSoc.html") Social Responsability 
-        li 
-            a(href="../../html/nosotros/certificaciones.html") Certifications
-
-block servicios
-    a(href="../../html/servicios/auditoria.html") Services
-    ul.toggle__servicios
-        li
-            a(href="../../html/servicios/auditoria.html") Audit and Assurance
-        li
-            a(href="../../html/servicios/asesoria.html") Tax Advisory
-        li
-            a(href="../../html/servicios/impuesto-nomina.html") Client Accounting Services (CAS)
-        li 
-            a(href="../../html/servicios/consultorias-negocios.html") Business and Financial Consulting
-        li 
-            a(href="../../html/servicios/desarrolloOrg.html") Organizational Development
-        li 
-            a(href="../../html/servicios/proteccion.html") Asset Protection
-
-block noticias 
-    a(href="../../html/noticias/noticias.html") News
-    ul.toggle__novedades
-        li
-            a(href="../../html/noticias/noticias.html") Notices
-        li
-            a(href="../../html/noticias/boletines.html") News and Bulletins
-
-block capitalHumano
-    a(href="../../html/capital-humano/capital-humano.html") Team
-
-block contacto 
-    a(href="../../html/contacto/contacto.html") Contact
-
-block botonEn
-    a(href="../../../html/nosotros/quienesSomos.html").boton  ESPAÑOL
-
-block footerLogo
-    img(src="../../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
-
-block footerSocialIcons
-    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
-        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
-    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
-        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
-    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
-        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
-    //Posiblemente será eliminado
-    a(href="https://twitter.com/MejialoraAsoc") 
-        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
-
-block footerMovilIcons
-    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
-        img(src="../../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
-    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
-        img(src="../../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
-    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
-        img(src="../../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
-    //Posiblemente será eliminado
-    a(href="https://twitter.com/MejialoraAsoc") 
-        img(src="../../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
-
 block javaScript
     script(src="../../../subscript.js")
 
@@ -93,15 +7,13 @@ block javaScript
 block contenido
 
         main
-            a(href="#head").btnBackToTop
-                span ↑
-
-            section.nosotros#head
-                .nosotros__text-container
-                    h2 About us
-                    p Mejía Lora & Asociados (MLA) is a Firm of certified public accountants founded in 1983. We are recognized as a leading Firm nationwide, with international reach, in terms of quality, management, services, and work environment. Our size and culture enable us to provide this full range of services while offering personalized attention to the diverse needs of our clients. By delivering superior service and high-quality work product, we enjoy long-term relationships with our clients, some spanning over 37 years. Our industry experience and commitment to customer service have earned us a stellar reputation in the business, financial, and legal communities.
-            
-            section.nosotrosVideo
+            section.encabezado
+                .encabezado__text-container.animate__animated
+                    h2.animate__animated.animate__fadeInDownBig About us
+                    p.animate__animated.animate__fadeInLeftBig Mejía Lora & Asociados (MLA) is a Firm of certified public accountants founded in 1983. We are recognized as a leading Firm nationwide, with international reach, in terms of quality, management, services, and work environment. Our size and culture enable us to provide this full range of services while offering personalized attention to the diverse needs of our clients. By delivering superior service and high-quality work product, we enjoy long-term relationships with our clients, some spanning over 37 years. Our industry experience and commitment to customer service have earned us a stellar reputation in the business, financial, and legal communities.
+                .backButton#btnBaja.animate__animated.animate__fadeInUp
+                    a(href="#video") 
+            section.nosotrosVideo#video
                 .nosotrosVideo__text
                     p MLA has international backing; we are members of BKR International, one of the top five global associations of independent audit and tax consulting firms. Membership ensures our effective cooperation across borders: 155 affiliated firms with over 266 offices in 81 countries around the world.
                     i "The member firms of BKR International are selected for their local influence, expertise, and international capability."

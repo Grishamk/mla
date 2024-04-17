@@ -1,0 +1,27 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/16abril.webp", alt="Background de la noticia")
+                    h2 CONOCE LOS BENEFICIOS DE LA FACTURACION ELECTRONICA
+            
+            section.publicacion__content
+                p 16 de abril de 2024
+                
+                div
+                    p ¡Dile Adiós al papeleo, hola eficiencia!
+
+                    p En Mejía Lora y Asociados a partir del 01 de abril 2024 emitimos comprobantes fiscales electrónicos. ¿Qué significa esto? Menos pérdida de documentos, cumplimiento tributario simplificado y procesos administrativos más ágiles. ¡Le damos la bienvenida al futuro de la facturación!
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

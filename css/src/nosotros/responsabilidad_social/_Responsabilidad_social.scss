@@ -1,8 +1,4 @@
 main {
-    animation: fadeInLeft;
-    animation-duration: 1s;
-    //TITULAR PRINCIPAL
-    @import "./rs_titular";
     
     //CONTENEDOR DE TEXTO y ACTORES EXTERNOS
     @import "./rs_text-container";

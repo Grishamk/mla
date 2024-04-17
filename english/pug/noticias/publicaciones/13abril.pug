@@ -1,0 +1,27 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/16abril.webp", alt="Background de la noticia")
+                    h2 EXCHANGE RATE FOR SETTLEMENT AND PAYMENT OF ITBIS IN HOTELS UNDER ADVANCE PRICING AGREEMENTS
+            
+            section.publicacion__content
+                p April 13, 2024
+                
+                div
+                    p Taking into consideration that the exchange rate approved by the General Directorate of Internal Taxes (DGII) for the settlement and payment of the Tax on the Transfer of Industrialized Goods and Services (ITBIS) is the same as the Central Bank publishes as the Average Monthly Exchange Rate for the purchase of foreign currency in the Spot Market.
+
+                    p The exchange rate for the settlement and payment of ITBIS in operations under the APA for March 2024 is RD$/US$ 58.8773. Make sure to adjust your calculations correctly!
+
+            
+            section.publicacion__otras
+                h2 Other news
+
+                +noticiaPrincipalEn

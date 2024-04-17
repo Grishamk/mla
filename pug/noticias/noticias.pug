@@ -1,99 +1,7 @@
 extend ../../componentes/_plantilla.pug
 
-block logo
-    link(rel="shortcut icon", href="../../icon/favicon.ico")
-block mainLogo
-    a.logo-container(href="../../index.html")
-        img(src="../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
-block burgerMenu 
-    img(src="../../icon/menu.svg", alt="menu hamburguesa")
-block homeLinkMovil
-    a(href="../../index.html") Inicio
-block homeLink
-    a(href="../../index.html") Inicio
-block traductorMovil
-    a(href="../../english/html/noticias/noticias.html") ENGLISH VERSION
-block stylesheet
-    link(rel="stylesheet", href="../../css/main.css")
-
-block nosotros
-    li
-        a(href="../../html/nosotros/quienesSomos.html") Nosotros
-        ul.toggle__nosotros
-            li
-                a(href="../../html/nosotros/quienesSomos.html") Quienes Somos
-            li
-                a(href="../../html/nosotros/registros.html") Registros y Membresías
-            li
-                a(href="../../html/nosotros/responsabilidadSoc.html") Responsabilidad Social 
-            li 
-                a(href="../../html/nosotros/certificaciones.html") Certificaciones 
-
-block servicios
-    li
-        a(href="../../html/servicios/auditoria.html") Servicios
-        ul.toggle__servicios
-            li
-                a(href="../../html/servicios/auditoria.html") Auditoría
-            li
-                a(href="../../html/servicios/asesoria.html") Asesoría Fiscal
-            li
-                a(href="../../html/servicios/impuesto-nomina.html") Impuesto - Nómina - Contabilidad
-            li 
-                a(href="../../html/servicios/consultorias-negocios.html") Consultoría de Negocios y Financiera
-            li 
-                a(href="../../html/servicios/desarrolloOrg.html") Desarrollo Organizacional
-            li 
-                a(href="../../html/servicios/proteccion.html") Protección Patrimonial 
-
-block noticias 
-    li
-        a(href="../../html/noticias/noticias.html") Novedades
-        ul.toggle__novedades
-            li
-                a(href="../../html/noticias/noticias.html") Avisos
-            li
-                a(href="../../html/noticias/boletines.html") Noticias y Boletines
-
-block capitalHumano
-    a(href="../../html/capital-humano/capital-humano.html") Staff
-
-block contacto 
-    a(href="../../html/contacto/contacto.html") Contacto
-
-block botonEs
-    a(href="../../english/html/noticias/noticias.html").boton  ENGLISH
-
-block footerLogo
-    img(src="../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
-
-block footerSocialIcons
-    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
-        img(src="../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
-    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
-        img(src="../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
-    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
-        img(src="../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
-    //Posiblemente será eliminado
-    a(href="https://twitter.com/MejialoraAsoc") 
-        img(src="../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
-
-block footerMovilIcons
-    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
-        img(src="../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
-    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
-        img(src="../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
-    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
-        img(src="../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
-    //Posiblemente será eliminado
-    a(href="https://twitter.com/MejialoraAsoc") 
-        img(src="../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
-
 block javaScript
     script(src="../../subscript.js")
-
-
-
 
 block contenido
 
@@ -104,103 +12,99 @@ block contenido
             div.news__container
                 //ESTO SERÁ ELIMINADO CUANDO SE HAGA EL BACKEND
                 section.news-noticias
+                    //MARZO
+
+                    +aviso("16abril.webp","foto con texto sobre lo que se va a leer abajo", "Conoce los beneficios de la facturación electrónica","16 de abril", "/html/noticias/publicaciones/16abril.html")
+                    hr
+                    +aviso("19marzo.webp","foto con texto sobre lo que se va a leer abajo", "Tasa de cambio para la liquidación y pago de ITBIS en Hoteles acogidos a acuerdos de precios anticipados.","13 de abril", "/html/noticias/publicaciones/13abril.html")
+                    hr
+                    +aviso("19marzo.webp","foto con texto sobre lo que se va a leer abajo", "Disponibilidad para presentación Declaración Jurada Anual Agente de Retención de Asalariados (IR-13)", "19 de marzo","/html/noticias/publicaciones/19Marzo.html")
+                    hr
+                    +aviso("8marzo.webp","Imágen Día Internacional de la mujer", "Hoy conmemoramos el Día Internacional de la Mujer","8 de marzo","/html/noticias/publicaciones/8Marzo.html")
+                    hr
+                    +aviso("7marzo.webp","foto con texto sobre lo que se va a leer abajo", "Tasa de cambio para la liquidación y pago de ITBIS en hoteles acogidos a APA","7 de marzo","/html/noticias/publicaciones/7Marzo.html")
+                    hr
+                    +aviso("5marzo.webp","foto con texto sobre lo que se va a leer abajo", "Fecha límite de pago 1ERA. cuota IPI 2024","05 de Marzo", "/html/noticias/publicaciones/5Marzo.html")
+                    hr
                     //Febrero
-                    +aviso("20feb.webp","foto de la Licenciada Sayka Mejía", "Juramentación Women of IFA Network (WIN) International Fiscal Association (IFA)","19 de febrero", "La Licda. Sayka Mejía en la Juramentación Women of IFA Network (WIN) / International Fiscal Association (IFA), designada como representante WIN-RD y parte de la Junta Directiva de la Asociación Tributaria de la Republica Dominicana (ATRIRD) periodo 2024-2026 y la Licda. Nallil Rodriguez, Gerente de Auditoria de MLA designada como 1er Delegado WIN-RD, dicho acto fue celebrado en el hotel JW Marriot.","Women of IFA Network (WIN) la Red de Mujeres de IFA, representa y conecta a las muchas mujeres profesionales que trabajan en impuestos internacionales. IFA se esfuerza por ser representativa de una comunidad fiscal internacional dinámica y fomenta la participación de las mujeres en las estructuras y procedimientos de la Asociación.", "www.instagram.com/p/C3iZZPAL4Wu/?hl=es&img_index=1")
+                    +aviso("20feb.webp","foto de la Licenciada Sayka Mejía", "Juramentación Women of IFA Network (WIN) International Fiscal Association (IFA)","19 de febrero", "/html/noticias/publicaciones/19Febrero.html")
                     hr
-                    +aviso("15febrero.webp","foto con texto sobre lo que se va a leer abajo", "Nuevos topes de cotización para el Régimen contributivo","15 de febrero", "La Tesorería de la Seguridad Social estableció los nuevos topes de cotización del régimen contributivo, Estas modificaciones están contenidas en la Resolución 01-2024, emitida por la institución, y entraron en vigor a partir del 1 de febrero de 2024.", "De acuerdo con la mencionada disposición, el salario mínimo nacional aplicable para el cálculo de topes de cotización es de RD$19,352.50. Este monto se utiliza como referencia para determinar las contribuciones correspondientes al Seguro de Riesgos Laborales, el Seguro Familiar de Salud, y el Seguro de Vejez, Discapacidad y Sobreviviencia.", "www.instagram.com/p/C3XszL2Lo2l/?hl=es&img_index=1")
+                    +aviso("15febrero.webp","foto con texto sobre lo que se va a leer abajo", "Nuevos topes de cotización para el Régimen contributivo","15 de febrero", "/html/noticias/publicaciones/15Febrero.html")
                     hr
-                    +aviso("FEB7.webp","Foto informativa con el planeta y el logo de la firma","Fecha límite presentación IR-13","7 de Febrero","Les recordamos que la fecha límite de presentación de la Declaración Jurada Anual de Retenciones a Empleados (IR-13) es el 15 de marzo 2024.","","www.linkedin.com/company/mejia-lora-&-asociados/posts/?feedView=all")
-                    hr
-                    
-                    +aviso("FEB6.webp","Foto informativa con el planeta y el logo de la firma","Vencimiento plazo de implementación facturación electronica","6 de Febrero","De acuerdo a lo establecido en el Aviso 08-23 publicado por la Dirección General de Impuestos Internos (DGII), el plazo otorgado a los Grandes Contribuyentes Nacionales para la implementación de la facturación electrinica corresponde al 15 de marzo de 2024 - Grupo 2 está próximo a vencer.","","www.linkedin.com/company/mejia-lora-&-asociados/posts/?feedView=all")
+                    +aviso("FEB7.webp","Foto informativa con el planeta y el logo de la firma","Fecha límite presentación IR-13","7 de Febrero","/html/noticias/publicaciones/7Febrero.html")
                     hr
                     
+                    +aviso("FEB6.webp","Foto informativa con el planeta y el logo de la firma","Vencimiento plazo de implementación facturación electronica","6 de Febrero","/html/noticias/publicaciones/6Febrero.html")
+                    hr
                     
-                    +aviso("ley179-09.webp","Foto informativa con el planeta y el logo de la firma","FECHA LÍMITE ISR ASALARIADOS ACOGIDOS A LEY GASTOS EDUCATIVOS","1 de Febrero","La fecha límite para presentar la Declaración Jurada de Impuesto sobre la Renta para personas bajo el Régimen Simplificado de Tributación (RST) correspondiente al ejercicio fiscal 2023 es el 29 de febrero de 2024.", "","www.instagram.com/p/C2zyexGLQ_r/?hl=es&img_index=1")
+                    
+                    +aviso("ley179-09.webp","Foto informativa con el planeta y el logo de la firma","FECHA LÍMITE ISR ASALARIADOS ACOGIDOS A LEY GASTOS EDUCATIVOS","1 de Febrero","/html/noticias/publicaciones/1Febrero.html")
                     hr
                    
                     //ENERO
                     
-                    +aviso("fitur.webp","Foto del Licenciado Raymi Mejia y la Licenciada Maria Curiel en Fitur 2024","MLA presente en Fitur 2024","25 de Enero","MLA dice presente en #Fitur 2024, firmes aliados estratégicos del sector turístico; la Firma MLA-Mejia Lora & Asociados, representada por Raymi J Mejia y Maria de Lourdes Curiel de Mejia, se hace nuevamente presente en la feria internacional turística de mayor relevancia.","La Firma MLA-Mejia Lora & Asociados, representada por Raymi J Mejia y Maria de Lourdes Curiel de Mejia, se hace nuevamente presente en la feria internacional turística de mayor relevancia. Se ha aprovechado la ocasión para participar en diversos encuentros con nuestros clientes, representantes e inversionistas del sector; así como participando en los diferentes foros y eventos programados. ","www.instagram.com/p/C2h8Tm_rnV1/?hl=es&img_index=1")
+                    +aviso("fitur.webp","Foto del Licenciado Raymi Mejia y la Licenciada Maria Curiel en Fitur 2024","MLA presente en Fitur 2024","25 de Enero","/html/noticias/publicaciones/25Enero.html")
                     hr
 
-                    +aviso("implementacionProyecto.webp","Foto con las mismas letras de la descripción","Implementación Proyecto BEPS Acción 13 Reporte País por País","22 de Enero","Desde el 2018, la República Dominicana se adhirió al Marco Inclusivo de la OCDE comprometiéndose a implementar y cumplir con ciertos estándares para fortalecer la transparencia e igualdad tributaria a nivel internacional, fortaleciendo la transparencia y la igualdad tributaria. ¡Avanzamos juntos hacia un sistema más justo!","","www.instagram.com/p/C2aNaVUrfRx/?hl=es&img_index=1")
+                    +aviso("implementacionProyecto.webp","Foto con las mismas letras de la descripción","Implementación Proyecto BEPS Acción 13 Reporte País por País","22 de Enero","/html/noticias/publicaciones/22Enero.html")
                     hr
 
 
-                    +aviso("elevandoExito.webp","Foto con las mismas letras de la descripción","Your Expert Partner in the journey of success","17 de Enero","Elevando el éxito empresarial y personal de nuestros clientes: Mejía Lora y Asociados, tu socio experto en cada paso del camino.", "","www.instagram.com/p/C2NBhgmLwUT/?hl=es")
+                    +aviso("elevandoExito.webp","Foto con las mismas letras de la descripción","Your Expert Partner in the journey of success","17 de Enero","/html/noticias/publicaciones/17Enero.html")
                     hr
 
-                    +aviso("licenciadoRaymi.webp","Foto del licenciado Raymi en presentacion de resultados","Presentación de resultados del Ministerio de Turismo 2023","13 de Enero","Honrados de ser parte de la presentación de resultados del Ministerio de Turismo 2023, donde compartimos junto a líderes destacados como Roberto Chapur de Aloft Santo Domingo y Hard Rock Hotels, Rene Grullo VP del Grupo Financiero Popular, Monika Infante de Aerodom, y Juan Manuel Martin de Oliva VP del Banco Popular Dominicano.", " ","www.instagram.com/p/C2DKRe6rnt_/?hl=es&img_index=1")
+                    +aviso("licenciadoRaymi.webp","Foto del licenciado Raymi en presentacion de resultados","Presentación de resultados del Ministerio de Turismo 2023","13 de Enero","http://www.instagram.com/p/C2DKRe6rnt_/?hl=es&img_index=1")
                     hr
 
                     //DICIEMBRE
-                    +aviso("placa.webp","Reconocimiento a la excelencia","Reconocimiento por la Excelencia","12 de Diciembre","Mejía Lora & Asociados recibió placa de reconocimiento por Excelencia en el servicio y 20 años de Membresía en BKR Internacional.", "Nuestra organización esta comprometida con la calidad, contando con un Sistema de Gestión de Calidad Certificado por INTECO bajo la norma ISO 9001:2015, RE-019/2019.","www.instagram.com/p/C1Hoj7rrcc7/?hl=es&img_index=1")
+                    +aviso("placa.webp","Reconocimiento a la excelencia","Reconocimiento por la Excelencia","12 de Diciembre","www.instagram.com/p/C1Hoj7rrcc7/?hl=es&img_index=1")
                     hr
 
-                    +aviso("presentacion.webp","Slide de Powerpoint","Tendencias de la Tributación en un mundo digitaliazdo","11 de Diciembre","Compartimos ponencia de la Lic. Sayka Mejía, como expositor invitado en el XIII Congreso Tributario IFA-RD 2023.", "","www.instagram.com/p/C0R1Cz3rnDv/?hl=es&img_index=1")
+                    +aviso("presentacion.webp","Slide de Powerpoint","Tendencias de la Tributación en un mundo digitaliazdo","11 de Diciembre","Compartimos ponencia de la Lic. Sayka Mejía, como expositor invitado en el XIII Congreso Tributario IFA-RD 2023.", "","http://www.instagram.com/p/C0R1Cz3rnDv/?hl=es&img_index=1")
                     hr
 
                     //NOVIEMBRE
-                    +aviso("reunionDeFirmas.webp","Reunion de BKR Internacional","Reunion Mundial de Firmas BKR International","17 de Noviembre","MLA-Mejia Lora & Asociados se une a BKR International en la Reunión Mundial Anual de este año en Washington DC, donde se lanzó Future Ready BKR International con una nueva estrategia, una nueva marca y un nuevo sitio web.", "Raymi Mejía, socio de MLA y miembro de la junta directiva mundial de BKR International, asistió recientemente a la reunión mundial anual de BKR International que acaba de finalizar en Washington DC.","www.instagram.com/p/CzwQMIQLdId/?hl=es&img_index=1")
+                    +aviso("reunionDeFirmas.webp","Reunion de BKR Internacional","Reunion Mundial de Firmas BKR International","17 de Noviembre","http://www.instagram.com/p/CzwQMIQLdId/?hl=es&img_index=1")
                     hr
-                    +aviso("ampliacion.webp","letras iguales al texto de abajo","Ampliacion en MLA","14 de Noviembre","En Mejía Lora y Asociados, damos la bienvenida a la Navidad con áreas renovadas y el orgullo de serviles siempre!", "Celebramos la magia de la temporada inaugurando las nuevas áreas y reconociendo a parte de nuestro staff por sus 15 años en la empresa.","www.instagram.com/p/Czoa8miLptj/?hl=es&img_index=1")
+                    +aviso("ampliacion.webp","letras iguales al texto de abajo","Ampliacion en MLA","14 de Noviembre","http://www.instagram.com/p/Czoa8miLptj/?hl=es&img_index=1")
                     hr
-                    +aviso("cenaClausura.webp","Foto del cierre de la cena","XXXV Conferencia Interamericana de conabilidad","13 de Noviembre","Celebrando el cierre con broche de oro en la Cena de Clausura de la XXXV Conferencia Interamericana de Contabilidad en Guatemala. ¡El equipo de MLA se siente muy agradecido de haber participado y compartir tan lindas experiencias!","","www.instagram.com/p/CzXPzDpLinX/?hl=es&img_index=1")
+                    +aviso("cenaClausura.webp","Foto del cierre de la cena","XXXV Conferencia Interamericana de conabilidad","13 de Noviembre","http://www.instagram.com/p/CzXPzDpLinX/?hl=es&img_index=1")
                     hr
-
 
 
 
                     //MAYO — ATRASADAS
-                    +aviso("microsoftteams-image.webp","Reunion de BKR Internacional","BRK Regional Meeting","24 de Mayo","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","","www.instagram.com/p/CsoQWllLdfD/?hl=es")
+                    +aviso("microsoftteams-image.webp","Reunion de BKR Internacional","BRK Regional Meeting","24 de Mayo","http://www.instagram.com/p/CsoQWllLdfD/?hl=es")
                     hr
-                    +aviso("microsoftteams-image-1.webp","letras iguales al texto de abajo","Elevamos nuestro compromiso","19 de Mayo","Elevamos nuestro compromiso con Sistema de Gestión de Calidad Certificado por INTECO","","www.instagram.com/p/CsjpyYsvDRL/?hl=es")
+                    +aviso("microsoftteams-image-1.webp","letras iguales al texto de abajo","Elevamos nuestro compromiso","19 de Mayo","http://www.instagram.com/p/CsjpyYsvDRL/?hl=es")
                     hr
-                    +aviso("publicacion-1.webp","letras iguales al texto de abajo","Día del contador público","17 de Mayo","¡Felicidades a todos los contadores públicos en su día! Su dedicación y conocimiento son imprescindibles. ¡Gracias por su excelente trabajo!","","")
+                    +aviso("publicacion-1.webp","letras iguales al texto de abajo","Día del contador público","17 de Mayo","")
                     hr
-                    +aviso("1.webp","Imágen con el mismo texto de debajo","Miembros de BKR INTERNACIONAL","10 de Abril","¡Mejía Lora & Asociados cuenta con respaldo internacional!","","www.instagram.com/p/Cq3e3z3PHl6/?hl=es")
+                    +aviso("1.webp","Imágen con el mismo texto de debajo","Miembros de BKR INTERNACIONAL","10 de Abril","http://www.instagram.com/p/Cq3e3z3PHl6/?hl=es")
                     hr
-                    +aviso("aviso-normas-08.webp","imágen con texto descriptivo","Norma General No.08-2022","20 de Mayo","NORMA GENERAL NO. 08-2022 QUE MODIFICA EL ARTÍCULO 3 DE LA NORMA GENERAL NO. 08-2021.","")
+                    +aviso("aviso-normas-08.webp","imágen con texto descriptivo","Norma General No.08-2022","20 de Mayo","")
                     hr
-                    +aviso("plantilla-informativa-mla-5.webp","imágen con texto descriptivo","Tasas de cambio para el tratamiento de las diferencias cambiarias","5 de Mayo","Tasas de cambio para el tratamiento de las diferencias cambiarias.","")
+                    +aviso("plantilla-informativa-mla-5.webp","imágen con texto descriptivo","Tasas de cambio para el tratamiento de las diferencias cambiarias","5 de Mayo","")
                     hr
-                    +aviso("1-1.webp","imágen con texto descriptivo","Norma general No.09-2021","9 de Noviembre","Norma general No.09-2021 sobre salidas de inventario no facturadas.","")
+                    +aviso("1-1.webp","imágen con texto descriptivo","Norma general No.09-2021","9 de Noviembre","")
                     hr
-                    +aviso("1co.webp","imágen con texto descriptivo","Actualización de multas administrativas","2 de Noviembre","Actualización de multas administrativas para los sujetos obligadors no financieros","")
+                    +aviso("1co.webp","imágen con texto descriptivo","Actualización de multas administrativas","2 de Noviembre","")
                     hr
-                    +aviso("colaboradores-2.webp","Foto del Lic. Lisandro Gonzalez","Promoción interna MLA","2 de Noviembre","MLA se complace en anunciar la promoción de Lisandro González a gerente junior en el departamento de impuetos de la firma.","","www.instagram.com/p/CVxvt2yrcRE/?hl=es")
+                    +aviso("colaboradores-2.webp","Foto del Lic. Lisandro Gonzalez","Promoción interna MLA","2 de Noviembre","http://www.instagram.com/p/CVxvt2yrcRE/?hl=es")
                     hr
-                    +aviso("4.webp","imágen con texto descriptivo","Actividad de lanzamiento de alanube soluciones","30 de Octubre","Firelli Mejia y Sayka Mejia (Partners de MLA) asistieron el día de hoy en la actividad de lanzamiento de nuestro cliente Alanube Soluciones, S.R.L., como tercer proveedor autorizado por la Dirección General de Impuestos Internos de Facturación Electrónica, una modalidad que ofrece mayor seguridad e integridad de la información.","")
+                    +aviso("4.webp","imágen con texto descriptivo","Actividad de lanzamiento de alanube soluciones","30 de Octubre","")
                     hr
-                    +aviso("1635541951809.webp","imágen con texto descriptivo","Día nacional de la prevención del lavado de activos","29 de Octubre","Hoy 29 de octubre conmemoramos el Día Nacional de la Prevención del Lavado de Activos. Asistimos al Congreso Internacional Contra el Lavado de Activos gracias a la Unidad de Análisis Financiero (UAF) de República Dominicana, modalidad virtual los días 28 y 29 de octubre de 2021, se trataron temas sobre la transformación digital de los procesos anti lavado, repensando los delitos medioambientales como un desafío global en la lucha contra el lavado de activos y la importancia de los planes de integridad institucional en la administración pública como sostén de las políticas de transparencia y corrupción.","")
+                    +aviso("1635541951809.webp","imágen con texto descriptivo","Día nacional de la prevención del lavado de activos","29 de Octubre","")
                     hr
-                    +aviso("noticia5.webp","imágen con texto descriptivo","Obligación de remisión del estudio de precios de transferencia","27 de Octubre","Recordamos que a partir del ejercicio fiscal con cierre al 31 de diciembre del 2021 deberá remitirse el Estudio de Precios de Transferencia o Reporte Local a la Dirección General de Impuestos Internos en formato digital","")
+                    +aviso("noticia5.webp","imágen con texto descriptivo","Obligación de remisión del estudio de precios de transferencia","27 de Octubre","")
                     hr
-                    +aviso("noticia6.webp","imágen con texto descriptivo","Multiplicador para el ajuste con inflación cierre al 30 de septiembre 2021","25 de Octubre","Se informa que el Miltiplicador del ajuste por inflación para el ejercicio fiscal cerrado al 30 de septiembre de 2021 es 1.0774; inflación equivalente a 7.74%","")
+                    +aviso("noticia6.webp","imágen con texto descriptivo","Multiplicador para el ajuste con inflación cierre al 30 de septiembre 2021","25 de Octubre","")
                     hr
-                    +aviso("noticia4.webp","imágen con texto descriptivo","Tasas de cambio para el tratamiento de las diferencias cambiarias","25 de Octubre","Para determinar las diferencias cambiarias del ejercicio fiscal cerrado al 30 de septiembre de 2021, las tasas de cambio que deberán utilizarse según aviso publicado por la Dirección General de Impuestos Internos (DGII) son las mencionadas anteriormente.","")
+                    +aviso("noticia4.webp","imágen con texto descriptivo","Tasas de cambio para el tratamiento de las diferencias cambiarias","25 de Octubre","")
                     hr
-                    +aviso("noticia3.webp","imágen con texto descriptivo","Nuevas facilidades de pago para deudas tributarias","22 de Octubre","La Dirección General de Impuestos Internos (#DGII) ha planteado de manera institucional la posibilidad de acoger a los contribuyentes a las concesiones especiales de nuevas facilidades de pago, las cuales conllevarían al aminoramiento de los montos a pagar por concepto de recargos en deudas antiguas al 2021.","")
+                    +aviso("noticia3.webp","imágen con texto descriptivo","Nuevas facilidades de pago para deudas tributarias","22 de Octubre","")
                     hr
-                    +aviso("noticia2.webp","imágen con texto descriptivo","Fecha límite presentación de la declaración jurada IR-2 2021 Cierre 30 de Junio","22 de Octubre","Recordamos que este próximo 28 de octubre de 2021. Luego de esta fecha se generarán recargos e intereses, además de multas por omisión en caso de no ser presentado.","")
+                    +aviso("noticia2.webp","imágen con texto descriptivo","Fecha límite presentación de la declaración jurada IR-2 2021 Cierre 30 de Junio","22 de Octubre","")
                     hr
-                    +aviso("noticia1.webp","imágen con texto descriptivo","Fecha límite de pago 2da cuota impuesto sobre activos (ISA) del periodo 2020","21 de Octubre","Recordamos que es este próximo 28 de octubre de 2021. Luego de esta fecha se generarán recargos e intereses.","")
+                    +aviso("noticia1.webp","imágen con texto descriptivo","Fecha límite de pago 2da cuota impuesto sobre activos (ISA) del periodo 2020","21 de Octubre","")
                     
-                //section.news-boletines
-                    h2 Boletines
-                    article
-                        img(src="../../img/avisos/doing.webp", alt="Imagen con el escudo de la bandera dominicana")
-                        a(href="") Descargar PDF
-                    article
-                        img(src="../../img/avisos/as-para-el-cumplimiento-tributario-1.webp", alt="Imagen de felicitaciones")
-                        a(href="") Descargar PDF
-                    article
-                        img(src="../../img/avisos/letter-from-the-chair.webp", alt="Carta del chairman de BKR")
-                        a(href="") Descargar PDF
-                    article
-                        img(src="../../img/avisos/brk-india-2.webp", alt="Foto del Lic. Raymi Mejia en la india")
-                        a(href="") Descargar PDF
-                    article
-                        img(src="../../img/avisos/boletin.webp", alt="foto de un boletin")
-                        a(href="") Descargar PDF

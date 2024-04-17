@@ -1,0 +1,26 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/7marzo.webp", alt="Background de la noticia")
+                    h2 DEADLINE FOR PAYMENT OF FIRST INSTALLMENT OF IPI 2024
+            
+            section.publicacion__content
+                p March 5, 2024.
+                
+                div
+                    p We remind you that the deadline to make the payment of the first installment of the Real Estate Property Tax (IPI) for the 2024 period is on March 11, 2024. After this date, surcharges and interests will be incurred.
+
+
+            
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

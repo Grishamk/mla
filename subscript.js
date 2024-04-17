@@ -50,3 +50,58 @@ window.addEventListener("load", function() {
     }
   });
 });
+
+let toggleNosotros = document.querySelector('.toggle__nosotros');
+let toggleServicios = document.querySelector('.toggle__servicios');
+let toggleNovedades = document.querySelector('.toggle__novedades');
+
+let nosotros = document.querySelector('#nosotros');
+let servicios = document.querySelector('#servicios');
+let novedades = document.querySelector('#novedades');
+
+function desplegarNosotros(){
+  closeMenu = toggleNosotros.classList.contains('mobile-hidden');
+
+  if(closeMenu){
+    toggleNosotros.classList.remove('mobile-hidden');
+    toggleNosotros.classList.add('mobile-show');
+  } else if (!closeMenu){
+    toggleNosotros.classList.add('mobile-hidden');
+    nosotros.classList.remove('mobile-show');
+  }
+}
+
+function desplegarServicios(){
+  closeMenu = toggleServicios.classList.contains('mobile-hidden');
+
+  if(closeMenu){
+    toggleServicios.classList.remove('mobile-hidden');
+    toggleServicios.classList.add('mobile-show');
+  } else if (!closeMenu){
+    toggleServicios.classList.add('mobile-hidden')
+    toggleServicios.classList.remove('mobile-show');
+  }
+}
+
+function desplegarNovedades(){
+  closeMenu = toggleNovedades.classList.contains('mobile-hidden');
+
+  if(closeMenu){
+    toggleNovedades.classList.remove('mobile-hidden');
+    toggleNovedades.classList.add('mobile-show');
+  } else if (!closeMenu){
+    toggleNovedades.classList.add('mobile-hidden');
+    toggleNovedades.classList.remove('mobile-show');
+  }
+}
+
+
+nosotros.addEventListener("click", () => {
+  desplegarNosotros();
+})
+servicios.addEventListener("click", () => {
+  desplegarServicios();
+})
+novedades.addEventListener("click", () => {
+  desplegarNovedades();
+})

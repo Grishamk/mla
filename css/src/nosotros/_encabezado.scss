@@ -1,0 +1,50 @@
+.encabezado{
+    @include wH(100vw,100vh);
+    background-image: url(/img/assets/bg-section.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $colorLetra2;
+    padding: 0 24px;
+    @include flexRule(null,center,center);
+
+    &__text-container{
+        width: 95%;
+        position: relative;
+        
+        h2{
+            width: 100%;
+            font-size: 3.2rem;
+            justify-self: flex-start;
+            margin-bottom: 36px;
+            color: $colorLetra2;
+        }
+        p{
+            font-size: 1.4rem;
+            font-weight: 300;
+            line-height: 22px;
+        }
+    }
+    .backButton{
+        width: 70px;
+        height: 40px;
+        bottom: 0;
+        position: absolute;
+        background-color: $colorSecundario;
+        z-index: 15;
+        border-radius: 32px 32px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            width: 32px;
+            height: 32px;
+            background-image: url(/icon/172458_down_arrow_icon.svg);
+            background-size: 24px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            background-position: center;
+        }
+    }
+}

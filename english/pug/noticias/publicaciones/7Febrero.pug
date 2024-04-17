@@ -1,0 +1,27 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/FEB7.webp", alt="Background de la noticia")
+                    h2 DEADLINE FOR FILING IR-13
+            
+            section.publicacion__content
+                p February 7, 2024
+                
+                div
+                    p We remind you that the deadline for filing the Annual Withholding Tax Declaration for Employees (IR-13) is March 15, 2024.
+
+
+
+            
+            section.publicacion__otras
+                h2 Other news
+
+                +noticiaPrincipalEn

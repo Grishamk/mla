@@ -1,0 +1,28 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/15febrero.webp", alt="Background de la noticia")
+                    h2 NEW CONTRIBUTION CEILINGS FOR THE CONTRIBUTORY REGIME
+            
+            section.publicacion__content
+                p February 15, 2024
+                
+                div
+                    p The Social Security Treasury established the new contribution ceilings for the contributory regime. These modifications are outlined in Resolution 01-2024, issued by the institution, and came into effect starting February 1, 2024.
+
+                    p According to the mentioned provision, the national minimum wage applicable for the calculation of contribution ceilings is RD$19,352.50. This amount is used as a reference to determine the contributions corresponding to Occupational Risks Insurance, Family Health Insurance, and Old Age, Disability, and Survivor Insurance.
+
+
+            
+            section.publicacion__otras
+                h2 Other news
+
+                +noticiaPrincipalEn

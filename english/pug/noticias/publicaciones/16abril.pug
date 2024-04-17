@@ -1,0 +1,27 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/16abril.webp", alt="Background de la noticia")
+                    h2 KNOW THE BENEFITS OF ELECTRONIC INVOICING
+            
+            section.publicacion__content
+                p April 16, 2024
+                
+                div
+                    p Say goodbye to paperwork, hello efficiency!!
+
+                    p At Mejía Lora y Asociados, starting from April 1, 2024, we issue electronic fiscal receipts. What does this mean? Less document loss, simplified tax compliance, and faster administrative processes. Welcome to the future of invoicing!
+
+            
+            section.publicacion__otras
+                h2 Other news
+
+                +noticiaPrincipalEn

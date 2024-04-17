@@ -1,4 +1,4 @@
-const carouselContainer = document.querySelector('.carousel-container');
+/*const carouselContainer = document.querySelector('.carousel-container');
 const totalImages = 31; // Reemplaza el total de imágenes adecuadamente
 let currentPosition = 0;
 
@@ -24,7 +24,7 @@ carouselContainer.addEventListener('mouseenter', () => {
 // Reanudar la transición cuando el mouse sale del carrusel
 carouselContainer.addEventListener('mouseleave', () => {
   slideTimer = setInterval(slideNext, slideInterval);
-});
+});*/
 
 //FadeIN
 function debounce(func, wait = 1, immediate = true) {
@@ -206,23 +206,116 @@ function activeSocios(){
 
 }*/
 
-let socioItem = document.querySelector('.capital-humano__socios');
-let botonSocio = document.querySelector('.ocultoActivo');
-let botonSocio2 = document.querySelector('.ocultoActivo2');
 
-botonSocio.addEventListener('click', activeSocios);
-//botonSocio2.addEventListener('click', activeSocios);
+window.addEventListener('DOMContentLoaded', () => {
+  const toggleNosotros = document.querySelector('.toggle__nosotros');
+  const toggleServicios = document.querySelector('.toggle__servicios');
+  const toggleNovedades = document.querySelector('.toggle__novedades');
 
-function activeSocios() {
-  const isOpen = socioItem.classList.contains('oculto');
+  const nosotros = document.querySelector('#nosotros');
+  const servicios = document.querySelector('#servicios');
+  const novedades = document.querySelector('#novedades');
+    
+  function desplegarNosotros(){
+    let closeMenu = toggleNosotros.classList.contains('mobile-hidden');
 
-  if (isOpen) {
-    socioItem.classList.remove('oculto');
-    botonSocio.classList.add('oculto');
-    botonSocio2.classList.remove('oculto');
-  } else {
-    socioItem.classList.add('oculto');
-    botonSocio.classList.remove('oculto');
-    botonSocio2.classList.add('oculto');
+    if(closeMenu){
+      toggleNosotros.classList.remove('mobile-hidden');
+      toggleNosotros.classList.add('mobile-show');
+    } else if (!closeMenu){
+      toggleNosotros.classList.add('mobile-hidden');
+      toggleNosotros.classList.remove('mobile-show');
+    }
   }
-}
+
+  function desplegarServicios(){
+    let closeMenu = toggleServicios.classList.contains('mobile-hidden');
+
+    if(closeMenu){
+      toggleServicios.classList.remove('mobile-hidden');
+      toggleServicios.classList.add('mobile-show');
+    } else if (!closeMenu){
+      toggleServicios.classList.add('mobile-hidden')
+      toggleServicios.classList.remove('mobile-show');
+    }
+  }
+
+  function desplegarNovedades(){
+    let closeMenu = toggleNovedades.classList.contains('mobile-hidden');
+
+    if(closeMenu){
+      toggleNovedades.classList.remove('mobile-hidden');
+      toggleNovedades.classList.add('mobile-show');
+    } else if (!closeMenu){
+      toggleNovedades.classList.add('mobile-hidden');
+      toggleNovedades.classList.remove('mobile-show');
+    }
+  }
+
+  nosotros.addEventListener("click", () => {
+    desplegarNosotros();
+  });
+  servicios.addEventListener("click", () => {
+    desplegarServicios();
+  });
+  novedades.addEventListener("click", () => {
+    desplegarNovedades();
+  });
+})
+
+
+/*$('.autoplay').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  autoplay: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});*/
+
+$('.autoplay').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      }
+    }]
+});
+
+
+	

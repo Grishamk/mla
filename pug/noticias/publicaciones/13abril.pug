@@ -1,0 +1,27 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/16abril.webp", alt="Background de la noticia")
+                    h2 TASA DE CAMBIO PARA LA LIQUIDACION Y PAGO DE ITBIS EN HOTELES ACOGIDOS A ACUERDOS DE PRECIOS ANTICIPADOS
+            
+            section.publicacion__content
+                p 13 de abril de 2024
+                
+                div
+                    p Tomando en consideración que la tasa de cambio aprobada por la Dirección General de Impuestos Internos (DGII) para realizar la liquidación y pago del Impuesto a las Transferencias de Bienes Industrializados y Servicios (ITBIS) es la misma que el Banco Central publica como Tasa de Cambio Promedio mensual para la compra de divisas en el Mercado Spot.
+
+                    p La tasa de cambio para la liquidación y pago de ITBIS en operaciones acogidas al APA de marzo 2024 es RDS/USS 58.8773. ¡Asegúrense de ajustar sus cálculos correctamente!
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

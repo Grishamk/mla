@@ -1,109 +1,19 @@
 extend ../../componentes/_plantilla.pug
 
-block logo
-    link(rel="shortcut icon", href="../../icon/favicon.ico")
-block mainLogo
-    a.logo-container(href="../../index.html")
-        img(src="../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
-block burgerMenu 
-    img(src="../../icon/menu.svg", alt="menu hamburguesa")
-block homeLinkMovil
-    a(href="../../index.html") Inicio
-block homeLink
-    a(href="../../index.html") Inicio
-block traductorMovil
-    a(href="../../english/html/nosotros/responsabilidadSoc.html") ENGLISH VERSION
-block stylesheet
-    link(rel="stylesheet", href="../../css/main.css")
-
-block nosotros
-    li
-        a(href="../../html/nosotros/quienesSomos.html") Nosotros
-        ul.toggle__nosotros
-            li
-                a(href="../../html/nosotros/quienesSomos.html") Quienes Somos
-            li
-                a(href="../../html/nosotros/registros.html") Registros y Membresías
-            li
-                a(href="../../html/nosotros/responsabilidadSoc.html") Responsabilidad Social 
-            li 
-                a(href="../../html/nosotros/certificaciones.html") Certificaciones 
-
-block servicios
-    li
-        a(href="../../html/servicios/auditoria.html") Servicios
-        ul.toggle__servicios
-            li
-                a(href="../../html/servicios/auditoria.html") Auditoría
-            li
-                a(href="../../html/servicios/asesoria.html") Asesoría Fiscal
-            li
-                a(href="../../html/servicios/impuesto-nomina.html") Impuesto - Nómina - Contabilidad
-            li 
-                a(href="../../html/servicios/consultorias-negocios.html") Consultoría de Negocios y Financiera
-            li 
-                a(href="../../html/servicios/desarrolloOrg.html") Desarrollo Organizacional
-            li 
-                a(href="../../html/servicios/proteccion.html") Protección Patrimonial 
-
-block noticias 
-    li
-        a(href="../../html/noticias/noticias.html") Novedades
-        ul.toggle__novedades
-            li
-                a(href="../../html/noticias/noticias.html") Avisos
-            li
-                a(href="../../html/noticias/boletines.html") Noticias y Boletines
-
-block capitalHumano
-    a(href="../../html/capital-humano/capital-humano.html") Staff
-
-block contacto 
-    a(href="../../html/contacto/contacto.html") Contacto
-
-block botonEs
-    a(href="../../english/html/nosotros/responsabilidadSoc.html").boton  ENGLISH
-
-block footerLogo
-    img(src="../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
-
-block footerSocialIcons
-    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
-        img(src="../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
-    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
-        img(src="../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
-    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
-        img(src="../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
-    //Posiblemente será eliminado
-    a(href="https://twitter.com/MejialoraAsoc") 
-        img(src="../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
-
-block footerMovilIcons
-    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
-        img(src="../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
-    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
-        img(src="../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
-    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
-        img(src="../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
-    //Posiblemente será eliminado
-    a(href="https://twitter.com/MejialoraAsoc") 
-        img(src="../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
-
 block javaScript
     script(src="../../subscript.js")
 
-
-
 block contenido
  
-        main.fade-in
+        main
             section.RS__container
-                section.RStitular
-                    .RStitular__text-container
-                        h2 Responsabilidad Social
-                        p Para nuestra firma, la responsabilidad social es un fundamento clave sobre el cual se rige nuestro desarrollo comercial.
-                
-                section.RS__text-container.fade-in
+                section.encabezado
+                    .encabezado__text-container
+                        h2.animate__animated.animate__fadeInDownBig Responsabilidad Social
+                        p.animate__animated.animate__fadeInLeftBig Para nuestra firma, la responsabilidad social es un fundamento clave sobre el cual se rige nuestro desarrollo comercial.
+                    .backButton#btnBaja.animate__animated.animate__fadeInUp
+                        a(href="#rsText")
+                section.RS__text-container.fade-in#rsText
                     strong Fundada sobre la base de valores familiares y  caracterizada por su  continuo crecimiento el cual se sustenta en la  profesionalidad de sus  recursos humanos, la  calidad de sus servicios, la  honestidad y el respeto a  sus clientes y aliados.
                     p.RS__main-text La responsabilidad social va más allá de una actividad, para nosotros es el compromiso consciente y congruente de cumplir integralmente con la finalidad de la empresa, demostrando respeto por las personas, los valores éticos, la comunidad y el medio ambiente, contribuyendo así a la construcción del bien común, lo cual se traduce en acciones concretas que buscan el beneficio de todos los actores involucrados en las actividades de MLA. Entre ellas destacamos:
                 

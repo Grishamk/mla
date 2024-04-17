@@ -1,0 +1,25 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/implementacionProyecto.webp", alt="Background de la noticia")
+                    h2 IMPLEMENTATION OF THE BEPS PROJECT ACTION 13 COUNTRY-BY-COUNTRY REPORTING
+            
+            section.publicacion__content
+                p January 22, 2024
+                
+                div
+                    p Since 2018, the Dominican Republic joined the OECD Inclusive Framework, committing to implement and comply with certain standards to strengthen tax transparency and equality at the international level. We are moving forward together towards a fairer system!
+
+            
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

@@ -1,94 +1,5 @@
 extend ../../componentes/_plantilla.pug
 
-block logo
-    link(rel="shortcut icon", href="../../icon/favicon.ico")
-block mainLogo
-    a.logo-container(href="../../index.html")
-        img(src="../../img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
-block burgerMenu 
-    img(src="../../icon/menu.svg", alt="menu hamburguesa")
-block homeLinkMovil
-    a(href="../../index.html") Inicio
-block homeLink
-    a(href="../../index.html") Inicio
-block traductorMovil
-    a(href="../../english/html/nosotros/certificaciones.html") ENGLISH VERSION
-block stylesheet
-    link(rel="stylesheet", href="../../css/main.css")
-
-block nosotros
-    li
-        a(href="../../html/nosotros/quienesSomos.html") Nosotros
-        ul.toggle__nosotros
-            li
-                a(href="../../html/nosotros/quienesSomos.html") Quienes Somos
-            li
-                a(href="../../html/nosotros/registros.html") Registros y Membresías
-            li
-                a(href="../../html/nosotros/responsabilidadSoc.html") Responsabilidad Social 
-            li 
-                a(href="../../html/nosotros/certificaciones.html") Certificaciones 
-
-block servicios
-    li
-        a(href="../../html/servicios/auditoria.html") Servicios
-        ul.toggle__servicios
-            li
-                a(href="../../html/servicios/auditoria.html") Auditoría
-            li
-                a(href="../../html/servicios/asesoria.html") Asesoría Fiscal
-            li
-                a(href="../../html/servicios/impuesto-nomina.html") Impuesto - Nómina - Contabilidad
-            li 
-                a(href="../../html/servicios/consultorias-negocios.html") Consultoría de Negocios y Financiera
-            li 
-                a(href="../../html/servicios/desarrolloOrg.html") Desarrollo Organizacional
-            li 
-                a(href="../../html/servicios/proteccion.html") Protección Patrimonial 
-
-block noticias 
-    li
-        a(href="../../html/noticias/noticias.html") Novedades
-        ul.toggle__novedades
-            li
-                a(href="../../html/noticias/noticias.html") Avisos
-            li
-                a(href="../../html/noticias/boletines.html") Noticias y Boletines
-
-block capitalHumano
-    a(href="../../html/capital-humano/capital-humano.html") Staff
-
-block contacto 
-    a(href="../../html/contacto/contacto.html") Contacto
-
-block botonEs
-    a(href="../../english/html/nosotros/certificaciones.html").boton  ENGLISH
-
-block footerLogo
-    img(src="../../img/assets/mla-white.webp" alt="Logo del 40 aniversario")
-
-block footerSocialIcons
-    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
-        img(src="../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
-    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
-        img(src="../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
-    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
-        img(src="../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
-    //Posiblemente será eliminado
-    a(href="https://twitter.com/MejialoraAsoc") 
-        img(src="../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
-
-block footerMovilIcons
-    a(href="https://www.facebook.com/people/Mejia-Lora-Asociados/100040695713655/") 
-        img(src="../../icon/317752_facebook_social media_social_icon.svg", alt="Logo de facebook")
-    a(href="https://www.secure.instagram.com/mejialora/?hl=es") 
-        img(src="../../icon/5279112_camera_instagram_social media_instagram logo_icon.svg", alt="Logo de instagram")
-    a(href="https://www.linkedin.com/company/mejia-lora-&-asociados/") 
-        img(src="../../icon/317750_linkedin_icon.svg", alt="Logo de Linkedin")
-    //Posiblemente será eliminado
-    a(href="https://twitter.com/MejialoraAsoc") 
-        img(src="../../icon/317749_social media_tweet_twitter_social_icon.svg", alt="Logo de Twitter")
-
 block javaScript
     script(src="../../subscript.js")
 
@@ -97,10 +8,12 @@ block javaScript
 block contenido
 
         main.cert-container
-            section.cert-container__titular
-                h2 Certificaciones
-
-            section.cert-container__principal.fade-in
+            section.encabezado
+                .encabezado__text-container
+                    h2.animate__animated.animate__fadeInDownBig Certificaciones
+                .backButton#btnBaja.animate__animated.animate__fadeInUp
+                    a(href="#certificaciones")
+            section.cert-container__principal.fade-in#certificaciones
                 strong “Nuestra organización eleva su compromiso con la calidad contando con un Sistema de Gestión de Calidad Certificado por INTECO bajo la norma ISO 9001:2015, RE-019/2019”.
                 p Mejia Lora y Asociados se ha convertido en la primera Firma de Auditoria en República Dominicana en obtener el certificado de INTECO bajo la norma ISO 9001:2015. En Mejia Lora y Asociados estamos comprometidos con la satisfacción plena de nuestros clientes y grupos de interés por ello actuamos con ética y transparencia garantizando la realización de los servicios de Auditoria, TPA (Tax-Payroll-Accounting / Impuestos-Nomina-Contabilidad), Consultoría, Impuesto y Desarrollo Organizacional, otros servicios de negocios de forma eficiente y oportuna, cumpliendo plenamente con las leyes, acuerdos, normas y regulaciones pertinentes y mejorando continuamente nuestros procesos.
                 p Los socios de la Firma decidieron certificar el Sistema de Gestión de la Calidad como una herramienta estratégica para identificar riesgos y oportunidades, así como dirigir y controlar la organización sistemáticamente respecto a la calidad. Lo anterior, a través de la mejora continua en el  desempeño de sus procesos y llevando a cabo los conceptos fundamentales de la excelencia o buenas prácticas de gestión.

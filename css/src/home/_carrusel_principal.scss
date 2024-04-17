@@ -14,25 +14,66 @@
     padding-bottom: 8px;
 }
 
+
 #btnBackToTop span {
     font-size: 48px;
 }
 
 .main-container__carrusel{
-      height: 637px;
+      height: 100vh;
       @include flexRule(null,center,center);
-      background: #000116;
+      background: #d9d9d9;
+      position: relative;
+
+      animation-duration: 2s;
+
+      .backButton{
+        width: 70px;
+        height: 40px;
+        bottom: 0;
+        position: absolute;
+        background-color: $colorSecundario;
+        z-index: 15;
+        border-radius: 32px 32px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            width: 32px;
+            height: 32px;
+            background-image: url(/icon/172458_down_arrow_icon.svg);
+            background-size: 24px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            background-position: center;
+        }
+      }
 
     .slider{
         position: relative;
         background: #000116;
-        @include wH(100vw, 637px);
+        @include wH(100vw, 100vh);
         overflow: hidden;
 
         .slide{
             @include wH(100%, 100%);
             position: absolute;
             clip-path: circle(0% at 0 50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .main-container__filtroAzul{
+                height: 100vh;
+                width: 100vw;
+                @include flexRule(null,center,center);
+                background: rgb(2,0,36);
+                background: linear-gradient(7deg, rgba(2,0,36,1) 24%, rgba(4,56,119,1) 65%, rgba(7,88,186,1) 100%);
+                opacity: 0.6;
+                position: absolute;
+                z-index: 10;
+            }
 
             img{
                 @include wH(100%, 100%);
@@ -43,45 +84,49 @@
             .info{
                 position: absolute;
                 color: $colorLetra1;
-                background: rgba(255, 255, 255, 0.7);
-                width: 40%;
-                max-width: 40%;
-                margin-top: 150px;
-                margin-left: 70px;
-                padding: 40px;
+                width: 80%;
+                max-width: 80%;
+                height: 600px;
+                //margin-left: 100px;
+                padding: 10px;
                 border-radius: 5px;
-                box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                z-index: 100;
 
-                animation: fadeInDownBig;
-                animation-duration: 1s;
 
                 h2{
-                    font-size: 2em;
+                    font-size: 3.2rem;
+                    line-height: 36px;
+                    height: auto;
                     font-weight: 800;
-                    margin-bottom: 16px;
+                    margin-bottom: 12px;
+                    color: $colorLetra2;
                 }
                 
                 p{
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
+                    max-width: 514px;
                     font-weight: 400;
-                    margin-bottom: 48px;
+                    line-height: 24px;
+                    margin-bottom: 40px;
+                    color: $colorLetra2;
                 }
 
                 a{
                     text-decoration: none;
-                    width: 213px;
+                    width: 190px;
                     color: $colorLetra2;
-                    height: 41px;
+                    height: 42px;
                     padding: 10px;
                     background-color: $colorTerciario;
                     font-size: 1.4rem;
-                    transform: all 300ms ease;
-
-                    &:hover{
-                        background-color: $colorCuaternario;
-                        transform: all 300ms ease;
-                        font-weight: 700;
-                    }
+                    transform: all 900ms ease;
+                    text-align: center;
+                    border-radius: 8px;
+                    margin: 0 auto;
                 }
             }
         }
@@ -90,29 +135,32 @@
             clip-path: circle(150% at 0 50%);
             transition: 1s;
         }
-        
-        .animate{
-            animation: fadeInLeftBig;
-            animation-duration: 2s;
-        }
+     
 
         .navigation{
-            height: 90%;
+            height: 80%;
             opacity: 0;
             transition: opacity 0.5s ease;
             @include flexRule(null,space-between,center);
+
+            i{
+
+                img{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
         }
           
-        &:hover .navigation{
+        &:active .navigation{
             opacity: 1;
         }
           
         .prev-btn, .next-btn{
-            z-index: 999;
-            font-size: 2em;
+            z-index: 15;
             color: $colorLetra1;
             background: rgba(255, 255, 255, 0.8);
-            padding: 30px;
+            padding: 25px;
             cursor: pointer;
         }
           
@@ -143,68 +191,8 @@
             }
 
             .slide-icon.active{
-                background: $colorTerciario
+                background: white;
             }
         }   
     }
-      
- 
-
-    @media (max-width: 1400px){
-        .slider{
-            width: 100%;
-        }
-        
-        .slider .slide .info{
-            position: relative;
-            width: 60%;
-            max-width: 60%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-      
-      
-    @media (max-width: 900px){
-        .slider{
-            width: 100%;
-            min-height: 60vh;
-        }
-        
-        .slider .slide .info{
-            position: relative;
-            width: 80%;
-            max-width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-        
-    @media (max-width: 500px){
-        .main-container__carrusel{
-            height: 40vh;
-        }
-        .slider .slide .info .especial{
-            height: 150px;
-        }
-
-        .slider .slide .info h2{
-            font-size: 1.6rem;
-            line-height: 24px;
-            height: 48px;
-        }
-    
-        .slider .slide .info p{
-            font-size: 1.2rem;
-        }
-
-        .main{
-            h2{
-                padding-bottom: 48px;
-            }
-            p{
-                display: none;
-            }
-        }
-    }
-}  
+}
