@@ -120,26 +120,21 @@ mixin staffElementEn(imagen,alterno,titulo,text1,text2,text3,clase)
             p=text2
             p(class=clase)=text3
 
-mixin aviso(imagen,alterno,titulo,fecha,texto,texto2,enlace)
+mixin aviso(imagen,alterno,titulo,fecha,enlace)
     a(href=""+enlace) 
         article.news-noticias__item.fade-in
             picture
-                img(src="../../img/avisos/"+imagen alt=alterno)
+                img(src="/img/avisos/"+imagen alt=alterno)
             div
                 h2=titulo
                 p.fecha=fecha
-                p=texto
-                br
-                p=texto2
-                //a(href=link) Leer más
-                    span
-                        img(src="../../icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha")//
+    
 
 mixin avisoEn(imagen,alterno,titulo,fecha,texto,texto2,enlace)
     a(href="http://"+enlace target="_blank") 
         article.news-noticias__item.fade-in
             picture
-                img(src="../../../img/avisos/"+imagen alt=alterno)
+                img(src="/img/avisos/"+imagen alt=alterno)
             div
                 h2=titulo
                 p.fecha=fecha
@@ -190,10 +185,23 @@ mixin noticiaPrincipal
 
         //Aqui se agregaran las noticias utilizando el mixin "noticia" creado en este mismo documento.
         
+        +noticia("16abril.webp","foto con texto sobre lo que se va a leer abajo", "Conoce los beneficios de la facturación electrónica","16 de abril", "/html/noticias/publicaciones/16abril.html")
+        
+        +noticia("19marzo.webp","foto con texto sobre lo que se va a leer abajo", "Tasa de cambio para la liquidación y pago de ITBIS en Hoteles acogidos a acuerdos de precios anticipados.","13 de abril", "/html/noticias/publicaciones/13abril.html")
+
         +noticia("19marzo.webp","foto con texto sobre lo que se va a leer abajo", "Disponibilidad para presentación Declaración Jurada Anual Agente de Retención de Asalariados (IR-13)","19 de marzo", "/html/noticias/publicaciones/19Marzo.html")
         
         +noticia("8marzo.webp","Imágen Día Internacional de la mujer", "Hoy conmemoramos el Día Internacional de la Mujer","8 de marzo", "/html/noticias/publicaciones/8Marzo.html")
 
-        +noticia("7marzo.webp","foto con texto sobre lo que se va a leer abajo", "Tasa de cambio para la liquidación y pago de ITBIS en hoteles acogidos a APA","7 de marzo", "/html/noticias/publicaciones/7Marzo.html")
+mixin noticiaPrincipalEn
+    .noticias__container
 
-        +noticia("5marzo.webp","foto con texto sobre lo que se va a leer abajo", "Fecha límite de pago 1ERA. cuota IPI 2024","05 de Marzo", "/html/noticias/publicaciones/5Marzo.html")
+        //Aqui se agregaran las noticias utilizando el mixin "noticia" creado en este mismo documento.
+        
+        +noticia("16abril.webp","Photo with text about what is going to be read below", "KNOW THE BENEFITS OF ELECTRONIC INVOICING","April 16", "/english/html/noticias/publicaciones/16abril.html")
+        
+        +noticia("19marzo.webp","Photo with text about what is going to be read below", "EXCHANGE RATE FOR SETTLEMENT AND PAYMENT OF ITBIS IN HOTELS UNDER ADVANCE PRICING AGREEMENTS","April 13", "/english/html/noticias/publicaciones/13abril.html")
+        
+        +noticia("19marzo.webp", "picture with text about what will be read below", "Availability for submission of Annual Sworn Statement of Salary Withholding Agent (IR-13)", "March 19", "/english/html/noticias/publicaciones/19Marzo.html")
+        
+        +noticia("8marzo.webp", "International Women's Day Image", "Today we commemorate International Women's Day", "March 8", "/english/html/noticias/publicaciones/8Marzo.html")

@@ -1,0 +1,26 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/ley179-09.webp", alt="Background de la noticia")
+                    h2 DEADLINE ISR FOR SALARIED EMPLOYEES UNDER THE EDUCATIONAL EXPENSES LAW.
+            
+            section.publicacion__content
+                p February 1st, 2024.
+                
+                div
+                    p The deadline to submit the Income Tax Declaration for individuals under the Simplified Tax Regime (RST) for the fiscal year 2023 is February 29, 2024.
+
+
+            
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn
