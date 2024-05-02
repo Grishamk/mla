@@ -125,49 +125,292 @@
         </div>
       </section>
       <section class="formulario-empleo">
-        <form class="formulario" action="https://formsubmit.co/reclutamiento@mejialora.com" method="POST">
-          <div>
-            <label for="nombre">
-              <p>Nombre y apellido</p>
-              <input type="text" id="nombre" placeholder="nombre completo" name="nombre" required>
-            </label>
-          </div>
-          <div class="doble">
-            <label for="correo">
-              <p>Dirección de correo electrónico </p>
-              <input type="email" id="correo" placeholder="tucorreo@email.com" name="correo">
-            </label>
-            <label for="telefono">
-              <p>Teléfono </p>
-              <input type="number" id="telefono" name="telefono">
-            </label>
-          </div>
-          <div> 
-            <label for="Posicion">
-              <p>Posición que desea aplicar</p>
-              <select name="Posicion" id="posicion">
-                <option>Auditor Externo</option>
-                <option>Consultor de Impuestos</option>
-                <option>Contador</option>
-              </select>
-            </label>
-          </div>
-          <div class="doble">
-            <label for="habilidades">
-              <p>Habilidades</p>
-              <textarea name="habilidades" cols="30" rows="10" id="habilidades"> </textarea>
-            </label>
-            <label for="motivacion">
-              <p>Motivación</p>
-              <textarea name="motivacion" cols="30" rows="10" id="motivacion"></textarea>
-            </label>
-          </div>
-          <div>
-            <label for="experiencia">
-              <p>Experiencia</p>
-              <textarea name="experiencia" cols="30" rows="10" id="experiencia"></textarea>
-            </label>
-          </div>
+        <form class="formulario" action="https://formsubmit.co/reclutamiento@mejialora.com" method="POST" enctype="multipart/form-data">
+          <section class="formulario__personal">
+            <h2>Información personal</h2>
+            <div class="personal-1">
+              <label for="nombre">
+                <p>Nombre y apellido</p>
+                <input type="text" id="nombre" placeholder="nombre completo" name="nombre" required>
+              </label>
+            </div>
+            <div class="personal-2">
+              <label for="identidad">
+                <p>Documento de identidad </p>
+                <select name="selectIdentidad" id="identidad">
+                  <option>Cedula </option>
+                  <option>Pasaporte</option>
+                </select>
+                <p>No. de documento</p>
+                <input type="number" id="identidad">
+              </label>
+            </div>
+            <div class="personal-3">
+              <label for="direccion">
+                <p>Dirección completa </p>
+                <input type="text" id="direccion" placeholder="dirección residencial" required>
+              </label>
+            </div>
+            <div class="personal-4">
+              <label for="correo">
+                <p>Dirección de correo electrónico </p>
+                <input type="email" id="correo" placeholder="tucorreo@email.com" name="correo">
+              </label>
+            </div>
+            <div class="personal-5">
+              <p>Celular</p>
+              <label for="celular"> 
+                <select name="area" id="celular">
+                  <option>829</option>
+                  <option>809</option>
+                  <option>849  </option>
+                </select>
+                <input type="number" id="celular" name="celular">
+              </label>
+            </div>
+            <div class="personal-6">
+              <p>Telefono residencial</p>
+              <label for="telefono"> 
+                <select name="area" id="telefono">
+                  <option>829</option>
+                  <option>809</option>
+                  <option>849  </option>
+                </select>
+                <input type="number" id="telefono" name="telefono">
+              </label>
+            </div>
+          </section>
+          <section class="formulario__academica">
+            <h2>Formación academica </h2>
+            <p class="academica__descripcion">No es necesario rellenar todas</p>
+            <div>
+              <section class="academica academica-1"> 
+                <p class="academica__titular">Formación #1</p>
+                <label for="centro">
+                  <p>Centro Educativo / Universidad</p>
+                  <input type="text" id="centro">
+                </label>
+                <label for="grado">
+                  <p>Grado o titulo obtenido</p>
+                  <input type="text" id="grado">
+                </label>
+                <label for="fechaTitulo">
+                  <p>Fecha</p>
+                  <input type="date" name="fecha del titulo" id="fechaTitulo">
+                </label>
+              </section>
+              <section class="academica academica-2">
+                <p class="academica__titular">Formación #2</p>
+                <label for="centro">
+                  <p>Centro Educativo / Universidad</p>
+                  <input type="text" id="centro">
+                </label>
+                <label for="grado">
+                  <p>Grado o titulo obtenido</p>
+                  <input type="text" id="grado">
+                </label>
+                <label for="fechaTitulo">
+                  <p>Fecha</p>
+                  <input type="date" name="fecha del titulo" id="fechaTitulo">
+                </label>
+              </section>
+              <section class="academica academica-3">
+                <p class="academica__titular">Formación #3</p>
+                <label for="centro">
+                  <p>Centro Educativo / Universidad</p>
+                  <input type="text" id="centro">
+                </label>
+                <label for="grado">
+                  <p>Grado o titulo obtenido</p>
+                  <input type="text" id="grado">
+                </label>
+                <label for="fechaTitulo">
+                  <p>Fecha</p>
+                  <input type="date" name="fecha del titulo" id="fechaTitulo">
+                </label>
+              </section>
+              <section class="academica academica-4">
+                <p class="academica__titular">Formación #4</p>
+                <label for="centro">
+                  <p>Centro Educativo / Universidad</p>
+                  <input type="text" id="centro">
+                </label>
+                <label for="grado">
+                  <p>Grado o titulo obtenido</p>
+                  <input type="text" id="grado">
+                </label>
+                <label for="fechaTitulo">
+                  <p>Fecha</p>
+                  <input type="date" name="fecha del titulo" id="fechaTitulo">
+                </label>
+              </section>
+              <section class="academica academica-5">
+                <p class="academica__titular">Formación #5</p>
+                <label for="centro">
+                  <p>Centro Educativo / Universidad</p>
+                  <input type="text" id="centro">
+                </label>
+                <label for="grado">
+                  <p>Grado o titulo obtenido</p>
+                  <input type="text" id="grado">
+                </label>
+                <label for="fechaTitulo">
+                  <p>Fecha</p>
+                  <input type="date" name="fecha del titulo" id="fechaTitulo">
+                </label>
+              </section>
+            </div>
+          </section>
+          <section class="formulario__academica">
+            <h2>Formación técnica</h2>
+            <div> 
+              <section class="academica academica-1">
+                <p class="academica__titular">Formación #1</p>
+                <label for="centro">
+                  <p>Centro Educativo / Universidad</p>
+                  <input type="text" id="centro">
+                </label>
+                <label for="grado">
+                  <p>Grado o titulo obtenido</p>
+                  <input type="text" id="grado">
+                </label>
+                <label for="fechaTitulo">
+                  <p>Fecha</p>
+                  <input type="date" name="fecha del titulo" id="fechaTitulo">
+                </label>
+              </section>
+              <section class="academica academica-2">
+                <p class="academica__titular">Formación #2</p>
+                <label for="centro">
+                  <p>Centro Educativo / Universidad</p>
+                  <input type="text" id="centro">
+                </label>
+                <label for="grado">
+                  <p>Grado o titulo obtenido</p>
+                  <input type="text" id="grado">
+                </label>
+                <label for="fechaTitulo">
+                  <p>Fecha</p>
+                  <input type="date" name="fecha del titulo" id="fechaTitulo">
+                </label>
+              </section>
+              <section class="academica academica-3">
+                <p class="academica__titular">Formación #3</p>
+                <label for="centro">
+                  <p>Centro Educativo / Universidad</p>
+                  <input type="text" id="centro">
+                </label>
+                <label for="grado">
+                  <p>Grado o titulo obtenido</p>
+                  <input type="text" id="grado">
+                </label>
+                <label for="fechaTitulo">
+                  <p>Fecha</p>
+                  <input type="date" name="fecha del titulo" id="fechaTitulo">
+                </label>
+              </section>
+              <section class="academica academica-4">
+                <p class="academica__titular">Formación #4</p>
+                <label for="centro">
+                  <p>Centro Educativo / Universidad</p>
+                  <input type="text" id="centro">
+                </label>
+                <label for="grado">
+                  <p>Grado o titulo obtenido</p>
+                  <input type="text" id="grado">
+                </label>
+                <label for="fechaTitulo">
+                  <p>Fecha</p>
+                  <input type="date" name="fecha del titulo" id="fechaTitulo">
+                </label>
+              </section>
+              <section class="academica academica-5">
+                <p class="academica__titular">Formación #5</p>
+                <label for="centro">
+                  <p>Centro Educativo / Universidad</p>
+                  <input type="text" id="centro">
+                </label>
+                <label for="grado">
+                  <p>Grado o titulo obtenido</p>
+                  <input type="text" id="grado">
+                </label>
+                <label for="fechaTitulo">
+                  <p>Fecha</p>
+                  <input type="date" name="fecha del titulo" id="fechaTitulo">
+                </label>
+              </section>
+            </div>
+          </section>
+          <section class="formulario__idiomas">
+            <h2>Idiomas</h2>
+            <div>
+              <p class="idioma__titular">Idioma #1</p>
+              <section>
+                <label for="idiomas">
+                  <p>Idioma</p>
+                  <input type="text" id="idiomas">
+                  <p>Nivel</p>
+                  <select name="idiomas">
+                    <option>Básico</option>
+                    <option>Intermedio</option>
+                    <option>Avanzado</option>
+                  </select>
+                </label>
+              </section>
+              <p class="idioma__titular">Idioma #2</p>
+              <section>
+                <label for="idiomas">
+                  <p>Idioma</p>
+                  <input type="text" id="idiomas">
+                  <p>Nivel</p>
+                  <select name="idiomas">
+                    <option>Básico</option>
+                    <option>Intermedio</option>
+                    <option>Avanzado</option>
+                  </select>
+                </label>
+              </section>
+              <p class="idioma__titular">Idioma #3</p>
+              <section>
+                <label for="idiomas">
+                  <p>Idioma</p>
+                  <input type="text" id="idiomas">
+                  <p>Nivel</p>
+                  <select name="idiomas">
+                    <option>Básico</option>
+                    <option>Intermedio</option>
+                    <option>Avanzado</option>
+                  </select>
+                </label>
+              </section>
+              <p class="idioma__titular">Idioma #4</p>
+              <section>
+                <label for="idiomas">
+                  <p>Idioma</p>
+                  <input type="text" id="idiomas">
+                  <p>Nivel</p>
+                  <select name="idiomas">
+                    <option>Básico</option>
+                    <option>Intermedio</option>
+                    <option>Avanzado</option>
+                  </select>
+                </label>
+              </section>
+              <p class="idioma__titular">Idioma #5</p>
+              <section>
+                <label for="idiomas">
+                  <p>Idioma</p>
+                  <input type="text" id="idiomas">
+                  <p>Nivel</p>
+                  <select name="idiomas">
+                    <option>Básico</option>
+                    <option>Intermedio</option>
+                    <option>Avanzado</option>
+                  </select>
+                </label>
+              </section>
+            </div>
+          </section>
           <div>
             <p>Adjuntar CV (En formato PDF)</p>
             <input type="file" accept="application/pdf" name="curriculum">

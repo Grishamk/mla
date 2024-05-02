@@ -4091,37 +4091,91 @@ main .desarrollo__servicios ul li {
   }
 }
 .formulario-empleo {
-  margin: 0 auto;
-  padding: 32px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 48px 12px;
 }
-
-.formulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 10px;
-}
-.formulario div p {
+.formulario-empleo .formulario div p {
   padding-bottom: 12px;
 }
-.formulario div input {
+.formulario-empleo .formulario div input {
   margin-bottom: 40px;
 }
-.formulario div label p {
+.formulario-empleo .formulario div label p {
   padding-bottom: 8px;
 }
-.formulario div label input {
+.formulario-empleo .formulario div label input {
   width: 100%;
+  height: 40px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+.formulario-empleo .formulario div label select {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+.formulario-empleo .formulario h2 {
+  font-size: 2rem;
+  margin-bottom: 32px;
+  color: #043877;
+}
+.formulario-empleo .formulario .personal-1 label p {
+  margin-bottom: 4px;
+}
+.formulario-empleo .formulario .personal-1 label input {
+  margin-bottom: 20px;
+}
+.formulario-empleo .formulario .personal-2 label p {
+  margin-bottom: 4px;
+}
+.formulario-empleo .formulario .personal-2 label select {
+  margin-bottom: 20px;
+}
+.formulario-empleo .formulario .personal-2 label input {
+  margin-bottom: 20px;
+}
+.formulario-empleo .formulario .personal-3 p {
+  margin-bottom: 4px;
+}
+.formulario-empleo .formulario .personal-3 input {
+  margin-bottom: 20px;
+}
+.formulario-empleo .formulario .personal-4 p {
+  margin-bottom: 4px;
+}
+.formulario-empleo .formulario .personal-4 input {
+  margin-bottom: 20px;
+}
+.formulario-empleo .formulario .personal-5 p {
+  margin-bottom: 4px;
+}
+.formulario-empleo .formulario .personal-5 input {
+  width: 70%;
+  height: 40px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+.formulario-empleo .formulario .personal-5 select {
+  width: 22%;
+  height: 40px;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+.formulario-empleo .formulario .personal-6 p {
+  margin-bottom: 4px;
+}
+.formulario-empleo .formulario .personal-6 input {
+  width: 70%;
   height: 40px;
   padding: 12px;
   margin-bottom: 16px;
@@ -4129,16 +4183,8 @@ main .desarrollo__servicios ul li {
   border-radius: 8px;
   background-color: #f2f2f2;
 }
-.formulario div label textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 16px;
-  border: none;
-  border-radius: 8px;
-  background-color: #f2f2f2;
-}
-.formulario div label select {
-  width: 100%;
+.formulario-empleo .formulario .personal-6 select {
+  width: 22%;
   height: 40px;
   padding: 8px;
   margin-bottom: 16px;
@@ -4146,62 +4192,164 @@ main .desarrollo__servicios ul li {
   border-radius: 8px;
   background-color: #f2f2f2;
 }
-.formulario .boton {
-  width: 50vw;
-  height: 5vh;
-  margin: 0 auto;
-  border: none;
-  border-radius: 8px;
-  background-color: #043877;
-  color: white;
-  font-size: 1.6rem;
-  font-weight: 700;
+.formulario-empleo .formulario__academica h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #043877;
 }
-.formulario .boton:active {
-  background-color: black;
+.formulario-empleo .formulario__academica .academica__descripcion {
+  margin-bottom: 32px;
 }
-.formulario .boton:hover {
-  cursor: pointer;
+.formulario-empleo .formulario__academica .academica {
+  margin-bottom: 24px;
+}
+.formulario-empleo .formulario__academica .academica .academica__titular {
+  margin-bottom: 16px;
+  font-size: 1.8rem;
+}
+.formulario-empleo .formulario__academica .academica p {
+  margin-bottom: 4px;
+}
+.formulario-empleo .formulario__academica .academica input {
+  margin-bottom: 20px;
+}
+.formulario-empleo .formulario__idiomas h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #043877;
+}
+.formulario-empleo .formulario__idiomas div .idioma__titular {
+  margin-bottom: 16px;
+  font-size: 1.8rem;
+}
+.formulario-empleo .formulario__idiomas div section {
+  margin-bottom: 50px;
+}
+.formulario-empleo .formulario__idiomas div section input {
+  margin: 0;
+  margin-bottom: 16px;
 }
 
-@media (min-width: 750px) {
-  .formulario {
-    width: 600px;
-  }
+/**
+.formulario-empleo{
+    margin: 0 auto;
+    padding: 32px 0;
+    @include flexRule(null,center);
 }
-@media (min-width: 1050px) {
-  .formulario {
-    width: 900px;
-  }
-  .formulario div p {
-    padding-bottom: 12px;
-  }
-  .formulario div input {
-    margin-bottom: 40px;
-  }
-  .formulario div label {
-    width: 100%;
-  }
-  .formulario div label input {
-    height: 48px;
-    margin-bottom: 32px;
-  }
-  .formulario div label textarea {
-    margin-bottom: 32px;
-  }
-  .formulario div label select {
-    margin-bottom: 32px;
-  }
-  .formulario .doble {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-  }
-  .formulario .boton {
-    width: 200px;
-  }
+
+.formulario{
+    @include flexRule(column);
+    padding: 0 10px;
+
+    div{
+        p{
+            padding-bottom: 12px;
+        }
+
+        input{
+            margin-bottom: 40px;
+        }
+
+        label{
+            p{
+                padding-bottom: 8px;
+            }
+
+            input{
+                @include wH(100%,40px);
+                padding: 12px;
+                margin-bottom: 16px;
+                border: none;
+                border-radius: 8px;
+                background-color: #f2f2f2;
+            }
+
+            select{
+                @include wH(100%,40px);
+                padding: 8px;
+                margin-bottom: 16px;
+                border: none;
+                border-radius: 8px;
+                background-color: #f2f2f2;
+            }
+        }
+    }
+
+    .boton{
+        @include wH(50vw,5vh);
+        margin: 0 auto;
+        border: none;
+        border-radius: 8px;
+        background-color: $colorTerciario;
+        color: $colorLetra2;
+        font-size: 1.6rem;
+        font-weight: 700;
+
+        &:active{
+            background-color: black;
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
 }
+
+@media(min-width: $breakpoint-tablet){
+    .formulario{
+        width: 600px;
+    }
+}
+
+@media(min-width: $breakpoint-laptop){
+    .formulario-empleo{
+        width: 900px;
+
+        form{
+            display: grid;
+            grid-template-columns: 3;
+            grid-template-rows: 25;
+        }
+
+        div{
+
+            p{
+                padding-bottom: 12px;
+            }
+
+            input{
+                margin-bottom: 40px;
+            }
+
+            label{
+                width: 100%;
+
+                input{
+                    height: 48px;
+                    margin-bottom: 32px;
+                }
+
+                textarea{
+                    margin-bottom: 32px;
+                }
+
+                select{
+                    margin-bottom: 32px;
+                }
+            }
+        }
+
+        .doble{
+            display: flex;
+            gap: 20px;
+        }
+
+        .boton{
+            width: 200px;
+        }
+    }
+}
+**/
 /*CONTACTO*/
 .contacto__main-container {
   width: 100%;

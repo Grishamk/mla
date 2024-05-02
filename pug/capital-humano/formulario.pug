@@ -15,41 +15,269 @@ block contenido
 
             
             section.formulario-empleo
-                form(action="https://formsubmit.co/reclutamiento@mejialora.com" method="POST").formulario
-                    div
-                        label(for="nombre")
-                            p Nombre y apellido
-                            input(type="text" id="nombre" placeholder="nombre completo" name="nombre" required)
-                    div.doble
-                        label(for="correo")
-                            p Dirección de correo electrónico 
-                            input(type="email" id="correo" placeholder="tucorreo@email.com" name="correo")
-
-                        label(for="telefono")
-                            p Teléfono 
-                            input(type="number" id="telefono" name="telefono")
+                form(action="https://formsubmit.co/reclutamiento@mejialora.com" method="POST" enctype="multipart/form-data").formulario
                     
-                    div 
-                        label(for="Posicion")
-                            p Posición que desea aplicar
-                            select(name="Posicion" id="posicion")
-                                option Auditor Externo
-                                option Consultor de Impuestos
-                                option Contador
+                    section.formulario__personal
+                        h2 Información personal
+                        
+                        div.personal-1
+                            label(for="nombre")
+                                p Nombre y apellido
+                                input(type="text" id="nombre" placeholder="nombre completo" name="nombre" required)
+                        
+                        div.personal-2
+                            label(for="identidad")
+                                p Documento de identidad 
+                                select(name="selectIdentidad" id="identidad")
+                                    option Cedula 
+                                    option Pasaporte
+                                
+                                p No. de documento
+                                input(type="number" id="identidad")
 
-                    div.doble
-                        label(for="habilidades")
-                            p Habilidades
-                            textarea(name="habilidades", cols="30", rows="10" id="habilidades") 
+                        div.personal-3
+                            label(for="direccion")
+                                p Dirección completa 
+                                input(type="text" id="direccion" placeholder="dirección residencial" required)
 
-                        label(for="motivacion")
-                            p Motivación
-                            textarea(name="motivacion", cols="30", rows="10" id="motivacion")
+                        div.personal-4
+                            label(for="correo")
+                                p Dirección de correo electrónico 
+                                input(type="email" id="correo" placeholder="tucorreo@email.com" name="correo")
+                        
+                        div.personal-5
+                            p Celular
+                            label(for="celular") 
+                                select(name="area" id="celular")
+                                    option 829
+                                    option 809
+                                    option 849  
+                                input(type="number" id="celular" name="celular")
+                        
+                        div.personal-6
+                            p Telefono residencial
+                            label(for="telefono") 
+                                select(name="area" id="telefono")
+                                    option 829
+                                    option 809
+                                    option 849  
+                                input(type="number" id="telefono" name="telefono")
+
+                    section.formulario__academica
+                        h2 Formación academica 
+                        p.academica__descripcion No es necesario rellenar todas
+                        
+                        div
+                            section.academica.academica-1 
+                                p.academica__titular Formación #1
+                                label(for="centro")
+                                    p Centro Educativo / Universidad
+                                    input(type="text" id="centro")
+                                
+                                label(for="grado")
+                                    p Grado o titulo obtenido
+                                    input(type="text" id="grado")
+                                
+                                label(for="fechaTitulo")
+                                    p Fecha
+                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
+                            
+                            section.academica.academica-2
+                                p.academica__titular Formación #2
+                                label(for="centro")
+                                    p Centro Educativo / Universidad
+                                    input(type="text" id="centro")
+                                
+                                label(for="grado")
+                                    p Grado o titulo obtenido
+                                    input(type="text" id="grado")
+                                
+                                label(for="fechaTitulo")
+                                    p Fecha
+                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
+                            
+                            section.academica.academica-3
+                                p.academica__titular Formación #3
+                                label(for="centro")
+                                    p Centro Educativo / Universidad
+                                    input(type="text" id="centro")
+                                
+                                label(for="grado")
+                                    p Grado o titulo obtenido
+                                    input(type="text" id="grado")
+                                
+                                label(for="fechaTitulo")
+                                    p Fecha
+                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
+                            
+                            section.academica.academica-4
+                                p.academica__titular Formación #4
+                                label(for="centro")
+                                    p Centro Educativo / Universidad
+                                    input(type="text" id="centro")
+                                
+                                label(for="grado")
+                                    p Grado o titulo obtenido
+                                    input(type="text" id="grado")
+                                
+                                label(for="fechaTitulo")
+                                    p Fecha
+                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
+                            
+                            section.academica.academica-5
+                                p.academica__titular Formación #5
+                                label(for="centro")
+                                    p Centro Educativo / Universidad
+                                    input(type="text" id="centro")
+                                
+                                label(for="grado")
+                                    p Grado o titulo obtenido
+                                    input(type="text" id="grado")
+                                
+                                label(for="fechaTitulo")
+                                    p Fecha
+                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
                     
-                    div
-                        label(for="experiencia")
-                            p Experiencia
-                            textarea(name="experiencia", cols="30", rows="10" id="experiencia")
+                    
+                    section.formulario__academica
+                    
+                        h2 Formación técnica
+                        div 
+                            section.academica.academica-1
+                                p.academica__titular Formación #1
+                                label(for="centro")
+                                    p Centro Educativo / Universidad
+                                    input(type="text" id="centro")
+                                
+                                label(for="grado")
+                                    p Grado o titulo obtenido
+                                    input(type="text" id="grado")
+                                
+                                label(for="fechaTitulo")
+                                    p Fecha
+                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
+                            
+                            section.academica.academica-2
+                                p.academica__titular Formación #2
+                                label(for="centro")
+                                    p Centro Educativo / Universidad
+                                    input(type="text" id="centro")
+                                
+                                label(for="grado")
+                                    p Grado o titulo obtenido
+                                    input(type="text" id="grado")
+                                
+                                label(for="fechaTitulo")
+                                    p Fecha
+                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
+                            
+                            section.academica.academica-3
+                                p.academica__titular Formación #3
+                                label(for="centro")
+                                    p Centro Educativo / Universidad
+                                    input(type="text" id="centro")
+                                
+                                label(for="grado")
+                                    p Grado o titulo obtenido
+                                    input(type="text" id="grado")
+                                
+                                label(for="fechaTitulo")
+                                    p Fecha
+                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
+                                
+                            section.academica.academica-4
+                                p.academica__titular Formación #4
+                                label(for="centro")
+                                    p Centro Educativo / Universidad
+                                    input(type="text" id="centro")
+                                
+                                label(for="grado")
+                                    p Grado o titulo obtenido
+                                    input(type="text" id="grado")
+                                
+                                label(for="fechaTitulo")
+                                    p Fecha
+                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
+
+                            section.academica.academica-5
+                                p.academica__titular Formación #5
+                                label(for="centro")
+                                    p Centro Educativo / Universidad
+                                    input(type="text" id="centro")
+                                
+                                label(for="grado")
+                                    p Grado o titulo obtenido
+                                    input(type="text" id="grado")
+                                
+                                label(for="fechaTitulo")
+                                    p Fecha
+                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
+                    
+
+
+                    section.formulario__idiomas
+                        h2 Idiomas
+                        div
+                            p.idioma__titular Idioma #1
+                            section
+                                label(for="idiomas")
+                                    p Idioma
+                                    input(type="text" id="idiomas")
+
+                                    p Nivel
+                                    select(name="idiomas")
+                                        option Básico
+                                        option Intermedio
+                                        option Avanzado
+                            
+                            p.idioma__titular Idioma #2
+                            section
+                                label(for="idiomas")
+                                    p Idioma
+                                    input(type="text" id="idiomas")
+
+                                    p Nivel
+                                    select(name="idiomas")
+                                        option Básico
+                                        option Intermedio
+                                        option Avanzado
+                            
+                            p.idioma__titular Idioma #3
+                            section
+                                label(for="idiomas")
+                                    p Idioma
+                                    input(type="text" id="idiomas")
+
+                                    p Nivel
+                                    select(name="idiomas")
+                                        option Básico
+                                        option Intermedio
+                                        option Avanzado
+                            
+                            p.idioma__titular Idioma #4
+                            section
+                                label(for="idiomas")
+                                    p Idioma
+                                    input(type="text" id="idiomas")
+
+                                    p Nivel
+                                    select(name="idiomas")
+                                        option Básico
+                                        option Intermedio
+                                        option Avanzado
+                            
+                            p.idioma__titular Idioma #5
+                            section
+                                label(for="idiomas")
+                                    p Idioma
+                                    input(type="text" id="idiomas")
+
+                                    p Nivel
+                                    select(name="idiomas")
+                                        option Básico
+                                        option Intermedio
+                                        option Avanzado
+                   
                     
                     div
                         p Adjuntar CV (En formato PDF)
