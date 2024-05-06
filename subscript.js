@@ -104,4 +104,36 @@ servicios.addEventListener("click", () => {
 })
 novedades.addEventListener("click", () => {
   desplegarNovedades();
-})
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const botonAgregarFormacionAcademica = document.getElementById('agregarFormacionAcademica');
+  const contenedorFormacionesAcademicas = document.getElementById('formaciones-academicas');
+
+  botonAgregarFormacionAcademica.addEventListener('click', function() {
+    const nuevaFormacionAcademica = document.createElement('div');
+    nuevaFormacionAcademica.classList.add('formacion-academica');
+    nuevaFormacionAcademica.innerHTML = `
+      <label for="centroEducativo">Centro Educativo</label>
+      <input type="text" name="centroEducativo" required>
+
+      <label for="tituloObtenido">Grado o Título Obtenido</label>
+      <input type="text" name="tituloObtenido" required>
+
+      <label for="fechaObtencion">Fecha de Obtención</label>
+      <input type="date" name="fechaObtencion" required>
+
+      <button type="button" class="eliminarFormacionAcademica">Eliminar</button>
+    `;
+    contenedorFormacionesAcademicas.appendChild(nuevaFormacionAcademica);
+
+    // Agregar evento para eliminar la formación académica recién agregada
+    const botonesEliminar = document.querySelectorAll('.eliminarFormacionAcademica');
+    botonesEliminar.forEach(boton => {
+      boton.addEventListener('click', function() {
+        this.parentElement.remove();
+      });
+    });
+  });
+});

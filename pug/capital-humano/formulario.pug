@@ -9,7 +9,7 @@ block contenido
             section.encabezado__capital
                     picture
                         img(src="../../img/servicios/DO3.webp", alt="Foto de una Lupa analizando un documento")
-                    .encabezado__titular
+                        
                         h2 Formulario de empleo
 
 
@@ -20,123 +20,46 @@ block contenido
                     section.formulario__personal
                         h2 Información personal
                         
-                        div.personal-1
-                            label(for="nombre")
-                                p Nombre y apellido
-                                input(type="text" id="nombre" placeholder="nombre completo" name="nombre" required)
-                        
-                        div.personal-2
-                            label(for="identidad")
-                                p Documento de identidad 
-                                select(name="selectIdentidad" id="identidad")
-                                    option Cedula 
-                                    option Pasaporte
-                                
-                                p No. de documento
-                                input(type="number" name="No. Documento de identidad" id="identidad")
+                        label(for="nombre") Nombre y Apellido
+                        input(type="text" id="nombre" name="nombre" required)
 
-                        div.personal-3
-                            label(for="direccion")
-                                p Dirección completa 
-                                input(type="text" name="direccion" id="direccion" placeholder="dirección residencial" required)
+                        label(for="tipoDocumento") Tipo de Documento de Identidad
+                        select(id="tipoDocumento" name="tipoDocumento" required)
+                            option(value="pasaporte") Pasaporte
+                            option(value="cedula") Cédula
+                            
+                        label(for="numeroDocumento") Número de Documento de Identidad
+                        input(type="text" id="numeroDocumento" name="numeroDocumento" required)
 
-                        div.personal-4
-                            label(for="correo")
-                                p Dirección de correo electrónico 
-                                input(type="email" id="correo" placeholder="tucorreo@email.com" name="correo")
-                        
-                        div.personal-5
-                            p Celular
-                            label(for="celular") 
-                                select(id="celular")
-                                    option 829
-                                    option 809
-                                    option 849  
-                                input(type="number" id="celular" name="celular")
-                        
-                        div.personal-6
-                            p Telefono residencial
-                            label(for="telefono") 
-                                select(name="area" id="telefono")
-                                    option 829
-                                    option 809
-                                    option 849  
-                                input(type="number" id="telefono" name="telefono")
+                        label(for="direccion") Dirección Residencial Completa
+                        input(type="text" id="direccion" name="direccion" required)
+
+                        label(for="email") Dirección de Correo Electrónico
+                        input(type="email" id="email" name="email" required)
+
+                        label(for="telefono") Número de Teléfono
+                        input(type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required)
+
+                        label(for="celular") Número de Celular
+                        input(type="tel" id="celular" name="celular" pattern="[0-9]{10}" required)
+
+  
 
                     section.formulario__academica
                         h2 Formación academica 
-                        p.academica__descripcion No es necesario rellenar todas
-                        
-                        div
-                            section.academica.academica-1 
-                                p.academica__titular Formación #1
-                                label(for="centro")
-                                    p Centro Educativo / Universidad
-                                    input(type="text" id="centro")
-                                
-                                label(for="grado")
-                                    p Grado o titulo obtenido
-                                    input(type="text" id="grado")
-                                
-                                label(for="fechaTitulo")
-                                    p Fecha
-                                    input(type="date" name="fecha" id="fechaTitulo")
-                            
-                            section.academica.academica-2
-                                p.academica__titular Formación #2
-                                label(for="centro")
-                                    p Centro Educativo / Universidad
-                                    input(type="text" id="centro")
-                                
-                                label(for="grado")
-                                    p Grado o titulo obtenido
-                                    input(type="text" id="grado")
-                                
-                                label(for="fechaTitulo")
-                                    p Fecha
-                                    input(type="date" name="fecha del titulo" id="fechaTitulo")
-                            
-                            section.academica.academica-3
-                                p.academica__titular Formación #3
-                                label(for="centro")
-                                    p Centro Educativo / Universidad
-                                    input(type="text" id="centro")
-                                
-                                label(for="grado")
-                                    p Grado o titulo obtenido
-                                    input(type="text" id="grado")
-                                
-                                label(for="fechaTitulo")
-                                    p Fecha
-                                    input(type="date" name="fecha del titulo" id="fechaTitulo")
-                            
-                            section.academica.academica-4
-                                p.academica__titular Formación #4
-                                label(for="centro")
-                                    p Centro Educativo / Universidad
-                                    input(type="text" id="centro")
-                                
-                                label(for="grado")
-                                    p Grado o titulo obtenido
-                                    input(type="text" id="grado")
-                                
-                                label(for="fechaTitulo")
-                                    p Fecha
-                                    input(type="date" name="fecha del titulo" id="fechaTitulo")
-                            
-                            section.academica.academica-5
-                                p.academica__titular Formación #5
-                                label(for="centro")
-                                    p Centro Educativo / Universidad
-                                    input(type="text" id="centro")
-                                
-                                label(for="grado")
-                                    p Grado o titulo obtenido
-                                    input(type="text" id="grado")
-                                
-                                label(for="fechaTitulo")
-                                    p Fecha
-                                    input(type="date" name="fecha del titulo" id="fechaTitulo")
+                          #formaciones-academicas
+                            .formacion-academica
+                            label(for="centroEducativo") Centro Educativo
+                            input(type="text" name="centroEducativo" required)
+
+                            label(for="tituloObtenido") Grado o Título Obtenido
+                            input(type="text" name="tituloObtenido" required)
+
+                            label(for="fechaObtencion") Fecha de Obtención
+                            input(type="date" name="fechaObtencion" required)
+
+                        button(type="button" id="agregarFormacionAcademica") Agregar Otra Formación Académica
+
                     
                     
                     section.formulario__academica

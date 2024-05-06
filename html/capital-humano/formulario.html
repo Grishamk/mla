@@ -119,147 +119,45 @@
     </header>
     <main>
       <section class="encabezado__capital">
-        <picture><img src="../../img/servicios/DO3.webp" alt="Foto de una Lupa analizando un documento"></picture>
-        <div class="encabezado__titular">
+        <picture><img src="../../img/servicios/DO3.webp" alt="Foto de una Lupa analizando un documento">
           <h2>Formulario de empleo</h2>
-        </div>
+        </picture>
       </section>
       <section class="formulario-empleo">
         <form class="formulario" action="https://formsubmit.co/reclutamiento@mejialora.com" method="POST" enctype="multipart/form-data">
           <section class="formulario__personal">
             <h2>Información personal</h2>
-            <div class="personal-1">
-              <label for="nombre">
-                <p>Nombre y apellido</p>
-                <input type="text" id="nombre" placeholder="nombre completo" name="nombre" required>
-              </label>
-            </div>
-            <div class="personal-2">
-              <label for="identidad">
-                <p>Documento de identidad </p>
-                <select name="selectIdentidad" id="identidad">
-                  <option>Cedula </option>
-                  <option>Pasaporte</option>
-                </select>
-                <p>No. de documento</p>
-                <input type="number" name="No. Documento de identidad" id="identidad">
-              </label>
-            </div>
-            <div class="personal-3">
-              <label for="direccion">
-                <p>Dirección completa </p>
-                <input type="text" name="direccion" id="direccion" placeholder="dirección residencial" required>
-              </label>
-            </div>
-            <div class="personal-4">
-              <label for="correo">
-                <p>Dirección de correo electrónico </p>
-                <input type="email" id="correo" placeholder="tucorreo@email.com" name="correo">
-              </label>
-            </div>
-            <div class="personal-5">
-              <p>Celular</p>
-              <label for="celular"> 
-                <select id="celular">
-                  <option>829</option>
-                  <option>809</option>
-                  <option>849  </option>
-                </select>
-                <input type="number" id="celular" name="celular">
-              </label>
-            </div>
-            <div class="personal-6">
-              <p>Telefono residencial</p>
-              <label for="telefono"> 
-                <select name="area" id="telefono">
-                  <option>829</option>
-                  <option>809</option>
-                  <option>849  </option>
-                </select>
-                <input type="number" id="telefono" name="telefono">
-              </label>
-            </div>
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="tipoDocumento">Tipo de Documento de Identidad</label>
+            <select id="tipoDocumento" name="tipoDocumento" required>
+              <option value="pasaporte">Pasaporte</option>
+              <option value="cedula">Cédula</option>
+            </select>
+            <label for="numeroDocumento">Número de Documento de Identidad</label>
+            <input type="text" id="numeroDocumento" name="numeroDocumento" required>
+            <label for="direccion">Dirección Residencial Completa</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <label for="email">Dirección de Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Número de Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+            <label for="celular">Número de Celular</label>
+            <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" required>
           </section>
           <section class="formulario__academica">
-            <h2>Formación academica </h2>
-            <p class="academica__descripcion">No es necesario rellenar todas</p>
-            <div>
-              <section class="academica academica-1"> 
-                <p class="academica__titular">Formación #1</p>
-                <label for="centro">
-                  <p>Centro Educativo / Universidad</p>
-                  <input type="text" id="centro">
-                </label>
-                <label for="grado">
-                  <p>Grado o titulo obtenido</p>
-                  <input type="text" id="grado">
-                </label>
-                <label for="fechaTitulo">
-                  <p>Fecha</p>
-                  <input type="date" name="fecha" id="fechaTitulo">
-                </label>
-              </section>
-              <section class="academica academica-2">
-                <p class="academica__titular">Formación #2</p>
-                <label for="centro">
-                  <p>Centro Educativo / Universidad</p>
-                  <input type="text" id="centro">
-                </label>
-                <label for="grado">
-                  <p>Grado o titulo obtenido</p>
-                  <input type="text" id="grado">
-                </label>
-                <label for="fechaTitulo">
-                  <p>Fecha</p>
-                  <input type="date" name="fecha del titulo" id="fechaTitulo">
-                </label>
-              </section>
-              <section class="academica academica-3">
-                <p class="academica__titular">Formación #3</p>
-                <label for="centro">
-                  <p>Centro Educativo / Universidad</p>
-                  <input type="text" id="centro">
-                </label>
-                <label for="grado">
-                  <p>Grado o titulo obtenido</p>
-                  <input type="text" id="grado">
-                </label>
-                <label for="fechaTitulo">
-                  <p>Fecha</p>
-                  <input type="date" name="fecha del titulo" id="fechaTitulo">
-                </label>
-              </section>
-              <section class="academica academica-4">
-                <p class="academica__titular">Formación #4</p>
-                <label for="centro">
-                  <p>Centro Educativo / Universidad</p>
-                  <input type="text" id="centro">
-                </label>
-                <label for="grado">
-                  <p>Grado o titulo obtenido</p>
-                  <input type="text" id="grado">
-                </label>
-                <label for="fechaTitulo">
-                  <p>Fecha</p>
-                  <input type="date" name="fecha del titulo" id="fechaTitulo">
-                </label>
-              </section>
-              <section class="academica academica-5">
-                <p class="academica__titular">Formación #5</p>
-                <label for="centro">
-                  <p>Centro Educativo / Universidad</p>
-                  <input type="text" id="centro">
-                </label>
-                <label for="grado">
-                  <p>Grado o titulo obtenido</p>
-                  <input type="text" id="grado">
-                </label>
-                <label for="fechaTitulo">
-                  <p>Fecha</p>
-                  <input type="date" name="fecha del titulo" id="fechaTitulo">
-                </label>
-              </section>
-            </div>
+            <h2>Formación academica 
+              <div id="formaciones-academicas">
+                <div class="formacion-academica"></div>
+                <label for="centroEducativo">Centro Educativo</label>
+                <input type="text" name="centroEducativo" required>
+                <label for="tituloObtenido">Grado o Título Obtenido</label>
+                <input type="text" name="tituloObtenido" required>
+                <label for="fechaObtencion">Fecha de Obtención</label>
+                <input type="date" name="fechaObtencion" required>
+              </div>
+            </h2>
+            <button type="button" id="agregarFormacionAcademica">Agregar Otra Formación Académica</button>
           </section>
           <section class="formulario__academica">
             <h2>Formación técnica</h2>
