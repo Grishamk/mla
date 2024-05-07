@@ -6,204 +6,135 @@ block javaScript
 block contenido
  
         main
+
             section.encabezado__capital
-                    picture
-                        img(src="../../img/servicios/DO3.webp", alt="Foto de una Lupa analizando un documento")
+                picture
+                    img(src="../../img/servicios/DO3.webp", alt="Foto de una Lupa analizando un documento")
                         
-                        h2 Formulario de empleo
+            
+                section.encabezado__titular 
+                    h2 Formulario de empleo
 
+                .mensajeVentana
+                    h2.mensajeVentana__titularPrincipal ¡Ven y únete a nuestro equipo MLA!
 
+                    article.mensajeVentana__primerParrafo
+                        p.mensajeVentana__titular ¿Qué estamos buscando?
+
+                        p Buscamos profesionales talentosos, motivados y comprometidos con la calidad y la excelencia. Si tienes experiencia o quieres desarrollarte en las áreas de auditoría, contabilidad, consultoría o áreas afines, ¡te invitamos a postularte! 
+
+                    p.mensajeVentana__titular En MLA, ofrecemos:
+                    
+                    ul.mensajeVentana__lista 
+                        li 
+                            strong Más de 41 años de experiencia y trayectoria de éxito: 
+                            span Somos reconocidos como la mejor Firma Nacional de Auditoría, Contabilidad y Consultoría del año 2023. Además:
+                        li 
+                            p El respaldo internacional de BKR.
+                        li 
+                            p Un compromiso con la calidad y la credibilidad.
+                        li 
+                            p Grandes oportunidades de desarrollo profesional y personal.
+ 
+                    .enlacesBoton
+                        strong ¡No te pierdas la oportunidad de ser parte de un equipo ganador! 
+                        strong MLA: tu futuro profesional comienza aquí.
+    
+            
             
             section.formulario-empleo
                 form(action="https://formsubmit.co/reclutamiento@mejialora.com" method="POST" enctype="multipart/form-data").formulario
+        
+                    h2.elemento1 Información personal
                     
-                    section.formulario__personal
-                        h2 Información personal
-                        
+                    .elemento.elemento2
                         label(for="nombre") Nombre y Apellido
                         input(type="text" id="nombre" name="nombre" required)
 
-                        label(for="tipoDocumento") Tipo de Documento de Identidad
-                        select(id="tipoDocumento" name="tipoDocumento" required)
-                            option(value="pasaporte") Pasaporte
-                            option(value="cedula") Cédula
-                            
-                        label(for="numeroDocumento") Número de Documento de Identidad
-                        input(type="text" id="numeroDocumento" name="numeroDocumento" required)
+                    .elementos
+                        .elemento.elemento3
+                            label(for="tipoDocumento") Tipo de Documento de Identidad
+                            select(id="tipoDocumento" name="tipoDocumento" required)
+                                option(value="pasaporte") Pasaporte
+                                option(value="cedula") Cédula
+                        
+                        .elemento.elemento4
+                            label(for="numeroDocumento") Número de Documento de Identidad
+                            input(type="text" id="numeroDocumento" name="numeroDocumento" required)
 
+                    .elemento.elemento5
                         label(for="direccion") Dirección Residencial Completa
                         input(type="text" id="direccion" name="direccion" required)
+                    
+                    .elementos
+                        .elemento.elemento6
+                            label(for="email") Dirección de Correo Electrónico
+                            input(type="email" id="email" name="email" required)
 
-                        label(for="email") Dirección de Correo Electrónico
-                        input(type="email" id="email" name="email" required)
+                        .elemento.elemento7
+                            label(for="telefono") Número de Teléfono
+                            input(type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required)
 
-                        label(for="telefono") Número de Teléfono
-                        input(type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required)
+                        .elemento.elemento8
+                            label(for="celular") Número de Celular
+                            input(type="tel" id="celular" name="celular" pattern="[0-9]{10}" required)
 
-                        label(for="celular") Número de Celular
-                        input(type="tel" id="celular" name="celular" pattern="[0-9]{10}" required)
+                
+                    h2 Formación academica 
+                    #formaciones-academicas
+                        .formacion-academica
+                            .elementos
+                                .elemento.elemento9
+                                    label(for="centroEducativo") Universidad
+                                    input(type="text" name="centroEducativo" required)
 
-  
-
-                    section.formulario__academica
-                        h2 Formación academica 
-                          #formaciones-academicas
-                            .formacion-academica
-                            label(for="centroEducativo") Centro Educativo
-                            input(type="text" name="centroEducativo" required)
-
-                            label(for="tituloObtenido") Grado o Título Obtenido
-                            input(type="text" name="tituloObtenido" required)
-
-                            label(for="fechaObtencion") Fecha de Obtención
-                            input(type="date" name="fechaObtencion" required)
-
-                        button(type="button" id="agregarFormacionAcademica") Agregar Otra Formación Académica
+                                .elemento.elemento10
+                                    label(for="tituloObtenido") Grado o Título Obtenido
+                                    input(type="text" name="tituloObtenido" required)
 
                     
-                    
-                    section.formulario__academica
-                    
-                        h2 Formación técnica
-                        div 
-                            section.academica.academica-1
-                                p.academica__titular Formación #1
-                                label(for="centro")
-                                    p Centro Educativo / Universidad
-                                    input(type="text" id="centro")
+
+                    //button(type="button" id="agregarFormacionAcademica").boton Agregar otra formación académica
+
+
+                    h2 Formación Técnica
+                    #formaciones-tecnicas
+                        .formacion-tecnica
+                            .elementos
+                                .elemento.elemento12
+                                    label(for="manejoOffice") ¿Maneja el Paqute de Office?
+                                    select(id="manejoOffice" name="manejoOffice")
+                                        option(value="si") Si
+                                        option(value="no") No  
                                 
-                                label(for="grado")
-                                    p Grado o titulo obtenido
-                                    input(type="text" id="grado")
-                                
-                                label(for="fechaTitulo")
-                                    p Fecha
-                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
+                
+
+                    //button(type="button" id="agregarFormacionTecnica").boton Agregar otra formación técnica
+
+                    h2 Idiomas
+                    #idiomas
+                        .idioma
+                            .elementos
+                                .elemento.elemento15
+                                    label(for="idioma") Idioma
+                                    input(type="text" name="idioma" required)
+
+                                .elemento.elemento16
+                                    label(for="nivelIdioma") Nivel
+                                    select(id="nivelIdioma" name="nivelIdioma" required)
+                                        option(value="Basico") Básico
+                                        option(value="Intermedio") Intermedio
+                                        option(value="Avanzado") Avanzado
                             
-                            section.academica.academica-2
-                                p.academica__titular Formación #2
-                                label(for="centro")
-                                    p Centro Educativo / Universidad
-                                    input(type="text" id="centro")
-                                
-                                label(for="grado")
-                                    p Grado o titulo obtenido
-                                    input(type="text" id="grado")
-                                
-                                label(for="fechaTitulo")
-                                    p Fecha
-                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
-                            
-                            section.academica.academica-3
-                                p.academica__titular Formación #3
-                                label(for="centro")
-                                    p Centro Educativo / Universidad
-                                    input(type="text" id="centro")
-                                
-                                label(for="grado")
-                                    p Grado o titulo obtenido
-                                    input(type="text" id="grado")
-                                
-                                label(for="fechaTitulo")
-                                    p Fecha
-                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
-                                
-                            section.academica.academica-4
-                                p.academica__titular Formación #4
-                                label(for="centro")
-                                    p Centro Educativo / Universidad
-                                    input(type="text" id="centro")
-                                
-                                label(for="grado")
-                                    p Grado o titulo obtenido
-                                    input(type="text" id="grado")
-                                
-                                label(for="fechaTitulo")
-                                    p Fecha
-                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
+                
 
-                            section.academica.academica-5
-                                p.academica__titular Formación #5
-                                label(for="centro")
-                                    p Centro Educativo / Universidad
-                                    input(type="text" id="centro")
-                                
-                                label(for="grado")
-                                    p Grado o titulo obtenido
-                                    input(type="text" id="grado")
-                                
-                                label(for="fechaTitulo")
-                                    p Fecha
-                                    input(type="date", name="fecha del titulo" id="fechaTitulo")
-                    
+                    //button(type="button" id="agregarIdioma").boton Agregar otro idioma
 
-
-                    section.formulario__idiomas
-                        h2 Idiomas
-                        div
-                            p.idioma__titular Idioma #1
-                            section
-                                label(for="idiomas")
-                                    p Idioma
-                                    input(type="text" id="idiomas")
-
-                                    p Nivel
-                                    select(name="idiomas")
-                                        option Básico
-                                        option Intermedio
-                                        option Avanzado
-                            
-                            p.idioma__titular Idioma #2
-                            section
-                                label(for="idiomas")
-                                    p Idioma
-                                    input(type="text" id="idiomas")
-
-                                    p Nivel
-                                    select(name="idiomas")
-                                        option Básico
-                                        option Intermedio
-                                        option Avanzado
-                            
-                            p.idioma__titular Idioma #3
-                            section
-                                label(for="idiomas")
-                                    p Idioma
-                                    input(type="text" id="idiomas")
-
-                                    p Nivel
-                                    select(name="idiomas")
-                                        option Básico
-                                        option Intermedio
-                                        option Avanzado
-                            
-                            p.idioma__titular Idioma #4
-                            section
-                                label(for="idiomas")
-                                    p Idioma
-                                    input(type="text" id="idiomas")
-
-                                    p Nivel
-                                    select(name="idiomas")
-                                        option Básico
-                                        option Intermedio
-                                        option Avanzado
-                            
-                            p.idioma__titular Idioma #5
-                            section
-                                label(for="idiomas")
-                                    p Idioma
-                                    input(type="text" id="idiomas")
-
-                                    p Nivel
-                                    select(name="idiomas")
-                                        option Básico
-                                        option Intermedio
-                                        option Avanzado
-                   
-                    
                     div
                         p Adjuntar CV (En formato PDF)
+                        p Limite de peso: 5MB*
                         input(type="file" accept="application/pdf" name="curriculum")
-                    
-                    input(type="submit").boton
+
+                    input(type="submit" required).boton-enviar
+
+            
