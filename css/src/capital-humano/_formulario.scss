@@ -13,7 +13,7 @@
             border-radius: 8px;
             background-color: #f2f2f2;
         }
-        
+  
         label {
             margin-bottom: 12px;
         }
@@ -380,28 +380,8 @@
                     margin-bottom: 36px;
                 }
 
-               .elementos{
-                display: flex;
-                gap: 50px;
-                width: 100%;
-               }
-        
-                .elemento5{
-                    grid-area: 4 / 1 / 5 / 4;
-                }
-
-                .elemento6{
-                    grid-area: 5 / 1 / 6 / 2;
-                }
-                .elemento7{
-                    grid-area: 5 / 2 / 6 / 3;
-                }
-                .elemento8{
-                    grid-area: 5 / 3 / 6 / 4;
-                }
-                .elemento9{
-                    grid-area: 6 / 1 / 7 / 4;
-                }
+               
+               
             }
         }
     }

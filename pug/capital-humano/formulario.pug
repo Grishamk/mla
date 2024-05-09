@@ -48,93 +48,42 @@ block contenido
                     h2.elemento1 Información personal
                     
                     .elemento.elemento2
-                        label(for="nombre") Nombre y Apellido
+                        label(for="nombre") Nombre y Apellido:
                         input(type="text" id="nombre" name="nombre" required)
 
                     .elementos
                         .elemento.elemento3
-                            label(for="tipoDocumento") Tipo de Documento de Identidad
-                            select(id="tipoDocumento" name="tipoDocumento" required)
-                                option(value="pasaporte") Pasaporte
-                                option(value="cedula") Cédula
-                        
-                        .elemento.elemento4
-                            label(for="numeroDocumento") Número de Documento de Identidad
-                            input(type="text" id="numeroDocumento" name="numeroDocumento" required)
-
-                    .elemento.elemento5
-                        label(for="direccion") Dirección Residencial Completa
-                        input(type="text" id="direccion" name="direccion" required)
-                    
-                    .elementos
-                        .elemento.elemento6
-                            label(for="email") Dirección de Correo Electrónico
+                            label(for="email") Dirección de Correo Electrónico:
                             input(type="email" id="email" name="email" required)
 
-                        .elemento.elemento7
-                            label(for="telefono") Número de Teléfono
-                            input(type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required)
-
-                        .elemento.elemento8
-                            label(for="celular") Número de Celular
+                        .elemento.elemento4
+                            label(for="celular") Número de Celular:
                             input(type="tel" id="celular" name="celular" pattern="[0-9]{10}" required)
 
-                
-                    h2 Formación academica 
-                    #formaciones-academicas
-                        .formacion-academica
-                            .elementos
-                                .elemento.elemento9
-                                    label(for="centroEducativo") Universidad
-                                    input(type="text" name="centroEducativo" required)
-
-                                .elemento.elemento10
-                                    label(for="tituloObtenido") Grado o Título Obtenido
-                                    input(type="text" name="tituloObtenido" required)
-
-                    
-
-                    //button(type="button" id="agregarFormacionAcademica").boton Agregar otra formación académica
-
-
-                    h2 Formación Técnica
-                    #formaciones-tecnicas
-                        .formacion-tecnica
-                            .elementos
-                                .elemento.elemento12
-                                    label(for="manejoOffice") ¿Maneja el Paqute de Office?
-                                    select(id="manejoOffice" name="manejoOffice")
-                                        option(value="si") Si
-                                        option(value="no") No  
-                                
-                
-
-                    //button(type="button" id="agregarFormacionTecnica").boton Agregar otra formación técnica
-
-                    h2 Idiomas
-                    #idiomas
-                        .idioma
-                            .elementos
-                                .elemento.elemento15
-                                    label(for="idioma") Idioma
-                                    input(type="text" name="idioma" required)
-
-                                .elemento.elemento16
-                                    label(for="nivelIdioma") Nivel
-                                    select(id="nivelIdioma" name="nivelIdioma" required)
-                                        option(value="Basico") Básico
-                                        option(value="Intermedio") Intermedio
-                                        option(value="Avanzado") Avanzado
+                    .elementos
+                        .elemento.elemento5
+                            label(for="carrera") Carrera: 
+                            input(type="text" name="carrera" id="carrera")
+                    .elementos
+                        .elemento.elemento6
+                            label(for="departamento") Departamento de interés:
+                            select(id="departamento" name="departamento")
+                                option(value="Auditoria") Auditoría
+                                option(value="Impuestos") Impuestos
+                                option(value="Contabilidad") Contabilidad
+                                option(value="DesarrolloOrganizacional") Desarrollo Organizacional
+                                option(value="IT") IT
+                                option(value="Otros") Otros
                             
+                            label(for="otroDepartamento") En caso de elegir otros, especifique: 
+                            input(type="text" name="otroDepartamento" id="otroDepartamento") 
                 
-
-                    //button(type="button" id="agregarIdioma").boton Agregar otro idioma
-
+                  
                     div
                         p Adjuntar CV (En formato PDF)
                         p Limite de peso: 5MB*
                         input(type="file" accept="application/pdf" name="curriculum")
 
-                    input(type="submit" required).boton-enviar
+                    input(type="submit" value="Enviar" required).boton-enviar
 
             

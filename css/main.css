@@ -4443,48 +4443,6 @@ main .desarrollo__servicios ul li {
   body .formulario-empleo .formulario hr {
     margin-bottom: 36px;
   }
-  body .formulario-empleo .formulario .elementos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 50px;
-    width: 100%;
-  }
-  body .formulario-empleo .formulario .elemento5 {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: 4/1/5/4;
-  }
-  body .formulario-empleo .formulario .elemento6 {
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-area: 5/1/6/2;
-  }
-  body .formulario-empleo .formulario .elemento7 {
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-area: 5/2/6/3;
-  }
-  body .formulario-empleo .formulario .elemento8 {
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-area: 5/3/6/4;
-  }
-  body .formulario-empleo .formulario .elemento9 {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: 6/1/7/4;
-  }
   .mensajeVentana {
     padding: 0;
     max-width: 1300px;
