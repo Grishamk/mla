@@ -298,7 +298,7 @@ $('.autoplay').slick({
   autoplaySpeed: 1000,
   responsive: [
     {
-      breakpoint: 900,
+      breakpoint: 1100,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,

@@ -2,7 +2,7 @@
   @include wH(100%, auto);
   @include flexRule(column,center,center);
   padding: 64px 24px;
-  gap: 48px;
+  gap: 36px;
 
   
   h2{
@@ -24,7 +24,7 @@
     @include wH(100%, auto);
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
   
     div.autoplay{
       width: 80vw;

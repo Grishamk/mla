@@ -649,7 +649,7 @@ header:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 64px 24px;
-  gap: 48px;
+  gap: 36px;
 }
 .main-container .main-container__clientes h2 {
   width: 100%;
@@ -675,7 +675,7 @@ header:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
 .main-container .main-container__clientes .carousel div.autoplay {
   width: 80vw;
