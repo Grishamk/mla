@@ -1,0 +1,27 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/13mayo.webp", alt="Background de la noticia")
+                    h2 DOMINICAN ANNUAL TOURISM EXCHANGE 2024
+            
+            section.publicacion__content
+                p 13 de mayo de 2024
+                
+                div
+                    p DATE 2024 en su vigésima cuarta edición. MLA dice presente en el evento más destacado en cuanto a promoción turística en el área del Caribe.
+
+                    p El Licenciado Raymi Mejía acompañado del Licenciado Tamayo Hernández, siendo partícipes de esta gran feria turística.
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal
