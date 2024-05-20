@@ -1,0 +1,27 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/14mayo.webp", alt="Background de la noticia")
+                    h2 We have been ranked with the highest satisfaction index among national firms in auditing, accounting, and consulting.
+            
+            section.publicacion__content
+                p May 14, 2024
+                
+                div
+                    p According to the 2023 Consumer Positioning and Satisfaction Report of the Dominican Republic, Mejía Lora & Asociados has been recognized as the leading firm in customer satisfaction in Auditing, Accounting, and Consulting nationwide. Thank you to “Centroamérica en 7 días” for this prestigious recognition. We will continue to be committed to excellence in our services, improving and innovating every day.
+
+                    p This report is prepared by "Centroamérica en 7 días," who have been conducting market studies in Mexico, Colombia, Central America, and the Dominican Republic since 2002. In this study, Mejía Lora & Asociados SRL is valued for the high standards in Auditing, Accounting, Tax, Consulting, and Outsourcing services, highlighting the experience and capability of the team.
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipalEn

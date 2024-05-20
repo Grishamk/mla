@@ -5609,12 +5609,17 @@ main .desarrollo__servicios ul li {
 .publicacion__content p {
   font-weight: 600;
   margin-bottom: 40px;
+  line-height: 24px;
 }
 .publicacion__content div {
   margin-bottom: 100px;
 }
 .publicacion__content div p {
   font-weight: 400;
+}
+.publicacion__content div img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 .publicacion__otras {

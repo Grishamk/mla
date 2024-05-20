@@ -41,12 +41,18 @@
     p{
         font-weight: 600;
         margin-bottom: 40px;
+        line-height: 24px;
     }
 
     div{
         margin-bottom: 100px;
         p{
             font-weight: 400;
+        }
+
+        img{
+            width: 100%;
+            border-radius: 8px;
         }
     }
 }

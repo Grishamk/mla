@@ -1,0 +1,27 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/14mayo.webp", alt="Background de la noticia")
+                    h2 Hemos sido posicionados con el mejor índice de satisfacción en firmas nacionales de auditoría, contabilidad y consultoría.
+            
+            section.publicacion__content
+                p 14 de mayo de 2024
+                
+                div
+                    p Según el Reporte de Posicionamiento y Satisfacción del Consumidor de la República Dominicana 2023, Mejía Lora & Asociados ha sido reconocida como la firma líder en satisfacción del cliente en Auditoría, Contabilidad y Consultoría a nivel nacional. Gracias a “Centroamérica en 7 días” por este prestigioso reconocimiento. Seguiremos comprometidos con la excelencia en nuestros servicios mejorando e innovando cada día más.
+
+                    p Este reporte es preparado por “Centroamérica en 7 días”, quienes realizan estudios de mercado en México, Colombia, América Central, y República Dominicana, desde el año 2002. En este estudio se valora a Mejía Lora & Asociados SRL, por los altos niveles en los servicios de Auditoría, Contabilidad, Impuestos, Consultoría y Outsourcing, exaltando la experiencia y capacidad del equipo de trabajo.
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

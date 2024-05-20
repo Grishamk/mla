@@ -1,0 +1,26 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/17mayo.webp", alt="Background de la noticia")
+                    h2 Happy Public Accountant's Day!
+            
+            section.publicacion__content
+                p May 17, 2024
+                
+                div
+                    p Today we celebrate those who, with dedication and precision, keep our finances in order and ensure transparency in business. Their work is essential for the growth and stability of our organizations and communities. Thank you for your commitment, professionalism, and unwavering ethics.
+
+                    
+
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

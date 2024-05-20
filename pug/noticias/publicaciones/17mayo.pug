@@ -1,0 +1,26 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/17mayo.webp", alt="Background de la noticia")
+                    h2 ¡Feliz Día del Contador Público!
+            
+            section.publicacion__content
+                p 17 de mayo de 2024
+                
+                div
+                    p Hoy celebramos a quienes con dedicación y precisión mantienen en orden nuestras finanzas y aseguran la transparencia en los negocios. Su labor es fundamental para el crecimiento y la estabilidad de nuestras organizaciones y comunidades. Gracias por su compromiso, profesionalismo y ética inquebrantable.
+
+                    
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal
