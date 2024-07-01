@@ -1,0 +1,26 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/05junio.webp", alt="Background de la noticia")
+                    h2 World Environment Day
+            
+            section.publicacion__content
+                p June 5, 2024
+                
+                div
+                    p At Mejía Lora & Asociados, we are committed to environmental sustainability. We believe that caring for our planet is essential to building a prosperous and healthy future for all. Today, we reaffirm our commitment to implementing responsible accounting practices and supporting initiatives that promote a greener and cleaner environment.
+
+                    
+
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

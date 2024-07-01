@@ -1,0 +1,28 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/10junio.webp", alt="Background de la noticia")
+                    h2 APA Exchange Rate May 2024
+            
+            section.publicacion__content
+                p June 10, 2024
+                
+                div
+                    p We inform you that the exchange rate approved by the General Directorate of Internal Taxes for the settlement and payment of ITBIS in transactions under the APA for May 2024 is RD$/USD$ 58.3908.
+
+                    p This rate is the same as the Central Bank publishes as the average monthly exchange rate for purchasing foreign currency in the Spot Market.
+
+                    
+
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

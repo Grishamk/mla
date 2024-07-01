@@ -1,0 +1,26 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/05junio.webp", alt="Background de la noticia")
+                    h2 Día Mundial del Medio Ambiente
+            
+            section.publicacion__content
+                p 05 de junio de 2024
+                
+                div
+                    p En Mejía Lora & Asociados, estamos comprometidos con la sostenibilidad ambiental. Creemos que cuidar nuestro planeta es fundamental para construir un futuro próspero y saludable para todos. Hoy, reafirmamos nuestro compromiso de implementar prácticas contables responsables y apoyar iniciativas que promuevan un entorno más verde y limpio.
+
+                    
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

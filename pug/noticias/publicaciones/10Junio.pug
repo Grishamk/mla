@@ -1,0 +1,28 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/10junio.webp", alt="Background de la noticia")
+                    h2 Tasa de cambio APA Mayo 2024
+            
+            section.publicacion__content
+                p 10 de junio de 2024
+                
+                div
+                    p Les informamos que la tasa de cambio aprobada por la Dirección General de Impuestos Internos para la liquidación y pago del ITBIS en operaciones acogidas al APA de mayo de 2024 es de RD$/USD$ 58.3908.
+
+                    p Esta tasa es la misma que el Banco Central publica como Tasa de Cambio Promedio mensial para la compra de divisas en el Mercado Spot.
+
+                    
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal
