@@ -1,0 +1,28 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/21mayo.webp", alt="Background de la noticia")
+                    h2 El Lic. Raymi Mejía participará en dos eventos internacionales clave de BKR International
+            
+            section.publicacion__content
+                p 21 de mayo de 2024
+                
+                div
+                    p Nos complace anunciar la participación de Raymi Mejía, socio de MLA, en la Reunión Regional de las Américas de BKR International se celebrará en Atlanta, Georgia, USA. Y en la Conferencia Anual Regional EMEA que tendrá lugar en Milán, Italia, con el Lic. Raymi participando como miembro del Consejo Mundial de BKR International.
+
+                    p Ambas reuniones contarán con al participación de miembros del Consejo Mundial de BKR International.
+
+                    
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

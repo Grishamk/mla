@@ -1,0 +1,26 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/23julio.webp", alt="Background de la noticia")
+                    h2 XIV Congreso Tributario
+            
+            section.publicacion__content
+                p 23 de julio de 2024
+                
+                div
+                    p Sayka Mejía, Socio de MLA y representante en el país de WIN - Women of IFA Network, participó como miembro destacado de la mesa principal durante la celebración del XIV Congreso Tributario, acompañando la Directiva del ATRIRD, del ILATD en RD, de IFA-RD y distinguidos ponentes, entre los que se encontraban el Director Genereal de Inpuestos Internos (DGII) de la República Dominicana, Luis Valdez, la Subdirectora Jurídica de DGII, Yorlin Vásquez y el economista Miguel Collado de CREES.
+
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

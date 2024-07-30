@@ -1,0 +1,27 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/26mayo.webp", alt="Background de la noticia")
+                    h2 Feliz Día de las Madres
+            
+            section.publicacion__content
+                p 26 de mayo de 2024
+                
+                div
+                    p Para todas las madres maravillosas, que equilibran el trabajo y la familia con tanta gracia. Les deseamos un día lleno de amor y alegría.
+
+
+                    
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

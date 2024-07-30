@@ -1,0 +1,25 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/25julio.webp", alt="Background de la noticia")
+                    h2 Emision del reporte país por país Acción 13, Proyecto BEPS
+            
+            section.publicacion__content
+                p 25 de julio de 2024
+                
+                div
+                    p Se ha programado la fecha límite para la emisión del Reporte País por País (Acción 13 del Proyecto BEPS) correspondiente al periodo fiscal 2022. La nueva fecha límite sin penalidades es el viernes 30 de agosto de 2024.
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

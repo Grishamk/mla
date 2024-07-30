@@ -1,0 +1,28 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/03junio.webp", alt="Background de la noticia")
+                    h2 XXII Congreso Regional de Auditoría Interna
+            
+            section.publicacion__content
+                p 03 de junio de 2024
+                
+                div
+                    p En Mejía Lora & Asociados, nos enorgullece anunciar la participación de nuestra Licenciada Firelli Mejía en el XXII Congreso Regional de Auditoría Interna, Control de Gestión, Riego y Finanzas. Con el lema: Auditoría Interna y la Transformación Digital.
+
+                    p Este evento ha sido una excelente oportunidad para profundizar en temas de vanguardia como las nuevas normas y enfoques de auditoría interna 2024-2035, la transformación digital, inteligencia artificial y ciberseguridad.
+
+                    
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

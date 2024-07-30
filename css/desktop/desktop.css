@@ -1024,7 +1024,7 @@ header:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
 .main-container .main-container__clientes .carousel div.autoplay {
   width: 95%;
@@ -1170,11 +1170,17 @@ main .encabezado .backButton a {
   font-size: 1.8rem;
 }
 .publicacion__content div {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .publicacion__content div p {
   font-weight: 400;
   font-size: 1.6rem;
+}
+.publicacion__content div img {
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 .publicacion__otras {

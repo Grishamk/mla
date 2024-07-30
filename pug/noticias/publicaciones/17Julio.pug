@@ -1,0 +1,27 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/17julio.webp", alt="Background de la noticia")
+                    h2 ¿Conoces que son los comprobantes de gastos menores (b13 e-43)?
+            
+            section.publicacion__content
+                p 17 de julio de 2024
+                
+                div
+                    p En Mejía Lora & Asociados, entendemos la importancia de mantener una contabilidad precisa y ordenada. Los Comprobantes de Gastos Menores (b13 e-43) son documentos que facilitan el registro de pequeños gastos empresariales, asegurando un control financiero adecuado. Estos comprobantes son esenciales para documentar gastos cotidianos que no exceden un monto específico, permitiendo una gestión más eficiente y transparente de los recursos de la empresa.
+
+                    p ¡Mantén tu contabilidad al día y evita problemas futuros! Para más información, contáctanos.
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

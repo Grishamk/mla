@@ -120,59 +120,75 @@
     <main>
       <section class="encabezado__capital">
         <picture><img src="../../img/servicios/DO3.webp" alt="Foto de una Lupa analizando un documento"></picture>
-        <div class="encabezado__titular">
+        <section class="encabezado__titular"> 
           <h2>Formulario de empleo</h2>
+        </section>
+        <div class="mensajeVentana">
+          <h2 class="mensajeVentana__titularPrincipal">¡Ven y únete a nuestro equipo MLA!</h2>
+          <article class="mensajeVentana__primerParrafo">
+            <p class="mensajeVentana__titular">¿Qué estamos buscando?</p>
+            <p>Buscamos profesionales talentosos, motivados y comprometidos con la calidad y la excelencia. Si tienes experiencia o quieres desarrollarte en las áreas de auditoría, contabilidad, consultoría o áreas afines, ¡te invitamos a postularte! </p>
+          </article>
+          <p class="mensajeVentana__titular">En MLA, ofrecemos:</p>
+          <ul class="mensajeVentana__lista"> 
+            <li> <strong>Más de 41 años de experiencia y trayectoria de éxito: </strong><span>Somos reconocidos como la mejor Firma Nacional de Auditoría, Contabilidad y Consultoría del año 2023. Además:</span></li>
+            <li> 
+              <p>El respaldo internacional de BKR.</p>
+            </li>
+            <li> 
+              <p>Un compromiso con la calidad y la credibilidad.</p>
+            </li>
+            <li> 
+              <p>Grandes oportunidades de desarrollo profesional y personal.</p>
+            </li>
+          </ul>
+          <div class="enlacesBoton"><strong>¡No te pierdas la oportunidad de ser parte de un equipo ganador! </strong><strong>MLA: tu futuro profesional comienza aquí.</strong></div>
         </div>
       </section>
       <section class="formulario-empleo">
-        <form class="formulario" action="https://formsubmit.co/reclutamiento@mejialora.com" method="POST">
-          <div>
-            <label for="nombre">
-              <p>Nombre y apellido</p>
-              <input type="text" id="nombre" placeholder="nombre completo" name="nombre" required>
-            </label>
+        <form class="formulario" action="https://formsubmit.co/reclutamiento@mejialora.com" method="POST" enctype="multipart/form-data">
+          <h2 class="elemento1">Información personal</h2>
+          <div class="elemento elemento2">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" required>
           </div>
-          <div class="doble">
-            <label for="correo">
-              <p>Dirección de correo electrónico </p>
-              <input type="email" id="correo" placeholder="tucorreo@email.com" name="correo">
-            </label>
-            <label for="telefono">
-              <p>Teléfono </p>
-              <input type="number" id="telefono" name="telefono">
-            </label>
+          <div class="elementos">
+            <div class="elemento elemento3">
+              <label for="email">Dirección de Correo Electrónico:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="elemento elemento4">
+              <label for="celular">Número de Celular:</label>
+              <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" required>
+            </div>
           </div>
-          <div> 
-            <label for="Posicion">
-              <p>Posición que desea aplicar</p>
-              <select name="Posicion" id="posicion">
-                <option>Auditor Externo</option>
-                <option>Consultor de Impuestos</option>
-                <option>Contador</option>
+          <div class="elementos">
+            <div class="elemento elemento5">
+              <label for="carrera">Carrera: </label>
+              <input type="text" name="carrera" id="carrera">
+            </div>
+          </div>
+          <div class="elementos">
+            <div class="elemento elemento6">
+              <label for="departamento">Departamento de interés:</label>
+              <select id="departamento" name="departamento">
+                <option value="Auditoria">Auditoría</option>
+                <option value="Impuestos">Impuestos</option>
+                <option value="Contabilidad">Contabilidad</option>
+                <option value="DesarrolloOrganizacional">Desarrollo Organizacional</option>
+                <option value="IT">IT</option>
+                <option value="Otros">Otros</option>
               </select>
-            </label>
-          </div>
-          <div class="doble">
-            <label for="habilidades">
-              <p>Habilidades</p>
-              <textarea name="habilidades" cols="30" rows="10" id="habilidades"> </textarea>
-            </label>
-            <label for="motivacion">
-              <p>Motivación</p>
-              <textarea name="motivacion" cols="30" rows="10" id="motivacion"></textarea>
-            </label>
-          </div>
-          <div>
-            <label for="experiencia">
-              <p>Experiencia</p>
-              <textarea name="experiencia" cols="30" rows="10" id="experiencia"></textarea>
-            </label>
+              <label for="otroDepartamento">En caso de elegir otros, especifique: </label>
+              <input type="text" name="otroDepartamento" id="otroDepartamento">
+            </div>
           </div>
           <div>
             <p>Adjuntar CV (En formato PDF)</p>
+            <p>Limite de peso: 5MB*</p>
             <input type="file" accept="application/pdf" name="curriculum">
           </div>
-          <input class="boton" type="submit">
+          <input class="boton-enviar" type="submit" value="Enviar" required>
         </form>
       </section>
     </main>
@@ -213,9 +229,9 @@
       })();
     </script><!--End of Tawk.to Script-->
 <!--Slick-->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" integrity="sha384-Gm+ur33q/W+9ANGYwB2Q4V0ZWApToOzRuA8md/1p9xMMxpqnlguMvk8QuEFWA1B%"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js" integrity="sha384-9tt8DlZQhE63eBuKml9tnMclfDeo/8/wstzUrBQStZZkCCvwfw78IiV+r9o600g2%"></script>
+    <script type="text/javascript" src="slick/slick.min.js" integrity="sha384-OLBgp1GsljhM2TJ+sbHjaiH9txEUvgdDTAzHv2P24donTt6/529l+9Ua0vFImLlb%"></script>
     <script src="../../subscript.js"></script>
   </body>
 </html>
