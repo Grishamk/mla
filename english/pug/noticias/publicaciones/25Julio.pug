@@ -1,0 +1,24 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/25julio.webp", alt="Background de la noticia")
+                    h2 Country-by-Country Report Issuance Action 13, BEPS Project
+            
+            section.publicacion__content
+                p July 25, 2024
+                
+                div
+                    p The deadline for the issuance of the Country-by-Country Report (Action 13 of the BEPS Project) for the fiscal year 2022 has been scheduled. The new penalty-free deadline is Friday, August 30, 2024.
+
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

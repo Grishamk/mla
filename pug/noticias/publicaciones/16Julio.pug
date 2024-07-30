@@ -1,0 +1,29 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/16julio.webp", alt="Background de la noticia")
+                    h2 Taller de Objetivos de Desarrollo Sostenible
+            
+            section.publicacion__content
+                p 16 de julio de 2024
+                
+                div
+                    p Firelli Mejía Ortega, Socio de MLA, participó activamente el pasado jueves en el taller sobre Objetivos de Desarrollo Sostenible organizado por el Comité de Educación y Sostenibilidad de AmChamRD.
+
+                    p Destacados líderes expusieron sus conocimientos y experiencias, entre ellos Pilar Hache, Directora de Sostenibilidad de Claro RD, Luis José Lopez, Presidente del Comité de Sostenibilidad de AmChamRD, Josefina Navarro, Vicepresidenta Senior de Comunicación Corporativa y Responsabilidad Social del Banco BHD, Rosa Rijo, Diretora de Sostenibilidad de Asociación Popular de Ahorros y Préstamos, y Juan Amell, Director de Comunicaciones y Sostenibilidad de Bepensa Dominicana.
+
+
+                    
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

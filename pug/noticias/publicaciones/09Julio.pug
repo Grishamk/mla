@@ -1,0 +1,27 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/09julio.webp", alt="Background de la noticia")
+                    h2 ¡Celebrando 80 años de excelencia!
+            
+            section.publicacion__content
+                p 09 de julio de 2024
+                
+                div
+                    p En el aniversario de ICPARD nuestros eecutivos de Mejía Lora & Asociados se unieron a la conmemoración de esta gran trayectoria. Nos sentimos honrados de ser parte de esta celebración y comprometidos a seguir contribuyendo al crecimiento del sector.
+
+
+                    
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal
