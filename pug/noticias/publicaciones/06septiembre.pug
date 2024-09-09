@@ -1,0 +1,26 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/06septiembre.webp", alt="Background de la noticia")
+                    h2 Entrega de escolares a niños de la comunidad de  Villa Mella
+            
+            section.publicacion__content
+                p 06 de septiembre de 2024
+                
+                div
+                    p ¡Seguimos creando sonrisas y generando impacto!
+                    p El pasado viernes, junto a @Fundacioncolabora.rd y nuestros colaboradores, compartimos una tarde inolvidable con los niños del sector Villa Mella, entregando bolsas escolares. Nos llena de orgullo ser parte de su preparación para el nuevo año escolar, contribuyendo con nuestro granito de arena para un futuro más brillante.
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

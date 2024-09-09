@@ -1,0 +1,26 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/03septiembre.webp", alt="Background de la noticia")
+                    h2 Conoce a Mauricio Rodriguez
+            
+            section.publicacion__content
+                p 03 de septiembre de 2024
+                
+                div
+                    p Mauricio es parte fundamental de nuestro equipo en Mejía Lora & Asociados. Con una sólida formación en Ingeniería de Organización Industrial y un MBA en Dirección General de Empresas, ambos cursados en España, ha acumulado más de 14 años de experiencia en consultoría de negocios. Su especialización en métodos y organización, modelos financieros, gestión de riesgos y auditoría interna lo convierten en un lider en su campo.
+                    p Mauricio cuenta con una certificación internacional como Project Management Profesional (PMP), y estudios en planificación estratégica, controles internos, y desarrollo de negocios. Su expertise es clave para ofrecer soluciones integrales y estratégicas a nuestros clientes.
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal
