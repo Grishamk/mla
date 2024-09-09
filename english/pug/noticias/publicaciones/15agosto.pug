@@ -1,0 +1,25 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/15agosto.webp", alt="Background de la noticia")
+                    h2 Restoration Day
+            
+            section.publicacion__content
+                p August 15, 2024
+                
+                div
+                    p Tomorrow, August 16, we will not be working due to the holiday in commemoration of "Restoration Day" (Dominican Republic).
+
+
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn
