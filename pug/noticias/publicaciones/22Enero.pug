@@ -1,0 +1,25 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/implementacionProyecto.webp", alt="Background de la noticia")
+                    h2 IMPLEMENTACIÓN PROYECTO BEPS ACCIÓN 13 REPORTE PAÍS POR PAÍS
+            
+            section.publicacion__content
+                p 22 de enero de 2024
+                
+                div
+                    p Desde el 2018, la República Dominicana se adhirió al Marco Inclusivo de la OCDE comprometiéndose a implementar y cumplir con ciertos estándares para fortalecer la transparencia e igualdad tributaria a nivel internacional, fortaleciendo la transparencia y la igualdad tributaria. ¡Avanzamos juntos hacia un sistema mas justo!
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

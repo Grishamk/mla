@@ -1,0 +1,26 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/03septiembre.webp", alt="Background de la noticia")
+                    h2 Meet Mauricio Rodriguez
+            
+            section.publicacion__content
+                p September 3, 2024
+                
+                div
+                    p Mauricio is a key member of our team at Mejía Lora & Associates. With a solid background in Industrial Organization Engineering and an MBA in General Business Management, both obtained in Spain, he has accumulated more than 14 years of experience in business consulting. His expertise in methods and organization, financial models, risk management, and internal auditing makes him a leader in his field.
+                    p Mauricio holds an international certification as a Project Management Professional (PMP), and has studies in strategic planning, internal controls, and business development. His expertise is crucial for providing comprehensive and strategic solutions to our clients.
+
+
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

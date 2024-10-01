@@ -1,0 +1,213 @@
+//HOME
+mixin respaldo(imagen,alterno,titulo,contenido)
+    div.main-container__item.fade-in
+        img(src="./img/assets/"+imagen alt=alterno)
+        h2=titulo
+        p=contenido
+
+mixin respaldoEn(imagen,alterno,titulo,contenido)
+    div.main-container__item.fade-in
+        img(src="../img/assets/"+imagen alt=alterno)
+        h2=titulo
+        p=contenido
+
+mixin socio(imagen,alterno,nombre,cargo)
+    article.capital-humano__item.fade-in
+        img(src="./img/"+imagen alt=alterno)
+        h2=nombre
+        p=cargo
+
+mixin socioEn(imagen,alterno,nombre,cargo)
+    article.capital-humano__item.fade-in
+        img(src="../img/"+imagen alt=alterno)
+        h2=nombre
+        p=cargo
+
+mixin contactoP(icono,alterno,contenido)
+    article.contacto__small
+        picture: img(src="./img/"+icono alt=alterno)
+        p=contenido
+
+mixin contactoG(icono,alterno,titulo,contenido)
+    article.contacto__grande
+        picture: img(src="./img/"+icono alt=alterno)
+        div  
+            p=titulo
+            p=contenido
+
+mixin noticia(imagen,alterno,titulo,fecha,enlace,clase)
+    a(href=""+enlace) 
+        article.noticia__item(class=clase href="google.com")
+            picture.noticia__img
+                img(src="/img/avisos/"+imagen, alt=alterno)
+            .noticia__contenido
+                .titulo
+                    h2=titulo
+                    p.fecha=fecha
+    
+mixin noticiaEn(imagen,alterno,titulo,fecha,enlace,clase)
+    a(href=""+enlace target="_blank") 
+        article.noticia__item(class=clase href="google.com")
+            picture.noticia__img
+                img(src="../img/avisos/"+imagen, alt=alterno)
+            .noticia__contenido
+                .titulo
+                    h2=titulo
+                    p.fecha=fecha
+
+mixin carruselItem(imagen,alterno,clase)
+    div.carrusel-Item
+        img(src="/img/SLIDE-TRABAJADAS/"+imagen, alt=alterno class=clase)
+
+
+
+
+
+
+mixin valores(imagen,alterno,titulo,texto,clase)
+    article.nosotrosValores__item
+        picture: img(src="../../icon/"+imagen alt=alterno class=clase)
+        h2=titulo
+        p=texto
+
+mixin valoresEn(imagen,alterno,titulo,texto,clase)
+    article.nosotrosValores__item
+        picture: img(src="../../../icon/"+imagen alt=alterno class=clase)
+        h2=titulo
+        p=texto
+
+mixin membresia(imagen,alterno,texto)
+    article.membresia__item
+        picture: img(src="../../img/miembros/"+imagen alt=alterno)
+        h2=texto
+
+mixin membresiaEn(imagen,alterno,texto)
+    article.membresia__item
+        picture: img(src="../../../img/miembros/"+imagen alt=alterno)
+        h2=texto
+
+mixin registro(texto)
+    article.registro__item
+        h2=texto
+
+mixin actoresIn(icono,alterno,texto,diferenciador)
+    article(class=diferenciador)
+        img(src='../../icon/'+icono alt=alterno)
+        p=texto
+
+mixin actoresInEn(icono,alterno,texto,diferenciador)
+    article(class=diferenciador)
+        img(src='../../../icon/'+icono alt=alterno)
+        p=texto
+
+mixin staffElement(imagen,alterno,titulo,text1,text2,text3,clase)
+    article.staff__item.fade-in
+        picture
+            img(src="../../img/staff/"+imagen alt=alterno)
+        div.staff__text-container
+            h2=titulo
+            p=text1
+            p=text2
+            p(class=clase)=text3
+
+mixin staffElementEn(imagen,alterno,titulo,text1,text2,text3,clase)
+    article.staff__item.fade-in
+        picture
+            img(src="../../../img/staff/"+imagen alt=alterno)
+        div.staff__text-container
+            h2=titulo
+            p=text1
+            p=text2
+            p(class=clase)=text3
+
+mixin aviso(imagen,alterno,titulo,fecha,enlace)
+    a(href=""+enlace) 
+        article.news-noticias__item.fade-in
+            picture
+                img(src="/img/avisos/"+imagen alt=alterno)
+            div
+                h2=titulo
+                p.fecha=fecha
+    
+
+mixin avisoEn(imagen,alterno,titulo,fecha,texto,texto2,enlace)
+    a(href="http://"+enlace target="_blank") 
+        article.news-noticias__item.fade-in
+            picture
+                img(src="/img/avisos/"+imagen alt=alterno)
+            div
+                h2=titulo
+                p.fecha=fecha
+                p=texto
+                br
+                p=texto2 
+                //a(href=link) Leer más
+                    span
+                        img(src="../../icon/4829869_arrow_next_right_icon.svg", alt="Flecha que apunta a la derecha")//
+
+mixin boletin(imagen,alterno,titulo,texto,link)
+    article.boletines-noticias__item.fade-in
+        picture
+            img(src="../../img/avisos/"+imagen alt=alterno)
+        div
+            h2=titulo
+            p=texto 
+            a(href=link) Descargar PDF
+
+mixin boletinEn(imagen,alterno,titulo,texto,link)
+    article.boletines-noticias__item.fade-in
+        picture
+            img(src="../../../img/avisos/"+imagen alt=alterno)
+        div
+            h2=titulo
+            p=texto 
+            a(href=link) Descargar PDF
+
+mixin staffEspecializado(link,nombre,cargo,imagen,alterno)
+    article.staffEspecializado__item.fade-in
+        a(href=link)
+            img(src="../../img/staff/"+imagen, alt=alterno)
+            div.datos
+                p=nombre
+                p.cargo=cargo
+
+mixin staffEspecializadoEn(link,nombre,cargo,imagen,alterno)
+    article.staffEspecializado__item.fade-in
+        a(href=link)
+            img(src="../../../img/staff/"+imagen, alt=alterno)
+            div.datos
+                p=nombre
+                p.cargo=cargo
+
+
+mixin noticiaPrincipal
+    .noticias__container
+
+        //Aqui se agregaran las noticias utilizando el mixin "noticia" creado en este mismo documento.
+        
+        +noticia("06septiembre.webp","Fotos de actividad fundación colabora", "Entrega de escolares a niños de la comunidad de  Villa Mella","06 de Septiembre", "/html/noticias/publicaciones/06septiembre.html")
+               
+                    
+        +noticia("03septiembre.webp","foto del Ingeniero Mauricio Rodriguez", "Conoce a Mauricio Rodriguez", "03 de Septiembre", "/html/noticias/publicaciones/03septiembre.html")
+
+        +noticia("19agosto.webp","foto de Edgar Melendez", "¡Felicidades Edgar J. Melendez!","19 de Agosto", "/html/noticias/publicaciones/19agosto.html")
+                   
+
+        +noticia("15agosto.webp","Foto del día de la restauración", "Día de la Restauración","15 de Agosto", "/html/noticias/publicaciones/15agosto.html")
+
+mixin noticiaPrincipalEn
+    .noticias__container
+
+        //Aqui se agregaran las noticias utilizando el mixin "noticia" creado en este mismo documento.
+        
+        +noticia("06septiembre.webp", "Photos of foundation collaboration activity", "Distribution of school supplies to children in the Villa Mella community", "September 6", "/html/noticias/publicaciones/06septiembre.html")
+
+        +noticia("03septiembre.webp", "Photo of Engineer Mauricio Rodriguez", "Meet Mauricio Rodriguez", "September 3", "/html/noticias/publicaciones/03septiembre.html")
+
+        +noticia("19agosto.webp", "Photo of Edgar Melendez", "Congratulations Edgar J. Melendez!", "August 19", "/html/noticias/publicaciones/19agosto.html")
+
+        +noticia("15agosto.webp", "Photo of Restoration Day", "Restoration Day", "August 15", "/html/noticias/publicaciones/15agosto.html")
+
+    
+
+        

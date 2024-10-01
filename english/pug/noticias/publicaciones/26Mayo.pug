@@ -1,0 +1,27 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/26mayo.webp", alt="Background de la noticia")
+                    h2 Happy Mother's Day
+            
+            section.publicacion__content
+                p May 26, 2024
+                
+                div
+                    p For all the wonderful mothers who balance work and family with such grace, we wish you a day filled with love and joy.
+
+
+                    
+
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

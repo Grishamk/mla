@@ -1,0 +1,37 @@
+//Cada vez que haya un nuevo archivo de estilos y no pertenezca a main.scss (como es el caso de los media querys, importar este documento de formato para el correcto funcionamiento de los estilos separados).
+
+//VARIABLES
+$letraPrincipal: 'Montserrat', sans-serif;
+$colorLetra1: #02142B;
+$colorLetra2: white;
+$colorPrincipal: #F7F7F7;
+$colorSecundario: white;
+$colorTerciario: #043877;
+$colorCuaternario: #089de8;
+
+$breakpoint-tablet: 750px;
+$breakpoint-laptop: 1050px;
+$breakpoint-desktop: 1500px;
+
+//FORMATO GLOBAL
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $letraPrincipal;
+    color: $colorLetra1;
+
+    main{
+        animation: none;
+    }
+}
+

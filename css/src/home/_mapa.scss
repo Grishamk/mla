@@ -1,0 +1,29 @@
+.main-container__mapa {
+    @include wH(100%, 350px);
+
+    iframe{
+        @include wH(100%, 100%);
+    }
+}
+
+//LAPTOP
+@media(min-width: $breakpoint-laptop){
+    .main-container__mapa {
+        @include wH(100%, 400px);
+
+        iframe{
+            @include wH(100%, 100%);
+        }
+    }
+}
+
+//DESKTOP
+@media(min-width: $breakpoint-desktop){
+    &__mapa {
+        @include wH(100%, 600px);
+        
+        iframe{
+            @include wH(100%, 100%);
+        }
+    }
+}

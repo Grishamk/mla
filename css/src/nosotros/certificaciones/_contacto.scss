@@ -1,0 +1,25 @@
+.cert-container__contacto{
+    background-image: url("../../../../img/Certificaciones/bg-section-bottom.webp");
+    color: $colorLetra2;
+    height: 207px;
+    text-align: center;
+    @include flexRule(column,center,center);
+
+    p{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: $colorLetra2;
+        font-size: 2.2rem;
+        font-weight: 600;
+        border: 1px solid $colorSecundario;
+        width: 240px;
+        height: 48px;
+        vertical-align: middle;
+        padding: 6px 12px;
+    }
+}

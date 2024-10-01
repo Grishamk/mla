@@ -1,0 +1,37 @@
+.main-container__respaldo {
+    @include wH(100%, auto);
+    background-color: $colorSecundario;
+    padding: 100px 24px;
+    
+    //MIXIN ITEMS DE RESPALDO
+    .main-container__item {
+        color: $colorLetra1;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 32px;
+        @include flexRule(column,null,center);
+
+        img{
+            @include wH(219px, 125px);
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 2.6rem;
+            padding: 0 20px;
+            margin-bottom: 8px;
+            line-height: 30px;
+        }
+
+        p {
+            margin: 0 14px;
+            font-size: 1.4rem;
+            line-height: 24px;
+        }
+    }
+}
+
+
+//LAPTOP

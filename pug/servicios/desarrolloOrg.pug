@@ -1,0 +1,81 @@
+extend ../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+ 
+        main
+            section.encabezado__auditoria
+                picture
+                    img(src="../../img/servicios/DO3.webp", alt="Foto de analisis digital en tablet")
+                .encabezado__titular
+                    h2 Desarrollo Organizacional
+
+                p Ofrecemos servicios especializados enfocados al Desarrollo Organizacional que aseguran que su estrategia y recursos internos operen de manera eficiente, armónica y organizada, permitiendo que su empresa se adapte a las necesidades actuales y futuras de manera planificada y controlada.
+                p Estos servicios están relacionados con la mejora integral de los componentes de su organización para lograr objetivos específicos, ofreciendo soluciones prácticas que permitan mejorar la eficiencia, gestión, control y rentabilidad del negocio a través de la gestión de proyectos.
+            
+
+            section.desarrollo__servicios.fade-in
+                strong.fade-in Los servicios de desarrollo organizacional incluyen:
+                h3.fade-in Planificación estratégica:
+                ul.fade-in
+                    p Esta categoría de servicios agrupa las soluciones orientadas a la parte estratégica de los negocios. Servicios que están enfocados en el estudio y conocimiento del entorno en el que se desarrollan las actividades de la entidad, la planificación de estrategias para sacar el mayor provecho del contexto en el que opera, la mejora de la calidad y la estructura interna de la organización. Entre estos se destacan:
+                    li Análisis de contexto y creación de mapa de fuerzas impulsoras y restrictivas, FODA y matriz de interesados.
+                    li Desarrollo de planificación estratégica: alineación de misión, visión, valores, ejes estratégicos y objetivos.
+                    li Diagnóstico organizacional y de áreas funcionales: análisis integral para detección de mejoras.
+                    li Creación e implementación de matriz de identificación y aseguramiento de cumplimiento legal, normativo /regulatorio.
+                    
+                h3.fade-in Diseño / implementación del Sistema de Gestión de la Calidad:
+                ul.fade-in
+                    li Asesoría para la creación, implementación y/o reforzamiento del Sistema de Gestión de la Calidad.
+                    li Definición e implementación del sistema de Control de Documentos.
+            
+                h3.fade-in Ambiente de Control
+                ul.fade-in
+                    p Estos servicios se centran en la evaluación del sistema de control interno adoptado por la empresa en busca de identificar oportunidades que permitan mejorar la administración de los riesgos corporativos. Entre estos se destacan:
+
+                    li Diagnóstico y fortalecimiento de gobierno corporativo.
+                    li Evaluación de ambiente de control interno con enfoque COSO ERM.
+                    li Evaluación de la función de Auditoría Interna (unidad o departamento).
+                    li Conformación de modelo de riesgos: mapeo y valoración de factores de riesgo.
+                    li Gestión integral de riesgos: preparación de matrices para la detección, análisis y mitigación de riesgos.
+                    li Capacitación de riesgo operacional.
+                
+                h3.fade-in Gestión por proceso
+                ul.fade-in
+                    p Estos servicios se centran en la organización de las actividades y procedimientos agotados por las diferentes áreas, tanto administrativas como operativas, permitiendo el monitoreo continuo de la eficiencia en la realización de las tareas en responsabilidad de cada una para logro de los objetivos planteados por la entidad. Entre estos se destacan:
+
+                    li Preparación de mapa de procesos organizacional y fichas descriptivas.
+                    li Análisis, rediseño y optimización de procesos.
+                    li Creación de manuales de procedimientos y políticas por departamento, área o específicas.
+                    li Creación, formalización y medición de indicadores de procesos.
+                
+                h3.fade-in Diseño Organizacional
+                ul.fade-in
+                    p Esta categoría agrupa los servicios que tienen como objetivo el diseño, mejora y reestructuración de la organización. Influyen en la definición del organigrama, capacidad de trabajo, descripción de puestos, evaluaciones de personal, estructura de paquetes de compensación, entre otros.
+
+                    li Análisis y diseño de estructura organizacional. Definición organigramas.
+                    li Estudios de capacidad, demanda laboral y contribución de valor por puestos.
+                    li Diseño, reestructuración y / o formalización de descripciones de puestos.
+                    li Evaluación de puestos / funciones y personal que los ocupa.
+                    li Definición de escala salarial / creación – estructuración de paquetes de compensación.
+                    li Creación de sistema de evaluación de desempeño.
+                    li Reclutamiento y selección.
+                
+                h3.fade-in Diseño e implementación del sistema de prevención de lavado de activos:
+                ul.fade-in
+                    li Capacitación general contra el LA / FT.
+                    li Alineación al cumplimiento de la ley de prevención lavado de activos: estructuración de sistemas de prevención.
+
+            //section.mainStaffEspecializado.fade-in
+                h2 Staff Especializado
+                .staffEspecializado__container
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
+
+            section.auditoria__contacto
+                p Para obtener mas información y solicitar nuestros servicios
+                a(href="../../html/contacto/contacto.html") Contáctenos ahora

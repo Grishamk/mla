@@ -1,0 +1,103 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+ 
+        main
+                        
+            section.encabezado__capital
+                picture
+                    img(src="../../../img/servicios/DO3.webp", alt="Foto de una Lupa analizando un documento")
+                .encabezado__titular
+                    h2 Team
+
+                p We are a Firm comprised of over 70 highly skilled professionals with diverse specialties, committed to providing quality services. Our main asset and key success factor is our human capital, which is why our Firm maintains a talent management system focused on high standards of recruitment, training, and personnel development. In every project, we strive to understand the challenges our clients face and develop practical solutions that add value to their business.
+                p If you want to be part of our family:
+                    a(href="../../html/capital-humano/trabaja-nosotros.html") Click Here
+            
+
+            section.capital__staff.fade-in
+                h2.staff__title Human capital
+                .staff__text 
+                    p staff
+                section.staff__container 
+                    
+                    article.staff__raymi.fade-in
+                        picture: img(src="../../../img/staff/reymi-mejia-1.webp" alt="Lic. Raymi Mejía")
+                        div
+                            h2 Raymi Mejía - Partner
+                            p Graduated in Accounting from INTEC University, with a specialization in International Tax Planning with a dual degree from the University of San Francisco and Aden Business School, also he holds several specializations in Business Management, Taxes, IFRS, International Audit Standards and continuous participation in national and international seminars.
+                            ul
+                                p Mr. Mejia has more than 30 years of practice; have been part of several boards, such as:
+                                li BKR International (5th Largest accounting and consulting association worldwide), where he has been member of the Board for the past 10 years, including Chairman and Vice-Chairman for the Americas Region (USA, Canada and Latam), currently Member of the Worldwide Board.
+                                li Past member of the Board for Grupo Apec; including president of the audit committee.
+                                li Past member of Board of Advisors of Saint George School.
+                                li First Vice-president of the Certified Public Accountants Association (AFCPA).
+                                li  Past member of several committees at Instituto de Contadores Públicos Autorizados de la República Dominicana (ICPARD).
+                            p Mr. Mejia is also member of the International Accounting Asociation, of the Asociación Nacional de Jóvenes Empresarios (ANJE), International Fiscal Association (IFA), Asociación Tributaria de la República Dominicana (ATRIRD) and founding member of Consejo Nacional de Asesores Impositivos (CONACI- Tax Advisors National Council).
+                            p.separate He has extensive experience in the hospitality sector and real estate projects, has participated in audits and tax advisories for the major international hotel chains operating in the country. He has also served as an advisor in the negotiations of Transfer Price Contracts and Advanced Price Agreements between the National Association of Hotels and Restaurants (ASONAHORES) and the Dirección General de Impuestos Internos (DGII- IRS).
+                    
+                    //Firelli Mejía
+                    +staffElementEn("firelli.webp","Lic. Firelli Mejía","Firelli Mejía - Partner","Graduated in Accounting from Universidad INTEC with a specialization in International Tax Planning with a double degree from the University of San Francisco and Aden Business School, and a postgraduate degree in Corporate Finance from Universidad INTEC. Also graduated in Arts, she has completed various national and international courses and seminars at institutions such as the World Meeting of BKR International, IFA Congress of International Fiscal Association and ADEN Business School. She is certified in Anti-money Laundering (AMLCA) by FIBA-FIU.","She has more than 30 years of experience in Auditing, Accounting and Tax Outsourcing, Organizational Development, Internal Audit Direction, among others. Executive member of the International Fiscal Association (IFA), Asociación Tributaria de la República Dominicana (ATRIRD), Instituto Contadores Públicos Autorizados (ICPARD), Consejo Nacional de Asesores Impositivos (CONACI) and Asociación Nacional de Jóvenes Empresarios (ANJE).","She has professional teaching experience and has been a speaker at various conferences. She participated as a cooperator with Dirección General de Impuestos Internos (DGII) in the preparation of the 2011 Dominican Republic Fiscal Manual and has provided services to important companies in the industries of retail, construction, real estate, restaurants, cooperatives, governmental, non-profit institutions, manufacturing, agricultural, insurance, IT, among others.","separate")
+                    
+                    //Sayka Mejía
+                    +staffElementEn("sayka-mejia-1.webp","Lic. Sayka Mejía","Sayka Mejía - Partner","Graduated in Accounting from Universidad INTEC with a specialization in International Tax Planning with a double degree from the University of San Francisco and Aden Business School, and a postgraduate degree in Corporate Finance from Universidad Pontificia Madre y Maestra (PUCMM). She is certified in Anti-money Laundering (AMLCA) by FIBA-FIU.","With more than 25 years of experience in Auditing, she advises clients on: corporate matters, business strategy, and on tax and financial matters. She is president of the International Fiscal Association (IFA) Branch in the Dominican Republic and executive member of Asociación Tributaria de la República Dominicana (ATRIRD), Instituto Contadores Públicos Autorizados (ICPARD), Consejo Nacional de Asesores Impositivos (CONACI) and Asociación Nacional de Jóvenes Empresarios (ANJE).","She has worked as a teacher at a professional level and has been in charge of important audits of companies in different industries: retail, currency exchange, real estate, construction, services, import, non-profit institutions, advertising, manufacturing, vehicle and Fuel (import, distribution, transportation), among others.","separate")
+                    
+                    //José Mejía
+                    +staffElementEn("jose-mejia-1.webp","Lic. José Mejía","José Mejíá - Founding Partner","Graduate in Accounting. Founding partner of the Mejía Lora & Asociados, with more than 40 years of experience in areas such as Auditing, Accounting Outsourcing, and Taxes. Throughout his professional career, he has held different positions that allowed him to accumulate experience and a great ability to become an outstanding financial consultant. He stands out for his managerial work in Consulting and Taxes. He accumulated many years of teaching experience at Universidad Autónoma de Santo Domingo (UASD), where he was a professor at the Faculty of Economic Sciences, teaching the subjects of Accounting Systems, Cost Accounting, and Advanced Accounting.","","","separate")
+                    
+                    //Adelaida Ortega
+                    +staffElementEn("Adelaida-Ortega-1.webp","Lic. Adelaida Ortega","Adelaida Ortega - Founding Manager","Graduate in Business Administration. She has more than 30 years of experience in the field and stands out for her administrative and managerial work at Mejía Lora & Asociados.","","","separate")
+                    
+                    //Ana Gonzalez
+                    +staffElementEn("anaGonzalez.webp","Lic. Ana González","Ana González - Tax Manager","Graduate degree in Accounting, Master's degrees in Financial Administration, Business Administration (MBA), Project Management, and International Trade, pursued at local universities and in Spain. With over 20 years of experience in Auditing, Accounting, and Taxation. She holds studies and specializations in tax matters, International Standards on Auditing (ISA), and International Financial Reporting Standards (IFRS). She has participated in various tax congresses, both locally and internationally, including those sponsored by the International Fiscal Association (IFA).","","","separate")
+                    
+                    //Lizandro Gonzalez
+                    +staffElementEn("lisandro.webp","Lic. Lisandro González","Lisandro González - Junior Tax Manager", "In the course of his professional practice, he has managed to accumulate an uninterrupted experience of more than 14 years in the tax area. Standing out in specialized works such as audit processes, equity transparencies, agreed procedures, reconsideration resources, evaluations related to acceptances in amnesty processes and special agreements, as well as representation of clients in processes related to the Tax Administration. Graduated in Public Accounting (Cum laude), certified as a Tax Consultant by The Tax Association of the Dominican Republic (CTC), in addiction, he has a specialty in International Financial Reporting Standards (IFRS). Currently, He is finishing a Master´s Degree in Tax Accounting at Universidad Autónoma de Santo Domingo (UASD) (Autonomous University of Santo Domingo). He has participated in various local and international tax congresses, including those sponsored by the International Fiscal Association (IFA).","","","separate")
+                    
+                    //Mauricio Rodríguez
+                    +staffElementEn("mauricio.webp","Ing. Mauricio Rodríguez","Mauricio Rodríguez - Organizational Development manager", "Industrial Organization Engineer with an MBA in General Business Management, graduated from both in Spain, and certified as a Project Management Professional (PMP). He has more than 14 years of experience in business consulting related to organizational methods, financial modeling, risk management and internal auditing. He has specializations in Projects, Entrepreneurship, Strategic Planning, Indicators, Internal Controls, Business Creation and Business Development, among others.","","","separate")
+                    
+                    //Nallil Rodríguez
+                    +staffElementEn("nallil.webp","Lic. Nallil Rodríguez","Nallil Rodríguez - Audit Manager","Graduate in Accounting, more than 10 years of experience in accounting, auditing and taxes, standing out in the areas of hydrocarbons, hotels and tourism and services. Member of the scientific committee of the Tax Association of the Dominican Republic (ATRIRD) and representative of the Young IFA Network in the country of the International Fiscal Association (IFA). With specializations in International Auditing Standards (NIA) and Financial Reporting (IFRS) Certified Tax Consultant (CTC).","","","separate")
+                    
+                    //Rafael Mateo
+                    +staffElementEn("rafael.webp","Lic. Rafael Mateo","Rafael Mateo - Audit Manager","Degree in Accounting, with a master’s degree in Financial Administration from APEC University. More than 18 years of experience in external auditing, including more than 7 years as audit manager in a recognized firm in the country. He has completed diplomas and courses in International Financial Reporting Standards (IFRS) and International Auditing Standards (NIA), among others.","","","separate")
+                    
+                    //Geraldín Frías
+                    //+staffElementEn("geraldin.webp","Lic. Geraldin J. Frías","Geraldin J. Frías - TPA Manager","Degree in Accounting, specializing in Corporate Taxes, Budget, Profit Planning, Human Talent Management, and Leadership, with a Master’s in Financial Administration. During his professional practice he has managed to accumulate uninterrupted experience of more than 12 years in the different areas of Finance, Accounting, Administration and HR. During his career he has held managerial positions for important companies in the commercial sector and free zones.","","","separate")
+                    
+                    //Sandra de los Santos
+                    +staffElementEn("sandra.webp","Lic. Sandra de los Santos","Sandra de los Santos - Human Resources Manager","During his professional practice in Industrial Psychology, he has managed to accumulate more than 15 years of experience in the commercial, service and government sectors. She has studies and specializations in a Master’s in Human Resources and an MBA in Strategic Resource Management, Internal Auditor of ISO 9001:2015, Gender Equality (G:38) and Social Responsibility.","","","separate")
+                    
+                    //Rikelvin Jimenez
+                    +staffElementEn("rikelvin.webp","Lic. Rikelvin Jimenez","Rikelvin Jimenez - IT Manager","Graduate in Computer Science. He has more than 18 years of experience in the IT environment and knowledge in IT Infrastructure Management and implementation of new technologies adjusted to the business environment. He also has experience in the areas of IT Security, Database Administration, Data Networks, Virtualization, Server Administration, Unified Endpoint Management, Firewall Implementation, and ERP Systems Implementation.","","","separate")
+                    
+                    //María Curiel
+                    +staffElementEn("maria.webp","Lic. María Curiel","María Curiel - Leader of Human Resources","Juris Doctor degree with more than 10 years of experience in Human Resources. She has specializations and diplomas in Human Resource Management, Organizational Performance Management, Labor Legislation, ISO 9001: 2015 Auditor,  Management Skills Development, and Job Descriptions.","","","separate")
+                    
+                    //Wilmarys Ledezma
+                    +staffElementEn("wilmarys.webp","Lic. Wilmarys Ledezma","Wilmarys Ledezma - Leader of the Quality Management System and Customer Service","Graduated in Public Accounting, Lawyer, she is studying a Master’s Degree in Senior Management, certified as a Lead Auditor under the ISO 9001: 2015 Standard. More than 8 years of experience in internal audit, organizational development, strategic planning, risk and opportunity management, measurement through performance indicators (KPI`s). He has studies and a diploma in quality management systems in ISO 9001: 2015 and money laundering and terrorist financing.","","","separate")
+                    
+                    //Wilkyns Ruiz
+                    +staffElementEn("wilkyns.webp","Lic. Wilkyns Ruiz", "Wilkyns Ruiz - IT Leader","Graduate in Computer Science. He has more than 17 years of experience in accounting software. He has specializations and diplomas in IT Security, Bid Data, IT Auditing, Business Intelligence, Servers, Systems Implementation, Object-oriented Programming (OOP) and Databases.","","","separate")
+                    
+                    //Alba Vásquez
+                    +staffElementEn("alba.webp","Lic. Alba Vásquez","Alba Vásquez - Transfer Pricing Manager","Degree in Accounting and Auditing, with more than 5 years of experience in the area of ​​Transfer Pricing and Taxes. He has studies and specializations in Project Management and Leadership. During his professional career he has held positions in international firms that are part of the “Big Four”.","","","separate")
+                    
+                    //Yohanna Herrera
+                    +staffElementEn("yohanna.webp","Lic. Yohanna Herrera","Yohanna Herrera - Tax Supervisor","Degree in accounting, with more than 7 years of experience in accounting and taxes, as well as a Master’s degree in Tax Accounting. Graduates in Financial Administration, Accounting by Equals and Document Management, in addition to having a high knowledge and experience in compliance with current Tax Regulations.","","","separate")
+                    
+                    //Jenniffer Ventura
+                    +staffElementEn("jenniffer.webp","Lic. Jenniffer Ventura Soto","Jenniffer Ventura Soto - Tax Supervisor","Bachelor of Accounting, with more than 10 years of experience in accounting and taxes, Certified Tax Consultant, with a Master’s Degree in Financial Administration in progress. Diplomas in Corporate Taxes and Tax Regulations, has extensive knowledge and experience in compliance with current Tax Regulations and Transfer Pricing.","","","separate")
+                    
+                    //Indira Jiménez
+                    +staffElementEn("indira.webp","Lic. Indira Jiménez","Indira Jiménez - Audit Manager","Graduate in Accounting. She has more than 17 years of experience in finance, forensic auditing, accounting, and tax. She has specializations and diplomas in professional skills, management, leadership, service culture, teamwork, among others.","","","separate")
+                    
+                    //Aminta Rodriguez
+                    +staffElementEn("aminta.webp","Lic. Aminta Rodríguez","Aminta Rodríguez - Audit Supervisor", "Graduate in Accounting with Postgraduate Degrees in Financial Management and Productivity Management. She has more than 27 years of experience in finance, external auditing, and accounting. She has specializations and diplomas in International Financial Reporting Standards (IFRS), International Standards on Auditing (ISA), Taxes on the transfer of industrialized goods and services, Project Management, Leadership, among others.","","","separate")
+                    
+                    //Magnelli Montero
+                    +staffElementEn("Magnelli.webp","Lic. Magnelli Montero", "Magnelli Montero - Audit Supervisor", "Barchelor of Accounting and Master of Financial Administration. She has more than 15 years of experience in the financial auditing area within the fuel and hotel sector, among others.  She also has knowledge in accounting and taxes, with studies and specializations in International Financial Reporting Standards (IFRS) and a Diploma in Senior Management.","","","separate")

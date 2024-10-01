@@ -1,0 +1,27 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/FEB6.webp", alt="Background de la noticia")
+                    h2 DEADLINE FOR ELECTRONIC INVOICE IMPLEMENTATION
+            
+            section.publicacion__content
+                p February 6, 2024
+                
+                div
+                    p According to Notice 08-23 published by the General Directorate of Internal Revenue (DGII), the deadline granted to Large National Taxpayers for the implementation of electronic invoicing is March 15, 2024 - Group 2 is about to expire.
+
+
+
+            
+            section.publicacion__otras
+                h2 Other news
+
+                +noticiaPrincipalEn

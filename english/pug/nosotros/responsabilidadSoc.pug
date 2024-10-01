@@ -1,0 +1,45 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+ 
+        main
+            section.RS__container
+                section.encabezado
+                    .encabezado__text-container
+                        h2.animate__animated.animate__fadeInDownBig Social responsability
+                        p.animate__animated.animate__fadeInLeftBig For our firm, social responsibility is a fundamental pillar on which the development of our business is governed.
+                    .backButton#btnBaja.animate__animated.animate__fadeInUp
+                        a(href="#rsText")
+                section.RS__text-container.fade-in#rsText
+                    strong Our firm is founded on the principles of family values and characterized by continuous growth, which is based on the professionalism of our human resources, the quality of our services and the honesty and respect for our clients and partners.
+                    p.RS__main-text Social responsibility goes beyond an activity, for us it is the conscious and consistent commitment to fully comply with the purpose of the company with integrity, demonstrating respect for people, ethical values, the community and the environment, thus contributing to the common well-being, which is translated into concrete actions that seek the benefit of all the actors involved in MLA activities. Among them we can highlight:
+                
+                    div.RS__externos.fade-in
+                        h2 External actors:
+                        article
+                            img(src='../../../icon/check.svg' alt='check icon')
+                            p Continuous collaboration to the civil society, nonprofit organizations, sports institutions, among others. All with the aim of helping to promote activities related to culture, education, sports, the environment, and health.
+                        picture
+                            img(src="../../../img/responsabilidadSoc/logoFoal.webp", alt="logo FOAL")
+                            img(src="../../../img/responsabilidadSoc/logo-quiereme.webp", alt="logo Quiereme como Soy")
+                            img(src="../../../img/responsabilidadSoc/logo-ldcc.webp", alt="logo Liga Dominicana contra el Cancer")
+                            img(src="../../../img/responsabilidadSoc/logo-ferds_1.webp", alt="logo FERDS")
+                            img(src="../../../img/responsabilidadSoc/hvye.webp", alt="Logo HVYE")
+                            img(src="../../../img/responsabilidadSoc/logo-fppm.webp", alt="logo FPPM")
+                        article
+                            img(src='../../../icon/check.svg' alt='check icon')
+                            p We respect the environment, avoiding pollution and minimizing the generation of waste and rationalizing the use of natural and energy resources.
+                div.RS__internos.fade-in
+                    h2 Internal actors:
+                    .RS__internos--item
+                        +actoresInEn('check.svg','check icon','We have established controls that ensure non-discrimination (sex, race, religion, social status) in our recruitment processes.')
+                        +actoresInEn('check.svg','check icon','We procure the fair distribution of the wealth generated among collaborators and regulatory entities.')
+                        +actoresInEn('check.svg','check icon','We ensure the constant training and promote the transmission of knowledge among our employees.')
+                        +actoresInEn('check.svg','check icon','We comply with legal regulations regarding salaries, medical care, hygiene and safety measures in the workplace.')
+                        +actoresInEn('check.svg','check icon','We encourage equality in our environment, respecting and promoting social and cultural diversity in our firm.')
+                        +actoresInEn('check.svg','check icon','We offer career and promotion opportunities to our staff to promote personal and professional development.')
+                        +actoresInEn('check.svg','check icon','We support emerging and young professionals, as well as final year university students, by offering them the opportunity to join to our Accounting and Tax Department to obtain practical experience and start their career, thus improving educational quality and allowing them to integrate in teamwork.','diferenciador')
+                        

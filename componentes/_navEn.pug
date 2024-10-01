@@ -1,0 +1,146 @@
+header#mi-barra.animate__animated.animate__fadeInDown
+    nav.nav-container
+        a.logo-container(href="/english/index.html")
+            img(src="/img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+
+        div.nav-container__menu
+            label(for="menu").nav-label
+                img(src="/icon/menu.svg", alt="menu hamburguesa")
+                                
+            input(type="checkbox" id="menu").nav-input
+            
+            div.nav-movil
+                label(for="menu").nav-label
+                    img(src="/icon/close.svg", alt="Cerrar menu hamburguesa")                
+                input(type="checkbox" id="menu").nav-input
+                
+                ul
+                    
+                    li
+                        a(href="/english/index.html") Home
+                    
+                    //NOSOTROS
+                    li
+                        li
+                            a(href="/english/html/nosotros/quienesSomos.html").noDisplay About us
+                            p.Display#nosotros About us
+                            ul.toggle__nosotros.mobile-hidden
+                                li
+                                    a(href="/english/html/nosotros/quienesSomos.html") Who we are
+                                
+                                li
+                                    a(href="/english/html/nosotros/registros.html") Registries and Memberships
+                                li
+                                    a(href="/english/html/nosotros/responsabilidadSoc.html") Social Responsibility
+                                
+                                li 
+                                    a(href="/english/html/nosotros/certificaciones.html") Certifications
+
+                    //SERVICIOS
+                    li 
+                        li
+                            a(href="./html/servicios/auditoria.html").noDisplay Services
+                            p.Display#servicios Services
+                            ul.toggle__servicios.mobile-hidden
+                                li
+                                    a(href="/english/html/servicios/auditoria.html") Audit and assurance
+                                li
+                                    a(href="/english/html/servicios/asesoria.html") Tax advisory
+                                li
+                                    a(href="/english/html/servicios/impuesto-nomina.html") Client accounting Services (CAS)
+                                li 
+                                    a(href="/english/html/servicios/consultorias-negocios.html") Business and financial consulting
+                                li 
+                                    a(href="/english/html/servicios/desarrolloOrg.html") Organizational development
+                                li 
+                                    a(href="/english/html/servicios/proteccion.html") Asset protection
+                        
+                    
+                    //NOVEDADES
+                    li
+                        li
+                            a(href="/english/html/noticias/noticias.html").noDisplay News
+                            p.Display#novedades News
+                            ul.toggle__novedades.mobile-hidden
+                                li
+                                    a(href="/english/html/noticias/noticias.html") Notices
+                                li
+                                    a(href="/english/html/noticias/boletines.html") News and bulletins
+                        
+
+                    //CAPITAL HUMANO    
+                    li
+                        a(href="/english/html/capital-humano/capital-humano.html") Team
+                    
+                    
+                    //CONTACTO
+                    li
+                        a(href="/english/html/contacto/contacto.html") Contact
+                    
+                    //Boton para traducir la página
+                    li 
+                        a(href="/index.html") ESPAÑOL
+                    
+                
+                
+
+
+        //BARRA DE NAVEGACION
+        .nav-container__navbar
+            ul
+                li 
+                    a(href="/english/index.html") Home
+
+                //  a(href="/index.html") Inicio
+
+                //NOSOTROS
+                li
+                    a(href="/english/html/nosotros/quienesSomos.html") About Us
+                    ul.toggle__nosotros
+                        li
+                            a(href="/english/html/nosotros/quienesSomos.html") Who we are
+                        
+                        li
+                            a(href="/english/html/nosotros/registros.html") Registries and Memberships
+                        li
+                            a(href="/english/html/nosotros/responsabilidadSoc.html") Social Responsibility
+                        
+                        li 
+                            a(href="/english/html/nosotros/certificaciones.html") Certifications 
+                
+                //SERVICIOS
+                li
+                    a(href="/english/html/servicios/auditoria.html") Services
+                    ul.toggle__servicios
+                        li
+                            a(href="/english/html/servicios/auditoria.html") Audit and assurance
+                        li
+                            a(href="/english/html/servicios/asesoria.html") Tax advisory
+                        li
+                            a(href="/english/html/servicios/impuesto-nomina.html") Client accounting Services (CAS)
+                        li 
+                            a(href="/english/html/servicios/consultorias-negocios.html") Business and financial consulting
+                        li 
+                            a(href="/english/html/servicios/desarrolloOrg.html") Organizational development
+                        li 
+                            a(href="/english/html/servicios/proteccion.html") Asset protection
+                
+                //NOVEDADES
+                li
+                    a(href="/english/html/noticias/noticias.html") News
+                    ul.toggle__novedades
+                        li
+                            a(href="/english/html/noticias/noticias.html") Notices
+                        li
+                            a(href="/english/html/noticias/boletines.html") News and bulletins
+
+
+                //CAPITAL HUMANO    
+                li
+                    a(href="/english/html/capital-humano/capital-humano.html") Team
+                
+                //CONTACTO
+                li
+                    a(href="/english/html/contacto/contacto.html") Contact
+        
+            a(href="/index.html").boton  ESPAÑOL

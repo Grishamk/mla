@@ -1,0 +1,45 @@
+extend ../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+ 
+        main
+            section.RS__container
+                section.encabezado
+                    .encabezado__text-container
+                        h2.animate__animated.animate__fadeInDownBig Responsabilidad Social
+                        p.animate__animated.animate__fadeInLeftBig Para nuestra firma, la responsabilidad social es un fundamento clave sobre el cual se rige nuestro desarrollo comercial.
+                    .backButton#btnBaja.animate__animated.animate__fadeInUp
+                        a(href="#rsText")
+                section.RS__text-container.fade-in#rsText
+                    strong Fundada sobre la base de valores familiares y  caracterizada por su  continuo crecimiento el cual se sustenta en la  profesionalidad de sus  recursos humanos, la  calidad de sus servicios, la  honestidad y el respeto a  sus clientes y aliados.
+                    p.RS__main-text La responsabilidad social va más allá de una actividad, para nosotros es el compromiso consciente y congruente de cumplir integralmente con la finalidad de la empresa, demostrando respeto por las personas, los valores éticos, la comunidad y el medio ambiente, contribuyendo así a la construcción del bien común, lo cual se traduce en acciones concretas que buscan el beneficio de todos los actores involucrados en las actividades de MLA. Entre ellas destacamos:
+                
+                    div.RS__externos.fade-in
+                        h2 Actores Externos:
+                        article
+                            img(src='../../icon/check.svg' alt='check icon')
+                            p Realización de colaboraciones continúa con la sociedad civil, fundaciones, instituciones deportivas, entre otras. Todo con el objetivo de ayudar a la promoción de actividades relacionadas a la cultura, educación, deporte, medio ambiente, y salud.
+                        picture
+                            img(src="../../img/responsabilidadSoc/logoFoal.webp", alt="logo FOAL")
+                            img(src="../../img/responsabilidadSoc/logo-quiereme.webp", alt="logo Quiereme como Soy")
+                            img(src="../../img/responsabilidadSoc/logo-ldcc.webp", alt="logo Liga Dominicana contra el Cancer")
+                            img(src="../../img/responsabilidadSoc/logo-ferds_1.webp", alt="logo FERDS")
+                            img(src="../../img/responsabilidadSoc/hvye.webp", alt="Logo HVYE")
+                            img(src="../../img/responsabilidadSoc/logo-fppm.webp", alt="logo FPPM")
+                        article
+                            img(src='../../icon/check.svg' alt='check icon')
+                            p Respetar el medio ambiente, evitando en lo posible cualquier tipo de contaminación, minimizando la generación de residuos y racionalizando el uso de los recursos naturales y energéticos.
+                div.RS__internos.fade-in
+                    h2 Actores Internos:
+                    .RS__internos--item
+                        +actoresIn('check.svg','check icon','Establecer controles que aseguren la no discriminación (sexo, raza, religión, estatus social) en los procesos de reclutamiento')
+                        +actoresIn('check.svg','check icon','Cumplir con la normativa legal en materia de salarios, atención médica, medidas de higiene y seguridad en el trabajo.')
+                        +actoresIn('check.svg','check icon','Procurar la distribución equitativa de la riqueza generada entre los colaboradores y entes reguladores.')
+                        +actoresIn('check.svg','check icon','Crear un entorno de igualdad. Respetar y fomentar la diversidad social y cultural en la empresa. ')
+                        +actoresIn('check.svg','check icon','Asegurar la formación constante en el puesto de trabajo y fomentar la transmisión de conocimientos entre empleados.')
+                        +actoresIn('check.svg','check icon','Promover el desarrollo del personal, a través de la carrera profesional y ofreciendo posibilidades de promoción.')
+                        +actoresIn('check.svg','check icon','Se brinda apoyo a profesionales emergentes, sobre lo cual la firma tiene un departamento de contabilidad e impuestos que abre oportunidades a estudiantes de termino universidades y nuevos profesionales para formación práctica y desarrollo constante con lo cual se mejora la calidad educativa y se logra una gran integración e identificación con los equipos de trabajo.','diferenciador')
+                        

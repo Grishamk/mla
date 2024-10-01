@@ -1,0 +1,76 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+ 
+        main
+            section.encabezado__impuesto
+                picture
+                    img(src="../../../img/servicios/foto-consulto.webp", alt="Foto de una Lupa analizando un documento")
+                .encabezado__titular
+                    h2 Business and Financial Consulting
+
+                p We advise your organization in the definition of its financial and corporate strategy with the aim of making its financial resources even more profitable. We evaluate strategic alternatives to determine tangible objectives and goals by carrying out concrete strategic plans and projects.
+            
+            
+            
+            
+            
+            //section.encabezado
+                section.consultoria__encabezado
+                    div
+                        h2 Business and Financial Consulting
+                    
+            
+                section.consultoria__enfoque
+                    picture
+                        img(src="../../../img/servicios/foto-consulto.webp", alt="Lentes sobre papeles con números")
+                    article 
+                        p We advise your organization in the definition of its financial and corporate strategy with the aim of making its financial resources even more profitable. We evaluate strategic alternatives to determine tangible objectives and goals by carrying out concrete strategic plans and projects.
+
+            section.consultoria__servicios.fade-in
+                strong.fade-in Our consulting services include:
+                h3.fade-in Business Consulting and Agreed-Upon Procedures
+                ul.fade-in
+                    p These services focus on the design of strategies and support in their execution to achieve the expected results. We coordinate specialized procedures related to Business Intelligence that pursue specific objectives. Among these we highlight:
+
+                    li Project Management Outsourcing.
+                    li Purchasing management analysis.
+                    li Warehouse system optimization.
+                    li Fixed Asset Inventory and Reconciliation.
+                    li Business Intelligence.
+                    li Credit portfolio risk assessment.
+                    li Preparation of general or specific budgets.
+                    li Budget monitoring and control.
+                h3.fade-in Business plans, feasibility studies and business valuation:
+                ul.fade-in
+                    p EThis set of services focuses on economic, financial, and feasibility studies that allow the generation and analysis of prospective information useful to evaluate the viability of investment projects and/or to know the fair value of a company, brand, product or business line. Among these we highlight:
+                    li Maturity test of the business idea.
+                    li Preparation of business plans.
+                    li Evaluation of risks and contingencies of projects and business ideas.
+                    li Feasibility study , Cost–benefit analysis and / or prospective study.
+                    li Financial modeling based on the analysis of variables and alternatives.
+                    li Preparation of prospective financial statements.
+                    li Business Valuation.
+                h3.fade-in Financial Planning:
+                p.fade-in Analysis and structuring of financial strategies for companies and individuals, which are aligned with the expected objectives.
+                h3.fade-in Advisory on Mergers and Acquisitions.
+                p.fade-in Specialized advisory on the sale, acquisition, mergers and strategic alliances between companies and shareholding restructuring.
+                h3.fade-in Analysis of the Financing Structure:
+                p.fade-in It involves carrying out a study that allows the efficient structuring of long and short-term liabilities considering the capital needs of the company.
+                h3.fade-in Business Strategy:
+                p.fade-in It implies support in the strategic decision-making of your organization by putting at your disposal our experienced resources that guarantee the achievement of the expected results.
+
+            //section.mainStaffEspecializado.fade-in
+                h2 Staff Especializado
+                .staffEspecializado__container
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
+                    
+            section.auditoria__contacto.fade-in
+                p For more information and request our services
+                a(href="../../html/contacto/contacto.html") Contact us now

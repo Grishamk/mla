@@ -1,0 +1,27 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/15mayo.webp", alt="Background de la noticia")
+                    h2 Implementación de Ley de PLAFT en el sector seguros y bancos, su impacto y normativas recientes.
+            
+            section.publicacion__content
+                p 15 de mayo de 2024
+                
+                div
+                    p No se pierdan de este panel virtual sobre la Implementación de la Ley de PLAFT y su impacto en el sector. Únanse el miércoles 15 de mayo de 8:15pm a 9:15pm, vía zoom, donde estarán participando José Depoolt, Elaine Días, Francisco González y Nancy Salgado, acompañados del licenciado Mauricio Rodríguez como moderador.
+                    
+                    img(src="/img/avisos/15mayo.webp", alt="Imagen con texto informativo")
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

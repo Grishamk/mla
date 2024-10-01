@@ -1,0 +1,29 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+ 
+        main
+            section.encabezado__capital
+                picture
+                    img(src="../../../img/servicios/DO3.webp", alt="Foto de una Lupa analizando un documento")
+                .encabezado__titular
+                    h2 Work With Us
+
+
+                section.trabajaN__enfoque.fade-in
+                    article
+                        h2 Open Positions
+                        ul
+                            li
+                                a(href="../../html/capital-humano/auditor-externo.html") External Auditor
+                            li
+                                a(href="../../html/capital-humano/consultor-impuestos.html") Tax Consultant
+                            li
+                                a(href="../../html/capital-humano/contador.html") Accountant 
+            
+            section.auditoria__contacto.fade-in
+                p For more information and request our services
+                a(href="../../html/contacto/contacto.html") Contact us now

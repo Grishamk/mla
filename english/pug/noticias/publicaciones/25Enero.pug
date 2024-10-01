@@ -1,0 +1,27 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/fitur.webp", alt="Background de la noticia")
+                    h2 MLA PRESENT AT FITUR 2024
+            
+            section.publicacion__content
+                p January 25, 2024
+                
+                div
+                    p MLA is present at FITUR 2024, strong strategic allies of the tourism sector; Mejía Lora & Asociados (MLA), represented by Raymi J. Mejía and María de Lourdes Curiel de Mejía, is once again present at the most important international tourism fair.
+
+                    p The occasion has been taken to participate in various meetings with our clients, representatives, and investors in the sector, as well as participating in the different forums and events scheduled.
+
+            
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

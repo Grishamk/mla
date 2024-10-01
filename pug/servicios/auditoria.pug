@@ -1,0 +1,57 @@
+extend ../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+ 
+        main
+            section.encabezado__auditoria
+                picture
+                    img(src="../../img/servicios/auditoria.webp", alt="Foto de una Lupa analizando un documento")
+                .encabezado__titular
+                    h2 Auditoría / Aseguramiento
+
+                p Nuestro enfoque de auditoría se basa en una metodología de gestión de riesgos eficaz, que nos permite realizar procesos de revisión y aseguramiento de manera independiente, objetiva y oportuna de acuerdo con los estándares y mejores prácticas internacionales.
+                p Somos expertos en brindar confianza en la información financiera y contable de nuestros clientes y grupos de interés. Nuestro enfoque integral nos permite ofrecer una opinión veraz sobre el desempeño global de la empresa, sus procesos y controles, generando valor para el desarrollo y mejora de la organización.   
+
+            section.auditoria__servicios.fade-in
+                strong.fade-in Dentro de los servicios de auditoría se abarcan los siguientes:
+                h3.fade-in Auditoría Financiera:
+                p.fade-in Consiste en la aplicación de las Normas Internacionales de Auditoria (NIAs) con el objetivo de emitir una opinión sobre la razonabilidad de los estados financieros sobre la base de un marco de información financiera reconocido: NIIF, US GAAP.
+                h3.fade-in Auditoría Fiscal:
+                p.fade-in Consiste en la ejecución de procedimientos de verificación y análisis de los elementos de carácter tributario una empresa o un particular y la comprobación del cumplimiento de sus obligaciones tributarias ante la Autoridad Tributaria correspondiente, sobre la que se emite una opinión a través de un dictamen fiscal.
+                h3.fade-in Auditoría de Valor Razonable para Compra y Venta:
+                p.fade-in El objetivo de este servicio es expresar una opinión independiente sobre la razonabilidad del valor de una empresa, marca, producto o línea de negocio que ha sido valorada por una de las partes interesadas en adquirir o vender a la otra.
+                h3.fade-in Auditoría del sistema de prevención de LA / FT.
+                p.fade-in El objetivo de este servicio es emitir una opinión sobre la efectividad del sistema de prevención LA/FT de su organización, así como detectar las necesidades y brechas de este respecto al marco regulatorio (Ley 155-17 LA/FT, decretos y normativa sectorial) y riesgos relacionados al LA/FT a los cuales está expuesta la organización; teniendo como resultado un informe o dictamen sobre dicho sistema y el planteamiento de las principales oportunidades de mejora.
+                h3.fade-in Auditoría de Estados Financieros Proyectados:
+                p.fade-in Conjunto de procedimientos que tienen como objetivo emitir una opinión sobre la razonabilidad de los supuestos e hipótesis utilizados para la elaboración de estados financieros proyectados e información prospectiva, considerando, entre otros, las cifras históricas, estudios de mercado y tendencias.
+                h3.fade-in Procedimientos de auditoría previamente acordados:
+                ul.fade-in
+                    p Comprende trabajos de auditoria con un alcance específicamente requerido en el cual se emite un informe sobre los resultados encontrados para uso exclusivo de los requirentes, sin emitir una opinión. Dentro de estos trabajos destacamos:
+                    li Análisis de transacciones entre relacionadas.
+                    li Revisión cumplimiento de contratos.
+                    li Inventarios de bienes y/o servicios.
+                    li Revisiones limitadas a los estados financieros.
+                    li Procedimientos financieros, entre otros.
+                h3.fade-in Servicios de aseguramiento No financiero.
+                ul.fade-in 
+                    p El objetivo de este conjunto de servicios es expresar una opinión sobre los procesos / entorno no financieros de una empresa o unidad luego de realizar los procedimientos de revisión y verificación necesarios. De estos destacamos:
+                    li Auditoría de Gestión.
+                    li Auditoría Operativa.
+                    li Auditoría al Sistema de Gestión de Calidad.
+                    li Outsourcing de Auditoría Continua.
+                    li Evaluación del Ambiente Tecnológico.
+                
+            //section.mainStaffEspecializado.fade-in
+                h2 Staff Especializado
+                .staffEspecializado__container
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
+
+            section.auditoria__contacto
+                p Para obtener mas información y solicitar nuestros servicios
+                a(href="../../html/contacto/contacto.html") Contáctenos ahora

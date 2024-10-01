@@ -1,0 +1,37 @@
+extend ../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+
+block contenido
+        main
+            section.encabezado
+                .encabezado__text-container
+                    h2.animate__animated.animate__fadeInDownBig Registros y Membresías
+                    p.animate__animated.animate__fadeInLeftBig MLA cuenta con más de 20 membresías y/o registros, tanto en organismos reguladores nacionales como internacionales y diferentes instituciones relativas al sector financiero.
+                .backButton#btnBaja.animate__animated.animate__fadeInUp
+                    a(href="#membresias")
+            section.membresia.fade-in#membresias
+                h2.membresia__titular Membresías
+                .membresia__item-container
+                    +membresia('bkr.svg','Logo BKR','BKR International')
+                    +membresia('instituto.webp','logo ICPARD', 'El Instituto de Contadores Públicos Autorizados de la República Dominicana (ICPARD)') 
+                    +membresia('afcpard.webp','logo AFCPARD','Asociación de Firmas de Contadores Públicos Autorizados de la República Dominicana (AFCPARD)')
+                    +membresia('asociacion.webp','Logo asociacion','Asociación Interamericana  de Contabilidad (AIC)')
+                    +membresia('asonahores.webp','Logo ASONAHORES','Asociación Nacional de Hoteles y Restaurantes (ASONAHORES)')
+                    +membresia('asociacion.webp','Logo Foro de Firmas Interamericanas','Foro de Firmas Interamericanas')
+                    +membresia('ifa.webp','logo IFA','International Fiscal Association (IFA)')
+                    +membresia('IFAC.png','Logo IFAC','Federación Internacional de Contadores (IFAC)')
+                    +membresia('Prueba.png','Logo AMLCA','Anti-Money Laundering Certified Associate (AMLCA)')
+                    +membresia('anje.webp','logo ANJE','Asociación Nacional de Jóvenes Empresarios (ANJE)')
+            
+            section.registro.fade-in
+                h2.registro__titular Registros
+                .registro__item-container
+                    +registro('Auditores Externos de la  Superintendencia de Bancos  de la República Dominicana (SIB).')
+                    +registro('Auditores Externos de la  Superintendencia de Valores  de la República Dominicana (SIMV).')
+                    +registro('Auditores Externos de la  Superintendencia de Seguros.')
+                    +registro('Auditores Externos de la  Superintendencia de Pensiones (SIPEN).')
+                    +registro('Auditores Externos del Instituto de  Desarrollo y Crédito Cooperativo (IDECOOP).')
+                    +registro('Auditores Independiente del  Banco Interamericano de  Desarrollo (BID).')

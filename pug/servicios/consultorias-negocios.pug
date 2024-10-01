@@ -1,0 +1,61 @@
+extend ../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+ 
+        main
+            section.encabezado__impuesto
+                picture
+                    img(src="../../img/servicios/foto-consulto.webp", alt="Foto de una Lupa analizando un documento")
+                .encabezado__titular
+                    h2 Consultoría de Negocios y Financiera
+
+                p Asesoramos a su organización en la definición de su estrategia financiera y corporativa, con el objetivo de que puedan rentabilizar cada vez más los recursos financieros. Evaluamos alternativas estratégicas para determinar objetivos y metas tangibles mediante la realización de planes y proyectos estratégicos concretos.
+                
+
+            section.consultoria__servicios.fade-in
+                strong.fade-in Dentro de los servicios de consultoría se abarcan los siguientes:
+                h3.fade-in Consultoría de negocios y procedimientos convenidos:
+                ul.fade-in
+                    p Estos servicios se centran en el diseño de estrategias y en el acompañamiento en su ejecución para lograr los resultados esperados. Coordinamos procedimientos especializados relacionados a la Inteligencia de Negocio que persiguen objetivos específicos. Entre estos se destacan:
+
+                    li Outsourcing gestión de proyectos
+                    li Análisis de gestión de compras
+                    li Optimización de sistema de inventario y almacén
+                    li Levantamiento, identificación y conciliación de activos fijos
+                    li Inteligencia comercial
+                    li Evaluación de riesgo de cartera de crédito
+                    li Elaboración de presupuestos generales o específicos.
+                    li Seguimiento y control presupuestario.
+                h3.fade-in Planes de negocio, estudios de factibilidad y valoración de empresas:
+                ul.fade-in
+                    p Este conjunto de servicios se enfoca en estudios económicos, financieros y de viabilidad que permiten la generación y análisis de información prospectiva útil para evaluar la viabilidad de proyectos de inversión y/o conocer el valor objetivo de una empresa, marca, producto o línea de negocio.  Entre estos se destacan:
+                    li Test de maduración de la idea de negocio.
+                    li Conformación de Plan de negocio.
+                    li Evaluación de riesgos y contingencias de proyectos e ideas de negocio.
+                    li Estudio de factibilidad, costo-beneficio y/o estudio prospectivo.
+                    li Modelación de resultados sobre análisis de variables y alternativas.
+                    li Preparación de estados financieros prospectivos
+                    li Valoración de empresa.
+                h3.fade-in Planificación Financiera:
+                p.fade-in Comprende el análisis y estructuración de las estrategias financieras de personas jurídicas o físicas, las cuales vayan alineadas a los objetivos esperados.
+                h3.fade-in Asesoría en Fusiones y Adquisiciones
+                p.fade-in Asesoramiento en la realización de operaciones de venta, adquisición, fusiones, alianzas estratégicas entre compañías o reestructuraciones accionarias.
+                h3.fade-in Análisis de Estructura de Financiamiento:
+                p.fade-in Involucra la realización de estudios que permiten estructurar eficientemente los pasivos a largo y corto plazo considerando las necesidades de capital de la empresa.
+                h3.fade-in Asesoría de Estrategias de Negocios:
+                p.fade-in Comprende el acompañamiento en la toma de decisiones estratégicas de su organización, poniendo a su disposición recursos experimentados que garanticen la consecución de los resultados esperados.
+
+            //section.mainStaffEspecializado.fade-in
+                h2 Staff Especializado
+                .staffEspecializado__container
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
+                    
+            section.auditoria__contacto.fade-in
+                p Para obtener mas información y solicitar nuestros servicios
+                a(href="../../html/contacto/contacto.html") Contáctenos ahora

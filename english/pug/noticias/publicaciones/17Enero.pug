@@ -1,0 +1,25 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/elevandoExito.webp", alt="Background de la noticia")
+                    h2 YOUR EXPERT PARTNER IN THE JOURNEY OF SUCCESS
+            
+            section.publicacion__content
+                p January 17, 2024
+                
+                div
+                    p Elevating the business and personal success of our clients: Mejía Lora & Asociados, your expert partner every step of the way.
+
+            
+            section.publicacion__otras
+                h2 Other news
+
+                +noticiaPrincipalEn

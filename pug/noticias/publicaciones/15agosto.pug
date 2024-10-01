@@ -1,0 +1,25 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/15agosto.webp", alt="Background de la noticia")
+                    h2 día de la Restauración
+            
+            section.publicacion__content
+                p 15 de agosto de 2024
+                
+                div
+                    p El día de mañana 16 de agosto no estaremos laborando por motivos del día feriado en conmemoración al "Día de la Restauración" (República Dominicana).
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

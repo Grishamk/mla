@@ -1,0 +1,81 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+
+block contenido
+
+        main
+            section.encabezado
+                .encabezado__text-container.animate__animated
+                    h2.animate__animated.animate__fadeInDownBig About us
+                    p.animate__animated.animate__fadeInLeftBig Mejía Lora & Asociados (MLA) is a Firm of certified public accountants founded in 1983. We are recognized as a leading Firm nationwide, with international reach, in terms of quality, management, services, and work environment. Our size and culture enable us to provide this full range of services while offering personalized attention to the diverse needs of our clients. By delivering superior service and high-quality work product, we enjoy long-term relationships with our clients, some spanning over 37 years. Our industry experience and commitment to customer service have earned us a stellar reputation in the business, financial, and legal communities.
+                .backButton#btnBaja.animate__animated.animate__fadeInUp
+                    a(href="#video") 
+            section.nosotrosVideo#video
+                .nosotrosVideo__text
+                    p MLA has international backing; we are members of BKR International, one of the top five global associations of independent audit and tax consulting firms. Membership ensures our effective cooperation across borders: 155 affiliated firms with over 266 offices in 81 countries around the world.
+                    i "The member firms of BKR International are selected for their local influence, expertise, and international capability."
+                
+                .sobreNosotrosVideo__video.fade-in
+                    iframe.video-iframe(src='https://player.vimeo.com/video/315315231?h=651cf7feaf' width='320' height='360' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen='allow' title="Video de la empresa")
+
+
+            section.nosotrosMV.fade-in
+                .nosotrosMV__text
+                    .nosotrosMV__text--1
+                        h2 Mission
+                        p Satisfy the needs and expectations of our clients by being their strategic adviser for solutions that contribute to their business and/or personal development through our commitment to provide them with personalized auditing, consulting, Tax Advisory and outsourcing services based on innovation and excellence.
+                    .nosotrosMV__text--2
+                        h2 Vision 
+                        p To stand out among the firms with the greatest national and international recognition for the level of commitment and quality of the services we offer and the generation of value we create for our clients, associates, employees and society.
+            
+            section.nosotrosValores.fade-in
+                .nosotrosValores__container
+                    h2.nosotrosValores--titulo Core Values
+                    .nosotrosValores__item-container
+                        +valoresEn("integro.svg","escudo azul","Integrity","We are commited to provide all our services based on honesty.","")
+                        +valoresEn("responsabilidad.svg","logo manos saludandose","Responsibility and commitment","We always comply with the obligations we have with our clients.")
+                        +valoresEn("servicio.svg","logo de Servicio al Cliente","Customer Service","Are all the things we do to satisfy the expectations of our clients.")
+                        +valoresEn("calidad.svg","logo con una diana","Quality","We bring value to our clients fulfilling their requirements and satisfy their expectations.")
+                        +valoresEn("mejoras.svg","Grafica de crecimiento","Continuous Improvement","We are committed to improve our services and processes in order to satisfy our customers needs and expectations.")
+
+                    article.nosotrosValores__calidad.fade-in
+                        h2 Quality Policy
+                        p In Mejía Lora y Asociados we are committed to the full satisfaction of our clients and other stakeholders; therefore, we act ethically and transparently, guaranteeing to provide our Audit, CAS (Client Accounting Services), Consulting, Tax Advisory and Organizational Development services in an efficient and timely manner, fully complying with the law, agreements, rules and regulations and continuously improving our processes.
+            
+            section.nosotrosExp.fade-in
+                .nosotrosExp__container
+                    h2 Our experience
+                    p Our clients operate in the following sectors:
+                    .nosotrosExp__list
+                        ul
+                            li Health
+                            li Fuels
+                            li Wines and Liquors
+                            li Real Estate
+                            li Call Center
+                            li Advertising
+                        ul
+                            li Education
+                            li Vehicles
+                            li Importers and Retail
+                            li Hotels
+                            li Duty Free
+                            li Newspapers and Media
+                        ul
+                            li Social Security
+                            li Transport
+                            li Security
+                            li Restaurants
+                            li Financial
+                            li Software / IT
+                        ul
+                            li Tourism
+                            li Supermarkets
+                            li Constructions
+                            li Pharmaceutical
+                            li Nonprofit Organizations
+                            li Farming
+

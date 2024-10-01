@@ -1,0 +1,28 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/29mayo.webp", alt="Background de la noticia")
+                    h2 Important Notice
+            
+            section.publicacion__content
+                p May 29, 2024
+                
+                div
+                    p We inform you that on May 30th and 31st, 2024, we will not be working due to the Corpus Christi holiday in 2024 (Dominican Republic) and the subsequent holiday.
+
+                    p We will resume work on Monday, June 3rd, 2024.
+
+                    
+
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

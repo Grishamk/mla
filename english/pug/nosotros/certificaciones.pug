@@ -1,0 +1,27 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+
+        main.cert-container
+            section.encabezado
+                .encabezado__text-container
+                    h2.animate__animated.animate__fadeInDownBig Certifications
+                .backButton#btnBaja.animate__animated.animate__fadeInUp
+                    a(href="#certificaciones")
+            section.cert-container__principal.fade-in#certificaciones
+                strong “Our organization raises its commitment to quality by having a Quality Management System certified by INTECO under the standard ISO 9001: 2015, RE-019/2019”.
+                p Mejia Lora y Asociados became the first Audit Firm in the Dominican Republic to obtain INTECO certification under the ISO 9001: 2015 standard. In Mejía Lora y Asociados we are committed to the full satisfaction of our clients and other stakeholders; therefore, we act ethically and transparently, guaranteeing to provide our Audit, CAS (Client Accounting Services), Consulting, Tax Advisory and Organizational Development services in an efficient and timely manner, fully complying with the law, agreements, rules and regulations and continuously improving our processes.
+                p The partners of the Firm decided to certify the Quality Management System as a strategic tool to identify risks and opportunities, as well as to systematically manage and control the organization in terms of quality. The foregoing, through continuous improvement in the performance of its processes and carrying out the fundamental concepts of excellence and best management practices.
+                p The project was carried out by the Organizational Development Department and the partner Firelli Mejía on behalf of the Management. This is also a service offered by the Firm.
+                p To obtain this certification, our organization developed an arduous program for the implementation of the standard that implied setting goals and overcoming great challenges, achieved through training programs, management of change in the organizational culture and others in order to guarantee the excellence of the Quality Management System.
+                picture.fade-in
+                    img(src="../../../img/Certificaciones/Logo-9001-IQNet-FIRMADO_Página_1-212x300.webp", alt="Normas ISO Página 1")
+                    img(src="../../../img/Certificaciones/Logo-9001-IQNet-FIRMADO_Página_2-212x300.webp", alt="Normas Iso Página 2")
+                    img(src="../../../img/Certificaciones/MLAISO2-300x199.webp", alt="Certificacion INTECO")
+            
+            section.cert-container__contacto.fade-in
+                p For more information and request our services
+                a(href="../../html/contacto/contacto.html") Contact us now

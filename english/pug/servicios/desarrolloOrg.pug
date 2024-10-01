@@ -1,0 +1,82 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+ 
+        main
+            section.encabezado
+                section.encabezado__auditoria
+                    picture
+                        img(src="../../../img/servicios/DO3.webp", alt="Foto de analisis digital en tablet")
+                    .encabezado__titular
+                        h2 Organizational development
+
+                    p We offer specialized services focused on Organizational Development that ensure that your strategy and internal resources operate efficiently, harmoniously and organized, allowing your company to adapt to current and future needs in a planned and controlled manner.
+                    p These services are related to the integral improvement of the components of your organization to achieve specific objectives, offering practical solutions that allow to improve the efficiency, management, control and profitability of the business through project management.
+                
+
+            section.desarrollo__servicios.fade-in
+                strong.fade-in Organizational Development Services include:
+                h3.fade-in Strategic planning:
+                ul.fade-in
+                    p This set of services groups solutions oriented to the strategic part of the business. Services that focus on the study and knowledge of the environment in which the entity develops its activities, the planning of strategies to make the most of the context in which it operates, and the internal structure of the organization. Among these we highlight:
+                    li Context analysis and creation of driving and restraining forces map, SWOT analysis and stakeholder matrix.
+                    li Development of strategic planning: alignment of mission, vision, values, strategic axes and objectives.
+                    li Organizational diagnosis: comprehensive analysis to detect improvements.
+                    li Creation and implementation of Regulatory Compliance Matrix.
+                    
+                h3.fade-in Design / implementation of Quality Management System:
+                ul.fade-in
+                    li Advisory for the creation, implementation and / or reinforcement of the Quality Management System.
+                    li Definition and implementation of the Document Control system.
+            
+                h3.fade-in Control Environment:
+                ul.fade-in
+                    p These services focus on the evaluation of the internal control system adopted by the company in order to identify opportunities that allow improving the management of corporate risks. Among these we highlight:
+
+                    li Diagnosis and strengthening of corporate governance.
+                    li Evaluation of the internal control environment with a COSO ERM approach.
+                    li Evaluation of the Internal Audit function (unit or department).
+                    li Risk model conformation:  mapping and evaluation of risk factors.
+                    li Comprehensive risk management: preparation of matrices for risk detection, analysis and mitigation.
+                    li Training in operational risk.
+                
+                h3.fade-in Business Process Management:
+                ul.fade-in
+                    p These services  focus on the organization of the activities and procedures carried out by the different areas, both administrative and operational, allowing continuous monitoring of the efficiency in the performance of the tasks that are the responsibility of each of them in order to achieve the objectives set by the entity. Among these we highlight:
+
+                    li Business process mapping and elaboration of descriptors.
+                    li Process analysis, re-design and optimization.
+                    li Preparation of manuals, procedures and policies for departments, areas or specific processes.
+                    li Creation, formalization and measurement of key performance indicators by process.
+                
+                h3.fade-in Organizational Design
+                ul.fade-in
+                    p This category groups together the services that are aimed at the design, improvement and restructuring of the organization. They influence the definition of the organization chart, work capacity, job descriptions, personnel evaluations, structure of compensation packages, among others.
+
+                    li Analysis and design of organizational structure. Organization charts definition.
+                    li Studies of capacity, labor demand and contribution of value by positions.
+                    li Design, restructuring and / or formalization of job descriptions.
+                    li Evaluation of positions / functions and personnel who occupy them.
+                    li Definition of salary scale / creation – structuring of compensation packages.
+                    li Design and structuring of the performance appraisal system.
+                    li Recruitment and staff selection.
+                
+                h3.fade-in Design and implementation of the Anti-money Laundering system:
+                ul.fade-in
+                    li General AML / CFT Training.
+                    li Alignment for the compliance with the AML / CFT Law: Structuring the prevention systems.
+
+            //section.mainStaffEspecializado.fade-in
+                h2 Staff Especializado
+                .staffEspecializado__container
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
+
+            section.auditoria__contacto
+                p For more information and request our services
+                a(href="../../html/contacto/contacto.html") Contact us now

@@ -1,0 +1,28 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/fitur.webp", alt="Background de la noticia")
+                    h2 MLA PRESENTE EN FITUR 2024
+            
+            section.publicacion__content
+                p 25 de enero de 2024
+                
+                div
+                    p MLA dice presente en Fitur 2024, firmes aliados estratégicos del sector turístico; la firma Mejía Lora & Asociados (MLA), representada por Raymi J. Mejía y María de Lourdes Curiel de Mejía, se hace nuevamente presente en la feria internacional turística de mayor relevancia.
+ 
+                    p Se ha aprovechado la ocasión para participar en diversos encuentros con nuestros clientes, representantes e inversionistas del sector; así como participando en los diferentes foros y eventos programados.
+
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

@@ -1,0 +1,25 @@
+extend ../../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/19marzo.webp", alt="Background de la noticia")
+                    h2 AVAILABILITY FOR FILING ANNUAL WITHHOLDING AGENT DECLARATION FOR SALARIED EMPLOYEES (IR-13)
+            
+            section.publicacion__content
+                p March 19, 2024.
+                
+                div
+                    p The General Directorate of Internal Revenue (DGII) has informed that the Annual Withholding Agent Declaration for Salaried Employees (IR-13) will be available for filing from March 14th to March 27th, 2024.
+            
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn
+

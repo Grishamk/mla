@@ -1,0 +1,26 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/22julio.webp", alt="Background de la noticia")
+                    h2 Felicitaciones Bepensa Dominicana
+            
+            section.publicacion__content
+                p 22 de julio de 2024
+                
+                div
+                    p ¡Nos complace felicitar a nuestros valiosos clientes del Grupo Martinón (Turismo) y Bepensa Dominicana (Industria y Comercio) por recibir el prestigioso reconocimiento a la inversión extranjera directa por parte de ProDominicana! Su compromiso y excelencia continúan destacándose en sus respectivas industrias.
+
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

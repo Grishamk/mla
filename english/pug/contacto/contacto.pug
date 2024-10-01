@@ -1,0 +1,70 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+
+        main
+            section.contacto__main-container
+                section.contacto__encabezado
+                    div
+                        h2 Contact
+
+                section.contacto__main-section
+                    article.main-section__formulario
+                        p Leave us your request and we will respond as soon as possible
+                        form(action="https://formsubmit.co/info@mejialora.com" method="POST").formulario__formulario.fade-in
+                            div.formulario__formulario--1
+                                label(for="nombres")
+                                    input(type="text" id="nombres" name="nombres" placeholder="Name")
+                                label(for="apellidos")
+                                    input(type="text" id="apellidos" name="apellidos" placeholder="Surnames")
+                            div
+                                label(for="correo")
+                                    input(type="email" id="correo" name="correo" placeholder="E-mail")
+                                label(for="telefono")
+                                    input(type="number" id="telefono" name="telefono" placeholder="Phone") 
+                            .formulario__text-area
+                                label(for="comentario")
+                                    input(type="text" id="comentario" name="comentario")
+        
+                            button(type="submit") Send
+
+                        a(href="#").formulario__link Download service form 
+
+                    article.main-section__info
+                        h2.info__titulo Contact information
+                        article.info
+                            img(src="../../../icon/icon-mail.svg", alt="icono de correo")
+                            p info@mejialora.com
+                        article.info
+                            img(src="../../../icon/icon-location.svg", alt="icono de localización")
+                            div
+                                p Oficina Corporativa:
+                                p Avenida Sarasota #136, Santo Domingo, República Dominicana
+                        article.info
+                            img(src="../../../icon/icon-location.svg", alt="icono de localización")
+                            div
+                                p Oficina Corporativa:
+                                p Avenida Santa Ana #16, Santo Domingo, República Dominicana
+                        article.info
+                            img(src="../../../icon/icon-location.svg", alt="Icono de localizacion")
+                            div
+                                p International Mailing Address:
+                                p 8540 NW 66 st AP-54099 Miami, FL 33195-2698
+                        article.info
+                            img(src="../../../icon/icon-phone.svg", alt="Icono de telefono")
+                            p (809) 482-0838
+                        
+                        div.info__redes
+                            a(href="#")
+                                img(src="../../../icon/104498_facebook_icon.svg", alt="logo de facebook")
+                            a(href="#") 
+                                img(src="../../../icon/1161953_instagram_icon.svg", alt="logo de instagram")
+                            a(href="#") 
+                                img(src="../../../icon/104501_twitter_bird_icon.svg", alt="logo de twitter")
+                            a(href="#") 
+                                img(src="../../../icon/367593_linkedin_business_network_social_icon.svg", alt="logo de linkedin")
+                section.main-section__mapa
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d473.09774136335295!2d-69.9549795556712!3d18.44820775376078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea5621e1e54cfff%3A0x70cbf5dd68314e49!2sMLA-%20Mejia%20Lora%20%26%20Asociados%20-%20Auditores!5e0!3m2!1ses-419!2sdo!4v1683561275739!5m2!1ses-419!2sdo" title="ubicacion" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Ubicacion</iframe>

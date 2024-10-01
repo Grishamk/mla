@@ -1,0 +1,155 @@
+//Esto es un modulo de main.scss
+
+//FOOTER
+.footer-container {
+    width: 100%;
+    background-image: url(../img/assets/bg-section.webp);
+    background-position: center;
+    background-size: cover;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    color: $colorLetra2;
+    @include flexRule(column);
+       
+    //CONTENEDOR DE LA IMÁGEN Y EL TEXTO DE COPIRYGHT
+    .footer-movil__container{
+        height: 100%;
+        padding: 40px 20px;
+        @include flexRule(column,center,center);
+        
+        .footer-movil__logo{
+            @include flexRule(column,null,center);
+
+            picture img {
+                @include wH(200px, 53px);
+            }
+            
+            .derechosAutor{
+                font-size: 1.6rem;
+                font-weight: 300;
+                margin-bottom: 36px;
+            }
+
+            .redes1{
+                display: none; 
+            }
+        }
+
+        .contacto{
+            text-align: center;
+            
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 12px;
+            }
+            
+            p {
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 20px;
+                margin-bottom: 8px;
+                
+                span{
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .redes{
+            @include flexRule(null,center,null);
+            margin-top: 32px;
+            gap: 16px;
+            
+            img{
+                width: 35px;
+            }
+        }
+
+        .footer-movil__logo, .redes, .contacto{
+            width: 100%;
+        }
+    }
+}
+
+//LAPTOP
+@media(min-width: $breakpoint-laptop){
+    .footer-container {
+        @include wH(100%, auto);
+
+        .footer-movil__container{
+            width: 100%;
+            padding: 20px 0;
+            @include flexRule(row,center,null);
+            flex-wrap: wrap;
+            gap: 40px;
+
+            .footer-movil__logo{
+                width: 28%;
+                @include flexRule(column,null,center);
+                order: 2;
+                
+                .derechosAutor{
+                    margin-bottom: 0;
+                }
+
+                .redes1{
+                    margin-top: 20px;
+                    @include flexRule(null,center);
+                    gap: 16px;
+                    
+                    a{
+                        transition: all 300ms ease;
+                    }
+
+                    img{
+                        width: 35px;
+                    }
+                }
+                
+                .redes1 a:hover{
+                    margin-top: -8px;
+                    transition: all 300ms ease;
+                }
+            }
+
+            .contacto{
+                order: 1;
+                text-align: left;
+                width: 60%;
+
+                p{
+                    font-size: 1.4rem;
+                    
+                    span{
+                        font-weight: 300;
+                    }
+                }
+            }
+           
+            .redes{
+                display: none;
+            }
+        }
+    }
+}
+
+//DESKTOP
+@media(min-width: $breakpoint-desktop){
+    .footer-container {
+        justify-content: center;
+        height: 200px;
+        padding-bottom: 20px 40px;
+
+        .footer-movil__container{
+            justify-content: space-between;
+            max-width: 1300px;
+            width: 100%;
+            margin: 0 auto;
+            
+            picture img {
+                width: 140px;
+                height: 77px;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+ 
+        main
+            
+            main
+            section.encabezado__impuesto
+                picture
+                    img(src="../../../img/servicios/impuesto.webp", alt="Foto de analisis digital en tablet")
+                .encabezado__titular
+                    h2 Client Accounting Services (CAS)
+
+                p Our objective is to provide outsourcing services of financial, accounting and tax processes allowing our clients to concentrate their efforts on increasing the commercialization of their products or services, the efficiency of their processes and the achievement of the established goals.
+                p We provide services that guarantee the quality, reliability and timeliness of the financial and accounting information, as well as the tax compliance of your organization, through the basis of our specialization in accounting and tax matters in the different economic sectors of the country and applying the best international practices. We work in accordance with the applicable International Financial Reporting and Accounting Standards.
+            
+
+            section.imp__servicios.fade-in
+                strong.fade-in We carry out our work in accordance with the applicable International Financial Reporting and Accounting Standards. CAS services include:
+                h3.fade-in Advisory and revision of accounting and tax records:
+                p.fade-in Its purpose is to keep an orderly and systematic record of all commercial transactions carried out by our clients, validating the reasonableness of the figures through the evidence provided and the preparation of analysis and tax crossings.
+                h3.fade-in Compilation of financial statements:
+                p.fade-in Its purpose is to gather, classify and summarize in the form of Financial Statements the information that arises from the accounting system of the company, as well as the preparation of the Annual Corporate Tax Return  and assessment of tax risks of the operations carried out.
+                h3.fade-in Accounting Outsourcing (Bookkeeping):
+                p.fade-in It consists of the process of recording, classifying and summarizing the information of each of the transactions carried out by the company.
+                h3.fade-in Tax and payroll:
+                p.fade-in It consists of the preparation and / or review of monthly taxes and payrolls and updates on the SuirPlus portal in the Social Security Treasury (TSS).
+
+            //section.mainStaffEspecializado.fade-in
+                h2 Staff Especializado
+                .staffEspecializado__container
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
+
+            section.auditoria__contacto.fade-in
+                p For more information and request our services
+                a(href="../../html/contacto/contacto.html") Contact us now

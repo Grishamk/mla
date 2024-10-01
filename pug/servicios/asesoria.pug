@@ -1,0 +1,64 @@
+extend ../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.encabezado__auditoria
+                picture
+                    img(src="../../img/servicios/Asesoria.webp", alt="Foto de analisis digital en tablet")
+                .encabezado__titular
+                    h2 Asesoría Fiscal
+
+                p Brindamos servicios de asesoría especializada desde la óptica de aminorar riesgos y contingencias tributarias, recomendando llevar a cabo el debido proceso. Proveemos a nuestros clientes servicios vinculados con la elaboración y presentación de sus declaraciones y envíos de reportes fiscales, siendo el objetivo la presentación exacta y oportuna.
+                p En el mismo orden, asistimos a nuestros clientes en la gestión del cumplimiento ante los deberes formales y el cumplimiento de sus responsabilidades como contribuyente, ya sea sobre obligaciones periódicas mensuales o anuales. Estamos sujetos a principios para una práctica impositiva responsable, que establecen conductas éticas fundamentales.
+
+
+            section.asesoria__servicios.fade-in
+                strong Dentro de los servicios de impuestos se abarcan los siguientes:
+                h3 Asesoría Fiscal
+                ul.fade-in
+                    li Asesoría Fiscal.
+                    li Asesoría Especializada en fusiones y Adquisiciones.
+                    li Acuerdos de exenciones fiscales.
+                    li Planeación impositiva- previsional: Análisis impositivo sobre nuevas inversiones; Asesoramiento en la búsqueda de economías impositivas.
+                    li Planificación Fiscal: Asistimos a las empresas en el análisis y la reestructuración de sus funciones tributarias internas, a fin de que sean más eficientes y efectivas en el manejo de sus responsabilidades fiscales y el apropiado cumplimiento de las obligaciones tributarias.
+                h3 Consultoría Impositiva
+                ul.fade-in
+                    li Representación y asesoría respecto de requerimientos efectuados por organismos reguladores.
+                    li Representación y elaboración de solicitudes generales realizadas ante la Administración Tributaria.
+                    li Apelaciones de resoluciones emanadas de los organismos reguladores.
+                    li Elaboración de Recursos de Reconsideración.
+                    li Recursos ante el Tribunal Contencioso Tributario y Administrativo.
+                    li Incorporación empresarial y actualización del Registro Mercantil y Registro Nacional de Contribuyentes.
+                    li Revisión de créditos fiscales.
+                    li Análisis Legislación nacional / internacional; Análisis y respuestas sobre temas específicos en materia impositiva.
+                h3 Due diligence
+                p Revisión enfocada en la razonabilidad de cifras y validación del estatus fiscal de entidades comerciales.
+                h3.espacio.fade-in Defensa en Fiscalizaciones
+                h3.espacio.fade-in Impuestos a la Propiedad de Inmuebles
+                h3.espacio.fade-in Planeación tributaria nacional e internacional
+                h3 Precios de Transferencia
+                p Elaboración de estudios orientados a ratificar cumplimientos de comparabilidad en precios pactados con relacionados. A su vez, elaboración de las declaraciones informativas de operaciones con relacionados.
+                h3 Preparación y/o revisión de declaraciones juradas
+                ul.fade-in
+                    li Revisión y guía respecto al planteamiento de las declaraciones de impuestos realizadas por las empresas.
+                    li Elaboración de las declaraciones juradas anuales y mensuales, así como de los formatos de envíos de datos.
+                    li Revisión fiscal, detención de errores en las presentaciones, validación de diferencias en las declaraciones propias y con terceros.
+                    li Regímenes de regularización impositiva y previsional, facilidades de pago, etc.
+                  
+                h3.fade-in Impuestos sobre Sucesiones
+
+            //section.mainStaffEspecializado.fade-in
+                h2 Staff Especializado
+                .staffEspecializado__container
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
+
+            section.auditoria__contacto.fade-in
+                p Para obtener mas información y solicitar nuestros servicios
+                a(href="../../html/contacto/contacto.html") Contáctenos ahora

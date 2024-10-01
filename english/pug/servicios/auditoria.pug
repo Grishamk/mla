@@ -1,0 +1,57 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+ 
+        main
+            section.encabezado__auditoria
+                picture
+                    img(src="../../../img/servicios/auditoria.webp", alt="Foto de una Lupa analizando un documento")
+                .encabezado__titular
+                    h2 Audit Services
+
+                p Our audit approach is based on an effective risk management methodology, which allows us to carry out review and assurance processes in an independent, objective and timely manner in accordance with international standards and best practices.
+                p We have the knowledge and experience necessary to provide our clients and their stakeholders with confidence in the results of their financial and accounting information. Our comprehensive approach allows us to provide an accurate opinion on the global performance of the company, its processes, and controls, thus creating value for the development and improvement of your organization.   
+
+            section.auditoria__servicios.fade-in
+                strong.fade-in Audit and Assurance Services include:
+                h3.fade-in Financial Audit:
+                p.fade-in It consists in the application of the International Standards on Auditing (ISA) in order to issue an opinion on the reasonableness of the financial statements based on a recognized financial reporting framework: IFRS, US GAAP.
+                h3.fade-in Tax audit:
+                p.fade-in It consists in the execution of verification and analysis procedures of the tax elements of a company or individual and the verification of compliance with their tax obligations before the corresponding Tax Authority, on which an opinion is issued through a tax report.
+                h3.fade-in Fair Value Audit:
+                p.fade-in The objective of this service is to express an independent opinion on the reasonableness of the fair value of a company, brand, product or business line that has been appraised by one of the parties interested in acquiring or selling it to the other.
+                h3.fade-in Audit of Forecasted Financial Statements:
+                p.fade-in Set of procedures that aim to issue an opinion on the reasonableness of the assumptions and hypotheses used to elaborate forecasted financial statements and prospective information considering, among others, the historical figures, market studies and trends.
+                h3.fade-in Anti-money Laundering System Audit:
+                p.fade-in The objective of this service is to issue an opinion on the effectiveness of the AML/CTF System of your organization, as well as to detect its needs and gaps with respect to the regulatory framework (Law 155-17 AML / CFT, decrees, and sectoral regulations) and the risks related to ML/TF to which the organization is exposed; resulting in an audit report of this system and the presentation of its main improvement opportunities.
+                h3.fade-in Agreed-upon Procedures:
+                ul.fade-in
+                    p It comprises the audit work under a specifically required scope in which a report is issued without an opinion on the results found for the exclusive use of the requesting party. Within these services we highlight:
+                    li Analysis of transactions between related parties.
+                    li Review of contract compliance.
+                    li Inventory of goods and/or services.
+                    li Limited review report of financial statements.
+                    li Financial procedures, among others.
+                h3.fade-in Non-Financial Assurance Services.
+                ul.fade-in 
+                    p The objective of this set of services is to express an opinion on the non-financial processes/environment of a company or unit after conducting the necessary review and verification procedures. Among these we highlight:
+                    li Management Audit.
+                    li Operational Audit.
+                    li Quality Management System Audit.
+                    li Business Process Outsourcing (BPO) for Continuous Auditing.
+                    li Evaluation of IT environment.
+                
+            //section.mainStaffEspecializado.fade-in
+                h2 Specialized staff
+                .staffEspecializado__container
+                    +staffEspecializadoEn("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Junior Audit Manager","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializadoEn("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Audit Supervisor","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializadoEn("../../html/capital-humano/capital-humano.html","Indira Jiménez","Audit Manager","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializadoEn("../../html/capital-humano/capital-humano.html","Rafael Mateo","Audit Manager","rafael.webp","Foto de Rafael Mateo")
+
+            section.auditoria__contacto
+                p For more information and request our services
+                a(href="../../html/contacto/contacto.html") Contact us now

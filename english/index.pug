@@ -1,0 +1,323 @@
+extend ../componentes/_plantillaEn.pug
+
+block contenido
+
+        //CONTENIDO PRINCIPAL
+        main.main-container#head
+            a(href="#head")#btnBackToTop
+                span ↑
+            //CARRUSEL PRINCIPAL
+            
+            .main-container__carrusel.animate__animated.animate__fadeIn
+                
+                .slider
+                    //Primer Slide
+                    .slide.active
+                        .main-container__filtroAzul
+                        img(src='/img/slide/slide1.webp' alt='')
+                        .info.animate__animated.animate__fadeInLeftBig
+                            h2.especial Firm of certified public accountants that has been operating since 1983.
+                            p
+                                | We conduct independent, objective, and timely review and assurance processes aligned with international standards and best practices.
+                            
+                            a(href="/english/html/nosotros/quienesSomos.html") MORE INFO
+
+                    //Segundo Slide
+                    .slide
+                        .main-container__filtroAzul
+                        img(src='/img/slide/slide2.webp' alt='')
+                        .info
+                            h2.especial Audit and Assurance
+                            p
+                                |We provide a reliable assessment of the company's overall performance, its processes, and controls, thereby creating value for the development and improvement of your organization.
+                            
+                            a(href="/english/html/servicios/auditoria.html") MORE INFO
+                    
+                    // Tercer Slide
+                    .slide
+                        .main-container__filtroAzul
+                        img(src='/img/slide/slide3.webp' alt='')
+                        .info
+                            h2 Organizational Development
+                            p
+                                | We offer specialized services focused on Organizational Development, which ensure that your strategy and internal resources operate efficiently, harmoniously and organized, allowing your company to adapt to the current and future needs in a planned and controlled manner. 
+                            
+                            a(href="/english/html/servicios/desarrolloOrg.html") MORE INFO
+                    
+                    // Cuarto Slide
+                    .slide
+                        .main-container__filtroAzul
+                        img(src='/img/slide/slide4.webp' alt='')
+                        .info
+                            h2 Client Accounting Services (CAS)
+                            p
+                                | Based on our specialization in accounting and tax matters in the different economic sectors of the country, we provide accounting outsourcing and tax compliance services that guarantees: the quality, reliability and timeliness of the financial information of your organization.
+                            
+                            a(href="/english/html/servicios/impuesto-nomina.html") MORE INFO
+                    
+                    // Quinto Slide
+                    .slide
+                        .main-container__filtroAzul
+                        img(src='/img/slide/slide5.webp' alt='')
+                        .info
+                            h2 Tax Advisory
+                            p
+                                | We provide specialized advisory and tax planning services, as well as defense and the reach of agreements with the regulatory authority, tax compliance and audits on the matter. Our services are based on risk management focused on tax efficiency under due compliance.
+
+                            a(href="/html/servicios/asesoria.html") MORE INFO
+
+                    //Navegación para los slides (Flechas)
+                    .navigation
+                        i.fas.fa-chevron-left.prev-btn
+                            img(src="/icon/1904658_arrow_arrow left_change_direction_left_icon.svg", alt="")
+                        i.fas.fa-chevron-right.next-btn
+                            img(src="/icon/1904671_arrow_arrow right_change_direction_next_icon.svg", alt="")
+                    
+                    //Indicadores de los slides (puntos)
+                    .navigation-visibility.animate__animated.animate__fadeInUpBig
+                        .slide-icon.active
+                        .slide-icon
+                        .slide-icon
+                        .slide-icon
+                        .slide-icon
+                
+                .backButton#btnBaja
+                    a(href="#services") 
+            
+            
+
+            //SERVICIOS
+
+            section.main__servicios#services
+                //h2 Servicios
+                div.servicios__contenedor.fade-in
+                    
+                    h2 Services
+                        .linea
+
+                    //IMPUESTOS
+                    a(href="/html/servicios/impuesto-nomina.html")
+                        img(src="/img/slide/slide4.webp", alt="").servicios__imagen
+                        .servicios__texto
+                            p Client Accounting Services (CAS)
+                    
+                    //AUDITORIA
+                    a(href="/html/servicios/auditoria.html")
+                        img(src="/img/slide/slide2.webp", alt="").servicios__imagen
+                        .servicios__texto
+                            p Audit and Assurance
+                    
+                    //DESARROLLO ORGANIZACIONAL
+                    a(href="./html/servicios/desarrolloOrg.html")
+                        img(src="/img/slide/slide3.webp", alt="").servicios__imagen
+                        .servicios__texto
+                            p Organizational Development
+                    
+                    //ASESORIA FISCAL
+                    a(href="/html/servicios/asesoria.html")
+                        img(src="/img/servicios/Asesoria.webp", alt="").servicios__imagen
+                        .servicios__texto
+                            p Tax Advisory
+
+                    //CONSULTORIA DE NEGOCIOS
+                    a(href="/html/servicios/consultorias-negocios.html")
+                        img(src="/img/servicios/foto-consulto.webp", alt="").servicios__imagen
+                        .servicios__texto
+                            p Business and Financial Consulting
+                    
+                    //PROTECCION PATRIMONIAL
+                    a(href="./html/servicios/proteccion.html")
+                        img(src="/img/servicios/foto-protec.webp", alt="").servicios__imagen
+                        .servicios__texto
+                            p Asset Protection 
+        
+
+
+            //NOTICIAS
+            
+            section.main-container__noticias
+                
+                h2.noticias_titulo News
+                    .linea
+
+                //MIXIN DE NOTICIAS, ESTO CONTROLA TODAS LAS NOTICIAS EN EL DOCUMENTO DE MIXINS.
+                +noticiaPrincipalEn       
+                    
+  
+
+                .noticias__boton
+                    a(href="./html/noticias/noticias.html") 
+                        p SEE MORE
+                        span 
+                            <?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#fff;}</style></defs><title/><g data-name="Layer 2" id="Layer_2"><path class="cls-1" d="M16.88,15.53,7,5.66A1,1,0,0,0,5.59,7.07l9.06,9.06-8.8,8.8a1,1,0,0,0,0,1.41h0a1,1,0,0,0,1.42,0l9.61-9.61A.85.85,0,0,0,16.88,15.53Z"/><path class="cls-1" d="M26.46,15.53,16.58,5.66a1,1,0,0,0-1.41,1.41l9.06,9.06-8.8,8.8a1,1,0,0,0,0,1.41h0a1,1,0,0,0,1.41,0l9.62-9.61A.85.85,0,0,0,26.46,15.53Z"/></g></svg>
+                    
+
+            //SECCIÓN DE BKR
+            section.main-container__respaldo
+                section
+                    //Aquí se muestra información sobre el respaldo de la firma utilizando el mixin "respaldo".
+                    +respaldoEn("servicio.svg","Logo de personas Staff","Specialized Staff", "We permanently prepare courses and seminars for our professionals to keep them updated in order to provide efficient services with the highest quality standards.")
+                    +respaldoEn("bkr.svg   ","Logo BKR International","International support", "MLA is a member of BKR International, an association of audit and business consulting firms located in 81 countries with more than 588 offices around the world.")
+                    +respaldoEn("calidad.svg","Logo de una diana con un dardo","Experts in your Sector","We develop personalized processes for each client based on our experience and the economic sector in which the company operates in order to ensure the efficiency of the organization.")
+            
+            //CAPITAL HUMANO
+            section.main-container__capital-humano
+                // Aquí se muestra información sobre los socios de la firma a través de mixins 'socio'
+                section.capital-humano__container
+                    h2 Team
+                    p We add value to our clients fulfilling the requirements and satisfying their expectations.
+                   
+                    a(href="./html/capital-humano/capital-humano.html") View all
+            
+            //CARRUSEL DE CLIENTES
+            section.main-container__clientes
+                h2.noticias_titulo Clients
+                    .linea
+                div.carousel
+                    div.autoplay
+                        +carruselItem("HM Hotels Logo.webp","Logo de cliente")
+                        +carruselItem("volvo.webp","Logo de Volvo")
+                        +carruselItem("fiat.webp","Logo de cliente")
+                        +carruselItem("saintGeorgeSchool.webp","Logo de cliente")
+                        +carruselItem("W2M logo.webp","Logo de cliente")
+                        +carruselItem("grupoAlonzo.webp","Logo de cliente")
+                        +carruselItem("tribunalConstitucional.webp","Logo de cliente")
+                        +carruselItem("henkel.webp","Logo de cliente")
+                        +carruselItem("majesticColonial.webp","Logo de cliente")
+                        +carruselItem("GSKlogo.webp","Logo de cliente")
+                        +carruselItem("royaltonChicPuntaCana.webp","Logo de cliente")
+                        +carruselItem("breathlessPuntaCana.webp","Logo de cliente")
+                        +carruselItem("h10Hotels.webp","Logo de cliente")
+                        +carruselItem("henriquezSolucionesLogisticas.webp","Logo de cliente")
+                        +carruselItem("majesticElegancePuntaCana.webp","Logo de cliente")
+                        +carruselItem("costaFarm.webp","Logo de cliente")
+                        +carruselItem("oceanBlueySand.webp","Logo de cliente")
+                        +carruselItem("whalaUrbanPuntaCana.webp","Logo de cliente")
+                        +carruselItem("Tropigas.webp","Logo de cliente")
+                        +carruselItem("porche.webp","Logo de cliente")
+                        +carruselItem("hardrockHotelyCasino.webp","Logo de cliente")
+                        +carruselItem("RCD hotels Logo.webp","Logo de cliente")
+                        +carruselItem("inmuebleca.webp","Logo de cliente")
+                        +carruselItem("puntaCanaIberostar.webp","Logo de cliente")
+                        +carruselItem("hondaRentACar.webp","Logo de cliente")
+                        +carruselItem("princessHotels.webp","Logo de cliente")
+                        +carruselItem("scubaQuatic.webp","Logo de cliente")
+                        +carruselItem("bahiaPrincipeHotelsLuxury.webp","Logo de cliente")
+                        +carruselItem("royaltonPuntaCana.webp","Logo de cliente")
+                        +carruselItem("sunscapePuertoPlata.webp","Logo de cliente")
+                        +carruselItem("NTDingredientes.webp","Logo de cliente")
+                        +carruselItem("sanctuaryCapcana.webp","Logo de cliente")
+                        +carruselItem("grandSirenisPuntaCana.webp","Logo de cliente")
+                        +carruselItem("royaltonBavaro.webp","Logo de cliente")
+                        +carruselItem("vistaSolPuntaCana.webp","Logo de cliente")
+                        +carruselItem("farmaciaCarmina.webp","Logo de cliente")
+                        +carruselItem("baxter.webp","Logo de cliente")
+                        +carruselItem("luxuryBahiaPrincipeDonPablo.webp","Logo de cliente")
+                        +carruselItem("expressChange.webp","Logo de cliente")
+                        +carruselItem("mercafrio.webp","Logo de cliente")
+                        +carruselItem("bahiaPrincipeHotels.webp","Logo de cliente")
+                        +carruselItem("Agas.webp","Logo de cliente")
+                        +carruselItem("cayoLevantadoResort.webp","Logo de cliente")
+                        +carruselItem("seaHorseRanch.webp","Logo de cliente")
+                        +carruselItem("coastal.webp","Logo de cliente")
+                        +carruselItem("Posadas Logo.webp","Logo de cliente")
+                        +carruselItem("camaraComercioyProduccion.webp","Logo de cliente")
+                        +carruselItem("energia2000.webp","Logo de cliente")
+                        +carruselItem("fundacionTropigas.webp","Logo de cliente")
+                        +carruselItem("Grupo Martinon logo.webp","Logo de cliente")
+                        +carruselItem("fistaHotel.webp","Logo de cliente")
+                        +carruselItem("bayacao.webp","Logo de cliente")
+                        +carruselItem("liveAquaHotels.webp","Logo de cliente")
+                        +carruselItem("afermegas.webp","Logo de cliente")
+                        +carruselItem("soventix.webp","Logo de cliente")
+                        +carruselItem("sirenisHotels.webp","Logo de cliente")
+                        +carruselItem("LogoGasso.webp","Logo de cliente")
+                        +carruselItem("TCLatinAmerica.webp","Logo de cliente")
+                        +carruselItem("royaltonLuxuryResort.webp","Logo de cliente")
+                        +carruselItem("fundacionPropagas.webp","Logo de cliente")
+                        +carruselItem("hyattZilara.webp","Logo de cliente")
+                        +carruselItem("sampol.webp","Logo de cliente")
+                        +carruselItem("playaNuevaRomana.webp","Logo de cliente")
+                        +carruselItem("casaHemingway.webp","Logo de cliente")
+                        +carruselItem("zoetryAguaPuntaCana.webp","Logo de cliente")
+                        +carruselItem("suplidoraDeCarnes.webp","Logo de cliente")
+                        +carruselItem("pauliGas.webp","Logo de cliente")
+                        +carruselItem("Metrogas.webp","Logo de cliente")
+                        +carruselItem("playaHemingway.webp","Logo de cliente")
+                        +carruselItem("idcConstruccion.webp","Logo de cliente")
+                        +carruselItem("embat.webp","Logo de cliente")
+                        +carruselItem("contactoIdeas.webp","Logo de cliente")
+
+
+                div.carousel
+                    div.autoplay
+                        +carruselItem("natgas.webp","Logo de cliente")
+                        +carruselItem("tanzaniaComercial.webp","Logo de cliente")
+                        +carruselItem("bgHotel.webp","Logo de cliente")
+                        +carruselItem("propaGas.webp","Logo de cliente")
+                        +carruselItem("bahiaPrincipeHotelsGrand.webp","Logo de cliente")
+                        +carruselItem("next.webp","Logo de cliente")
+                        +carruselItem("softland.webp","Logo de cliente")
+                        +carruselItem("puntaCanaPrincess.webp","Logo de cliente")
+                        +carruselItem("blueDiamondResort.webp","Logo de cliente")
+                        +carruselItem("sotech.webp","Logo de cliente")
+                        +carruselItem("pureSaltLuxuryHotels.webp","Logo de cliente")
+                        +carruselItem("bahiaPrincipeHotelsFantasia.webp","Logo de cliente")
+                        +carruselItem("puntaBlancaGolf.webp","Logo de cliente")
+                        +carruselItem("breathlessResort.webp","Logo de cliente")
+                        +carruselItem("drTrade.webp","Logo de cliente")
+                        +carruselItem("solbus.webp","Logo de cliente")
+                        +carruselItem("Coming2.webp","Logo de cliente")
+                        +carruselItem("hugoPork.webp","Logo de cliente")
+                        +carruselItem("dreamsOnyscResort.webp","Logo de cliente")
+                        +carruselItem("whalaBavaro.webp","Logo de cliente")
+                        +carruselItem("alCappuccino.webp","Logo de cliente")
+                        +carruselItem("Aloft Santo Domingo.webp","Logo de cliente")
+                        +carruselItem("majesticMiragePuntaCana.webp","Logo de cliente")
+                        +carruselItem("grumasa.webp","Logo de cliente")
+                        +carruselItem("hyattZilaraHyattZiva.webp","Logo de cliente")
+                        +carruselItem("naturaParkBeach.webp","Logo de cliente")
+                        +carruselItem("elPalmarAgroindustrial.webp","Logo de cliente")
+                        +carruselItem("cosancaTransporte.webp","Logo de cliente")
+                        +carruselItem("case.webp","Logo de cliente")
+                        +carruselItem("transgas.webp","Logo de cliente")
+                        +carruselItem("honda.webp","Logo de cliente")
+                        +carruselItem("iberostate.webp","Logo de cliente")
+                        +carruselItem("coave.webp","Logo de cliente")
+                        +carruselItem("plasticosDelCaribe.webp","Logo de cliente")
+                        +carruselItem("dreamsFloraResort.webp","Logo de cliente")
+                        +carruselItem("grandBavaroPrincess.webp","Logo de cliente")
+                        +carruselItem("alfaRomeo.webp","Logo de cliente")
+                        +carruselItem("edenRocCapCana.webp","Logo de cliente")
+                        +carruselItem("grandPalladium.webp","Logo de cliente")
+                        +carruselItem("secretsRoyalBeach.webp","Logo de cliente")
+                        +carruselItem("enso.webp","Logo de cliente")
+                        +carruselItem("whalaBayahibe.webp","Logo de cliente")
+                        +carruselItem("tropinsa.webp","Logo de cliente")
+                        +carruselItem("caribeDeluxePrinces.webp","Logo de cliente")
+                        +carruselItem("secretsResort.webp","Logo de cliente")
+                        +carruselItem("oceanElFaro.webp","Logo de cliente")
+                        +carruselItem("steeltec.webp","Logo de cliente")
+                        +carruselItem("tropicalDeluxePrincess.webp","Logo de cliente")
+                        +carruselItem("haciendaDominicus.webp","Logo de cliente")
+                        +carruselItem("dominicanaIberostar.webp","Logo de cliente")
+                        +carruselItem("dipsa.webp","Logo de cliente")
+                        +carruselItem("autotecnigas.webp","Logo de cliente")
+                        +carruselItem("fuerteGroupHotels.webp","Logo de cliente")
+                        +carruselItem("coralLevelBavaro.webp","Logo de cliente")
+                        +carruselItem("peynadoGA.webp","Logo de cliente")
+                        +carruselItem("marti.webp","Logo de cliente")
+                        +carruselItem("costaDoradaIberostar.webp","Logo de cliente")
+                        +carruselItem("bepensa.webp","Logo de cliente")
+                        +carruselItem("motoNeo.webp","Logo de cliente")
+                        +carruselItem("turiscar.webp","Logo de cliente")
+                        +carruselItem("insotel.webp","Logo de cliente")
+
+
+
+            //MAPA
+            section.main-container__mapa
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d473.09774136335295!2d-69.9549795556712!3d18.44820775376078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea5621e1e54cfff%3A0x70cbf5dd68314e49!2sMLA-%20Mejia%20Lora%20%26%20Asociados%20-%20Auditores!5e0!3m2!1ses-419!2sdo!4v1683561275739!5m2!1ses-419!2sdo" title="ubicacion" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Ubicacion</iframe>
+
+block javaScript
+    script(src="/script.js")

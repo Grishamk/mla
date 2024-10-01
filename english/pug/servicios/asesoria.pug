@@ -1,0 +1,64 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+
+        main
+            section.encabezado__auditoria
+                picture
+                    img(src="../../../img/servicios/Asesoria.webp", alt="Foto de analisis digital en tablet")
+                .encabezado__titular
+                    h2 Tax advice
+
+                p We provide specialized advisory services from the perspective of reducing risks and tax contingencies, recommending carrying out due process. We provide our clients with services related to the preparation and presentation of their tax reports with the goal of achieving an accurate and timely presentation.
+                p In the same order, we assist our clients in managing compliance with their formal duties and responsibilities as taxpayers, whether in periodic monthly or annual obligations. We are subject to principles of responsible tax practice that establish fundamental ethical conduct.
+
+
+            section.asesoria__servicios.fade-in
+                strong Tax advisory services include:
+                h3 Tax Advisory:
+                ul.fade-in
+                    li Comprehensive tax advisory
+                    li Specialized advisory on Mergers and Acquisitions.
+                    li Tax exemption agreements.
+                    li Tax-pension planning: Tax analysis on new investments; Advice on the search for tax savings.
+                    li Tax planning: We assist companies in the analysis and restructuring of their internal tax functions, in order to make them more efficient and effective in the management of their tax responsibilities and proper compliance with tax obligations.
+                h3 Tax Consulting:
+                ul.fade-in
+                    li Representation and advice on requirements made by regulatory bodies.
+                    li Representation and preparation of general requests before the Tax Administration.
+                    li Appeal the resolutions issued by the regulatory bodies.
+                    li Preparation of appeals for reconsideration.
+                    li Appeals before the Contentious Tax and Administrative Court.
+                    li Business incorporation. Updates of the Mercantile Registry and the National Taxpayers Registry.
+                    li Review of tax credits.
+                    li Analysis of national and international legislation. Analysis and answers to specific tax issues.
+                h3 Due diligence
+                p Review focused on the reasonableness of figures and validation of the fiscal situation of commercial entities.
+                h3.espacio.fade-in Defense in tax  inspections
+                h3.espacio.fade-in Property taxes
+                h3.espacio.fade-in National and international tax planning
+                h3 Transfer pricing:
+                p Preparation of studies aimed at ratifying compliance with comparability in the prices agreed with related parties. Preparation of statements of information on transactions with related parties.
+                h3 Preparation and/or review of tax filings and forms
+                ul.fade-in
+                    li Review and guidance on the approach of corporate tax returns, filings and forms.
+                    li Preparation of annual and monthly tax returns, filings and forms.
+                    li Tax review, detection of errors and validation of differences in own statements and with third parties.
+                    li Regulatory tax and pension regimes, payment facilities, etc.
+                  
+                h3.fade-in Inheritance Tax
+
+            //section.mainStaffEspecializado.fade-in
+                h2 Staff Especializado
+                .staffEspecializado__container
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
+            
+            section.auditoria__contacto.fade-in
+                p For more information and request our services
+                a(href="../../html/contacto/contacto.html") Contact us now

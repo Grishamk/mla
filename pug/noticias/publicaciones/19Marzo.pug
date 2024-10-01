@@ -1,0 +1,25 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/19marzo.webp", alt="Background de la noticia")
+                    h2 DISPONIBILIDAD PARA PRESENTACIÓN DECLARACIÓN JURADA ANUAL AGENTE DE RETENCIÓN ASALARIADOS (IR-13)
+            
+            section.publicacion__content
+                p 19 de marzo de 2024
+                
+                div
+                    p La Dirección General de Impuestos Internos (DGII) ha informado que la Declaración Jurada Anual del Agente de Retención de Asalariados (IR-13) estará disponible para su presentación del 14 al 27 de marzo de 2024.
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal
+

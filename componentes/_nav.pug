@@ -1,0 +1,146 @@
+header#mi-barra.animate__animated.animate__fadeInDown
+    nav.nav-container
+        a.logo-container(href="/index.html")
+            img(src="/img/assets/logo2.webp" alt="Logo Mejía Lora y Asociados")
+
+        div.nav-container__menu
+            label(for="menu").nav-label
+                img(src="/icon/menu.svg", alt="menu hamburguesa")
+                                
+            input(type="checkbox" id="menu").nav-input
+            
+            div.nav-movil
+                label(for="menu").nav-label
+                    img(src="/icon/close.svg", alt="Cerrar menu hamburguesa")                
+                input(type="checkbox" id="menu").nav-input
+                
+                ul
+                    
+                    li
+                        a(href="/index.html") Inicio
+                    
+                    //NOSOTROS
+                    li
+                        li
+                            a(href="/html/nosotros/quienesSomos.html").noDisplay Nosotros
+                            p.Display#nosotros Nosotros
+                            ul.toggle__nosotros.mobile-hidden
+                                li
+                                    a(href="/html/nosotros/quienesSomos.html") Quienes Somos
+                                
+                                li
+                                    a(href="/html/nosotros/registros.html") Registros y Membresía
+                                li
+                                    a(href="/html/nosotros/responsabilidadSoc.html") Responsabilidad Social
+                                
+                                li 
+                                    a(href="/html/nosotros/certificaciones.html") Certificaciones 
+
+                    //SERVICIOS
+                    li 
+                        li
+                            a(href="./html/servicios/auditoria.html").noDisplay Servicios
+                            p.Display#servicios Servicios
+                            ul.toggle__servicios.mobile-hidden
+                                li
+                                    a(href="/html/servicios/auditoria.html") Auditoría
+                                li
+                                    a(href="/html/servicios/asesoria.html") Asesoría Fiscal
+                                li
+                                    a(href="/html/servicios/impuesto-nomina.html") Impuesto - Nómina - Contabilidad
+                                li 
+                                    a(href="/html/servicios/consultorias-negocios.html") Consultoría de Negocios y Financiera
+                                li 
+                                    a(href="/html/servicios/desarrolloOrg.html") Desarrollo Organizacional
+                                li 
+                                    a(href="/html/servicios/proteccion.html") Protección Patrimonial
+                        
+                    
+                    //NOVEDADES
+                    li
+                        li
+                            a(href="/html/noticias/noticias.html").noDisplay Novedades
+                            p.Display#novedades Novedades
+                            ul.toggle__novedades.mobile-hidden
+                                li
+                                    a(href="/html/noticias/noticias.html") Avisos
+                                li
+                                    a(href="/html/noticias/boletines.html") Noticias y Boletines
+                        
+
+                    //CAPITAL HUMANO    
+                    li
+                        a(href="/html/capital-humano/capital-humano.html") Staff
+                    
+                    
+                    //CONTACTO
+                    li
+                        a(href="/html/contacto/contacto.html") Contacto
+                    
+                    //Boton para traducir la página
+                    li 
+                        a(href="/english/index.html") ENGLISH VERSION
+                    
+                
+                
+
+
+        //BARRA DE NAVEGACION
+        .nav-container__navbar
+            ul
+                li 
+                    a(href="/index.html") Inicio
+
+                //  a(href="/index.html") Inicio
+
+                //NOSOTROS
+                li
+                    a(href="/html/nosotros/quienesSomos.html") Nosotros
+                    ul.toggle__nosotros
+                        li
+                            a(href="/html/nosotros/quienesSomos.html") Quienes Somos
+                        
+                        li
+                            a(href="/html/nosotros/registros.html") Registros y Membresía
+                        li
+                            a(href="/html/nosotros/responsabilidadSoc.html") Responsabilidad Social
+                        
+                        li 
+                            a(href="/html/nosotros/certificaciones.html") Certificaciones 
+                
+                //SERVICIOS
+                li
+                    a(href="/html/servicios/auditoria.html") Servicios
+                    ul.toggle__servicios
+                        li
+                            a(href="/html/servicios/auditoria.html") Auditoría
+                        li
+                            a(href="/html/servicios/asesoria.html") Asesoría Fiscal
+                        li
+                            a(href="/html/servicios/impuesto-nomina.html") Impuesto - Nómina - Contabilidad
+                        li 
+                            a(href="/html/servicios/consultorias-negocios.html") Consultoría de Negocios y Financiera
+                        li 
+                            a(href="/html/servicios/desarrolloOrg.html") Desarrollo Organizacional
+                        li 
+                            a(href="/html/servicios/proteccion.html") Protección Patrimonial
+                
+                //NOVEDADES
+                li
+                    a(href="/html/noticias/noticias.html") Novedades
+                    ul.toggle__novedades
+                        li
+                            a(href="/html/noticias/noticias.html") Avisos
+                        li
+                            a(href="/html/noticias/boletines.html") Noticias y Boletines
+
+
+                //CAPITAL HUMANO    
+                li
+                    a(href="/html/capital-humano/capital-humano.html") Staff
+                
+                //CONTACTO
+                li
+                    a(href="/html/contacto/contacto.html") Contacto
+        
+            a(href="/english/index.html").boton  ENGLISH

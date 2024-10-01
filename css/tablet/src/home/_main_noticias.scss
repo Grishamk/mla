@@ -1,0 +1,124 @@
+.main-container__noticias {
+    @include wH(100%, null);
+    color: $colorLetra2;
+    background-color: $colorPrincipal;
+    @include flexRule(column,null,center);
+    padding: 80px 24px;
+
+    h2.noticias_titulo{
+        width: 100%;
+        font-size: 3.2rem;
+        justify-self: flex-start;
+        margin-bottom: 60px;
+        color: $colorLetra1;
+        margin-left: 80px;
+
+        .linea{
+            @include wH(150px,4px);
+            background-color: $colorCuaternario;
+            border-radius: 0 0 8px 0;
+            @include boxShadowLite;
+        }
+    }
+      
+    .noticias__container{
+        width: 100%;
+        @include flexRule(row,center);
+        flex-wrap: wrap;
+        gap: 36px;
+
+        .escondete{
+            display: none;
+        }
+        a{
+            text-decoration: none;
+            color: $colorLetra2;
+        
+            .noticia__item{
+                background-color: $colorTerciario;
+                @include wH(300px, 450px);
+                @include boxShadow();
+                color: $colorLetra2;
+                border-radius: 8px;
+                
+                picture{
+                    width: 100%;
+                    @include flexRule(null,center,center);
+                    padding: 15px 15px 8px;
+                    
+    
+                    img{
+                        width: 100%;
+                        border-radius: 6px 6px 0 0;
+                    }
+                }
+    
+                .noticia__contenido{
+                    padding: 8px 15px;
+                    @include flexRule(column);
+                    .titulo{
+                        height: 100px;
+                        @include flexRule(column);
+                        h2{
+                            font-size: 1.6rem;
+                            margin-bottom: 16px;
+                            font-weight: 500;
+                            color: $colorLetra2;
+                        }
+        
+                        .fecha{
+                            margin-bottom: 16px;
+                            font-size: 1.4rem;
+                            justify-self: flex-end;
+                        }
+                    }
+                }
+    
+                .noticia__enlace{
+                    padding: 15px;
+                    @include flexRule(null,flex-end,center);
+    
+                    a{
+                        color: $colorLetra2;
+                        text-decoration: none;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        @include flexRule(null,null,center);
+    
+                        span{
+                            @include wH(32px, 32px);
+                            margin-left: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .noticias__boton{
+        margin-top: 40px;
+
+        a {
+            @include wH(164px, 40px);
+            background: $colorTerciario;
+            text-decoration: none;
+            color: $colorLetra2;
+            font-weight: 300;
+            border-radius: 4px;
+            font-size: 1.4rem;
+            @include flexRule(null,center,center);
+            gap: 12px;
+            @include boxShadow();
+
+            span{
+                @include wH(16px, 40px);
+                @include flexRule(null,center,center);
+            }
+
+            p{
+                font-weight: 700;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,27 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/FEB7.webp", alt="Background de la noticia")
+                    h2 FECHA LÍMITE PRESENTACIÓN IR-13
+            
+            section.publicacion__content
+                p 07 de febrero de 2024
+                
+                div
+                    p Les recordamos que la fecha límite de presentación de la Declaración Jurada Anual Retenciones a Empleados (IR-13) es el 15 de marzo 2024.
+
+
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

@@ -1,0 +1,98 @@
+extend ../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+ 
+        main
+            section.encabezado__capital
+                picture
+                    img(src="../../img/servicios/DO3.webp", alt="Foto de una Lupa analizando un documento")
+                .encabezado__titular
+                    h2 Capital Humano
+
+                p Somos una Firma compuesta con más de 70 profesionales altamente calificados y con diferentes especialidades, comprometidos en ofrecer servicios de calidad. Nuestro principal activo y el factor clave del éxito es nuetro capital humano, es por ello por lo que nuestra Firma mantiene un sistema de gestión de talentos enfocado en altos estándares de contratación, entrenamiento y capacitación del personal. En cada proyecto, nos enfocamos en comprender los retos que enfrentan nuestros clientes y desarrollar soluciones prácticas que agreguen valor a su negocio.
+                p Si deseas ser parte de nuestra familia:
+                    a(href="../../html/capital-humano/trabaja-nosotros.html") Click aquí
+
+            section.capital__staff.fade-in
+                //h2.staff__title Capital Humano
+                .staff__text 
+                    p staff
+                section.staff__container 
+                    
+                    article.staff__raymi.fade-in
+                        picture: img(src="../../img/staff/reymi-mejia-1.webp" alt="Lic. Raymi Mejía")
+                        div
+                            h2 Raymi Mejía - Socio
+                            p Licenciado en Contabilidad egresado de Contaduría Pública de la Universidad INTEC, con especialización en Planificación Tributaria Internacional con doble titulación de la Universidad de San Francisco y Aden Business School, además cuenta con varias especializaciones en Administración de Empresas, Impuestos, IFRS, Normas Internacionales de Auditoría y participación continua en y seminarios internacionales.
+                            ul
+                                p El Sr. Mejía tiene más de 30 años de práctica; han formado parte de varios directorios, tales como:
+                                li BKR International (quinta asociación más grande de contabilidad y consultoría a nivel mundial), donde ha sido miembro de la Junta durante los últimos 10 años, incluido el Presidente y Vicepresidente para la Región de las Américas (EE. UU., Canadá y Latam), actualmente Miembro de la Junta Mundial .
+                                li Ex miembro del Directorio de Grupo Apec; incluido el presidente del comité de auditoría.
+                                li Ex miembro de la Junta de Asesores de Saint George School.
+                                li Primer Vicepresidente de la Asociación de Contadores Públicos Certificados (AFCPA).
+                                li  Ex miembro de varios comités del Instituto de Contadores Públicos Autorizados de la República Dominicana (ICPARD).
+                            p El Sr. Mejía también es miembro de la Asociación Internacional de Contadores, de la Asociación Nacional de Jóvenes Empresarios (ANJE), International Fiscal Association (IFA), Asociación Tributaria de la República Dominicana (ATRIRD) y miembro fundador del Consejo Nacional de Asesores Impositivos (CONACI – Consejo Nacional de Asesores Fiscales).
+                            p.separate Cuenta con amplia experiencia en el sector hotelero y proyectos inmobiliarios, ha participado en auditorías y asesorías fiscales para las principales cadenas hoteleras internacionales que operan en el país. También se ha desempeñado como asesor en las negociaciones de Contratos de Precios de Transferencia y Acuerdos Anticipados de Precios entre la Asociación Nacional de Hoteles y Restaurantes (ASONAHORES) y la Dirección General de Impuestos Internos (DGII-IRS).
+                    
+                    //Firelli Mejía
+                    +staffElement("firelli.webp","Lic. Firelli Mejía","Firelli Mejía - Socio","Licenciada en Contabilidad Egresada de la Universidad INTEC, con especialización en Planificación Tributaria Internacional con doble titulación de la Universidad de San Francisco de Estados Unidos y Aden Business School, con Postgrado en Finanzas Corporativas (INTEC). Licenciada en Artes, ha realizado diversos cursos y seminarios nacionales e internacionales en instituciones como: Worldwide meeting of BKR International, IFA Congress of International Fiscal Association, ADEN Business School. Cuenta con certificación Antilavado (AMLCA) por FIBA-FIU.","30 años de experiencia en Auditoria, Outsourcing de Contabilidad e Impuestos, así como asesorías en Desarrollo organizacional, Dirección de auditoria interna, entre otras. Miembro ejecutivo de: International Fiscal Association (IFA), Asociación Tributaria de la República Dominicana (ATRIRD), Instituto Contadores Públicos Autorizados (ICPARD), Consejo Nacional de Asesores Impositivos (CONACI), la Asociación Nacional de Jóvenes Empresarios (ANJE).","Cuenta con experiencia en el área de la docencia a nivel profesional y ha fungido como expositora en diversas charlas. Ha participado como cooperadora con la Dirección General de Impuestos Internos en la elaboración del Manual Tributario de la Republica Dominicana 2011. Ha brindado sus servicios a importantes empresas del sector retail, construcción, inmobiliarias, restaurantes, cooperativas, gubernamental, fundaciones e instituciones sin fines de lucro, manufactura, sector agropecuario, seguros, IT, entre otros.","separate")
+                    
+                    //Sayka Mejía
+                    +staffElement("sayka-mejia-1.webp","Lic. Sayka Mejía","Sayka Mejía - Socio","Licenciada en Contabilidad Egresada de la Universidad INTEC, con especialización en Planificación Tributaria Internacional con doble titulación de la Universidad de San Francisco de Estados Unidos y Aden Business School, con Postgrado en Finanzas Corporativas de la Universidad Pontificia Madre y Maestra (PUCMM). Cuenta con certificación Antilavado (AMLCA) por FIBA-FIU.","Mas de 25 años de experiencia en Auditoria, asesora a clientes en: asuntos corporativos, asesoría estratégica de negocios, financieros e impositivos. Presidenta del International Fiscal Association (IFA) Branch en Republica Dominicana, Miembro ejecutivo de: Asociación Tributaria de la República Dominicana (ATRIRD), Instituto Contadores Públicos Autorizados (ICPARD), Consejo Nacional de Asesores Impositivos (CONACI), la Asociación Nacional de Jóvenes Empresarios (ANJE).","Ha fungido como docente a nivel profesional, ha estado a cargo de importantes auditorías a empresas de diferentes sectores: retail, agencias de cambio, sector inmobiliario, construcción, servicios, importación, fundaciones e instituciones sin fines de lucro, publicitarias, manufacturas, sector vehículos Combustible (importación, distribución, transporte), entre otros.","separate")
+                    
+                    //José Mejía
+                    +staffElement("jose-mejia-1.webp","Lic. José Mejía","José Mejíá - Socio Fundador","Licenciado en Contabilidad. Socio fundador de la oficina de Mejía Lora & Asociados, con más de 40 años de experiencia en el área de auditoria, Outsourcing de Contabilidad e impuestos. En su desarrollo laboral ha ocupado distintas posiciones que le han permitido acumular una gran experiencia y habilidad para ser hoy un gran consultor financiero, se destaca por sus labores gerenciales en el área de Consultoría e Impuestos. Posee numerosos años de docencia impartida en la Universidad Autónoma de Santo Domingo (UASD), fue profesor de la Facultad de Ciencias Económicas en las materias de: Sistemas de Contabilidad, Contabilidad de Costos y Contabilidad Avanzada.","","","separate")
+                    
+                    //Adelaida Ortega
+                    +staffElement("Adelaida-Ortega-1.webp","Lic. Adelaida Ortega","Adelaida Ortega - Gerente Fundador","Administradora, más de 30 años de experiencia en administración de empresas, se destaca por sus labores gerenciales administrativas en Mejia Lora & Asociados.","","","separate")
+                    
+                    //Ana Gonzalez
+                    +staffElement("anaGonzalez.webp","Lic. Ana González","Ana González - Gerente de Impuestos","Licenciada en Contabilidad, Maestrías en Administración Financiera, Administración de Empresas (MBA), Project Management y Comercio Internacional, cursadas en universidades locales y de España. Con más de 20 años de experiencia en Auditoría, Contabilidad e Impuestos. Posee estudios y especializaciones en materia fiscal, Normas Internacionales de Auditoría (NIAS) y Normas Internacionales de Información Financiera (NIIF). Ha participado en diversos congresos tributarios, tanto locales como internacionales, entre los que destacan los auspiciados por la International Fiscal Association (IFA).","","","separate")
+                    
+                    //Lizandro Gonzalez
+                    +staffElement("lisandro.webp","Lic. Lisandro González","Lisandro González - Gerente Junior de Impuestos", "Durante su ejercicio profesional ha logrado acumular una experiencia ininterrumpida de más de 14 años en el área tributaria, destacándose en trabajos especializados como procesos de fiscalización, transparencias patrimoniales, procedimientos convenidos, recursos de reconsideración, evaluaciones relacionadas a acogencias en procesos de amnistía y acuerdos especiales, así como representación de los clientes en procesos relacionados con la Administración Tributaria. Licenciado en Contaduría Pública (Cum laude) certificado como Consultor Tributario (CTC) por la Asociación Tributaria de la República Dominicana (ATRIRD), especialidad en Normas Internacionales de Información Financiera (NIIF), se encuentra en término de la Maestría en Contabilidad Tributaria de la Universidad Autónoma de Santo Domingo (UASD). Además, ha participado en diversos congresos tributarios tanto locales como internacionales entre los que destacan los auspiciados por la International Fiscal Association (IFA).","","","separate")
+                    
+                    //Mauricio Rodríguez
+                    +staffElement("mauricio.webp","Ing. Mauricio Rodríguez","Mauricio Rodríguez - Gerente de Desarrollo Organizacional", "Ingeniero de Organización Industrial y MBA en Dirección General De Empresas, ambas cursadas en España y una certificación internacional como Project Management Professional, más de 14 años de experiencia en consultoría de negocio relacionada a métodos y organización, modelos financieros, gestión de riesgos y auditoria interna. Posee estudios y especializaciones en Proyectos, Entrepreneurship, planificación estratégica, indicadores, controles internos, creación y desarrollo de negocios, entre otros.","","","separate")
+                    
+                    //Nallil Rodríguez
+                    +staffElement("nallil.webp","Lic. Nallil Rodríguez","Nallil Rodríguez - Gerente de Auditoria","Licenciada en Contabilidad, más de 10 años de experiencia en contabilidad, auditoría e impuestos destacándose en las áreas de hidrocarburos, hotelería y turismo y servicios. Miembro del comité científico de la Asociación Tributaria de la República Dominicana (ATRIRD) y represéntate del Young IFA Network en el país de la International Fiscal Association (IFA). Con especializaciones en Normas Internacionales de auditoría (NIA) Y de Información Financiera (NIIF) Consultora Tributaria Certificada (CTC).","","","separate")
+                    
+                    //Rafael Mateo
+                    +staffElement("rafael.webp","Lic. Rafael Mateo","Rafael Mateo - Gerente de Auditoria","Licenciado en Contabilidad, con maestría en Administración Financiera de la Universidad APEC. Más de 18 años de experiencia en auditoría externa, incluyendo más de 7 años como gerente de auditoria en firma reconocida del país. Ha realizado diplomados y cursos en Normas Internacionales de Información Financiera (NIIF) y Normas Internacionales de Auditoria (NIA), entre otros.","","","separate")
+                    
+                    //Sandra de los Santos
+                    +staffElement("sandra.webp","Lic. Sandra de los Santos","Sandra de los Santos - Gerente de Gestión Humana","Durante su ejercicio profesional en Psicología Industrial ha logrado acumular una experiencia de más de 15 años en el sector comercial, de servicio y gubernamental. Posee estudios y especializaciones en Magister en Recursos Humanos y MBA Dirección Estratégica de Recursos, Auditor Interno de la Norma ISO 9001:2015, Igualdad de Género (G:38) y Responsabilidad Social.","","","separate")
+                    
+                    //Rikelvin Jimenez
+                    +staffElement("rikelvin.webp","Lic. Rikelvin Jimenez","Rikelvin Jimenez - Gerente de Tecnología","Licenciado en Informática, con más de 18 años de experiencia en el área de tecnología, capacitado para la administración de infraestructura y la implementación de nuevas tecnologías ajustada al entorno empresarial. Posee experiencia en las áreas de Seguridad de la información, Administración de base datos, redes de datos, Virtualización, administración de servidores, administración de soluciones Endpoint, Firewall e implementación de sistemas ERP.","","","separate")
+                    
+                    //María Curiel
+                    +staffElement("maria.webp","Lic. María Curiel","María Curiel - Encargada de Recursos Humanos","Licenciada en Derecho, con más de 10 años de experiencia en el área de recursos humanos. Posee estudios y especialización en Gestión de Los Recursos Humanos. Diplomados en Gestión del Desempeño Organizacional, Legislación Laboral, Auditor Interno norma ISO 9001:2015. Desarrollo de Habilidades Gerenciales, Evaluación y descripciones de puestos.","","","separate")
+                    
+                    //Wilmarys Ledezma
+                    +staffElement("wilmarys.webp","Lic. Wilmarys Ledezma","Wilmarys Ledezma - Encargada del Sistema de Gestión de Calidad y Servicio al Cliente","Licenciada en Contaduría Pública, Abogado, se encuentra cursando Maestría en Alta Gerencia, certificado como Auditor Líder bajo la Norma ISO 9001:2015. Más de 8 años de experiencia en auditoría interna, desarrollo organizacional, planificación estratégica, gestión de riesgos y oportunidades, medición a través de indicadores de desempeño (KPI`s). Posee estudios y diplomado en sistemas de gestión de calidad en ISO 9001:2015 y lavado de activos y financiamiento al terrorismo.","","","separate")
+                    
+                    //Wilkyns Ruiz
+                    +staffElement("wilkyns.webp","Lic. Wilkyns Ruiz", "Wilkyns Ruiz - Encargado de Tecnología","Licenciado en Informática, más de 17 años de experiencia en el área de Tecnología, experiencia en el área contable y sistemas. Posee estudios y especializaciones en seminario sobre Seguridad, Big Data, Auditoria de Sistemas y Business Intelligence (BI), Servidores, Implementación de sistemas, Programacion Orientada a Objetos (POO) y Bases de Datos.","","","separate")
+                    
+                    //Alba Vásquez
+                    +staffElement("alba.webp","Lic. Alba Vásquez","Alba Vásquez - Encargada de Precio de Transferencia","Licenciada en Contabilidad y Auditoría, con más de 5 años de experiencia en el área de Precio de Transferencia e Impuestos. Posee estudios y especializaciones en Gestión de Proyectos y Liderazgo. Durante su trayectoria profesional ha ocupado posiciones en firmas internacionales que forman parte de las “Big Four”.","","","separate")
+                    
+                    //Yohanna Herrera
+                    +staffElement("yohanna.webp","Lic. Yohanna Herrera","Yohanna Herrera - Supervisora de Impuestos","Licenciada en contabilidad, con más de 7 años de experiencia en contabilidad e impuestos, así como una Maestría en Contabilidad Tributaria. Diplomados en Administración Financiera, Contabilidad por Igualas y Gestión Documental, además de poseer un alto conocimiento y experiencia en el cumplimiento de las Normativas Fiscales vigentes.","","","separate")
+                    
+                    //Jenniffer Ventura
+                    +staffElement("jenniffer.webp","Lic. Jenniffer Ventura Soto","Jenniffer Ventura Soto - Supervisora de Impuestos","Licenciada en contabilidad, con más de 10 años de experiencia en contabilidad e impuestos, Consultor Tributario Certificado, con una Maestría en curso en Administración Financiera. Diplomados en Impuestos Corporativos y Normas Impositivas, Posee un alto conocimiento y experiencia en el cumplimiento de las Normativas Fiscales vigentes y Precio de Transferencia.","","","separate")
+                    
+                    //Indira Jiménez
+                    +staffElement("indira.webp","Lic. Indira Jiménez","Indira Jiménez - Gerente de Auditoría","Licenciada en contabilidad y auditoría, con más de 17 años de experiencia en el área financiera, auditoria forense, contabilidad, impuestos. Posee estudios y especializaciones en Diplomado competencias profesionales, Destrezas gerenciales, liderazgo, Cultura de servicios, trabajo en equipo, entre otros.","","","separate")
+                    
+                    //Aminta Rodriguez
+                    +staffElement("aminta.webp","Lic. Aminta Rodríguez","Aminta Rodríguez - Supervisora de Auditoria", "Licenciada en Contaduría Pública, Postgrado en Administración Financiera y Maestría en Gerencia y Productividad, más de 27 años de experiencia en el área financiera, auditoria externa, contabilidad. Posee estudios y especializaciones en Diplomados en Normas internacionales de Información Financiera y Normas Internacionales de Auditoria, Impuestos a la Transferencia de Bienes Industrializados y Servicios, Gerencia de Proyecto, Liderazgo y Supervisión, entre otros.","","","separate")
+                    
+                    //Magnelli Montero
+                    +staffElement("Magnelli.webp","Lic. Magnelli Montero", "Magnelli Montero - Supervisora de Auditoria", "Licenciada en contabilidad y Maestría en Administracion Financiera. Posee más de 15 años de experiencia en el área de auditoría financiera dentro del sector combustible, hotelero, entre otros, además de conocimientos en contabilidad e impuestos, con estudios y especializaciones en Normas Internacionales de Información Financiera (NIIF) y Diplomado en Alta Gerencia.","","","separate")

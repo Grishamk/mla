@@ -1,0 +1,27 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/FEB6.webp", alt="Background de la noticia")
+                    h2 VENCIMIENTO PLAZO DE IMPLEMENTACIÓN FACTURACIÓN ELECTRONICA
+            
+            section.publicacion__content
+                p 06 de febrero de 2024
+                
+                div
+                    p De acuerdo a lo establecido en el Aviso 08-23 publicado por la Dirección General de Impuestos Internos (DGII), el plazo otorgado a los Grandes Contribuyentes Nacionales para la implementación de la facturación electronica corresponde al 15 de marzo de 2024 - Grupo 2 está próximo a vencer.
+
+
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

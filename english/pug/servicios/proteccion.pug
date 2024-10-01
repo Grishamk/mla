@@ -1,0 +1,36 @@
+extend ../../../componentes/_plantillaEn.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+ 
+        main
+            section.encabezado
+                section.proteccion__encabezado
+                    div
+                        h2 Asset Protection
+                    
+            
+                section.proteccion__enfoque
+                    picture
+                        img(src="../../../img/servicios/foto-protec.webp", alt="Hablando de negocios")
+                    article
+                        strong  We advise on the processes aimed at safeguarding personal and family assets, through a set of procedures designed to prevent eventualities that affects the stability and equity continuity of an organization.
+                        p We issue an expert opinion on wealth management matters; specifically in legal, financial, tax and accounting areas. These services include, among others, advice to organizations of:
+                        ul
+                            li Trusts
+                            li Private Interest Foundation
+                            li Others
+
+            //section.mainStaffEspecializado.fade-in
+                h2 Staff Especializado
+                .staffEspecializado__container
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
+
+            section.auditoria__contacto.fade-in
+                p For more information and request our services
+                a(href="../../html/contacto/contacto.html") Contact us now

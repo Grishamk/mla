@@ -1,0 +1,41 @@
+extend ../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+ 
+        main
+            section.encabezado__impuesto
+                picture
+                    img(src="../../img/servicios/impuesto.webp", alt="Foto de analisis digital en tablet")
+                .encabezado__titular
+                    h2 Impuestos - Nómina - Contabilidad
+
+                p Nuestro objetivo está orientado a prestar servicios de Outsourcing (tercerización) de procesos financieros, contables y tributarios, permitiendo que nuestros clientes puedan concentrar sus esfuerzos en incrementar la comercialización de sus productos o servicios, la eficiencia de sus procesos y el logro de las metas establecidas.
+                p Mediante la base de nuestra especialización en materia contable y fiscal en los diferentes sectores económicos del país, brindamos servicios que garanticen la calidad, confiabilidad y oportunidad de las informaciones financieras, contables y el cumplimiento fiscal de su organización, usando una metodología bajo las mejores prácticas internacionales.
+            
+
+
+            section.imp__servicios.fade-in
+                strong.fade-in Efectuamos nuestro trabajo de acuerdo con las Normas Internacionales de Información Financiera y de Contabilidad aplicables. Los servicios de TPA abarcan:
+                h3.fade-in Asesoramiento y revisión de registros contables y fiscales:
+                p.fade-in Su finalidad es mantener un registro ordenado y sistemático de todas las transacciones comerciales que realicen nuestros clientes, validando la razonabilidad de las cifras a través de los soportes suministrados y elaboración de análisis y cruces fiscales.
+                h3.fade-in Informes y compilación de estados financieros:
+                p.fade-in Tiene como propósito reunir, clasificar y resumir en forma de Estados Financieros la información que surge del sistema contable de la empresa, así como la elaboración de la Declaración Jurada Anual de Sociedades y evaluación de riesgos fiscales sobre las operaciones realizadas.
+                h3.fade-in Outsourcing Contable:
+                p.fade-in Consiste en el proceso de registrar, clasificar y resumir la información de cada una de las transacciones efectuadas por la empresa.
+                h3.fade-in Impuestos y nóminas:
+                p.fade-in Abarcan la elaboración y/o revisión de los impuestos y nóminas mensuales, actualizaciones de cambios en el portal del SuirPlus en la Tesorería de la Seguridad Social (TSS).
+
+            //section.mainStaffEspecializado.fade-in
+                h2 Staff Especializado
+                .staffEspecializado__container
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Nallil Rodríguez","Gerente Junior de Auditoría","nallil.webp","Foto de Nallil Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Aminta Rodríguez","Supervisora de Auditoría","aminta.webp","Foto de Aminta Rodríguez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Indira Jiménez","Gerente de Auditoría","indira.webp","Foto de Indira Jímenez")
+                    +staffEspecializado("../../html/capital-humano/capital-humano.html","Rafael Mateo","Gerente de Auditoría","rafael.webp","Foto de Rafael Mateo")
+
+            section.auditoria__contacto.fade-in
+                p Para obtener mas información y solicitar nuestros servicios
+                a(href="../../html/contacto/contacto.html") Contáctenos ahora

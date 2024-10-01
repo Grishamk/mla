@@ -1,0 +1,89 @@
+extend ../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+ 
+        main
+
+            section.encabezado__capital
+                picture
+                    img(src="../../img/servicios/DO3.webp", alt="Foto de una Lupa analizando un documento")
+                        
+            
+                section.encabezado__titular 
+                    h2 Formulario de empleo
+
+                .mensajeVentana
+                    h2.mensajeVentana__titularPrincipal ¡Ven y únete a nuestro equipo MLA!
+
+                    article.mensajeVentana__primerParrafo
+                        p.mensajeVentana__titular ¿Qué estamos buscando?
+
+                        p Buscamos profesionales talentosos, motivados y comprometidos con la calidad y la excelencia. Si tienes experiencia o quieres desarrollarte en las áreas de auditoría, contabilidad, consultoría o áreas afines, ¡te invitamos a postularte! 
+
+                    p.mensajeVentana__titular En MLA, ofrecemos:
+                    
+                    ul.mensajeVentana__lista 
+                        li 
+                            strong Más de 41 años de experiencia y trayectoria de éxito: 
+                            span Somos reconocidos como la mejor Firma Nacional de Auditoría, Contabilidad y Consultoría del año 2023. Además:
+                        li 
+                            p El respaldo internacional de BKR.
+                        li 
+                            p Un compromiso con la calidad y la credibilidad.
+                        li 
+                            p Grandes oportunidades de desarrollo profesional y personal.
+ 
+                    .enlacesBoton
+                        strong ¡No te pierdas la oportunidad de ser parte de un equipo ganador! 
+                        strong MLA: tu futuro profesional comienza aquí.
+    
+            
+            
+            section.formulario-empleo
+                form(action="https://formsubmit.co/reclutamiento@mejialora.com" method="POST" enctype="multipart/form-data").formulario
+        
+                    h2.elemento1 Información personal
+                    
+                    .elemento.elemento2
+                        label(for="nombre") Nombre y Apellido:
+                        input(type="text" id="nombre" name="nombre" required)
+
+                    .elementos
+                        .elemento.elemento3
+                            label(for="email") Dirección de Correo Electrónico:
+                            input(type="email" id="email" name="email" required)
+
+                        .elemento.elemento4
+                            label(for="celular") Número de Celular:
+                            input(type="tel" id="celular" name="celular" pattern="[0-9]{10}" required)
+
+                    .elementos
+                        .elemento.elemento5
+                            label(for="carrera") Carrera: 
+                            input(type="text" name="carrera" id="carrera")
+                    .elementos
+                        .elemento.elemento6
+                            label(for="departamento") Departamento de interés:
+                            select(id="departamento" name="departamento")
+                                option(value="Auditoria") Auditoría
+                                option(value="Impuestos") Impuestos
+                                option(value="Contabilidad") Contabilidad
+                                option(value="DesarrolloOrganizacional") Desarrollo Organizacional
+                                option(value="IT") IT
+                                option(value="Otros") Otros
+                            
+                            label(for="otroDepartamento") En caso de elegir otros, especifique: 
+                            input(type="text" name="otroDepartamento" id="otroDepartamento") 
+                
+                  
+                    div
+                        p Adjuntar CV (En formato PDF)
+                        p Limite de peso: 5MB*
+                        input(type="file" accept="application/pdf" name="curriculum")
+
+                    input(type="submit" value="Enviar" required).boton-enviar
+
+            

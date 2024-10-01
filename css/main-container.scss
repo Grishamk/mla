@@ -1,0 +1,79 @@
+//Esto es un modulo que está conectado a main.scss, hacer referencia a este si se modifica el archivo main.
+
+
+/*HOME*/
+.main-container {
+    width: 100%;
+
+    //CARRUSEL PRINCIPAL
+    @import "./src/home/carrusel_principal";          
+
+    @import "./src/home/main_servicios";
+    
+    //SECCION RESPALDO
+    @import "./src/home/respaldo";
+
+    //CARRUSEL DE CLIENTES
+    @import "./src/home/carrusel_clientes";
+
+    //CAPITAL HUMANO
+    @import "./src/home/capital_humano";
+
+    //NOTICIAS
+    @import "./src/home/noticias";
+    
+    //CONTACTO
+    @import "./src/home/contacto";
+
+    //MAPA
+    @import "./src/home/mapa";
+
+    
+}
+//OTRAS PAGINAS DEL SITIO
+
+/*SOBRE NOSOTROS*/
+//QUIENES SOMOS
+main{
+    @import './src/nosotros/encabezado';
+}
+
+@import "./src/nosotros/quienes_somos/Quienes_somos";
+
+//REGISTROS Y MEMBRESIAS
+@import "./src/nosotros/registros_membresias/Registros_membresias";
+
+//RESPONSABILIDAD SOCIAL
+@import "./src/nosotros/responsabilidad_social/Responsabilidad_social";
+
+//CERTIFICACIONES
+@import "./src/nosotros/certificaciones/Certificaciones";
+
+
+/*SERVICIOS*/
+//AUDITORIA
+@import "./src/Servicios/auditoria/auditoria";
+//ASESORIA
+@import "./src/Servicios/asesoria/asesoria";
+//IMPUESTO-NOMINA
+@import "./src/Servicios/impuesto-nomina/impuesto-nomina";
+//CONSULTORIA-NEGOCIOS
+@import "./src/Servicios/consultoria-negocios/consultoria-negocios";
+//DESARROLLO ORGANIZACIONAL
+@import "./src/Servicios/desarrolloOrg/desarrolloOrg";
+//PROTECCION PATRIMONIAL
+@import "./src/Servicios/proteccion/proteccion";
+
+/*CAPITAL HUMANO*/
+@import "./src/capital-humano/capital-humano";
+
+/*CONTACTO*/
+@import "./src/contacto/contacto";
+
+/*NOTICIAS*/
+@import "./src/noticias/noticias";
+@import "./src/noticias/boletines";
+@import "./src/noticias/publicaciones";
+
+//ANIMACION
+@import "./src/home/fadeIn";

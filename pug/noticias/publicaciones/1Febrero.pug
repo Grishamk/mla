@@ -1,0 +1,26 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/ley179-09.webp", alt="Background de la noticia")
+                    h2 FECHA LÍMITE ISR ASALARIADOS ACOGIDOS A LEY GASTOS EDUCATIVOS
+            
+            section.publicacion__content
+                p 01 de febrero de 2024
+                
+                div
+                    p La fecha límite para presentar la Declaración Jurada de Impuestos sobre la Renta para las personas bajo el Régimen Simplificado de TRibutación (RST) correspondiente al ejercicio fiscal 2023 es ek 29 de febrero de 2024.
+
+
+            
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

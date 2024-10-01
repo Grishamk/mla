@@ -1,0 +1,79 @@
+extend ../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.encabezado
+                .encabezado__text-container.animate__animated
+                    h2.animate__animated.animate__fadeInDownBig Sobre Nosotros
+                    p.animate__animated.animate__fadeInLeftBig Mejía Lora & Asociados (MLA) es una Firma de contadores públicos autorizados fundada en 1983. Somos reconocidos como una Firma líder a nivel nacional, con alcance internacional, en términos de: calidad, administración, servicios y ambiente de trabajo. Nuestro tamaño y cultura nos permite brindar esta gama completa de servicios, mientras ofrecemos una atención personalizada a las diversas necesidades de nuetros clientes. Al ofrecer un servicio superior y un producto de trabajo de calidad, disfrutamos de relaciones a largo plazo con nuestros clientes, algunos diurante más de 37 años. Nuestra experiencia en la industria y nuestro compromiso con el servicio al cliente nos han hecho merecedores de una reputación estelar en las comunidades empresarial, financiera y legal.
+                .backButton#btnBaja.animate__animated.animate__fadeInUp
+                    a(href="#video") 
+            section.nosotrosVideo#video
+                .nosotrosVideo__text
+                    p MLA cuenta con respaldo internacional, somos miembros de BKR International, una de las principales (top 5) asociaciones mundiales de empresas independientes de auditoría y consultoría tributaria. La membresía asegura nuestra efectiva cooperación a través de fronteras: 155 Firmas asociadas con más de 266 oficinas en 81 países alrededor del mundo.
+                    i "Las Firmas miembros de BKR International son seleccionadas por su influencia local, experiencia y capacidad internacional."
+                
+                .sobreNosotrosVideo__video.fade-in
+                    iframe.video-iframe(src='https://player.vimeo.com/video/315315231?h=651cf7feaf' width='320' height='360' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen='allow' title="Video de la empresa")
+
+
+            section.nosotrosMV.fade-in
+                .nosotrosMV__text
+                    .nosotrosMV__text--1
+                        h2 Misión
+                        p Satisfacer las necesidades y expectativas de nuestros clientes, siendo sus asesores estratégicos de soluciones que contribuyan al desarrollo empresarial y/o personal, mediante el compromiso de brindar servicios personalizados de auditoria, consultoría, impuestos y outsourcing basados en la innovación y la excelencia.
+                    .nosotrosMV__text--2
+                        h2 Visión 
+                        p Distinguirnos entre las firmas de mayor reconocimiento nacional e internacional por el nivel de compromiso y calidad de los servicios brindados y la generación de valor para nuestros clientes, asociados, empleados y la sociedad.
+            
+            section.nosotrosValores.fade-in
+                .nosotrosValores__container
+                    h2.nosotrosValores--titulo Valores
+                    .nosotrosValores__item-container
+                        +valores("integro.svg","escudo azul","Integridad","Brindamos nuestros servicios actuando en todo momento con un compromiso excepcional con la honestidad.","organizador")
+                        +valores("responsabilidad.svg","logo manos saludandose","Responsabilidad y Compromiso","Asumimos la responsabilidad y el cumplimiento de las obligaciones contraídas con nuestros clientes y partes interesadas.")
+                        +valores("servicio.svg","logo de Servicio al Cliente","Servicio al Cliente","Es la suma total de lo que hacemos para satisfacer las expectativas de nuestros clientes y alcanzar su satisfacción.","organizador")
+                        +valores("calidad.svg","logo con una diana","Calidad","Aportamos valor a nuestros clientes, cumpliendo con sus requisitos y satisfaciendo sus expectativas.")
+                        +valores("mejoras.svg","Grafica de crecimiento","Mejora Continua","Estamos comprometidos a mejorar continuamente en todo lo que hacemos, a través del entendimiento de las expectativas de nuestros clientes y la mejora continua de nuestros servicios y procesos.")
+
+                    article.nosotrosValores__calidad.fade-in
+                        h2 Política de la Calidad
+                        p En Mejía Lora y Asociados estamos comprometidos con la satisfacción plena de nuestros clientes y partes interesadas, por ello actuamos con ética y transparencia garantizando la realización de los servicios de Auditoria, TPA (Tax-Payroll-Accounting / Impuestos-Nomina-Contabilidad), Consultaría, Impuesto y Desarrollo Organización de forma eficiente, oportuna, cumpliendo plenamente con las leyes, acuerdos, normas y regulaciones pertinentes y mejorando continuamente nuestros procesos.
+            
+            section.nosotrosExp.fade-in
+                .nosotrosExp__container
+                    h2 Nuestra Experiencia
+                    p Contamos con una amplia cartera de clientes los cuales operan los siguientes sectores:
+                    .nosotrosExp__list
+                        ul
+                            li Salud
+                            li Seguridad Social
+                            li Combustibles
+                            li Transporte
+                            li Vinos y Licores
+                            li Seguridad
+                        ul
+                            li Inmobiliaria
+                            li Restaurantes
+                            li Call Center
+                            li Financiero
+                            li Publicidad
+                            li Software / IT
+                        ul
+                            li Educación
+                            li Turismo
+                            li Vehículos
+                            li Supermercados
+                            li Importadores y Retail
+                            li Construcción
+                        ul
+                            li Hoteles
+                            li Farmacéutica
+                            li Duty Free
+                            li Organizaciones sin Fines de Lucro
+                            li Periódicos y Medios
+                            li Agropecuario

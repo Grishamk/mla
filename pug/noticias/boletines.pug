@@ -1,0 +1,22 @@
+extend ../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.boletines__titular
+                h2 Boletines
+
+            div.boletines__container.fade-in
+                section.boletines-noticias
+                    +boletin("doing.webp","Imagen con el escudo de la bandera dominicana","Guía Doing Business República Dominicana 2021","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
+                    hr
+                    +boletin("as-para-el-cumplimiento-tributario-1.webp","Imagen de felicitaciones","FACILIDADES PARA LA PRESENTACIÓN Y PAGO DE LAS OBLIGACIONES RELATIVAS...","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
+                    hr
+                    +boletin("letter-from-the-chair.webp","Carta del chairman de BKR","Carta del Chairman de BKR","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
+                    hr
+                    +boletin("brk-india-2.webp","Foto del Lic. Raymi Mejia en la india","Reunión Regional de BKR Internacional para Asia y el Pacífico","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")
+                    hr
+                    +boletin("boletin.webp","Foto de un Boletin","Boletín Transformación","MLA cuenta con respaldo Internacional. Una de las principales (top 5) asociaciones mundiales de empresas independientes de auditorias y consultoría.","#")

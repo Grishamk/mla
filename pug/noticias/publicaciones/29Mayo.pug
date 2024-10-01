@@ -1,0 +1,28 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/29mayo.webp", alt="Background de la noticia")
+                    h2 Aviso Importante
+            
+            section.publicacion__content
+                p 29 de mayo de 2024
+                
+                div
+                    p Les comunicamos que los días 30 y 31 de Mayo de 2024 no estaremos laborando. Por motivos de día feriado de Corpus Christi 2024 (República Dominicana) y asueto.
+
+                    p Nos reintegramos el Lunes 3 de Junio 2024.
+
+                    
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

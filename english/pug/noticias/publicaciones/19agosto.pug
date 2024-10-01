@@ -1,0 +1,26 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/19agosto.webp", alt="Background de la noticia")
+                    h2 Congratulations Edgar J. Melendez!
+            
+            section.publicacion__content
+                p August 19, 2024
+                
+                div
+                    p Congratulations to Edgar J. Melendez on his promotion to Senior Auditor III at Mejía Lora & Associates!
+                    p This achievement is a recognition of his dedication, effort, and commitment to excellence in every project. We deeply value his contribution and leadership within our firm.
+
+
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

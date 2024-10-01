@@ -1,0 +1,28 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/03junio.webp", alt="Background de la noticia")
+                    h2 XXII Regional Congress of Internal Auditing
+            
+            section.publicacion__content
+                p June 3, 2024
+                
+                div
+                    p At Mejía Lora & Asociados, we are proud to announce the participation of our Licensed Firelli Mejía in the XXII Regional Congress of Internal Audit, Management Control, Risk, and Finance. The theme: Internal Audit and Digital Transformation.
+
+                    p This event has been an excellent opportunity to delve into cutting-edge topics such as the new standards and approaches of internal auditing 2024-2035, digital transformation, artificial intelligence, and cybersecurity.
+
+                    
+
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn
