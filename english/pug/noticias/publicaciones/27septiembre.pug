@@ -1,0 +1,26 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/27septiembre.webp", alt="Background de la noticia")
+                    h2 World Tourism Day
+            
+            section.publicacion__content
+                p September 27, 2024
+                
+                div
+                    p 
+                        | At Mejía Lora & Associates, we celebrate World Tourism Day by highlighting the impact of our clients in the sector. We support tourism businesses in their growth by providing accounting and financial solutions that strengthen their operations in this key driver of our economy. Together, we continue to promote sustainable tourism and economic development in the country.
+                    
+
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

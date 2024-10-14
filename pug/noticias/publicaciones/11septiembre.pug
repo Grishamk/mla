@@ -1,0 +1,30 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/11septiembre.webp", alt="Background de la noticia")
+                    h2 Auditoría de seguimiento de calidad ISO 9001-2015
+            
+            section.publicacion__content
+                p 11 de septiembre de 2024
+                
+                div
+                    p 
+                        | La semana pasada tuvimos nuestra auditoría de seguimiento de calidad ISO 9001-2015, por parte de Inteco, con la visita de José Luis Dávila, gran auditor y conocedor de todo lo relacionado a Calidad.
+                        br
+                        br
+                        | Satisfechos de llevar más de 5 años certificados en los estándares de calidad y no haber obtenido nunca una no conformidad, más siempre abiertos a las oportunidades y la mejora continua que representan estos procesos para garantizar la excelencia de nuestros servicios, satisfacción de nuestros clientes y el aprendizaje de nuestro equipo MLA.
+                    
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

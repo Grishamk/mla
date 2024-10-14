@@ -1,0 +1,28 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/27septiembre.webp", alt="Background de la noticia")
+                    h2 Día Mundial del Turismo
+            
+            section.publicacion__content
+                p 27 de septiembre de 2024
+                
+                div
+                    p 
+                        | En Mejía Lora & Asociados celebramos el Día Mundial del Turismo destacando el impacto de nuestros clientes en el sector. Acompañamos a las empresas turísticas en su crecimiento, brindándoles soluciones contables y financieras que fortalecen su negocio en este motor clave de nuestra economía. Juntos, seguimos impulsando el turismo sostenible y el desarrollo económico del país.
+                    
+                    
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

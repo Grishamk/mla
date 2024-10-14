@@ -1,0 +1,25 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/11octubre.webp", alt="Background de la noticia")
+                    h2 Exposición ASONAHORES 2024
+            
+            section.publicacion__content
+                p 11 de octubre de 2024
+                
+                div
+                    p 
+                        | ¡Un honor ser patrocinadores en la apertura de la Exposición de ASONAHORES 2024! En Mejía Lora & Asociados reafirmamos nuestro compromiso con el sector turístico, apoyando a nuestros clientes y al desarrollo sostenible de la industria.
+                    
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

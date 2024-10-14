@@ -1,0 +1,43 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/16septiembre.webp", alt="Background de la noticia")
+                    h2 La importancia de las Audítorías Externas
+            
+            section.publicacion__content
+                p 16 de septiembre de 2024
+                
+                div
+                    p 
+                        | La auditoría externa es clave para garantizar la transparencia y la credibilidad financiera de tu empresa. A través de un análisis objetivo, te ayuda a fortalecer tu negocio y asegurar su crecimiento sostenible.
+                        br
+                        br
+                        strong Transparencia Financiera: 
+                        | A través de una auditoría, obtienes un análisis objetivo e imparcial de tus finanzas, asegurando que la información que manejas sea veraz y completa.
+                        br
+                        br
+                        strong Cumplimiento Normativo: 
+                        | Te ayuda a identificar si tu empresa está cumpliendo con todas las leyes y regulaciones fiscales y contables, evitando sanciones.
+                        br
+                        br
+                        strong Mejora de procesos: 
+                        | Los auditores externos pueden detectar áreas de mejora en tus procesos internos, optimizando el uso de los recursos.
+                        br
+                        br
+                        strong Confianza de inversionistas: 
+                        | Una auditoría externa aumenta la credibilidad de tu empresa ante potenciales inversionistas o entidades financieras, lo que puede facilitar la obtención de financiamiento.
+                    
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

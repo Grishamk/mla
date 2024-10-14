@@ -1,0 +1,25 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/18septiembre.webp", alt="Background de la noticia")
+                    h2 Capacitación equipo de auditoría MLA
+            
+            section.publicacion__content
+                p 18 de septiembre de 2024
+                
+                div
+                    p 
+                        | ¡Comprometidos con la excelencia! Nuestro equipo de auditoría participó en una capacitación especializada, fortaleciendo nuestras habilidades para seguir brindando un servicio de calidad a nuestros clientes.
+                    
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

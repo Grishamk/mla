@@ -1,0 +1,40 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/12septiembre.webp", alt="Background de la noticia")
+                    h2 Deadline to Implement Electronic Invoicing
+            
+            section.publicacion__content
+                p September 12, 2024
+                
+                div
+                    p 
+                        | Important Notice for Large National Taxpayers
+                        br
+                        br
+                        | The General Directorate of Internal Taxes (DGII) has granted an extension until September 15, 2024, for the implementation of Electronic Invoicing. This measure applies to the first group of large taxpayers, whose original deadline was May 15, 2024.
+                        br
+                        br
+                        | Key recommendations:
+                        br
+                        | ✔️ Make the necessary adjustments to your systems to ensure the correct issuance of electronic tax receipts (e-CF).
+                        br
+                        | ✔️ Avoid penalties in accordance with Law 32-23 for failing to comply with the implementation of Electronic Invoicing.
+                        br
+                        br
+                        | At Mejía Lora & Associates, we are here to support you throughout this process. Don't hesitate to contact us for any inquiries!
+                    
+
+
+            section.publicacion__otras
+                h2 Other News
+
+                +noticiaPrincipalEn

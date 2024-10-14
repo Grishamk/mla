@@ -1,0 +1,30 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/26septiembre.webp", alt="Background de la noticia")
+                    h2 Presentación de resultados Agosto 2024
+            
+            section.publicacion__content
+                p 26 de septiembre de 2024
+                
+                div
+                    p 
+                        | Nos sentimos honrados por la invitación del Ministro de Turismo, David Collado, a la presentación oficial de los resultados del mes de agosto 2024. Un análisis detallado de los avances de uno de los sectores más dinámicos de nuestra economía.
+                        br
+                        br
+                        | Como aliados estratégicos en auditoría y consultoría financiera, nos comprometemos a impulsar la transparencia y el crecimiento económico del país. ¡Sigamos construyendo el futuro juntos!
+                    
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal
