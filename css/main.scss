@@ -1,5 +1,16 @@
-@import "globales.scss";
-@import "mixins.scss";
-@import "nav.scss";
-@import "main-container.scss";
-@import "footer.scss";
+//BASE
+@import "base/variables";
+@import "base/mixins";
+@import "base/reset";
+
+
+//COMPONENTES
+@import "components/buttons";
+@import "components/cards";
+
+//LAYOUTS
+@import "layouts/nav";
+@import "layouts/footer";
+
+//PAGES
+@import "pages/main-pages";

@@ -1,0 +1,130 @@
+.cardService{
+    @include wH(100%,213px);
+    color: $colorLetra2;
+    text-decoration: none;
+    @include boxShadow();
+    border-radius: 8px;
+
+    .servicios__imagen{
+        @include wH(100%,213px);
+        border-radius: 8px;
+    }
+
+    .servicios__texto{
+        @include wH(null,33px);
+        position: relative;
+        top: -37px;
+        font-size: 1.4rem;
+        text-align: center;
+        border-radius: 0px 0px 8px 8px;
+        background: rgba(4, 56, 119, 0.75);
+        @include flexRule(null,center,center);
+    }
+
+    @media(min-width: $breakpoint-tablet){
+        @include wH(300px,180px);
+    
+        .servicios__imagen{
+            @include wH(300px,180px);
+        }
+
+        .servicios__texto{
+            font-size: 1.5rem;
+         }
+    }
+
+    @media(min-width: $breakpoint-desktop){
+        @include wH(375px,250px);
+        transition: all 600ms ease;
+
+        .servicios__imagen{
+            @include wH(375px,250px);
+        }
+
+        .servicios__texto{
+            @include wH(null,48px);
+            top: -52px;
+            font-size: 2rem;
+        }
+
+        &:hover{
+            transition: all 600ms ease;
+            transform: scale(1.05);
+            
+            div{
+                background-color: $colorTerciario;
+            }
+        }
+    }
+}
+
+
+//CARTA DE NOTICIAS
+.noticia__item{
+    background-color: $colorTerciario;
+    @include wH(272px, 450px);
+    @include boxShadow();
+    color: $colorLetra2;
+    border-radius: 8px;
+    
+    picture{
+        width: 100%;
+        @include flexRule(null,center,center);
+        padding: 15px 15px 8px;
+        
+
+        img{
+            width: 100%;
+            border-radius: 6px 6px 0 0;
+        }
+    }
+
+    .noticia__contenido{
+        padding: 8px 15px;
+        @include flexRule(column);
+        .titulo{
+            height: 100px;
+            h2{
+                font-size: 1.6rem;
+                margin-bottom: 16px;
+                font-weight: 500;
+                color: $colorLetra2;
+            }
+
+            .fecha{
+                margin-bottom: 16px;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    @media(min-width: $breakpoint-tablet){
+        @include wH(300px, 450px);
+        @include boxShadow();
+        
+        .noticia__contenido{
+            .titulo{
+                @include flexRule(column);
+                .fecha{
+                    justify-self: flex-end;
+                }
+            }
+        }
+    }
+
+    @media(min-width: $breakpoint-desktop){
+        @include wH(300px, 450px);
+        @include boxShadow();
+        transition: all 300ms ease;
+        
+        picture{
+            img{
+                height: 236px;
+            }
+        }
+
+        &:hover{
+            transform: scale(1.05);
+            transition: all 300ms ease;
+        }
+    }
+}

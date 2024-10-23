@@ -1,0 +1,725 @@
+header {
+    width: 100%;
+    position: fixed;
+    transition: all 300ms ease;
+    z-index: 50;
+    opacity: 0.8;
+    background-color: $colorPrincipal;
+
+    //animation-duration: 1s;
+}
+
+header:hover{
+    opacity: 1;
+}
+
+.fixed {
+    position: fixed;
+    background-color: $colorPrincipal;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: all 300ms ease;
+}
+
+
+
+.nav-container {
+    @include wH(100%, 57px);
+    @include flexRule(row,null,center);
+
+    //LOGO MLA
+    .logo-container {
+        width: 80%;
+        @include flexRule(null,center,null);
+        
+        img {
+            @include wH(150px, 35px);
+            margin-left: 20px;
+        }
+    }
+
+    //MENU DESPLEGABLE
+    &__menu {
+        
+        label{
+            
+            img {
+                @include wH(30px, 30px);
+            }
+        }
+
+        input{
+            display: none;
+        }
+
+        input:checked +.nav-movil{
+            visibility: visible;
+            right: 0;
+            transition: all 300ms ease;
+        }
+
+        .nav-movil{
+            @include wH(100vw, 100vh);
+            //max-width: 300px;
+            @include flexRule(column);
+            background-color: white;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            overflow: auto;
+            visibility: hidden;
+            transition: all 300ms ease;
+            z-index: 10;
+            
+            .nav-movil__cerrar{
+                padding: 15px;
+                
+                img{
+                    width: 36px;
+                }
+            }
+            
+            label{
+                display: flex;
+                width: 100vw;
+                padding: 8px;
+                justify-content: flex-end;
+                z-index: 10;
+                img {
+                    @include wH(48px, 48px);
+                    margin-right: 16px;
+                }
+            }
+
+            ul{
+                list-style: none;
+                width: 100%;
+                height: 100vh;
+                margin-top: 64px;
+                @include flexRule(column,null,center);
+                //margin-top: 50px;
+        
+                li{
+                    margin-bottom: 1px;
+                    width: 100vw;
+                    @include flexRule(column, center, center);
+                    .noDisplay{
+                        display: none;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $colorLetra1;
+                        font-weight: bold;
+                        font-size: 2.4rem;
+                        //background-color: $colorTerciario;
+                        display: block;
+                        padding: 20px;
+
+                       
+                    }
+                    p{
+                        text-decoration: none;
+                        color: $colorLetra1;
+                        font-weight: bold;
+                        font-size: 2.4rem;
+                        //background-color: $colorTerciario;
+                        display: block;
+                        padding: 12px;
+                    }
+                    .mobile-hidden{
+                        display: none;
+                    }
+                    .mobile-show{
+                                                
+                        margin-bottom: 15px;
+                        width: 95%;
+                        text-align: center;
+                        height: auto;
+                        border-radius: 8px;
+
+                        li{
+                            background-color: $colorCuaternario;
+                            width: 95%;
+                            border-radius: 8px;
+        
+                            a{
+                                background-color: $colorCuaternario;
+                                color: $colorLetra2;
+                                width: 95%;
+                                border-radius: 8px;
+                                padding: 16px;
+                            }
+                            hr{
+                                width: 80%;
+                            }
+                        }
+                    }
+                    ul{
+                        padding: 0;
+                        margin: 0;
+                        height: auto;
+                        //padding: 0 20px;
+                        //margin-bottom: 20px;
+                        //margin-top: 10px;
+                        //display: none;
+                        @include flexRule(column, center,center);
+                        
+
+
+                        li{
+                            //margin-bottom: 24px;
+                            background-color: $colorSecundario;
+                            text-align: center;
+                           
+                            
+                            a{
+                                font-weight: 400;
+                                font-size: 1.8rem;
+                                color: $colorLetra1;
+                                background-color: $colorSecundario;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            a.boton{
+                @include flexRule(null,center,center);
+                @include wH(120px, 60px);
+                font-size: 1.4rem;
+                text-decoration: none;
+                border: 1px solid $colorTerciario;
+                font-weight: 500;
+                color: $colorTerciario;
+                margin-left: 8px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 8px;
+            }
+            
+        }
+    }
+
+    //ESTO SOLO ES VISIBLE EN PANTALLAS GRANDES, IGNORAR EN ESTA HOJA DE ESTILOS. CUIDADO, NO BORRAR.
+    &__navbar {
+        display: none;
+    }
+
+    .boton {
+        display: none;
+    }
+}
+
+@media(min-width: $breakpoint-tablet){
+    header {
+        width: 100%;
+        position: fixed;
+        transition: all 300ms ease;
+        z-index: 50;
+        opacity: 0.8;
+        background-color: $colorPrincipal;
+    }
+    
+    header:hover{
+        opacity: 1;
+    }
+    
+    .fixed {
+        position: fixed;
+        background-color: $colorPrincipal;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        transition: all 300ms ease;
+    }
+    
+    
+    
+    .nav-container {
+        @include wH(100%, 80px);
+        @include flexRule(row,null,center);
+    
+        //LOGO MLA
+        .logo-container {
+            width: 80%;
+            @include flexRule(null,center,null);
+            
+            img {
+                @include wH(200px, 55px);
+                margin-left: 150px;
+            }
+        }
+    
+        //MENU DESPLEGABLE
+        &__menu {
+            
+            label{
+                
+                img {
+                    @include wH(30px, 30px);
+                }
+            }
+    
+            input{
+                display: none;
+            }
+    
+            input:checked +.nav-movil{
+                visibility: visible;
+                right: 0;
+                transition: all 300ms ease;
+            }
+    
+            .nav-movil{
+                @include wH(100vw, 100vh);
+                //max-width: 300px;
+                @include flexRule(column);
+                background-color: white;
+                position: fixed;
+                top: 0;
+                right: -700px;
+                overflow: auto;
+                visibility: hidden;
+                transition: all 300ms ease;
+                z-index: 10;
+                
+                .nav-movil__cerrar{
+                    padding: 15px;
+                    
+                    img{
+                        width: 36px;
+                    }
+                }
+                
+                label{
+                    display: flex;
+                    width: 100vw;
+                    padding: 8px;
+                    justify-content: flex-end;
+                    z-index: 10;
+                    img {
+                        @include wH(48px, 48px);
+                        margin-right: 16px;
+                    }
+                }
+    
+                ul{
+                    list-style: none;
+                    width: 100%;
+                    height: 100vh;
+                    margin-top: 64px;
+                    @include flexRule(column,null,center);
+                    //margin-top: 50px;
+            
+                    li{
+                        margin-bottom: 1px;
+                        width: 100vw;
+                        @include flexRule(column, center, center);
+                        .noDisplay{
+                            display: none;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: $colorLetra1;
+                            font-weight: bold;
+                            font-size: 2.4rem;
+                            //background-color: $colorTerciario;
+                            display: block;
+                            padding: 20px;
+    
+                           
+                        }
+                        p{
+                            text-decoration: none;
+                            color: $colorLetra1;
+                            font-weight: bold;
+                            font-size: 2.4rem;
+                            //background-color: $colorTerciario;
+                            display: block;
+                            padding: 12px;
+                        }
+                        .mobile-hidden{
+                            display: none;
+                        }
+                        .mobile-show{
+                                                    
+                            margin-bottom: 15px;
+                            width: 95%;
+                            text-align: center;
+                            height: auto;
+                            border-radius: 8px;
+    
+                            li{
+                                background-color: $colorCuaternario;
+                                width: 95%;
+                                border-radius: 8px;
+            
+                                a{
+                                    background-color: $colorCuaternario;
+                                    color: $colorLetra2;
+                                    width: 95%;
+                                    border-radius: 8px;
+                                    padding: 16px;
+                                }
+                                hr{
+                                    width: 80%;
+                                }
+                            }
+                        }
+                        ul{
+                            padding: 0;
+                            margin: 0;
+                            height: auto;
+                            //padding: 0 20px;
+                            //margin-bottom: 20px;
+                            //margin-top: 10px;
+                            //display: none;
+                            @include flexRule(column, center,center);
+                            
+    
+    
+                            li{
+                                //margin-bottom: 24px;
+                                background-color: $colorSecundario;
+                                text-align: center;
+                               
+                                
+                                a{
+                                    font-weight: 400;
+                                    font-size: 1.8rem;
+                                    color: $colorLetra1;
+                                    background-color: $colorSecundario;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                a.boton{
+                    @include flexRule(null,center,center);
+                    @include wH(120px, 60px);
+                    font-size: 1.4rem;
+                    text-decoration: none;
+                    border: 1px solid $colorTerciario;
+                    font-weight: 500;
+                    color: $colorTerciario;
+                    margin-left: 8px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    padding: 8px;
+                }
+                
+            }
+        }
+    
+        //ESTO SOLO ES VISIBLE EN PANTALLAS GRANDES, IGNORAR EN ESTA HOJA DE ESTILOS. CUIDADO, NO BORRAR.
+        &__navbar {
+            display: none;
+        }
+    
+        .boton {
+            display: none;
+        }
+    }
+}
+
+
+@media(min-width: $breakpoint-desktop){
+    header {
+        width: 100%;
+        position: fixed;
+        transition: all 300ms ease;
+        z-index: 50;
+        opacity: 0.8;
+        background-color: $colorPrincipal;
+    }
+    
+    header:hover{
+        opacity: 1;
+    }
+    
+    .fixed {
+        position: fixed;
+        background-color: $colorPrincipal;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        transition: all 300ms ease;
+    }
+    
+    
+    
+    .nav-container {
+        @include wH(100%, 94px);
+        @include flexRule(row,null,center);
+    
+        //LOGO MLA
+        .logo-container {
+            width: 30%;
+            display: block;
+            justify-self: flex-start;
+            align-self: flex-start;
+            justify-content: flex-start;
+            
+            img {
+                @include wH(280px, 70px);
+                margin-left: 32px;
+                margin-top: 10px;
+            }
+        }
+    
+        //MENU DESPLEGABLE
+        &__menu {
+            display: none;
+           
+        }
+    
+        //ESTO SOLO ES VISIBLE EN PANTALLAS GRANDES, IGNORAR EN ESTA HOJA DE ESTILOS. CUIDADO, NO BORRAR.
+        &__navbar {
+            @include flexRule(null,center,null);
+                margin: 0;
+                width: 55%;
+        
+                ul {
+                    display: flex;
+                    list-style: none;
+                    gap: 20px;
+                    height: 100%;
+                    
+                    li {
+                    height: 100%;
+                    position: relative;
+                    transition: all 300ms ease;
+                    .noDisplay{
+                        display: block;
+                    }
+                    .Display{
+                        display: none;
+                    }
+                        
+                        a {
+                            text-decoration: none;
+                            font-size: 1.4rem;
+                            color: $colorLetra1;
+                            padding-bottom: 4px;
+                            padding: 6px;
+                            transition: all 300ms ease;
+                            height: 100%;
+                            display: flex;
+                        }
+    
+                        /*MENU DESPLEGABLE*/
+                        /*NOSOTROS*/
+                        .toggle__nosotros{
+                            @include wH(300px, 200px);
+                            @include flexRule(column);
+                            gap: 0;
+                            background: $colorSecundario;
+                            border-radius: 8px;
+                            @include boxShadow();
+                            position: absolute;
+                            visibility: hidden;
+                            opacity: 0;
+                            top: 50px;
+                            z-index: 10;
+                            transition: all 300ms ease;
+                            
+                            li{
+                                margin: 0;
+                                height: 100%;
+                                padding: 0 15px;
+                                
+                                &:hover{
+                                    background-color: $colorCuaternario;
+                                    transform: scale(1.1);
+                                }
+                                
+                                a{
+                                    border: none !important;
+                                    transition: none;
+                                    height: 100%;
+                                    @include flexRule(null,null,center);
+                                    
+                                    &:hover{
+                                        transform: none;
+                                        color: $colorLetra2;
+                                    }
+                                
+                                }
+                            }   
+                        }
+    
+                        /*SERVICIOS*/
+                        .toggle__servicios{
+                            @include wH(300px, 300px);
+                            @include flexRule(column);
+                            gap: 0;
+                            background: $colorSecundario;
+                            border-radius: 8px;
+                            @include boxShadow();
+                            position: absolute;
+                            visibility: hidden;
+                            opacity: 0;
+                            top: 50px;
+                            z-index: 10;
+                            transition: all 300ms ease;
+                        
+                            li{
+                                margin: 0;
+                                height: 100%;
+                                padding: 0 15px;
+                                
+                                a{
+                                    border: none !important;
+                                    transition: none;
+                                    height: 100%;
+                                    @include flexRule(null,null,center);
+                                    
+                                    &:hover{
+                                        transform: none;
+                                        color: $colorLetra2;
+                                    }
+                                }
+                                
+                                &:hover{
+                                    background-color: $colorCuaternario;
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+    
+                        /*NOVEDADES*/
+                        .toggle__novedades{
+                            @include wH(300px, 100px);
+                            @include flexRule(column);
+                            gap: 0;
+                            background: $colorSecundario;
+                            border-radius: 8px;
+                            @include boxShadow();
+                            position: absolute;
+                            visibility: hidden;
+                            opacity: 0;
+                            top: 50px;
+                            z-index: 10;
+                            transition: all 300ms ease;
+                            
+                            li{
+                                margin: 0;
+                                height: 100%;
+                                padding: 0 15px;
+                                
+                                a{
+                                    border: none !important;
+                                    transition: none;
+                                    height: 100%;
+                                    @include flexRule(null,null,center);
+                                    
+                                    &:hover{
+                                        transform: none;
+                                        color: $colorLetra2;
+                                    }
+                                }
+    
+                                &:hover{
+                                    background-color: $colorCuaternario;
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+                        
+                        &:hover{                       
+                            ul{
+                                visibility: visible;
+                                opacity: 1;
+                                top: 40px;
+                            }
+                        }
+                    }    
+                }
+         
+                    li a:hover {
+                        border-bottom: 1px solid #333;
+                        transform: scale(1.1);
+                    }
+                
+            }
+         
+             //BOTON DE CAMBIO DE IDIOMAS
+            .boton{
+                @include wH(120px,30px);
+                font-size: 1.4rem;
+                text-decoration: none;
+                border: 1px solid $colorTerciario;
+                font-weight: 500;
+                color: $colorTerciario;
+                margin-left: 16px;
+                @include flexRule(null,center,center);
+                transition: all 300ms ease;
+    
+                &:hover{
+                    background: $colorCuaternario;
+                    border: none;
+                    color: $colorLetra2;
+                    font-weight: bold;
+                    transform: scale(1.1);
+                    border-radius: 4px;
+                    @include boxShadow();
+                }
+            }
+    }
+    
+    //DESKTOP
+    @media (min-width: $breakpoint-desktop) {
+        header{
+            @include flexRule(null,center,null);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            height: 95px;
+            
+           
+            //LOGO MLA
+            .logo-container {
+                align-self: flex-start;
+                justify-content: flex-start;
+                width: 30%;
+                
+                img {
+                    @include wH(100%, 70px);
+                    max-width: 280px;
+                    margin: 0;
+                    margin-top: 10px;
+                }
+            } 
+        
+            //LOGO DE NAVEGACION
+            &__navbar {
+                width: 70%;
+         
+                ul {
+        
+                    li a {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        
+            .boton{
+                @include wH(130px, 40px);
+            }
+        }
+    }
+}

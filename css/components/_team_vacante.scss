@@ -1,0 +1,120 @@
+.vacante__info{
+    height: auto;
+    padding: 40px 28px;
+    width: 100%;
+    //margin-top: 100px;
+
+    h1{
+        font-size: 3.2rem;
+        margin-bottom: 20px;
+        color: $colorTerciario;
+    }
+
+    h2{
+        font-size: 2rem;
+        color: $colorTerciario;
+        margin-bottom: 16px;
+    }
+   
+    p{
+        margin-bottom: 20px;
+    }
+    
+    ul{
+        margin-bottom: 20px;
+        
+        li{
+            margin-left: 20px;
+            margin-bottom: 8px;
+        }
+    }
+
+    button{
+        @include wH(80%,40px);
+        background-color: $colorTerciario;
+        border: none;
+        border-radius: 8px;
+        
+        a{
+            font-size: 2rem;
+            color: $colorLetra2;
+            text-decoration: none;
+        }
+    }
+
+    @media(min-width: $breakpoint-tablet){
+        height: auto;
+        padding: 40px 28px;
+    
+        h1{
+            font-size: 3.2rem;
+            margin-bottom: 40px;
+        }
+    
+        h2{
+            font-size: 2rem;
+            color: $colorTerciario;
+            margin-bottom: 16px;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
+
+        ul{
+            margin-bottom: 40px;
+            
+            li{
+                margin-left: 20px;
+                margin-bottom: 8px;
+            }
+        }
+
+        button{
+            width: 40%;
+        }
+    }
+
+    @media(min-width: $breakpoint-laptop){
+        height: auto;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 28px;
+    
+        h1{
+            font-size: 3.2rem;
+            margin-bottom: 40px;
+        }
+    
+        h2{
+            font-size: 2rem;
+            color: $colorTerciario;
+            margin-bottom: 16px;
+        }
+        
+        p{
+            margin-bottom: 20px;
+        }
+        
+        ul{
+            margin-bottom: 40px;
+            
+            li{
+                margin-left: 20px;
+                margin-bottom: 8px;
+            }
+        }
+        
+        button{
+            width: 20%;
+    
+            &:active{
+                background-color: $colorCuaternario;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

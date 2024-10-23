@@ -1,0 +1,13 @@
+.main-container__mapa {
+    @include wH(100%, 350px);
+
+    iframe{
+        @include wH(100%, 100%);
+    }
+
+
+    //LAPTOP
+    @media(min-width: $breakpoint-laptop){
+        @include wH(100%, 400px);
+    }
+}

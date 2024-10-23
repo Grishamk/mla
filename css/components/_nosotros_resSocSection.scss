@@ -1,0 +1,188 @@
+.RS__text-container{
+    padding: 48px 20px 24px;
+    margin-bottom: 16px;
+
+    strong {
+        font-size: 2rem;
+        line-height: 2.8rem; 
+    }
+
+    .RS__main-text{
+        font-size: 16px;
+        margin-top: 16px;
+        line-height: 2.4rem;
+        margin-bottom: 20px;
+    }
+
+    .RS__externos {
+        margin-bottom: 48px;
+
+        h2{
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+        article {
+            line-height: 2.8rem;
+            @include flexRule(null,null,flex-start);
+            gap: 16px;
+            
+            img {
+                @include wH(20px,20px);
+                margin-top: 4px;
+            }
+        }
+
+        picture {
+            @include flexRule(column,center,center);
+            
+            img {
+                @include wH(260px,260px);
+            }
+        }
+    }
+    
+    @media(min-width: $breakpoint-tablet){
+        padding: 48px 32px 24px;
+    
+        .RS__main-text{
+            font-size: 16px;
+            margin-top: 16px;
+            line-height: 2.4rem;
+            margin-bottom: 20px;
+        }
+
+        .RS__externos {
+            margin-bottom: 48px;
+
+            picture {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 24px;
+                margin-top: 24px;
+                
+                img {
+                    @include wH(216px,216px);
+                }
+            }
+        }
+    }
+
+    @media(min-width: $breakpoint-desktop){
+        padding: 48px 32px 24px;
+        max-width: 1300px;
+        margin: 0 auto;
+    
+        .RS__main-text{
+            font-size: 16px;
+            margin-top: 16px;
+            line-height: 2.4rem;
+            margin-bottom: 40px;
+        }
+
+        .RS__externos {
+            margin-bottom: 48px;
+
+            h2{
+                text-align: center;
+            }
+
+            picture {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 4px;
+                margin-top: 24px;
+                margin-bottom: 24px;
+                
+                img {
+                    @include wH(200px,200px);
+                }
+            }
+        }
+    }
+}
+
+//ACTORES INTERNOS
+.RS__internos {
+    background-color: $colorPrincipal;
+    padding: 0 20px 40px;
+
+    h2{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 16px;
+        padding-top: 48px;
+        
+    }
+
+    article {
+        line-height: 2.8rem;
+        margin-bottom: 16px;
+        @include flexRule(null,null,flex-start);
+        gap: 16px;
+
+        img {
+            @include wH(20px,20px);
+            margin-top: 4px;
+        }
+    }
+
+    @media(min-width: $breakpoint-tablet){
+        background-color: $colorPrincipal;
+        padding: 0 32px 40px;
+
+        h2{
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+            padding-top: 48px; 
+        }
+
+        .RS__internos--item{
+            
+            article{
+                @include flexRule(null,null,flex-start);
+                gap: 16px;
+                line-height: 2.8rem;
+                margin-bottom: 16px;
+    
+                img {
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: $breakpoint-desktop){
+        background-color: $colorPrincipal;
+        padding: 0 32px 40px;
+        @include flexRule(column,null,center);
+
+        h2{
+            text-align: center; 
+        }
+
+        .RS__internos--item{
+            max-width: 1300px;
+            @include flexRule(null,center);
+            flex-wrap: wrap;
+            gap: 24px;
+
+            article {
+                width: 600px;
+                line-height: 2.8rem;
+                margin-bottom: 16px;
+                @include flexRule(null,null,flex-start);
+                gap: 16px;
+    
+                img {
+                    margin-top: 4px;
+                }
+            }
+            
+            .diferenciador {
+                width: 1224px;
+            }
+        }
+    }
+}

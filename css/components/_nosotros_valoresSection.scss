@@ -1,0 +1,133 @@
+.nosotrosValores {
+    width: 100%;
+    padding: 48px 0;
+    background-color: $colorSecundario;
+    @include flexRule(null,center,null);
+
+    .nosotrosValores__container{
+        padding: 0 15px;
+        text-align: center;
+        @include flexRule(column,null,center);
+        
+        
+        .nosotrosValores--titulo{
+            font-size: 3.5rem;
+            margin-bottom: 8px;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .nosotrosValores__item{
+            height: 400px;
+           
+            picture{
+                img{
+                    @include wH(260px, 166px);
+                }
+            }
+            
+            h2 {
+                font-size: 2rem;
+                padding-top: 20px;
+                margin-bottom: 10px;
+                font-weight: 400;
+            }
+
+            p{
+                font-size: 1.4rem;
+            }
+        }
+
+        .nosotrosValores__calidad{
+            padding-top: 48px;
+            margin-bottom: 16px;
+            
+            h2{
+                font-size: 2.8rem;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+
+            p{
+                font-weight: 400;
+            }
+        }
+    }
+
+    @media(min-width: $breakpoint-tablet){
+        .nosotrosValores__container{
+
+            .nosotrosValores__item-container{ 
+                margin-bottom: 50px;
+                @include flexRule(null,center);
+                flex-wrap: wrap;
+                gap: 32px;
+
+                .nosotrosValores__item{
+                    @include wH(200px,350px);
+                    
+                    picture{
+                        
+                        img{
+                            @include wH(200px,128px); 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(min-width: $breakpoint-laptop){
+        .nosotrosValores__container{
+
+            .nosotrosValores__item-container{
+                flex-wrap: nowrap;
+                gap: 40px;
+                
+                .nosotrosValores__item{
+                    @include wH(160px,400px);
+                    
+                    picture{
+                        
+                        img{
+                            @include wH(168px,108px);
+                        }
+                    }
+
+                    h2{
+                        height: 90px;
+                        padding-top: 24px;
+                        margin-bottom: 0;
+                        @include flexRule(null,center,center);
+                    }
+                }
+            }
+        }
+    }
+
+    @media(min-width: $breakpoint-desktop){
+        .nosotrosValores__container{
+
+            .nosotrosValores__item-container{
+                flex-wrap: nowrap;
+                gap: 40px;
+                max-width: 1400px;
+                
+                .nosotrosValores__item{
+                    @include wH(220px,350px);
+                    
+                    picture{
+                        
+                        img{
+                            @include wH(168px,108px);
+                        }
+                    }
+                }
+            }
+        }
+        
+        .nosotrosValores__calidad{
+            max-width: 1400px;
+        }
+    }
+}

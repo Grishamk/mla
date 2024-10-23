@@ -1,0 +1,56 @@
+.news-boletines{
+    margin-bottom: 60px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+
+    article{
+        width: 295px;
+        padding: 15px;
+        @include flexRule(column,null,center);
+
+        img{
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        a{
+            text-decoration: none;
+            color: $colorTerciario;
+            font-weight: 700;
+        }
+    }
+
+    @media(min-width: $breakpoint-desktop){
+        width: 25%;
+        margin-top: 60px;
+        padding-bottom: 40px;
+        background: rgba(4, 56, 119, 0.75);
+        border-radius: 4px;
+        @include flexRule(column,null,center);
+        gap: 56px;
+
+        h2{
+            color: $colorSecundario;
+            padding-top: 20px;
+        }
+
+        article{
+            width: 250px;
+            padding: 15px;
+            @include flexRule(column,null,center);
+            
+            img{
+                width: 100%;
+                margin-bottom: 16px;
+            }
+            
+            a{
+                text-decoration: underline;
+                color: $colorLetra2;
+                font-weight: 700;
+            }
+        }
+    }
+}

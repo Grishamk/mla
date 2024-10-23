@@ -20,7 +20,7 @@ block contenido
                             p
                                 |Realizamos procesos de revisión y aseguramiento de forma independiente, objetiva y oportuna alineada a las normas y buenas prácticas internacionales. 
                             
-                            a(href="./html/nosotros/quienesSomos.html") MÁS INFORMACIÓN
+                            a.botonSecundario(href="./html/nosotros/quienesSomos.html") MÁS INFORMACIÓN
 
                     //Segundo Slide
                     .slide
@@ -31,7 +31,7 @@ block contenido
                             p
                                 |Brindamos una opinión certera sobre la actuación global de la empresa, sus procesos y controles, creando de esta manera valor para el desarrollo y mejora de su organización.
                             
-                            a(href="./html/servicios/auditoria.html") MÁS INFORMACIÓN
+                            a.botonSecundario(href="./html/servicios/auditoria.html") MÁS INFORMACIÓN
                     
                     // Tercer Slide
                     .slide
@@ -42,7 +42,7 @@ block contenido
                             p
                                 | Ofrecemos servicios especializados enfocados al desarrollo organizacional, los cuales permiten garantizar que su estrategia y recursos internos operen de forma eficiente, armónica y organizada permitiéndoles adaptarse a las necesidades actuales y futuras de forma planificada y controlada. 
                             
-                            a(href="./html/servicios/desarrolloOrg.html") MÁS INFORMACIÓN
+                            a.botonSecundario(href="./html/servicios/desarrolloOrg.html") MÁS INFORMACIÓN
                     
                     // Cuarto Slide
                     .slide
@@ -53,7 +53,7 @@ block contenido
                             p
                                 | Sobre la base de nuestra especialización en materia contable y fiscal en los diferentes sectores económicos del país, brindamos servicios de procesamiento contable y cumplimiento fiscal que garanticen: la calidad, confiabilidad y oportunidad de las informaciones financieras de su organzación.
                             
-                            a(href="./html/servicios/impuesto-nomina.html") MÁS INFORMACIÓN
+                            a.botonSecundario(href="./html/servicios/impuesto-nomina.html") MÁS INFORMACIÓN
                     
                     // Quinto Slide
                     .slide
@@ -64,7 +64,7 @@ block contenido
                             p
                                 | Brindamos servicios especializados de asesoría y planificacion fiscal, consecución de acuerdos y defensas ante el órgano regulador, gestión de cumplimiento de compromisos fiscales, así como auditorías en la matería. Nuestros servicios se basan en la gestión de riesgos enfocada en la eficiencia tributaria bajo el debido cumplimiento.
 
-                            a(href="./html/servicios/asesoria.html") MÁS INFORMACIÓN
+                            a.botonSecundario(href="./html/servicios/asesoria.html") MÁS INFORMACIÓN
 
                     //Navegación para los slides (Flechas)
                     .navigation
@@ -96,37 +96,37 @@ block contenido
                         .linea
 
                     //IMPUESTOS
-                    a(href="./html/servicios/impuesto-nomina.html")
+                    a.cardService(href="./html/servicios/impuesto-nomina.html")
                         img(src="./img/slide/slide4.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Impuestos
                     
                     //AUDITORIA
-                    a(href="./html/servicios/auditoria.html")
+                    a.cardService(href="./html/servicios/auditoria.html")
                         img(src="./img/slide/slide2.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Auditoria
                     
                     //DESARROLLO ORGANIZACIONAL
-                    a(href="./html/servicios/desarrolloOrg.html")
+                    a.cardService(href="./html/servicios/desarrolloOrg.html")
                         img(src="./img/slide/slide3.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Desarrollo Organizacional
                     
                     //ASESORIA FISCAL
-                    a(href="./html/servicios/asesoria.html")
+                    a.cardService(href="./html/servicios/asesoria.html")
                         img(src="./img/servicios/Asesoria.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Asesoría Fiscal
 
                     //CONSULTORIA DE NEGOCIOS
-                    a(href="./html/servicios/consultorias-negocios.html")
+                    a.cardService(href="./html/servicios/consultorias-negocios.html")
                         img(src="./img/servicios/foto-consulto.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Consultoría de Negocios
                     
                     //PROTECCION PATRIMONIAL
-                    a(href="./html/servicios/proteccion.html")
+                    a.cardService(href="./html/servicios/proteccion.html")
                         img(src="./img/servicios/foto-protec.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Protección Patrimonial
@@ -143,12 +143,9 @@ block contenido
                 //MIXIN DE NOTICIAS, ESTO CONTROLA TODAS LAS NOTICIAS EN EL DOCUMENTO DE MIXINS.
                 +noticiaPrincipal            
 
-                .noticias__boton
-                    a(href="./html/noticias/noticias.html") 
-                        p VER MÁS
-                        span 
-                            <?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#fff;}</style></defs><title/><g data-name="Layer 2" id="Layer_2"><path class="cls-1" d="M16.88,15.53,7,5.66A1,1,0,0,0,5.59,7.07l9.06,9.06-8.8,8.8a1,1,0,0,0,0,1.41h0a1,1,0,0,0,1.42,0l9.61-9.61A.85.85,0,0,0,16.88,15.53Z"/><path class="cls-1" d="M26.46,15.53,16.58,5.66a1,1,0,0,0-1.41,1.41l9.06,9.06-8.8,8.8a1,1,0,0,0,0,1.41h0a1,1,0,0,0,1.41,0l9.62-9.61A.85.85,0,0,0,26.46,15.53Z"/></g></svg>
-                    
+                a.botonSecundario(href="./html/noticias/noticias.html") 
+                    p VER MÁS
+                   
 
             //SECCIÓN DE BKR
             section.main-container__respaldo
@@ -165,7 +162,7 @@ block contenido
                     h2 Capital Humano
                     p Agregamos valor a nuestros clientes cumpliendo con sus requisitos y en satisfacer sus expectativas.
                    
-                    a(href="./html/capital-humano/capital-humano.html") Ver todos 
+                    a.botonPrincipal(href="./html/capital-humano/capital-humano.html") Ver todos 
             
             //CARRUSEL DE CLIENTES
             section.main-container__clientes

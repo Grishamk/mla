@@ -1,0 +1,122 @@
+.encabezado_enfoque2 {
+    background-color: $colorPrincipal;
+    display: flex;
+    flex-direction: column;
+
+    .proteccion__encabezado{  
+        div{
+            @include wH(100%, 100px);
+            color: $colorLetra2;
+            background: $colorPrincipal;
+            text-align: center;
+            animation: fadeInRight;
+            animation-duration: 1s;
+            @include flexRule(column,center,center);
+
+            h2{
+                font-size: 2.8rem;
+                font-weight: 300;
+                padding: 15px;
+            }
+        }
+        
+    }
+
+    .proteccion__enfoque{
+        animation: fadeInLeftt;
+        animation-duration: 1s;
+        
+        picture {
+            width: 320px;
+            
+            img {
+                width: 100%;
+            }
+        }
+        
+        article {
+            padding: 48px 20px; 
+            
+            strong{
+                display: block;
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                font-weight: 480;
+                margin-bottom: 20px;
+            }
+           
+            p {
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 2rem;
+                margin-bottom: 16px;
+            }
+            
+            ul{
+                p{
+                    margin-bottom: 16px;
+                }
+                li{
+                    margin-left: 24px;
+                    line-height: 2.4rem;
+                }
+            }
+        }
+    }
+
+    @media(min-width: $breakpoint-tablet){
+        .proteccion__enfoque{
+            animation: fadeInLeft;
+            animation-duration: 1s;
+            
+            article{
+                padding: 48px 40px;
+                
+                strong{
+                    display: block;
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
+                
+                p {
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                }
+            }
+        }
+    }
+
+    @media(min-width: $breakpoint-laptop){
+        .proteccion__encabezado{  
+            background-color: $colorTerciario;
+            div{
+                height: 170px;
+                
+                h2{
+                    font-size: 4rem;
+                }
+            }
+            
+        }
+    
+        .proteccion__enfoque{
+            display: flex;
+            animation: fadeInLeft;
+            animation-duration: 1s;
+            
+            picture {
+                width: 50%;
+                
+                img {
+                    @include wH(100%, 100%);
+                }
+            }
+            
+            article {
+                width: 50%;
+                padding: 48px 80px;
+                align-self: center;
+            }
+        }
+    }
+}

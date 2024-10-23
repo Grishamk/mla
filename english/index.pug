@@ -20,7 +20,7 @@ block contenido
                             p
                                 | We conduct independent, objective, and timely review and assurance processes aligned with international standards and best practices.
                             
-                            a(href="/english/html/nosotros/quienesSomos.html") MORE INFO
+                            a.botonSecundario(href="/english/html/nosotros/quienesSomos.html") MORE INFO
 
                     //Segundo Slide
                     .slide
@@ -31,7 +31,7 @@ block contenido
                             p
                                 |We provide a reliable assessment of the company's overall performance, its processes, and controls, thereby creating value for the development and improvement of your organization.
                             
-                            a(href="/english/html/servicios/auditoria.html") MORE INFO
+                            a.botonSecundario(href="/english/html/servicios/auditoria.html") MORE INFO
                     
                     // Tercer Slide
                     .slide
@@ -42,7 +42,7 @@ block contenido
                             p
                                 | We offer specialized services focused on Organizational Development, which ensure that your strategy and internal resources operate efficiently, harmoniously and organized, allowing your company to adapt to the current and future needs in a planned and controlled manner. 
                             
-                            a(href="/english/html/servicios/desarrolloOrg.html") MORE INFO
+                            a.botonSecundario(href="/english/html/servicios/desarrolloOrg.html") MORE INFO
                     
                     // Cuarto Slide
                     .slide
@@ -53,7 +53,7 @@ block contenido
                             p
                                 | Based on our specialization in accounting and tax matters in the different economic sectors of the country, we provide accounting outsourcing and tax compliance services that guarantees: the quality, reliability and timeliness of the financial information of your organization.
                             
-                            a(href="/english/html/servicios/impuesto-nomina.html") MORE INFO
+                            a.botonSecundario(href="/english/html/servicios/impuesto-nomina.html") MORE INFO
                     
                     // Quinto Slide
                     .slide
@@ -64,7 +64,7 @@ block contenido
                             p
                                 | We provide specialized advisory and tax planning services, as well as defense and the reach of agreements with the regulatory authority, tax compliance and audits on the matter. Our services are based on risk management focused on tax efficiency under due compliance.
 
-                            a(href="/html/servicios/asesoria.html") MORE INFO
+                            a.botonSecundario(href="/html/servicios/asesoria.html") MORE INFO
 
                     //Navegación para los slides (Flechas)
                     .navigation
@@ -96,37 +96,37 @@ block contenido
                         .linea
 
                     //IMPUESTOS
-                    a(href="/html/servicios/impuesto-nomina.html")
+                    a.cardService(href="/html/servicios/impuesto-nomina.html")
                         img(src="/img/slide/slide4.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Client Accounting Services (CAS)
                     
                     //AUDITORIA
-                    a(href="/html/servicios/auditoria.html")
+                    a.cardService(href="/html/servicios/auditoria.html")
                         img(src="/img/slide/slide2.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Audit and Assurance
                     
                     //DESARROLLO ORGANIZACIONAL
-                    a(href="./html/servicios/desarrolloOrg.html")
+                    a.cardService(href="./html/servicios/desarrolloOrg.html")
                         img(src="/img/slide/slide3.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Organizational Development
                     
                     //ASESORIA FISCAL
-                    a(href="/html/servicios/asesoria.html")
+                    a.cardService(href="/html/servicios/asesoria.html")
                         img(src="/img/servicios/Asesoria.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Tax Advisory
 
                     //CONSULTORIA DE NEGOCIOS
-                    a(href="/html/servicios/consultorias-negocios.html")
+                    a.cardService(href="/html/servicios/consultorias-negocios.html")
                         img(src="/img/servicios/foto-consulto.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Business and Financial Consulting
                     
                     //PROTECCION PATRIMONIAL
-                    a(href="./html/servicios/proteccion.html")
+                    a.cardService(href="./html/servicios/proteccion.html")
                         img(src="/img/servicios/foto-protec.webp", alt="").servicios__imagen
                         .servicios__texto
                             p Asset Protection 
@@ -143,14 +143,9 @@ block contenido
                 //MIXIN DE NOTICIAS, ESTO CONTROLA TODAS LAS NOTICIAS EN EL DOCUMENTO DE MIXINS.
                 +noticiaPrincipalEn       
                     
-  
-
-                .noticias__boton
-                    a(href="./html/noticias/noticias.html") 
-                        p SEE MORE
-                        span 
-                            <?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#fff;}</style></defs><title/><g data-name="Layer 2" id="Layer_2"><path class="cls-1" d="M16.88,15.53,7,5.66A1,1,0,0,0,5.59,7.07l9.06,9.06-8.8,8.8a1,1,0,0,0,0,1.41h0a1,1,0,0,0,1.42,0l9.61-9.61A.85.85,0,0,0,16.88,15.53Z"/><path class="cls-1" d="M26.46,15.53,16.58,5.66a1,1,0,0,0-1.41,1.41l9.06,9.06-8.8,8.8a1,1,0,0,0,0,1.41h0a1,1,0,0,0,1.41,0l9.62-9.61A.85.85,0,0,0,26.46,15.53Z"/></g></svg>
-                    
+                a.botonSecundario(href="/english/html/noticias/noticias.html") 
+                    p SEE MORE
+        
 
             //SECCIÓN DE BKR
             section.main-container__respaldo
@@ -167,7 +162,7 @@ block contenido
                     h2 Team
                     p We add value to our clients fulfilling the requirements and satisfying their expectations.
                    
-                    a(href="./html/capital-humano/capital-humano.html") View all
+                    a.botonPrincipal(href="./html/capital-humano/capital-humano.html") View all
             
             //CARRUSEL DE CLIENTES
             section.main-container__clientes

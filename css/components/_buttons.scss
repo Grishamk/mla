@@ -1,0 +1,112 @@
+//Boton para volver al top de la página
+#btnBackToTop {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    background-color: $colorTerciario;
+    color: $colorLetra2;
+    @include wH(60px, 60px);
+    @include flexRule(null,center,center);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99;
+    text-decoration: none;
+    vertical-align: middle;
+    padding-bottom: 8px;
+}
+
+#btnBackToTop span {
+    font-size: 48px;
+}
+
+.botonPrincipal {
+    @include wH(164px, 40px);
+    background-color: $colorSecundario;
+    text-decoration: none;
+    color: $colorLetra1;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 2rem;
+    @include flexRule(null,center,center);
+
+    @media(min-width: $breakpoint-tablet){
+        @include wH(200px, 50px);
+        font-size: 1.6rem;
+        margin-top: 48px;
+    }
+
+    @media(min-width: $breakpoint-laptop){
+        @include wH(180px, 50px);
+        font-size: 1.6rem;
+        transition: all 300ms ease;
+
+        &:hover{
+            background-color: $colorCuaternario;
+            font-weight: bold;
+            color: $colorLetra2;
+            transform: scale(1.07);
+        }
+    }
+}
+
+.botonSecundario{
+    text-decoration: none;
+    width: 190px;
+    color: $colorLetra2;
+    height: 42px;
+    padding: 10px;
+    background-color: $colorTerciario;
+    font-size: 1.4rem;
+    transform: all 900ms ease;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0 auto;
+
+    @media(min-width: $breakpoint-tablet){
+        width: 213px;
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    @media(min-width: $breakpoint-desktop){
+        transition: all 300ms ease;
+        &:hover{
+            background-color: $colorCuaternario;
+            transform: all 900ms ease;
+            font-weight: 700;
+            scale: 1.1;
+        }
+    }
+
+}
+
+.backButton{
+    width: 70px;
+    height: 40px;
+    bottom: 0;
+    position: absolute;
+    background-color: $colorSecundario;
+    z-index: 15;
+    border-radius: 32px 32px 0px 0px;
+    @include flexRule(null,center,center);
+    
+    a{
+        width: 32px;
+        height: 32px;
+        background-image: url(/icon/172458_down_arrow_icon.svg);
+        background-size: 24px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        background-position: center;
+    }
+
+    @media(min-width: $breakpoint-desktop){
+        width: 80px;
+        height: 48px;
+        border-radius: 36px 36px 0px 0px;
+        
+        a{
+            background-size: 32px;
+        }
+    }
+  }

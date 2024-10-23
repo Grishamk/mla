@@ -1,0 +1,433 @@
+.formulario-empleo{
+    padding: 48px 24px;
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+
+        input{
+            @include wH(100%,40px);
+            padding: 12px;
+            margin-bottom: 40px;
+            border: none;
+            border-radius: 8px;
+            background-color: #f2f2f2;
+        }
+  
+        label {
+            margin-bottom: 12px;
+        }
+
+        p{
+            padding-bottom: 12px;
+        }
+
+        select{
+            @include wH(100%,40px);
+            padding: 8px;
+            border: none;
+            border-radius: 8px;
+            background-color: #f2f2f2;
+            margin-bottom: 40px;
+        }
+        
+        
+
+        h2{
+            font-size: 2rem;
+            margin-bottom: 40px;
+            margin-top: 20px;
+            color: $colorTerciario;
+        }
+
+        h3{
+            margin-bottom: 28px;
+        }
+        .boton{
+            margin-bottom: 48px;
+            width: 100%;
+            height: 40px;
+            padding: none;
+            border: none;
+            border-radius: 8px;
+            background-color: $colorTerciario;
+            color: $colorLetra2;
+        }
+
+        .boton-enviar{
+            width: 100%;
+            height: 40px;
+            padding: none;
+            margin-bottom: none;
+            border: none;
+            border-radius: 8px;
+            background-color: $colorTerciario;
+            color: $colorLetra2;
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+
+        .eliminarFormacionAcademica,.eliminarIdioma{
+            width: 60%;
+            height: 40px;
+            margin-bottom: 24px;
+            border: none;
+            border-radius: 8px;
+            background-color: $colorTerciario;
+            color: $colorLetra2;
+            font-weight: bold;
+        }
+
+        .eliminarFormacionTecnica{
+            width: 60%;
+            height: 40px;
+            margin-bottom: 24px;
+            border: none;
+            border-radius: 8px;
+            background-color: $colorTerciario;
+            color: $colorLetra2;
+            font-weight: bold;
+        }
+        hr{
+            margin-bottom: 36px;
+        }
+    }
+}
+
+.mensajeVentana{
+    padding: 0 24px;
+}
+.mensajeVentana__titularPrincipal{
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: $colorTerciario;
+}
+.mensajeVentana__primerParrafo{
+    margin-bottom: 24px;
+
+    p{
+        padding: 0;
+    }
+}
+
+.mensajeVentana__titular{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 0 !important;
+    margin-bottom: 16px;
+}
+
+.mensajeVentana__lista {
+    margin-left: 20px;
+    margin-bottom: 40px;
+    li{
+        margin-bottom: 20px;
+        line-height: 24px;
+
+        
+        p{
+            padding: 0 !important;
+        }
+    }
+}
+
+.enlacesBoton{
+    strong{
+        text-align: center;
+        margin-bottom: 16px;
+        display: block;
+    }
+}
+
+@media(min-width: $breakpoint-tablet){
+    .formulario-empleo{
+        padding: 48px 48px;
+    
+        .formulario{
+            display: flex;
+            flex-direction: column;
+    
+            input{
+                @include wH(100%,40px);
+                padding: 12px;
+                margin-bottom: 40px;
+                border: none;
+                border-radius: 8px;
+                background-color: #f2f2f2;
+            }
+            
+            label {
+                margin-bottom: 12px;
+            }
+    
+            p{
+                padding-bottom: 12px;
+            }
+    
+            select{
+                @include wH(100%,40px);
+                padding: 8px;
+                border: none;
+                border-radius: 8px;
+                background-color: #f2f2f2;
+                margin-bottom: 40px;
+            }
+            
+            
+    
+            h2{
+                font-size: 2rem;
+                margin-bottom: 40px;
+                margin-top: 20px;
+                color: $colorTerciario;
+            }
+    
+            .boton{
+                margin-bottom: 48px;
+                width: 60%;
+                height: 40px;
+                padding: none;
+                border: none;
+                border-radius: 8px;
+                background-color: $colorTerciario;
+                color: $colorLetra2;
+            }
+    
+            .boton-enviar{
+                width: 40%;
+                height: 40px;
+                padding: none;
+                margin-bottom: none;
+                margin: 0 auto;
+                border: none;
+                border-radius: 8px;
+                background-color: $colorTerciario;
+                color: $colorLetra2;
+                font-weight: bold;
+                font-size: 1.8rem;
+            }
+    
+            .eliminarFormacionAcademica,.eliminarIdioma{
+                width: 40%;
+                height: 40px;
+                margin-bottom: 24px;
+                border: none;
+                border-radius: 8px;
+                background-color: $colorTerciario;
+                color: $colorLetra2;
+                font-weight: bold;
+            }
+    
+            .eliminarFormacionTecnica{
+                width: 40%;
+                height: 40px;
+                margin-bottom: 24px;
+                border: none;
+                border-radius: 8px;
+                background-color: $colorTerciario;
+                color: $colorLetra2;
+                font-weight: bold;
+            }
+            hr{
+                margin-bottom: 36px;
+            }
+        }
+    }
+    .mensajeVentana{
+        padding: 0 48px;
+    }
+    .mensajeVentana__titularPrincipal{
+        font-size: 2.8rem;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        color: $colorTerciario;
+    }
+    .mensajeVentana__primerParrafo{
+        margin-bottom: 24px;
+    
+        p{
+            padding: 0;
+        }
+    }
+    
+    .mensajeVentana__titular{
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding: 0 !important;
+        margin-bottom: 8px;
+    }
+    
+    .mensajeVentana__lista {
+        margin-left: 20px;
+        margin-bottom: 24px;
+        li{
+            margin-bottom: 16px;
+            line-height: 24px;
+        }
+    }
+    
+    .enlacesBoton{
+        strong{
+            text-align: center;
+            margin-bottom: 16px;
+            display: block;
+        }
+    }
+
+}
+
+@media(min-width: $breakpoint-laptop){
+    body{
+        .formulario-empleo{
+            padding: 60px 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+        
+            .formulario{
+                display: flex;
+                flex-direction: column;
+        
+                input{
+                    @include wH(100%,40px);
+                    padding: 12px;
+                    margin-bottom: 40px;
+                    border: none;
+                    border-radius: 8px;
+                    background-color: #f2f2f2;
+                }
+                
+                label {
+                    margin-bottom: 12px;
+                }
+        
+                p{
+                    padding-bottom: 12px;
+                }
+        
+                select{
+                    @include wH(100%,40px);
+                    padding: 8px;
+                    border: none;
+                    border-radius: 8px;
+                    background-color: #f2f2f2;
+                    margin-bottom: 40px;
+                }
+                
+                
+        
+                h2{
+                    font-size: 3.6rem;
+                    margin-bottom: 40px;
+                    margin-top: 20px;
+                    color: $colorTerciario;
+                }
+        
+                .boton{
+                    margin-bottom: 48px;
+                    width: 20%;
+                    height: 40px;
+                    padding: none;
+                    border: none;
+                    border-radius: 8px;
+                    background-color: $colorTerciario;
+                    color: $colorLetra2;
+                    font-weight: bold;
+                }
+        
+                .boton-enviar{
+                    width: 40%;
+                    height: 40px;
+                    padding: none;
+                    margin-bottom: none;
+                    margin: 0 auto;
+                    border: none;
+                    border-radius: 8px;
+                    background-color: $colorTerciario;
+                    color: $colorLetra2;
+                    font-weight: bold;
+                    font-size: 1.8rem;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+        
+                .eliminarFormacionAcademica,.eliminarIdioma{
+                    width: 20%;
+                    height: 40px;
+                    margin-bottom: 24px;
+                    border: none;
+                    border-radius: 8px;
+                    background-color: $colorTerciario;
+                    color: $colorLetra2;
+                    font-weight: bold;
+                }
+        
+                .eliminarFormacionTecnica{
+                    width: 20%;
+                    height: 40px;
+                    margin-bottom: 24px;
+                    border: none;
+                    border-radius: 8px;
+                    background-color: $colorTerciario;
+                    color: $colorLetra2;
+                    font-weight: bold;
+                }
+                hr{
+                    margin-bottom: 36px;
+                }
+               
+            }
+        }
+    }
+    .mensajeVentana{
+        padding: 0;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .mensajeVentana__titularPrincipal{
+        font-size: 2.8rem;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        color: $colorTerciario;
+        text-align: center;
+    }
+    .mensajeVentana__primerParrafo{
+        margin-bottom: 24px;
+    
+        p{
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+    .mensajeVentana__titular{
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding: 0 !important;
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+
+    }
+    
+    .mensajeVentana__lista {
+        margin-left: 20px;
+        margin-bottom: 24px;
+        li{
+            margin-bottom: 16px;
+            line-height: 24px;
+        }
+    }
+    
+    .enlacesBoton{
+        margin-top: 60px;
+
+        strong{
+            text-align: center;
+            margin-bottom: 16px;
+            display: block;
+            font-size: 2rem;
+        }
+    }
+}
