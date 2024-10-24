@@ -18,16 +18,57 @@
         p{
             font-size: 1.9rem; 
             margin: 0 12px;
-            margin-bottom: 28px;
+            margin-bottom: 40px;
         }
 
         .nosotrosExp__list{
-            @include flexRule(null,center);
+            @include flexRule(null);
             flex-wrap: wrap;
             gap: 10px;
             margin-bottom: 48px;
             ul {
                 list-style: none;
+                display: grid;
+
+                li{
+                    @include wH(150px, 40px);
+                    font-size: 1.4rem;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: $breakpoint-tablet){
+        .nosotrosExp__list{
+            @include flexRule(null,flex-start,flex-start);
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 48px;
+            ul {
+                list-style: none;
+                display: grid;
+                grid-template-columns: repeat(3, 200px);
+
+                li{
+                    @include wH(150px, 40px);
+                    font-size: 1.4rem;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: $breakpoint-laptop){
+        .nosotrosExp__list{
+            
+            margin-bottom: 48px;
+            ul {
+                list-style: none;
+                display: grid;
+                grid-template-columns: repeat(4, 200px);
+                gap: 12px;
+                place-content: center;
 
                 li{
                     @include wH(150px, 40px);

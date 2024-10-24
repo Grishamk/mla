@@ -1,31 +1,3 @@
-/*const carouselContainer = document.querySelector('.carousel-container');
-const totalImages = 31; // Reemplaza el total de imágenes adecuadamente
-let currentPosition = 0;
-
-function updateCarouselPosition() {
-  carouselContainer.style.transform = `translateX(-${currentPosition * 100}%)`;
-}
-
-function slideNext() {
-  currentPosition = (currentPosition + 1) % totalImages;
-  updateCarouselPosition();
-}
-
-// Ajusta el intervalo de tiempo aquí (en milisegundos)
-const slideInterval = 4000; // 4 segundos
-
-let slideTimer = setInterval(slideNext, slideInterval);
-
-// Detener la transición cuando el mouse está sobre el carrusel
-carouselContainer.addEventListener('mouseenter', () => {
-  clearInterval(slideTimer);
-});
-
-// Reanudar la transición cuando el mouse sale del carrusel
-carouselContainer.addEventListener('mouseleave', () => {
-  slideTimer = setInterval(slideNext, slideInterval);
-});*/
-
 //FadeIN
 function debounce(func, wait = 1, immediate = true) {
   let timeout;
@@ -58,7 +30,6 @@ window.addEventListener('scroll', debounce(checkFadeIn));
 
 
 //CARRUSEL
-
 const slider = document.querySelector(".slider");
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
@@ -182,29 +153,6 @@ window.addEventListener("load", function() {
   });
 });
 
-/*let socioItem = document.querySelector('.capital-humano__socios');
-let botonSocio = document.querySelector('.ocultoActivo');
-let botonSocio2 = document.querySelector('.ocultoActivo2');
-
-botonSocio.addEventListener('click', activeSocios);
-botonSocio2.addEventListener('click', activeSocios);
-
-function activeSocios(){
-  const openSocios = socioItem.classList.contains('oculto');
-  const closeSocios = socioItem.classList.contains('oculto');
-
-  if(openSocios){
-    socioItem.classList.remove('oculto');
-    botonSocio.classList.add('oculto');
-    botonSocio2.classList.remove('oculto');
-  }
-  else if(!openSocios){
-    socioItem.classList.add('oculto');
-    botonSocio.classList.remove('oculto');
-    botonSocio2.classList.add('oculto');
-  }
-
-}*/
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -263,33 +211,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 })
 
-
-/*$('.autoplay').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  autoplay: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});*/
 
 $('.autoplay').slick({
   slidesToShow: 5,

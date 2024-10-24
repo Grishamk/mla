@@ -2616,15 +2616,12 @@ header:hover {
 .nosotrosExp .nosotrosExp__container p {
   font-size: 1.9rem;
   margin: 0 12px;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 }
 .nosotrosExp .nosotrosExp__container .nosotrosExp__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px;
@@ -2632,12 +2629,64 @@ header:hover {
 }
 .nosotrosExp .nosotrosExp__container .nosotrosExp__list ul {
   list-style: none;
+  display: -ms-grid;
+  display: grid;
 }
 .nosotrosExp .nosotrosExp__container .nosotrosExp__list ul li {
   width: 150px;
   height: 40px;
   font-size: 1.4rem;
   margin-bottom: 4px;
+}
+@media (min-width: 750px) {
+  .nosotrosExp .nosotrosExp__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 48px;
+  }
+  .nosotrosExp .nosotrosExp__list ul {
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (200px)[3];
+    grid-template-columns: repeat(3, 200px);
+  }
+  .nosotrosExp .nosotrosExp__list ul li {
+    width: 150px;
+    height: 40px;
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+}
+@media (min-width: 1050px) {
+  .nosotrosExp .nosotrosExp__list {
+    margin-bottom: 48px;
+  }
+  .nosotrosExp .nosotrosExp__list ul {
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 12px 200px 12px 200px 12px 200px;
+    grid-template-columns: repeat(4, 200px);
+    gap: 12px;
+    place-content: center;
+  }
+  .nosotrosExp .nosotrosExp__list ul li {
+    width: 150px;
+    height: 40px;
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
 }
 
 .membresia {
