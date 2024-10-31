@@ -19,6 +19,15 @@
         }
     }
 
+    picture{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        img{
+            width: 300px;
+        }
+    }
+
     @media(min-width: $breakpoint-tablet){
         padding: 40px 60px;
 
@@ -35,6 +44,12 @@
                 font-size: 1.6rem;
             }
         }
+
+        picture{
+            img{
+                width: 500px;
+            }
+        }
     }
 
     @media(min-width: $breakpoint-desktop){
@@ -45,12 +60,12 @@
 
         p{
             font-weight: 600;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
             font-size: 1.8rem;
         }
 
         div{
-            margin-bottom: 60px;
+            margin-bottom: 10px;
             p{
                 font-weight: 400;
                 font-size: 1.6rem;
@@ -61,6 +76,13 @@
                 display: block;
                 margin: 0 auto;
                 margin-top: 100px;
+            }
+        }
+
+        picture{
+            margin-top: -50px;
+            img{
+                width: 500px;
             }
         }
     }

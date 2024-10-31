@@ -1752,7 +1752,7 @@ header:hover {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 36px;
+    gap: 16px;
   }
 }
 @media (min-width: 1500px) {
@@ -1760,6 +1760,10 @@ header:hover {
     max-width: 1300px;
     font-size: 3.2rem;
     margin-left: 0px;
+  }
+  .main-container__noticias .noticias__container {
+    max-width: 1400px;
+    gap: 10px;
   }
 }
 
@@ -2579,7 +2583,8 @@ header:hover {
     height: 108px;
   }
   .nosotrosValores .nosotrosValores__calidad {
-    max-width: 1400px;
+    max-width: 1000px;
+    margin-bottom: 100px;
   }
 }
 
@@ -4253,6 +4258,18 @@ header:hover {
   width: 100%;
   border-radius: 8px;
 }
+.publicacion__content picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.publicacion__content picture img {
+  width: 300px;
+}
 @media (min-width: 750px) {
   .publicacion__content {
     padding: 40px 60px;
@@ -4269,6 +4286,9 @@ header:hover {
     font-weight: 400;
     font-size: 1.6rem;
   }
+  .publicacion__content picture img {
+    width: 500px;
+  }
 }
 @media (min-width: 1500px) {
   .publicacion__content {
@@ -4279,11 +4299,11 @@ header:hover {
   }
   .publicacion__content p {
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: 1.8rem;
   }
   .publicacion__content div {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
   .publicacion__content div p {
     font-weight: 400;
@@ -4294,6 +4314,12 @@ header:hover {
     display: block;
     margin: 0 auto;
     margin-top: 100px;
+  }
+  .publicacion__content picture {
+    margin-top: -50px;
+  }
+  .publicacion__content picture img {
+    width: 500px;
   }
 }
 

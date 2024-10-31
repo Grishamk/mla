@@ -1,0 +1,31 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/15octubre.webp", alt="Background de la noticia")
+                    h2 Summit of the Americas 2024
+            
+            section.publicacion__content
+                p October 15, 2024
+                
+                div
+                    p 
+                        | We are proud to have participated in the 2024 Summit of the Americas, where we discussed quality management, sustainable growth, and business ethics. During this event, our team reaffirmed Mejía Lora & Associates' commitment to being a benchmark in building a more transparent and responsible future in the business sector.
+                
+                    picture
+                        img(src="/img/avisos/15octubre.webp", alt="Background de la noticia")
+              
+                  
+
+
+            section.publicacion__otras
+                h2 Other news
+
+                +noticiaPrincipalEn

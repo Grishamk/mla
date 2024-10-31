@@ -44,7 +44,7 @@
         .noticias__container{
             @include flexRule(row,center);
             flex-wrap: wrap;
-            gap: 36px;
+            gap: 16px;
         }
     }
 
@@ -53,6 +53,10 @@
             max-width: 1300px;
             font-size: 3.2rem;
             margin-left: 0px;
+        }
+        .noticias__container{
+            max-width: 1400px;
+            gap: 10px;
         }
     }
 }

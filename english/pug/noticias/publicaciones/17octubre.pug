@@ -1,0 +1,34 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/17octubre.webp", alt="Background de la noticia")
+                    h2 Inauguration of Hotel Kimpton Las Mercedes
+            
+            section.publicacion__content
+                p October 17, 2024
+                
+                div
+                    p 
+                        | Congratulations to Hotel Kimpton Las Mercedes on its grand opening!
+                        br
+                        br
+                        | We appreciate your trust in Mejía Lora & Associates for your assurance and tax services. We wish you great success in this new chapter. Keep shining!
+                
+                    picture
+                        img(src="/img/avisos/17octubre.webp", alt="Background de la noticia")
+              
+                  
+
+
+            section.publicacion__otras
+                h2 Other news
+
+                +noticiaPrincipalEn

@@ -1,0 +1,31 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/25octubre.webp", alt="Background de la noticia")
+                    h2 Anniversary of Excel Puesto de Bolsa
+            
+            section.publicacion__content
+                p October 25, 2024
+                
+                div
+                    p 
+                        | Celebrating the anniversary of Excel Puesto de Bolsa, held at the new Hotel Kimpton Las Mercedes. At Mejía Lora & Associates, we are proud to be a part of this moment.
+                
+                    picture
+                        img(src="/img/avisos/25octubre.webp", alt="Background de la noticia")
+              
+                  
+
+
+            section.publicacion__otras
+                h2 Other news
+
+                +noticiaPrincipalEn

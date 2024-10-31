@@ -1,0 +1,31 @@
+extend ../../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/26octubre.webp", alt="Background de la noticia")
+                    h2 AMCHAMDR Luncheon
+            
+            section.publicacion__content
+                p October 26, 2024
+                
+                div
+                    p 
+                        | Firelli Mejía, partner at MLA, and Wilmarys Ledezma, in charge of the quality management and customer service system at MLA, attended today's AMCHAMDR luncheon, where Mrs. Mercedes Ramos, Executive President of Grupo Ramos, was the speaker. During her presentation, she addressed transformation and governance as key factors for ensuring growth and sustainability in the private sector.
+                
+                    picture
+                        img(src="/img/avisos/26octubre.webp", alt="Background de la noticia")
+              
+                  
+
+
+            section.publicacion__otras
+                h2 Other news
+
+                +noticiaPrincipalEn
