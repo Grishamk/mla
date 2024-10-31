@@ -1,0 +1,31 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/15octubre.webp", alt="Background de la noticia")
+                    h2 Cumbre de las Américas 2024
+            
+            section.publicacion__content
+                p 15 de octubre de 2024
+                
+                div
+                    p 
+                        | Nos sentimos orgullosos de haber participado en la Cumbre de las Américas 2024, donde compartimos el tema sobre la gestión de calidad, el crecimiento sostenible y la ética en los negocios. Durante este evento, nuestro equipo reafirmó el compromiso de Mejía Lora & Asociados de ser un referente en la construcción de un futuro más transparente y responsable en el sector empresarial.
+                
+                    picture
+                        img(src="/img/avisos/15octubre.webp", alt="Background de la noticia")
+              
+                  
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

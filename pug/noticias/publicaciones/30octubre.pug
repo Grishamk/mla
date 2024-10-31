@@ -1,0 +1,37 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/30octubre.webp", alt="Background de la noticia")
+                    h2 BKR International 2024 Annual Worldwide Meeting en Tokio, Japón
+            
+            section.publicacion__content
+                p 30 de octubre de 2024
+                
+                div
+                    p 
+                        | MLA presente en el BKR International 2024 Annual Worldwide Meeting en Tokio, Japón, representado por Raymi J Mejia y Maria de Lourdes Curiel de Mejia.
+                        br
+                        br
+                        | Celebrada del 26 al 29 de octubre de 2024, esta reunión se centra en las creencias fundamentales de BKR sobre hacer negocios, compartir conocimientos y fomentar relaciones, reuniendo a firmas miembros de todo el mundo.
+                        br
+                        br
+                        | Nuestro socio, Raymi J Mejia participó en la reunión del Consejo Mundial de BKR International, donde se abordó el análisis estratégico y plan de acción para los próximos periodos.
+                
+                    picture
+                        img(src="/img/avisos/30octubre.webp", alt="Background de la noticia")
+              
+                  
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

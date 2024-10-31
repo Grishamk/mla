@@ -1,0 +1,34 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/17octubre.webp", alt="Background de la noticia")
+                    h2 Inauguración Hotel Kimpton Las Mercedes
+            
+            section.publicacion__content
+                p 17 de octubre de 2024
+                
+                div
+                    p 
+                        | ¡Felicidades al hotel Kimpton Las Mercedes en su gran inauguración!
+                        br
+                        br
+                        | Agradecemos su confianza en Mejía Lora y Asociados para sus servicios de aseguramiento y fiscales. Les deseamos mucho éxito en esta nueva etapa. ¡A seguir brillando!
+                
+                    picture
+                        img(src="/img/avisos/17octubre.webp", alt="Background de la noticia")
+              
+                  
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

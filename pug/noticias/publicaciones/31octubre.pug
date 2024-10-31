@@ -1,0 +1,31 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/31octubre.webp", alt="Background de la noticia")
+                    h2 Visita de la Junta Directiva del CONACI
+            
+            section.publicacion__content
+                p 31 de octubre de 2024
+                
+                div
+                    p 
+                        | Nos sentimos orgullosos de compartir la visita de la junta directiva del CONACI, de la cual nuestra Socio Sayka Mejía es miembro al SENADO de la República Dominicana.
+                
+                    picture
+                        img(src="/img/avisos/31octubre.webp", alt="Background de la noticia")
+              
+                  
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal

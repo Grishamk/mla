@@ -1,0 +1,31 @@
+extend ../../../componentes/_plantilla.pug
+
+block javaScript
+    script(src="../../subscript.js")
+
+block contenido
+
+        main
+            section.publicacion__hero
+                div
+                    .filtro__azul
+                    img(src="/img/avisos/26octubre.webp", alt="Background de la noticia")
+                    h2 Almuerzo de AMCHAMDR
+            
+            section.publicacion__content
+                p 26 de octubre de 2024
+                
+                div
+                    p 
+                        | Firelli Mejía, socio de MLA, y Wilmarys Ledezma, encargada del sistema de gestión de la calidad y servicio al cliente de MLA, asistieron hoy al almuerzo de AMCHAMDR, donde la Sra. Mercedes Ramos, presidenta ejecutiva del Grupo Ramos, fue la expositora. Durante su intervención, abordó la transformación y la gobernanza como factores clave para asegurar el crecimiento y la sostenibilidad en el sector privado.
+                
+                    picture
+                        img(src="/img/avisos/26octubre.webp", alt="Background de la noticia")
+              
+                  
+
+
+            section.publicacion__otras
+                h2 Otras Noticias
+
+                +noticiaPrincipal
